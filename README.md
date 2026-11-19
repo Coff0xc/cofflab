@@ -21,5 +21,6 @@ A curated collection of CVE vulnerabilities and public proof-of-concept material
 | [CVE-2026-119958](CVE-2026-119958) | Windows LDAP | 3.1 9.8 (Microsoft) | Lab repro of OOB write + crash; no RCE on real Windows LDAP |
 | [CVE-2026-123039](CVE-2026-123039) | Check Point Gaia OS | 3.1 7.8 (Check Point) | Lab priv-esc to root via world-writable socket; not verified on real Gaia |
 | [CVE-2026-123158](CVE-2026-123158) | OpenSSH sshd | 3.1 8.1 (MITRE) | Lab repro of password-auth bypass login; no live evidence |
+| [CVE-2026-123218](CVE-2026-123218) | IBM Aspera Faspex 5 | 3.1 9.8 (IBM) | Version check only; no bypass demonstrated |
 
 点进 CVE 目录看完整判定和引用。
