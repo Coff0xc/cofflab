@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (70)
+### Web / CMS (72)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -92,6 +92,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133083](CVE-2026-133083) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity Server Health レポートの格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133091](CVE-2026-133091) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity ユーザーページの格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-22310](CVE-2026-22310) | JTL-Shop | 3.1 8.0 (JTL); 4.0 7.6 (JTL) | JTL-Shop 5.5.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (2026-11-11) | JTL-Shop 404 リダイレクトの格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion の SSRF；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-106624](CVE-2026-106624) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion のコードインジェクションによるリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (6)
 
@@ -104,7 +106,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP ツール呼び出しの未パラメータ化による SQLi；xp_cmdshell は主張のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | 未認証リモートコード実行（Agent scratchpad exec()）；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (73)
+### ネットワークとセキュリティ (78)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -181,8 +183,13 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-111507](CVE-2026-111507) | PowerStore | 3.1 8.1 (Dell) | Dell PowerStore versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Dell PowerStore の認可バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-111547](CVE-2026-111547) | PowerStore | 3.1 8.1 (Dell) | Dell PowerStore versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Dell PowerStore の境界外読み取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-116417](CVE-2026-116417) | PowerScale InsightIQ | 3.1 8.1 (Dell) | Dell PowerScale InsightIQ 6.3.0-6.4.0 | 6.4.1 (DSA-2026-480) | Dell PowerScale InsightIQ の弱いパスワード要件；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-15409](CVE-2026-15409) | SMA1000 | 3.1 10.0 (SonicWall) | SonicWall SMA1000 12.4.3-03245/03387/03434, 12.5.0-02283/02624/02800 (platform-hotfix) and earlier | 12.4.3-03453 / 12.5.0-02835 and higher (SNWLID-2026-0008) | SonicWall SMA1000 の認証前 SSRF；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-109469](CVE-2026-109469) | Entra Device Registration | 3.1 10.0 (Microsoft) | Microsoft Entra Device Registration (hosted service) | Official fix available (Microsoft service-side remediation, MSRC 2026-11-05) | Entra デバイス登録のユーザー制御キーによる認可バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-102255](CVE-2026-102255) | SMA1000 | 3.1 10.0 (SonicWall) | SonicWall SMA1000 12.4.3-03526 and older, 12.5.0-02952 and older (platform-hotfix) | 12.4.3-03670 / 12.5.0-03082 and higher (SNWLID-2026-0017) | SonicWall SMA1000 の認証前 SSRF（意図しないフォワードプロキシ経由）；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-77550](CVE-2026-77550) | UniFi OS Server | 3.1 10.0 (UI) | UniFi OS Server 5.1.21 and earlier; UniFi OS devices 5.1.26 and earlier; Express 4.0.16 and earlier | UniFi OS Server 5.1.37+; devices 5.1.31+; NAS 5.1.32+; Express 4.0.17+ (Bulletin 067) | UniFi OS Server の CRLF インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-77554](CVE-2026-77554) | UniFi Talk Application | 3.1 10.0 (UI) | UniFi Talk Application 5.2.7 and earlier | 5.3.2 or later (Bulletin 067) | UniFi Talk アプリケーションのコマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (33)
+### ランタイム / フレームワーク / ブラウザ (41)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -219,6 +226,14 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133254](CVE-2026-133254) | IntelliJ IDEA | 3.1 8.3 (JetBrains) | IntelliJ IDEA before 2026.3, 2026.2.4 | 2026.3 / 2026.2.4 | IntelliJ IDEA Code Provenance プラグイン経由のコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130886](CVE-2026-130886) | @fastify/reply-from | 3.1 8.2 (GHSA) | @fastify/reply-from 12.8.1-12.8.3 | 12.8.4 | @fastify/reply-from プロキシのパストラバーサル；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-92937](CVE-2026-92937) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.11.6 | 3.11.7 | vm2 のサンドボックスエスケープによるリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-0881](CVE-2026-0881) | Firefox | 3.1 10.0 (Mozilla) | Firefox <147, Thunderbird <147 | Firefox 147 / Thunderbird 147 (MFSA2026-01) | Firefox メッセージングシステムのサンドボックスエスケープ；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-92940](CVE-2026-92940) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.11.3-3.11.6 | 3.11.7 | vm2 globalAgent によるホスト HTTPS 認証情報の漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-92941](CVE-2026-92941) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.11.3-<3.11.7 | 3.11.7 | vm2 の TLS トラストストア改ざん；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-92946](CVE-2026-92946) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | vm2 require.external によるリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-92947](CVE-2026-92947) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | vm2 Buffer プール経由のメモリ漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-92955](CVE-2026-92955) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.8 | 3.11.8 | vm2 NodeVM のサンドボックスエスケープ；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-92956](CVE-2026-92956) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.10.1-3.11.6 | 3.11.7 | vm2 WebAssembly のサンドボックスエスケープ；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-92960](CVE-2026-92960) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.6 | 3.11.6 | vm2 os/dns によるプロセス全体の状態漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### データベース (8)
 

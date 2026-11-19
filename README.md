@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (70)
+### Web / CMS (72)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -92,6 +92,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133083](CVE-2026-133083) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Stored XSS in TeamCity Server Health reports; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133091](CVE-2026-133091) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Stored XSS on TeamCity Users page; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-22310](CVE-2026-22310) | JTL-Shop | 3.1 8.0 (JTL); 4.0 7.6 (JTL) | JTL-Shop 5.5.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (2026-11-11) | Stored XSS via 404 redirect table in JTL-Shop; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | SSRF in Adobe ColdFusion; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-106624](CVE-2026-106624) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | Code injection leading to RCE in Adobe ColdFusion; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (6)
 
@@ -104,7 +106,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 | [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | Unauthenticated RCE via agent scratchpad exec(); detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (73)
+### Network & Security (78)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -181,8 +183,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-111507](CVE-2026-111507) | PowerStore | 3.1 8.1 (Dell) | Dell PowerStore versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Authorization bypass in Dell PowerStore; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-111547](CVE-2026-111547) | PowerStore | 3.1 8.1 (Dell) | Dell PowerStore versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Out-of-bounds read in Dell PowerStore; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-116417](CVE-2026-116417) | PowerScale InsightIQ | 3.1 8.1 (Dell) | Dell PowerScale InsightIQ 6.3.0-6.4.0 | 6.4.1 (DSA-2026-480) | Weak password requirements in Dell PowerScale InsightIQ; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-15409](CVE-2026-15409) | SMA1000 | 3.1 10.0 (SonicWall) | SonicWall SMA1000 12.4.3-03245/03387/03434, 12.5.0-02283/02624/02800 (platform-hotfix) and earlier | 12.4.3-03453 / 12.5.0-02835 and higher (SNWLID-2026-0008) | Pre-authentication SSRF in SonicWall SMA1000; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-109469](CVE-2026-109469) | Entra Device Registration | 3.1 10.0 (Microsoft) | Microsoft Entra Device Registration (hosted service) | Official fix available (Microsoft service-side remediation, MSRC 2026-11-05) | Authorization bypass through user-controlled key in Entra Device Registration; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-102255](CVE-2026-102255) | SMA1000 | 3.1 10.0 (SonicWall) | SonicWall SMA1000 12.4.3-03526 and older, 12.5.0-02952 and older (platform-hotfix) | 12.4.3-03670 / 12.5.0-03082 and higher (SNWLID-2026-0017) | Pre-authentication SSRF via unintended forward-proxy in SonicWall SMA1000; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-77550](CVE-2026-77550) | UniFi OS Server | 3.1 10.0 (UI) | UniFi OS Server 5.1.21 and earlier; UniFi OS devices 5.1.26 and earlier; Express 4.0.16 and earlier | UniFi OS Server 5.1.37+; devices 5.1.31+; NAS 5.1.32+; Express 4.0.17+ (Bulletin 067) | CRLF injection in UniFi OS Server; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-77554](CVE-2026-77554) | UniFi Talk Application | 3.1 10.0 (UI) | UniFi Talk Application 5.2.7 and earlier | 5.3.2 or later (Bulletin 067) | Command injection in UniFi Talk Application; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (33)
+### Runtime / Framework / Browser (41)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -219,6 +226,14 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133254](CVE-2026-133254) | IntelliJ IDEA | 3.1 8.3 (JetBrains) | IntelliJ IDEA before 2026.3, 2026.2.4 | 2026.3 / 2026.2.4 | Code execution via IntelliJ IDEA Code Provenance plugin; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130886](CVE-2026-130886) | @fastify/reply-from | 3.1 8.2 (GHSA) | @fastify/reply-from 12.8.1-12.8.3 | 12.8.4 | Path traversal in @fastify/reply-from proxy; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-92937](CVE-2026-92937) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.11.6 | 3.11.7 | Sandbox escape leading to RCE in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-0881](CVE-2026-0881) | Firefox | 3.1 10.0 (Mozilla) | Firefox <147, Thunderbird <147 | Firefox 147 / Thunderbird 147 (MFSA2026-01) | Sandbox escape in Firefox Messaging System; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92940](CVE-2026-92940) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.11.3-3.11.6 | 3.11.7 | HTTPS credential exposure via globalAgent in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92941](CVE-2026-92941) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.11.3-<3.11.7 | 3.11.7 | TLS trust store manipulation in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92946](CVE-2026-92946) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | RCE via require.external in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92947](CVE-2026-92947) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | Memory disclosure via Buffer pool in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92955](CVE-2026-92955) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.8 | 3.11.8 | Sandbox escape via NodeVM in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92956](CVE-2026-92956) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.10.1-3.11.6 | 3.11.7 | Sandbox escape via WebAssembly.compileStreaming in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92960](CVE-2026-92960) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.6 | 3.11.6 | Process-wide state exposure via os and dns in vm2; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
