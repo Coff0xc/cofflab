@@ -32,5 +32,6 @@ A curated collection of CVE vulnerabilities and public proof-of-concept material
 | [CVE-2026-19868](CVE-2026-19868) | SonicWall SonicOS | 3.1 7.5 (CISA-ADP)；3.1 7.1 (SonicWall) | Version check only |
 | [CVE-2026-129271](CVE-2026-129271) | N-able N-central Patch Management | 4.0 8.5 (N-able) | Authenticated local priv-esc to root (needs ProductAdmin creds + callback) |
 | [CVE-2026-129280](CVE-2026-129280) | N-able N-central | 4.0 9.3 (N-able) | Unauthenticated config write (single-operation demo, reversible) |
+| [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC |
 
 点进 CVE 目录看完整判定和引用。
