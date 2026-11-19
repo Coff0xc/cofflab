@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (19)
+### Web / CMS (22)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -41,6 +41,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130648](CVE-2026-130648) | WWBN AVideo | 3.1 8.7 (GHSA)；4.0 9.3 (NVD) | WWBN AVideo from 6.5 (GHSA; no fixed version listed) |  | Stored XSS via javascript: videoLink; script claimed, unverified | Confirmed | Pending |
 | [CVE-2026-69158](CVE-2026-69158) | atomic-server | 3.1 8.6 (GHSA) | atomic-server <= 0.40.1 |  | Unauthenticated full-response SSRF via /bookmark; script claimed, unverified | Confirmed | Pending |
 | [CVE-2026-69156](CVE-2026-69156) | atomic-server | 3.1 8.1 (GHSA) | atomic-server 0.30.0-0.40.1 |  | Arbitrary file read via internalId; PoC's unauthenticated claim conflicts with GHSA | Confirmed | Pending |
+| [CVE-2026-100397](CVE-2026-100397) | Rucio | 3.1 9.8 (GHSA) | Rucio server < 36.4.1 (per PoC; GHSA lists branch fixes 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1) | 36.4.1 (per PoC); GHSA branches 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1 | SSH challenge token accepted for any account; unauthenticated admin impersonation, unverified | Confirmed | Pending |
+| [CVE-2026-126967](CVE-2026-126967) | SmarterMail | 3.0 8.8 (GHSA) | SmarterMail all builds < 9735 | Build 9735 | Auth'd file-storage traversal writes ASPX webshell as SYSTEM; script claimed, unverified | Confirmed | Pending |
+| [CVE-2026-71481](CVE-2026-71481) | altcha | 3.1 7.5 (GHSA) | altcha-org/altcha (Composer) >= 2.0.0, < 2.0.3 (GHSA; PoC claims altcha-lib <= 0.5.x) | 2.0.3 (GHSA); v0.6.0 (per PoC) | Missing/empty HMAC signature accepted; CAPTCHA bypass in one request, unverified | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -52,7 +55,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (29)
+### Network & Security (36)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -85,8 +88,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-113425](CVE-2026-113425) | F5 NGINX mail proxy | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX 0.5.33-1.31.8 (mail proxy) | 1.30.7 / 1.31.9 | Mail proxy UAF crash in Docker lab; exploit script included, unverified | Confirmed | Pending |
 | [CVE-2026-118899](CVE-2026-118899) | F5 NGINX TLS 1.3 | 4.0 8.7 (F5)；3.1 7.5 (F5) | NGINX 1.13.0-1.31.8 (TLS 1.3, http block) | 1.30.7 / 1.31.9 | TLS 1.3 infinite-loop DoS in Docker lab; exploit script included, unverified | Confirmed | Pending |
 | [CVE-2026-116442](CVE-2026-116442) | Dell PowerStore NDMP | 3.1 8.1 (GHSA) | Dell PowerStore OS <= 3.6.0.0 with NDMP enabled (per PoC README; GHSA lists no version range) | PowerStore OS 4.0.0.1 (per PoC README) | NDMP auth-bypass-by-replay; PoC shows pre-auth NDMP response only | Confirmed | Pending |
+| [CVE-2026-114202](CVE-2026-114202) | ASUS Control Center Express | 4.0 10.0 (NVD) | ASUS Control Center Express all firmware versions prior to patch (PoC tested through v1.7.27) | no fixed version published | Unauthenticated admin token forgery via hard-coded JWT secret; key must be extracted, unverified | Confirmed | Pending |
+| [CVE-2026-131852](CVE-2026-131852) | OwnTracks Recorder | 3.1 9.8 (GHSA) | OwnTracks Recorder before 1.0.5 | 1.0.5 | Stored format string via location tid; pointer leak and persistent DoS in lab, unverified | Confirmed | Pending |
+| [CVE-2026-92182](CVE-2026-92182) | pfSense CE | 3.0 8.8 (GHSA) | pfSense CE ≤ 2.8.1 | pfSense CE 2.8.2 | Low-priv account reaches admin-only XMLRPC methods; root RCE, unverified | Confirmed | Pending |
+| [CVE-2026-123640](CVE-2026-123640) | F5 NGINX ssl_preread | 3.1 5.3 (GHSA) | nginx 1.15.2–1.31.8 (ssl_preread) | 1.30.7 / 1.31.9 | ssl_preread SNI validation gap; misrouting / OOB read in Docker lab, unverified | Confirmed | Pending |
+| [CVE-2026-120993](CVE-2026-120993) | F5 NGINX stream SSL | 3.1 5.3 (GHSA) | nginx 1.31.4–1.31.8 (stream SSL + PROXY v2) | 1.31.9 | PROXY v2 + dynamic certs NULL deref; worker crash in Docker lab, unverified | Confirmed | Pending |
+| [CVE-2026-125283](CVE-2026-125283) | F5 NGINX alias/try_files | 3.1 5.3 (GHSA) | nginx 0.9.6–1.31.8 (alias + try_files) | 1.30.7 / 1.31.9 | alias + try_files integer underflow; OOB read in Docker lab, unverified | Confirmed | Pending |
+| [CVE-2026-120967](CVE-2026-120967) | F5 NGINX stream SNI | 3.1 4.8 (GHSA) | nginx 1.25.5–1.31.8 (stream SNI mTLS) | 1.30.7 / 1.31.9 | Stream SNI mTLS check applied too late; bypass to protected backend in lab, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (16)
+### Runtime / Framework / Browser (17)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -106,16 +116,18 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126910](CVE-2026-126910) | Chrome V8 Maglev | 3.1 8.8 (NVD) | Chrome before 157.0.8103.78 | 157.0.8103.78 | Type-confusion stale load proven in lab; no RCE, needs dev flags | Confirmed | Pending |
 | [CVE-2026-128134](CVE-2026-128134) | NLTK dot2img | 3.1 7.8 (GHSA) | NLTK before 3.10.4 | 3.10.4 | Local PATH hijack demo; README's 7.3/3.9.2 claims conflict with GHSA 7.8/3.10.4 | Confirmed | Pending |
 | [CVE-2026-130001](CVE-2026-130001) | mustache (Ruby) | 3.1 9.8 (GHSA) | mustache gem <= 1.1.2 | 1.1.3 | RCE via unrestricted method dispatch in templates; script claimed, unverified | Confirmed | Pending |
+| [CVE-2026-47884](CVE-2026-47884) | Spring Framework XsltView | 3.1 9.8 (GHSA) | Spring Framework 5.2.x–5.3.49, 6.0.x–6.0.30, 6.1.x–6.1.28, 6.2.x–6.2.19, 7.0.0–7.0.8 (XsltView + catch-all /** mapping + implicit view name) | 5.3.50 / 6.0.31 / 6.1.29 / 6.2.20 / 7.0.9 | Attacker view name resolved via XsltView; SSRF and RCE via XSLT Java extensions, unverified | Confirmed | Pending |
 
-### Database (3)
+### Database (4)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CVE-2026-118383](CVE-2026-118383) | MongoDB Server replication | unknown | 8.0.x before 8.0.37 (8.0.34 tested); 8.2.12 still reproduced at collection time | 8.0.37 (SERVER-138175, SERVER-138119) | Lab UAF crash; code execution not demonstrated | Confirmed | — No target |
 | [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | ClickHouse 26.3 < 26.3.62.3-lts, 26.8 < 26.8.36.3-lts, 26.9 < 26.9.27.3-stable, 26.10 < 26.10.3.7-stable | 26.3.62.3-lts / 26.8.36.3-lts / 26.9.27.3-stable / 26.10.3.7-stable (2026-10-30) | Unauthenticated RCE claimed; lab validates differential detection + weaponized DoS only | Confirmed | ◐ Partial |
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Confirmed | Pending |
+| [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | Auth token written plaintext to DEBUG logs; fixed in 4.16.4/5.0.2, lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (16)
+### OS / System / DevOps (19)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -135,6 +147,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129987](CVE-2026-129987) | Dokploy | 3.1 9.9 (GHSA) | Dokploy < 0.31.1 (v0.29.0-v0.31.0 per upstream version archaeology) | 0.31.1 | Auth'd RCE via DB password-change command injection; full chain claimed, unverified | Confirmed | Pending |
 | [CVE-2026-43499](CVE-2026-43499) | Linux kernel rtmutex | 3.1 7.8 (Linux kernel) | Linux kernel rtmutex path (PoC targets 4.14.186+ on realme RMX3031/MT6893) |  | Kernel LPE stage1 for realme RMX3031; root claimed, unverified | Confirmed | Pending |
 | [CVE-2026-112477](CVE-2026-112477) | Apple iOS IOSurface | 3.1 7.0 (NVD) | iOS 26.x (tested on iOS 26.4, arm64e) | iOS 26.7.2 / iPadOS 26.7.2 | iOSurface UAF stale-read primitive; research PoC, no privesc shown | Confirmed | Pending |
+| [CVE-2026-130587](CVE-2026-130587) | OpenFunction | 3.1 9.9 (GHSA) | OpenFunction through 1.2.0 | no vendor fix (upstream issue #532 OPEN) | Tenant PodSpec copied verbatim into operator workloads; node escape, no vendor fix | Confirmed | Pending |
+| [CVE-2026-126978](CVE-2026-126978) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | HAP pairing TLV8 heap overflow; adjacent-network, pre-auth, unverified | Confirmed | Pending |
+| [CVE-2026-126979](CVE-2026-126979) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | ChaCha20 length underflow skips HAP auth; adjacent-network, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.

@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (19)
+### Web / CMS (22)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -41,6 +41,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-130648](CVE-2026-130648) | WWBN AVideo | 3.1 8.7 (GHSA)；4.0 9.3 (NVD) | WWBN AVideo from 6.5 (GHSA; no fixed version listed) |  | javascript: videoLink 存储型 XSS；脚本自称，未核实 | 已确认 | 待复现 |
 | [CVE-2026-69158](CVE-2026-69158) | atomic-server | 3.1 8.6 (GHSA) | atomic-server <= 0.40.1 |  | 未授权 /bookmark 全响应 SSRF；脚本自称，未核实 | 已确认 | 待复现 |
 | [CVE-2026-69156](CVE-2026-69156) | atomic-server | 3.1 8.1 (GHSA) | atomic-server 0.30.0-0.40.1 |  | internalId 任意文件读取；PoC 的未授权说法与 GHSA 冲突 | 已确认 | 待复现 |
+| [CVE-2026-100397](CVE-2026-100397) | Rucio | 3.1 9.8 (GHSA) | Rucio server < 36.4.1 (per PoC; GHSA lists branch fixes 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1) | 36.4.1 (per PoC); GHSA branches 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1 | SSH 质询令牌可冒充任意账户；未授权管理员冒充，未核实 | 已确认 | 待复现 |
+| [CVE-2026-126967](CVE-2026-126967) | SmarterMail | 3.0 8.8 (GHSA) | SmarterMail all builds < 9735 | Build 9735 | 认证后文件存储遍历写 ASPX webshell 得 SYSTEM；脚本自称，未核实 | 已确认 | 待复现 |
+| [CVE-2026-71481](CVE-2026-71481) | altcha | 3.1 7.5 (GHSA) | altcha-org/altcha (Composer) >= 2.0.0, < 2.0.3 (GHSA; PoC claims altcha-lib <= 0.5.x) | 2.0.3 (GHSA); v0.6.0 (per PoC) | 缺失或空 HMAC 签名被接受；单请求绕过 CAPTCHA，未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (5)
 
@@ -52,7 +55,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | 经 MCP bridge terminal_execute 未认证 RCE；Exploit-DB 已验证 autopwn | 已确认 | 待复现 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP 工具调用未参数化致 SQL 注入；xp_cmdshell 自称，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (29)
+### 网络与安全 (36)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -85,8 +88,15 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-113425](CVE-2026-113425) | F5 NGINX 邮件代理 | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX 0.5.33-1.31.8 (mail proxy) | 1.30.7 / 1.31.9 | 邮件代理 UAF 崩溃（Docker 实验）；含利用脚本，未核实 | 已确认 | 待复现 |
 | [CVE-2026-118899](CVE-2026-118899) | F5 NGINX TLS 1.3 | 4.0 8.7 (F5)；3.1 7.5 (F5) | NGINX 1.13.0-1.31.8 (TLS 1.3, http block) | 1.30.7 / 1.31.9 | TLS 1.3 无限循环 DoS（Docker 实验）；含利用脚本，未核实 | 已确认 | 待复现 |
 | [CVE-2026-116442](CVE-2026-116442) | Dell PowerStore NDMP | 3.1 8.1 (GHSA) | Dell PowerStore OS <= 3.6.0.0 with NDMP enabled (per PoC README; GHSA lists no version range) | PowerStore OS 4.0.0.1 (per PoC README) | NDMP 重放认证绕过；PoC 仅展示未授权 NDMP 响应 | 已确认 | 待复现 |
+| [CVE-2026-114202](CVE-2026-114202) | ASUS Control Center Express | 4.0 10.0 (NVD) | ASUS Control Center Express all firmware versions prior to patch (PoC tested through v1.7.27) | no fixed version published | 硬编码 JWT 密钥伪造管理员令牌；密钥须自行提取，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131852](CVE-2026-131852) | OwnTracks Recorder | 3.1 9.8 (GHSA) | OwnTracks Recorder before 1.0.5 | 1.0.5 | location tid 存储型格式化字符串；指针泄露与持续 DoS（实验），未核实 | 已确认 | 待复现 |
+| [CVE-2026-92182](CVE-2026-92182) | pfSense CE | 3.0 8.8 (GHSA) | pfSense CE ≤ 2.8.1 | pfSense CE 2.8.2 | 低权限账户可调管理 XMLRPC 方法；root RCE，未核实 | 已确认 | 待复现 |
+| [CVE-2026-123640](CVE-2026-123640) | F5 NGINX ssl_preread | 3.1 5.3 (GHSA) | nginx 1.15.2–1.31.8 (ssl_preread) | 1.30.7 / 1.31.9 | ssl_preread SNI 校验不足；错误路由/越界读（Docker 实验），未核实 | 已确认 | 待复现 |
+| [CVE-2026-120993](CVE-2026-120993) | F5 NGINX stream SSL | 3.1 5.3 (GHSA) | nginx 1.31.4–1.31.8 (stream SSL + PROXY v2) | 1.31.9 | PROXY v2 + 动态证书空指针解引用；worker 崩溃（Docker 实验），未核实 | 已确认 | 待复现 |
+| [CVE-2026-125283](CVE-2026-125283) | F5 NGINX alias/try_files | 3.1 5.3 (GHSA) | nginx 0.9.6–1.31.8 (alias + try_files) | 1.30.7 / 1.31.9 | alias + try_files 整数下溢；越界读（Docker 实验），未核实 | 已确认 | 待复现 |
+| [CVE-2026-120967](CVE-2026-120967) | F5 NGINX stream SNI | 3.1 4.8 (GHSA) | nginx 1.25.5–1.31.8 (stream SNI mTLS) | 1.30.7 / 1.31.9 | stream SNI mTLS 校验时机太晚；绕过到受保护后端（实验），未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (16)
+### 运行环境 / 框架 / 浏览器 (17)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -106,16 +116,18 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126910](CVE-2026-126910) | Chrome V8 Maglev | 3.1 8.8 (NVD) | Chrome before 157.0.8103.78 | 157.0.8103.78 | 实验室证实类型混淆 stale load；未转 RCE，需开发者标志 | 已确认 | 待复现 |
 | [CVE-2026-128134](CVE-2026-128134) | NLTK dot2img | 3.1 7.8 (GHSA) | NLTK before 3.10.4 | 3.10.4 | 本地 PATH 劫持演示；README 的 7.3/3.9.2 与 GHSA 7.8/3.10.4 冲突 | 已确认 | 待复现 |
 | [CVE-2026-130001](CVE-2026-130001) | mustache (Ruby) | 3.1 9.8 (GHSA) | mustache gem <= 1.1.2 | 1.1.3 | 模板无限制方法调用致 RCE；脚本自称，未核实 | 已确认 | 待复现 |
+| [CVE-2026-47884](CVE-2026-47884) | Spring Framework XsltView | 3.1 9.8 (GHSA) | Spring Framework 5.2.x–5.3.49, 6.0.x–6.0.30, 6.1.x–6.1.28, 6.2.x–6.2.19, 7.0.0–7.0.8 (XsltView + catch-all /** mapping + implicit view name) | 5.3.50 / 6.0.31 / 6.1.29 / 6.2.20 / 7.0.9 | 攻击者视图名经 XsltView 解析；SSRF 与 XSLT Java 扩展 RCE，未核实 | 已确认 | 待复现 |
 
-### 数据库 (3)
+### 数据库 (4)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CVE-2026-118383](CVE-2026-118383) | MongoDB Server 复制 | unknown | 8.0.x before 8.0.37 (8.0.34 tested); 8.2.12 still reproduced at collection time | 8.0.37 (SERVER-138175, SERVER-138119) | 实验室 UAF 崩溃，未证实代码执行 | 已确认 | — 无目标 |
 | [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | ClickHouse 26.3 < 26.3.62.3-lts, 26.8 < 26.8.36.3-lts, 26.9 < 26.9.27.3-stable, 26.10 < 26.10.3.7-stable | 26.3.62.3-lts / 26.8.36.3-lts / 26.9.27.3-stable / 26.10.3.7-stable (2026-10-30) | 自称未认证 RCE；实验室仅验证 differential 检测 + 武器化 DoS | 已确认 | ◐ 部分 |
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | 低权限认证用户经 MozJS 模块加载器本地文件泄露；非 RCE | 已确认 | 待复现 |
+| [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | 认证令牌明文写入 DEBUG 日志；4.16.4/5.0.2 修复，实验有据 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (16)
+### 操作系统 / 系统 / DevOps (19)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -135,6 +147,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-129987](CVE-2026-129987) | Dokploy | 3.1 9.9 (GHSA) | Dokploy < 0.31.1 (v0.29.0-v0.31.0 per upstream version archaeology) | 0.31.1 | 认证后 RCE：改库密码命令注入；完整链路自称，未核实 | 已确认 | 待复现 |
 | [CVE-2026-43499](CVE-2026-43499) | Linux 内核 rtmutex | 3.1 7.8 (Linux kernel) | Linux kernel rtmutex path (PoC targets 4.14.186+ on realme RMX3031/MT6893) |  | realme RMX3031 内核提权 stage1；root 自称，未核实 | 已确认 | 待复现 |
 | [CVE-2026-112477](CVE-2026-112477) | Apple iOS IOSurface | 3.1 7.0 (NVD) | iOS 26.x (tested on iOS 26.4, arm64e) | iOS 26.7.2 / iPadOS 26.7.2 | IOSurface UAF 陈旧条目读取原语；研究型 PoC，未展示提权 | 已确认 | 待复现 |
+| [CVE-2026-130587](CVE-2026-130587) | OpenFunction | 3.1 9.9 (GHSA) | OpenFunction through 1.2.0 | no vendor fix (upstream issue #532 OPEN) | 租户 PodSpec 原样进 operator 工作负载；节点逃逸，厂商未修复 | 已确认 | 待复现 |
+| [CVE-2026-126978](CVE-2026-126978) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | HAP 配对 TLV8 堆溢出；邻接网络、未授权，未核实 | 已确认 | 待复现 |
+| [CVE-2026-126979](CVE-2026-126979) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | ChaCha20 长度下溢跳过 HAP 认证；邻接网络，未核实 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。
