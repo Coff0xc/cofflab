@@ -14,7 +14,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (11)
+### Web / CMS (14)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -29,6 +29,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119977](CVE-2026-119977) | WordPress Core | 3.1 8.1 (Wordfence) | WordPress Core 4.7.0-7.1.3 | 7.1.4 | Upgrade-window TOCTOU plants an attacker wp-config.php; configuration takeover to RCE in lab; CISA KEV 2026-11-03 | Confirmed | Pending |
 | [CVE-2026-110447](CVE-2026-110447) | Collabora Online CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | Collabora Online Built-in CODE Server (richdocumentscode) before 26.4.303 | 26.4.303 | Unauthenticated command injection via proxy.php; 1-day PoC; CISA KEV, exploited in the wild Sep-Oct 2026 | Confirmed | Pending |
 | [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | Joomla! JCE extension < 2.9.99.5 | 2.9.99.5 | Unauthenticated JCE profile creation leads to PHP upload and RCE; CISA KEV | Confirmed | Pending |
+| [CVE-2026-125423](CVE-2026-125423) | Gitea auto-init | 3.1 8.8 (NVD)；3.1 8.5 (GHSA) | Gitea before 28.4.0 (auto_init=true, Default README template) | 28.4.0 | Lab RCE via auto-init race + symlink hook overwrite; needs repo-create rights | Confirmed | Pending |
+| [CVE-2026-63219](CVE-2026-63219) | GeoNetwork | 3.1 8.6 (GHSA) | GeoNetwork before 4.4.12 / 4.2.17 | 4.4.12 / 4.2.17 | Unauth XSLT formatter upload; exploit script claims reverse shell, unexecuted here | Confirmed | Pending |
+| [CVE-2026-58400](CVE-2026-58400) | GeoNetwork | 3.1 9.1 (GHSA) | GeoNetwork before 4.4.12 / 4.2.17 | 4.4.12 / 4.2.17 | Saxon allows Java exec from XSLT; same chain as 63219, unexecuted here | Confirmed | Pending |
 
 ### AI / LLM (4)
 
@@ -39,7 +42,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | < 2.2.0 | 2.2.0 | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC | Confirmed | ◐ Partial |
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 
-### Network & Security (18)
+### Network & Security (21)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,8 +64,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-124079](CVE-2026-124079) | rConfig Core / Pro | 4.0 9.3 (VulnCheck)；3.1 9.8 (VulnCheck) | rConfig Core >= 8.0.0, < 8.2.19; rConfig Pro < 8.4.1 | rConfig Core 8.2.19 (2026-10-27); rConfig Pro 8.4.1 | Unauthenticated RCE via Redis-backed Horizon queue poisoning in lab | Confirmed | ◐ Partial |
 | [CVE-2026-121653](CVE-2026-121653) | Ivanti Endpoint Manager Core | 3.1 9.8 (Ivanti) | Ivanti EPM 2024 SU7 and prior | EPM 2024 SU8 | Unauthenticated SQLi → OS command execution via Core DB account in lab | Confirmed | ◐ Partial |
 | [CVE-2026-111585](CVE-2026-111585) | TeamViewer clients | 3.1 8.8 (TeamViewer) | TeamViewer clients prior to 15.83 (15.82.6 tested) | 15.83 (bulletin TV-2026-1011) | Viewer heap overflow + crash on real 15.82.6 binaries; RCE claimed, crash proven | Confirmed | ◐ Partial |
+| [CVE-2026-83548](CVE-2026-83548) | SonicWall SMA1000 | 3.1 10.0 (NVD) | SMA1000 6210 / 7210 / 8200v: 12.4.3-03453 and older, 12.5.0-02835 and older | 12.4.3-03526 and higher, 12.5.0-02952 and higher (platform-hotfix) | Unauth SSRF → CouchDB RCE → root chain in one toolkit; vendor confirms active exploitation, CISA KEV | Confirmed | Pending |
+| [CVE-2026-83549](CVE-2026-83549) | SonicWall SMA1000 | 3.1 7.8 (NVD) | SMA1000 6210 / 7210 / 8200v: 12.4.3-03453 and older, 12.5.0-02835 and older | 12.4.3-03526 and higher, 12.5.0-02952 and higher (platform-hotfix) | Post-auth OS command injection in AMC → root; same toolkit, CISA KEV | Confirmed | Pending |
+| [CVE-2026-123633](CVE-2026-123633) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX Open Source 1.19.7-1.30.6 and 1.31.0-1.31.8 with HTTP/2 proxying | 1.30.7 / 1.31.9 | UAF trigger + exploit script claiming ret2libc RCE, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (13)
+### Runtime / Framework / Browser (15)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -79,6 +85,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | Wasmtime < 36.0.19, 37.0.0-42.x, 43.0.0-48.0.6, 49.0.0-49.0.3 (aarch64 Cranelift) | 36.0.19, 48.0.7, 49.0.4 | aarch64 JIT sandbox escape to host code execution in lab; 5/5 on 49.0.3, rejected on 49.0.4 | Confirmed | Pending |
 | [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | PHP 5.4.0-8.5.11 | 8.2.35, 8.3.36, 8.4.27, 8.5.12 | Pre-auth RCE chains A/B/C public (D/E paywalled); lab-verified on PHP 5.4-8.5.11; CISA KEV | Confirmed | Pending |
 | [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | PHP 5.4.0-8.5.11 | 8.2.35, 8.3.36, 8.4.27, 8.5.12 | Stale-state UAF and info-leak RCE in lab; FPM worker state leaks across requests; CISA KEV | Confirmed | Pending |
+| [CVE-2026-126910](CVE-2026-126910) | Chrome V8 Maglev | 3.1 8.8 (NVD) | Chrome before 157.0.8103.78 | 157.0.8103.78 | Type-confusion stale load proven in lab; no RCE, needs dev flags | Confirmed | Pending |
+| [CVE-2026-128134](CVE-2026-128134) | NLTK dot2img | 3.1 7.8 (GHSA) | NLTK before 3.10.4 | 3.10.4 | Local PATH hijack demo; README's 7.3/3.9.2 claims conflict with GHSA 7.8/3.10.4 | Confirmed | Pending |
 
 ### Database (3)
 
@@ -88,7 +96,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | ClickHouse 26.3 < 26.3.62.3-lts, 26.8 < 26.8.36.3-lts, 26.9 < 26.9.27.3-stable, 26.10 < 26.10.3.7-stable | 26.3.62.3-lts / 26.8.36.3-lts / 26.9.27.3-stable / 26.10.3.7-stable (2026-10-30) | Unauthenticated RCE claimed; lab validates differential detection + weaponized DoS only | Confirmed | ◐ Partial |
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Confirmed | Pending |
 
-### OS / System / DevOps (11)
+### OS / System / DevOps (13)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -103,6 +111,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-53362](CVE-2026-53362) | Linux kernel IPv6 fragmentation | 3.1 7.8 (Linux kernel) | Linux kernel 6.12.x (CentOS Stream 10 / RHEL 10, e.g. 6.12.0-242.el10); __ip6_append_data() paged-allocation path | upstream commit 38becddc (fix in stable trees) | Lab container escape to root on CentOS/RHEL 10 (kernel 6.12.x); IPv4 sibling CVE-2026-53366 not covered | Confirmed | Pending |
 | [CVE-2026-97229](CVE-2026-97229) | GitLab CE/EE | 3.1 10.0 (GitLab) | GitLab CE/EE 19.2 before 19.2.8, 19.3 before 19.3.5, 19.4 before 19.4.2 | 19.2.8, 19.3.5, 19.4.2 | Unauthenticated CI-lint regex OOB write to system() as git in lab (19.4.1 CE); planting the CI config needs write access | Confirmed | Pending |
 | [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | GitLab CE/EE 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3 | 18.11.13, 19.0.10, 19.1.9, 19.2.9, 19.3.6, 19.4.3, 19.5.1 | Onigmo integer overflow triggered via .org render; oracle/differential only, no full shell demonstrated | Confirmed | Pending |
+| [CVE-2026-112611](CVE-2026-112611) | Apple CoreGraphics PDF | 3.1 6.1 (NVD) | iOS before 27.2 / 26.7.2, iPadOS before 27.2 / 26.7.2, macOS before 15.8.2 / 26.7.2 | iOS 27.2 / 26.7.2, macOS Sequoia 15.8.2 / Tahoe 26.7.2 | PDF-chosen address write primitives verified on device; no code exec yet | Confirmed | Pending |
+| [CVE-2026-99288](CVE-2026-99288) | Linux kernel TCP | 3.1 5.9 (NVD) | Linux kernel with vulnerable TCP ehash lookup (before upstream commit 4e2b3ef19e0e) | Upstream commit 4e2b3ef19e0e (inet: reject unhashed sockets during established lookups) | From-scratch race trigger rebuilt from advisory; kernel panic needs exact preemption | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
