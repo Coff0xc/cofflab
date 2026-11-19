@@ -6,9 +6,13 @@
 
 A curated collection of public PoCs for CVE and non-CVE vulnerabilities, maintained by Coff0xc. Each entry records the product, scores, dates, and what the public material actually demonstrates, with its reproduction status.
 
-Only publicly available material is collected. Ingestion is read-only and never executes anything; reproduction runs only in an isolated environment. For authorized security research and defense only.
+Only publicly available material is collected. Ingestion is read-only and never executes anything; reproduction runs only in an [isolated environment](REPRO.md). For authorized security research and defense only.
 
-**Repro:** ✅ Full — reproduced end-to-end in an isolated sandbox · ◐ Partial — partially reproduced or verified on a mock · — No target — no vulnerable target available · Pending — not yet reproduced.
+**Repro:**
+- ✅ Full — reproduced end-to-end in an isolated sandbox
+- ◐ Partial — partially reproduced or verified on a mock
+- — No target — no vulnerable target available
+- Pending — not yet reproduced
 
 ---
 
