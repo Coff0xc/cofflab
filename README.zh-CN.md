@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (60)
+### Web / CMS (64)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -82,6 +82,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133019](CVE-2026-133019) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经 Kotlin DSL 上下文参数回调远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133027](CVE-2026-133027) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经令牌认证用户名处理提权；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133089](CVE-2026-133089) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TFS 助手进程未认证命令服务；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-22309](CVE-2026-22309) | JTL-Shop | 3.1 9.3 (JTL); 4.0 8.6 (JTL) | JTL-Shop 5.6.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 (2026-11-12) | 经访客跟踪爬虫 User-Agent 存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-91115](CVE-2026-91115) | silverstripe-framework | 3.1 8.8 (GHSA) | Silverstripe Framework 6.0.0-6.2.12 | 6.2.13 | Silverstripe i18nTextCollectorTask 不安全类实例化；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133095](CVE-2026-133095) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity Hub 集成设置 CSRF；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133017](CVE-2026-133017) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经 TeamCity Git VCS 根设置远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (5)
 
@@ -93,7 +97,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | 经 MCP bridge terminal_execute 未认证 RCE；Exploit-DB 已验证 autopwn | 已确认 | 待复现 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP 工具调用未参数化致 SQL 注入；xp_cmdshell 自称，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (61)
+### 网络与安全 (66)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -158,8 +162,13 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-111505](CVE-2026-111505) | OpenManage Enterprise | 3.1 8.8 (Dell) | Dell OpenManage Enterprise versions prior to 4.8.0 | 4.8.0 (DSA-2026-467) | OpenManage Enterprise 操作系统命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-111506](CVE-2026-111506) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore 缺失认证；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-111545](CVE-2026-111545) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133323](CVE-2026-133323) | MiCollab | 3.1 10.0 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) | MiCollab AWV 盲命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133303](CVE-2026-133303) | MiCollab | 3.1 9.0 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) | MiCollab AWV XML 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133310](CVE-2026-133310) | Wing FTP Server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Wing FTP Server before 8.2.8 | 8.2.8 | Wing FTP Server NUL 字节文件掩码绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-116447](CVE-2026-116447) | PowerStore SDNAS | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | PowerStore SDNAS 本地提权；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-116411](CVE-2026-116411) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | PowerStore 服务端请求伪造；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (27)
+### 运行环境 / 框架 / 浏览器 (32)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -190,6 +199,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | 单字节编码大小写转换堆越界写 1 字节；ASAN 崩溃与 glibc 堆元数据损坏，实验有据 | 已确认 | 待复现 |
 | [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | JPEG 编码器平面转换堆越界写，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133243](CVE-2026-133243) | node-soap | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | node-soap before 1.14.1 | 1.14.1 | WSDL.xmlToObject 原型污染；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-71164](CVE-2026-71164) | Helidon | 3.1 9.8 (Oracle) | Helidon 3.0.0-3.2.17 (Imperative Web Server) | 3.2.18 (Oracle CSPU Aug 2026) | Helidon 命令式 Web 服务器远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133307](CVE-2026-133307) | ClassiCube | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | ClassiCube before 1.4.0 | 1.4.0 | ClassiCube Png_Decode 堆越界写；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-116499](CVE-2026-116499) | Qiskit SDK | 3.1 8.4 (IBM) | Qiskit SDK v1.4.2-v2.6.2 | 2.6.2 (IBM patched release) | Qiskit SDK QPY 加载反序列化远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133254](CVE-2026-133254) | IntelliJ IDEA | 3.1 8.3 (JetBrains) | IntelliJ IDEA before 2026.3, 2026.2.4 | 2026.3 / 2026.2.4 | 经 IntelliJ IDEA 代码来源插件代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130886](CVE-2026-130886) | @fastify/reply-from | 3.1 8.2 (GHSA) | @fastify/reply-from 12.8.1-12.8.3 | 12.8.4 | @fastify/reply-from 代理路径遍历；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### 数据库 (8)
 
@@ -204,7 +218,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT 超时后带未读回复的连接回池；跨请求数据泄露，未核实 | 已确认 | 待复现 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | 远程集群接口鉴权前反序列化致未授权递归 DoS；实验有据 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (25)
+### 操作系统 / 系统 / DevOps (26)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -233,6 +247,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-13043](CVE-2026-13043) | WatchGuard 终端安全 | 4.0 9.3 (WatchGuard) | WatchGuard Endpoint Security < 8.00.26.0012 (Windows) | 8.00.26.0012 | 本地管理员伪造驱动握手直达特权 IOCTL；读 MSR 破 KASLR、任意进程内存读取 | 已确认 | 待复现 |
 | [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | hydra-http-form.c 的 Set-Cookie 解析栈越界写；恶意服务端可致 Hydra 客户端崩溃，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133305](CVE-2026-133305) | sqlmap | 4.0 2.3 (VulnCheck); 3.1 4.3 (VulnCheck) | sqlmap before 1.10.11.89 | 1.10.11.89 | 跨站重定向泄露 Cookie 与 Authorization 头，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133189](CVE-2026-133189) | Cinder | 3.1 9.6 (Red Hat) | OpenStack Cinder with SSH-based storage drivers | Upstream patch proposed, no fixed release published (2026-11-19) | Cinder SSH 存储驱动命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。

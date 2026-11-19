@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (60)
+### Web / CMS (64)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -82,6 +82,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133019](CVE-2026-133019) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Remote code execution via Kotlin DSL context parameters callback; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133027](CVE-2026-133027) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Privilege escalation via username handling in token authentication; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133089](CVE-2026-133089) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Unauthenticated command server in TFS helper process; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-22309](CVE-2026-22309) | JTL-Shop | 3.1 9.3 (JTL); 4.0 8.6 (JTL) | JTL-Shop 5.6.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 (2026-11-12) | Stored XSS via visitor-tracking crawler User-Agent; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-91115](CVE-2026-91115) | silverstripe-framework | 3.1 8.8 (GHSA) | Silverstripe Framework 6.0.0-6.2.12 | 6.2.13 | Unsafe class instantiation in Silverstripe i18nTextCollectorTask; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133095](CVE-2026-133095) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | CSRF on TeamCity Hub integration settings; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133017](CVE-2026-133017) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Remote code execution via TeamCity Git VCS root settings; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -93,7 +97,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (61)
+### Network & Security (66)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -158,8 +162,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-111505](CVE-2026-111505) | OpenManage Enterprise | 3.1 8.8 (Dell) | Dell OpenManage Enterprise versions prior to 4.8.0 | 4.8.0 (DSA-2026-467) | OS command injection in OpenManage Enterprise; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-111506](CVE-2026-111506) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | Missing authentication in PowerStore; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-111545](CVE-2026-111545) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | SQL injection in PowerStore; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133323](CVE-2026-133323) | MiCollab | 3.1 10.0 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) | Blind command injection in MiCollab AWV; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133303](CVE-2026-133303) | MiCollab | 3.1 9.0 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) | XML injection in MiCollab AWV; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133310](CVE-2026-133310) | Wing FTP Server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Wing FTP Server before 8.2.8 | 8.2.8 | NUL-byte file mask bypass in Wing FTP Server; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116447](CVE-2026-116447) | PowerStore SDNAS | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Local privilege escalation in PowerStore SDNAS; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116411](CVE-2026-116411) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Server-side request forgery in PowerStore; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (27)
+### Runtime / Framework / Browser (32)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -190,6 +199,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | One-byte heap OOB write in single-byte case conversion; ASAN crash and glibc chunk corruption, lab evidence | Confirmed | Pending |
 | [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | Heap buffer overflow in JPEG encoder planar conversion; crash PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133243](CVE-2026-133243) | node-soap | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | node-soap before 1.14.1 | 1.14.1 | Prototype pollution in WSDL.xmlToObject; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-71164](CVE-2026-71164) | Helidon | 3.1 9.8 (Oracle) | Helidon 3.0.0-3.2.17 (Imperative Web Server) | 3.2.18 (Oracle CSPU Aug 2026) | Remote code execution in Helidon Imperative Web Server; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133307](CVE-2026-133307) | ClassiCube | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | ClassiCube before 1.4.0 | 1.4.0 | Heap-based out-of-bounds write in ClassiCube Png_Decode; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116499](CVE-2026-116499) | Qiskit SDK | 3.1 8.4 (IBM) | Qiskit SDK v1.4.2-v2.6.2 | 2.6.2 (IBM patched release) | Deserialization RCE in Qiskit SDK QPY loading; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133254](CVE-2026-133254) | IntelliJ IDEA | 3.1 8.3 (JetBrains) | IntelliJ IDEA before 2026.3, 2026.2.4 | 2026.3 / 2026.2.4 | Code execution via IntelliJ IDEA Code Provenance plugin; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130886](CVE-2026-130886) | @fastify/reply-from | 3.1 8.2 (GHSA) | @fastify/reply-from 12.8.1-12.8.3 | 12.8.4 | Path traversal in @fastify/reply-from proxy; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
@@ -204,7 +218,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (25)
+### OS / System / DevOps (26)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -233,6 +247,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-13043](CVE-2026-13043) | WatchGuard Endpoint Security | 4.0 9.3 (WatchGuard) | WatchGuard Endpoint Security < 8.00.26.0012 (Windows) | 8.00.26.0012 | Local admin forges driver handshake for privileged IOCTLs; MSR read defeats KASLR, arbitrary process memory read | Confirmed | Pending |
 | [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | Stack buffer overflow via Set-Cookie parsing in hydra-http-form.c; malicious server crashes the Hydra client, unverified | Confirmed | Pending |
 | [CVE-2026-133305](CVE-2026-133305) | sqlmap | 4.0 2.3 (VulnCheck); 3.1 4.3 (VulnCheck) | sqlmap before 1.10.11.89 | 1.10.11.89 | Cross-host redirects leak Cookie/Authorization headers; local demo PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133189](CVE-2026-133189) | Cinder | 3.1 9.6 (Red Hat) | OpenStack Cinder with SSH-based storage drivers | Upstream patch proposed, no fixed release published (2026-11-19) | Command injection in Cinder SSH-based storage drivers; detection-only PoC, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.

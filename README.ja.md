@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (60)
+### Web / CMS (64)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -82,6 +82,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133019](CVE-2026-133019) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Kotlin DSL コンテキストパラメータコールバック経由のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133027](CVE-2026-133027) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | トークン認証のユーザ名処理による権限昇格；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133089](CVE-2026-133089) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TFS ヘルパープロセスの未認証コマンドサーバ；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-22309](CVE-2026-22309) | JTL-Shop | 3.1 9.3 (JTL); 4.0 8.6 (JTL) | JTL-Shop 5.6.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 (2026-11-12) | 訪問者トラッキングのクローラ User-Agent 経由の格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-91115](CVE-2026-91115) | silverstripe-framework | 3.1 8.8 (GHSA) | Silverstripe Framework 6.0.0-6.2.12 | 6.2.13 | Silverstripe i18nTextCollectorTask の安全でないクラスインスタンス化；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133095](CVE-2026-133095) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity Hub 統合設定の CSRF；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133017](CVE-2026-133017) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | TeamCity Git VCS ルート設定経由のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (5)
 
@@ -93,7 +97,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | MCP bridge の terminal_execute による未認証 RCE；Exploit-DB で検証済み autopwn | 確認済み | 未実施 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP ツール呼び出しの未パラメータ化による SQLi；xp_cmdshell は主張のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (61)
+### ネットワークとセキュリティ (66)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -158,8 +162,13 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-111505](CVE-2026-111505) | OpenManage Enterprise | 3.1 8.8 (Dell) | Dell OpenManage Enterprise versions prior to 4.8.0 | 4.8.0 (DSA-2026-467) | OpenManage Enterprise の OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-111506](CVE-2026-111506) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore の認証欠如；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-111545](CVE-2026-111545) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore の SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133323](CVE-2026-133323) | MiCollab | 3.1 10.0 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) | MiCollab AWV のブラインドコマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133303](CVE-2026-133303) | MiCollab | 3.1 9.0 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) | MiCollab AWV の XML インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133310](CVE-2026-133310) | Wing FTP Server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Wing FTP Server before 8.2.8 | 8.2.8 | Wing FTP Server の NUL バイトファイルマスク回避；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116447](CVE-2026-116447) | PowerStore SDNAS | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | PowerStore SDNAS のローカル権限昇格；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116411](CVE-2026-116411) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | PowerStore のサーバサイドリクエストフォージェリ；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (27)
+### ランタイム / フレームワーク / ブラウザ (32)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -190,6 +199,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | シングルバイトエンコーディングの大文字小文字変換でヒープ範囲外書き込み 1 バイト；ASAN クラッシュと glibc チャンク破損、ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | JPEG エンコーダの平面変換でのヒープバッファオーバーフロー、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133243](CVE-2026-133243) | node-soap | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | node-soap before 1.14.1 | 1.14.1 | WSDL.xmlToObject のプロトタイプ汚染；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-71164](CVE-2026-71164) | Helidon | 3.1 9.8 (Oracle) | Helidon 3.0.0-3.2.17 (Imperative Web Server) | 3.2.18 (Oracle CSPU Aug 2026) | Helidon Imperative Web Server のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133307](CVE-2026-133307) | ClassiCube | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | ClassiCube before 1.4.0 | 1.4.0 | ClassiCube Png_Decode のヒープ範囲外書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116499](CVE-2026-116499) | Qiskit SDK | 3.1 8.4 (IBM) | Qiskit SDK v1.4.2-v2.6.2 | 2.6.2 (IBM patched release) | Qiskit SDK QPY ロードのデシリアライゼーションによるリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133254](CVE-2026-133254) | IntelliJ IDEA | 3.1 8.3 (JetBrains) | IntelliJ IDEA before 2026.3, 2026.2.4 | 2026.3 / 2026.2.4 | IntelliJ IDEA Code Provenance プラグイン経由のコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130886](CVE-2026-130886) | @fastify/reply-from | 3.1 8.2 (GHSA) | @fastify/reply-from 12.8.1-12.8.3 | 12.8.4 | @fastify/reply-from プロキシのパストラバーサル；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### データベース (8)
 
@@ -204,7 +218,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT タイムアウト後に未読応答付き接続がプールへ；リクエスト横断のデータ漏洩、未検証 | 確認済み | 未実施 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | リモートクラスターサーバーの認証前デシリアライズによる未認証再帰 DoS；ラボ証拠あり | 確認済み | 未実施 |
 
-### OS / システム / DevOps (25)
+### OS / システム / DevOps (26)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -233,6 +247,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-13043](CVE-2026-13043) | WatchGuard エンドポイントセキュリティ | 4.0 9.3 (WatchGuard) | WatchGuard Endpoint Security < 8.00.26.0012 (Windows) | 8.00.26.0012 | ローカル管理者がドライバハンドシェイクを偽造し特権 IOCTL へ；MSR 読み取りで KASLR を回避、任意プロセスメモリ読み取り | 確認済み | 未実施 |
 | [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | hydra-http-form.c の Set-Cookie 解析でスタックバッファオーバーフロー；悪意あるサーバが Hydra クライアントをクラッシュ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133305](CVE-2026-133305) | sqlmap | 4.0 2.3 (VulnCheck); 3.1 4.3 (VulnCheck) | sqlmap before 1.10.11.89 | 1.10.11.89 | クロスホストリダイレクトによる Cookie / Authorization ヘッダの漏洩、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133189](CVE-2026-133189) | Cinder | 3.1 9.6 (Red Hat) | OpenStack Cinder with SSH-based storage drivers | Upstream patch proposed, no fixed release published (2026-11-19) | Cinder SSH ストレージドライバのコマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。
