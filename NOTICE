@@ -1,0 +1,25 @@
+Third-party snapshots in this repository keep their original licenses.
+
+CVE-2026-114938
+  sources/ikow-poc              MIT  Copyright (c) 2026 Qi Deng
+                                https://github.com/ikow/java4shell-poc
+  sources/douglasmun-lab        MIT  Copyright (c) 2026 Douglas Mun
+                                https://github.com/douglasmun/CVE-2026-114938_Java4Shell_lab
+  sources/r3dvei1-kit           MIT  Copyright (c) 2026 java4shell contributors
+                                https://github.com/r3dvei1/java4shell
+  sources/arkrwn-crashleak      license unknown
+                                https://github.com/arkrwn/PoC-CVE-2026-114938-CrashLeak
+  sources/ashrafzaryouh-version-check  license unknown
+                                https://github.com/ashrafzaryouh/CVE-2026-114938
+
+CVE-2026-118383
+  sources/googlesky             MIT  Copyright (c) 2026 Lê Hiếu
+                                https://github.com/googlesky/CVE-2026-118383
+
+CVE-2026-123007
+  sources/sfewer-r7             license unknown
+                                https://github.com/sfewer-r7/CVE-2026-123007
+
+CVE-2026-123488
+  sources/fixedbyreboot         MIT  Copyright (c) 2026 fixedbyreboot
+                                https://github.com/fixedbyreboot/CVE-2026-123488-POC
