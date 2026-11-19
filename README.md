@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (64)
+### Web / CMS (70)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -86,8 +86,14 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-91115](CVE-2026-91115) | silverstripe-framework | 3.1 8.8 (GHSA) | Silverstripe Framework 6.0.0-6.2.12 | 6.2.13 | Unsafe class instantiation in Silverstripe i18nTextCollectorTask; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133095](CVE-2026-133095) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | CSRF on TeamCity Hub integration settings; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133017](CVE-2026-133017) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Remote code execution via TeamCity Git VCS root settings; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-72898](CVE-2026-72898) | Metabase | 3.1 10.0 (GHSA); 4.0 10.0 (GHSA) | Metabase 58.0-<58.24, 59.0-<59.21, 60.0-<60.17, 61.0-<61.11, 62.0-<62.9, 63.0-<63.5 | 58.24 / 59.21 / 60.17 / 61.11 / 62.9 / 63.5 | Unauthenticated SQL injection leading to admin access; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-21962](CVE-2026-21962) | Oracle HTTP Server | 3.1 10.0 (Oracle) | Oracle HTTP Server 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 | Oracle Critical Patch Update January 2026 | Authentication bypass in Oracle HTTP Server / WebLogic Proxy Plug-in; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-105899](CVE-2026-105899) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | Unrestricted file upload leading to RCE in ColdFusion; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133083](CVE-2026-133083) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Stored XSS in TeamCity Server Health reports; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133091](CVE-2026-133091) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Stored XSS on TeamCity Users page; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-22310](CVE-2026-22310) | JTL-Shop | 3.1 8.0 (JTL); 4.0 7.6 (JTL) | JTL-Shop 5.5.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (2026-11-11) | Stored XSS via 404 redirect table in JTL-Shop; detection-only PoC, unverified | Confirmed | Pending |
 
-### AI / LLM (5)
+### AI / LLM (6)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -96,8 +102,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | < 2.2.0 | 2.2.0 | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC | Confirmed | ◐ Partial |
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
+| [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | Unauthenticated RCE via agent scratchpad exec(); detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (66)
+### Network & Security (73)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -167,8 +174,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133310](CVE-2026-133310) | Wing FTP Server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Wing FTP Server before 8.2.8 | 8.2.8 | NUL-byte file mask bypass in Wing FTP Server; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-116447](CVE-2026-116447) | PowerStore SDNAS | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Local privilege escalation in PowerStore SDNAS; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-116411](CVE-2026-116411) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Server-side request forgery in PowerStore; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-76460](CVE-2026-76460) | Identity Services Engine | 3.1 10.0 (Cisco) | Cisco ISE 3.1-3.5 and ISE-PIC 3.4-3.5 | 3.1 Patch 12 / 3.2 Patch 11 / 3.3 Patch 12 / 3.4 Patch 7 / 3.5 Patch 4 (2026-09-16) | Authentication bypass in Cisco ISE API; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-84295](CVE-2026-84295) | WS_FTP Server | 3.1 10.0 (Progress) | Progress WS_FTP Server before 2024.0.6 / 2025.0.3 | 2024.0.6 / 2025.0.3 | Missing authentication in WS_FTP Server; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-77537](CVE-2026-77537) | UniFi Protect | 3.1 10.0 (UI) | UniFi Protect Application before 7.2.105 | 7.2.105 | Command injection in UniFi Protect Application; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-95787](CVE-2026-95787) | ArubaOS (AOS-10) | 3.1 10.0 (HPE) | ArubaOS AOS-10 10.8.1.1 and below, 10.7.2.6 and below, 10.4.1.13 and below | 10.8.1.2 / 10.7.2.7 / 10.4.1.14 and above (HPE SBNW05162) | Authentication bypass in ArubaOS PAPI protocol; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-111507](CVE-2026-111507) | PowerStore | 3.1 8.1 (Dell) | Dell PowerStore versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Authorization bypass in Dell PowerStore; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-111547](CVE-2026-111547) | PowerStore | 3.1 8.1 (Dell) | Dell PowerStore versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Out-of-bounds read in Dell PowerStore; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116417](CVE-2026-116417) | PowerScale InsightIQ | 3.1 8.1 (Dell) | Dell PowerScale InsightIQ 6.3.0-6.4.0 | 6.4.1 (DSA-2026-480) | Weak password requirements in Dell PowerScale InsightIQ; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (32)
+### Runtime / Framework / Browser (33)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -204,6 +218,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-116499](CVE-2026-116499) | Qiskit SDK | 3.1 8.4 (IBM) | Qiskit SDK v1.4.2-v2.6.2 | 2.6.2 (IBM patched release) | Deserialization RCE in Qiskit SDK QPY loading; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133254](CVE-2026-133254) | IntelliJ IDEA | 3.1 8.3 (JetBrains) | IntelliJ IDEA before 2026.3, 2026.2.4 | 2026.3 / 2026.2.4 | Code execution via IntelliJ IDEA Code Provenance plugin; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130886](CVE-2026-130886) | @fastify/reply-from | 3.1 8.2 (GHSA) | @fastify/reply-from 12.8.1-12.8.3 | 12.8.4 | Path traversal in @fastify/reply-from proxy; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92937](CVE-2026-92937) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.11.6 | 3.11.7 | Sandbox escape leading to RCE in vm2; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
