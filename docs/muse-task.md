@@ -1,6 +1,6 @@
 # Muse 云电脑任务
 
-这是 **Coff0xc 自己的 CVE 策展库**。机器人是 Muse，跑在它自己的 Linux 云电脑上。权威规范：[ingest-spec.md](ingest-spec.md)。技能文件：`.agents/skills/cve-ingest/SKILL.md`。
+这是 **Coff0xc 自己的 CVE 策展库**。机器人是 Muse，跑在它自己的 Linux 云电脑上。权威规范：[ingest-spec.md](ingest-spec.md)。本仓库不放 `.agents/` 或 SKILL.md。
 
 Grok 工作流 `.grok/workflows/ingest-cve.rhai` 只在本机 Grok Build 里编排，Muse 不跑它。
 
@@ -24,7 +24,7 @@ gh auth setup-git
 
 token 用 fine-grained PAT：只授权仓库 `Coff0xc/cve-poc`，Contents 读+写。登录成功后 `git push --ff-only` 才能通。
 
-Muse Code 会读仓库里的 `.agents/skills/cve-ingest/SKILL.md`。消费端 Muse（App/网页）没有技能安装：把该文件全文贴进对话，说「以后收录 CVE 都按这个技能做」。
+收录流程以 `docs/ingest-spec.md` 为准。不要往仓库里写 `.agents/` 或 SKILL.md。
 
 ## Goal（贴进 Muse）
 
@@ -33,7 +33,7 @@ Muse Code 会读仓库里的 `.agents/skills/cve-ingest/SKILL.md`。消费端 Mu
 我授权你在这台云电脑上自动：改造目录 → python tools/check_layout.py → 通过就 commit 并 git push --ff-only origin main。
 不要再用非 git 的 staging 目录。没有 clone 就：git clone https://github.com/Coff0xc/cve-poc.git
 
-每次我给你一个 CVE ID 和源 URL，按 .agents/skills/cve-ingest/SKILL.md 和 docs/ingest-spec.md 做完全程，不要中途再问「能不能写/提交/推送」：
+每次我给你一个 CVE ID 和源 URL，按 docs/ingest-spec.md 做完全程，不要中途再问「能不能写/提交/推送」：
 - 只 git clone + 拷文件。禁止执行任何 PoC、exploit.py、poc.py、run.sh、docker compose、扫描器。
 - 嵌进 CVE-YYYY-N/sources/<author>-<slug>/。CVE 根目录只放 README.md、meta.yaml、sources/。
 - 钉 40 位 commit。CVSS 必须有 version + score + source，没有就 unknown。

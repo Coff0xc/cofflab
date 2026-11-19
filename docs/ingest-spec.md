@@ -10,7 +10,7 @@
 - 不改上游 PoC 逻辑，不补利用链，不修 exploit 让它「更能打」。
 - 不把上游 README 放到 CVE 根目录。
 - 不编 CVSS、日期、影响面。没有出处就写 `unknown`。
-- 不把 `CLAUDE.md`、`AGENTS.md`、`.cursor/`、`.grok/` 收进来。
+- 不把 `CLAUDE.md`、`AGENTS.md`、`.cursor/`、`.grok/`、`.agents/` 收进来。
 - 不把单源文件直接摊在 `CVE-*/` 根下。
 
 ## 1. 目标布局
@@ -131,7 +131,7 @@ maturity: crash             # version-check | trigger | crash | leak | lab | rce
 
 删这些（匹配到就删，记入 `dropped`）：
 
-- `CLAUDE.md`、`AGENTS.md`、`GEMINI.md`、`.cursor/`、`.grok/`、`.vscode/`
+- `CLAUDE.md`、`AGENTS.md`、`GEMINI.md`、`.cursor/`、`.grok/`、`.agents/`、`.vscode/`
 - `.git/`（嵌套仓库）
 - `__pycache__/`、`.venv/`、`node_modules/`、`*.pyc`
 - 社交媒体 HTML/通告稿导出（标题带 `alert`、LinkedIn、Substack export 且不是 PoC）
