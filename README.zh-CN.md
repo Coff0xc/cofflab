@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (74)
+### Web / CMS (75)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -96,8 +96,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-106624](CVE-2026-106624) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion 代码注入远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-22308](CVE-2026-22308) | JTL-Shop | 3.1 9.3 (ENISA); 4.0 8.6 (ENISA) | JTL-Shop 5.0.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (JTL advisory 2026-11-12) | JTL-Shop OPC 预览模式反射 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130158](CVE-2026-130158) | RepoManager | 3.1 9.0 (GitHub) | RepoManager <5.13.3 | 5.13.3 | RepoManager 存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130236](CVE-2026-130236) | Auth0 Authorization Extension | 3.1 8.5 (Okta) | Auth0 Authorization Extension <2.13 | 2.13 | Auth0 授权扩展认证绕过与规则注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### AI / LLM (6)
+### AI / LLM (8)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -107,8 +108,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | 经 MCP bridge terminal_execute 未认证 RCE；Exploit-DB 已验证 autopwn | 已确认 | 待复现 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP 工具调用未参数化致 SQL 注入；xp_cmdshell 自称，未核实 | 已确认 | 待复现 |
 | [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | 未授权远程代码执行（Agent scratchpad exec()）；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core 未设防数据/文件模块任意文件写入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core http.paginate 二阶 SSRF；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (82)
+### 网络与安全 (89)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -194,8 +197,15 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-87977](CVE-2026-87977) | Guardium Data Protection | 3.1 9.8 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-76536](CVE-2026-76536) | Splunk Enterprise | 3.1 9.4 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.16 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.17 (SVD-2026-1103) | Splunk Enterprise 集群配置认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-76535](CVE-2026-76535) | Splunk Enterprise | 3.1 9.1 (Splunk) | Splunk Enterprise 10.6.0.5, 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.16 | 10.6.1 / 10.4.5 / 10.2.9 / 10.0.12 / 9.4.17 (SVD-2026-1103) | Splunk Enterprise RapidDiag 认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-82339](CVE-2026-82339) | Guardium Data Protection | 3.1 9.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection SharePoint S-TAP 缺失认证；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-76538](CVE-2026-76538) | Splunk Enterprise | 3.1 8.8 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.15 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.16 (SVD-2026-1103) | Splunk Enterprise 数据模型加速 SPL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-76540](CVE-2026-76540) | Splunk Enterprise | 3.1 8.8 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.16 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.17 (SVD-2026-1103) | Splunk Enterprise 指标告警不当授权；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-84273](CVE-2026-84273) | Guardium Data Protection | 3.1 8.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection 数据源路径遍历；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-85018](CVE-2026-85018) | Guardium Data Protection | 3.1 8.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection Terraform 提供方证书校验缺失；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-82342](CVE-2026-82342) | Guardium Data Protection | 3.1 8.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection PROXY 协议头栈溢出；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-76544](CVE-2026-76544) | Splunk Enterprise | 3.1 8.1 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.15 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.16 (SVD-2026-1103) | Splunk Enterprise 指标告警过滤器 SPL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (50)
+### 运行环境 / 框架 / 浏览器 (55)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -249,6 +259,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-92950](CVE-2026-92950) | vm2 | 3.1 8.6 (VulnCheck); 4.0 9.3 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | vm2 CLI 沙箱逃逸；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-92954](CVE-2026-92954) | vm2 | 3.1 8.6 (VulnCheck); 4.0 9.2 (VulnCheck) | vm2 3.10.0-3.11.7 | 3.11.8 | vm2 宿主 Promise 拒绝服务；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-92958](CVE-2026-92958) | vm2 | 3.1 8.5 (VulnCheck); 4.0 8.4 (VulnCheck) | vm2 through 3.11.6 | 3.11.7 | vm2 fs/promises 拒绝列表绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92943](CVE-2026-92943) | AWS IoT Device SDK for Python | 3.1 8.1 (AMZN); 4.0 9.2 (AMZN) | AWS IoT Device SDK for Python 1.5.3-1.6.0 | 1.6.1 | AWS IoT Device SDK 证书主机名校验缺失；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130235](CVE-2026-130235) | Okta .NET SDK Abstractions | 3.1 8.7 (Okta) | Okta .NET SDK Abstractions 1.0.0-beta-4.0.7 | 4.0.8 | Okta .NET SDK 请求 URL 校验缺失（SSWS 令牌外泄）；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130179](CVE-2026-130179) | Okta .NET SDK Abstractions | 3.1 8.5 (Okta) | Okta .NET SDK Abstractions 3.0.0-4.0.7 | 4.0.8 | Okta .NET SDK 凭据覆盖；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-61798](CVE-2026-61798) | netty-incubator-codec-ohttp | 3.1 8.1 (GitHub) | netty-incubator-codec-ohttp <0.0.23.Final | 0.0.23.Final | netty-incubator-codec-ohttp HPKE 私钥泄露；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130234](CVE-2026-130234) | Okta Swift Management SDK | 3.1 8.0 (Okta) | Okta Swift Management SDK <0.1.1 | 0.1.1 | Okta Swift SDK 路径参数编码缺失；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### 数据库 (8)
 
