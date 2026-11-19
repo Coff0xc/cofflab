@@ -8,7 +8,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-| CVE | Product | Score | Assessment |
+| ID | Product | Score | Assessment |
 | --- | --- | --- | --- |
 | [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8 (public README, vendor advisory not verified) | Patch-diff analysis + local verification; no ready-made remote exploit |
 | [CVE-2026-40217](CVE-2026-40217) | BerriAI LiteLLM | 3.1 8.8 PR:L (public README) | Authenticated lab RCE; requires an API key |

@@ -8,7 +8,7 @@ Coff0xc が管理する CVE 脆弱性と公開 PoC のキュレーション集�
 
 ## 目次
 
-| CVE | 製品 | スコア | 評価 |
+| ID | 製品 | スコア | 評価 |
 | --- | --- | --- | --- |
 | [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8（公開 README、ベンダー公告未確認） | パッチ差分分析 + ローカル検証；そのまま使えるリモート exploit はない |
 | [CVE-2026-40217](CVE-2026-40217) | BerriAI LiteLLM | 3.1 8.8 PR:L（公開 README） | 認証後のラボ RCE；API キーが必要 |
