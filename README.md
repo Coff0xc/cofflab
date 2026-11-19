@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (33)
+### Web / CMS (38)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -55,6 +55,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126269](CVE-2026-126269) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | Stored XSS via substring MIME allow-list rendering text/html attachments same-origin; fixed in 2026.09.0 | Confirmed | Pending |
 | [CVE-2026-126274](CVE-2026-126274) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.08.1 | 2026.08.1 | Stored XSS via table/column titles rendered through innerHTML in the deletion dialog; fixed in 2026.08.1 | Confirmed | Pending |
 | [CVE-2026-126273](CVE-2026-126273) | NocoDB | 4.0 9.2 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | First unauthenticated signup claims super admin via incomplete admin bootstrap; fixed in 2026.09.0 | Confirmed | Pending |
+| [CVE-2026-126937](CVE-2026-126937) | Zipline | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | Zipline ≤ 4.6.4 | 4.6.5 | TOCTOU in POST /api/setup creates 15 SUPERADMINs on fresh installs; lab-verified, unverified here | Confirmed | Pending |
+| [CVE-2026-124020](CVE-2026-124020) | Control Web Panel | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | CWP < 1.30.6 (CWP and CWPpro) | 1.30.6 | Host-header reset poisoning captures recovery codes; account takeover, RCE claimed, unverified | Confirmed | Pending |
+| [CVE-2026-119258](CVE-2026-119258) | Swipe WordPress plugin | 3.1 8.1 (GHSA) | Swipe WordPress plugin <= 1.4 | no vendor patch at disclosure | Unauthenticated AJAX handler issues a session cookie for any active session; admin takeover, unverified | Confirmed | Pending |
+| [CVE-2026-100105](CVE-2026-100105) | Grafana | 3.1 7.7 (GHSA) | Grafana 12.4.0–12.4.13, 13.0.0–13.0.11, 13.1.0–13.1.8, 13.2.0–13.2.4 | 12.4.14 / 13.0.12 / 13.1.9 / 13.2.5 | Contact-point auth bypass via legacy schema downgrade; alert payloads redirected, lab evidence | Confirmed | Pending |
+| [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | Read-only host-org member creates SUPERUSER accounts with one POST; lab evidence | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -66,7 +71,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (44)
+### Network & Security (48)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,8 +119,12 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126147](CVE-2026-126147) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6, 7.4.0–7.4.8, 7.2.0–7.2.9 | 8.0.2 / 7.6.7 / 7.4.9; migrate off 7.2 | Management interface path traversal allows arbitrary file write leading to command execution; fixed in 8.0.2/7.6.7/7.4.9 | Confirmed | Pending |
 | [CVE-2026-126148](CVE-2026-126148) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6 | 8.0.2 / 7.6.7 | HA join-request OS command injection via hostname/peer-ip fields; fixed in 8.0.2/7.6.7 | Confirmed | Pending |
 | [CVE-2026-129352](CVE-2026-129352) | TRENDnet TEW-657BRM | 4.0 9.4 (VulDB) | TEW-657BRM v1.0R firmware 1.00.1 | none (EOL, no vendor fix) | Authenticated stack overflow in upgrade_flash.cgi via unbounded strncpy of multipart first line; EOL, no vendor fix | Confirmed | Pending |
+| [CVE-2026-114550](CVE-2026-114550) | libwebsockets | 3.0 8.1 (GHSA) | libwebsockets v4.2–v4.5.8 (MQTT client role) | 5.0.0 | MQTT PUBACK OOB write rewrites list and function pointers; lab-verified, unverified here | Confirmed | Pending |
+| [CVE-2026-129355](CVE-2026-129355) | dufs | 4.0 6.9 (VulnDB); 3.1 6.5 (VulnDB) | dufs 0.1.0–0.46.0 | 0.47.0 | WebDAV COPY overwrites existing files without delete permission; lab-verified | Confirmed | Pending |
+| [CVE-2026-129359](CVE-2026-129359) | Magma orc8r | 4.0 5.5 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | Hard-coded inter-service credential authenticates any gRPC caller as trusted; lab evidence | Confirmed | Pending |
+| [CVE-2026-129360](CVE-2026-129360) | Magma orc8r | 4.0 6.9 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | Operator identity follows spoofable X-Magma-Client-Cert-Serial header; lab evidence | Confirmed | Pending |
 
-### Runtime / Framework / Browser (22)
+### Runtime / Framework / Browser (24)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -141,8 +150,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-121265](CVE-2026-121265) | SQL::Abstract | 3.1 9.8 (GHSA) | SQL::Abstract < 2.000003 | 2.000003 | Arrayref column values treated as literal SQL in insert/update/generate; unauthenticated injection; fixed in 2.000003 | Confirmed | Pending |
 | [CVE-2026-107360](CVE-2026-107360) | rubygem-safemode | 3.1 9.6 (Red Hat) | rubygem-safemode through 2.0.3; Red Hat Satellite 6.16–6.18 | upstream PR #75 (unmerged); rubygem-safemode 1.5.0-3.el8sat / 1.5.0-3.el9sat | Compound-assignment expressions bypass safemode Jail allow-list, executing arbitrary no-arg methods; upstream fix PR unmerged | Confirmed | Pending |
 | [CVE-2026-128027](CVE-2026-128027) | FrankenPHP | 4.0 9.3 (VulnCheck) | FrankenPHP images built before 2026-02-04 (< 1.1.11) | 1.1.11 | Stale base-image layers ship a pre-auth CMS stack-overflow libcrypto; fixed in 1.1.11 | Confirmed | Pending |
+| [CVE-2026-128014](CVE-2026-128014) | FrankenPHP | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | FrankenPHP 1.13.1 (Brotli 1.2.0); all builds shipping Brotli < 1.2.1 | 1.13.2 (Brotli 1.2.1) | Bundled Brotli 1.2.0 non-terminating decode loop; unauthenticated worker DoS, lab-verified | Confirmed | Pending |
+| [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF with full SOAP response exfiltration; lab-verified | Confirmed | Pending |
 
-### Database (5)
+### Database (8)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -151,8 +162,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Confirmed | Pending |
 | [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | Auth token written plaintext to DEBUG logs; fixed in 4.16.4/5.0.2, lab evidence | Confirmed | Pending |
 | [CVE-2026-116244](CVE-2026-116244) | pgAdmin 4 | 3.1 9.6 (NVD)；4.0 7.1 (PostgreSQL) | pgAdmin 4 ≤ 9.18 | 9.19 (2026-10-29) | Service-mode libpq uses the pgAdmin service account Kerberos credentials against attacker databases; fixed in 9.19 | Confirmed | Pending |
+| [CVE-2026-126837](CVE-2026-126837) | MongoDB Node.js driver | 4.0 9.1 (MongoDB); 3.1 7.4 (MongoDB) | MongoDB Node.js driver 3.3.3 to < 7.8.0 | 7.8.0 | SRV parent-domain check bypass redirects DB traffic to attacker host; credential leak, lab evidence | Confirmed | Pending |
+| [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
+| [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (20)
+### OS / System / DevOps (21)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -176,6 +190,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126978](CVE-2026-126978) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | HAP pairing TLV8 heap overflow; adjacent-network, pre-auth, unverified | Confirmed | Pending |
 | [CVE-2026-126979](CVE-2026-126979) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | ChaCha20 length underflow skips HAP auth; adjacent-network, unverified | Confirmed | Pending |
 | [CVE-2026-130335](CVE-2026-130335) | Info-ZIP Zip | 3.1 2.9 (MITRE) | Info-ZIP Zip 3.0, 3.1 beta–3.1c | Debian zip/3.0-16 (quote_arg fix) | OS command injection via crafted archive name when victim runs zip -T; local precondition | Confirmed | Pending |
+| [CVE-2026-121529](CVE-2026-121529) | FortiClient | 3.1 9.6 (GHSA); 3.1 9.1 (Fortinet) | FortiClient Windows / Windows PAM 7.4.0–7.4.7, 7.2.0–7.2.14; FortiClient Mac 7.4.0–7.4.7 | 7.4.8 / 7.2.15 | Local API origin validation missing; drive-by RCE via victim browser, model lab, unverified here | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.

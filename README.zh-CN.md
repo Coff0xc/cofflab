@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (33)
+### Web / CMS (38)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -55,6 +55,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126269](CVE-2026-126269) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | 附件 MIME 白名单子串匹配放行 text/html，同源渲染存储型 XSS；2026.09.0 修复 | 已确认 | 待复现 |
 | [CVE-2026-126274](CVE-2026-126274) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.08.1 | 2026.08.1 | 表/列标题经 innerHTML 渲染进删除对话框，存储型 XSS；2026.08.1 修复 | 已确认 | 待复现 |
 | [CVE-2026-126273](CVE-2026-126273) | NocoDB | 4.0 9.2 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | 首个未认证注册经未完成管理员引导认领超级管理员；2026.09.0 修复 | 已确认 | 待复现 |
+| [CVE-2026-126937](CVE-2026-126937) | Zipline | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | Zipline ≤ 4.6.4 | 4.6.5 | 初始配置 TOCTOU 竞态可建多个 SUPERADMIN；实验有据，未核实 | 已确认 | 待复现 |
+| [CVE-2026-124020](CVE-2026-124020) | Control Web Panel | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | CWP < 1.30.6 (CWP and CWPpro) | 1.30.6 | Host 头密码重置投毒窃取恢复码；账户接管，RCE 自称，未核实 | 已确认 | 待复现 |
+| [CVE-2026-119258](CVE-2026-119258) | Swipe WordPress plugin | 3.1 8.1 (GHSA) | Swipe WordPress plugin <= 1.4 | no vendor patch at disclosure | 未授权 AJAX 处理器为任意活跃会话发会话 cookie；管理员接管，未核实 | 已确认 | 待复现 |
+| [CVE-2026-100105](CVE-2026-100105) | Grafana | 3.1 7.7 (GHSA) | Grafana 12.4.0–12.4.13, 13.0.0–13.0.11, 13.1.0–13.1.8, 13.2.0–13.2.4 | 12.4.14 / 13.0.12 / 13.1.9 / 13.2.5 | 联系点授权绕过（schema 降级）；告警载荷被改道，实验有据 | 已确认 | 待复现 |
+| [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | host 组织只读成员一次 POST 制造 SUPERUSER；实验有据 | 已确认 | 待复现 |
 
 ### AI / LLM (5)
 
@@ -66,7 +71,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | 经 MCP bridge terminal_execute 未认证 RCE；Exploit-DB 已验证 autopwn | 已确认 | 待复现 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP 工具调用未参数化致 SQL 注入；xp_cmdshell 自称，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (44)
+### 网络与安全 (48)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,8 +119,12 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126147](CVE-2026-126147) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6, 7.4.0–7.4.8, 7.2.0–7.2.9 | 8.0.2 / 7.6.7 / 7.4.9; migrate off 7.2 | 管理接口路径穿越可写任意文件并执行命令；8.0.2/7.6.7/7.4.9 修复 | 已确认 | 待复现 |
 | [CVE-2026-126148](CVE-2026-126148) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6 | 8.0.2 / 7.6.7 | HA 入网请求经 hostname/peer-ip 字段命令注入；8.0.2/7.6.7 修复 | 已确认 | 待复现 |
 | [CVE-2026-129352](CVE-2026-129352) | TRENDnet TEW-657BRM 路由器 | 4.0 9.4 (VulDB) | TEW-657BRM v1.0R firmware 1.00.1 | none (EOL, no vendor fix) | 已认证经 multipart 首行无界 strncpy 栈溢出；已停产，无厂商修复 | 已确认 | 待复现 |
+| [CVE-2026-114550](CVE-2026-114550) | libwebsockets | 3.0 8.1 (GHSA) | libwebsockets v4.2–v4.5.8 (MQTT client role) | 5.0.0 | MQTT PUBACK 越界写改写链表与函数指针；实验有据，未核实 | 已确认 | 待复现 |
+| [CVE-2026-129355](CVE-2026-129355) | dufs | 4.0 6.9 (VulnDB); 3.1 6.5 (VulnDB) | dufs 0.1.0–0.46.0 | 0.47.0 | WebDAV COPY 无删除权限覆盖已有文件；实验有据 | 已确认 | 待复现 |
+| [CVE-2026-129359](CVE-2026-129359) | Magma orc8r | 4.0 5.5 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | 硬编码内部凭证让任意 gRPC 调用方成可信服务；实验有据 | 已确认 | 待复现 |
+| [CVE-2026-129360](CVE-2026-129360) | Magma orc8r | 4.0 6.9 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | 操作员身份跟随可伪造的证书序列请求头；实验有据 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (22)
+### 运行环境 / 框架 / 浏览器 (24)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -141,8 +150,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-121265](CVE-2026-121265) | SQL::Abstract | 3.1 9.8 (GHSA) | SQL::Abstract < 2.000003 | 2.000003 | 数组列值当字面 SQL 拼进 insert/update/generate，未认证注入；2.000003 修复 | 已确认 | 待复现 |
 | [CVE-2026-107360](CVE-2026-107360) | rubygem-safemode | 3.1 9.6 (Red Hat) | rubygem-safemode through 2.0.3; Red Hat Satellite 6.16–6.18 | upstream PR #75 (unmerged); rubygem-safemode 1.5.0-3.el8sat / 1.5.0-3.el9sat | 复合赋值绕过 safemode Jail 白名单，执行任意无参方法；上游修复 PR 未合并 | 已确认 | 待复现 |
 | [CVE-2026-128027](CVE-2026-128027) | FrankenPHP | 4.0 9.3 (VulnCheck) | FrankenPHP images built before 2026-02-04 (< 1.1.11) | 1.1.11 | 陈旧基础层镜像带的 libcrypto 可预认证栈溢出；1.1.11 修复 | 已确认 | 待复现 |
+| [CVE-2026-128014](CVE-2026-128014) | FrankenPHP | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | FrankenPHP 1.13.1 (Brotli 1.2.0); all builds shipping Brotli < 1.2.1 | 1.13.2 (Brotli 1.2.1) | 内置 Brotli 1.2.0 解码死循环；未授权 worker DoS，实验有据 | 已确认 | 待复现 |
+| [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF，完整 SOAP 响应外泄；实验有据 | 已确认 | 待复现 |
 
-### 数据库 (5)
+### 数据库 (8)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -151,8 +162,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | 低权限认证用户经 MozJS 模块加载器本地文件泄露；非 RCE | 已确认 | 待复现 |
 | [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | 认证令牌明文写入 DEBUG 日志；4.16.4/5.0.2 修复，实验有据 | 已确认 | 待复现 |
 | [CVE-2026-116244](CVE-2026-116244) | pgAdmin 4 | 3.1 9.6 (NVD)；4.0 7.1 (PostgreSQL) | pgAdmin 4 ≤ 9.18 | 9.19 (2026-10-29) | 服务模式 libpq 用 pgAdmin 服务账号 Kerberos 凭证连攻击者数据库；9.19 修复 | 已确认 | 待复现 |
+| [CVE-2026-126837](CVE-2026-126837) | MongoDB Node.js driver | 4.0 9.1 (MongoDB); 3.1 7.4 (MongoDB) | MongoDB Node.js driver 3.3.3 to < 7.8.0 | 7.8.0 | SRV 父域校验绕过致数据库流量劫持；凭证泄露，实验有据 | 已确认 | 待复现 |
+| [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT 超时后带未读回复的连接回池；跨请求数据泄露，未核实 | 已确认 | 待复现 |
+| [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | 远程集群接口鉴权前反序列化致未授权递归 DoS；实验有据 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (20)
+### 操作系统 / 系统 / DevOps (21)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -176,6 +190,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126978](CVE-2026-126978) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | HAP 配对 TLV8 堆溢出；邻接网络、未授权，未核实 | 已确认 | 待复现 |
 | [CVE-2026-126979](CVE-2026-126979) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | ChaCha20 长度下溢跳过 HAP 认证；邻接网络，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130335](CVE-2026-130335) | Info-ZIP Zip | 3.1 2.9 (MITRE) | Info-ZIP Zip 3.0, 3.1 beta–3.1c | Debian zip/3.0-16 (quote_arg fix) | 受害者执行 zip -T 时构造的压缩包名可注入命令；需本地前置条件 | 已确认 | 待复现 |
+| [CVE-2026-121529](CVE-2026-121529) | FortiClient | 3.1 9.6 (GHSA); 3.1 9.1 (Fortinet) | FortiClient Windows / Windows PAM 7.4.0–7.4.7, 7.2.0–7.2.14; FortiClient Mac 7.4.0–7.4.7 | 7.4.8 / 7.2.15 | 本地 API 源校验缺失；受害者浏览器驱动致 RCE（模型实验），未核实 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。

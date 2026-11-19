@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (33)
+### Web / CMS (38)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -55,6 +55,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126269](CVE-2026-126269) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | 添付 MIME 許可リストの部分一致で text/html が同一オリジンで描画される格納型 XSS；2026.09.0 で修正 | 確認済み | 未実施 |
 | [CVE-2026-126274](CVE-2026-126274) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.08.1 | 2026.08.1 | テーブル/列タイトルが削除ダイアログで innerHTML 経由で描画される格納型 XSS；2026.08.1 で修正 | 確認済み | 未実施 |
 | [CVE-2026-126273](CVE-2026-126273) | NocoDB | 4.0 9.2 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | 最初の未認証サインアップが未完了の管理者ブートストラップでスーパー管理者を取得；2026.09.0 で修正 | 確認済み | 未実施 |
+| [CVE-2026-126937](CVE-2026-126937) | Zipline | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | Zipline ≤ 4.6.4 | 4.6.5 | 初期設定 TOCTOU 競合で SUPERADMIN を複数作成可能；ラボ証拠あり、未検証 | 確認済み | 未実施 |
+| [CVE-2026-124020](CVE-2026-124020) | Control Web Panel | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | CWP < 1.30.6 (CWP and CWPpro) | 1.30.6 | Host ヘッダーによるパスワードリセット汚染で回復コード奪取；アカウント乗っ取り、RCE は主張のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-119258](CVE-2026-119258) | Swipe WordPress plugin | 3.1 8.1 (GHSA) | Swipe WordPress plugin <= 1.4 | no vendor patch at disclosure | 未認証 AJAX ハンドラが任意の有効セッションにセッション Cookie を発行；管理者乗っ取り、未検証 | 確認済み | 未実施 |
+| [CVE-2026-100105](CVE-2026-100105) | Grafana | 3.1 7.7 (GHSA) | Grafana 12.4.0–12.4.13, 13.0.0–13.0.11, 13.1.0–13.1.8, 13.2.0–13.2.4 | 12.4.14 / 13.0.12 / 13.1.9 / 13.2.5 | レガシースキーマへのダウングレードで連絡先の認可を回避；アラートペイロードが転送される、ラボ証拠あり | 確認済み | 未実施 |
+| [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | host 組織の読み取り専用メンバーが 1 回の POST で SUPERUSER を作成；ラボ証拠あり | 確認済み | 未実施 |
 
 ### AI / LLM (5)
 
@@ -66,7 +71,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | MCP bridge の terminal_execute による未認証 RCE；Exploit-DB で検証済み autopwn | 確認済み | 未実施 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP ツール呼び出しの未パラメータ化による SQLi；xp_cmdshell は主張のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (44)
+### ネットワークとセキュリティ (48)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,8 +119,12 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126147](CVE-2026-126147) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6, 7.4.0–7.4.8, 7.2.0–7.2.9 | 8.0.2 / 7.6.7 / 7.4.9; migrate off 7.2 | 管理インターフェースのパストラバーサルで任意ファイル書き込みからコマンド実行；8.0.2/7.6.7/7.4.9 で修正 | 確認済み | 未実施 |
 | [CVE-2026-126148](CVE-2026-126148) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6 | 8.0.2 / 7.6.7 | HA 参加要求の hostname/peer-ip 経由で OS コマンドインジェクション；8.0.2/7.6.7 で修正 | 確認済み | 未実施 |
 | [CVE-2026-129352](CVE-2026-129352) | TRENDnet TEW-657BRM | 4.0 9.4 (VulDB) | TEW-657BRM v1.0R firmware 1.00.1 | none (EOL, no vendor fix) | 認証済みで multipart 先頭行の無制限 strncpy によるスタックオーバーフロー；EOL、ベンダー修正なし | 確認済み | 未実施 |
+| [CVE-2026-114550](CVE-2026-114550) | libwebsockets | 3.0 8.1 (GHSA) | libwebsockets v4.2–v4.5.8 (MQTT client role) | 5.0.0 | MQTT PUBACK の範囲外書き込みでリストと関数ポインタを書き換え；ラボ証拠あり、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129355](CVE-2026-129355) | dufs | 4.0 6.9 (VulnDB); 3.1 6.5 (VulnDB) | dufs 0.1.0–0.46.0 | 0.47.0 | WebDAV COPY が削除権限なしに既存ファイルを上書き；ラボ証拠あり | 確認済み | 未実施 |
+| [CVE-2026-129359](CVE-2026-129359) | Magma orc8r | 4.0 5.5 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | ハードコードされたサービス間認証情報で任意の gRPC 呼び出し元が信頼される；ラボ証拠あり | 確認済み | 未実施 |
+| [CVE-2026-129360](CVE-2026-129360) | Magma orc8r | 4.0 6.9 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | オペレーター身份が偽装可能な証明書シリアルヘッダーに従う；ラボ証拠あり | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (22)
+### ランタイム / フレームワーク / ブラウザ (24)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -141,8 +150,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-121265](CVE-2026-121265) | SQL::Abstract | 3.1 9.8 (GHSA) | SQL::Abstract < 2.000003 | 2.000003 | 配列の列値が insert/update/generate でリテラル SQL として扱われ未認証で注入；2.000003 で修正 | 確認済み | 未実施 |
 | [CVE-2026-107360](CVE-2026-107360) | rubygem-safemode | 3.1 9.6 (Red Hat) | rubygem-safemode through 2.0.3; Red Hat Satellite 6.16–6.18 | upstream PR #75 (unmerged); rubygem-safemode 1.5.0-3.el8sat / 1.5.0-3.el9sat | 複合代入式で safemode Jail の許可リストを回避し任意の無引数メソッドを実行；上流の修正 PR は未マージ | 確認済み | 未実施 |
 | [CVE-2026-128027](CVE-2026-128027) | FrankenPHP | 4.0 9.3 (VulnCheck) | FrankenPHP images built before 2026-02-04 (< 1.1.11) | 1.1.11 | 古いベースイメージ層が認証前 CMS スタックオーバーフローの libcrypto を同梱；1.1.11 で修正 | 確認済み | 未実施 |
+| [CVE-2026-128014](CVE-2026-128014) | FrankenPHP | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | FrankenPHP 1.13.1 (Brotli 1.2.0); all builds shipping Brotli < 1.2.1 | 1.13.2 (Brotli 1.2.1) | 同梱 Brotli 1.2.0 の無限デコードループ；未認証ワーカー DoS、ラボ証拠あり | 確認済み | 未実施 |
+| [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF、SOAP レスポンス全体の漏洩；ラボ証拠あり | 確認済み | 未実施 |
 
-### データベース (5)
+### データベース (8)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -151,8 +162,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | 低権限認証ユーザーが MozJS モジュールローダー経由でローカルファイルを漏洩；RCE ではない | 確認済み | 未実施 |
 | [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | 認証トークンが DEBUG ログに平文で記録；4.16.4/5.0.2 で修正、ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-116244](CVE-2026-116244) | pgAdmin 4 | 3.1 9.6 (NVD)；4.0 7.1 (PostgreSQL) | pgAdmin 4 ≤ 9.18 | 9.19 (2026-10-29) | サービスモードの libpq が pgAdmin サービスアカウントの Kerberos 認証情報で攻撃者の DB に接続；9.19 で修正 | 確認済み | 未実施 |
+| [CVE-2026-126837](CVE-2026-126837) | MongoDB Node.js driver | 4.0 9.1 (MongoDB); 3.1 7.4 (MongoDB) | MongoDB Node.js driver 3.3.3 to < 7.8.0 | 7.8.0 | SRV 親ドメイン検証の回避で DB トラフィックを攻撃者へ；認証情報漏洩、ラボ証拠あり | 確認済み | 未実施 |
+| [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT タイムアウト後に未読応答付き接続がプールへ；リクエスト横断のデータ漏洩、未検証 | 確認済み | 未実施 |
+| [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | リモートクラスターサーバーの認証前デシリアライズによる未認証再帰 DoS；ラボ証拠あり | 確認済み | 未実施 |
 
-### OS / システム / DevOps (20)
+### OS / システム / DevOps (21)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -176,6 +190,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126978](CVE-2026-126978) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | HAP ペアリング TLV8 ヒープオーバーフロー；隣接ネットワーク、認証前、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126979](CVE-2026-126979) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | ChaCha20 長さアンダーフローで HAP 認証を回避；隣接ネットワーク、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130335](CVE-2026-130335) | Info-ZIP Zip | 3.1 2.9 (MITRE) | Info-ZIP Zip 3.0, 3.1 beta–3.1c | Debian zip/3.0-16 (quote_arg fix) | zip -T 実行時に細工したアーカイブ名でコマンドインジェクション；ローカル前提条件あり | 確認済み | 未実施 |
+| [CVE-2026-121529](CVE-2026-121529) | FortiClient | 3.1 9.6 (GHSA); 3.1 9.1 (Fortinet) | FortiClient Windows / Windows PAM 7.4.0–7.4.7, 7.2.0–7.2.14; FortiClient Mac 7.4.0–7.4.7 | 7.4.8 / 7.2.15 | ローカル API の Origin 検証欠如；被害者ブラウザ経由で RCE（モデル実験）、未検証 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。
