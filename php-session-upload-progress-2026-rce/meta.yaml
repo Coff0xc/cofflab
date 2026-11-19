@@ -4,14 +4,14 @@ product: "PHP (ext/session upload progress)"
 vendor: "PHP"
 cwe: [CWE-502]
 affected: "PHP with session.serialize_handler=php_binary or php_serialize in server config, application switching to php at runtime via ini_set() before session_start(), and session.upload_progress.enabled=1 (PHP default). Validated on php:8.4.27-apache."
-fixed: "No patch as of 2026-10-24; official mitigation is session.upload_progress.enabled=0"
+fixed: "8.5.13 / 8.4.28 / 8.3.37 / 8.2.36 (2026-11-19)"
 advisory:
   - name: php.net informational advisory 2026-10-23
     url: https://www.php.net/archive/2026.php#2026-10-23-1
 cvss: []
 demonstrated: [rce-local]
 public_rce: false
-notes: "Upstream repository names this CVE-2026-115560, but no CVE record exists for that ID in NVD or CVE.org as of 2026-11-19; ingested as a no-CVE entry under the descriptive name, with the php.net advisory as authority. CWE-502 is the curator's classification of the described session unserialize object injection; no authoritative CWE is published. Related but distinct: PHP2Shell CVE-2026-109618 / CVE-2026-109619 (patched). This issue affects builds fully patched for PHP2Shell."
+notes: "Upstream repository names this CVE-2026-115560; php.net release notes for 8.5.13/8.4.28/8.3.37/8.2.36 (2026-11-19) list CVE-2026-115560 as fixed, but NVD still shows the ID as Reserved with no record as of 2026-11-19 22:44 UTC and no CVSS is published. The entry stays under its descriptive name until an NVD/CVE.org record appears. CWE-502 is the curator's classification of the described session unserialize object injection; no authoritative CWE is published. Related but distinct: PHP2Shell CVE-2026-109618 / CVE-2026-109619 (patched). This issue affects builds fully patched for PHP2Shell."
 collected: 2026-11-19
 sources:
   - id: googlesky-poc
