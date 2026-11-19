@@ -1,10 +1,10 @@
 **English** | [中文](README.zh-CN.md) | [日本語](README.ja.md)
 
-# Coff0xc CVE Curation
+# cofflab
 
 ![scope](https://img.shields.io/badge/scope-public%20PoC%20only-blue) ![repro](https://img.shields.io/badge/repro-isolated%20sandbox-green)
 
-A curated collection of CVE vulnerabilities and public proof-of-concept material, maintained by Coff0xc. Each entry records the product, scores, dates, and what the public material actually demonstrates.
+A curated collection of public PoCs for CVE and non-CVE vulnerabilities, maintained by Coff0xc. Each entry records the product, scores, dates, and what the public material actually demonstrates, with its reproduction status.
 
 Only publicly available material is collected. Ingestion is read-only and never executes anything; reproduction runs only in an isolated environment. For authorized security research and defense only.
 

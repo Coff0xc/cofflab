@@ -1,10 +1,10 @@
 [English](README.md) | [中文](README.zh-CN.md) | **日本語**
 
-# Coff0xc CVE キュレーション
+# cofflab
 
 ![scope](https://img.shields.io/badge/scope-public%20PoC%20only-blue) ![repro](https://img.shields.io/badge/repro-isolated%20sandbox-green)
 
-Coff0xc が管理する CVE 脆弱性と公開 PoC のキュレーション集。各エントリは製品、スコア、日付、および公開資料が実際に実証した内容を記録する。
+Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以外の脆弱性を対象とする。各エントリは製品、スコア、日付、公開資料が実際に実証した内容、および隔離サンドボックスでの再現状況を記録する。
 
 公開済みの資料のみを収集する。収録は読み取り専用で、実行しない。再現は隔離環境でのみ行う。認可されたセキュリティ研究と防御のみを目的とする。
 

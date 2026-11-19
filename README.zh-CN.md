@@ -1,10 +1,10 @@
 [English](README.md) | **中文** | [日本語](README.ja.md)
 
-# Coff0xc CVE 策展
+# cofflab
 
 ![scope](https://img.shields.io/badge/scope-public%20PoC%20only-blue) ![repro](https://img.shields.io/badge/repro-isolated%20sandbox-green)
 
-Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。每条记录登记产品、评分、日期，以及公开材料实际证明的内容。
+Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记录登记产品、评分、日期、公开材料实际证明的内容，以及隔离沙箱中的复现状态。
 
 只收已经公开的材料，入库只读、不执行；复现只在隔离环境进行。仅供授权安全研究与防御。
 
