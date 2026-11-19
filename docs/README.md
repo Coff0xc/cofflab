@@ -6,17 +6,7 @@
 
 Goal / 定时：见 [muse-task.md](muse-task.md)。规范只认本仓库 [ingest-spec.md](ingest-spec.md)。
 
-Linux 云电脑 clone `Coff0xc/cve-poc`，按规范拉取。禁止执行 PoC。`python tools/check_layout.py` 通过后自动 `git push --ff-only origin main`。失败不准提交。
-
-## Grok Build（本机策展）
-
-工作流：`.grok/workflows/ingest-cve.js`（daemon）和 `ingest-cve.rhai`（shell）。授信本仓库目录后 `/ingest-cve`。
-
-```text
-{"cve":"CVE-YYYY-N","collected":"YYYY-MM-DD","sources":[{"url":"https://github.com/org/repo","id":"author-slug"}]}
-```
-
-最多 5 个源。不 push。看完 diff 再自己提交。
+Linux 云电脑 clone `Coff0xc/cve-poc`，按规范拉取。禁止执行 PoC。`python tools/check_layout.py` 通过后自动 `git push --ff-only origin main`。失败不准提交。本仓库不放 `.agents/`、`.grok/`。
 
 ## 手写
 

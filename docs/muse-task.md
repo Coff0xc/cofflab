@@ -1,8 +1,6 @@
 # Muse 云电脑任务
 
-这是 **Coff0xc 自己的 CVE 策展库**。机器人是 Muse，跑在它自己的 Linux 云电脑上。权威规范：[ingest-spec.md](ingest-spec.md)。本仓库不放 `.agents/` 或 SKILL.md。
-
-Grok 工作流 `.grok/workflows/ingest-cve.rhai` 只在本机 Grok Build 里编排，Muse 不跑它。
+这是 **Coff0xc 自己的 CVE 策展库**。机器人是 Muse，跑在它自己的 Linux 云电脑上。权威规范：[ingest-spec.md](ingest-spec.md)。本仓库不放 `.agents/`、`.grok/` 或 SKILL.md。
 
 ## 云电脑一次性准备
 
@@ -24,7 +22,7 @@ gh auth setup-git
 
 token 用 fine-grained PAT：只授权仓库 `Coff0xc/cve-poc`，Contents 读+写。登录成功后 `git push --ff-only` 才能通。
 
-收录流程以 `docs/ingest-spec.md` 为准。不要往仓库里写 `.agents/` 或 SKILL.md。
+收录流程以 `docs/ingest-spec.md` 为准。不要往仓库里写 `.agents/`、`.grok/` 或 SKILL.md。
 
 ## Goal（贴进 Muse）
 
@@ -50,11 +48,4 @@ token 用 fine-grained PAT：只授权仓库 `Coff0xc/cve-poc`，Contents 读+�
 
 可以做的定时：每 6 小时 `git pull --ff-only`，保持云电脑上的 clone 与 `main` 同步。
 
-## 和 Grok 工作流怎么分工
-
-| | Muse 云电脑 | Grok `/ingest-cve` |
-| --- | --- | --- |
-| 谁跑 | Muse（Linux 云电脑） | 本机 Grok Build 会话 |
-| 输入 | 对话或 Goal 里的 CVE + URL | `{"cve","collected","sources":[{url,id}]}` |
-| 提交 | 改造→check_layout→自动 ff-only push | 不 push，人看 diff 再 commit |
-| 规范 | `docs/ingest-spec.md` | 同一份 |
+收录只走 Muse 云电脑：给 CVE ID + 源 URL → 按 `docs/ingest-spec.md` 改造 → `check_layout` → ff-only push。
