@@ -13,3 +13,6 @@ Thumbs.db
 .vscode/
 .agents/
 .grok/
+_template/
+docs/
+tools/

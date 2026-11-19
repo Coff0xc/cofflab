@@ -1,6 +1,6 @@
 # Coff0xc CVE 策展
 
-Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。每条记录写的是我的判定：产品、评分、日期、公开材料实际证明了什么。依据在该 CVE 目录的 `README.md` 和 `meta.yaml`。
+Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。每条记录写的是我的判定：产品、评分、日期、公开材料实际证明了什么。
 
 只收已经公开的材料，入库只读、不执行。仅供授权安全研究与防御。
 
@@ -17,17 +17,4 @@ Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。每条记录写的是我�
 | [CVE-2026-129448](CVE-2026-129448) | Apache Roller XML-RPC | 3.1 9.8（公开声称，未核验） | 框架需自备 gadget；本地 mock |
 | [CVE-2026-90817](CVE-2026-90817) | Vanderbilt REDCap | 3.1 9.8（公开声称，未核验） | 发现者脚本 / 占位框架 / 批量检测 |
 
-点进 CVE 目录看完整判定和引用。评分必须带 CVSS 版本和出处，没有就写 unknown。
-
-## 怎么读
-
-```text
-CVE-<年>-<编号>/
-  README.md     我的结论（中文）
-  meta.yaml     机器可读事实
-  sources/      引用的公开材料，各带 SOURCE.yaml
-```
-
-`sources/` 里的代码版权归原作者，许可证见 [NOTICE](NOTICE) 和各 `SOURCE.yaml`。本仓库自己的说明文字为 MIT，见 [LICENSE](LICENSE)。
-
-收录规范：[docs/ingest-spec.md](docs/ingest-spec.md)。问题请向厂商报告产品漏洞；本仓库的元数据问题开 GitHub issue。
+点进 CVE 目录看完整判定和引用。
