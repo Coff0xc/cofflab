@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (40)
+### Web / CMS (43)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -62,6 +62,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | host 组织只读成员一次 POST 制造 SUPERUSER；实验有据 | 已确认 | 待复现 |
 | [CVE-2026-13181](CVE-2026-13181) | Telerik UI for ASP.NET AJAX | 3.1 8.1 (Progress) | Telerik UI for ASP.NET AJAX 2010.1.309 < 2026.2.708 | 2026.2.708 | 未授权 padding oracle 链致反序列化 RCE；须 RadAsyncUpload 页面与详细报错，未核实 | 已确认 | 待复现 |
 | [CVE-2026-131850](CVE-2026-131850) | ILIAS | 4.0 8.6 (VulnCheck) | ILIAS 11.0 - 11.5.x | 11.6 | 管理员 ORDER BY 注入（注册码表）；布尔探针与盲注提取，未核实 | 已确认 | 待复现 |
+| [CVE-2026-13447](CVE-2026-13447) | MStore API | 3.1 9.8 (Wordfence) | MStore API <= 4.20.0 (lab 4.18.4) | 4.21.1 | 未认证 JWT 伪造接管管理员；签名从不校验，实验室 4.18.4 已验证 | 已确认 | 待复现 |
+| [CVE-2026-13355](CVE-2026-13355) | Meta Box AIO | 3.1 9.8 (Wordfence) | Meta Box AIO <= 3.11.0; MB Frontend Submission <= 4.5.6; MB User Profile <= 3.11.0 | 3.12.0 | 未认证经前端提交链创建管理员账号；须公开 mbfs 表单，未核实 | 已确认 | 待复现 |
+| [CVE-2026-1357](CVE-2026-1357) | WPvivid 备份迁移 | 3.1 9.8 (Wordfence) | WPvivid Backup & Migration <= 0.9.123 | 0.9.124 | 未认证经 RSA 失效开放与路径穿越上传任意 PHP；须已生成的 API 令牌，Docker 实验室 RCE | 已确认 | 待复现 |
 
 ### AI / LLM (5)
 
@@ -73,7 +76,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | 经 MCP bridge terminal_execute 未认证 RCE；Exploit-DB 已验证 autopwn | 已确认 | 待复现 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP 工具调用未参数化致 SQL 注入；xp_cmdshell 自称，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (49)
+### 网络与安全 (51)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -126,6 +129,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-129359](CVE-2026-129359) | Magma orc8r | 4.0 5.5 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | 硬编码内部凭证让任意 gRPC 调用方成可信服务；实验有据 | 已确认 | 待复现 |
 | [CVE-2026-129360](CVE-2026-129360) | Magma orc8r | 4.0 6.9 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | 操作员身份跟随可伪造的证书序列请求头；实验有据 | 已确认 | 待复现 |
 | [CVE-2026-76466](CVE-2026-76466) | Cisco Expressway | 3.1 9.8 (Cisco) | Expressway-C / Expressway-E clustered, X15.5.3 and earlier (X14 and earlier too) | X15.5.20 | 集群 Expressway 硬编码 Erlang cookie 未授权 root RCE；实验室已验证，F6 确认在野利用 | 已确认 | 待复现 |
+| [CVE-2026-13249](CVE-2026-13249) | Honeywell PD45 打印机 | 3.1 9.8 (Honeywell) | Honeywell PD45 firmware >= F10.19.010040 and < F10.22.030745 | F10.22.030745 | 打印机 Web 管理未认证任意文件上传；确切上传地址未公开，须操作者自供 URL，未核实 | 已确认 | 待复现 |
+| [CVE-2026-13768](CVE-2026-13768) | Gardyn 智能花园 | 4.0 9.5 (ICS-CERT); 3.1 10.0 (ICS-CERT) | Gardyn Home Kit and Studio devices (exposed iothubowner key) | Cloud-side fix deployed (2026-07); devices auto-update firmware when connected | 泄露的 IoT Hub 所有者密钥可枚举全 fleet 并经 upgrade() 命令注入 RCE；云端已修复，未核实 | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (25)
 
@@ -139,7 +144,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | Node.js < 22.23.4, < 24.22.1, < 26.12.1; Bun < 1.4.4; Brotli 1.0.3-1.2.0 | Node.js 22.23.4 / 24.22.1 / 26.12.1; Bun 1.4.4; Brotli 1.2.1 | 经畸形 Brotli 流验证的远程 DoS；RCE 仅为分析 | 已确认 | ◐ 部分 |
 | [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | Apache Shiro through 3.0.0 with DefaultLdapRealm/JndiLdapRealm and authenticationCachingEnabled=true (not the default) | 3.0.1 | 一次有效登录后认证绕过；启用缓存（非默认）时任意密码通过 | 已确认 | ◐ 部分 |
 | [CVE-2026-86829](CVE-2026-86829) | Apache Airflow 核心 | 3.1 8.8 (Apache) | apache-airflow-core < 3.4.0 | 3.4.0 (apache/airflow PR #72718) | DAG 作者经 XCom 反序列化在调度器 RCE；3.3.2 实验室验证，3.4.0 干净 | 已确认 | ◐ 部分 |
-| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session 上传进度 | unknown | PHP with session.serialize_handler=php_binary or php_serialize in server config, application switching to php at runtime via ini_set() before session_start(), and session.upload_progress.enabled=1 (PHP default). Validated on php:8.4.27-apache. | 8.5.13 / 8.4.28 / 8.3.37 / 8.2.36 (2026-11-19) | 实验室中经 session 处理器错配未认证 RCE（php:8.4.27-apache）；已于 8.5.13/8.4.28/8.3.37/8.2.36 修复，缓解是关闭上传进度 | 已确认 | ◐ 部分 |
+| [CVE-2026-115560](CVE-2026-115560) | PHP session 上传进度 | 4.0 9.2 (PHP) | PHP with session.serialize_handler=php_binary or php_serialize in server config, application switching to php at runtime via ini_set() before session_start(), and session.upload_progress.enabled=1 (PHP default). Validated on php:8.4.27-apache. | 8.5.13 / 8.4.28 / 8.3.37 / 8.2.36 (2026-11-19) | 实验室中经 session 处理器错配未认证 RCE（php:8.4.27-apache）；已于 8.5.13/8.4.28/8.3.37/8.2.36 修复，缓解是关闭上传进度 | 已确认 | ◐ 部分 |
 | [CVE-2026-75604](CVE-2026-75604) | Windows 上的 Next.js | 3.1 9.0 (GHSA) | Next.js 13.4.0–15.5.23 and 16.0.0–16.3.2 on Windows, Pages Router + App Router without Cache Components | 15.5.24 / 16.3.3 | 经 Server Actions 加密密钥泄露未认证 RCE；需 Windows 主机与 Pages/App Router，实验室在 next@16.2.11 验证 | 已确认 | 待复现 |
 | [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | Wasmtime < 36.0.19, 37.0.0-42.x, 43.0.0-48.0.6, 49.0.0-49.0.3 (aarch64 Cranelift) | 36.0.19, 48.0.7, 49.0.4 | aarch64 JIT 沙箱逃逸至宿主代码执行（实验室）；49.0.3 上 5/5 成功，49.0.4 拒绝 | 已确认 | 待复现 |
 | [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | PHP 5.4.0-8.5.11 | 8.2.35, 8.3.36, 8.4.27, 8.5.12 | 预认证 RCE 链 A/B/C 公开（D/E 付费）；实验室在 PHP 5.4–8.5.11 验证；已列入 KEV | 已确认 | 待复现 |
@@ -170,7 +175,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT 超时后带未读回复的连接回池；跨请求数据泄露，未核实 | 已确认 | 待复现 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | 远程集群接口鉴权前反序列化致未授权递归 DoS；实验有据 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (22)
+### 操作系统 / 系统 / DevOps (23)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -196,6 +201,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-130335](CVE-2026-130335) | Info-ZIP Zip | 3.1 2.9 (MITRE) | Info-ZIP Zip 3.0, 3.1 beta–3.1c | Debian zip/3.0-16 (quote_arg fix) | 受害者执行 zip -T 时构造的压缩包名可注入命令；需本地前置条件 | 已确认 | 待复现 |
 | [CVE-2026-121529](CVE-2026-121529) | FortiClient | 3.1 9.6 (GHSA); 3.1 9.1 (Fortinet) | FortiClient Windows / Windows PAM 7.4.0–7.4.7, 7.2.0–7.2.14; FortiClient Mac 7.4.0–7.4.7 | 7.4.8 / 7.2.15 | 本地 API 源校验缺失；受害者浏览器驱动致 RCE（模型实验），未核实 | 已确认 | 待复现 |
 | [CVE-2026-99273](CVE-2026-99273) | Linux 内核 (ksmbd) | unknown | Linux < 7.3.2 with CONFIG_SMB_SERVER | mainline a025c4991a7d8; stable 6.12.117 / 6.18.61 / 7.3.2 | ksmbd 响应缓冲外 2 字节堆越界写；KASAN 证据，暂无评分 | 已确认 | 待复现 |
+| [CVE-2026-13043](CVE-2026-13043) | WatchGuard 终端安全 | 4.0 9.3 (WatchGuard) | WatchGuard Endpoint Security < 8.00.26.0012 (Windows) | 8.00.26.0012 | 本地管理员伪造驱动握手直达特权 IOCTL；读 MSR 破 KASLR、任意进程内存读取 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。
