@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (22)
+### Web / CMS (29)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -44,6 +44,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-100397](CVE-2026-100397) | Rucio | 3.1 9.8 (GHSA) | Rucio server < 36.4.1 (per PoC; GHSA lists branch fixes 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1) | 36.4.1 (per PoC); GHSA branches 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1 | SSH challenge token accepted for any account; unauthenticated admin impersonation, unverified | Confirmed | Pending |
 | [CVE-2026-126967](CVE-2026-126967) | SmarterMail | 3.0 8.8 (GHSA) | SmarterMail all builds < 9735 | Build 9735 | Auth'd file-storage traversal writes ASPX webshell as SYSTEM; script claimed, unverified | Confirmed | Pending |
 | [CVE-2026-71481](CVE-2026-71481) | altcha | 3.1 7.5 (GHSA) | altcha-org/altcha (Composer) >= 2.0.0, < 2.0.3 (GHSA; PoC claims altcha-lib <= 0.5.x) | 2.0.3 (GHSA); v0.6.0 (per PoC) | Missing/empty HMAC signature accepted; CAPTCHA bypass in one request, unverified | Confirmed | Pending |
+| [CVE-2026-1492](CVE-2026-1492) | User Registration & Membership | 3.1 9.8 (Wordfence) | User Registration & Membership ≤ 5.1.2 | 5.1.3 | Unauthenticated admin account creation via membership registration role parameter; fixed in 5.1.3 | Confirmed | Pending |
+| [CVE-2026-129493](CVE-2026-129493) | Bolo (bolo-solo) | 4.0 8.7 (VulnCheck) | Bolo (bolo-solo) 1.7–2.6.4 | none (unfixed upstream) | Unauthenticated disclosure of article view passwords via public GET /articles | Confirmed | Pending |
+| [CVE-2026-129494](CVE-2026-129494) | CloudPaste | 4.0 8.7 (VulnCheck) | CloudPaste 1.1.0–1.9.1 | none (unfixed upstream) | Unauthenticated WebDAV credential disclosure via POST /api/proxy/link | Confirmed | Pending |
+| [CVE-2026-129492](CVE-2026-129492) | Bolo (bolo-solo) | 4.0 5.3 (VulnCheck) | Bolo (bolo-solo) 1.7–2.6.4 | none (unfixed upstream) | Unauthenticated stored XSS via commentOriginalCommentName; session theft | Confirmed | Pending |
+| [CVE-2026-129491](CVE-2026-129491) | forum-java | 4.0 5.1 (VulnCheck) | forum-java 20f7e68–63152c4 | none (unfixed upstream) | Authenticated stored XSS in comment reply dialog; session theft | Confirmed | Pending |
+| [CVE-2026-130354](CVE-2026-130354) | phpMyFAQ | 4.0 6.9 (VulnCheck) | phpMyFAQ 4.1.0–4.1.11 | 4.1.12 | Unauthenticated WebAuthn sign-up creates ACTIVE accounts, bypassing activation and domain whitelist | Confirmed | Pending |
+| [CVE-2026-130347](CVE-2026-130347) | phpMyFAQ | 4.0 6.3 (VulnCheck) | phpMyFAQ before 4.1.12 (4.2.0-alpha before 4.2.0-RC.2) | 4.1.12 / 4.2.0-RC.2 | Password-reset auth bypass for external-identity (OIDC/LDAP/SSO) accounts; IdP MFA skipped | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -55,7 +62,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (36)
+### Network & Security (37)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -95,8 +102,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-120993](CVE-2026-120993) | F5 NGINX stream SSL | 3.1 5.3 (GHSA) | nginx 1.31.4–1.31.8 (stream SSL + PROXY v2) | 1.31.9 | PROXY v2 + dynamic certs NULL deref; worker crash in Docker lab, unverified | Confirmed | Pending |
 | [CVE-2026-125283](CVE-2026-125283) | F5 NGINX alias/try_files | 3.1 5.3 (GHSA) | nginx 0.9.6–1.31.8 (alias + try_files) | 1.30.7 / 1.31.9 | alias + try_files integer underflow; OOB read in Docker lab, unverified | Confirmed | Pending |
 | [CVE-2026-120967](CVE-2026-120967) | F5 NGINX stream SNI | 3.1 4.8 (GHSA) | nginx 1.25.5–1.31.8 (stream SNI mTLS) | 1.30.7 / 1.31.9 | Stream SNI mTLS check applied too late; bypass to protected backend in lab, unverified | Confirmed | Pending |
+| [CVE-2026-129358](CVE-2026-129358) | Magma NMS | 4.0 1.9 (VulDB) | Magma NMS up to 1.9.0 | none (unfixed upstream) | Stored XSS via organization name rendered unescaped into inline CONFIG script | Confirmed | Pending |
 
-### Runtime / Framework / Browser (17)
+### Runtime / Framework / Browser (19)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -117,6 +125,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-128134](CVE-2026-128134) | NLTK dot2img | 3.1 7.8 (GHSA) | NLTK before 3.10.4 | 3.10.4 | Local PATH hijack demo; README's 7.3/3.9.2 claims conflict with GHSA 7.8/3.10.4 | Confirmed | Pending |
 | [CVE-2026-130001](CVE-2026-130001) | mustache (Ruby) | 3.1 9.8 (GHSA) | mustache gem <= 1.1.2 | 1.1.3 | RCE via unrestricted method dispatch in templates; script claimed, unverified | Confirmed | Pending |
 | [CVE-2026-47884](CVE-2026-47884) | Spring Framework XsltView | 3.1 9.8 (GHSA) | Spring Framework 5.2.x–5.3.49, 6.0.x–6.0.30, 6.1.x–6.1.28, 6.2.x–6.2.19, 7.0.0–7.0.8 (XsltView + catch-all /** mapping + implicit view name) | 5.3.50 / 6.0.31 / 6.1.29 / 6.2.20 / 7.0.9 | Attacker view name resolved via XsltView; SSRF and RCE via XSLT Java extensions, unverified | Confirmed | Pending |
+| [CVE-2026-131842](CVE-2026-131842) | Poppler pdfdetach | 4.0 5.7 (VulnCheck) | Poppler pdfdetach 24.03.0–26.11.0 | none (upstream work item 1826 open) | Path traversal in pdfdetach writes embedded files outside the output directory | Confirmed | Pending |
+| [CVE-2026-131873](CVE-2026-131873) | Gargoyle | 4.0 6.9 (VulnCheck) | Gargoyle 2023.1–2026.1.1 | Spatterlight 1.5.5 import (commit 45385f1) | Stack buffer overflow in Plus interpreter ReadAction(); crafted .plus file crashes interpreter | Confirmed | Pending |
 
 ### Database (4)
 
@@ -127,7 +137,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Confirmed | Pending |
 | [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | Auth token written plaintext to DEBUG logs; fixed in 4.16.4/5.0.2, lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (19)
+### OS / System / DevOps (20)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -150,6 +160,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130587](CVE-2026-130587) | OpenFunction | 3.1 9.9 (GHSA) | OpenFunction through 1.2.0 | no vendor fix (upstream issue #532 OPEN) | Tenant PodSpec copied verbatim into operator workloads; node escape, no vendor fix | Confirmed | Pending |
 | [CVE-2026-126978](CVE-2026-126978) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | HAP pairing TLV8 heap overflow; adjacent-network, pre-auth, unverified | Confirmed | Pending |
 | [CVE-2026-126979](CVE-2026-126979) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | ChaCha20 length underflow skips HAP auth; adjacent-network, unverified | Confirmed | Pending |
+| [CVE-2026-130335](CVE-2026-130335) | Info-ZIP Zip | 3.1 2.9 (MITRE) | Info-ZIP Zip 3.0, 3.1 beta–3.1c | Debian zip/3.0-16 (quote_arg fix) | OS command injection via crafted archive name when victim runs zip -T; local precondition | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
