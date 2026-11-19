@@ -26,5 +26,6 @@ A curated collection of CVE vulnerabilities and public proof-of-concept material
 | [CVE-2026-124194](CVE-2026-124194) | Microsoft Outlook | 3.1 6.5 (Microsoft) | Trigger .msg files only; no NTLM leak on real Outlook proven |
 | [CVE-2026-90436](CVE-2026-90436) | Apache Axis 1.x | 3.1 9.8 (CISA-ADP) | Lab repro of unauthenticated class instantiation; no RCE on default classpath |
 | [CVE-2024-27834](CVE-2024-27834) | WebKit (Apple) | 3.1 5.5 (NVD) | Analysis only; no runnable PoC |
+| [CVE-2026-111560](CVE-2026-111560) | Barracuda ESG / ADC / WAF / WSG | 4.0 8.6 (Mandiant)；3.1 7.2 (NVD) | Lab root command execution (needs admin); unauth root only chained with CVE-2026-116606 |
 
 点进 CVE 目录看完整判定和引用。
