@@ -65,4 +65,16 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-75604](CVE-2026-75604) | Next.js on Windows | 3.1 9.0 (GHSA) | Unauthenticated RCE via Server Actions encryption key leak; Windows host + Pages/App Router required, lab-validated on next@16.2.11 | Pending |
 | [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | Unauthenticated RCE via SSTI in /contact form; curl PoC only, no fix (project unmaintained) | Pending |
 
+| [CVE-2026-97229](CVE-2026-97229) | GitLab CE/EE | 3.1 10.0 (GitLab) | Unauthenticated CI-lint regex OOB write to system() as git in lab (19.4.1 CE); planting the CI config needs write access | Pending |
+| [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Pending |
+| [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | Onigmo integer overflow triggered via .org render; oracle/differential only, no full shell demonstrated | Pending |
+| [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | aarch64 JIT sandbox escape to host code execution in lab; 5/5 on 49.0.3, rejected on 49.0.4 | Pending |
+| [CVE-2026-126173](CVE-2026-126173) | AutomatorWP Pro Webhooks | 3.1 9.8 (Wordfence) | Unauthenticated arbitrary password reset and admin takeover in lab; fixed in 1.4.5 | Pending |
+| [CVE-2026-48356](CVE-2026-48356) | Adobe Commerce / Magento | 3.1 9.3 (Adobe) | Authenticated (low-priv REST token) file upload to webshell RCE in lab; Sansec SA-2026-0027 | Pending |
+| [CVE-2026-119977](CVE-2026-119977) | WordPress Core | 3.1 8.1 (Wordfence) | Upgrade-window TOCTOU plants an attacker wp-config.php; configuration takeover to RCE in lab; CISA KEV 2026-11-03 | Pending |
+| [CVE-2026-110447](CVE-2026-110447) | Collabora Online CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | Unauthenticated command injection via proxy.php; 1-day PoC; CISA KEV, exploited in the wild Sep-Oct 2026 | Pending |
+| [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | Pre-auth RCE chains A/B/C public (D/E paywalled); lab-verified on PHP 5.4-8.5.11; CISA KEV | Pending |
+| [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | Stale-state UAF and info-leak RCE in lab; FPM worker state leaks across requests; CISA KEV | Pending |
+| [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | Unauthenticated JCE profile creation leads to PHP upload and RCE; CISA KEV | Pending |
+| [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Pending |
 See each CVE directory for the full assessment and references.

@@ -65,4 +65,16 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-75604](CVE-2026-75604) | Windows 上の Next.js | 3.1 9.0 (GHSA) | Server Actions 暗号化鍵の漏洩による未認証 RCE；Windows ホストと Pages/App Router が必要、ラボで next@16.2.11 を検証 | 未実施 |
 | [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | /contact フォームの SSTI による未認証 RCE；curl PoC のみ、修正なし（プロジェクトは保守終了） | 未実施 |
 
+| [CVE-2026-97229](CVE-2026-97229) | GitLab CE/EE | 3.1 10.0 (GitLab) | 未認証 CI lint 正規表現の OOB 書き込みで system() 実行（git 権限、19.4.1 CE、ラボ）；悪意ある CI 設定の植え付けには書き込み権限が必要 | 未実施 |
+| [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | MCP bridge の terminal_execute による未認証 RCE；Exploit-DB で検証済み autopwn | 未実施 |
+| [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | .org レンダリングで Onigmo 整数オーバーフローを誘発；oracle/差分のみ、完全なシェルは未実証 | 未実施 |
+| [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | aarch64 JIT サンドボックス脱出からホストでのコード実行（ラボ）；49.0.3 で 5/5 成功、49.0.4 は拒否 | 未実施 |
+| [CVE-2026-126173](CVE-2026-126173) | AutomatorWP Pro Webhooks | 3.1 9.8 (Wordfence) | 未認証の任意パスワードリセット/管理者奪取（ラボ）；1.4.5 で修正 | 未実施 |
+| [CVE-2026-48356](CVE-2026-48356) | Adobe Commerce / Magento | 3.1 9.3 (Adobe) | 低権限 REST トークンでファイルアップロードから webshell 経由 RCE（ラボ）；Sansec SA-2026-0027 | 未実施 |
+| [CVE-2026-119977](CVE-2026-119977) | WordPress コア | 3.1 8.1 (Wordfence) | アップグレードウィンドウの TOCTOU で攻撃者の wp-config.php を配置；設定奪取から RCE（ラボ）；KEV 収載 | 未実施 |
+| [CVE-2026-110447](CVE-2026-110447) | Collabora Online 内蔵 CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | proxy.php 経由の未認証コマンドインジェクション；1-day PoC；KEV 収載、実地での悪用を確認 | 未実施 |
+| [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | 事前認証 RCE チェーン A/B/C を公開（D/E は有料）；PHP 5.4–8.5.11 でラボ検証；KEV 収載 | 未実施 |
+| [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | FPM ワーカーの跨リクエスト残留状態による UAF/情報漏洩 RCE（ラボ）；KEV 収載 | 未実施 |
+| [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | 未認証で JCE プロファイルを作成し PHP をアップロードして RCE；KEV 収載 | 未実施 |
+| [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | 低権限認証ユーザーが MozJS モジュールローダー経由でローカルファイルを漏洩；RCE ではない | 未実施 |
 完全な評価と引用については各 CVE ディレクトリを参照。

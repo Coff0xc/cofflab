@@ -65,4 +65,16 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-75604](CVE-2026-75604) | Windows 上的 Next.js | 3.1 9.0 (GHSA) | 经 Server Actions 加密密钥泄露未认证 RCE；需 Windows 主机与 Pages/App Router，实验室在 next@16.2.11 验证 | 待复现 |
 | [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | /contact 表单 SSTI 未认证 RCE；仅 curl PoC，无修复（项目已无人维护） | 待复现 |
 
+| [CVE-2026-97229](CVE-2026-97229) | GitLab CE/EE | 3.1 10.0 (GitLab) | 实验室中未认证 CI lint 正则越界写直达 system()（git 身份，19.4.1 CE）；植入恶意 CI 配置需写权限 | 待复现 |
+| [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | 经 MCP bridge terminal_execute 未认证 RCE；Exploit-DB 已验证 autopwn | 待复现 |
+| [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | 经 .org 渲染触发 Onigmo 整数溢出；仅 oracle/差分证据，未证明完整 shell | 待复现 |
+| [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | aarch64 JIT 沙箱逃逸至宿主代码执行（实验室）；49.0.3 上 5/5 成功，49.0.4 拒绝 | 待复现 |
+| [CVE-2026-126173](CVE-2026-126173) | AutomatorWP Pro Webhooks | 3.1 9.8 (Wordfence) | 实验室中未认证任意密码重置/管理员接管；1.4.5 修复 | 待复现 |
+| [CVE-2026-48356](CVE-2026-48356) | Adobe Commerce / Magento | 3.1 9.3 (Adobe) | 低权限 REST token 文件上传至 webshell RCE（实验室）；Sansec SA-2026-0027 | 待复现 |
+| [CVE-2026-119977](CVE-2026-119977) | WordPress 核心 | 3.1 8.1 (Wordfence) | 升级窗口 TOCTOU 植入攻击者 wp-config.php；配置接管至 RCE（实验室）；已列入 KEV | 待复现 |
+| [CVE-2026-110447](CVE-2026-110447) | Collabora Online 内置 CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | 经 proxy.php 未认证命令注入；1-day PoC；已列入 KEV、在野利用已确认 | 待复现 |
+| [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | 预认证 RCE 链 A/B/C 公开（D/E 付费）；实验室在 PHP 5.4–8.5.11 验证；已列入 KEV | 待复现 |
+| [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | FPM worker 跨请求残留状态 UAF/信息泄露 RCE（实验室）；已列入 KEV | 待复现 |
+| [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | 未认证创建 JCE 配置文件上传 PHP 并 RCE；已列入 KEV | 待复现 |
+| [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | 低权限认证用户经 MozJS 模块加载器本地文件泄露；非 RCE | 待复现 |
 点进 CVE 目录看完整判定和引用。
