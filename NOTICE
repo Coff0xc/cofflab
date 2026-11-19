@@ -20,6 +20,28 @@ CVE-2026-123007
   sources/sfewer-r7             license unknown
                                 https://github.com/sfewer-r7/CVE-2026-123007
 
+CVE-2024-10441
+  sources/ntn10                 license unknown
+                                https://github.com/Ntn10/cve-2024-10441-synology-rce
+
+CVE-2026-40217
+  sources/learner202649         license unknown
+                                https://github.com/learner202649/CVE-2026-40217-PoC
+
 CVE-2026-123488
   sources/fixedbyreboot         MIT  Copyright (c) 2026 fixedbyreboot
                                 https://github.com/fixedbyreboot/CVE-2026-123488-POC
+
+CVE-2026-129448
+  sources/murrez-poc            MIT  Copyright (c) 2026 yoyo
+                                https://github.com/murrez/CVE-2026-82384
+  sources/krevetkqqq-lab        MIT  Copyright (c) 2026 krevetkqqq
+                                https://github.com/krevetkqqq/CVE-2026-82384
+
+CVE-2026-90817
+  sources/securifera-poc        license unknown
+                                https://github.com/securifera/CVE-2026-90817
+  sources/exdev994-poc          license unknown
+                                https://github.com/ExDev994/CVE-2026-90817
+  sources/murrez-poc            MIT
+                                https://github.com/murrez/CVE-2026-90817
