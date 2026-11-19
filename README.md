@@ -64,7 +64,6 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-53362](CVE-2026-53362) | Linux kernel IPv6 fragmentation | 3.1 7.8 (Linux kernel) | Lab container escape to root on CentOS/RHEL 10 (kernel 6.12.x); IPv4 sibling CVE-2026-53366 not covered | Pending |
 | [CVE-2026-75604](CVE-2026-75604) | Next.js on Windows | 3.1 9.0 (GHSA) | Unauthenticated RCE via Server Actions encryption key leak; Windows host + Pages/App Router required, lab-validated on next@16.2.11 | Pending |
 | [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | Unauthenticated RCE via SSTI in /contact form; curl PoC only, no fix (project unmaintained) | Pending |
-
 | [CVE-2026-97229](CVE-2026-97229) | GitLab CE/EE | 3.1 10.0 (GitLab) | Unauthenticated CI-lint regex OOB write to system() as git in lab (19.4.1 CE); planting the CI config needs write access | Pending |
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Pending |
 | [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | Onigmo integer overflow triggered via .org render; oracle/differential only, no full shell demonstrated | Pending |
@@ -77,4 +76,5 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | Stale-state UAF and info-leak RCE in lab; FPM worker state leaks across requests; CISA KEV | Pending |
 | [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | Unauthenticated JCE profile creation leads to PHP upload and RCE; CISA KEV | Pending |
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Pending |
+
 See each CVE directory for the full assessment and references.
