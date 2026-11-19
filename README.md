@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (15)
+### Web / CMS (19)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -37,8 +37,12 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-63219](CVE-2026-63219) | GeoNetwork | 3.1 8.6 (GHSA) | GeoNetwork before 4.4.12 / 4.2.17 | 4.4.12 / 4.2.17 | Unauth XSLT formatter upload; exploit script claims reverse shell, unexecuted here | Confirmed | Pending |
 | [CVE-2026-58400](CVE-2026-58400) | GeoNetwork | 3.1 9.1 (GHSA) | GeoNetwork before 4.4.12 / 4.2.17 | 4.4.12 / 4.2.17 | Saxon allows Java exec from XSLT; same chain as 63219, unexecuted here | Confirmed | Pending |
 | [CVE-2026-128046](CVE-2026-128046) | OpenMage LTS | 4.0 9.2 (VulnCheck)；3.1 8.1 (VulnCheck) | OpenMage magento-lts 20.17.0 before 20.18.2 and 21.0.0-beta1 before 21.0.0-beta3 | 20.18.2 / 21.0.0-beta3 | Unauthenticated guest .phar upload executes on fetch in lab; needs .phar mapped to PHP and media/custom_options/ served | Confirmed | Pending |
+| [CVE-2026-69157](CVE-2026-69157) | atomic-server | 3.1 9.8 (GHSA) | atomic-server 0.29.0-0.40.1 (GHSA; NVD says to 0.40.2) |  | Unauthenticated /setup invite grants full Drive write; script claimed, unverified | Confirmed | Pending |
+| [CVE-2026-130648](CVE-2026-130648) | WWBN AVideo | 3.1 8.7 (GHSA)；4.0 9.3 (NVD) | WWBN AVideo from 6.5 (GHSA; no fixed version listed) |  | Stored XSS via javascript: videoLink; script claimed, unverified | Confirmed | Pending |
+| [CVE-2026-69158](CVE-2026-69158) | atomic-server | 3.1 8.6 (GHSA) | atomic-server <= 0.40.1 |  | Unauthenticated full-response SSRF via /bookmark; script claimed, unverified | Confirmed | Pending |
+| [CVE-2026-69156](CVE-2026-69156) | atomic-server | 3.1 8.1 (GHSA) | atomic-server 0.30.0-0.40.1 |  | Arbitrary file read via internalId; PoC's unauthenticated claim conflicts with GHSA | Confirmed | Pending |
 
-### AI / LLM (4)
+### AI / LLM (5)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,8 +50,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130796](CVE-2026-130796) | Flowise | 4.0 8.8 (VulnCheck)；3.1 8.2 (VulnCheck) | 3.1.3-3.1.4 |  | Unauthenticated plaintext MCP token leak; bundled script is an offline logic simulation | Confirmed | ✅ Full |
 | [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | < 2.2.0 | 2.2.0 | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC | Confirmed | ◐ Partial |
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
+| [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (23)
+### Network & Security (29)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -74,8 +79,14 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-123633](CVE-2026-123633) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX Open Source 1.19.7-1.30.6 and 1.31.0-1.31.8 with HTTP/2 proxying | 1.30.7 / 1.31.9 | UAF trigger + exploit script claiming ret2libc RCE, unverified | Confirmed | Pending |
 | [CVE-2026-110486](CVE-2026-110486) | Eclipse Mosquitto | 3.1 9.8 (NVD) | 2.1.0–2.1.2 (builtin WebSocket listener) | 2.1.3 | Lab trigger of parser desync via empty WebSocket frame; RCE not proven | Confirmed | Pending |
 | [CVE-2026-124040](CVE-2026-124040) | CivetWeb HTTP/2 | 4.0 9.2 (VulnCheck)；3.1 8.1 (VulnCheck) | CivetWeb through 1.16, built with USE_HTTP2 and enable_http2 | No fixed release listed (PoC repo ships fix-http2.patch) | HPACK poisoning hides method/path past literal-header ACL; RCE only inside author's privileged demo callback | Confirmed | Pending |
+| [CVE-2026-116448](CVE-2026-116448) | Dell PowerStore SDNAS | 3.1 9.8 (GHSA) | Dell PowerStore OS <= 3.6.0.0 with SDNAS enabled (per PoC README; GHSA lists no version range) | PowerStore OS 4.0.0.1 (per PoC README) | OS command injection in SDNAS diagnostics; RCE script claimed, unverified | Confirmed | Pending |
+| [CVE-2026-123634](CVE-2026-123634) | F5 NGINX resolver (SSI) | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX 0.6.18-1.31.8 (proxy with SSI subrequests) | 1.30.7 / 1.31.9 | Resolver UAF crash in Docker lab; exploit script included, unverified | Confirmed | Pending |
+| [CVE-2026-121810](CVE-2026-121810) | F5 NGINX HTTP/3 (QUIC) | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX 1.25.0-1.31.8 (HTTP/3) | 1.30.7 / 1.31.9 | HTTP/3 QUIC UAF crash in Docker lab; exploit script included, unverified | Confirmed | Pending |
+| [CVE-2026-113425](CVE-2026-113425) | F5 NGINX mail proxy | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX 0.5.33-1.31.8 (mail proxy) | 1.30.7 / 1.31.9 | Mail proxy UAF crash in Docker lab; exploit script included, unverified | Confirmed | Pending |
+| [CVE-2026-118899](CVE-2026-118899) | F5 NGINX TLS 1.3 | 4.0 8.7 (F5)；3.1 7.5 (F5) | NGINX 1.13.0-1.31.8 (TLS 1.3, http block) | 1.30.7 / 1.31.9 | TLS 1.3 infinite-loop DoS in Docker lab; exploit script included, unverified | Confirmed | Pending |
+| [CVE-2026-116442](CVE-2026-116442) | Dell PowerStore NDMP | 3.1 8.1 (GHSA) | Dell PowerStore OS <= 3.6.0.0 with NDMP enabled (per PoC README; GHSA lists no version range) | PowerStore OS 4.0.0.1 (per PoC README) | NDMP auth-bypass-by-replay; PoC shows pre-auth NDMP response only | Confirmed | Pending |
 
-### Runtime / Framework / Browser (15)
+### Runtime / Framework / Browser (16)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -94,6 +105,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | PHP 5.4.0-8.5.11 | 8.2.35, 8.3.36, 8.4.27, 8.5.12 | Stale-state UAF and info-leak RCE in lab; FPM worker state leaks across requests; CISA KEV | Confirmed | Pending |
 | [CVE-2026-126910](CVE-2026-126910) | Chrome V8 Maglev | 3.1 8.8 (NVD) | Chrome before 157.0.8103.78 | 157.0.8103.78 | Type-confusion stale load proven in lab; no RCE, needs dev flags | Confirmed | Pending |
 | [CVE-2026-128134](CVE-2026-128134) | NLTK dot2img | 3.1 7.8 (GHSA) | NLTK before 3.10.4 | 3.10.4 | Local PATH hijack demo; README's 7.3/3.9.2 claims conflict with GHSA 7.8/3.10.4 | Confirmed | Pending |
+| [CVE-2026-130001](CVE-2026-130001) | mustache (Ruby) | 3.1 9.8 (GHSA) | mustache gem <= 1.1.2 | 1.1.3 | RCE via unrestricted method dispatch in templates; script claimed, unverified | Confirmed | Pending |
 
 ### Database (3)
 
@@ -103,7 +115,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | ClickHouse 26.3 < 26.3.62.3-lts, 26.8 < 26.8.36.3-lts, 26.9 < 26.9.27.3-stable, 26.10 < 26.10.3.7-stable | 26.3.62.3-lts / 26.8.36.3-lts / 26.9.27.3-stable / 26.10.3.7-stable (2026-10-30) | Unauthenticated RCE claimed; lab validates differential detection + weaponized DoS only | Confirmed | ◐ Partial |
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Confirmed | Pending |
 
-### OS / System / DevOps (13)
+### OS / System / DevOps (16)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -120,6 +132,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | GitLab CE/EE 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3 | 18.11.13, 19.0.10, 19.1.9, 19.2.9, 19.3.6, 19.4.3, 19.5.1 | Onigmo integer overflow triggered via .org render; oracle/differential only, no full shell demonstrated | Confirmed | Pending |
 | [CVE-2026-112611](CVE-2026-112611) | Apple CoreGraphics PDF | 3.1 6.1 (NVD) | iOS before 27.2 / 26.7.2, iPadOS before 27.2 / 26.7.2, macOS before 15.8.2 / 26.7.2 | iOS 27.2 / 26.7.2, macOS Sequoia 15.8.2 / Tahoe 26.7.2 | PDF-chosen address write primitives verified on device; no code exec yet | Confirmed | Pending |
 | [CVE-2026-99288](CVE-2026-99288) | Linux kernel TCP | 3.1 5.9 (NVD) | Linux kernel with vulnerable TCP ehash lookup (before upstream commit 4e2b3ef19e0e) | Upstream commit 4e2b3ef19e0e (inet: reject unhashed sockets during established lookups) | From-scratch race trigger rebuilt from advisory; kernel panic needs exact preemption | Confirmed | Pending |
+| [CVE-2026-129987](CVE-2026-129987) | Dokploy | 3.1 9.9 (GHSA) | Dokploy < 0.31.1 (v0.29.0-v0.31.0 per upstream version archaeology) | 0.31.1 | Auth'd RCE via DB password-change command injection; full chain claimed, unverified | Confirmed | Pending |
+| [CVE-2026-43499](CVE-2026-43499) | Linux kernel rtmutex | 3.1 7.8 (Linux kernel) | Linux kernel rtmutex path (PoC targets 4.14.186+ on realme RMX3031/MT6893) |  | Kernel LPE stage1 for realme RMX3031; root claimed, unverified | Confirmed | Pending |
+| [CVE-2026-112477](CVE-2026-112477) | Apple iOS IOSurface | 3.1 7.0 (NVD) | iOS 26.x (tested on iOS 26.4, arm64e) | iOS 26.7.2 / iPadOS 26.7.2 | iOSurface UAF stale-read primitive; research PoC, no privesc shown | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
