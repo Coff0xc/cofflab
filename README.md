@@ -175,7 +175,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (23)
+### OS / System / DevOps (24)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -202,6 +202,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-121529](CVE-2026-121529) | FortiClient | 3.1 9.6 (GHSA); 3.1 9.1 (Fortinet) | FortiClient Windows / Windows PAM 7.4.0–7.4.7, 7.2.0–7.2.14; FortiClient Mac 7.4.0–7.4.7 | 7.4.8 / 7.2.15 | Local API origin validation missing; drive-by RCE via victim browser, model lab, unverified here | Confirmed | Pending |
 | [CVE-2026-99273](CVE-2026-99273) | Linux kernel (ksmbd) | unknown | Linux < 7.3.2 with CONFIG_SMB_SERVER | mainline a025c4991a7d8; stable 6.12.117 / 6.18.61 / 7.3.2 | Two-byte heap OOB write past 448-byte ksmbd response buffer; KASAN evidence, no CVSS yet | Confirmed | Pending |
 | [CVE-2026-13043](CVE-2026-13043) | WatchGuard Endpoint Security | 4.0 9.3 (WatchGuard) | WatchGuard Endpoint Security < 8.00.26.0012 (Windows) | 8.00.26.0012 | Local admin forges driver handshake for privileged IOCTLs; MSR read defeats KASLR, arbitrary process memory read | Confirmed | Pending |
+| [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | Stack buffer overflow via Set-Cookie parsing in hydra-http-form.c; malicious server crashes the Hydra client, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
