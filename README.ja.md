@@ -62,5 +62,6 @@ Coff0xc が管理する CVE 脆弱性と公開 PoC のキュレーション集�
 | [CVE-2026-111585](CVE-2026-111585) | TeamViewer クライアント | 3.1 8.8 (TeamViewer) | 実際の 15.82.6 バイナリでの viewer ヒープオーバーフロー + クラッシュ；RCE は主張、クラッシュは実証済み | ◐ 部分 |
 | [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP セッションアップロード進捗 | unknown | ラボでセッションハンドラ不一致による未認証 RCE（php:8.4.27-apache）；未修正、緩和策はアップロード進捗の無効化 | ◐ 部分 |
 | [CVE-2026-53362](CVE-2026-53362) | Linux カーネル IPv6 フラグメンテーション | 3.1 7.8 (Linux kernel) | ラボで CentOS/RHEL 10（カーネル 6.12.x）からコンテナ脱出して root 取得；IPv4 の同系 CVE-2026-53366 は対象外 | 未実施 |
+| [CVE-2026-75604](CVE-2026-75604) | Windows 上の Next.js | 3.1 9.0 (GHSA) | Server Actions 暗号化鍵の漏洩による未認証 RCE；Windows ホストと Pages/App Router が必要、ラボで next@16.2.11 を検証 | 未実施 |
 
 完全な評価と引用については各 CVE ディレクトリを参照。
