@@ -9,7 +9,20 @@ Grok 工作流 `.grok/workflows/ingest-cve.rhai` 只在本机 Grok Build 里编�
 ```bash
 git clone https://github.com/Coff0xc/cve-poc.git
 cd cve-poc
+git config user.name "Coff0xc"
+git config user.email "184964491+Coff0xc@users.noreply.github.com"
 ```
+
+工作区若只有 CRLF→LF 的脏文件：不要提交它们。`git restore --worktree --staged .` 然后 `git pull --ff-only`。
+
+push 需要 GitHub 凭证。在云电脑上登录一次，不要把 token 写进仓库、remote URL 或对话回复：
+
+```bash
+gh auth login --hostname github.com --git-protocol https --with-token
+gh auth setup-git
+```
+
+token 用 fine-grained PAT：只授权仓库 `Coff0xc/cve-poc`，Contents 读+写。登录成功后 `git push --ff-only` 才能通。
 
 Muse Code 会读仓库里的 `.agents/skills/cve-ingest/SKILL.md`。消费端 Muse（App/网页）没有技能安装：把该文件全文贴进对话，说「以后收录 CVE 都按这个技能做」。
 
