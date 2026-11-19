@@ -2,9 +2,15 @@
 
 # Coff0xc CVE 策展
 
+![scope](https://img.shields.io/badge/scope-public%20PoC%20only-blue) ![repro](https://img.shields.io/badge/repro-isolated%20sandbox-green)
+
 Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。每条记录登记产品、评分、日期，以及公开材料实际证明的内容。
 
 只收已经公开的材料，入库只读、不执行；复现只在隔离环境进行。仅供授权安全研究与防御。
+
+**复现：** ✅ 完整——隔离沙箱内端到端复现 · ◐ 部分——部分复现或在 mock 上验证 · — 无目标——无可用 vulnerable 目标 · 待复现——尚未复现。
+
+---
 
 ## 目录
 

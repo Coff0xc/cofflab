@@ -2,9 +2,15 @@
 
 # Coff0xc CVE キュレーション
 
+![scope](https://img.shields.io/badge/scope-public%20PoC%20only-blue) ![repro](https://img.shields.io/badge/repro-isolated%20sandbox-green)
+
 Coff0xc が管理する CVE 脆弱性と公開 PoC のキュレーション集。各エントリは製品、スコア、日付、および公開資料が実際に実証した内容を記録する。
 
 公開済みの資料のみを収集する。収録は読み取り専用で、実行しない。再現は隔離環境でのみ行う。認可されたセキュリティ研究と防御のみを目的とする。
+
+**再現：** ✅ 完全——隔離サンドボックスでエンドツーエンド再現 · ◐ 部分——部分再現または mock 上で検証 · — 対象なし——利用可能な脆弱な対象なし · 未実施——未再現。
+
+---
 
 ## 目次
 
