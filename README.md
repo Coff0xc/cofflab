@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (38)
+### Web / CMS (40)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -60,6 +60,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119258](CVE-2026-119258) | Swipe WordPress plugin | 3.1 8.1 (GHSA) | Swipe WordPress plugin <= 1.4 | no vendor patch at disclosure | Unauthenticated AJAX handler issues a session cookie for any active session; admin takeover, unverified | Confirmed | Pending |
 | [CVE-2026-100105](CVE-2026-100105) | Grafana | 3.1 7.7 (GHSA) | Grafana 12.4.0–12.4.13, 13.0.0–13.0.11, 13.1.0–13.1.8, 13.2.0–13.2.4 | 12.4.14 / 13.0.12 / 13.1.9 / 13.2.5 | Contact-point auth bypass via legacy schema downgrade; alert payloads redirected, lab evidence | Confirmed | Pending |
 | [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | Read-only host-org member creates SUPERUSER accounts with one POST; lab evidence | Confirmed | Pending |
+| [CVE-2026-13181](CVE-2026-13181) | Telerik UI for ASP.NET AJAX | 3.1 8.1 (Progress) | Telerik UI for ASP.NET AJAX 2010.1.309 < 2026.2.708 | 2026.2.708 | Unauthenticated padding-oracle chain to deserialization RCE; needs RadAsyncUpload page and verbose errors, unverified | Confirmed | Pending |
+| [CVE-2026-131850](CVE-2026-131850) | ILIAS | 4.0 8.6 (VulnCheck) | ILIAS 11.0 - 11.5.x | 11.6 | Authenticated admin ORDER BY SQLi in registration codes; boolean probe and blind extract, unverified | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -125,7 +127,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129360](CVE-2026-129360) | Magma orc8r | 4.0 6.9 (VulnDB); 3.1 7.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | Operator identity follows spoofable X-Magma-Client-Cert-Serial header; lab evidence | Confirmed | Pending |
 | [CVE-2026-76466](CVE-2026-76466) | Cisco Expressway | 3.1 9.8 (Cisco) | Expressway-C / Expressway-E clustered, X15.5.3 and earlier (X14 and earlier too) | X15.5.20 | Unauthenticated root RCE via hard-coded Erlang cookie on clustered Expressway; lab-validated, confirmed exploited in the wild (F6) | Confirmed | Pending |
 
-### Runtime / Framework / Browser (24)
+### Runtime / Framework / Browser (25)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -137,7 +139,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | Node.js < 22.23.4, < 24.22.1, < 26.12.1; Bun < 1.4.4; Brotli 1.0.3-1.2.0 | Node.js 22.23.4 / 24.22.1 / 26.12.1; Bun 1.4.4; Brotli 1.2.1 | Validated remote DoS via crafted Brotli stream; RCE analysis only | Confirmed | ◐ Partial |
 | [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | Apache Shiro through 3.0.0 with DefaultLdapRealm/JndiLdapRealm and authenticationCachingEnabled=true (not the default) | 3.0.1 | Auth bypass after one valid login; any password accepted when caching enabled (non-default) | Confirmed | ◐ Partial |
 | [CVE-2026-86829](CVE-2026-86829) | Apache Airflow core | 3.1 8.8 (Apache) | apache-airflow-core < 3.4.0 | 3.4.0 (apache/airflow PR #72718) | DAG-author RCE in scheduler via XCom deserialization; lab-verified on 3.3.2, clean on 3.4.0 | Confirmed | ◐ Partial |
-| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session upload progress | unknown | PHP with session.serialize_handler=php_binary or php_serialize in server config, application switching to php at runtime via ini_set() before session_start(), and session.upload_progress.enabled=1 (PHP default). Validated on php:8.4.27-apache. | No patch as of 2026-10-24; official mitigation is session.upload_progress.enabled=0 | Unauthenticated RCE via session handler mismatch in lab (php:8.4.27-apache); patched in 8.5.13/8.4.28/8.3.37/8.2.36, mitigation is disabling upload progress | Confirmed | ◐ Partial |
+| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session upload progress | unknown | PHP with session.serialize_handler=php_binary or php_serialize in server config, application switching to php at runtime via ini_set() before session_start(), and session.upload_progress.enabled=1 (PHP default). Validated on php:8.4.27-apache. | 8.5.13 / 8.4.28 / 8.3.37 / 8.2.36 (2026-11-19) | Unauthenticated RCE via session handler mismatch in lab (php:8.4.27-apache); patched in 8.5.13/8.4.28/8.3.37/8.2.36, mitigation is disabling upload progress | Confirmed | ◐ Partial |
 | [CVE-2026-75604](CVE-2026-75604) | Next.js on Windows | 3.1 9.0 (GHSA) | Next.js 13.4.0–15.5.23 and 16.0.0–16.3.2 on Windows, Pages Router + App Router without Cache Components | 15.5.24 / 16.3.3 | Unauthenticated RCE via Server Actions encryption key leak; Windows host + Pages/App Router required, lab-validated on next@16.2.11 | Confirmed | Pending |
 | [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | Wasmtime < 36.0.19, 37.0.0-42.x, 43.0.0-48.0.6, 49.0.0-49.0.3 (aarch64 Cranelift) | 36.0.19, 48.0.7, 49.0.4 | aarch64 JIT sandbox escape to host code execution in lab; 5/5 on 49.0.3, rejected on 49.0.4 | Confirmed | Pending |
 | [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | PHP 5.4.0-8.5.11 | 8.2.35, 8.3.36, 8.4.27, 8.5.12 | Pre-auth RCE chains A/B/C public (D/E paywalled); lab-verified on PHP 5.4-8.5.11; CISA KEV | Confirmed | Pending |
@@ -153,6 +155,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-128027](CVE-2026-128027) | FrankenPHP | 4.0 9.3 (VulnCheck) | FrankenPHP images built before 2026-02-04 (< 1.1.11) | 1.1.11 | Stale base-image layers ship a pre-auth CMS stack-overflow libcrypto; fixed in 1.1.11 | Confirmed | Pending |
 | [CVE-2026-128014](CVE-2026-128014) | FrankenPHP | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | FrankenPHP 1.13.1 (Brotli 1.2.0); all builds shipping Brotli < 1.2.1 | 1.13.2 (Brotli 1.2.1) | Bundled Brotli 1.2.0 non-terminating decode loop; unauthenticated worker DoS, lab-verified | Confirmed | Pending |
 | [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF with full SOAP response exfiltration; lab-verified | Confirmed | Pending |
+| [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | One-byte heap OOB write in single-byte case conversion; ASAN crash and glibc chunk corruption, lab evidence | Confirmed | Pending |
 
 ### Database (8)
 
@@ -167,7 +170,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (21)
+### OS / System / DevOps (22)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -192,6 +195,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126979](CVE-2026-126979) | Philips Hue Bridge | 3.0 8.8 (GHSA) | Philips Hue Bridge gen 2 and gen 3 (all firmware prior to patch) | no fixed version published | ChaCha20 length underflow skips HAP auth; adjacent-network, unverified | Confirmed | Pending |
 | [CVE-2026-130335](CVE-2026-130335) | Info-ZIP Zip | 3.1 2.9 (MITRE) | Info-ZIP Zip 3.0, 3.1 beta–3.1c | Debian zip/3.0-16 (quote_arg fix) | OS command injection via crafted archive name when victim runs zip -T; local precondition | Confirmed | Pending |
 | [CVE-2026-121529](CVE-2026-121529) | FortiClient | 3.1 9.6 (GHSA); 3.1 9.1 (Fortinet) | FortiClient Windows / Windows PAM 7.4.0–7.4.7, 7.2.0–7.2.14; FortiClient Mac 7.4.0–7.4.7 | 7.4.8 / 7.2.15 | Local API origin validation missing; drive-by RCE via victim browser, model lab, unverified here | Confirmed | Pending |
+| [CVE-2026-99273](CVE-2026-99273) | Linux kernel (ksmbd) | unknown | Linux < 7.3.2 with CONFIG_SMB_SERVER | mainline a025c4991a7d8; stable 6.12.117 / 6.18.61 / 7.3.2 | Two-byte heap OOB write past 448-byte ksmbd response buffer; KASAN evidence, no CVSS yet | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
