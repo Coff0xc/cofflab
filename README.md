@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (29)
+### Web / CMS (33)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -51,6 +51,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129491](CVE-2026-129491) | forum-java | 4.0 5.1 (VulnCheck) | forum-java 20f7e68–63152c4 | none (unfixed upstream) | Authenticated stored XSS in comment reply dialog; session theft | Confirmed | Pending |
 | [CVE-2026-130354](CVE-2026-130354) | phpMyFAQ | 4.0 6.9 (VulnCheck) | phpMyFAQ 4.1.0–4.1.11 | 4.1.12 | Unauthenticated WebAuthn sign-up creates ACTIVE accounts, bypassing activation and domain whitelist | Confirmed | Pending |
 | [CVE-2026-130347](CVE-2026-130347) | phpMyFAQ | 4.0 6.3 (VulnCheck) | phpMyFAQ before 4.1.12 (4.2.0-alpha before 4.2.0-RC.2) | 4.1.12 / 4.2.0-RC.2 | Password-reset auth bypass for external-identity (OIDC/LDAP/SSO) accounts; IdP MFA skipped | Confirmed | Pending |
+| [CVE-2026-110960](CVE-2026-110960) | Auth Armor | 3.1 9.8 (GHSA) | Auth Armor ≤ 1.0.3 | unknown | Unauthenticated account takeover via exposed API credentials and enrollment reset; patch unversioned | Confirmed | Pending |
+| [CVE-2026-126269](CVE-2026-126269) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | Stored XSS via substring MIME allow-list rendering text/html attachments same-origin; fixed in 2026.09.0 | Confirmed | Pending |
+| [CVE-2026-126274](CVE-2026-126274) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.08.1 | 2026.08.1 | Stored XSS via table/column titles rendered through innerHTML in the deletion dialog; fixed in 2026.08.1 | Confirmed | Pending |
+| [CVE-2026-126273](CVE-2026-126273) | NocoDB | 4.0 9.2 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | First unauthenticated signup claims super admin via incomplete admin bootstrap; fixed in 2026.09.0 | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -62,7 +66,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (37)
+### Network & Security (44)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -103,8 +107,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-125283](CVE-2026-125283) | F5 NGINX alias/try_files | 3.1 5.3 (GHSA) | nginx 0.9.6–1.31.8 (alias + try_files) | 1.30.7 / 1.31.9 | alias + try_files integer underflow; OOB read in Docker lab, unverified | Confirmed | Pending |
 | [CVE-2026-120967](CVE-2026-120967) | F5 NGINX stream SNI | 3.1 4.8 (GHSA) | nginx 1.25.5–1.31.8 (stream SNI mTLS) | 1.30.7 / 1.31.9 | Stream SNI mTLS check applied too late; bypass to protected backend in lab, unverified | Confirmed | Pending |
 | [CVE-2026-129358](CVE-2026-129358) | Magma NMS | 4.0 1.9 (VulDB) | Magma NMS up to 1.9.0 | none (unfixed upstream) | Stored XSS via organization name rendered unescaped into inline CONFIG script | Confirmed | Pending |
+| [CVE-2026-129351](CVE-2026-129351) | TRENDnet TEW-657BRM | 4.0 10.0 (VulDB) | TEW-657BRM v1.0R firmware 1.00.1 | none (EOL, no vendor fix) | Pre-auth out-of-bounds write via sprintf on over-long .htm path corrupts GOT; EOL, no vendor fix | Confirmed | Pending |
+| [CVE-2026-129353](CVE-2026-129353) | D-Link DIR-600L | 4.0 10.0 (VulDB) | DIR-600L B1 firmware 2.17, 2.17b02 | none (EOL, no vendor fix) | Pre-auth stack overflow in authentication.cgi via unbounded strcpy of id/password; EOL, no vendor fix | Confirmed | Pending |
+| [CVE-2026-129354](CVE-2026-129354) | D-Link DIR-600L | 4.0 10.0 (VulDB) | DIR-600L B1 firmware 2.17b02 | none (EOL, no vendor fix) | Pre-auth stack overflow in HNAP hnap_main via SOAPAction header; EOL, no vendor fix | Confirmed | Pending |
+| [CVE-2026-110697](CVE-2026-110697) | Quay | 3.1 9.9 (Red Hat) | Quay < 3.9.28; 3.10 < 3.10.28; 3.12 < 3.12.24; 3.14 < 3.14.10; 3.15 < 3.15.9; 3.16 < 3.16.7; 3.17 < 3.17.7; 3.18 < 3.18.3 | 3.9.28 / 3.10.28 / 3.12.24 / 3.14.10 / 3.15.9 / 3.16.7 / 3.17.7 / 3.18.3 | SQL LIKE wildcard injection in robot listing leaks cross-tenant robot tokens; fixed in 3.9.28+ branch releases | Confirmed | Pending |
+| [CVE-2026-126147](CVE-2026-126147) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6, 7.4.0–7.4.8, 7.2.0–7.2.9 | 8.0.2 / 7.6.7 / 7.4.9; migrate off 7.2 | Management interface path traversal allows arbitrary file write leading to command execution; fixed in 8.0.2/7.6.7/7.4.9 | Confirmed | Pending |
+| [CVE-2026-126148](CVE-2026-126148) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6 | 8.0.2 / 7.6.7 | HA join-request OS command injection via hostname/peer-ip fields; fixed in 8.0.2/7.6.7 | Confirmed | Pending |
+| [CVE-2026-129352](CVE-2026-129352) | TRENDnet TEW-657BRM | 4.0 9.4 (VulDB) | TEW-657BRM v1.0R firmware 1.00.1 | none (EOL, no vendor fix) | Authenticated stack overflow in upgrade_flash.cgi via unbounded strncpy of multipart first line; EOL, no vendor fix | Confirmed | Pending |
 
-### Runtime / Framework / Browser (19)
+### Runtime / Framework / Browser (22)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -127,8 +138,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-47884](CVE-2026-47884) | Spring Framework XsltView | 3.1 9.8 (GHSA) | Spring Framework 5.2.x–5.3.49, 6.0.x–6.0.30, 6.1.x–6.1.28, 6.2.x–6.2.19, 7.0.0–7.0.8 (XsltView + catch-all /** mapping + implicit view name) | 5.3.50 / 6.0.31 / 6.1.29 / 6.2.20 / 7.0.9 | Attacker view name resolved via XsltView; SSRF and RCE via XSLT Java extensions, unverified | Confirmed | Pending |
 | [CVE-2026-131842](CVE-2026-131842) | Poppler pdfdetach | 4.0 5.7 (VulnCheck) | Poppler pdfdetach 24.03.0–26.11.0 | none (upstream work item 1826 open) | Path traversal in pdfdetach writes embedded files outside the output directory | Confirmed | Pending |
 | [CVE-2026-131873](CVE-2026-131873) | Gargoyle | 4.0 6.9 (VulnCheck) | Gargoyle 2023.1–2026.1.1 | Spatterlight 1.5.5 import (commit 45385f1) | Stack buffer overflow in Plus interpreter ReadAction(); crafted .plus file crashes interpreter | Confirmed | Pending |
+| [CVE-2026-121265](CVE-2026-121265) | SQL::Abstract | 3.1 9.8 (GHSA) | SQL::Abstract < 2.000003 | 2.000003 | Arrayref column values treated as literal SQL in insert/update/generate; unauthenticated injection; fixed in 2.000003 | Confirmed | Pending |
+| [CVE-2026-107360](CVE-2026-107360) | rubygem-safemode | 3.1 9.6 (Red Hat) | rubygem-safemode through 2.0.3; Red Hat Satellite 6.16–6.18 | upstream PR #75 (unmerged); rubygem-safemode 1.5.0-3.el8sat / 1.5.0-3.el9sat | Compound-assignment expressions bypass safemode Jail allow-list, executing arbitrary no-arg methods; upstream fix PR unmerged | Confirmed | Pending |
+| [CVE-2026-128027](CVE-2026-128027) | FrankenPHP | 4.0 9.3 (VulnCheck) | FrankenPHP images built before 2026-02-04 (< 1.1.11) | 1.1.11 | Stale base-image layers ship a pre-auth CMS stack-overflow libcrypto; fixed in 1.1.11 | Confirmed | Pending |
 
-### Database (4)
+### Database (5)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -136,6 +150,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | ClickHouse 26.3 < 26.3.62.3-lts, 26.8 < 26.8.36.3-lts, 26.9 < 26.9.27.3-stable, 26.10 < 26.10.3.7-stable | 26.3.62.3-lts / 26.8.36.3-lts / 26.9.27.3-stable / 26.10.3.7-stable (2026-10-30) | Unauthenticated RCE claimed; lab validates differential detection + weaponized DoS only | Confirmed | ◐ Partial |
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Confirmed | Pending |
 | [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | Auth token written plaintext to DEBUG logs; fixed in 4.16.4/5.0.2, lab evidence | Confirmed | Pending |
+| [CVE-2026-116244](CVE-2026-116244) | pgAdmin 4 | 3.1 9.6 (NVD)；4.0 7.1 (PostgreSQL) | pgAdmin 4 ≤ 9.18 | 9.19 (2026-10-29) | Service-mode libpq uses the pgAdmin service account Kerberos credentials against attacker databases; fixed in 9.19 | Confirmed | Pending |
 
 ### OS / System / DevOps (20)
 

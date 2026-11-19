@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (29)
+### Web / CMS (33)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -51,6 +51,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-129491](CVE-2026-129491) | forum-java | 4.0 5.1 (VulnCheck) | forum-java 20f7e68–63152c4 | none (unfixed upstream) | 認証済み格納型 XSS（コメント返信ダイアログ）、セッション窃取 | 確認済み | 未実施 |
 | [CVE-2026-130354](CVE-2026-130354) | phpMyFAQ | 4.0 6.9 (VulnCheck) | phpMyFAQ 4.1.0–4.1.11 | 4.1.12 | 未認証で WebAuthn 登録により有効なアカウントを作成、承認とドメインホワイトリストを回避 | 確認済み | 未実施 |
 | [CVE-2026-130347](CVE-2026-130347) | phpMyFAQ | 4.0 6.3 (VulnCheck) | phpMyFAQ before 4.1.12 (4.2.0-alpha before 4.2.0-RC.2) | 4.1.12 / 4.2.0-RC.2 | パスワードリセットで外部 ID（OIDC/LDAP/SSO）アカウントの認証を回避、IdP の MFA を迂回 | 確認済み | 未実施 |
+| [CVE-2026-110960](CVE-2026-110960) | Auth Armor | 3.1 9.8 (GHSA) | Auth Armor ≤ 1.0.3 | unknown | 未認証で漏洩した API 認証情報と登録リセットによりアカウントを乗っ取り；修正バージョン不明 | 確認済み | 未実施 |
+| [CVE-2026-126269](CVE-2026-126269) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | 添付 MIME 許可リストの部分一致で text/html が同一オリジンで描画される格納型 XSS；2026.09.0 で修正 | 確認済み | 未実施 |
+| [CVE-2026-126274](CVE-2026-126274) | NocoDB | 4.0 9.3 (VulnCheck) | NocoDB < 2026.08.1 | 2026.08.1 | テーブル/列タイトルが削除ダイアログで innerHTML 経由で描画される格納型 XSS；2026.08.1 で修正 | 確認済み | 未実施 |
+| [CVE-2026-126273](CVE-2026-126273) | NocoDB | 4.0 9.2 (VulnCheck) | NocoDB < 2026.09.0 | 2026.09.0 | 最初の未認証サインアップが未完了の管理者ブートストラップでスーパー管理者を取得；2026.09.0 で修正 | 確認済み | 未実施 |
 
 ### AI / LLM (5)
 
@@ -62,7 +66,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | MCP bridge の terminal_execute による未認証 RCE；Exploit-DB で検証済み autopwn | 確認済み | 未実施 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP ツール呼び出しの未パラメータ化による SQLi；xp_cmdshell は主張のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (37)
+### ネットワークとセキュリティ (44)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -103,8 +107,15 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-125283](CVE-2026-125283) | F5 NGINX alias/try_files | 3.1 5.3 (GHSA) | nginx 0.9.6–1.31.8 (alias + try_files) | 1.30.7 / 1.31.9 | alias + try_files 整数アンダーフロー；範囲外読み取り（Docker ラボ）、未検証 | 確認済み | 未実施 |
 | [CVE-2026-120967](CVE-2026-120967) | F5 NGINX stream SNI | 3.1 4.8 (GHSA) | nginx 1.25.5–1.31.8 (stream SNI mTLS) | 1.30.7 / 1.31.9 | stream SNI mTLS チェックが遅すぎる；保護バックエンドへ回避（ラボ）、未検証 | 確認済み | 未実施 |
 | [CVE-2026-129358](CVE-2026-129358) | Magma NMS | 4.0 1.9 (VulDB) | Magma NMS up to 1.9.0 | none (unfixed upstream) | 組織名がインライン CONFIG スクリプトにエスケープ無しで描画される格納型 XSS | 確認済み | 未実施 |
+| [CVE-2026-129351](CVE-2026-129351) | TRENDnet TEW-657BRM | 4.0 10.0 (VulDB) | TEW-657BRM v1.0R firmware 1.00.1 | none (EOL, no vendor fix) | 未認証の長い .htm パスで sprintf が GOT を破壊；EOL、ベンダー修正なし | 確認済み | 未実施 |
+| [CVE-2026-129353](CVE-2026-129353) | D-Link DIR-600L | 4.0 10.0 (VulDB) | DIR-600L B1 firmware 2.17, 2.17b02 | none (EOL, no vendor fix) | 未認証で id/password の無制限 strcpy によるスタックオーバーフロー；EOL、ベンダー修正なし | 確認済み | 未実施 |
+| [CVE-2026-129354](CVE-2026-129354) | D-Link DIR-600L | 4.0 10.0 (VulDB) | DIR-600L B1 firmware 2.17b02 | none (EOL, no vendor fix) | 未認証で SOAPAction ヘッダーによる HNAP hnap_main のスタックオーバーフロー；EOL、ベンダー修正なし | 確認済み | 未実施 |
+| [CVE-2026-110697](CVE-2026-110697) | Quay | 3.1 9.9 (Red Hat) | Quay < 3.9.28; 3.10 < 3.10.28; 3.12 < 3.12.24; 3.14 < 3.14.10; 3.15 < 3.15.9; 3.16 < 3.16.7; 3.17 < 3.17.7; 3.18 < 3.18.3 | 3.9.28 / 3.10.28 / 3.12.24 / 3.14.10 / 3.15.9 / 3.16.7 / 3.17.7 / 3.18.3 | ロボット一覧の SQL LIKE ワイルドカード注入で他テナントのロボットトークンが漏洩；各ブランチの修正版で対応 | 確認済み | 未実施 |
+| [CVE-2026-126147](CVE-2026-126147) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6, 7.4.0–7.4.8, 7.2.0–7.2.9 | 8.0.2 / 7.6.7 / 7.4.9; migrate off 7.2 | 管理インターフェースのパストラバーサルで任意ファイル書き込みからコマンド実行；8.0.2/7.6.7/7.4.9 で修正 | 確認済み | 未実施 |
+| [CVE-2026-126148](CVE-2026-126148) | FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1, 7.6.0–7.6.6 | 8.0.2 / 7.6.7 | HA 参加要求の hostname/peer-ip 経由で OS コマンドインジェクション；8.0.2/7.6.7 で修正 | 確認済み | 未実施 |
+| [CVE-2026-129352](CVE-2026-129352) | TRENDnet TEW-657BRM | 4.0 9.4 (VulDB) | TEW-657BRM v1.0R firmware 1.00.1 | none (EOL, no vendor fix) | 認証済みで multipart 先頭行の無制限 strncpy によるスタックオーバーフロー；EOL、ベンダー修正なし | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (19)
+### ランタイム / フレームワーク / ブラウザ (22)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -127,8 +138,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-47884](CVE-2026-47884) | Spring Framework XsltView | 3.1 9.8 (GHSA) | Spring Framework 5.2.x–5.3.49, 6.0.x–6.0.30, 6.1.x–6.1.28, 6.2.x–6.2.19, 7.0.0–7.0.8 (XsltView + catch-all /** mapping + implicit view name) | 5.3.50 / 6.0.31 / 6.1.29 / 6.2.20 / 7.0.9 | 攻撃者指定ビュー名が XsltView で解決；SSRF と XSLT Java 拡張による RCE、未検証 | 確認済み | 未実施 |
 | [CVE-2026-131842](CVE-2026-131842) | Poppler pdfdetach | 4.0 5.7 (VulnCheck) | Poppler pdfdetach 24.03.0–26.11.0 | none (upstream work item 1826 open) | pdfdetach のパストラバーサル、埋め込みファイルが出力先以外に書き出される | 確認済み | 未実施 |
 | [CVE-2026-131873](CVE-2026-131873) | Gargoyle | 4.0 6.9 (VulnCheck) | Gargoyle 2023.1–2026.1.1 | Spatterlight 1.5.5 import (commit 45385f1) | Plus インタプリタ ReadAction() のスタックオーバーフロー、細工した .plus ファイルでクラッシュ | 確認済み | 未実施 |
+| [CVE-2026-121265](CVE-2026-121265) | SQL::Abstract | 3.1 9.8 (GHSA) | SQL::Abstract < 2.000003 | 2.000003 | 配列の列値が insert/update/generate でリテラル SQL として扱われ未認証で注入；2.000003 で修正 | 確認済み | 未実施 |
+| [CVE-2026-107360](CVE-2026-107360) | rubygem-safemode | 3.1 9.6 (Red Hat) | rubygem-safemode through 2.0.3; Red Hat Satellite 6.16–6.18 | upstream PR #75 (unmerged); rubygem-safemode 1.5.0-3.el8sat / 1.5.0-3.el9sat | 複合代入式で safemode Jail の許可リストを回避し任意の無引数メソッドを実行；上流の修正 PR は未マージ | 確認済み | 未実施 |
+| [CVE-2026-128027](CVE-2026-128027) | FrankenPHP | 4.0 9.3 (VulnCheck) | FrankenPHP images built before 2026-02-04 (< 1.1.11) | 1.1.11 | 古いベースイメージ層が認証前 CMS スタックオーバーフローの libcrypto を同梱；1.1.11 で修正 | 確認済み | 未実施 |
 
-### データベース (4)
+### データベース (5)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -136,6 +150,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | ClickHouse 26.3 < 26.3.62.3-lts, 26.8 < 26.8.36.3-lts, 26.9 < 26.9.27.3-stable, 26.10 < 26.10.3.7-stable | 26.3.62.3-lts / 26.8.36.3-lts / 26.9.27.3-stable / 26.10.3.7-stable (2026-10-30) | 未認証 RCE を主張；ラボでは差分検出 + 武器化 DoS のみ検証 | 確認済み | ◐ 部分 |
 | [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | 低権限認証ユーザーが MozJS モジュールローダー経由でローカルファイルを漏洩；RCE ではない | 確認済み | 未実施 |
 | [CVE-2026-73504](CVE-2026-73504) | cassandra-jdbc-wrapper | 3.1 5.5 (GHSA) | cassandra-jdbc-wrapper < 4.16.4; >= 5.0.0, < 5.0.2 | 4.16.4 / 5.0.2 | 認証トークンが DEBUG ログに平文で記録；4.16.4/5.0.2 で修正、ラボ証拠あり | 確認済み | 未実施 |
+| [CVE-2026-116244](CVE-2026-116244) | pgAdmin 4 | 3.1 9.6 (NVD)；4.0 7.1 (PostgreSQL) | pgAdmin 4 ≤ 9.18 | 9.19 (2026-10-29) | サービスモードの libpq が pgAdmin サービスアカウントの Kerberos 認証情報で攻撃者の DB に接続；9.19 で修正 | 確認済み | 未実施 |
 
 ### OS / システム / DevOps (20)
 
