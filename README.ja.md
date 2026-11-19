@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (43)
+### Web / CMS (53)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -65,6 +65,16 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-13447](CVE-2026-13447) | MStore API | 3.1 9.8 (Wordfence) | MStore API <= 4.20.0 (lab 4.18.4) | 4.21.1 | 未認証 JWT 偽造で管理者乗っ取り；署名検証なし、ラボ 4.18.4 で検証済み | 確認済み | 未実施 |
 | [CVE-2026-13355](CVE-2026-13355) | Meta Box AIO | 3.1 9.8 (Wordfence) | Meta Box AIO <= 3.11.0; MB Frontend Submission <= 4.5.6; MB User Profile <= 3.11.0 | 3.12.0 | 未認証でフロントエンド送信の連鎖により管理者アカウント作成；公開 mbfs フォームが必要、未検証 | 確認済み | 未実施 |
 | [CVE-2026-1357](CVE-2026-1357) | WPvivid Backup & Migration | 3.1 9.8 (Wordfence) | WPvivid Backup & Migration <= 0.9.123 | 0.9.124 | RSA フェイルオープンとパストラバーサルで未認証の任意 PHP アップロード；生成済み API トークンが必要、Docker ラボで RCE | 確認済み | 未実施 |
+| [CVE-2026-133117](CVE-2026-133117) | Product Feed for WooCommerce | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | WebToffee Product Feed before 2.4.4 | 2.4.4 | ハードコードされた cron ソルトによる未認証の管理操作トリガー、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133092](CVE-2026-133092) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Git サブモジュール URL による RCE（検出型 PoC、未検証） | 確認済み | 未実施 |
+| [CVE-2026-133086](CVE-2026-133086) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Kotlin DSL サンドボックスの URL ストリームハンドラによる RCE（検出型 PoC、未検証） | 確認済み | 未実施 |
+| [CVE-2026-133087](CVE-2026-133087) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Kotlin DSL サンドボックスのタイムゾーンコールバックによる RCE（検出型 PoC、未検証） | 確認済み | 未実施 |
+| [CVE-2026-133172](CVE-2026-133172) | cozy-stack | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | cozy-stack before 1.6.69 | 1.6.69 | 共有ドライブ移動の認可バイパスによる他テナントのファイル露出、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133234](CVE-2026-133234) | stoatchat | 4.0 8.7 (VulnCheck); 3.1 7.5 (VulnCheck) | stoatchat before 0.16.5 | 0.16.5 | JXL デコードの無制限によるメモリ枯渇 DoS、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133235](CVE-2026-133235) | Tandoor Recipes | 4.0 8.3 (VulnCheck); 3.1 7.7 (VulnCheck) | Tandoor Recipes before 2.7.4 | 2.7.4 | Nextcloud WebDAV 経由の SSRF で内部ホストに到達、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133173](CVE-2026-133173) | WatchAlert | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | WatchAlert 2.0.0 through 3.9.20 | 3.9.21 | テナント横断 IDOR による監視認証情報の漏洩、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133113](CVE-2026-133113) | Gogs | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | Gogs through 0.14.4 | 0.14.5 | PR マージ API による保護ブランチのバイパス、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133114](CVE-2026-133114) | WooCommerce Side Cart | 4.0 5.3 (VulnCheck); 3.1 4.3 (VulnCheck) | Caddy WooCommerce Side Cart 3.0.0 before 3.2.1 | 3.2.1 | saved-items エンドポイントの認可欠如による非公開商品データの露出、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (5)
 
@@ -76,7 +86,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | MCP bridge の terminal_execute による未認証 RCE；Exploit-DB で検証済み autopwn | 確認済み | 未実施 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP ツール呼び出しの未パラメータ化による SQLi；xp_cmdshell は主張のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (51)
+### ネットワークとセキュリティ (54)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -131,8 +141,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-76466](CVE-2026-76466) | Cisco Expressway | 3.1 9.8 (Cisco) | Expressway-C / Expressway-E clustered, X15.5.3 and earlier (X14 and earlier too) | X15.5.20 | クラスタ Expressway のハードコード Erlang クッキーによる未認証 root RCE；ラボ検証済み、F6 が実利用を確認 | 確認済み | 未実施 |
 | [CVE-2026-13249](CVE-2026-13249) | Honeywell PD45 プリンタ | 3.1 9.8 (Honeywell) | Honeywell PD45 firmware >= F10.19.010040 and < F10.22.030745 | F10.22.030745 | プリンタ Web 管理で未認証の任意ファイルアップロード；正確なアップロード URI は未公開、運用者の URL 指定が必要、未検証 | 確認済み | 未実施 |
 | [CVE-2026-13768](CVE-2026-13768) | Gardyn スマートガーデン | 4.0 9.5 (ICS-CERT); 3.1 10.0 (ICS-CERT) | Gardyn Home Kit and Studio devices (exposed iothubowner key) | Cloud-side fix deployed (2026-07); devices auto-update firmware when connected | 漏洩した IoT Hub オーナーキーで全艦隊を列挙し upgrade() コマンドインジェクションで RCE；クラウド側で修正済み、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116440](CVE-2026-116440) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | SDNAS の未認証リモートバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132622](CVE-2026-132622) | GearUP Hyperev | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | GearUP Hyperev up to 20261020 |  | WLAN スキャンのコマンドインジェクション（遅延検出）、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133185](CVE-2026-133185) | goproxy | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | elazarl/goproxy before 1.9.4 | 1.9.4 | math/rand シード予測による TLS リーフ秘密鍵の漏洩、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (25)
+### ランタイム / フレームワーク / ブラウザ (26)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -161,6 +174,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-128014](CVE-2026-128014) | FrankenPHP | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | FrankenPHP 1.13.1 (Brotli 1.2.0); all builds shipping Brotli < 1.2.1 | 1.13.2 (Brotli 1.2.1) | 同梱 Brotli 1.2.0 の無限デコードループ；未認証ワーカー DoS、ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF、SOAP レスポンス全体の漏洩；ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | シングルバイトエンコーディングの大文字小文字変換でヒープ範囲外書き込み 1 バイト；ASAN クラッシュと glibc チャンク破損、ラボ証拠あり | 確認済み | 未実施 |
+| [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | JPEG エンコーダの平面変換でのヒープバッファオーバーフロー、未検証 | 確認済み | 未実施 |
 
 ### データベース (8)
 
@@ -175,7 +189,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT タイムアウト後に未読応答付き接続がプールへ；リクエスト横断のデータ漏洩、未検証 | 確認済み | 未実施 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | リモートクラスターサーバーの認証前デシリアライズによる未認証再帰 DoS；ラボ証拠あり | 確認済み | 未実施 |
 
-### OS / システム / DevOps (24)
+### OS / システム / DevOps (25)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -203,6 +217,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-99273](CVE-2026-99273) | Linux カーネル (ksmbd) | unknown | Linux < 7.3.2 with CONFIG_SMB_SERVER | mainline a025c4991a7d8; stable 6.12.117 / 6.18.61 / 7.3.2 | ksmbd 応答バッファ外 2 バイトのヒープ範囲外書き込み；KASAN 証拠、スコア未割当 | 確認済み | 未実施 |
 | [CVE-2026-13043](CVE-2026-13043) | WatchGuard エンドポイントセキュリティ | 4.0 9.3 (WatchGuard) | WatchGuard Endpoint Security < 8.00.26.0012 (Windows) | 8.00.26.0012 | ローカル管理者がドライバハンドシェイクを偽造し特権 IOCTL へ；MSR 読み取りで KASLR を回避、任意プロセスメモリ読み取り | 確認済み | 未実施 |
 | [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | hydra-http-form.c の Set-Cookie 解析でスタックバッファオーバーフロー；悪意あるサーバが Hydra クライアントをクラッシュ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133305](CVE-2026-133305) | sqlmap | 4.0 2.3 (VulnCheck); 3.1 4.3 (VulnCheck) | sqlmap before 1.10.11.89 | 1.10.11.89 | クロスホストリダイレクトによる Cookie / Authorization ヘッダの漏洩、未検証 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。

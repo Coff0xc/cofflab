@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (43)
+### Web / CMS (53)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -65,6 +65,16 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-13447](CVE-2026-13447) | MStore API | 3.1 9.8 (Wordfence) | MStore API <= 4.20.0 (lab 4.18.4) | 4.21.1 | Unauthenticated JWT forgery to admin takeover; signature never verified, lab-validated on 4.18.4 | Confirmed | Pending |
 | [CVE-2026-13355](CVE-2026-13355) | Meta Box AIO | 3.1 9.8 (Wordfence) | Meta Box AIO <= 3.11.0; MB Frontend Submission <= 4.5.6; MB User Profile <= 3.11.0 | 3.12.0 | Unauthenticated admin account creation via chained frontend-submission flaws; needs a public mbfs form, unverified | Confirmed | Pending |
 | [CVE-2026-1357](CVE-2026-1357) | WPvivid Backup & Migration | 3.1 9.8 (Wordfence) | WPvivid Backup & Migration <= 0.9.123 | 0.9.124 | Unauthenticated arbitrary PHP upload via RSA fail-open + path traversal; needs generated API token, Docker lab RCE | Confirmed | Pending |
+| [CVE-2026-133117](CVE-2026-133117) | Product Feed for WooCommerce | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | WebToffee Product Feed before 2.4.4 | 2.4.4 | Hard-coded cron salt lets unauthenticated attackers trigger admin actions, unverified | Confirmed | Pending |
+| [CVE-2026-133092](CVE-2026-133092) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | RCE via Git submodule URLs; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133086](CVE-2026-133086) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | RCE via URL stream handler in Kotlin DSL sandbox; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133087](CVE-2026-133087) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | RCE via time zone callback in Kotlin DSL sandbox; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133172](CVE-2026-133172) | cozy-stack | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | cozy-stack before 1.6.69 | 1.6.69 | Auth bypass in shared-drive move exposes other tenants' files, unverified | Confirmed | Pending |
+| [CVE-2026-133234](CVE-2026-133234) | stoatchat | 4.0 8.7 (VulnCheck); 3.1 7.5 (VulnCheck) | stoatchat before 0.16.5 | 0.16.5 | Unbounded JXL decoding exhausts memory via proxy endpoint; DoS PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133235](CVE-2026-133235) | Tandoor Recipes | 4.0 8.3 (VulnCheck); 3.1 7.7 (VulnCheck) | Tandoor Recipes before 2.7.4 | 2.7.4 | SSRF via Nextcloud WebDAV client reaches internal hosts; trigger PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133173](CVE-2026-133173) | WatchAlert | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | WatchAlert 2.0.0 through 3.9.20 | 3.9.21 | Cross-tenant IDOR in dataSourceGet leaks monitoring credentials, unverified | Confirmed | Pending |
+| [CVE-2026-133113](CVE-2026-133113) | Gogs | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | Gogs through 0.14.4 | 0.14.5 | Protected branch bypass via PR merge API, unverified | Confirmed | Pending |
+| [CVE-2026-133114](CVE-2026-133114) | WooCommerce Side Cart | 4.0 5.3 (VulnCheck); 3.1 4.3 (VulnCheck) | Caddy WooCommerce Side Cart 3.0.0 before 3.2.1 | 3.2.1 | Missing authorization in saved-items endpoint exposes non-public product data, unverified | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -76,7 +86,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (51)
+### Network & Security (54)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -131,8 +141,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-76466](CVE-2026-76466) | Cisco Expressway | 3.1 9.8 (Cisco) | Expressway-C / Expressway-E clustered, X15.5.3 and earlier (X14 and earlier too) | X15.5.20 | Unauthenticated root RCE via hard-coded Erlang cookie on clustered Expressway; lab-validated, confirmed exploited in the wild (F6) | Confirmed | Pending |
 | [CVE-2026-13249](CVE-2026-13249) | Honeywell PD45 | 3.1 9.8 (Honeywell) | Honeywell PD45 firmware >= F10.19.010040 and < F10.22.030745 | F10.22.030745 | Unauthenticated arbitrary file upload on printer web admin; exact upload URI unpublished, needs operator-supplied URL, unverified | Confirmed | Pending |
 | [CVE-2026-13768](CVE-2026-13768) | Gardyn Home Kit / Studio | 4.0 9.5 (ICS-CERT); 3.1 10.0 (ICS-CERT) | Gardyn Home Kit and Studio devices (exposed iothubowner key) | Cloud-side fix deployed (2026-07); devices auto-update firmware when connected | Exposed IoT Hub owner key gives fleet enumeration and RCE via upgrade() command injection; cloud-side fix, unverified | Confirmed | Pending |
+| [CVE-2026-116440](CVE-2026-116440) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Unauthenticated remote buffer overflow in SDNAS; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132622](CVE-2026-132622) | GearUP Hyperev | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | GearUP Hyperev up to 20261020 |  | Command injection in WLAN site survey via sleep timing; detection-only, unverified | Confirmed | Pending |
+| [CVE-2026-133185](CVE-2026-133185) | goproxy | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | elazarl/goproxy before 1.9.4 | 1.9.4 | Predictable TLS leaf private keys from math/rand seed; key recovery PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (25)
+### Runtime / Framework / Browser (26)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -161,6 +174,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-128014](CVE-2026-128014) | FrankenPHP | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | FrankenPHP 1.13.1 (Brotli 1.2.0); all builds shipping Brotli < 1.2.1 | 1.13.2 (Brotli 1.2.1) | Bundled Brotli 1.2.0 non-terminating decode loop; unauthenticated worker DoS, lab-verified | Confirmed | Pending |
 | [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF with full SOAP response exfiltration; lab-verified | Confirmed | Pending |
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | One-byte heap OOB write in single-byte case conversion; ASAN crash and glibc chunk corruption, lab evidence | Confirmed | Pending |
+| [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | Heap buffer overflow in JPEG encoder planar conversion; crash PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
@@ -175,7 +189,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (24)
+### OS / System / DevOps (25)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -203,6 +217,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-99273](CVE-2026-99273) | Linux kernel (ksmbd) | unknown | Linux < 7.3.2 with CONFIG_SMB_SERVER | mainline a025c4991a7d8; stable 6.12.117 / 6.18.61 / 7.3.2 | Two-byte heap OOB write past 448-byte ksmbd response buffer; KASAN evidence, no CVSS yet | Confirmed | Pending |
 | [CVE-2026-13043](CVE-2026-13043) | WatchGuard Endpoint Security | 4.0 9.3 (WatchGuard) | WatchGuard Endpoint Security < 8.00.26.0012 (Windows) | 8.00.26.0012 | Local admin forges driver handshake for privileged IOCTLs; MSR read defeats KASLR, arbitrary process memory read | Confirmed | Pending |
 | [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | Stack buffer overflow via Set-Cookie parsing in hydra-http-form.c; malicious server crashes the Hydra client, unverified | Confirmed | Pending |
+| [CVE-2026-133305](CVE-2026-133305) | sqlmap | 4.0 2.3 (VulnCheck); 3.1 4.3 (VulnCheck) | sqlmap before 1.10.11.89 | 1.10.11.89 | Cross-host redirects leak Cookie/Authorization headers; local demo PoC, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
