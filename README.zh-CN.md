@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (53)
+### Web / CMS (60)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -75,6 +75,13 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133173](CVE-2026-133173) | WatchAlert | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | WatchAlert 2.0.0 through 3.9.20 | 3.9.21 | 跨租户 IDOR 泄露监控凭据，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133113](CVE-2026-133113) | Gogs | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | Gogs through 0.14.4 | 0.14.5 | PR 合并 API 绕过受保护分支，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133114](CVE-2026-133114) | WooCommerce Side Cart | 4.0 5.3 (VulnCheck); 3.1 4.3 (VulnCheck) | Caddy WooCommerce Side Cart 3.0.0 before 3.2.1 | 3.2.1 | saved-items 端点缺失授权泄露非公开商品数据，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133080](CVE-2026-133080) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | 经 Maven 仓库设置远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133015](CVE-2026-133015) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经 Kotlin DSL 启动类路径库远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133016](CVE-2026-133016) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经 Kotlin DSL 脚本定义远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133018](CVE-2026-133018) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经 Kotlin DSL UI 补丁回调远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133019](CVE-2026-133019) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经 Kotlin DSL 上下文参数回调远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133027](CVE-2026-133027) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | 经令牌认证用户名处理提权；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133089](CVE-2026-133089) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TFS 助手进程未认证命令服务；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (5)
 
@@ -86,7 +93,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | 经 MCP bridge terminal_execute 未认证 RCE；Exploit-DB 已验证 autopwn | 已确认 | 待复现 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP 工具调用未参数化致 SQL 注入；xp_cmdshell 自称，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (54)
+### 网络与安全 (61)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -144,8 +151,15 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-116440](CVE-2026-116440) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | SDNAS 未认证远程缓冲区溢出；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-132622](CVE-2026-132622) | GearUP Hyperev | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | GearUP Hyperev up to 20261020 |  | WLAN 扫描接口命令注入（时延检测），未核实 | 已确认 | 待复现 |
 | [CVE-2026-133185](CVE-2026-133185) | goproxy | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | elazarl/goproxy before 1.9.4 | 1.9.4 | math/rand 种子可预测致 TLS 叶证书私钥泄露，未核实 | 已确认 | 待复现 |
+| [CVE-2026-116443](CVE-2026-116443) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | NAS TFTP 服务栈缓冲区溢出；崩溃检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-116446](CVE-2026-116446) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | NAS NFS 服务越界内存访问；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-116449](CVE-2026-116449) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | SDNAS 操作系统命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-116441](CVE-2026-116441) | PowerStore SDNAS | 3.1 9.6 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | 存储处理器互联驱动越界写；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-111505](CVE-2026-111505) | OpenManage Enterprise | 3.1 8.8 (Dell) | Dell OpenManage Enterprise versions prior to 4.8.0 | 4.8.0 (DSA-2026-467) | OpenManage Enterprise 操作系统命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-111506](CVE-2026-111506) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore 缺失认证；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-111545](CVE-2026-111545) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (26)
+### 运行环境 / 框架 / 浏览器 (27)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -175,6 +189,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF，完整 SOAP 响应外泄；实验有据 | 已确认 | 待复现 |
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | 单字节编码大小写转换堆越界写 1 字节；ASAN 崩溃与 glibc 堆元数据损坏，实验有据 | 已确认 | 待复现 |
 | [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | JPEG 编码器平面转换堆越界写，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133243](CVE-2026-133243) | node-soap | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | node-soap before 1.14.1 | 1.14.1 | WSDL.xmlToObject 原型污染；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### 数据库 (8)
 

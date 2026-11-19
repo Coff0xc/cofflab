@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (53)
+### Web / CMS (60)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -75,6 +75,13 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133173](CVE-2026-133173) | WatchAlert | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | WatchAlert 2.0.0 through 3.9.20 | 3.9.21 | テナント横断 IDOR による監視認証情報の漏洩、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133113](CVE-2026-133113) | Gogs | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | Gogs through 0.14.4 | 0.14.5 | PR マージ API による保護ブランチのバイパス、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133114](CVE-2026-133114) | WooCommerce Side Cart | 4.0 5.3 (VulnCheck); 3.1 4.3 (VulnCheck) | Caddy WooCommerce Side Cart 3.0.0 before 3.2.1 | 3.2.1 | saved-items エンドポイントの認可欠如による非公開商品データの露出、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133080](CVE-2026-133080) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Maven リポジトリ設定経由のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133015](CVE-2026-133015) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Kotlin DSL ブートクラスパスライブラリ経由のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133016](CVE-2026-133016) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Kotlin DSL スクリプト定義経由のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133018](CVE-2026-133018) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Kotlin DSL UI パッチコールバック経由のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133019](CVE-2026-133019) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Kotlin DSL コンテキストパラメータコールバック経由のリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133027](CVE-2026-133027) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | トークン認証のユーザ名処理による権限昇格；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133089](CVE-2026-133089) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TFS ヘルパープロセスの未認証コマンドサーバ；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (5)
 
@@ -86,7 +93,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | MCP bridge の terminal_execute による未認証 RCE；Exploit-DB で検証済み autopwn | 確認済み | 未実施 |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP ツール呼び出しの未パラメータ化による SQLi；xp_cmdshell は主張のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (54)
+### ネットワークとセキュリティ (61)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -144,8 +151,15 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-116440](CVE-2026-116440) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | SDNAS の未認証リモートバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-132622](CVE-2026-132622) | GearUP Hyperev | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | GearUP Hyperev up to 20261020 |  | WLAN スキャンのコマンドインジェクション（遅延検出）、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133185](CVE-2026-133185) | goproxy | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | elazarl/goproxy before 1.9.4 | 1.9.4 | math/rand シード予測による TLS リーフ秘密鍵の漏洩、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116443](CVE-2026-116443) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | NAS TFTP サービスのスタックバッファオーバーフロー；クラッシュ検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116446](CVE-2026-116446) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | NAS NFS サービスの範囲外メモリアクセス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116449](CVE-2026-116449) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | SDNAS の OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116441](CVE-2026-116441) | PowerStore SDNAS | 3.1 9.6 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | ストレージプロセッサ相互接続ドライバの範囲外書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-111505](CVE-2026-111505) | OpenManage Enterprise | 3.1 8.8 (Dell) | Dell OpenManage Enterprise versions prior to 4.8.0 | 4.8.0 (DSA-2026-467) | OpenManage Enterprise の OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-111506](CVE-2026-111506) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore の認証欠如；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-111545](CVE-2026-111545) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | PowerStore の SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (26)
+### ランタイム / フレームワーク / ブラウザ (27)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -175,6 +189,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF、SOAP レスポンス全体の漏洩；ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | シングルバイトエンコーディングの大文字小文字変換でヒープ範囲外書き込み 1 バイト；ASAN クラッシュと glibc チャンク破損、ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | JPEG エンコーダの平面変換でのヒープバッファオーバーフロー、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133243](CVE-2026-133243) | node-soap | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | node-soap before 1.14.1 | 1.14.1 | WSDL.xmlToObject のプロトタイプ汚染；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### データベース (8)
 

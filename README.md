@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (53)
+### Web / CMS (60)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -75,6 +75,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133173](CVE-2026-133173) | WatchAlert | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | WatchAlert 2.0.0 through 3.9.20 | 3.9.21 | Cross-tenant IDOR in dataSourceGet leaks monitoring credentials, unverified | Confirmed | Pending |
 | [CVE-2026-133113](CVE-2026-133113) | Gogs | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | Gogs through 0.14.4 | 0.14.5 | Protected branch bypass via PR merge API, unverified | Confirmed | Pending |
 | [CVE-2026-133114](CVE-2026-133114) | WooCommerce Side Cart | 4.0 5.3 (VulnCheck); 3.1 4.3 (VulnCheck) | Caddy WooCommerce Side Cart 3.0.0 before 3.2.1 | 3.2.1 | Missing authorization in saved-items endpoint exposes non-public product data, unverified | Confirmed | Pending |
+| [CVE-2026-133080](CVE-2026-133080) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Remote code execution via Maven repository settings; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133015](CVE-2026-133015) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Remote code execution via Kotlin DSL boot classpath libraries; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133016](CVE-2026-133016) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Remote code execution via Kotlin DSL script definitions; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133018](CVE-2026-133018) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Remote code execution via Kotlin DSL UI patches callback; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133019](CVE-2026-133019) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Remote code execution via Kotlin DSL context parameters callback; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133027](CVE-2026-133027) | TeamCity | 3.1 8.8 (JetBrains) | JetBrains TeamCity before 2026.2.1, 2026.1.5 | 2026.2.1 / 2026.1.5 | Privilege escalation via username handling in token authentication; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133089](CVE-2026-133089) | TeamCity | 3.1 8.1 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | Unauthenticated command server in TFS helper process; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (5)
 
@@ -86,7 +93,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 
-### Network & Security (54)
+### Network & Security (61)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -144,8 +151,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-116440](CVE-2026-116440) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Unauthenticated remote buffer overflow in SDNAS; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-132622](CVE-2026-132622) | GearUP Hyperev | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | GearUP Hyperev up to 20261020 |  | Command injection in WLAN site survey via sleep timing; detection-only, unverified | Confirmed | Pending |
 | [CVE-2026-133185](CVE-2026-133185) | goproxy | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | elazarl/goproxy before 1.9.4 | 1.9.4 | Predictable TLS leaf private keys from math/rand seed; key recovery PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116443](CVE-2026-116443) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Stack buffer overflow in NAS TFTP service; crash-detection PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116446](CVE-2026-116446) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Out-of-bounds memory access in NAS NFS service; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116449](CVE-2026-116449) | PowerStore SDNAS | 3.1 9.8 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | OS command injection in SDNAS; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-116441](CVE-2026-116441) | PowerStore SDNAS | 3.1 9.6 (Dell) | Dell PowerStore SDNAS versions before 5.1.0.0-2798105 | 5.1.0.0-2798105 (DSA-2026-479) | Out-of-bounds write in storage-processor interconnect driver; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-111505](CVE-2026-111505) | OpenManage Enterprise | 3.1 8.8 (Dell) | Dell OpenManage Enterprise versions prior to 4.8.0 | 4.8.0 (DSA-2026-467) | OS command injection in OpenManage Enterprise; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-111506](CVE-2026-111506) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | Missing authentication in PowerStore; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-111545](CVE-2026-111545) | PowerStore | 3.1 8.8 (Dell) | Dell PowerStoreT OS 5.1.x versions prior to 5.1.0.0-2798105 | 5.1.0.0-2798105 or later (DSA-2026-479) | SQL injection in PowerStore; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (26)
+### Runtime / Framework / Browser (27)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -175,6 +189,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-123753](CVE-2026-123753) | Apache Axis2/Java | 3.1 9.1 (GHSA) | Apache Axis2/Java < 2.0.2 (PoC tested 2.0.1) | 2.0.2 | WS-Addressing ReplyTo/FaultTo SSRF with full SOAP response exfiltration; lab-verified | Confirmed | Pending |
 | [CVE-2026-132825](CVE-2026-132825) | Ruby | 3.1 7.4 (MITRE) | Ruby < 3.3.14; 3.4.0-< 3.4.13; 4.0.0-< 4.0.10 | 3.3.14 / 3.4.13 / 4.0.10 | One-byte heap OOB write in single-byte case conversion; ASAN crash and glibc chunk corruption, lab evidence | Confirmed | Pending |
 | [CVE-2026-133168](CVE-2026-133168) | DCMTK | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | DCMTK 3.7.1 | 3.7.2 (patch pending; fix commit c22836c, no release tagged) | Heap buffer overflow in JPEG encoder planar conversion; crash PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133243](CVE-2026-133243) | node-soap | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | node-soap before 1.14.1 | 1.14.1 | Prototype pollution in WSDL.xmlToObject; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
