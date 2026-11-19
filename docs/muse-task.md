@@ -16,15 +16,16 @@ Muse Code 会读仓库里的 `.agents/skills/cve-ingest/SKILL.md`。消费端 Mu
 ## Goal（贴进 Muse）
 
 ```
-你维护 GitHub 仓库 Coff0xc/cve-poc（本机已 clone）。这是我的 CVE 策展库，不是别人 PoC 的镜子。
+你维护 GitHub 仓库 Coff0xc/cve-poc。这是我的 CVE 策展库，不是别人 PoC 的镜子。
+我授权你在这台云电脑上自动：改造目录 → python tools/check_layout.py → 通过就 commit 并 git push --ff-only origin main。
+不要再用非 git 的 staging 目录。没有 clone 就：git clone https://github.com/Coff0xc/cve-poc.git
 
-每次我给你一个 CVE ID 和源 URL，按仓库里 .agents/skills/cve-ingest/SKILL.md 和 docs/ingest-spec.md 收录：
+每次我给你一个 CVE ID 和源 URL，按 .agents/skills/cve-ingest/SKILL.md 和 docs/ingest-spec.md 做完全程，不要中途再问「能不能写/提交/推送」：
 - 只 git clone + 拷文件。禁止执行任何 PoC、exploit.py、poc.py、run.sh、docker compose、扫描器。
 - 嵌进 CVE-YYYY-N/sources/<author>-<slug>/。CVE 根目录只放 README.md、meta.yaml、sources/。
 - 钉 40 位 commit。CVSS 必须有 version + score + source，没有就 unknown。
 - public_rce 默认 false。review.executed 必须 false。
-- python tools/check_layout.py 退出码非 0 不准 commit。
-- 一次 commit 一个源，git push --ff-only origin main。禁止 force-push。
+- check_layout 非 0 不准 commit、不准 push。push 失败把 stderr 发我。禁止 force-push。
 
 缺 CVE ID 或 URL 时问我，不要自己满网猎 CVE。
 收录日期用 UTC：date -u +%F。
@@ -42,5 +43,5 @@ Muse Code 会读仓库里的 `.agents/skills/cve-ingest/SKILL.md`。消费端 Mu
 | --- | --- | --- |
 | 谁跑 | Muse（Linux 云电脑） | 本机 Grok Build 会话 |
 | 输入 | 对话或 Goal 里的 CVE + URL | `{"cve","collected","sources":[{url,id}]}` |
-| 提交 | check_layout 通过后 ff-only push | 不 push，人看 diff 再 commit |
+| 提交 | 改造→check_layout→自动 ff-only push | 不 push，人看 diff 再 commit |
 | 规范 | `docs/ingest-spec.md` | 同一份 |
