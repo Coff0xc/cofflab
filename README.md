@@ -14,67 +14,95 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-| ID | Product | Score | Assessment | Repro |
-| --- | --- | --- | --- | --- |
-| [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8 (public README, vendor advisory not verified) | Patch-diff analysis + local verification; no ready-made remote exploit | ◐ Partial |
-| [CVE-2026-40217](CVE-2026-40217) | BerriAI LiteLLM | 3.1 8.8 PR:L (public README) | Authenticated lab RCE; requires an API key | ◐ Partial |
-| [CVE-2026-114938](CVE-2026-114938) | OpenJDK Base64 (Java4Shell) | 4.0 9.2 (Calif)；3.1 8.1 (Oracle)；3.1 9.8 (Red Hat) | Trigger / crash / leak / lab experiment; no public general-purpose RCE | ◐ Partial |
-| [CVE-2026-118383](CVE-2026-118383) | MongoDB Server replication | unknown | Lab UAF crash; code execution not demonstrated | — No target |
-| [CVE-2026-123007](CVE-2026-123007) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | Trigger + RCE demo only against a freshly started Docker instance | — No target |
-| [CVE-2026-123488](CVE-2026-123488) | Craft CMS element search | 3.1 9.8 (GHSA)；4.0 9.3 (GitHub) | Unauthenticated SQLi with database writes / privilege escalation | ◐ Partial |
-| [CVE-2026-129448](CVE-2026-129448) | Apache Roller XML-RPC | 3.1 9.8 (public claim, unverified) | Framework requires a self-supplied gadget; local mock only | ◐ Partial |
-| [CVE-2026-90817](CVE-2026-90817) | Vanderbilt REDCap | 3.1 9.8 (public claim, unverified) | Discoverer's script / placeholder framework / bulk detection | ◐ Partial |
-| [CVE-2026-129287](CVE-2026-129287) | N-able N-central | 4.0 8.3 (N-able) | Authenticated out-of-band XXE file read; closed-source appliance, not locally reproducible | ◐ Partial |
-| [CVE-2026-130796](CVE-2026-130796) | Flowise | 4.0 8.8 (VulnCheck)；3.1 8.2 (VulnCheck) | Unauthenticated plaintext MCP token leak; bundled script is an offline logic simulation | ✅ Full |
-| [CVE-2026-119958](CVE-2026-119958) | Windows LDAP | 3.1 9.8 (Microsoft) | Lab repro of OOB write + crash; no RCE on real Windows LDAP | ✅ Full |
-| [CVE-2026-123039](CVE-2026-123039) | Check Point Gaia OS | 3.1 7.8 (Check Point) | Lab priv-esc to root via world-writable socket; not verified on real Gaia | ◐ Partial |
-| [CVE-2026-123158](CVE-2026-123158) | OpenSSH sshd | 3.1 8.1 (MITRE) | Lab repro of password-auth bypass login; no live evidence | — No target |
-| [CVE-2026-123218](CVE-2026-123218) | IBM Aspera Faspex 5 | 3.1 9.8 (IBM) | Version check only; no bypass demonstrated | ✅ Full |
-| [CVE-2026-123751](CVE-2026-123751) | WP Duplicate | 3.1 9.8 (CISA-ADP) | Unexecuted exploit script; no RCE on real WordPress proven | ◐ Partial |
-| [CVE-2026-124194](CVE-2026-124194) | Microsoft Outlook | 3.1 6.5 (Microsoft) | Trigger .msg files only; no NTLM leak on real Outlook proven | ◐ Partial |
-| [CVE-2026-90436](CVE-2026-90436) | Apache Axis 1.x | 3.1 9.8 (CISA-ADP) | Lab repro of unauthenticated class instantiation; no RCE on default classpath | ◐ Partial |
-| [CVE-2024-27834](CVE-2024-27834) | WebKit (Apple) | 3.1 5.5 (NVD) | Analysis only; no runnable PoC | — No target |
-| [CVE-2026-111560](CVE-2026-111560) | Barracuda ESG / ADC / WAF / WSG | 4.0 8.6 (Mandiant)；3.1 7.2 (NVD) | Lab root command execution (needs admin); unauth root only chained with CVE-2026-116606 | ◐ Partial |
-| [CVE-2026-115731](CVE-2026-115731) | Puppet / OpenVox Server | 4.0 9.4 (Perforce)；3.1 9.9 (NVD) | Advisory-confirmed server command execution (needs valid CA-signed client cert) | — No target |
-| [CVE-2026-116606](CVE-2026-116606) | Barracuda ESG | 4.0 9.3 (Mandiant)；3.1 9.8 (NVD) | Unauthenticated config-restore trigger; root only chained with CVE-2026-111560 | ◐ Partial |
-| [CVE-2026-19868](CVE-2026-19868) | SonicWall SonicOS | 3.1 7.5 (CISA-ADP)；3.1 7.1 (SonicWall) | Version check only | ✅ Full |
-| [CVE-2026-129271](CVE-2026-129271) | N-able N-central Patch Management | 4.0 8.5 (N-able) | Authenticated local priv-esc to root (needs ProductAdmin creds + callback) | — No target |
-| [CVE-2026-129280](CVE-2026-129280) | N-able N-central | 4.0 9.3 (N-able) | Unauthenticated config write (single-operation demo, reversible) | ◐ Partial |
-| [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC | ◐ Partial |
-| [CVE-2026-114713](CVE-2026-114713) | UnrealIRCd | 3.1 8.6 (GHSA) | Lab PoC of server-to-server command injection; not OS-level RCE | ✅ Full |
-| [CVE-2026-116779](CVE-2026-116779) | FreeSWITCH | 3.1 9.8 (GHSA) | Lab-verified SIP MESSAGE command execution; no live-deployment proof | ◐ Partial |
-| [CVE-2026-119618](CVE-2026-119618) | Apache httpd mod_http2 | 3.1 8.1 (NVD)；3.1 9.8 (Red Hat) | Heap corruption + crash under ASan/TSan; RCE not proven | — No target |
-| [CVE-2026-126187](CVE-2026-126187) | React Server Components / Next.js | 4.0 9.5 (GHSA) | RCE in lab Docker app; trigger requires rare conditions | ◐ Partial |
-| [CVE-2026-125350](CVE-2026-125350) | Google Chrome | 3.1 8.8 (NVD) | Renderer crash via regression test file; no RCE payload | ✅ Full |
-| [CVE-2026-126473](CVE-2026-126473) | OpenEMR | 4.0 9.3 (VulnCheck)；3.1 9.1 (VulnCheck) | Unauthenticated FHIR Patient create in lab Docker against official 8.3.0 image; fixed 8.4.0 rejects colon-form registration | — No target |
-| [CVE-2026-98432](CVE-2026-98432) | Linux kernel TCP | 3.1 9.8 (Linux kernel) | KASAN-verified UAF crash in inet_csk_route_req; no code execution demonstrated | — No target |
-| [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | Validated remote DoS via crafted Brotli stream; RCE analysis only | ◐ Partial |
-| [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | Unauthenticated RCE claimed; lab validates differential detection + weaponized DoS only | ◐ Partial |
-| [CVE-2026-126170](CVE-2026-126170) | Fortinet FortiManager / FortiAnalyzer | 3.1 9.8 (Fortinet) | Unauthenticated RCE via JRPC JSON injection in lab; differential 7.6.7 vs 7.6.8 | ✅ Full |
-| [CVE-2026-76954](CVE-2026-76954) | Synology DSM Auth API | 3.1 9.8 (Synology) | Pre-auth stacked SQLi against syno-pam-key.db; file read/write per vendor advisory, not demonstrated by PoC | ◐ Partial |
-| [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | Auth bypass after one valid login; any password accepted when caching enabled (non-default) | ◐ Partial |
-| [CVE-2026-124079](CVE-2026-124079) | rConfig Core / Pro | 4.0 9.3 (VulnCheck)；3.1 9.8 (VulnCheck) | Unauthenticated RCE via Redis-backed Horizon queue poisoning in lab | ◐ Partial |
-| [CVE-2026-86829](CVE-2026-86829) | Apache Airflow core | 3.1 8.8 (Apache) | DAG-author RCE in scheduler via XCom deserialization; lab-verified on 3.3.2, clean on 3.4.0 | ◐ Partial |
-| [CVE-2026-121653](CVE-2026-121653) | Ivanti Endpoint Manager Core | 3.1 9.8 (Ivanti) | Unauthenticated SQLi → OS command execution via Core DB account in lab | ◐ Partial |
-| [CVE-2026-124552](CVE-2026-124552) | Webmin Shorewall modules | 4.0 4.8 (VulnCheck)；3.1 4.8 (VulnCheck) | Stored XSS → root command execution in lab (needs Shorewall-module account + admin view); unpatched traversal 0day also shown | ◐ Partial |
-| [CVE-2026-104623](CVE-2026-104623) | SUSE Rancher Manager | 3.1 6.3 (SUSE) | Authenticated user gets shell pod on management cluster; unprivileged pod, scoped API access | ◐ Partial |
-| [CVE-2026-105437](CVE-2026-105437) | Git three-way merge | 3.1 7.5 (GitLab) | Heap overflow on merge of attacker-controlled content; SIGSEGV on 2.56.0, clean on 2.56.1 | ✅ Full |
-| [CVE-2026-111585](CVE-2026-111585) | TeamViewer clients | 3.1 8.8 (TeamViewer) | Viewer heap overflow + crash on real 15.82.6 binaries; RCE claimed, crash proven | ◐ Partial |
-| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session upload progress | unknown | Unauthenticated RCE via session handler mismatch in lab (php:8.4.27-apache); unpatched, mitigation is disabling upload progress | ◐ Partial |
-| [CVE-2026-53362](CVE-2026-53362) | Linux kernel IPv6 fragmentation | 3.1 7.8 (Linux kernel) | Lab container escape to root on CentOS/RHEL 10 (kernel 6.12.x); IPv4 sibling CVE-2026-53366 not covered | Pending |
-| [CVE-2026-75604](CVE-2026-75604) | Next.js on Windows | 3.1 9.0 (GHSA) | Unauthenticated RCE via Server Actions encryption key leak; Windows host + Pages/App Router required, lab-validated on next@16.2.11 | Pending |
-| [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | Unauthenticated RCE via SSTI in /contact form; curl PoC only, no fix (project unmaintained) | Pending |
-| [CVE-2026-97229](CVE-2026-97229) | GitLab CE/EE | 3.1 10.0 (GitLab) | Unauthenticated CI-lint regex OOB write to system() as git in lab (19.4.1 CE); planting the CI config needs write access | Pending |
-| [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Pending |
-| [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | Onigmo integer overflow triggered via .org render; oracle/differential only, no full shell demonstrated | Pending |
-| [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | aarch64 JIT sandbox escape to host code execution in lab; 5/5 on 49.0.3, rejected on 49.0.4 | Pending |
-| [CVE-2026-126173](CVE-2026-126173) | AutomatorWP Pro Webhooks | 3.1 9.8 (Wordfence) | Unauthenticated arbitrary password reset and admin takeover in lab; fixed in 1.4.5 | Pending |
-| [CVE-2026-48356](CVE-2026-48356) | Adobe Commerce / Magento | 3.1 9.3 (Adobe) | Authenticated (low-priv REST token) file upload to webshell RCE in lab; Sansec SA-2026-0027 | Pending |
-| [CVE-2026-119977](CVE-2026-119977) | WordPress Core | 3.1 8.1 (Wordfence) | Upgrade-window TOCTOU plants an attacker wp-config.php; configuration takeover to RCE in lab; CISA KEV 2026-11-03 | Pending |
-| [CVE-2026-110447](CVE-2026-110447) | Collabora Online CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | Unauthenticated command injection via proxy.php; 1-day PoC; CISA KEV, exploited in the wild Sep-Oct 2026 | Pending |
-| [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | Pre-auth RCE chains A/B/C public (D/E paywalled); lab-verified on PHP 5.4-8.5.11; CISA KEV | Pending |
-| [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | Stale-state UAF and info-leak RCE in lab; FPM worker state leaks across requests; CISA KEV | Pending |
-| [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | Unauthenticated JCE profile creation leads to PHP upload and RCE; CISA KEV | Pending |
-| [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Pending |
+### Web / CMS (11)
+
+| ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-123488](CVE-2026-123488) | Craft CMS element search | 3.1 9.8 (GHSA)；4.0 9.3 (GitHub) | 4.0.0–4.18.8 and 5.0.0–5.11.1 (MySQL/MariaDB, emulated PDO prepares) | 4.18.9 / 5.11.2 | Unauthenticated SQLi with database writes / privilege escalation | Confirmed | ◐ Partial |
+| [CVE-2026-129448](CVE-2026-129448) | Apache Roller XML-RPC | 3.1 9.8 (public claim, unverified) | Roller 4.0.0–6.1.4 (CVE-2026-82384 lists 6.1.5 only; same bug) | 6.1.6 | Framework requires a self-supplied gadget; local mock only | Unverified | ◐ Partial |
+| [CVE-2026-90817](CVE-2026-90817) | Vanderbilt REDCap | 3.1 9.8 (public claim, unverified) | REDCap 13.3.0+ before 16.0.49 LTS / 17.3.10 LTS / 17.4.4 | 16.0.49 LTS / 17.3.10 LTS / 17.4.4 | Discoverer's script / placeholder framework / bulk detection | Unverified | ◐ Partial |
+| [CVE-2026-123751](CVE-2026-123751) | WP Duplicate | 3.1 9.8 (CISA-ADP) | WP Duplicate through 1.1.11 | unknown | Unexecuted exploit script; no RCE on real WordPress proven | Confirmed | ◐ Partial |
+| [CVE-2026-126473](CVE-2026-126473) | OpenEMR | 4.0 9.3 (VulnCheck)；3.1 9.1 (VulnCheck) | OpenEMR < 8.4.0 (8.3.0 tested) | 8.4.0 | Unauthenticated FHIR Patient create in lab Docker against official 8.3.0 image; fixed 8.4.0 rejects colon-form registration | Confirmed | — No target |
+| [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | Batflat CMS 1.2.0–1.3.7 | none (project unmaintained) | Unauthenticated RCE via SSTI in /contact form; curl PoC only, no fix (project unmaintained) | Confirmed | Pending |
+| [CVE-2026-126173](CVE-2026-126173) | AutomatorWP Pro Webhooks | 3.1 9.8 (Wordfence) | AutomatorWP Pro Webhooks <= 1.4.4 | 1.4.5 | Unauthenticated arbitrary password reset and admin takeover in lab; fixed in 1.4.5 | Confirmed | Pending |
+| [CVE-2026-48356](CVE-2026-48356) | Adobe Commerce / Magento | 3.1 9.3 (Adobe) | Adobe Commerce / Magento Open Source 2.4.4-2.4.9 | 2.4.9-p2 | Authenticated (low-priv REST token) file upload to webshell RCE in lab; Sansec SA-2026-0027 | Confirmed | Pending |
+| [CVE-2026-119977](CVE-2026-119977) | WordPress Core | 3.1 8.1 (Wordfence) | WordPress Core 4.7.0-7.1.3 | 7.1.4 | Upgrade-window TOCTOU plants an attacker wp-config.php; configuration takeover to RCE in lab; CISA KEV 2026-11-03 | Confirmed | Pending |
+| [CVE-2026-110447](CVE-2026-110447) | Collabora Online CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | Collabora Online Built-in CODE Server (richdocumentscode) before 26.4.303 | 26.4.303 | Unauthenticated command injection via proxy.php; 1-day PoC; CISA KEV, exploited in the wild Sep-Oct 2026 | Confirmed | Pending |
+| [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | Joomla! JCE extension < 2.9.99.5 | 2.9.99.5 | Unauthenticated JCE profile creation leads to PHP upload and RCE; CISA KEV | Confirmed | Pending |
+
+### AI / LLM (4)
+
+| ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-40217](CVE-2026-40217) | BerriAI LiteLLM | 3.1 8.8 PR:L (public README) | LiteLLM before v1.83.11 (image digest pinning required; some rebuilt tags are not vulnerable) | v1.83.11+ (RestrictedPython) | Authenticated lab RCE; requires an API key | Confirmed | ◐ Partial |
+| [CVE-2026-130796](CVE-2026-130796) | Flowise | 4.0 8.8 (VulnCheck)；3.1 8.2 (VulnCheck) | 3.1.3-3.1.4 |  | Unauthenticated plaintext MCP token leak; bundled script is an offline logic simulation | Confirmed | ✅ Full |
+| [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | < 2.2.0 | 2.2.0 | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC | Confirmed | ◐ Partial |
+| [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
+
+### Network & Security (18)
+
+| ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-123007](CVE-2026-123007) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX Open Source 1.9.5–1.30.6 and 1.31.0–1.31.8 with HTTP/2 enabled | Open Source 1.30.7 / 1.31.9; NGINX Plus 37.3.0.1 / 37.0.8.1 | Trigger + RCE demo only against a freshly started Docker instance | Confirmed | — No target |
+| [CVE-2026-129287](CVE-2026-129287) | N-able N-central | 4.0 8.3 (N-able) | before 2026.4.1 Hotfix 3 | 2026.4.1 Hotfix 3 (build 2026.4.1.39) | Authenticated out-of-band XXE file read; closed-source appliance, not locally reproducible | Confirmed | ◐ Partial |
+| [CVE-2026-119958](CVE-2026-119958) | Windows LDAP | 3.1 9.8 (Microsoft) | Windows 10 1607–Windows 11 26H2、Windows Server 2016–2025 | 2026 年 11 月安全更新 | Lab repro of OOB write + crash; no RCE on real Windows LDAP | Confirmed | ✅ Full |
+| [CVE-2026-123039](CVE-2026-123039) | Check Point Gaia OS | 3.1 7.8 (Check Point) | Gaia OS R81–R82.20（Quantum 网关、Force 防火墙、安全管理/日志服务器、多域、Maestro） | Jumbo Hotfix：R82.20 Take 14、R82.10 Take 52、R82 Take 132、R81.20 Take 174 | Lab priv-esc to root via world-writable socket; not verified on real Gaia | Confirmed | ◐ Partial |
+| [CVE-2026-123158](CVE-2026-123158) | OpenSSH sshd | 3.1 8.1 (MITRE) | OpenSSH < 10.6p2（Linux + musl libc 且无 PAM，如 Alpine Linux） | OpenSSH 10.6p2 | Lab repro of password-auth bypass login; no live evidence | Confirmed | — No target |
+| [CVE-2026-123218](CVE-2026-123218) | IBM Aspera Faspex 5 | 3.1 9.8 (IBM) | Faspex 5.0.0–5.0.19 | 5.0.19 PL1（Fix Pack 1） | Version check only; no bypass demonstrated | Confirmed | ✅ Full |
+| [CVE-2026-111560](CVE-2026-111560) | Barracuda ESG / ADC / WAF / WSG | 4.0 8.6 (Mandiant)；3.1 7.2 (NVD) | ESG ≤ 9.4.0.27；ADC ≤ 6.4.0；WAF ≤ 11.0.1；WSG ≤ 16.1.100.100；BMA ≤ 5.5.4.0；WCC ≤ 2.2.1 | ESG 9.4.0.030；其余产品按厂商通告补丁升级 | Lab root command execution (needs admin); unauth root only chained with CVE-2026-116606 | Confirmed | ◐ Partial |
+| [CVE-2026-116606](CVE-2026-116606) | Barracuda ESG | 4.0 9.3 (Mandiant)；3.1 9.8 (NVD) | ESG < 9.4.0.030 | 9.4.0.030 | Unauthenticated config-restore trigger; root only chained with CVE-2026-111560 | Confirmed | ◐ Partial |
+| [CVE-2026-19868](CVE-2026-19868) | SonicWall SonicOS | 3.1 7.5 (CISA-ADP)；3.1 7.1 (SonicWall) | Gen7 7.3.3-7015 及更早；Gen8 8.2.2-8015 及更早 | Gen7 7.3.4-7013 及更高；Gen8 8.2.3-8015 及更高 | Version check only | Confirmed | ✅ Full |
+| [CVE-2026-129271](CVE-2026-129271) | N-able N-central Patch Management | 4.0 8.5 (N-able) | Patch Management Component < 2.14.4.5829 | 2.14.4.5829（随 N-central 2026.4.1 Hotfix 3，build 2026.4.1.39，2026-11-16） | Authenticated local priv-esc to root (needs ProductAdmin creds + callback) | Confirmed | — No target |
+| [CVE-2026-129280](CVE-2026-129280) | N-able N-central | 4.0 9.3 (N-able) | N-central < 2026.4.1 HF3 | 2026.4.1 HF3（build 2026.4.1.39，2026-11-16） | Unauthenticated config write (single-operation demo, reversible) | Confirmed | ◐ Partial |
+| [CVE-2026-114713](CVE-2026-114713) | UnrealIRCd | 3.1 8.6 (GHSA) | 6.0.0–6.2.7 (5.x EOL also affected) | 6.2.7.1 / hotfix bundle-20261107 | Lab PoC of server-to-server command injection; not OS-level RCE | Confirmed | ✅ Full |
+| [CVE-2026-116779](CVE-2026-116779) | FreeSWITCH | 3.1 9.8 (GHSA) | <= 1.11.2 | 1.11.3 (adds enable-chat-api-proto, off by default) | Lab-verified SIP MESSAGE command execution; no live-deployment proof | Confirmed | ◐ Partial |
+| [CVE-2026-119618](CVE-2026-119618) | Apache httpd mod_http2 | 3.1 8.1 (NVD)；3.1 9.8 (Red Hat) | httpd 2.4.55–2.4.70, mod_h2 2.0.8–2.0.42 | 2.4.71, mod_h2 2.0.43 | Heap corruption + crash under ASan/TSan; RCE not proven | Confirmed | — No target |
+| [CVE-2026-126170](CVE-2026-126170) | Fortinet FortiManager / FortiAnalyzer | 3.1 9.8 (Fortinet) | FortiAnalyzer 8.0.0-8.0.2, 7.6.0-7.6.7; FortiAnalyzer Cloud 8.0.1-8.0.2, 7.6.0-7.6.7; FortiAnalyzer-BigData 7.6.0-7.6.2; FortiManager 8.0.0-8.0.2, 7.6.0-7.6.7; FortiManager Cloud 8.0.1-8.0.2, 7.6.0-7.6.7; FortiSASE-Sovereign 25, 25.3, 25.4, 26.2 | 8.0.3, 7.6.8, FortiAnalyzer-BigData 7.6.3 | Unauthenticated RCE via JRPC JSON injection in lab; differential 7.6.7 vs 7.6.8 | Confirmed | ✅ Full |
+| [CVE-2026-124079](CVE-2026-124079) | rConfig Core / Pro | 4.0 9.3 (VulnCheck)；3.1 9.8 (VulnCheck) | rConfig Core >= 8.0.0, < 8.2.19; rConfig Pro < 8.4.1 | rConfig Core 8.2.19 (2026-10-27); rConfig Pro 8.4.1 | Unauthenticated RCE via Redis-backed Horizon queue poisoning in lab | Confirmed | ◐ Partial |
+| [CVE-2026-121653](CVE-2026-121653) | Ivanti Endpoint Manager Core | 3.1 9.8 (Ivanti) | Ivanti EPM 2024 SU7 and prior | EPM 2024 SU8 | Unauthenticated SQLi → OS command execution via Core DB account in lab | Confirmed | ◐ Partial |
+| [CVE-2026-111585](CVE-2026-111585) | TeamViewer clients | 3.1 8.8 (TeamViewer) | TeamViewer clients prior to 15.83 (15.82.6 tested) | 15.83 (bulletin TV-2026-1011) | Viewer heap overflow + crash on real 15.82.6 binaries; RCE claimed, crash proven | Confirmed | ◐ Partial |
+
+### Runtime / Framework / Browser (13)
+
+| ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-114938](CVE-2026-114938) | OpenJDK Base64 (Java4Shell) | 4.0 9.2 (Calif)；3.1 8.1 (Oracle)；3.1 9.8 (Red Hat) | OpenJDK 17.0.6 and later on x86-64 with AVX-512 VBMI (17/21/25/27 lines; Oracle also lists Java 8 Performance Pack 8u511b33-perf) | vendor November 2026 CPU / OpenJDK 17.0.21.1, 21.0.13.1 and equivalent distributor builds | Trigger / crash / leak / lab experiment; no public general-purpose RCE | Confirmed | ◐ Partial |
+| [CVE-2026-90436](CVE-2026-90436) | Apache Axis 1.x | 3.1 9.8 (CISA-ADP) | Apache Axis 1.x through 1.4 | 无修复版本（EOL；修复仅存于上游 commit 41f3b4e8） | Lab repro of unauthenticated class instantiation; no RCE on default classpath | Confirmed | ◐ Partial |
+| [CVE-2024-27834](CVE-2024-27834) | WebKit (Apple) | 3.1 5.5 (NVD) | Safari < 17.5；iOS/iPadOS < 16.7.8 及 17.x < 17.5；macOS < 14.5；tvOS < 17.5；watchOS < 10.5；WebKitGTK / WPE WebKit < 2.44.2 | Safari 17.5；iOS 16.7.8 / iOS 17.5；iPadOS 16.7.8 / iPadOS 17.5；macOS Sonoma 14.5；tvOS 17.5；watchOS 10.5 | Analysis only; no runnable PoC | Confirmed | — No target |
+| [CVE-2026-126187](CVE-2026-126187) | React Server Components / Next.js | 4.0 9.5 (GHSA) | react-server-dom-* 19.0.0–19.3.0; Next.js 16.0.0–16.4.0 (App Router + Cache Components) | react-server-dom-* 19.0.9 / 19.1.10 / 19.2.9 / 19.3.1; Next.js 16.4.1 | RCE in lab Docker app; trigger requires rare conditions | Confirmed | ◐ Partial |
+| [CVE-2026-125350](CVE-2026-125350) | Google Chrome | 3.1 8.8 (NVD) | Chrome < 157.0.8103.50 | 157.0.8103.50 / .51 (Windows, macOS), 157.0.8103.50 (Linux, Android), Extended Stable 156.0.8078.96 | Renderer crash via regression test file; no RCE payload | Confirmed | ✅ Full |
+| [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | Node.js < 22.23.4, < 24.22.1, < 26.12.1; Bun < 1.4.4; Brotli 1.0.3-1.2.0 | Node.js 22.23.4 / 24.22.1 / 26.12.1; Bun 1.4.4; Brotli 1.2.1 | Validated remote DoS via crafted Brotli stream; RCE analysis only | Confirmed | ◐ Partial |
+| [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | Apache Shiro through 3.0.0 with DefaultLdapRealm/JndiLdapRealm and authenticationCachingEnabled=true (not the default) | 3.0.1 | Auth bypass after one valid login; any password accepted when caching enabled (non-default) | Confirmed | ◐ Partial |
+| [CVE-2026-86829](CVE-2026-86829) | Apache Airflow core | 3.1 8.8 (Apache) | apache-airflow-core < 3.4.0 | 3.4.0 (apache/airflow PR #72718) | DAG-author RCE in scheduler via XCom deserialization; lab-verified on 3.3.2, clean on 3.4.0 | Confirmed | ◐ Partial |
+| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session upload progress | unknown | PHP with session.serialize_handler=php_binary or php_serialize in server config, application switching to php at runtime via ini_set() before session_start(), and session.upload_progress.enabled=1 (PHP default). Validated on php:8.4.27-apache. | No patch as of 2026-10-24; official mitigation is session.upload_progress.enabled=0 | Unauthenticated RCE via session handler mismatch in lab (php:8.4.27-apache); unpatched, mitigation is disabling upload progress | Confirmed | ◐ Partial |
+| [CVE-2026-75604](CVE-2026-75604) | Next.js on Windows | 3.1 9.0 (GHSA) | Next.js 13.4.0–15.5.23 and 16.0.0–16.3.2 on Windows, Pages Router + App Router without Cache Components | 15.5.24 / 16.3.3 | Unauthenticated RCE via Server Actions encryption key leak; Windows host + Pages/App Router required, lab-validated on next@16.2.11 | Confirmed | Pending |
+| [CVE-2026-115893](CVE-2026-115893) | Wasmtime | 3.1 9.9 (GHSA) | Wasmtime < 36.0.19, 37.0.0-42.x, 43.0.0-48.0.6, 49.0.0-49.0.3 (aarch64 Cranelift) | 36.0.19, 48.0.7, 49.0.4 | aarch64 JIT sandbox escape to host code execution in lab; 5/5 on 49.0.3, rejected on 49.0.4 | Confirmed | Pending |
+| [CVE-2026-109618](CVE-2026-109618) | PHP | 3.1 9.8 (NVD)；4.0 9.2 (PHP) | PHP 5.4.0-8.5.11 | 8.2.35, 8.3.36, 8.4.27, 8.5.12 | Pre-auth RCE chains A/B/C public (D/E paywalled); lab-verified on PHP 5.4-8.5.11; CISA KEV | Confirmed | Pending |
+| [CVE-2026-109619](CVE-2026-109619) | PHP | 3.1 8.1 (NVD)；4.0 9.2 (PHP) | PHP 5.4.0-8.5.11 | 8.2.35, 8.3.36, 8.4.27, 8.5.12 | Stale-state UAF and info-leak RCE in lab; FPM worker state leaks across requests; CISA KEV | Confirmed | Pending |
+
+### Database (3)
+
+| ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-118383](CVE-2026-118383) | MongoDB Server replication | unknown | 8.0.x before 8.0.37 (8.0.34 tested); 8.2.12 still reproduced at collection time | 8.0.37 (SERVER-138175, SERVER-138119) | Lab UAF crash; code execution not demonstrated | Confirmed | — No target |
+| [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | ClickHouse 26.3 < 26.3.62.3-lts, 26.8 < 26.8.36.3-lts, 26.9 < 26.9.27.3-stable, 26.10 < 26.10.3.7-stable | 26.3.62.3-lts / 26.8.36.3-lts / 26.9.27.3-stable / 26.10.3.7-stable (2026-10-30) | Unauthenticated RCE claimed; lab validates differential detection + weaponized DoS only | Confirmed | ◐ Partial |
+| [CVE-2026-13078](CVE-2026-13078) | MongoDB Server | 3.1 7.7 (MongoDB)；4.0 6.3 (MongoDB) | MongoDB Server 7.0 before 7.0.39, 8.0 before 8.0.28, 8.2 before 8.2.12, 8.3 before 8.3.7 | 7.0.39, 8.0.28, 8.2.12, 8.3.7 | Authenticated low-privilege local file disclosure via the MozJS module loader; not RCE | Confirmed | Pending |
+
+### OS / System / DevOps (11)
+
+| ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8 (public README, vendor advisory not verified) | DSM 6.2.4–7.2.2 and BSM/DSMUC branches before the 2024-11 smallfix | DSM 7.2.2-72806-1 / 7.2.1-69057-6 / 7.2-64570-4 / 7.1.1-42962-7 / 6.2.4-25556-8; BeeStation OS 1.1-65374; DSMUC 3.1.4-23079 | Patch-diff analysis + local verification; no ready-made remote exploit | Unverified | ◐ Partial |
+| [CVE-2026-124194](CVE-2026-124194) | Microsoft Outlook | 3.1 6.5 (Microsoft) | Microsoft 365 Apps 版经典 Outlook、Office LTSC 2021/2024（2026-11-10 前构建） | 2026 年 11 月 10 日 Patch Tuesday Office 更新 | Trigger .msg files only; no NTLM leak on real Outlook proven | Confirmed | ◐ Partial |
+| [CVE-2026-115731](CVE-2026-115731) | Puppet / OpenVox Server | 4.0 9.4 (Perforce)；3.1 9.9 (NVD) | Puppet Enterprise 2023.8.0–<2023.8.13、2025.0.0–<2025.12.1、2026.0.0–<2026.0.1；OpenVox Server ≤ 9.1.0 / ≤ 8.17.0；OpenVox Agent ≤ 9.2.0 / ≤ 8.31.1 | Puppet Enterprise 2023.8.13 / 2025.12.1 / 2026.0.1；OpenVox Server 9.2.0 / 8.18.0；OpenVox Agent 9.3.0 / 8.32.0；Puppet Core 9.1.3 / 8.22.2 | Advisory-confirmed server command execution (needs valid CA-signed client cert) | Confirmed | — No target |
+| [CVE-2026-98432](CVE-2026-98432) | Linux kernel TCP | 3.1 9.8 (Linux kernel) | Linux kernel since 4.4 (IPv4 TCP) | 6.6.159 and later stable releases (two kfree_rcu() calls) | KASAN-verified UAF crash in inet_csk_route_req; no code execution demonstrated | Confirmed | — No target |
+| [CVE-2026-76954](CVE-2026-76954) | Synology DSM Auth API | 3.1 9.8 (Synology) | DSM <= 7.2.1-69057-12, 7.2.2-72806, 7.3.2-86009, 7.4.1-90080 | 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, 7.4.1-90080-1 (Synology-SA-26:19) | Pre-auth stacked SQLi against syno-pam-key.db; file read/write per vendor advisory, not demonstrated by PoC | Confirmed | ◐ Partial |
+| [CVE-2026-124552](CVE-2026-124552) | Webmin Shorewall modules | 4.0 4.8 (VulnCheck)；3.1 4.8 (VulnCheck) | Webmin through 2.670 | Post-2.670 (upstream commit 01b988dbf, webmin/webmin#2908) | Stored XSS → root command execution in lab (needs Shorewall-module account + admin view); unpatched traversal 0day also shown | Confirmed | ◐ Partial |
+| [CVE-2026-104623](CVE-2026-104623) | SUSE Rancher Manager | 3.1 6.3 (SUSE) | Rancher Manager 2.11.0-2.11.18, 2.12.0-2.12.14, 2.13.0-2.13.10, 2.14.0-2.14.6, 2.15.0-2.15.2 (and older) | 2.11.19 / 2.12.15 / 2.13.11 / 2.14.7 / 2.15.3 | Authenticated user gets shell pod on management cluster; unprivileged pod, scoped API access | Confirmed | ◐ Partial |
+| [CVE-2026-105437](CVE-2026-105437) | Git three-way merge | 3.1 7.5 (GitLab) | Git <= 2.56.0 (and the 2.50-2.55 series) | Git 2.56.1, and 2.50.2 / 2.51.3 / 2.52.1 / 2.53.1 / 2.54.1 / 2.55.1 | Heap overflow on merge of attacker-controlled content; SIGSEGV on 2.56.0, clean on 2.56.1 | Confirmed | ✅ Full |
+| [CVE-2026-53362](CVE-2026-53362) | Linux kernel IPv6 fragmentation | 3.1 7.8 (Linux kernel) | Linux kernel 6.12.x (CentOS Stream 10 / RHEL 10, e.g. 6.12.0-242.el10); __ip6_append_data() paged-allocation path | upstream commit 38becddc (fix in stable trees) | Lab container escape to root on CentOS/RHEL 10 (kernel 6.12.x); IPv4 sibling CVE-2026-53366 not covered | Confirmed | Pending |
+| [CVE-2026-97229](CVE-2026-97229) | GitLab CE/EE | 3.1 10.0 (GitLab) | GitLab CE/EE 19.2 before 19.2.8, 19.3 before 19.3.5, 19.4 before 19.4.2 | 19.2.8, 19.3.5, 19.4.2 | Unauthenticated CI-lint regex OOB write to system() as git in lab (19.4.1 CE); planting the CI config needs write access | Confirmed | Pending |
+| [CVE-2026-110264](CVE-2026-110264) | GitLab CE/EE | 3.1 10.0 (GitLab) | GitLab CE/EE 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3 | 18.11.13, 19.0.10, 19.1.9, 19.2.9, 19.3.6, 19.4.3, 19.5.1 | Onigmo integer overflow triggered via .org render; oracle/differential only, no full shell demonstrated | Confirmed | Pending |
+
 
 See each CVE directory for the full assessment and references.
