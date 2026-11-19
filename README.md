@@ -46,7 +46,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | < 2.2.0 | 2.2.0 | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC | Confirmed | ◐ Partial |
 | [CVE-2026-59726](CVE-2026-59726) | Ruflo MCP Bridge | 3.1 10.0 (GHSA) | Ruflo < 3.16.3 (default docker-compose MCP bridge) | 3.16.3 | Unauthenticated RCE via MCP bridge terminal_execute; Exploit-DB verified autopwn | Confirmed | Pending |
 
-### Network & Security (21)
+### Network & Security (22)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -71,6 +71,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-83548](CVE-2026-83548) | SonicWall SMA1000 | 3.1 10.0 (NVD) | SMA1000 6210 / 7210 / 8200v: 12.4.3-03453 and older, 12.5.0-02835 and older | 12.4.3-03526 and higher, 12.5.0-02952 and higher (platform-hotfix) | Unauth SSRF → CouchDB RCE → root chain in one toolkit; vendor confirms active exploitation, CISA KEV | Confirmed | Pending |
 | [CVE-2026-83549](CVE-2026-83549) | SonicWall SMA1000 | 3.1 7.8 (NVD) | SMA1000 6210 / 7210 / 8200v: 12.4.3-03453 and older, 12.5.0-02835 and older | 12.4.3-03526 and higher, 12.5.0-02952 and higher (platform-hotfix) | Post-auth OS command injection in AMC → root; same toolkit, CISA KEV | Confirmed | Pending |
 | [CVE-2026-123633](CVE-2026-123633) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX Open Source 1.19.7-1.30.6 and 1.31.0-1.31.8 with HTTP/2 proxying | 1.30.7 / 1.31.9 | UAF trigger + exploit script claiming ret2libc RCE, unverified | Confirmed | Pending |
+| [CVE-2026-110486](CVE-2026-110486) | Eclipse Mosquitto | 3.1 9.8 (NVD) | 2.1.0–2.1.2 (builtin WebSocket listener) | 2.1.3 | Lab trigger of parser desync via empty WebSocket frame; RCE not proven | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (15)
 
