@@ -1,0 +1,16 @@
+id: googlesky-poc
+upstream: https://github.com/googlesky/CVE-2026-115560
+commit: "450adfa033d7764b43327ff8071b418a4c695225"
+collected: 2026-11-19
+license: MIT
+review:
+  executed: false
+  static: true
+  notes: "只读检查：poc.py（253 行）驱动 PHP 实验室（php:8.4.27-apache）；evidence/ 为验证运行记录；无外部请求。"
+issues:
+  - "claim-mismatch: 上游仓库名用 CVE-2026-115560，NVD 与 CVE.org 均无此记录（2026-11-19 核查），按无 CVE 条目收录"
+  - "no-cvss: 无已发布评分"
+dropped:
+  - .git/
+  - .gitignore
+maturity: rce-local
