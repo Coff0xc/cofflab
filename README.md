@@ -34,5 +34,6 @@ A curated collection of CVE vulnerabilities and public proof-of-concept material
 | [CVE-2026-129280](CVE-2026-129280) | N-able N-central | 4.0 9.3 (N-able) | Unauthenticated config write (single-operation demo, reversible) |
 | [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC |
 | [CVE-2026-114713](CVE-2026-114713) | UnrealIRCd | 3.1 8.6 (GHSA) | Lab PoC of server-to-server command injection; not OS-level RCE |
+| [CVE-2026-116779](CVE-2026-116779) | FreeSWITCH | 3.1 9.8 (GHSA) | Lab-verified SIP MESSAGE command execution; no live-deployment proof |
 
 点进 CVE 目录看完整判定和引用。
