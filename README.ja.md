@@ -46,20 +46,20 @@ Coff0xc が管理する CVE 脆弱性と公開 PoC のキュレーション集�
 | [CVE-2026-119618](CVE-2026-119618) | Apache httpd mod_http2 | 3.1 8.1 (NVD)；3.1 9.8 (Red Hat) | ASan/TSan 下でのヒープ破壊 + クラッシュ；RCE は未実証 | — 対象なし |
 | [CVE-2026-126187](CVE-2026-126187) | React Server Components / Next.js | 4.0 9.5 (GHSA) | ラボ Docker アプリでの RCE；トリガーには稀な条件が必要 | ◐ 部分 |
 | [CVE-2026-125350](CVE-2026-125350) | Google Chrome | 3.1 8.8 (NVD) | 回帰テストファイルによるレンダラークラッシュ；RCE ペイロードなし | ✅ 完全 |
-| [CVE-2026-126473](CVE-2026-126473) | OpenEMR | 4.0 9.3 (VulnCheck)；3.1 9.1 (VulnCheck) | ラボ Docker で公式 8.3.0 イメージに対し未認証で FHIR Patient を作成；8.4.0 はコロン形式の登録を拒否 | 未実施 |
-| [CVE-2026-98432](CVE-2026-98432) | Linux カーネル TCP | 3.1 9.8 (Linux kernel) | inet_csk_route_req での KASAN 検証済み UAF クラッシュ；コード実行は未実証 | 未実施 |
-| [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | 細工した Brotli ストリームによるリモート DoS を検証済み；RCE は分析のみ | 未実施 |
-| [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | 未認証 RCE を主張；ラボでは差分検出 + 武器化 DoS のみ検証 | 未実施 |
-| [CVE-2026-126170](CVE-2026-126170) | Fortinet FortiManager / FortiAnalyzer | 3.1 9.8 (Fortinet) | ラボで JRPC JSON インジェクションによる未認証 RCE；7.6.7 と 7.6.8 の差分 | 未実施 |
-| [CVE-2026-76954](CVE-2026-76954) | Synology DSM 認証 API | 3.1 9.8 (Synology) | 認証前のスタック SQLi（syno-pam-key.db）；ファイル読み書きはベンダー公告の主張で PoC 未実証 | 未実施 |
-| [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | 一度有効なログイン後の認証バイパス；キャッシュ有効時（非デフォルト）は任意のパスワードで認証 | 未実施 |
-| [CVE-2026-124079](CVE-2026-124079) | rConfig Core / Pro | 4.0 9.3 (VulnCheck)；3.1 9.8 (VulnCheck) | ラボで Redis ベースの Horizon キュー汚染による未認証 RCE | 未実施 |
-| [CVE-2026-86829](CVE-2026-86829) | Apache Airflow コア | 3.1 8.8 (Apache) | DAG 作成者による XCom デシリアライズ経由のスケジューラ RCE；3.3.2 でラボ検証済み、3.4.0 ではクリーン | 未実施 |
-| [CVE-2026-121653](CVE-2026-121653) | Ivanti Endpoint Manager Core | 3.1 9.8 (Ivanti) | ラボで未認証 SQLi → Core DB アカウント経由の OS コマンド実行 | 未実施 |
-| [CVE-2026-124552](CVE-2026-124552) | Webmin Shorewall モジュール | 4.0 4.8 (VulnCheck)；3.1 4.8 (VulnCheck) | ラボで格納型 XSS → root コマンド実行（Shorewall モジュール権限 + 管理者の閲覧が必要）；未修正のトラバーサル 0day も実証 | 未実施 |
-| [CVE-2026-104623](CVE-2026-104623) | SUSE Rancher Manager | 3.1 6.3 (SUSE) | 認証ユーザーが管理クラスタでシェル Pod を取得；非特権 Pod、API アクセスは制限付き | 未実施 |
-| [CVE-2026-105437](CVE-2026-105437) | Git 3方向マージ | 3.1 7.5 (GitLab) | 攻撃者制御コンテンツのマージでヒープオーバーフロー；2.56.0 で SIGSEGV、2.56.1 ではクリーン | 未実施 |
-| [CVE-2026-111585](CVE-2026-111585) | TeamViewer クライアント | 3.1 8.8 (TeamViewer) | 実際の 15.82.6 バイナリでの viewer ヒープオーバーフロー + クラッシュ；RCE は主張、クラッシュは実証済み | 未実施 |
-| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP セッションアップロード進捗 | unknown | ラボでセッションハンドラ不一致による未認証 RCE（php:8.4.27-apache）；未修正、緩和策はアップロード進捗の無効化 | 未実施 |
+| [CVE-2026-126473](CVE-2026-126473) | OpenEMR | 4.0 9.3 (VulnCheck)；3.1 9.1 (VulnCheck) | ラボ Docker で公式 8.3.0 イメージに対し未認証で FHIR Patient を作成；8.4.0 はコロン形式の登録を拒否 | — 対象なし |
+| [CVE-2026-98432](CVE-2026-98432) | Linux カーネル TCP | 3.1 9.8 (Linux kernel) | inet_csk_route_req での KASAN 検証済み UAF クラッシュ；コード実行は未実証 | — 対象なし |
+| [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | 細工した Brotli ストリームによるリモート DoS を検証済み；RCE は分析のみ | ◐ 部分 |
+| [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | 未認証 RCE を主張；ラボでは差分検出 + 武器化 DoS のみ検証 | ◐ 部分 |
+| [CVE-2026-126170](CVE-2026-126170) | Fortinet FortiManager / FortiAnalyzer | 3.1 9.8 (Fortinet) | ラボで JRPC JSON インジェクションによる未認証 RCE；7.6.7 と 7.6.8 の差分 | ✅ 完全 |
+| [CVE-2026-76954](CVE-2026-76954) | Synology DSM 認証 API | 3.1 9.8 (Synology) | 認証前のスタック SQLi（syno-pam-key.db）；ファイル読み書きはベンダー公告の主張で PoC 未実証 | ◐ 部分 |
+| [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | 一度有効なログイン後の認証バイパス；キャッシュ有効時（非デフォルト）は任意のパスワードで認証 | ◐ 部分 |
+| [CVE-2026-124079](CVE-2026-124079) | rConfig Core / Pro | 4.0 9.3 (VulnCheck)；3.1 9.8 (VulnCheck) | ラボで Redis ベースの Horizon キュー汚染による未認証 RCE | ◐ 部分 |
+| [CVE-2026-86829](CVE-2026-86829) | Apache Airflow コア | 3.1 8.8 (Apache) | DAG 作成者による XCom デシリアライズ経由のスケジューラ RCE；3.3.2 でラボ検証済み、3.4.0 ではクリーン | ◐ 部分 |
+| [CVE-2026-121653](CVE-2026-121653) | Ivanti Endpoint Manager Core | 3.1 9.8 (Ivanti) | ラボで未認証 SQLi → Core DB アカウント経由の OS コマンド実行 | ◐ 部分 |
+| [CVE-2026-124552](CVE-2026-124552) | Webmin Shorewall モジュール | 4.0 4.8 (VulnCheck)；3.1 4.8 (VulnCheck) | ラボで格納型 XSS → root コマンド実行（Shorewall モジュール権限 + 管理者の閲覧が必要）；未修正のトラバーサル 0day も実証 | ◐ 部分 |
+| [CVE-2026-104623](CVE-2026-104623) | SUSE Rancher Manager | 3.1 6.3 (SUSE) | 認証ユーザーが管理クラスタでシェル Pod を取得；非特権 Pod、API アクセスは制限付き | ◐ 部分 |
+| [CVE-2026-105437](CVE-2026-105437) | Git 3方向マージ | 3.1 7.5 (GitLab) | 攻撃者制御コンテンツのマージでヒープオーバーフロー；2.56.0 で SIGSEGV、2.56.1 ではクリーン | ✅ 完全 |
+| [CVE-2026-111585](CVE-2026-111585) | TeamViewer クライアント | 3.1 8.8 (TeamViewer) | 実際の 15.82.6 バイナリでの viewer ヒープオーバーフロー + クラッシュ；RCE は主張、クラッシュは実証済み | ◐ 部分 |
+| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP セッションアップロード進捗 | unknown | ラボでセッションハンドラ不一致による未認証 RCE（php:8.4.27-apache）；未修正、緩和策はアップロード進捗の無効化 | ◐ 部分 |
 
 完全な評価と引用については各 CVE ディレクトリを参照。
