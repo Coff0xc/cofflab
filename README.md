@@ -63,5 +63,6 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session upload progress | unknown | Unauthenticated RCE via session handler mismatch in lab (php:8.4.27-apache); unpatched, mitigation is disabling upload progress | ◐ Partial |
 | [CVE-2026-53362](CVE-2026-53362) | Linux kernel IPv6 fragmentation | 3.1 7.8 (Linux kernel) | Lab container escape to root on CentOS/RHEL 10 (kernel 6.12.x); IPv4 sibling CVE-2026-53366 not covered | Pending |
 | [CVE-2026-75604](CVE-2026-75604) | Next.js on Windows | 3.1 9.0 (GHSA) | Unauthenticated RCE via Server Actions encryption key leak; Windows host + Pages/App Router required, lab-validated on next@16.2.11 | Pending |
+| [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | Unauthenticated RCE via SSTI in /contact form; curl PoC only, no fix (project unmaintained) | Pending |
 
 See each CVE directory for the full assessment and references.
