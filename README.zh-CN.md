@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (72)
+### Web / CMS (74)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -94,6 +94,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-22310](CVE-2026-22310) | JTL-Shop | 3.1 8.0 (JTL); 4.0 7.6 (JTL) | JTL-Shop 5.5.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (2026-11-11) | JTL-Shop 404 重定向存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion 服务端请求伪造；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-106624](CVE-2026-106624) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion 代码注入远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-22308](CVE-2026-22308) | JTL-Shop | 3.1 9.3 (ENISA); 4.0 8.6 (ENISA) | JTL-Shop 5.0.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (JTL advisory 2026-11-12) | JTL-Shop OPC 预览模式反射 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130158](CVE-2026-130158) | RepoManager | 3.1 9.0 (GitHub) | RepoManager <5.13.3 | 5.13.3 | RepoManager 存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (6)
 
@@ -106,7 +108,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | MCP 工具调用未参数化致 SQL 注入；xp_cmdshell 自称，未核实 | 已确认 | 待复现 |
 | [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | 未授权远程代码执行（Agent scratchpad exec()）；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (78)
+### 网络与安全 (82)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -188,8 +190,12 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-102255](CVE-2026-102255) | SMA1000 | 3.1 10.0 (SonicWall) | SonicWall SMA1000 12.4.3-03526 and older, 12.5.0-02952 and older (platform-hotfix) | 12.4.3-03670 / 12.5.0-03082 and higher (SNWLID-2026-0017) | SonicWall SMA1000 预认证 SSRF（非预期转发代理路径）；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-77550](CVE-2026-77550) | UniFi OS Server | 3.1 10.0 (UI) | UniFi OS Server 5.1.21 and earlier; UniFi OS devices 5.1.26 and earlier; Express 4.0.16 and earlier | UniFi OS Server 5.1.37+; devices 5.1.31+; NAS 5.1.32+; Express 4.0.17+ (Bulletin 067) | UniFi OS Server CRLF 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-77554](CVE-2026-77554) | UniFi Talk Application | 3.1 10.0 (UI) | UniFi Talk Application 5.2.7 and earlier | 5.3.2 or later (Bulletin 067) | UniFi Talk 应用命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-84236](CVE-2026-84236) | Guardium Data Protection | 3.1 9.8 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection 反序列化 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-87977](CVE-2026-87977) | Guardium Data Protection | 3.1 9.8 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-76536](CVE-2026-76536) | Splunk Enterprise | 3.1 9.4 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.16 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.17 (SVD-2026-1103) | Splunk Enterprise 集群配置认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-76535](CVE-2026-76535) | Splunk Enterprise | 3.1 9.1 (Splunk) | Splunk Enterprise 10.6.0.5, 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.16 | 10.6.1 / 10.4.5 / 10.2.9 / 10.0.12 / 9.4.17 (SVD-2026-1103) | Splunk Enterprise RapidDiag 认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (41)
+### 运行环境 / 框架 / 浏览器 (50)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -234,6 +240,15 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-92955](CVE-2026-92955) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.8 | 3.11.8 | vm2 NodeVM 沙箱逃逸；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-92956](CVE-2026-92956) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.10.1-3.11.6 | 3.11.7 | vm2 WebAssembly 沙箱逃逸；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-92960](CVE-2026-92960) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.6 | 3.11.6 | vm2 os/dns 进程级状态泄露；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92953](CVE-2026-92953) | vm2 | 3.1 10.0 (VulnCheck); 4.0 9.3 (VulnCheck) | vm2 3.11.0-3.11.7 | 3.11.8 | vm2 TypedArray 原型污染；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92948](CVE-2026-92948) | vm2 | 3.1 9.9 (VulnCheck); 4.0 9.4 (VulnCheck) | vm2 3.9.6-3.11.6 | 3.11.7 | vm2 node:test 沙箱逃逸；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92951](CVE-2026-92951) | vm2 | 3.1 9.9 (VulnCheck); 4.0 9.4 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | vm2 模块白名单绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92957](CVE-2026-92957) | vm2 | 3.1 9.9 (VulnCheck); 4.0 9.4 (VulnCheck) | vm2 through 3.11.6 | 3.11.7 | vm2 NodeVM 内置拒绝列表绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92944](CVE-2026-92944) | vm2 | 3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck) | vm2 3.10.2-3.11.6 | 3.11.7 | vm2 Promise 沙箱逃逸；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-128138](CVE-2026-128138) | NLTK | 3.1 9.8 (GitHub) | NLTK 3.10.3-<3.10.4 | 3.10.4 | NLTK JVM 沙箱绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92950](CVE-2026-92950) | vm2 | 3.1 8.6 (VulnCheck); 4.0 9.3 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | vm2 CLI 沙箱逃逸；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92954](CVE-2026-92954) | vm2 | 3.1 8.6 (VulnCheck); 4.0 9.2 (VulnCheck) | vm2 3.10.0-3.11.7 | 3.11.8 | vm2 宿主 Promise 拒绝服务；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-92958](CVE-2026-92958) | vm2 | 3.1 8.5 (VulnCheck); 4.0 8.4 (VulnCheck) | vm2 through 3.11.6 | 3.11.7 | vm2 fs/promises 拒绝列表绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### 数据库 (8)
 

@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (72)
+### Web / CMS (74)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -94,6 +94,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-22310](CVE-2026-22310) | JTL-Shop | 3.1 8.0 (JTL); 4.0 7.6 (JTL) | JTL-Shop 5.5.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (2026-11-11) | Stored XSS via 404 redirect table in JTL-Shop; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | SSRF in Adobe ColdFusion; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-106624](CVE-2026-106624) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | Code injection leading to RCE in Adobe ColdFusion; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-22308](CVE-2026-22308) | JTL-Shop | 3.1 9.3 (ENISA); 4.0 8.6 (ENISA) | JTL-Shop 5.0.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (JTL advisory 2026-11-12) | Reflected XSS via OPC preview mode in JTL-Shop; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130158](CVE-2026-130158) | RepoManager | 3.1 9.0 (GitHub) | RepoManager <5.13.3 | 5.13.3 | Stored XSS via host-reported package metadata in RepoManager; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (6)
 
@@ -106,7 +108,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-63129](CVE-2026-63129) | mssql-mcp-core | 3.1 8.8 (GHSA) | mssql-mcp-core <= 0.5.0 (also reader <= 0.4.2, writer <= 0.4.2, server <= 0.5.2) | 0.6.0 | SQLi via unparameterised MCP tool calls; xp_cmdshell claimed, unverified | Confirmed | Pending |
 | [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | Unauthenticated RCE via agent scratchpad exec(); detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (78)
+### Network & Security (82)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -188,8 +190,12 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-102255](CVE-2026-102255) | SMA1000 | 3.1 10.0 (SonicWall) | SonicWall SMA1000 12.4.3-03526 and older, 12.5.0-02952 and older (platform-hotfix) | 12.4.3-03670 / 12.5.0-03082 and higher (SNWLID-2026-0017) | Pre-authentication SSRF via unintended forward-proxy in SonicWall SMA1000; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77550](CVE-2026-77550) | UniFi OS Server | 3.1 10.0 (UI) | UniFi OS Server 5.1.21 and earlier; UniFi OS devices 5.1.26 and earlier; Express 4.0.16 and earlier | UniFi OS Server 5.1.37+; devices 5.1.31+; NAS 5.1.32+; Express 4.0.17+ (Bulletin 067) | CRLF injection in UniFi OS Server; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77554](CVE-2026-77554) | UniFi Talk Application | 3.1 10.0 (UI) | UniFi Talk Application 5.2.7 and earlier | 5.3.2 or later (Bulletin 067) | Command injection in UniFi Talk Application; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-84236](CVE-2026-84236) | Guardium Data Protection | 3.1 9.8 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | Deserialization RCE in IBM Guardium Data Protection; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-87977](CVE-2026-87977) | Guardium Data Protection | 3.1 9.8 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | SQL injection in IBM Guardium Data Protection; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-76536](CVE-2026-76536) | Splunk Enterprise | 3.1 9.4 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.16 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.17 (SVD-2026-1103) | Authentication bypass through cluster configuration REST API in Splunk Enterprise; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-76535](CVE-2026-76535) | Splunk Enterprise | 3.1 9.1 (Splunk) | Splunk Enterprise 10.6.0.5, 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.16 | 10.6.1 / 10.4.5 / 10.2.9 / 10.0.12 / 9.4.17 (SVD-2026-1103) | Authentication bypass through RapidDiag REST API in Splunk Enterprise; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (41)
+### Runtime / Framework / Browser (50)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -234,6 +240,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-92955](CVE-2026-92955) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.8 | 3.11.8 | Sandbox escape via NodeVM in vm2; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-92956](CVE-2026-92956) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 3.10.1-3.11.6 | 3.11.7 | Sandbox escape via WebAssembly.compileStreaming in vm2; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-92960](CVE-2026-92960) | vm2 | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | vm2 before 3.11.6 | 3.11.6 | Process-wide state exposure via os and dns in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92953](CVE-2026-92953) | vm2 | 3.1 10.0 (VulnCheck); 4.0 9.3 (VulnCheck) | vm2 3.11.0-3.11.7 | 3.11.8 | Prototype pollution via TypedArray in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92948](CVE-2026-92948) | vm2 | 3.1 9.9 (VulnCheck); 4.0 9.4 (VulnCheck) | vm2 3.9.6-3.11.6 | 3.11.7 | Sandbox escape via node:test in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92951](CVE-2026-92951) | vm2 | 3.1 9.9 (VulnCheck); 4.0 9.4 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | Module allowlist bypass in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92957](CVE-2026-92957) | vm2 | 3.1 9.9 (VulnCheck); 4.0 9.4 (VulnCheck) | vm2 through 3.11.6 | 3.11.7 | NodeVM builtin deny-list bypass via node: prefix in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92944](CVE-2026-92944) | vm2 | 3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck) | vm2 3.10.2-3.11.6 | 3.11.7 | Sandbox escape via Promise protector in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-128138](CVE-2026-128138) | NLTK | 3.1 9.8 (GitHub) | NLTK 3.10.3-<3.10.4 | 3.10.4 | JVM/JAR sandbox bypass in NLTK java(); detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92950](CVE-2026-92950) | vm2 | 3.1 8.6 (VulnCheck); 4.0 9.3 (VulnCheck) | vm2 before 3.11.7 | 3.11.7 | Sandbox escape via CLI require in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92954](CVE-2026-92954) | vm2 | 3.1 8.6 (VulnCheck); 4.0 9.2 (VulnCheck) | vm2 3.10.0-3.11.7 | 3.11.8 | Denial of service via host Promise in vm2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-92958](CVE-2026-92958) | vm2 | 3.1 8.5 (VulnCheck); 4.0 8.4 (VulnCheck) | vm2 through 3.11.6 | 3.11.7 | Denylist bypass via fs/promises in vm2; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
