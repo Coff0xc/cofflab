@@ -1,23 +1,25 @@
-# Coff0xc CVE 策展
+**English** | [中文](README.zh-CN.md) | [日本語](README.ja.md)
+
+# Coff0xc CVE Curation
 
 A curated collection of CVE vulnerabilities and public proof-of-concept material, maintained by Coff0xc. Each entry records the product, scores, dates, and what the public material actually demonstrates.
 
-只收已经公开的材料，入库只读、不执行。仅供授权安全研究与防御。
+Only publicly available material is collected. Ingestion is read-only; nothing is executed. For authorized security research and defense only.
 
-## 目录
+## Catalog
 
-| CVE | 产品 | 评分 | Assessment |
+| CVE | Product | Score | Assessment |
 | --- | --- | --- | --- |
-| [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8（公开 README，未复核厂商公告） | 补丁对比 + 本地验证，没有现成远程 exploit |
-| [CVE-2026-40217](CVE-2026-40217) | BerriAI LiteLLM | 3.1 8.8 PR:L（公开 README） | 认证后实验室 RCE，需要 API key |
-| [CVE-2026-114938](CVE-2026-114938) | OpenJDK Base64（Java4Shell） | 4.0 9.2 (Calif)；3.1 8.1 (Oracle)；3.1 9.8 (Red Hat) | 触发 / 崩溃 / 泄露 / 实验；没有公开通用 RCE |
-| [CVE-2026-118383](CVE-2026-118383) | MongoDB Server 复制 | unknown | 实验室 UAF 崩溃，未证实代码执行 |
-| [CVE-2026-123007](CVE-2026-123007) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | 触发 + 仅新鲜 Docker 的 RCE 演示 |
-| [CVE-2026-123488](CVE-2026-123488) | Craft CMS 元素搜索 | 3.1 9.8 (GHSA)；4.0 9.3 (GitHub) | 未认证 SQLi 写库 / 提权 |
-| [CVE-2026-129448](CVE-2026-129448) | Apache Roller XML-RPC | 3.1 9.8（公开声称，未核验） | 框架需自备 gadget；本地 mock |
-| [CVE-2026-90817](CVE-2026-90817) | Vanderbilt REDCap | 3.1 9.8（公开声称，未核验） | 发现者脚本 / 占位框架 / 批量检测 |
-| [CVE-2026-129287](CVE-2026-129287) | N-able N-central | 4.0 8.3 (N-able) | 认证后带外 XXE 读文件；闭源设备，本地不可复现 |
-| [CVE-2026-130796](CVE-2026-130796) | Flowise | 4.0 8.8 (VulnCheck)；3.1 8.2 (VulnCheck) | 未认证泄露明文 MCP token；附带脚本是离线逻辑模拟 |
+| [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8（公开 README，未复核厂商公告） | Patch-diff analysis + local verification; no ready-made remote exploit |
+| [CVE-2026-40217](CVE-2026-40217) | BerriAI LiteLLM | 3.1 8.8 PR:L（公开 README） | Authenticated lab RCE; requires an API key |
+| [CVE-2026-114938](CVE-2026-114938) | OpenJDK Base64 (Java4Shell) | 4.0 9.2 (Calif)；3.1 8.1 (Oracle)；3.1 9.8 (Red Hat) | Trigger / crash / leak / lab experiment; no public general-purpose RCE |
+| [CVE-2026-118383](CVE-2026-118383) | MongoDB Server replication | unknown | Lab UAF crash; code execution not demonstrated |
+| [CVE-2026-123007](CVE-2026-123007) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | Trigger + RCE demo only against a freshly started Docker instance |
+| [CVE-2026-123488](CVE-2026-123488) | Craft CMS element search | 3.1 9.8 (GHSA)；4.0 9.3 (GitHub) | Unauthenticated SQLi with database writes / privilege escalation |
+| [CVE-2026-129448](CVE-2026-129448) | Apache Roller XML-RPC | 3.1 9.8（公开声称，未核验） | Framework requires a self-supplied gadget; local mock only |
+| [CVE-2026-90817](CVE-2026-90817) | Vanderbilt REDCap | 3.1 9.8（公开声称，未核验） | Discoverer's script / placeholder framework / bulk detection |
+| [CVE-2026-129287](CVE-2026-129287) | N-able N-central | 4.0 8.3 (N-able) | Authenticated out-of-band XXE file read; closed-source appliance, not locally reproducible |
+| [CVE-2026-130796](CVE-2026-130796) | Flowise | 4.0 8.8 (VulnCheck)；3.1 8.2 (VulnCheck) | Unauthenticated plaintext MCP token leak; bundled script is an offline logic simulation |
 | [CVE-2026-119958](CVE-2026-119958) | Windows LDAP | 3.1 9.8 (Microsoft) | Lab repro of OOB write + crash; no RCE on real Windows LDAP |
 | [CVE-2026-123039](CVE-2026-123039) | Check Point Gaia OS | 3.1 7.8 (Check Point) | Lab priv-esc to root via world-writable socket; not verified on real Gaia |
 | [CVE-2026-123158](CVE-2026-123158) | OpenSSH sshd | 3.1 8.1 (MITRE) | Lab repro of password-auth bypass login; no live evidence |
@@ -39,4 +41,4 @@ A curated collection of CVE vulnerabilities and public proof-of-concept material
 | [CVE-2026-126187](CVE-2026-126187) | React Server Components / Next.js | 4.0 9.5 (GHSA) | RCE in lab Docker app; trigger requires rare conditions |
 | [CVE-2026-125350](CVE-2026-125350) | Google Chrome | 3.1 8.8 (NVD) | Renderer crash via regression test file; no RCE payload |
 
-点进 CVE 目录看完整判定和引用。
+See each CVE directory for the full assessment and references.
