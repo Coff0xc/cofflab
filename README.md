@@ -40,5 +40,20 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119618](CVE-2026-119618) | Apache httpd mod_http2 | 3.1 8.1 (NVD)；3.1 9.8 (Red Hat) | Heap corruption + crash under ASan/TSan; RCE not proven |
 | [CVE-2026-126187](CVE-2026-126187) | React Server Components / Next.js | 4.0 9.5 (GHSA) | RCE in lab Docker app; trigger requires rare conditions |
 | [CVE-2026-125350](CVE-2026-125350) | Google Chrome | 3.1 8.8 (NVD) | Renderer crash via regression test file; no RCE payload |
+| [CVE-2026-126473](CVE-2026-126473) | OpenEMR | 4.0 9.3 (VulnCheck)；3.1 9.1 (VulnCheck) | Unauthenticated FHIR Patient create in lab Docker against official 8.3.0 image; fixed 8.4.0 rejects colon-form registration |
+| [CVE-2026-98432](CVE-2026-98432) | Linux kernel TCP | 3.1 9.8 (Linux kernel) | KASAN-verified UAF crash in inet_csk_route_req; no code execution demonstrated |
+| [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | Validated remote DoS via crafted Brotli stream; RCE analysis only |
+| [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | Unauthenticated RCE claimed; lab validates differential detection + weaponized DoS only |
+| [CVE-2026-126170](CVE-2026-126170) | Fortinet FortiManager / FortiAnalyzer | 3.1 9.8 (Fortinet) | Unauthenticated RCE via JRPC JSON injection in lab; differential 7.6.7 vs 7.6.8 |
+| [CVE-2026-76954](CVE-2026-76954) | Synology DSM Auth API | 3.1 9.8 (Synology) | Pre-auth stacked SQLi against syno-pam-key.db; file read/write per vendor advisory, not demonstrated by PoC |
+| [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | Auth bypass after one valid login; any password accepted when caching enabled (non-default) |
+| [CVE-2026-124079](CVE-2026-124079) | rConfig Core / Pro | 4.0 9.3 (VulnCheck)；3.1 9.8 (VulnCheck) | Unauthenticated RCE via Redis-backed Horizon queue poisoning in lab |
+| [CVE-2026-86829](CVE-2026-86829) | Apache Airflow core | 3.1 8.8 (Apache) | DAG-author RCE in scheduler via XCom deserialization; lab-verified on 3.3.2, clean on 3.4.0 |
+| [CVE-2026-121653](CVE-2026-121653) | Ivanti Endpoint Manager Core | 3.1 9.8 (Ivanti) | Unauthenticated SQLi → OS command execution via Core DB account in lab |
+| [CVE-2026-124552](CVE-2026-124552) | Webmin Shorewall modules | 4.0 4.8 (VulnCheck)；3.1 4.8 (VulnCheck) | Stored XSS → root command execution in lab (needs Shorewall-module account + admin view); unpatched traversal 0day also shown |
+| [CVE-2026-104623](CVE-2026-104623) | SUSE Rancher Manager | 3.1 6.3 (SUSE) | Authenticated user gets shell pod on management cluster; unprivileged pod, scoped API access |
+| [CVE-2026-105437](CVE-2026-105437) | Git three-way merge | 3.1 7.5 (GitLab) | Heap overflow on merge of attacker-controlled content; SIGSEGV on 2.56.0, clean on 2.56.1 |
+| [CVE-2026-111585](CVE-2026-111585) | TeamViewer clients | 3.1 8.8 (TeamViewer) | Viewer heap overflow + crash on real 15.82.6 binaries; RCE claimed, crash proven |
+| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session upload progress | unknown | Unauthenticated RCE via session handler mismatch in lab (php:8.4.27-apache); unpatched, mitigation is disabling upload progress |
 
 See each CVE directory for the full assessment and references.

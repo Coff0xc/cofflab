@@ -40,5 +40,20 @@ Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。每条记录登记产品�
 | [CVE-2026-119618](CVE-2026-119618) | Apache httpd mod_http2 | 3.1 8.1 (NVD)；3.1 9.8 (Red Hat) | ASan/TSan 下堆损坏 + 崩溃；未证实 RCE |
 | [CVE-2026-126187](CVE-2026-126187) | React Server Components / Next.js | 4.0 9.5 (GHSA) | 实验室 Docker 应用中的 RCE；触发需要罕见条件 |
 | [CVE-2026-125350](CVE-2026-125350) | Google Chrome | 3.1 8.8 (NVD) | 通过回归测试文件触发渲染器崩溃；无 RCE payload |
+| [CVE-2026-126473](CVE-2026-126473) | OpenEMR | 4.0 9.3 (VulnCheck)；3.1 9.1 (VulnCheck) | 实验室 Docker 中对官方 8.3.0 镜像未认证创建 FHIR Patient；8.4.0 拒绝冒号形式注册 |
+| [CVE-2026-98432](CVE-2026-98432) | Linux 内核 TCP | 3.1 9.8 (Linux kernel) | KASAN 验证的 inet_csk_route_req UAF 崩溃；未证实代码执行 |
+| [CVE-2026-111497](CVE-2026-111497) | Node.js Brotli | 4.0 9.2 (Google)；3.1 9.8 (NVD) | 经畸形 Brotli 流验证的远程 DoS；RCE 仅为分析 |
+| [CVE-2026-116366](CVE-2026-116366) | ClickHouse Server | 4.0 9.5 (ClickHouse) | 自称未认证 RCE；实验室仅验证 differential 检测 + 武器化 DoS |
+| [CVE-2026-126170](CVE-2026-126170) | Fortinet FortiManager / FortiAnalyzer | 3.1 9.8 (Fortinet) | 实验室中经 JRPC JSON 注入未认证 RCE；7.6.7 与 7.6.8 对照 |
+| [CVE-2026-76954](CVE-2026-76954) | Synology DSM 认证 API | 3.1 9.8 (Synology) | 认证前堆叠 SQLi 打 syno-pam-key.db；文件读写为厂商通告说法，PoC 未证实 |
+| [CVE-2026-129349](CVE-2026-129349) | Apache Shiro DefaultLdapRealm | 4.0 9.1 (Apache) | 一次有效登录后认证绕过；启用缓存（非默认）时任意密码通过 |
+| [CVE-2026-124079](CVE-2026-124079) | rConfig Core / Pro | 4.0 9.3 (VulnCheck)；3.1 9.8 (VulnCheck) | 实验室中经 Redis 支撑的 Horizon 队列投毒未认证 RCE |
+| [CVE-2026-86829](CVE-2026-86829) | Apache Airflow 核心 | 3.1 8.8 (Apache) | DAG 作者经 XCom 反序列化在调度器 RCE；3.3.2 实验室验证，3.4.0 干净 |
+| [CVE-2026-121653](CVE-2026-121653) | Ivanti Endpoint Manager Core | 3.1 9.8 (Ivanti) | 实验室中未认证 SQLi → 经 Core 数据库账号执行操作系统命令 |
+| [CVE-2026-124552](CVE-2026-124552) | Webmin Shorewall 模块 | 4.0 4.8 (VulnCheck)；3.1 4.8 (VulnCheck) | 实验室中存储 XSS → root 命令执行（需 Shorewall 模块账号 + 管理员查看）；另展示未修复遍历 0day |
+| [CVE-2026-104623](CVE-2026-104623) | SUSE Rancher Manager | 3.1 6.3 (SUSE) | 认证用户在管理集群拿到 shell pod；无特权 pod，API 权限受限 |
+| [CVE-2026-105437](CVE-2026-105437) | Git 三路合并 | 3.1 7.5 (GitLab) | 合并攻击者控制内容时堆溢出；2.56.0 SIGSEGV，2.56.1 干净 |
+| [CVE-2026-111585](CVE-2026-111585) | TeamViewer 客户端 | 3.1 8.8 (TeamViewer) | 真实 15.82.6 二进制上的 viewer 堆溢出 + 崩溃；RCE 为宣称，崩溃已证实 |
+| [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session 上传进度 | unknown | 实验室中经 session 处理器错配未认证 RCE（php:8.4.27-apache）；未修复，缓解是关闭上传进度 |
 
 点进 CVE 目录看完整判定和引用。
