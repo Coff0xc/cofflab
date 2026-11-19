@@ -61,5 +61,6 @@ Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。每条记录登记产品�
 | [CVE-2026-105437](CVE-2026-105437) | Git 三路合并 | 3.1 7.5 (GitLab) | 合并攻击者控制内容时堆溢出；2.56.0 SIGSEGV，2.56.1 干净 | ✅ 完整 |
 | [CVE-2026-111585](CVE-2026-111585) | TeamViewer 客户端 | 3.1 8.8 (TeamViewer) | 真实 15.82.6 二进制上的 viewer 堆溢出 + 崩溃；RCE 为宣称，崩溃已证实 | ◐ 部分 |
 | [php-session-upload-progress-2026-rce](php-session-upload-progress-2026-rce) | PHP session 上传进度 | unknown | 实验室中经 session 处理器错配未认证 RCE（php:8.4.27-apache）；未修复，缓解是关闭上传进度 | ◐ 部分 |
+| [CVE-2026-53362](CVE-2026-53362) | Linux 内核 IPv6 分片 | 3.1 7.8 (Linux kernel) | 实验室中在 CentOS/RHEL 10（内核 6.12.x）容器逃逸至 root；IPv4 同类 CVE-2026-53366 未覆盖 | 待复现 |
 
 点进 CVE 目录看完整判定和引用。
