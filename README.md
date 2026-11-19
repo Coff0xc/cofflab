@@ -2,7 +2,7 @@
 
 Coff0xc 维护的 CVE 漏洞与公开 PoC 策展库。上游代码嵌在 `sources/`，目录、评分、日期、成色以本仓库的 `meta.yaml` 为准。
 
-收录机器人只读拉取、按规范改造、**不执行** PoC。规范：[docs/ingest-spec.md](docs/ingest-spec.md)。抓取出错：[docs/source-issues.md](docs/source-issues.md)。收完跑 `python tools/check_layout.py`，失败不准提交。
+收录机器人只读拉取、按规范改造、**不执行** PoC。规范：[docs/ingest-spec.md](docs/ingest-spec.md)。抓取出错：[docs/source-issues.md](docs/source-issues.md)。工作流：[docs/README.md](docs/README.md)。收完跑 `python tools/check_layout.py`，失败不准提交。
 
 ## 布局
 
