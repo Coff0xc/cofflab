@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+results/
+build/
+hs_err_pid*
+core
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
