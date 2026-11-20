@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (78)
+### Web / CMS (86)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -100,6 +100,14 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-129048](CVE-2026-129048) | WP Photo Album Plus | 3.1 9.9 (Patchstack) | WP Photo Album Plus <=9.3.06.003 | 9.3.07.001 | WP Photo Album Plus のリモートコードインクルージョン；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-14492](CVE-2026-14492) | WP Duplicate – WordPress Migration Plugin | 3.1 9.8 (Wordfence) | WP Duplicate <=1.1.11 | No known patch | WP Duplicate の未認証任意ファイルアップロードによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130754](CVE-2026-130754) | LaraDashboard | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | LaraDashboard <=1.5.4 | No fix released (latest 1.5.4) | LaraDashboard OAuth ログインの未検証メールによる任意アカウント乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2023-54422](CVE-2023-54422) | iDocView | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | iDocView <13.10.1_20231115 | 13.10.1_20231115 | iDocView /html/2word の未認証任意ファイルアップロードによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2023-54419](CVE-2023-54419) | nginxWebUI | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | nginxWebUI 3.0.0-3.5.7 | 3.5.8 | nginxWebUI の認証バイパスによる runCmd コマンド実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2022-51027](CVE-2022-51027) | MeterSphere | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | MeterSphere 1.13.0-1.14.6 / 1.15.0-1.16.3 | 1.14.7 / 1.16.4 | MeterSphere の認証前プラグインエンドポイントのコードインジェクションによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2021-48025](CVE-2021-48025) | OpenSNS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | OpenSNS 3.2.1 | No known patch | OpenSNS shareBox の未認証コードインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2021-48023](CVE-2021-48023) | Weaver E-cology | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Weaver E-cology 9.0 | No known patch | Weaver E-cology uploadOperation.jsp の未認証任意ファイルアップロードによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2018-25443](CVE-2018-25443) | Baidu UEditor | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Baidu UEditor 1.4.0-1.4.3.3 | No known patch | Baidu UEditor catchimage の未認証任意ファイルアップロードによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-114516](CVE-2026-114516) | Etherpad | 3.1 9.8 (GHSA) | Etherpad 1.8.14-3.3.2 | 3.3.3 | Etherpad の認証前パストラバーサルによる任意ファイル読み取り；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-77369](CVE-2026-77369) | Daptin | 3.1 9.6 (GHSA) | Daptin 0.11.4-0.12.29 | 0.12.30 | Daptin YJS コラボレーションエンドポイントのアクセス制御不備により制限行の読み書きが可能；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (8)
 
@@ -114,7 +122,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core の無防備な data/file モジュール経由の任意ファイル書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core の http.paginate 経由の二次 SSRF；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (96)
+### ネットワークとセキュリティ (101)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -214,8 +222,13 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-132139](CVE-2026-132139) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 setSWMProfile のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-121805](CVE-2026-121805) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.x / 17.1.x with PEM::subscriber iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP PEM::subscriber iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-120722](CVE-2026-120722) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.x / 17.1.x with DNS::scrape iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP DNS::scrape iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-120292](CVE-2026-120292) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 with MR::message route iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP MR::message route iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-120285](CVE-2026-120285) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 with PSC::ip_address iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP PSC::ip_address iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-116953](CVE-2026-116953) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 with GENERICMESSAGE::route iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP GENERICMESSAGE::route iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131287](CVE-2026-131287) | Splunk SOAR | 3.1 9.6 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のリポジトリ横断 playbook 参照による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132142](CVE-2026-132142) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 dataflowstatus のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (56)
+### ランタイム / フレームワーク / ブラウザ (58)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -275,6 +288,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-61798](CVE-2026-61798) | netty-incubator-codec-ohttp | 3.1 8.1 (GitHub) | netty-incubator-codec-ohttp <0.0.23.Final | 0.0.23.Final | netty-incubator-codec-ohttp の toString() 経由の HPKE 秘密鍵漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130234](CVE-2026-130234) | Okta Swift Management SDK | 3.1 8.0 (Okta) | Okta Swift Management SDK <0.1.1 | 0.1.1 | Okta Swift Management SDK のパスパラメータエンコーディング不備；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130756](CVE-2026-130756) | pnpm exe | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | pnpm exe <10.34.8, 11.x <11.28.8 | 10.34.8 / 11.28.8 | pnpm exe が漏洩した eMudhra 中間 CA を信頼；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2019-25782](CVE-2019-25782) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 5.0.0-5.0.23 | 5.0.24 | ThinkPHP 5.0 の _method __construct によるコードインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2012-20007](CVE-2012-20007) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 2.0-2.2 / 3.0 Lite | No known patch | ThinkPHP Dispatcher PATH_INFO の eval インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### データベース (8)
 
