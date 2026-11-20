@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (134)
+### Web / CMS (135)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -156,6 +156,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-129043](CVE-2026-129043) | Newsletters | 3.1 9.3 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | Newsletters SQL 注入；检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Tegsoft Contact Center 任意文件上传致 Web Shell；检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-80188](CVE-2026-80188) | BuddyBoss Addons | 3.1 9.8 (Wordfence) | BuddyBoss Addons <= 1.2.1 | 1.2.2 | BuddyBoss Addons 未验证社交登录身份令牌导致未授权账户接管；检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2025-42884](CVE-2025-42884) | SAP NetWeaver Enterprise Portal | 3.1 6.5 (SAP) | SAP NetWeaver Enterprise Portal EP-BASIS 7.50 / EP-RUNTIME 7.50 | Per SAP Note 3660969 | SAP NetWeaver Enterprise Portal JNDI 注入；CISA KEV 2026-11-20 收录，暂无公开 PoC | 已确认 | 待复现 |
 
 ### AI / LLM (16)
 
@@ -178,7 +179,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 未授权改功能配置；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-93328](CVE-2026-93328) | Google Cloud MCP Toolbox for Databases | 4.0 9.3 (GoogleCloud) | Google Cloud MCP Toolbox for Databases 1.2.0-1.4.0 | past 1.4.0 + allowlists (googleapis/mcp-toolbox#3454) | Google Cloud MCP Toolbox 云存储源路径穿越与缺失授权，未认证外泄宿主文件并覆写任意本地文件；实验室复现 PoC、未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (140)
+### 网络与安全 (147)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -322,6 +323,13 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | D-Link DIR-600L gena.cgi 命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-20320](CVE-2026-20320) | Cisco BroadWorks | 3.1 7.5 (Cisco) | BroadWorks earlier than RI.2026.07 | RI.2026.07 | Cisco BroadWorks 未授权 XXE；已确认在野利用（KEV 2026-11-10），暂无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-111793](CVE-2026-111793) | Openwave Webtop Media Transcoder | 3.1 4.3 (MITRE) | Webtop Media Transcoder < 1.1.22.0 | 1.1.22.0 | Openwave Webtop 媒体转码器文件类型限制绕过；已确认在野利用（KEV 2026-11-10），暂无公开 PoC | 已确认 | 待复现 |
+| [CVE-2026-126262](CVE-2026-126262) | FortiAnalyzer / FortiManager | 3.1 9.8 (Fortinet) | FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12; FortiManager (FA features) 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 | FortiAnalyzer 8.0.2 / FortiManager 8.0.1 / 7.6.8 / 7.4.12 / 7.2.13 | FortiAnalyzer/FortiManager OFTP 服务 SQL 注入；仅版本检查工具、未核实 | 已确认 | 待复现 |
+| [CVE-2026-126261](CVE-2026-126261) | FortiManager | 3.1 9.8 (Fortinet) | FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.5 / 7.2.0-7.2.8 | 8.0.1 / 7.6.8 / 7.4.6 / 7.2.9 | FortiManager FGFM 服务注册密码验证前授权不当；仅版本检查工具、未核实 | 已确认 | 待复现 |
+| [CVE-2026-126259](CVE-2026-126259) | FortiOS | 3.1 9.8 (Fortinet) | FortiOS 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.12 / 7.2.0-7.2.13 / 7.0 all | 8.0.1 / 7.6.8 / 7.4.13 / 7.2.14 (7.0 migrate) | FortiOS 高可用集群缺失认证；仅版本检查工具、未核实 | 已确认 | 待复现 |
+| [CVE-2026-126254](CVE-2026-126254) | FortiOS / FortiSASE | 3.1 9.6 (Fortinet) | FortiOS 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.12 / 7.2.0-7.2.13; FortiSASE 26.3.1, 26.2/26.1/25.x | 8.0.2 / 7.6.8 / 7.4.13 / 7.2.14; FortiSASE 26.3.2 (26.2 and earlier migrate) | FortiOS/FortiSASE BGP 守护进程数值截断；仅版本检查工具、未核实 | 已确认 | 待复现 |
+| [CVE-2026-126253](CVE-2026-126253) | FortiOS / FortiSASE | 3.1 9.3 (Fortinet) | FortiOS 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.12 / 7.2.0-7.2.13 / 7.0.1-7.0.19; FortiSASE 26.3.1, 26.2/26.1/25.x | 8.0.2 / 7.6.8 / 7.4.13 / 7.2.14; FortiSASE 26.3.2 (26.2 and earlier, 7.0 migrate) | FortiOS/FortiSASE OSPF 认证绕过；仅版本检查工具、未核实 | 已确认 | 待复现 |
+| [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | FortiManager/FortiAnalyzer dmserver 用户可控键授权绕过；仅版本检查工具、未核实 | 已确认 | 待复现 |
+| [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | FortiAnalyzer/FortiManager OFTP 服务服务端请求伪造；仅版本检查工具、未核实 | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (73)
 

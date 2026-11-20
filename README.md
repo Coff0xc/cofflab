@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (134)
+### Web / CMS (135)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -156,6 +156,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129043](CVE-2026-129043) | Newsletters | 3.1 9.3 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | SQL injection in Newsletters <= 4.18.2; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Unrestricted file upload allows web shell in Tegsoft Contact Center before latest-202611161510; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-80188](CVE-2026-80188) | BuddyBoss Addons | 3.1 9.8 (Wordfence) | BuddyBoss Addons <= 1.2.1 | 1.2.2 | Unauthenticated account takeover via unverified social login identity tokens in BuddyBoss Addons <= 1.2.1; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2025-42884](CVE-2025-42884) | SAP NetWeaver Enterprise Portal | 3.1 6.5 (SAP) | SAP NetWeaver Enterprise Portal EP-BASIS 7.50 / EP-RUNTIME 7.50 | Per SAP Note 3660969 | Unauthenticated JNDI injection in SAP NetWeaver Enterprise Portal; CISA KEV listed 2026-11-20, no public PoC | Confirmed | Pending |
 
 ### AI / LLM (16)
 
@@ -178,7 +179,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Unauthorized modification of feature settings in Splunk AI Assistant via client-controlled REST API values; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-93328](CVE-2026-93328) | Google Cloud MCP Toolbox for Databases | 4.0 9.3 (GoogleCloud) | Google Cloud MCP Toolbox for Databases 1.2.0-1.4.0 | past 1.4.0 + allowlists (googleapis/mcp-toolbox#3454) | Path traversal and missing authorization in cloud-storage source allows unauthenticated exfiltration of host files and overwrite of arbitrary local files; lab-repro PoC, unverified | Confirmed | Pending |
 
-### Network & Security (140)
+### Network & Security (147)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -322,6 +323,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | OS command injection in D-Link DIR-600L via the GENA handler (gena.cgi genacgi_main); detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-20320](CVE-2026-20320) | Cisco BroadWorks | 3.1 7.5 (Cisco) | BroadWorks earlier than RI.2026.07 | RI.2026.07 | Unauthenticated XXE in BroadWorks OCI XML parser; KEV, exploited in the wild, no public PoC | Confirmed | Pending |
 | [CVE-2026-111793](CVE-2026-111793) | Openwave Webtop Media Transcoder | 3.1 4.3 (MITRE) | Webtop Media Transcoder < 1.1.22.0 | 1.1.22.0 | Authenticated file-type restriction bypass in Webtop Media Transcoder; KEV, exploited in the wild, no public PoC | Confirmed | Pending |
+| [CVE-2026-126262](CVE-2026-126262) | FortiAnalyzer / FortiManager | 3.1 9.8 (Fortinet) | FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12; FortiManager (FA features) 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 | FortiAnalyzer 8.0.2 / FortiManager 8.0.1 / 7.6.8 / 7.4.12 / 7.2.13 | Unauthenticated SQL injection in the OFTP log-reception service (TCP/514) of FortiAnalyzer and FortiManager with FortiAnalyzer features; version-check tool only, unverified | Confirmed | Pending |
+| [CVE-2026-126261](CVE-2026-126261) | FortiManager | 3.1 9.8 (Fortinet) | FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.5 / 7.2.0-7.2.8 | 8.0.1 / 7.6.8 / 7.4.6 / 7.2.9 | Unauthenticated code/command execution via the FortiManager FGFM service (TCP/541) before the registration password is verified; version-check tool only, unverified | Confirmed | Pending |
+| [CVE-2026-126259](CVE-2026-126259) | FortiOS | 3.1 9.8 (Fortinet) | FortiOS 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.12 / 7.2.0-7.2.13 / 7.0 all | 8.0.1 / 7.6.8 / 7.4.13 / 7.2.14 (7.0 migrate) | Unauthenticated command execution as super admin via crafted HA packets on FortiOS clusters using FGSP with standalone-config-sync or autoscale; version-check tool only, unverified | Confirmed | Pending |
+| [CVE-2026-126254](CVE-2026-126254) | FortiOS / FortiSASE | 3.1 9.6 (Fortinet) | FortiOS 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.12 / 7.2.0-7.2.13; FortiSASE 26.3.1, 26.2/26.1/25.x | 8.0.2 / 7.6.8 / 7.4.13 / 7.2.14; FortiSASE 26.3.2 (26.2 and earlier migrate) | Numeric truncation in the FortiOS/FortiSASE BGP daemon; a configured iBGP neighbour may send malformed attributes to all connected routers; version-check tool only, unverified | Confirmed | Pending |
+| [CVE-2026-126253](CVE-2026-126253) | FortiOS / FortiSASE | 3.1 9.3 (Fortinet) | FortiOS 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.12 / 7.2.0-7.2.13 / 7.0.1-7.0.19; FortiSASE 26.3.1, 26.2/26.1/25.x | 8.0.2 / 7.6.8 / 7.4.13 / 7.2.14; FortiSASE 26.3.2 (26.2 and earlier, 7.0 migrate) | Authentication bypass in the FortiOS/FortiSASE OSPF daemon; an unauthenticated attacker on an adjacent network may broadcast forged link state advertisements; version-check tool only, unverified | Confirmed | Pending |
+| [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | Authorization bypass through a user-controlled key in dmserver; an authenticated administrator may reach other VDOMs through crafted HTTP requests; version-check tool only, unverified | Confirmed | Pending |
+| [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | Pre-authentication SSRF in the OFTP service of FortiAnalyzer and FortiManager with FortiAnalyzer features; an attacker reaching the OFTP port may make the server issue requests; version-check tool only, unverified | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (73)
 
