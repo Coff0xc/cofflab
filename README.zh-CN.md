@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (133)
+### Web / CMS (134)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -155,6 +155,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-129039](CVE-2026-129039) | Newsletters | 3.1 9.8 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | Newsletters 反序列化对象注入；检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-129043](CVE-2026-129043) | Newsletters | 3.1 9.3 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | Newsletters SQL 注入；检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Tegsoft Contact Center 任意文件上传致 Web Shell；检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-80188](CVE-2026-80188) | BuddyBoss Addons | 3.1 9.8 (Wordfence) | BuddyBoss Addons <= 1.2.1 | 1.2.2 | BuddyBoss Addons 未验证社交登录身份令牌导致未授权账户接管；检测型 PoC、未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (15)
 
@@ -321,7 +322,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-20320](CVE-2026-20320) | Cisco BroadWorks | 3.1 7.5 (Cisco) | BroadWorks earlier than RI.2026.07 | RI.2026.07 | Cisco BroadWorks 未授权 XXE；已确认在野利用（KEV 2026-11-10），暂无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-111793](CVE-2026-111793) | Openwave Webtop Media Transcoder | 3.1 4.3 (MITRE) | Webtop Media Transcoder < 1.1.22.0 | 1.1.22.0 | Openwave Webtop 媒体转码器文件类型限制绕过；已确认在野利用（KEV 2026-11-10），暂无公开 PoC | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (72)
+### 运行环境 / 框架 / 浏览器 (73)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -397,6 +398,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP 时区缓存释放后使用致远程代码执行；lab 型 PoC，未在本仓核实 | 已确认 | 待复现 |
 | [CVE-2026-129474](CVE-2026-129474) | PHP | 4.0 9.2 (PHP Group) | PHP 8.5.0–<8.5.13 | 8.5.13 | PHP 垃圾回收器魔术方法回溯释放后重用；触发型 PoC，RCE 未证实、未核实 | 已确认 | 待复现 |
 | [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP 会话文件部分覆盖导致反序列化 RCE；Docker 实验室内含参考利用，仅实验室 RCE、未核实 | 已确认 | 待复现 |
+| [CVE-2026-129289](CVE-2026-129289) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <=8.2.35 / 8.3 <=8.3.36 / 8.4 <=8.4.27 / 8.5 <=8.5.12 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP-FPM 请求走私；需复用后端连接；触发型 PoC，RCE 未证实、未核实 | 已确认 | 待复现 |
 
 ### 数据库 (9)
 

@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (133)
+### Web / CMS (134)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -155,6 +155,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129039](CVE-2026-129039) | Newsletters | 3.1 9.8 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | Deserialization / PHP object injection in Newsletters <= 4.18.2; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-129043](CVE-2026-129043) | Newsletters | 3.1 9.3 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | SQL injection in Newsletters <= 4.18.2; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Unrestricted file upload allows web shell in Tegsoft Contact Center before latest-202611161510; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-80188](CVE-2026-80188) | BuddyBoss Addons | 3.1 9.8 (Wordfence) | BuddyBoss Addons <= 1.2.1 | 1.2.2 | Unauthenticated account takeover via unverified social login identity tokens in BuddyBoss Addons <= 1.2.1; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (15)
 
@@ -321,7 +322,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-20320](CVE-2026-20320) | Cisco BroadWorks | 3.1 7.5 (Cisco) | BroadWorks earlier than RI.2026.07 | RI.2026.07 | Unauthenticated XXE in BroadWorks OCI XML parser; KEV, exploited in the wild, no public PoC | Confirmed | Pending |
 | [CVE-2026-111793](CVE-2026-111793) | Openwave Webtop Media Transcoder | 3.1 4.3 (MITRE) | Webtop Media Transcoder < 1.1.22.0 | 1.1.22.0 | Authenticated file-type restriction bypass in Webtop Media Transcoder; KEV, exploited in the wild, no public PoC | Confirmed | Pending |
 
-### Runtime / Framework / Browser (72)
+### Runtime / Framework / Browser (73)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -397,6 +398,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Timezone cache use-after-free in PHP can lead to remote code execution; lab-proven PoC on PHP 8.4.27, fails on 8.4.28, unverified in this repo | Confirmed | Pending |
 | [CVE-2026-129474](CVE-2026-129474) | PHP | 4.0 9.2 (PHP Group) | PHP 8.5.0–<8.5.13 | 8.5.13 | Use-after-free in PHP garbage collector during magic-method backtrace; trigger PoC, RCE unproven, unverified | Confirmed | Pending |
 | [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Partially overwritten PHP session files lead to deserialization RCE; Docker lab with reference exploit, lab-only RCE, unverified | Confirmed | Pending |
+| [CVE-2026-129289](CVE-2026-129289) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <=8.2.35 / 8.3 <=8.3.36 / 8.4 <=8.4.27 / 8.5 <=8.5.12 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP-FPM request smuggling through unread request body on reused backend connections; trigger PoC, RCE unproven, unverified | Confirmed | Pending |
 
 ### Database (9)
 
