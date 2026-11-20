@@ -18,10 +18,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (96)
+### Web / CMS (99)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-91618](CVE-2026-91618) | Oracle Application Development Framework (ADF) | 3.1 9.1 (Oracle) | Oracle Application Development Framework (ADF) 12.2.1.4.0 | November 2026 Critical Patch Update | Unauthenticated compromise of Oracle ADF Security Framework; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-40128](CVE-2026-40128) | SAP NetWeaver Application Server Java | 3.1 9.0 (SAP) | SAP NetWeaver Application Server Java (Web Container) | SAP Note 3727078 | Unauthenticated path traversal in SAP NetWeaver AS Java logon handling; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-61532](CVE-2026-61532) | Chamilo LMS | 3.1 9.0 (GHSA) | Chamilo LMS <1.11.40 and <2.0.3 | 1.11.40 / 2.0.3 | Path traversal in Chamilo LMS course backup import leading to code execution; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-123488](CVE-2026-123488) | Craft CMS element search | 3.1 9.8 (GHSA)；4.0 9.3 (GitHub) | 4.0.0–4.18.8 and 5.0.0–5.11.1 (MySQL/MariaDB, emulated PDO prepares) | 4.18.9 / 5.11.2 | Unauthenticated SQLi with database writes / privilege escalation | Confirmed | ◐ Partial |
 | [CVE-2026-129448](CVE-2026-129448) | Apache Roller XML-RPC | 3.1 9.8 (public claim, unverified) | Roller 4.0.0–6.1.4 (CVE-2026-82384 lists 6.1.5 only; same bug) | 6.1.6 | Framework requires a self-supplied gadget; local mock only | Unverified | ◐ Partial |
 | [CVE-2026-90817](CVE-2026-90817) | Vanderbilt REDCap | 3.1 9.8 (public claim, unverified) | REDCap 13.3.0+ before 16.0.49 LTS / 17.3.10 LTS / 17.4.4 | 16.0.49 LTS / 17.3.10 LTS / 17.4.4 | Discoverer's script / placeholder framework / bulk detection | Unverified | ◐ Partial |
@@ -119,10 +122,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130156](CVE-2026-130156) | Bazarr | 3.1 9.4 (GHSA) | Bazarr <1.6.3-beta.11 | 1.6.3-beta.11 | Authenticated path traversal in Bazarr subtitle operations leading to arbitrary file read and write; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-55508](CVE-2026-55508) | Wavelog | 3.1 9.4 (GHSA) | Wavelog <2.5 | 2.5 | Unauthenticated SQL injection in Wavelog OQRS callsign log search; detection-only PoC, unverified | Confirmed | Pending |
 
-### AI / LLM (11)
+### AI / LLM (12)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-85228](CVE-2026-85228) | Amazon Deep Java Library (DJL) | 3.1 9.1 (AMZN); 4.0 8.8 (AMZN) | Amazon Deep Java Library (DJL) 0.13.0–0.36.0 | 0.37.0 | Integer overflow in DJL tensor buffer validation; unauthenticated information disclosure / DoS; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-40217](CVE-2026-40217) | BerriAI LiteLLM | 3.1 8.8 PR:L (public README) | LiteLLM before v1.83.11 (image digest pinning required; some rebuilt tags are not vulnerable) | v1.83.11+ (RestrictedPython) | Authenticated lab RCE; requires an API key | Confirmed | ◐ Partial |
 | [CVE-2026-130796](CVE-2026-130796) | Flowise | 4.0 8.8 (VulnCheck)；3.1 8.2 (VulnCheck) | 3.1.3-3.1.4 |  | Unauthenticated plaintext MCP token leak; bundled script is an offline logic simulation | Confirmed | ✅ Full |
 | [CVE-2026-102895](CVE-2026-102895) | GPUStack | 3.1 9.8 (GHSA) | < 2.2.0 | 2.2.0 | Lab-verified unauthenticated admin takeover; in-the-wild use is vendor-reported, not proven by this PoC | Confirmed | ◐ Partial |
@@ -135,10 +139,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-76807](CVE-2026-76807) | Todoist MCP Server | 3.1 9.3 (GHSA) | Todoist MCP Server <10.3.3 | 10.3.3 | Browser DNS rebinding lets websites write and delete Todoist data through the local Todoist MCP server; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130154](CVE-2026-130154) | Zyrabit Platform | 3.1 9.1 (GHSA) | Zyrabit Platform <2.4.4 | 2.4.4 | Path traversal in Zyrabit import_to_vault allows arbitrary file write and read via unvalidated paths; detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (108)
+### Network & Security (113)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-95643](CVE-2026-95643) | ManageEngine DDI Central | 3.1 9.1 (Zohocorp) | Zohocorp ManageEngine DDI Central build <6500 | 6500 | Authenticated PowerShell command injection in DDI Central Telnet connectivity via IPv6 scope identifiers; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-95645](CVE-2026-95645) | ManageEngine DDI Central | 3.1 9.1 (Zohocorp) | Zohocorp ManageEngine DDI Central build <6500 | 6500 | Authenticated command injection in DDI Central Windows agent clear_blocked_domains; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-104935](CVE-2026-104935) | Ivanti Connect Secure | 3.1 8.6 (Ivanti) | Ivanti Connect Secure 25.1.1.2 and prior; 25.1.2.2 and prior; 22.8R2.5 and prior | 25.1.1.3 / 22.8R2.6 | Authentication bypass in Ivanti Connect Secure; exploited in the wild (KEV 2026-10-13), no public PoC | Confirmed | Pending |
+| [CVE-2026-111357](CVE-2026-111357) | Ivanti Connect Secure | 3.1 7.0 (NVD); 3.1 8.8 (Ivanti) | Ivanti Connect Secure 25.1.1.2 and prior; 25.1.2.2 and prior; 22.8R2.5 and prior | 25.1.1.3 / 22.8R2.6 | Missing authentication for critical function in Ivanti Connect Secure; exploited in the wild (KEV 2026-10-30), no public PoC | Confirmed | Pending |
+| [CVE-2026-118527](CVE-2026-118527) | Ivanti Connect Secure | 3.1 4.3 (Ivanti) | Ivanti Connect Secure 25.1.1.2 and prior; 25.1.2.2 and prior; 22.8R2.5 and prior | 25.1.1.3 / 22.8R2.6 | Predictable filenames in Ivanti Connect Secure allow file upload to a known location; exploited in the wild (KEV 2026-10-30), no public PoC | Confirmed | Pending |
 | [CVE-2026-123007](CVE-2026-123007) | F5 NGINX HTTP/2 | 4.0 9.2 (F5)；3.1 8.1 (F5) | NGINX Open Source 1.9.5–1.30.6 and 1.31.0–1.31.8 with HTTP/2 enabled | Open Source 1.30.7 / 1.31.9; NGINX Plus 37.3.0.1 / 37.0.8.1 | Trigger + RCE demo only against a freshly started Docker instance | Confirmed | — No target |
 | [CVE-2026-129287](CVE-2026-129287) | N-able N-central | 4.0 8.3 (N-able) | before 2026.4.1 Hotfix 3 | 2026.4.1 Hotfix 3 (build 2026.4.1.39) | Authenticated out-of-band XXE file read; closed-source appliance, not locally reproducible | Confirmed | ◐ Partial |
 | [CVE-2026-119958](CVE-2026-119958) | Windows LDAP | 3.1 9.8 (Microsoft) | Windows 10 1607–Windows 11 26H2、Windows Server 2016–2025 | 2026 年 11 月安全更新 | Lab repro of OOB write + crash; no RCE on real Windows LDAP | Confirmed | ✅ Full |
@@ -248,10 +257,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-104099](CVE-2026-104099) | Fabio | 3.1 9.1 (GHSA) | Fabio <1.7.3 | 1.7.3 | Access-control bypass in Fabio through unnormalized request paths reaching a less restrictive route; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131202](CVE-2026-131202) | Splunk Enterprise Security | 3.1 9.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Remote code execution in Splunk Enterprise Security via REST API path traversal in lookup upload; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (65)
+### Runtime / Framework / Browser (66)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-57898](CVE-2026-57898) | Eclipse BaSyx Java Server SDK | 3.1 9.0 (Eclipse) | Eclipse BaSyx Java Server SDK 2.0.0-milestone-05–2.0.0-milestone-12 (MongoDB backend) | 2.0.0-milestone-13 | Unauthenticated arbitrary file write in Eclipse BaSyx AAS thumbnail API (MongoDB backend); detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-114938](CVE-2026-114938) | OpenJDK Base64 (Java4Shell) | 4.0 9.2 (Calif)；3.1 8.1 (Oracle)；3.1 9.8 (Red Hat) | OpenJDK 17.0.6 and later on x86-64 with AVX-512 VBMI (17/21/25/27 lines; Oracle also lists Java 8 Performance Pack 8u511b33-perf) | vendor November 2026 CPU / OpenJDK 17.0.21.1, 21.0.13.1 and equivalent distributor builds | Trigger / crash / leak / lab experiment; no public general-purpose RCE | Confirmed | ◐ Partial |
 | [CVE-2026-90436](CVE-2026-90436) | Apache Axis 1.x | 3.1 9.8 (CISA-ADP) | Apache Axis 1.x through 1.4 | 无修复版本（EOL；修复仅存于上游 commit 41f3b4e8） | Lab repro of unauthenticated class instantiation; no RCE on default classpath | Confirmed | ◐ Partial |
 | [CVE-2024-27834](CVE-2024-27834) | WebKit (Apple) | 3.1 5.5 (NVD) | Safari < 17.5；iOS/iPadOS < 16.7.8 及 17.x < 17.5；macOS < 14.5；tvOS < 17.5；watchOS < 10.5；WebKitGTK / WPE WebKit < 2.44.2 | Safari 17.5；iOS 16.7.8 / iOS 17.5；iPadOS 16.7.8 / iPadOS 17.5；macOS Sonoma 14.5；tvOS 17.5；watchOS 10.5 | Analysis only; no runnable PoC | Confirmed | — No target |
@@ -332,10 +342,12 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 | [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | Authentication bypass in ArangoDB via URL-encoded underscore parser differential; detection-only PoC, unverified | Confirmed | Pending |
 
-### OS / System / DevOps (47)
+### OS / System / DevOps (49)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-65094](CVE-2026-65094) | NVIDIA VIRTIO-Net for BlueField | 3.1 9.0 (NVIDIA) | NVIDIA VIRTIO-Net GA <25.10.6; LTS25 <25.10.2; LTS24 <24.10.50; LTS23 1.7.21 and older (BlueField-3) | 25.10.6 (GA) / 25.10.2 (LTS25) / 24.10.50 (LTS24) / 23.10.23 (LTS23) | Write-what-where in NVIDIA VIRTIO-Net for BlueField leading to code execution; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-74127](CVE-2026-74127) | AMD Platform Security Processor (PSP) boot ROM | 4.0 9.4 (AMD) | AMD Zen 1 / Zen+ processors (PSP boot ROM) | No fix planned (AMD: boot ROM immutable) | PSP boot ROM signature verification bypass on Zen 1/Zen+; PoC verified by Google on real hardware, no fix planned | Confirmed | Pending |
 | [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8 (public README, vendor advisory not verified) | DSM 6.2.4–7.2.2 and BSM/DSMUC branches before the 2024-11 smallfix | DSM 7.2.2-72806-1 / 7.2.1-69057-6 / 7.2-64570-4 / 7.1.1-42962-7 / 6.2.4-25556-8; BeeStation OS 1.1-65374; DSMUC 3.1.4-23079 | Patch-diff analysis + local verification; no ready-made remote exploit | Unverified | ◐ Partial |
 | [CVE-2026-124194](CVE-2026-124194) | Microsoft Outlook | 3.1 6.5 (Microsoft) | Microsoft 365 Apps 版经典 Outlook、Office LTSC 2021/2024（2026-11-10 前构建） | 2026 年 11 月 10 日 Patch Tuesday Office 更新 | Trigger .msg files only; no NTLM leak on real Outlook proven | Confirmed | ◐ Partial |
 | [CVE-2026-115731](CVE-2026-115731) | Puppet / OpenVox Server | 4.0 9.4 (Perforce)；3.1 9.9 (NVD) | Puppet Enterprise 2023.8.0–<2023.8.13、2025.0.0–<2025.12.1、2026.0.0–<2026.0.1；OpenVox Server ≤ 9.1.0 / ≤ 8.17.0；OpenVox Agent ≤ 9.2.0 / ≤ 8.31.1 | Puppet Enterprise 2023.8.13 / 2025.12.1 / 2026.0.1；OpenVox Server 9.2.0 / 8.18.0；OpenVox Agent 9.3.0 / 8.32.0；Puppet Core 9.1.3 / 8.22.2 | Advisory-confirmed server command execution (needs valid CA-signed client cert) | Confirmed | — No target |
