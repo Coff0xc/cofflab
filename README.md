@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (144)
+### Web / CMS (145)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -166,6 +166,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-54065](CVE-2026-54065) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (comment admin edit) | 4.5.09 | Authenticated admin path traversal in comment attach value allows deletion of application files; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | Unauthenticated heap buffer overflow via WMS GetLegendGraphic crashing the process; crash PoC only, RCE not demonstrated | Confirmed | Pending |
 | [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | Unauthenticated stored XSS via numeric HTML entities with leading zeros in URL attributes; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | Incorrect authorization in Module::saveRecord() allows authenticated users to write to unauthorized modules and escalate to Admin; detection PoC only, unverified | Confirmed | Pending |
 
 ### AI / LLM (20)
 
@@ -414,7 +415,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-91583](CVE-2026-91583) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over HTTP; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over TCP; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | AJP response mix-up in Apache Tomcat leaks data from one response into the next request; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | Out-of-bounds write in BeamNG.drive via LuaJIT FFI bounds-check bypass in JIT traces, escaping the mod sandbox; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | Out-of-bounds write in BeamNG.drive via LuaJIT FFI bounds-check bypass in JIT traces, escaping the mod sandbox; real exploit (drbloop2000) + detection PoC (fankh), unverified | Confirmed | Pending |
 | [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | Path traversal in @fastify/reply-from via semicolon path-parameter segments bypassing the dot-segment check; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | Missing TLS certificate validation in the Dorsett Controls InfoScan Electron client with insecure Electron settings; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Timezone cache use-after-free in PHP can lead to remote code execution; lab-proven PoC on PHP 8.4.27, fails on 8.4.28, unverified in this repo | Confirmed | Pending |

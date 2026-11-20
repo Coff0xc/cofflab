@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (144)
+### Web / CMS (145)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -166,6 +166,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-54065](CVE-2026-54065) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (comment admin edit) | 4.5.09 | 認証済み管理者がコメント attach 値のパストラバーサルでアプリケーションファイルを削除可能；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | 未認証の攻撃者が WMS GetLegendGraphic でヒープバッファオーバーフローを起こしプロセスをクラッシュ；クラッシュ PoC のみ、RCE は未実証 | 確認済み | 未実施 |
 | [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | 未認証の訪問者が URL 属性内の先行ゼロ付き数値 HTML エンティティで stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | 認証済みユーザーが saveRecord() で未認可モジュールに書き込み、管理者に昇格可能；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (20)
 
@@ -414,7 +415,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-91583](CVE-2026-91583) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server の TopLink 経由の HTTP による未認証乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server の TopLink 経由の TCP による未認証乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | Apache Tomcat の AJP レスポンス混同によるデータ漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | BeamNG.drive の LuaJIT サンドボックス逃逸による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | BeamNG.drive の LuaJIT サンドボックス逃逸による RCE；実 exploit（drbloop2000）＋検出型 PoC（fankh）、未検証 | 確認済み | 未実施 |
 | [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | @fastify/reply-from のセミコロン付きパスによるパストラバーサル；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | InfoScan Electron クライアントの TLS 証明書検証欠如；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP のタイムゾーンキャッシュの use-after-free によるリモートコード実行；ラボ型 PoC、本倉では未検証 | 確認済み | 未実施 |

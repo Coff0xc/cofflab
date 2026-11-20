@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (144)
+### Web / CMS (145)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -166,6 +166,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-54065](CVE-2026-54065) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (comment admin edit) | 4.5.09 | 已认证管理员经评论 attach 值路径穿越致应用文件被删；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | 未认证攻击者经 WMS GetLegendGraphic 触发堆缓冲区溢出致进程崩溃；仅崩溃型 PoC，未证明 RCE | 已确认 | 待复现 |
 | [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | 未认证访客经 URL 属性中带前导零的数字 HTML 实体致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | 已认证用户经 saveRecord() 向未授权模块写数据、可提权至管理员；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (20)
 
@@ -414,7 +415,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-91583](CVE-2026-91583) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server 未授权接管（TopLink，HTTP）；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server 未授权接管（TopLink，TCP）；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | Apache Tomcat AJP 响应串扰致数据泄露；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | BeamNG.drive LuaJIT 沙箱逃逸致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | BeamNG.drive LuaJIT 沙箱逃逸致 RCE；真实 exploit（drbloop2000）+ 检测型 PoC（fankh），未核实 | 已确认 | 待复现 |
 | [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | @fastify/reply-from 分号路径参数绕过致路径穿越；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | InfoScan Electron 客户端 TLS 证书校验缺失；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP 时区缓存释放后使用致远程代码执行；lab 型 PoC，未在本仓核实 | 已确认 | 待复现 |
