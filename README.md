@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (135)
+### Web / CMS (137)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -157,8 +157,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Unrestricted file upload allows web shell in Tegsoft Contact Center before latest-202611161510; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-80188](CVE-2026-80188) | BuddyBoss Addons | 3.1 9.8 (Wordfence) | BuddyBoss Addons <= 1.2.1 | 1.2.2 | Unauthenticated account takeover via unverified social login identity tokens in BuddyBoss Addons <= 1.2.1; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2025-42884](CVE-2025-42884) | SAP NetWeaver Enterprise Portal | 3.1 6.5 (SAP) | SAP NetWeaver Enterprise Portal EP-BASIS 7.50 / EP-RUNTIME 7.50 | Per SAP Note 3660969 | Unauthenticated JNDI injection in SAP NetWeaver Enterprise Portal; CISA KEV listed 2026-11-20, no public PoC | Confirmed | Pending |
+| [CVE-2026-128049](CVE-2026-128049) | OpenMage Magento LTS | 4.0 9.4 (VulnCheck); 3.1 9.0 (VulnCheck) | OpenMage Magento LTS before 20.18.2; 21.0.0-beta1 before 21.0.0-beta3 | 20.18.2 / 21.0.0-beta3 | CSRF in OAuth authorize confirm actions via GET without form-key validation; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-126380](CVE-2026-126380) | Vvveb CMS | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | Vvveb before 1.0.9.0 | 1.0.9.0 | Authenticated .phar upload bypasses the media denylist and allows a polyglot webshell; detection PoC only, unverified | Confirmed | Pending |
 
-### AI / LLM (16)
+### AI / LLM (19)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -178,6 +180,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Cross-tenant data access and action attribution in Splunk AI Assistant via a client-controlled tenant identifier; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Unauthorized modification of feature settings in Splunk AI Assistant via client-controlled REST API values; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-93328](CVE-2026-93328) | Google Cloud MCP Toolbox for Databases | 4.0 9.3 (GoogleCloud) | Google Cloud MCP Toolbox for Databases 1.2.0-1.4.0 | past 1.4.0 + allowlists (googleapis/mcp-toolbox#3454) | Path traversal and missing authorization in cloud-storage source allows unauthenticated exfiltration of host files and overwrite of arbitrary local files; lab-repro PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133968](CVE-2026-133968) | MONAI Label | 3.1 9.8 (MITRE) | MONAI Label through 0.8.5 | Fix PR #1915 merged 2026-10-19; no tagged release as of 2026-11-21 | Unauthenticated path traversal in the datastore upload endpoints allows arbitrary file write, leading to RCE; exploited in the wild since September 2026, no public PoC | Confirmed | Pending |
+| [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | Crafted DICOM with NaN/inf values crashes the MONAILabel server and corrupts inference; crash PoC, unverified in this repo | Confirmed | Pending |
+| [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | Malicious bundle logging.conf is eval'd by fileConfig at workflow construction; detection PoC only, unverified | Confirmed | Pending |
 
 ### Network & Security (147)
 
@@ -331,7 +336,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | Authorization bypass through a user-controlled key in dmserver; an authenticated administrator may reach other VDOMs through crafted HTTP requests; version-check tool only, unverified | Confirmed | Pending |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | Pre-authentication SSRF in the OFTP service of FortiAnalyzer and FortiManager with FortiAnalyzer features; an attacker reaching the OFTP port may make the server issue requests; version-check tool only, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (73)
+### Runtime / Framework / Browser (74)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -408,6 +413,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129474](CVE-2026-129474) | PHP | 4.0 9.2 (PHP Group) | PHP 8.5.0–<8.5.13 | 8.5.13 | Use-after-free in PHP garbage collector during magic-method backtrace; trigger PoC, RCE unproven, unverified | Confirmed | Pending |
 | [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Partially overwritten PHP session files lead to deserialization RCE; Docker lab with reference exploit, lab-only RCE, unverified | Confirmed | Pending |
 | [CVE-2026-129289](CVE-2026-129289) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <=8.2.35 / 8.3 <=8.3.36 / 8.4 <=8.4.27 / 8.5 <=8.5.12 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP-FPM request smuggling through unread request body on reused backend connections; trigger PoC, RCE unproven, unverified | Confirmed | Pending |
+| [CVE-2026-133212](CVE-2026-133212) | @fastify/reply-from | 3.1 9.0 (OpenJSF) | @fastify/reply-from before 12.9.1 | 12.9.1 | HTTP request smuggling (CL.0) via forwarded Content-Length on bodyless requests; detection PoC only, unverified | Confirmed | Pending |
 
 ### Database (11)
 

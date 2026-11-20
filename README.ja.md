@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (135)
+### Web / CMS (137)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -157,8 +157,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Tegsoft Contact Center の無制限ファイルアップロードによる Web シェル；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-80188](CVE-2026-80188) | BuddyBoss Addons | 3.1 9.8 (Wordfence) | BuddyBoss Addons <= 1.2.1 | 1.2.2 | BuddyBoss Addons の未検証ソーシャルログイン ID トークンによる未認証アカウント乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2025-42884](CVE-2025-42884) | SAP NetWeaver Enterprise Portal | 3.1 6.5 (SAP) | SAP NetWeaver Enterprise Portal EP-BASIS 7.50 / EP-RUNTIME 7.50 | Per SAP Note 3660969 | SAP NetWeaver Enterprise Portal における JNDI インジェクション；CISA KEV 2026-11-20 収録、公開 PoC なし | 確認済み | 未実施 |
+| [CVE-2026-128049](CVE-2026-128049) | OpenMage Magento LTS | 4.0 9.4 (VulnCheck); 3.1 9.0 (VulnCheck) | OpenMage Magento LTS before 20.18.2; 21.0.0-beta1 before 21.0.0-beta3 | 20.18.2 / 21.0.0-beta3 | OAuth 確認アクションにおける CSRF、form-key 検証なしの GET リクエスト；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-126380](CVE-2026-126380) | Vvveb CMS | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | Vvveb before 1.0.9.0 | 1.0.9.0 | 認証済み管理者による .phar アップロードでメディアの拒否リストを回避し、ポリグロット webshell を配置可能；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
-### AI / LLM (16)
+### AI / LLM (19)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -178,6 +180,9 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant のテナント横断データアクセス；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant の機能設定の未認証変更；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-93328](CVE-2026-93328) | Google Cloud MCP Toolbox for Databases | 4.0 9.3 (GoogleCloud) | Google Cloud MCP Toolbox for Databases 1.2.0-1.4.0 | past 1.4.0 + allowlists (googleapis/mcp-toolbox#3454) | Google Cloud MCP Toolbox のクラウドストレージにおけるパストラバーサルと認可欠落により、未認証でホストファイルを漏洩させ任意のローカルファイルを上書き可能；ラボ再現 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133968](CVE-2026-133968) | MONAI Label | 3.1 9.8 (MITRE) | MONAI Label through 0.8.5 | Fix PR #1915 merged 2026-10-19; no tagged release as of 2026-11-21 | データストアのアップロードにおけるパストラバーサルによる任意ファイル書き込み、RCE に至る可能性；2026 年 9 月から実際に悪用、公開 PoC なし | 確認済み | 未実施 |
+| [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | NaN／inf を含む DICOM により MONAILabel サーバがクラッシュし推論が破損；クラッシュ型 PoC、当リポジトリでは未検証 | 確認済み | 未実施 |
+| [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 悪意ある bundle の logging.conf がワークフロー構築時に fileConfig により評価されコード実行；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
 ### ネットワークとセキュリティ (147)
 
@@ -331,7 +336,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | FortiManager／FortiAnalyzer dmserver におけるユーザー制御キーによる認可バイパス；バージョン確認ツールのみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | FortiAnalyzer／FortiManager の OFTP サービスにおけるサーバーサイドリクエストフォージェリ；バージョン確認ツールのみ、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (73)
+### ランタイム / フレームワーク / ブラウザ (74)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -408,6 +413,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-129474](CVE-2026-129474) | PHP | 4.0 9.2 (PHP Group) | PHP 8.5.0–<8.5.13 | 8.5.13 | PHP ガベージコレクタのマジックメソッドバックトレース Use-After-Free；トリガー型 PoC、RCE 未実証・未検証 | 確認済み | 未実施 |
 | [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP セッションファイルの部分上書きによるデシリアライゼーション RCE；Docker ラボに参考エクスプロイト付、ラボ内 RCE のみ・未検証 | 確認済み | 未実施 |
 | [CVE-2026-129289](CVE-2026-129289) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <=8.2.35 / 8.3 <=8.3.36 / 8.4 <=8.4.27 / 8.5 <=8.5.12 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | 再利用されたバックエンド接続における未読リクエストボディによる PHP-FPM リクエストスマグリング；トリガー型 PoC、RCE 未実証・未検証 | 確認済み | 未実施 |
+| [CVE-2026-133212](CVE-2026-133212) | @fastify/reply-from | 3.1 9.0 (OpenJSF) | @fastify/reply-from before 12.9.1 | 12.9.1 | ボディなしリクエストで Content-Length を転送することによる HTTP リクエストスマグリング；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
 ### データベース (11)
 
