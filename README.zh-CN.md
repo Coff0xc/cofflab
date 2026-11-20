@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (137)
+### Web / CMS (140)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -159,6 +159,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2025-42884](CVE-2025-42884) | SAP NetWeaver Enterprise Portal | 3.1 6.5 (SAP) | SAP NetWeaver Enterprise Portal EP-BASIS 7.50 / EP-RUNTIME 7.50 | Per SAP Note 3660969 | SAP NetWeaver Enterprise Portal JNDI 注入；CISA KEV 2026-11-20 收录，暂无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-128049](CVE-2026-128049) | OpenMage Magento LTS | 4.0 9.4 (VulnCheck); 3.1 9.0 (VulnCheck) | OpenMage Magento LTS before 20.18.2; 21.0.0-beta1 before 21.0.0-beta3 | 20.18.2 / 21.0.0-beta3 | OAuth 确认接口 GET 请求缺 form-key 校验致 CSRF；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-126380](CVE-2026-126380) | Vvveb CMS | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | Vvveb before 1.0.9.0 | 1.0.9.0 | 已认证管理员上传 .phar 绕过媒体黑名单、可传 polyglot webshell；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-94565](CVE-2026-94565) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS 3.x through 4.6.01 (Contact module) | 4.6.01 | 未认证访客经 Contact 模块提交含斜杠前缀事件处理属性的消息致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-94567](CVE-2026-94567) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS before 4.5.12 and 4.6.02 (SVG upload) | 4.5.12 / 4.6.02 | SVG 上传中以内部 DTD 实体隐藏 script 元素致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-94598](CVE-2026-94598) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS 4.5.08 through 4.5.12 and 4.6.02 (iframe srcdoc) | 4.5.12 / 4.6.02 | iframe srcdoc 值中伪造清洗标记致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (19)
 

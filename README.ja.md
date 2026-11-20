@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (137)
+### Web / CMS (140)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -159,6 +159,9 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2025-42884](CVE-2025-42884) | SAP NetWeaver Enterprise Portal | 3.1 6.5 (SAP) | SAP NetWeaver Enterprise Portal EP-BASIS 7.50 / EP-RUNTIME 7.50 | Per SAP Note 3660969 | SAP NetWeaver Enterprise Portal における JNDI インジェクション；CISA KEV 2026-11-20 収録、公開 PoC なし | 確認済み | 未実施 |
 | [CVE-2026-128049](CVE-2026-128049) | OpenMage Magento LTS | 4.0 9.4 (VulnCheck); 3.1 9.0 (VulnCheck) | OpenMage Magento LTS before 20.18.2; 21.0.0-beta1 before 21.0.0-beta3 | 20.18.2 / 21.0.0-beta3 | OAuth 確認アクションにおける CSRF、form-key 検証なしの GET リクエスト；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126380](CVE-2026-126380) | Vvveb CMS | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | Vvveb before 1.0.9.0 | 1.0.9.0 | 認証済み管理者による .phar アップロードでメディアの拒否リストを回避し、ポリグロット webshell を配置可能；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-94565](CVE-2026-94565) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS 3.x through 4.6.01 (Contact module) | 4.6.01 | 未認証の訪問者が Contact モジュール経由でスラッシュ付きイベントハンドラ属性を含むメッセージを送信し stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-94567](CVE-2026-94567) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS before 4.5.12 and 4.6.02 (SVG upload) | 4.5.12 / 4.6.02 | SVG アップロードで内部 DTD エンティティに script 要素を隠し stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-94598](CVE-2026-94598) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS 4.5.08 through 4.5.12 and 4.6.02 (iframe srcdoc) | 4.5.12 / 4.6.02 | iframe srcdoc 値にサニタイザマーカーを偽造し stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (19)
 
