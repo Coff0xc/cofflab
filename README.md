@@ -459,6 +459,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus custom volume backup snapshot names lets an authorized importer delete arbitrary host directories as root; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus operation events expose certificate and cluster join tokens and skip authorization on cancel, letting restricted clients gain full server access; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | Unauthenticated admin account creation in OpenPLC Runtime via a race condition in the user-existence check; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-129073](CVE-2026-129073) | miniorange-otp-verification | 3.1 9.8 (Patchstack) | miniorange-otp-verification <=5.6.1 | 5.6.2 | Authentication bypass via alternate channel in miniOrange OTP Verification <= 5.6.1; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-15826](CVE-2026-15826) | User Profile Builder | 3.1 9.8 (Wordfence) | User Profile Builder <=3.16.4 | 3.16.5 | Authentication bypass via type confusion in User Profile Builder <= 3.16.4; detection-only PoC, unverified; Wordfence reports blocked attacks | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.

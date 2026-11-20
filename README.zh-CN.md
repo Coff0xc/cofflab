@@ -459,6 +459,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 自定义卷备份快照名路径遍历致宿主目录删除；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作事件泄露令牌且缺授权致完全接管；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | OpenPLC Runtime 竞态致未授权建管理员账号；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-129073](CVE-2026-129073) | miniorange-otp-verification | 3.1 9.8 (Patchstack) | miniorange-otp-verification <=5.6.1 | 5.6.2 | miniOrange OTP 验证插件旁路身份验证；检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-15826](CVE-2026-15826) | User Profile Builder | 3.1 9.8 (Wordfence) | User Profile Builder <=3.16.4 | 3.16.5 | User Profile Builder 类型混淆未授权身份验证绕过；检测型 PoC、未核实；Wordfence 报告有拦截攻击 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。

@@ -459,6 +459,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus カスタムボリュームのバックアップ・スナップショット名のパストラバーサルによるホストディレクトリ削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作イベントによるトークン漏洩と認可欠如による完全な乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | OpenPLC Runtime の競合状態による未認証の管理者アカウント作成；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129073](CVE-2026-129073) | miniorange-otp-verification | 3.1 9.8 (Patchstack) | miniorange-otp-verification <=5.6.1 | 5.6.2 | miniOrange OTP 検証プラグインの代替経路による認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-15826](CVE-2026-15826) | User Profile Builder | 3.1 9.8 (Wordfence) | User Profile Builder <=3.16.4 | 3.16.5 | User Profile Builder の型混同による未認証認証バイパス；検出型 PoC、未検証；Wordfence が攻撃ブロックを報告 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。
