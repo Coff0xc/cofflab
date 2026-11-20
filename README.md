@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (140)
+### Web / CMS (144)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -162,8 +162,12 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-94565](CVE-2026-94565) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS 3.x through 4.6.01 (Contact module) | 4.6.01 | Unauthenticated stored XSS via Contact module message with slash-prefixed event-handler attribute; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-94567](CVE-2026-94567) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS before 4.5.12 and 4.6.02 (SVG upload) | 4.5.12 / 4.6.02 | Stored XSS via SVG upload hiding a script element in an internal DTD entity; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-94598](CVE-2026-94598) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS 4.5.08 through 4.5.12 and 4.6.02 (iframe srcdoc) | 4.5.12 / 4.6.02 | Stored XSS via iframe srcdoc with forged sanitizer markers; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-54064](CVE-2026-54064) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (news posting) | 4.5.09 | Authenticated stored XSS bypassing filterAttr() with form-feed-prefixed event handlers; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-54065](CVE-2026-54065) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (comment admin edit) | 4.5.09 | Authenticated admin path traversal in comment attach value allows deletion of application files; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | Unauthenticated heap buffer overflow via WMS GetLegendGraphic crashing the process; crash PoC only, RCE not demonstrated | Confirmed | Pending |
+| [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | Unauthenticated stored XSS via numeric HTML entities with leading zeros in URL attributes; detection PoC only, unverified | Confirmed | Pending |
 
-### AI / LLM (19)
+### AI / LLM (20)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -186,6 +190,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133968](CVE-2026-133968) | MONAI Label | 3.1 9.8 (MITRE) | MONAI Label through 0.8.5 | Fix PR #1915 merged 2026-10-19; no tagged release as of 2026-11-21 | Unauthenticated path traversal in the datastore upload endpoints allows arbitrary file write, leading to RCE; exploited in the wild since September 2026, no public PoC | Confirmed | Pending |
 | [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | Crafted DICOM with NaN/inf values crashes the MONAILabel server and corrupts inference; crash PoC, unverified in this repo | Confirmed | Pending |
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | Malicious bundle logging.conf is eval'd by fileConfig at workflow construction; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | Unauthenticated account takeover via forged provider value at registration; detection PoC only, unverified | Confirmed | Pending |
 
 ### Network & Security (147)
 
@@ -339,7 +344,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | Authorization bypass through a user-controlled key in dmserver; an authenticated administrator may reach other VDOMs through crafted HTTP requests; version-check tool only, unverified | Confirmed | Pending |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | Pre-authentication SSRF in the OFTP service of FortiAnalyzer and FortiManager with FortiAnalyzer features; an attacker reaching the OFTP port may make the server issue requests; version-check tool only, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (74)
+### Runtime / Framework / Browser (76)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -417,6 +422,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Partially overwritten PHP session files lead to deserialization RCE; Docker lab with reference exploit, lab-only RCE, unverified | Confirmed | Pending |
 | [CVE-2026-129289](CVE-2026-129289) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <=8.2.35 / 8.3 <=8.3.36 / 8.4 <=8.4.27 / 8.5 <=8.5.12 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP-FPM request smuggling through unread request body on reused backend connections; trigger PoC, RCE unproven, unverified | Confirmed | Pending |
 | [CVE-2026-133212](CVE-2026-133212) | @fastify/reply-from | 3.1 9.0 (OpenJSF) | @fastify/reply-from before 12.9.1 | 12.9.1 | HTTP request smuggling (CL.0) via forwarded Content-Length on bodyless requests; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-77355](CVE-2026-77355) | isomorphic-git | 3.1 8.8 (GHSA) | isomorphic-git before 1.38.7 (Windows NTFS) | 1.38.7 | Malicious repo poisons .git metadata via NTFS reserved pathname alias on Windows; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-86017](CVE-2026-86017) | isomorphic-git | 3.1 8.0 (GHSA) | isomorphic-git before 1.38.8 (cherry-pick symlink) | 1.38.8 | Cherry-pick follows symlinks and writes attacker blobs outside the worktree; detection PoC only, unverified | Confirmed | Pending |
 
 ### Database (11)
 

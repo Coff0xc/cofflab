@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (140)
+### Web / CMS (144)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -162,8 +162,12 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-94565](CVE-2026-94565) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS 3.x through 4.6.01 (Contact module) | 4.6.01 | 未認証の訪問者が Contact モジュール経由でスラッシュ付きイベントハンドラ属性を含むメッセージを送信し stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-94567](CVE-2026-94567) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS before 4.5.12 and 4.6.02 (SVG upload) | 4.5.12 / 4.6.02 | SVG アップロードで内部 DTD エンティティに script 要素を隠し stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-94598](CVE-2026-94598) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS 4.5.08 through 4.5.12 and 4.6.02 (iframe srcdoc) | 4.5.12 / 4.6.02 | iframe srcdoc 値にサニタイザマーカーを偽造し stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-54064](CVE-2026-54064) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (news posting) | 4.5.09 | ニュース投稿権限を持つユーザーがフォームフィード付きイベントハンドラで filterAttr() を回避し stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-54065](CVE-2026-54065) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (comment admin edit) | 4.5.09 | 認証済み管理者がコメント attach 値のパストラバーサルでアプリケーションファイルを削除可能；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | 未認証の攻撃者が WMS GetLegendGraphic でヒープバッファオーバーフローを起こしプロセスをクラッシュ；クラッシュ PoC のみ、RCE は未実証 | 確認済み | 未実施 |
+| [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | 未認証の訪問者が URL 属性内の先行ゼロ付き数値 HTML エンティティで stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
-### AI / LLM (19)
+### AI / LLM (20)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -186,6 +190,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133968](CVE-2026-133968) | MONAI Label | 3.1 9.8 (MITRE) | MONAI Label through 0.8.5 | Fix PR #1915 merged 2026-10-19; no tagged release as of 2026-11-21 | データストアのアップロードにおけるパストラバーサルによる任意ファイル書き込み、RCE に至る可能性；2026 年 9 月から実際に悪用、公開 PoC なし | 確認済み | 未実施 |
 | [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | NaN／inf を含む DICOM により MONAILabel サーバがクラッシュし推論が破損；クラッシュ型 PoC、当リポジトリでは未検証 | 確認済み | 未実施 |
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 悪意ある bundle の logging.conf がワークフロー構築時に fileConfig により評価されコード実行；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未認証の攻撃者が登録時に provider 値を偽造しアカウント乗っ取り；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
 ### ネットワークとセキュリティ (147)
 
@@ -339,7 +344,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | FortiManager／FortiAnalyzer dmserver におけるユーザー制御キーによる認可バイパス；バージョン確認ツールのみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | FortiAnalyzer／FortiManager の OFTP サービスにおけるサーバーサイドリクエストフォージェリ；バージョン確認ツールのみ、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (74)
+### ランタイム / フレームワーク / ブラウザ (76)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -417,6 +422,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP セッションファイルの部分上書きによるデシリアライゼーション RCE；Docker ラボに参考エクスプロイト付、ラボ内 RCE のみ・未検証 | 確認済み | 未実施 |
 | [CVE-2026-129289](CVE-2026-129289) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <=8.2.35 / 8.3 <=8.3.36 / 8.4 <=8.4.27 / 8.5 <=8.5.12 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | 再利用されたバックエンド接続における未読リクエストボディによる PHP-FPM リクエストスマグリング；トリガー型 PoC、RCE 未実証・未検証 | 確認済み | 未実施 |
 | [CVE-2026-133212](CVE-2026-133212) | @fastify/reply-from | 3.1 9.0 (OpenJSF) | @fastify/reply-from before 12.9.1 | 12.9.1 | ボディなしリクエストで Content-Length を転送することによる HTTP リクエストスマグリング；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-77355](CVE-2026-77355) | isomorphic-git | 3.1 8.8 (GHSA) | isomorphic-git before 1.38.7 (Windows NTFS) | 1.38.7 | 悪意のあるリポジトリが Windows NTFS 予約パス別名で .git メタデータを汚染；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-86017](CVE-2026-86017) | isomorphic-git | 3.1 8.0 (GHSA) | isomorphic-git before 1.38.8 (cherry-pick symlink) | 1.38.8 | cherry-pick がシンボリックリンクをたどり攻撃者の blob をワークツリー外に書き込む；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
 ### データベース (11)
 

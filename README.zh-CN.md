@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (140)
+### Web / CMS (144)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -162,8 +162,12 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-94565](CVE-2026-94565) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS 3.x through 4.6.01 (Contact module) | 4.6.01 | 未认证访客经 Contact 模块提交含斜杠前缀事件处理属性的消息致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-94567](CVE-2026-94567) | NukeViet CMS | 3.1 9.3 (GHSA) | NukeViet CMS before 4.5.12 and 4.6.02 (SVG upload) | 4.5.12 / 4.6.02 | SVG 上传中以内部 DTD 实体隐藏 script 元素致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-94598](CVE-2026-94598) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS 4.5.08 through 4.5.12 and 4.6.02 (iframe srcdoc) | 4.5.12 / 4.6.02 | iframe srcdoc 值中伪造清洗标记致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-54064](CVE-2026-54064) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (news posting) | 4.5.09 | 有新闻发布权限的用户以换页符前缀事件处理属性绕过 filterAttr() 致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-54065](CVE-2026-54065) | NukeViet CMS | 3.1 8.7 (GHSA) | NukeViet CMS before 4.5.09 (comment admin edit) | 4.5.09 | 已认证管理员经评论 attach 值路径穿越致应用文件被删；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | 未认证攻击者经 WMS GetLegendGraphic 触发堆缓冲区溢出致进程崩溃；仅崩溃型 PoC，未证明 RCE | 已确认 | 待复现 |
+| [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | 未认证访客经 URL 属性中带前导零的数字 HTML 实体致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 
-### AI / LLM (19)
+### AI / LLM (20)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -186,6 +190,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133968](CVE-2026-133968) | MONAI Label | 3.1 9.8 (MITRE) | MONAI Label through 0.8.5 | Fix PR #1915 merged 2026-10-19; no tagged release as of 2026-11-21 | 数据存储上传接口路径遍历致任意文件写入、可致 RCE；2026 年 9 月起已在野利用，暂无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | 含 NaN/inf 的 DICOM 致 MONAILabel 服务器崩溃与推理损坏；崩溃型 PoC、本仓未核实 | 已确认 | 待复现 |
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 恶意 bundle 的 logging.conf 在工作流构造时被 fileConfig 求值致代码执行；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未认证攻击者经注册接口伪造 provider 值致账户接管；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 
 ### 网络与安全 (147)
 
@@ -339,7 +344,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | FortiManager/FortiAnalyzer dmserver 用户可控键授权绕过；仅版本检查工具、未核实 | 已确认 | 待复现 |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | FortiAnalyzer/FortiManager OFTP 服务服务端请求伪造；仅版本检查工具、未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (74)
+### 运行环境 / 框架 / 浏览器 (76)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -417,6 +422,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP 会话文件部分覆盖导致反序列化 RCE；Docker 实验室内含参考利用，仅实验室 RCE、未核实 | 已确认 | 待复现 |
 | [CVE-2026-129289](CVE-2026-129289) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <=8.2.35 / 8.3 <=8.3.36 / 8.4 <=8.4.27 / 8.5 <=8.5.12 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP-FPM 请求走私；需复用后端连接；触发型 PoC，RCE 未证实、未核实 | 已确认 | 待复现 |
 | [CVE-2026-133212](CVE-2026-133212) | @fastify/reply-from | 3.1 9.0 (OpenJSF) | @fastify/reply-from before 12.9.1 | 12.9.1 | 无请求体时仍转发 Content-Length 致 HTTP 请求走私；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-77355](CVE-2026-77355) | isomorphic-git | 3.1 8.8 (GHSA) | isomorphic-git before 1.38.7 (Windows NTFS) | 1.38.7 | 恶意仓库经 Windows NTFS 保留路径别名污染 .git 元数据；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-86017](CVE-2026-86017) | isomorphic-git | 3.1 8.0 (GHSA) | isomorphic-git before 1.38.8 (cherry-pick symlink) | 1.38.8 | cherry-pick 跟随符号链接将攻击者 blob 写到工作树外；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 
 ### 数据库 (11)
 
