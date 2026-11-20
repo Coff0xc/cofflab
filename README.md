@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (75)
+### Web / CMS (78)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -97,6 +97,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-22308](CVE-2026-22308) | JTL-Shop | 3.1 9.3 (ENISA); 4.0 8.6 (ENISA) | JTL-Shop 5.0.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (JTL advisory 2026-11-12) | Reflected XSS via OPC preview mode in JTL-Shop; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130158](CVE-2026-130158) | RepoManager | 3.1 9.0 (GitHub) | RepoManager <5.13.3 | 5.13.3 | Stored XSS via host-reported package metadata in RepoManager; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130236](CVE-2026-130236) | Auth0 Authorization Extension | 3.1 8.5 (Okta) | Auth0 Authorization Extension <2.13 | 2.13 | API authentication and rule generation flaws in Auth0 Authorization Extension; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-129048](CVE-2026-129048) | WP Photo Album Plus | 3.1 9.9 (Patchstack) | WP Photo Album Plus <=9.3.06.003 | 9.3.07.001 | Remote code inclusion in WP Photo Album Plus; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-14492](CVE-2026-14492) | WP Duplicate – WordPress Migration Plugin | 3.1 9.8 (Wordfence) | WP Duplicate <=1.1.11 | No known patch | Unauthenticated arbitrary file upload to RCE in WP Duplicate; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130754](CVE-2026-130754) | LaraDashboard | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | LaraDashboard <=1.5.4 | No fix released (latest 1.5.4) | LaraDashboard OAuth login account takeover via unverified email; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (8)
 
@@ -111,7 +114,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Arbitrary file write via unguarded data/file modules in Flyto2 Core; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Second-order SSRF via http.paginate in Flyto2 Core; detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (89)
+### Network & Security (96)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -204,8 +207,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-85018](CVE-2026-85018) | Guardium Data Protection | 3.1 8.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | Improper TLS certificate validation in GDP Terraform provider in IBM Guardium Data Protection; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-82342](CVE-2026-82342) | Guardium Data Protection | 3.1 8.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | Stack-based buffer overflow via PROXY protocol v1 header in IBM Guardium Data Protection; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-76544](CVE-2026-76544) | Splunk Enterprise | 3.1 8.1 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.15 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.16 (SVD-2026-1103) | SPL injection through metric alert filters in Splunk Enterprise; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132808](CVE-2026-132808) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | Incorrect authorization in UniFi Access allows command execution on adopted devices; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132804](CVE-2026-132804) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | SSRF in UniFi Access allows privilege escalation in UniFi OS; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132803](CVE-2026-132803) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | Authenticated SQL injection in UniFi Access allows privilege escalation; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132802](CVE-2026-132802) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | Improper link resolution in UniFi Access allows code execution as root; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132139](CVE-2026-132139) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | Stack-based buffer overflow in DrayTek Vigor2960 setSWMProfile; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-121805](CVE-2026-121805) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.x / 17.1.x with PEM::subscriber iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | Stack-based buffer overflow in BIG-IP PEM::subscriber iRule handling; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-120722](CVE-2026-120722) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.x / 17.1.x with DNS::scrape iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | Stack-based buffer overflow in BIG-IP DNS::scrape iRule handling; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (55)
+### Runtime / Framework / Browser (56)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -264,6 +274,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130179](CVE-2026-130179) | Okta .NET SDK Abstractions | 3.1 8.5 (Okta) | Okta .NET SDK Abstractions 3.0.0-4.0.7 | 4.0.8 | Credential overwriting in Okta .NET SDK Abstractions library; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-61798](CVE-2026-61798) | netty-incubator-codec-ohttp | 3.1 8.1 (GitHub) | netty-incubator-codec-ohttp <0.0.23.Final | 0.0.23.Final | HPKE private key exposure via toString() in netty-incubator-codec-ohttp; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130234](CVE-2026-130234) | Okta Swift Management SDK | 3.1 8.0 (Okta) | Okta Swift Management SDK <0.1.1 | 0.1.1 | Path parameter encoding flaw in Okta Swift Management SDK; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130756](CVE-2026-130756) | pnpm exe | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | pnpm exe <10.34.8, 11.x <11.28.8 | 10.34.8 / 11.28.8 | pnpm exe trusts compromised eMudhra intermediate CA; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
@@ -278,7 +289,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (26)
+### OS / System / DevOps (30)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -308,6 +319,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | Stack buffer overflow via Set-Cookie parsing in hydra-http-form.c; malicious server crashes the Hydra client, unverified | Confirmed | Pending |
 | [CVE-2026-133305](CVE-2026-133305) | sqlmap | 4.0 2.3 (VulnCheck); 3.1 4.3 (VulnCheck) | sqlmap before 1.10.11.89 | 1.10.11.89 | Cross-host redirects leak Cookie/Authorization headers; local demo PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133189](CVE-2026-133189) | Cinder | 3.1 9.6 (Red Hat) | OpenStack Cinder with SSH-based storage drivers | Upstream patch proposed, no fixed release published (2026-11-19) | Command injection in Cinder SSH-based storage drivers; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130778](CVE-2026-130778) | Incus | 4.0 10.0 (VulnCheck); 3.1 10.0 (VulnCheck) | Incus <7.6.0 | 7.6.0 / 6.0.9 LTS | Incus mTLS certificate-chain auth bypass; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130786](CVE-2026-130786) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 / 6.0.9 LTS | Incus OCI config injection allows host command execution as root; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132891](CVE-2026-132891) | JetBrains TeamCity | 3.1 9.8 (JetBrains) | TeamCity 2026.1 <2026.1.4, 2025.11 <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | RCE in TeamCity via external pull requests; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-123890](CVE-2026-123890) | VMware vCenter | 3.1 9.8 (VMware) | vCenter 9.1.x / 9.0.x / 8.0 / 5.x | 9.1.1.0200 / 9.0.2.0200 / 8.0 U3m / 5.2.5 | VMware vCenter authentication bypass in Directory Service; detection-only PoC, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.

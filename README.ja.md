@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (75)
+### Web / CMS (78)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -97,6 +97,9 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-22308](CVE-2026-22308) | JTL-Shop | 3.1 9.3 (ENISA); 4.0 8.6 (ENISA) | JTL-Shop 5.0.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (JTL advisory 2026-11-12) | JTL-Shop の OPC プレビューモード経由の反射型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130158](CVE-2026-130158) | RepoManager | 3.1 9.0 (GitHub) | RepoManager <5.13.3 | 5.13.3 | RepoManager のホスト報告パッケージメタデータ経由の格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130236](CVE-2026-130236) | Auth0 Authorization Extension | 3.1 8.5 (Okta) | Auth0 Authorization Extension <2.13 | 2.13 | Auth0 Authorization Extension の API 認証とルール生成の不備；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129048](CVE-2026-129048) | WP Photo Album Plus | 3.1 9.9 (Patchstack) | WP Photo Album Plus <=9.3.06.003 | 9.3.07.001 | WP Photo Album Plus のリモートコードインクルージョン；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-14492](CVE-2026-14492) | WP Duplicate – WordPress Migration Plugin | 3.1 9.8 (Wordfence) | WP Duplicate <=1.1.11 | No known patch | WP Duplicate の未認証任意ファイルアップロードによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130754](CVE-2026-130754) | LaraDashboard | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | LaraDashboard <=1.5.4 | No fix released (latest 1.5.4) | LaraDashboard OAuth ログインの未検証メールによる任意アカウント乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (8)
 
@@ -111,7 +114,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core の無防備な data/file モジュール経由の任意ファイル書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core の http.paginate 経由の二次 SSRF；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (89)
+### ネットワークとセキュリティ (96)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -204,8 +207,15 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-85018](CVE-2026-85018) | Guardium Data Protection | 3.1 8.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection の GDP Terraform プロバイダにおける不適切な TLS 証明書検証；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-82342](CVE-2026-82342) | Guardium Data Protection | 3.1 8.1 (IBM) | IBM Guardium Data Protection 12.2 | 12.2.4 | IBM Guardium Data Protection の PROXY プロトコル v1 ヘッダ経由のスタックベースバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-76544](CVE-2026-76544) | Splunk Enterprise | 3.1 8.1 (Splunk) | Splunk Enterprise 10.4-10.4.4, 10.2-10.2.8, 10.0-10.0.11, 9.4-9.4.15 | 10.4.5 / 10.2.9 / 10.0.12 / 9.4.16 (SVD-2026-1103) | Splunk Enterprise のメトリックアラートフィルタ経由の SPL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132808](CVE-2026-132808) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | UniFi Access の認可不備により管理下デバイスでコマンド実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132804](CVE-2026-132804) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | UniFi Access の SSRF により UniFi OS 内で権限昇格；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132803](CVE-2026-132803) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | UniFi Access の認証後 SQL インジェクションにより権限昇格；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132802](CVE-2026-132802) | UniFi Access Application | 3.1 9.9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | UniFi Access のリンク解決不備により root としてコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132139](CVE-2026-132139) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 setSWMProfile のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-121805](CVE-2026-121805) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.x / 17.1.x with PEM::subscriber iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP PEM::subscriber iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-120722](CVE-2026-120722) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.x / 17.1.x with DNS::scrape iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP DNS::scrape iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (55)
+### ランタイム / フレームワーク / ブラウザ (56)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -264,6 +274,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-130179](CVE-2026-130179) | Okta .NET SDK Abstractions | 3.1 8.5 (Okta) | Okta .NET SDK Abstractions 3.0.0-4.0.7 | 4.0.8 | Okta .NET SDK Abstractions の認証情報の上書き；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-61798](CVE-2026-61798) | netty-incubator-codec-ohttp | 3.1 8.1 (GitHub) | netty-incubator-codec-ohttp <0.0.23.Final | 0.0.23.Final | netty-incubator-codec-ohttp の toString() 経由の HPKE 秘密鍵漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130234](CVE-2026-130234) | Okta Swift Management SDK | 3.1 8.0 (Okta) | Okta Swift Management SDK <0.1.1 | 0.1.1 | Okta Swift Management SDK のパスパラメータエンコーディング不備；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130756](CVE-2026-130756) | pnpm exe | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | pnpm exe <10.34.8, 11.x <11.28.8 | 10.34.8 / 11.28.8 | pnpm exe が漏洩した eMudhra 中間 CA を信頼；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### データベース (8)
 
@@ -278,7 +289,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT タイムアウト後に未読応答付き接続がプールへ；リクエスト横断のデータ漏洩、未検証 | 確認済み | 未実施 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | リモートクラスターサーバーの認証前デシリアライズによる未認証再帰 DoS；ラボ証拠あり | 確認済み | 未実施 |
 
-### OS / システム / DevOps (26)
+### OS / システム / DevOps (30)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -308,6 +319,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133274](CVE-2026-133274) | THC-Hydra | 4.0 7.1 (VulnCheck); 3.1 6.5 (VulnCheck) | THC-Hydra through 9.7 | commit 6ab9ad8 (post-9.7, no release tagged) | hydra-http-form.c の Set-Cookie 解析でスタックバッファオーバーフロー；悪意あるサーバが Hydra クライアントをクラッシュ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133305](CVE-2026-133305) | sqlmap | 4.0 2.3 (VulnCheck); 3.1 4.3 (VulnCheck) | sqlmap before 1.10.11.89 | 1.10.11.89 | クロスホストリダイレクトによる Cookie / Authorization ヘッダの漏洩、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133189](CVE-2026-133189) | Cinder | 3.1 9.6 (Red Hat) | OpenStack Cinder with SSH-based storage drivers | Upstream patch proposed, no fixed release published (2026-11-19) | Cinder SSH ストレージドライバのコマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130778](CVE-2026-130778) | Incus | 4.0 10.0 (VulnCheck); 3.1 10.0 (VulnCheck) | Incus <7.6.0 | 7.6.0 / 6.0.9 LTS | Incus mTLS 証明書チェーン認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130786](CVE-2026-130786) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 / 6.0.9 LTS | Incus OCI 設定インジェクションによりホストで root コマンド実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132891](CVE-2026-132891) | JetBrains TeamCity | 3.1 9.8 (JetBrains) | TeamCity 2026.1 <2026.1.4, 2025.11 <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の外部プルリクエストによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-123890](CVE-2026-123890) | VMware vCenter | 3.1 9.8 (VMware) | vCenter 9.1.x / 9.0.x / 8.0 / 5.x | 9.1.1.0200 / 9.0.2.0200 / 8.0 U3m / 5.2.5 | VMware vCenter ディレクトリサービスの認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。
