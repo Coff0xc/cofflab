@@ -314,7 +314,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authentication bypass in Splunk SOAR via unbound external identity provider accounts allowing login as another provider's user; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | OS command injection in D-Link DIR-600L via the GENA handler (gena.cgi genacgi_main); detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (70)
+### Runtime / Framework / Browser (72)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -388,6 +388,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | Path traversal in @fastify/reply-from via semicolon path-parameter segments bypassing the dot-segment check; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | Missing TLS certificate validation in the Dorsett Controls InfoScan Electron client with insecure Electron settings; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Timezone cache use-after-free in PHP can lead to remote code execution; lab-proven PoC on PHP 8.4.27, fails on 8.4.28, unverified in this repo | Confirmed | Pending |
+| [CVE-2026-129474](CVE-2026-129474) | PHP | 4.0 9.2 (PHP Group) | PHP 8.5.0–<8.5.13 | 8.5.13 | Use-after-free in PHP garbage collector during magic-method backtrace; trigger PoC, RCE unproven, unverified | Confirmed | Pending |
+| [CVE-2026-126714](CVE-2026-126714) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Partially overwritten PHP session files lead to deserialization RCE; Docker lab with reference exploit, lab-only RCE, unverified | Confirmed | Pending |
 
 ### Database (9)
 
