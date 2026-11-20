@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (86)
+### Web / CMS (89)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -108,6 +108,9 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2018-25443](CVE-2018-25443) | Baidu UEditor | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Baidu UEditor 1.4.0-1.4.3.3 | No known patch | Baidu UEditor catchimage の未認証任意ファイルアップロードによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-114516](CVE-2026-114516) | Etherpad | 3.1 9.8 (GHSA) | Etherpad 1.8.14-3.3.2 | 3.3.3 | Etherpad の認証前パストラバーサルによる任意ファイル読み取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-77369](CVE-2026-77369) | Daptin | 3.1 9.6 (GHSA) | Daptin 0.11.4-0.12.29 | 0.12.30 | Daptin YJS コラボレーションエンドポイントのアクセス制御不備により制限行の読み書きが可能；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-71499](CVE-2026-71499) | cf-manager | 3.1 10 (GHSA) | cf-manager <1.1.2 | 1.1.2 | cf-manager の SSRF による任意 Worker コード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-77367](CVE-2026-77367) | Daptin | 3.1 9.4 (GHSA) | Daptin <0.12.30 | 0.12.30 | Daptin sort パラメータの未認証 SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-123058](CVE-2026-123058) | JTL-Shop | 4.0 9.2 (ENISA); 3.1 9 (ENISA) | JTL-Shop 5.5.0-5.5.4 / 5.6.0-5.6.5 / 5.7.0-5.7.5 / 5.8.0-5.8.3 | 5.5.5 / 5.6.6 / 5.7.6 / 5.8.4 | JTL-Shop Web インストーラーの認証欠如による未認証乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (8)
 
@@ -122,7 +125,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core の無防備な data/file モジュール経由の任意ファイル書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core の http.paginate 経由の二次 SSRF；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (101)
+### ネットワークとセキュリティ (105)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -227,8 +230,12 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-116953](CVE-2026-116953) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 with GENERICMESSAGE::route iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP GENERICMESSAGE::route iRule 処理のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-131287](CVE-2026-131287) | Splunk SOAR | 3.1 9.6 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のリポジトリ横断 playbook 参照による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-132142](CVE-2026-132142) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 dataflowstatus のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132143](CVE-2026-132143) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 doWebBackup のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132141](CVE-2026-132141) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 jsonstatus のスタックバッファオーバーフロー；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131253](CVE-2026-131253) | Splunk SOAR | 3.1 9.9 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR App Wizard のコードインジェクションによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132807](CVE-2026-132807) | UniFi Access Application | 3.1 9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | UniFi Access の不適切な証明書検証による機密情報漏洩と不正変更；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (58)
+### ランタイム / フレームワーク / ブラウザ (59)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -290,6 +297,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-130756](CVE-2026-130756) | pnpm exe | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | pnpm exe <10.34.8, 11.x <11.28.8 | 10.34.8 / 11.28.8 | pnpm exe が漏洩した eMudhra 中間 CA を信頼；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2019-25782](CVE-2019-25782) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 5.0.0-5.0.23 | 5.0.24 | ThinkPHP 5.0 の _method __construct によるコードインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2012-20007](CVE-2012-20007) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 2.0-2.2 / 3.0 Lite | No known patch | ThinkPHP Dispatcher PATH_INFO の eval インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-83020](CVE-2026-83020) | Oracle Platform Security for Java | 3.1 10 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Oracle Platform Security for Java の未認証乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### データベース (8)
 
@@ -304,7 +312,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT タイムアウト後に未読応答付き接続がプールへ；リクエスト横断のデータ漏洩、未検証 | 確認済み | 未実施 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | リモートクラスターサーバーの認証前デシリアライズによる未認証再帰 DoS；ラボ証拠あり | 確認済み | 未実施 |
 
-### OS / システム / DevOps (30)
+### OS / システム / DevOps (37)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -338,6 +346,13 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-130786](CVE-2026-130786) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 / 6.0.9 LTS | Incus OCI 設定インジェクションによりホストで root コマンド実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-132891](CVE-2026-132891) | JetBrains TeamCity | 3.1 9.8 (JetBrains) | TeamCity 2026.1 <2026.1.4, 2025.11 <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の外部プルリクエストによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-123890](CVE-2026-123890) | VMware vCenter | 3.1 9.8 (VMware) | vCenter 9.1.x / 9.0.x / 8.0 / 5.x | 9.1.1.0200 / 9.0.2.0200 / 8.0 U3m / 5.2.5 | VMware vCenter ディレクトリサービスの認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132234](CVE-2026-132234) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity Mercurial VCS root 設定のパラメータインジェクションによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132233](CVE-2026-132233) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity ビルド属性インジェクションによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132232](CVE-2026-132232) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity Perforce 設定のパラメータインジェクションによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132231](CVE-2026-132231) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity Perforce 設定の文字マッピングによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130784](CVE-2026-130784) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus のデフォルトプロジェクトリソース継承の認可バイパスによるホスト root コード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130780](CVE-2026-130780) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus マイグレーションのパストラバーサルによるホスト任意パス書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129991](CVE-2026-129991) | Dokploy | 3.1 9.9 (GHSA) | Dokploy <0.31.1 | 0.31.1 | Dokploy バックアッププレフィックスのコマンドインジェクションによるホスト RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。

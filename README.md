@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (86)
+### Web / CMS (89)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -108,6 +108,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2018-25443](CVE-2018-25443) | Baidu UEditor | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Baidu UEditor 1.4.0-1.4.3.3 | No known patch | Unauthenticated unrestricted file upload in Baidu UEditor catchimage action to RCE; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-114516](CVE-2026-114516) | Etherpad | 3.1 9.8 (GHSA) | Etherpad 1.8.14-3.3.2 | 3.3.3 | Pre-auth path traversal in Etherpad plugin asset handler allows arbitrary file read; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77369](CVE-2026-77369) | Daptin | 3.1 9.6 (GHSA) | Daptin 0.11.4-0.12.29 | 0.12.30 | Broken access control in Daptin YJS collaboration endpoint allows low-privileged read/write of restricted rows; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-71499](CVE-2026-71499) | cf-manager | 3.1 10 (GHSA) | cf-manager <1.1.2 | 1.1.2 | SSRF in cf-manager URL-based Worker deployment allows arbitrary code execution in the victim Cloudflare account; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-77367](CVE-2026-77367) | Daptin | 3.1 9.4 (GHSA) | Daptin <0.12.30 | 0.12.30 | Unauthenticated SQL injection in Daptin via the sort query parameter on entity list endpoints; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-123058](CVE-2026-123058) | JTL-Shop | 4.0 9.2 (ENISA); 3.1 9 (ENISA) | JTL-Shop 5.5.0-5.5.4 / 5.6.0-5.6.5 / 5.7.0-5.7.5 / 5.8.0-5.8.3 | 5.5.5 / 5.6.6 / 5.7.6 / 5.8.4 | Missing authentication for the JTL-Shop web installer allows unauthenticated attackers to take over the shop; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (8)
 
@@ -122,7 +125,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Arbitrary file write via unguarded data/file modules in Flyto2 Core; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Second-order SSRF via http.paginate in Flyto2 Core; detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (101)
+### Network & Security (105)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -227,8 +230,12 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-116953](CVE-2026-116953) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 with GENERICMESSAGE::route iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | Stack-based buffer overflow in BIG-IP GENERICMESSAGE::route iRule handling; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131287](CVE-2026-131287) | Splunk SOAR | 3.1 9.6 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | RCE in Splunk SOAR via cross-repository playbook references; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-132142](CVE-2026-132142) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | Stack-based buffer overflow in DrayTek Vigor2960 dataflowstatus CGI handler; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132143](CVE-2026-132143) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | Stack-based buffer overflow in DrayTek Vigor2960 doWebBackup CGI handler; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132141](CVE-2026-132141) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | Stack-based buffer overflow in DrayTek Vigor2960 jsonstatus CGI handler; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131253](CVE-2026-131253) | Splunk SOAR | 3.1 9.9 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Remote code execution in Splunk SOAR via the App Wizard; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132807](CVE-2026-132807) | UniFi Access Application | 3.1 9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | Improper certificate validation in UniFi Access Application allows sensitive information disclosure and unauthorized changes to adopted devices; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (58)
+### Runtime / Framework / Browser (59)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -290,6 +297,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130756](CVE-2026-130756) | pnpm exe | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | pnpm exe <10.34.8, 11.x <11.28.8 | 10.34.8 / 11.28.8 | pnpm exe trusts compromised eMudhra intermediate CA; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2019-25782](CVE-2019-25782) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 5.0.0-5.0.23 | 5.0.24 | Unauthenticated code injection in ThinkPHP 5.0 via _method __construct; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2012-20007](CVE-2012-20007) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 2.0-2.2 / 3.0 Lite | No known patch | Unauthenticated eval injection in ThinkPHP Dispatcher PATH_INFO parsing; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-83020](CVE-2026-83020) | Oracle Platform Security for Java | 3.1 10 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Unauthenticated takeover of Oracle Platform Security for Java via HTTP; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (8)
 
@@ -304,7 +312,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 
-### OS / System / DevOps (30)
+### OS / System / DevOps (37)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -338,6 +346,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130786](CVE-2026-130786) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 / 6.0.9 LTS | Incus OCI config injection allows host command execution as root; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-132891](CVE-2026-132891) | JetBrains TeamCity | 3.1 9.8 (JetBrains) | TeamCity 2026.1 <2026.1.4, 2025.11 <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | RCE in TeamCity via external pull requests; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-123890](CVE-2026-123890) | VMware vCenter | 3.1 9.8 (VMware) | vCenter 9.1.x / 9.0.x / 8.0 / 5.x | 9.1.1.0200 / 9.0.2.0200 / 8.0 U3m / 5.2.5 | VMware vCenter authentication bypass in Directory Service; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132234](CVE-2026-132234) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | Remote code execution in TeamCity via argument injection in Mercurial VCS root settings; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132233](CVE-2026-132233) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | Remote code execution in TeamCity via build attribute injection; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132232](CVE-2026-132232) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | Remote code execution in TeamCity via argument injection in Perforce settings; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132231](CVE-2026-132231) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | Remote code execution in TeamCity via best-fit character mapping in Perforce settings; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130784](CVE-2026-130784) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Authorization bypass in Incus lets restricted clients create and access default project resources, reaching host root code execution; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130780](CVE-2026-130780) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus migration lets a malicious peer write outside intended directories to arbitrary host paths; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-129991](CVE-2026-129991) | Dokploy | 3.1 9.9 (GHSA) | Dokploy <0.31.1 | 0.31.1 | Authenticated OS command injection in Dokploy backup prefix handling to host RCE; detection-only PoC, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.

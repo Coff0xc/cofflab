@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (86)
+### Web / CMS (89)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -108,6 +108,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2018-25443](CVE-2018-25443) | Baidu UEditor | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Baidu UEditor 1.4.0-1.4.3.3 | No known patch | 百度 UEditor catchimage 未授权文件上传；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-114516](CVE-2026-114516) | Etherpad | 3.1 9.8 (GHSA) | Etherpad 1.8.14-3.3.2 | 3.3.3 | Etherpad 预认证路径遍历致任意文件读取；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-77369](CVE-2026-77369) | Daptin | 3.1 9.6 (GHSA) | Daptin 0.11.4-0.12.29 | 0.12.30 | Daptin YJS 协同端点越权读写受限行内容；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-71499](CVE-2026-71499) | cf-manager | 3.1 10 (GHSA) | cf-manager <1.1.2 | 1.1.2 | cf-manager SSRF 致任意 Worker 代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-77367](CVE-2026-77367) | Daptin | 3.1 9.4 (GHSA) | Daptin <0.12.30 | 0.12.30 | Daptin sort 参数未授权 SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-123058](CVE-2026-123058) | JTL-Shop | 4.0 9.2 (ENISA); 3.1 9 (ENISA) | JTL-Shop 5.5.0-5.5.4 / 5.6.0-5.6.5 / 5.7.0-5.7.5 / 5.8.0-5.8.3 | 5.5.5 / 5.6.6 / 5.7.6 / 5.8.4 | JTL-Shop 未锁定 Web 安装器致未授权接管；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (8)
 
@@ -122,7 +125,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core 未设防数据/文件模块任意文件写入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core http.paginate 二阶 SSRF；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (101)
+### 网络与安全 (105)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -227,8 +230,12 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-116953](CVE-2026-116953) | F5 BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 with GENERICMESSAGE::route iRule | 21.1.0.4.0.19.3-ENG / 17.5.1.11.0.61.12-ENG / 17.1.3.7.0.21.4-ENG | BIG-IP GENERICMESSAGE::route iRule 处理栈溢出；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-131287](CVE-2026-131287) | Splunk SOAR | 3.1 9.6 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 跨仓 playbook 引用致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-132142](CVE-2026-132142) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.1 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 dataflowstatus 栈溢出；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132143](CVE-2026-132143) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 doWebBackup 栈溢出；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132141](CVE-2026-132141) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 jsonstatus 栈溢出；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131253](CVE-2026-131253) | Splunk SOAR | 3.1 9.9 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR App Wizard 代码注入致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132807](CVE-2026-132807) | UniFi Access Application | 3.1 9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | UniFi Access 证书校验不当致敏感信息泄露与越权；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (58)
+### 运行环境 / 框架 / 浏览器 (59)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -290,6 +297,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-130756](CVE-2026-130756) | pnpm exe | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | pnpm exe <10.34.8, 11.x <11.28.8 | 10.34.8 / 11.28.8 | pnpm exe 信任已泄露 eMudhra 中间 CA；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2019-25782](CVE-2019-25782) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 5.0.0-5.0.23 | 5.0.24 | ThinkPHP 5.0 _method 构造器代码注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2012-20007](CVE-2012-20007) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 2.0-2.2 / 3.0 Lite | No known patch | ThinkPHP Dispatcher PATH_INFO eval 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-83020](CVE-2026-83020) | Oracle Platform Security for Java | 3.1 10 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Oracle Platform Security for Java 未授权接管；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### 数据库 (8)
 
@@ -304,7 +312,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT 超时后带未读回复的连接回池；跨请求数据泄露，未核实 | 已确认 | 待复现 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | 远程集群接口鉴权前反序列化致未授权递归 DoS；实验有据 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (30)
+### 操作系统 / 系统 / DevOps (37)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -338,6 +346,13 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-130786](CVE-2026-130786) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 / 6.0.9 LTS | Incus OCI 配置注入致宿主机 root 命令执行；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-132891](CVE-2026-132891) | JetBrains TeamCity | 3.1 9.8 (JetBrains) | TeamCity 2026.1 <2026.1.4, 2025.11 <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity 外部拉取请求致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-123890](CVE-2026-123890) | VMware vCenter | 3.1 9.8 (VMware) | vCenter 9.1.x / 9.0.x / 8.0 / 5.x | 9.1.1.0200 / 9.0.2.0200 / 8.0 U3m / 5.2.5 | VMware vCenter 目录服务认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132234](CVE-2026-132234) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity Mercurial VCS root 参数注入致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132233](CVE-2026-132233) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity 构建属性注入致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132232](CVE-2026-132232) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity Perforce 设置参数注入致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132231](CVE-2026-132231) | TeamCity | 3.1 9.9 (JetBrains) | TeamCity 2026.1 <2026.1.3 / <2025.11.7 | 2026.1.3 / 2025.11.7 | TeamCity Perforce 设置字符映射致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130784](CVE-2026-130784) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 默认项目资源继承越权致宿主 root 代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130780](CVE-2026-130780) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 迁移路径遍历致宿主任意路径写；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-129991](CVE-2026-129991) | Dokploy | 3.1 9.9 (GHSA) | Dokploy <0.31.1 | 0.31.1 | Dokploy 备份前缀命令注入致宿主 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。
