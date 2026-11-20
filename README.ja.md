@@ -425,6 +425,21 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus カスタムボリュームのバックアップ・スナップショット名のパストラバーサルによるホストディレクトリ削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作イベントによるトークン漏洩と認可欠如による完全な乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | OpenPLC Runtime の競合状態による未認証の管理者アカウント作成；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-77359](CVE-2026-77359) | Jupyter MCP Server | 4.0 9.3 (GHSA) | Jupyter MCP Server <1.0.3 | 1.0.3 | Jupyter MCP Server の DNS リバインディングによるバックエンド乗っ取り；通告内に再現可能な PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | @fastify/reply-from 分号路径参数绕过致路径穿越；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-59988](CVE-2026-59988) | django-docutils | 3.1 8.2 (GHSA) | django-docutils <0.30.0 | 0.30.0 | django-docutils 未受信 RST 渲染致文件读/SSRF/存储型 XSS；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-103026](CVE-2026-103026) | Paymenter | 3.1 8.1 (GHSA) | Paymenter <1.5.7 | 1.5.7 | Paymenter Livewire 确认动作越权改服务器状态；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-104129](CVE-2026-104129) | pREST | 3.1 8.1 (GHSA) | pREST <2.4.0 | 2.4.0 | pREST _groupby 参数 SQL 注入；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | InfoScan Electron 客户端 TLS 证书校验缺失；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-123891](CVE-2026-123891) | SDDC Manager | 3.1 8.1 (VMware) | SDDC Manager 9.1.x.x / 9.0.x.x / 5.x | 9.1.1.0200 / 9.0.2.0100 / 5.2.5 | SDDC Manager SQL 注入；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-131200](CVE-2026-131200) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES 威胁情报查询生成 SPL 执行；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-131210](CVE-2026-131210) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES UEBA 发现排除查找 SPL 注入；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 诊断日志包泄露密码重置凭据；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 身份提供方绑定缺失致越权认证；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 租户越权读数据/冒认操作；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 未授权改功能配置；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-132892](CVE-2026-132892) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 | 2026.2 | TeamCity 授权流程提权；检测型 PoC，未核实 | 確認済み | 未実施 |
+| [CVE-2026-132907](CVE-2026-132907) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity 项目查看者重定向父项目 GitHub App 凭据；检测型 PoC，未核实 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。

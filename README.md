@@ -425,6 +425,21 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus custom volume backup snapshot names lets an authorized importer delete arbitrary host directories as root; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus operation events expose certificate and cluster join tokens and skip authorization on cancel, letting restricted clients gain full server access; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | Unauthenticated admin account creation in OpenPLC Runtime via a race condition in the user-existence check; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-77359](CVE-2026-77359) | Jupyter MCP Server | 4.0 9.3 (GHSA) | Jupyter MCP Server <1.0.3 | 1.0.3 | DNS rebinding hijack of the Jupyter MCP Server backend via the unprotected /api/connect management route; advisory contains a reproducible PoC, unverified | Confirmed | Pending |
+| [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | @fastify/reply-from 分号路径参数绕过致路径穿越 | Confirmed | Pending |
+| [CVE-2026-59988](CVE-2026-59988) | django-docutils | 3.1 8.2 (GHSA) | django-docutils <0.30.0 | 0.30.0 | django-docutils 未受信 RST 渲染致文件读/SSRF/存储型 XSS | Confirmed | Pending |
+| [CVE-2026-103026](CVE-2026-103026) | Paymenter | 3.1 8.1 (GHSA) | Paymenter <1.5.7 | 1.5.7 | Paymenter Livewire 确认动作越权改服务器状态 | Confirmed | Pending |
+| [CVE-2026-104129](CVE-2026-104129) | pREST | 3.1 8.1 (GHSA) | pREST <2.4.0 | 2.4.0 | pREST _groupby 参数 SQL 注入 | Confirmed | Pending |
+| [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | InfoScan Electron 客户端 TLS 证书校验缺失 | Confirmed | Pending |
+| [CVE-2026-123891](CVE-2026-123891) | SDDC Manager | 3.1 8.1 (VMware) | SDDC Manager 9.1.x.x / 9.0.x.x / 5.x | 9.1.1.0200 / 9.0.2.0100 / 5.2.5 | SDDC Manager SQL 注入 | Confirmed | Pending |
+| [CVE-2026-131200](CVE-2026-131200) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES 威胁情报查询生成 SPL 执行 | Confirmed | Pending |
+| [CVE-2026-131210](CVE-2026-131210) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES UEBA 发现排除查找 SPL 注入 | Confirmed | Pending |
+| [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 诊断日志包泄露密码重置凭据 | Confirmed | Pending |
+| [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 身份提供方绑定缺失致越权认证 | Confirmed | Pending |
+| [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 租户越权读数据/冒认操作 | Confirmed | Pending |
+| [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 未授权改功能配置 | Confirmed | Pending |
+| [CVE-2026-132892](CVE-2026-132892) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 | 2026.2 | TeamCity 授权流程提权 | Confirmed | Pending |
+| [CVE-2026-132907](CVE-2026-132907) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity 项目查看者重定向父项目 GitHub App 凭据 | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
