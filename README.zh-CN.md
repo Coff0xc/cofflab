@@ -395,6 +395,21 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-73969](CVE-2026-73969) | AnsibleForms | 3.1 9.8 (GHSA) | AnsibleForms <6.2.1 | 6.2.1 | AnsibleForms 硬编码 JWT 密钥致认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 自定义卷备份快照名路径遍历致宿主目录删除；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作事件泄露令牌且缺授权致完全接管；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130160](CVE-2026-130160) | RepoManager | 3.1 8.8 (GHSA) | RepoManager <5.13.3 | 5.13.3 | RepoManager 已认证 OS 命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131199](CVE-2026-131199) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES 任意 SPL 命令执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131236](CVE-2026-131236) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES 存储型 SPL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131246](CVE-2026-131246) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 审批越权读外部提示；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131252](CVE-2026-131252) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 跨租户资产篡改；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131261](CVE-2026-131261) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 恶意应用安装致任意代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131263](CVE-2026-131263) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 连接器应用任意文件写入致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131269](CVE-2026-131269) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 应用验证致任意代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131270](CVE-2026-131270) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 仓库路径穿越致任意文件写；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131271](CVE-2026-131271) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 斜杠命令越权读凭据；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131295](CVE-2026-131295) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 越权子 playbook 执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132906](CVE-2026-132906) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity Kotlin DSL 沙箱逃逸致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132909](CVE-2026-132909) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity Mercurial 仓库内容致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132917](CVE-2026-132917) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity Kotlin DSL 文件写入绕过致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133476](CVE-2026-133476) | Dolibarr | 3.1 8.8 (MITRE) | Dolibarr <24.0.3 | 24.0.3 | Dolibarr SQL 过滤绕过致账户接管；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。
