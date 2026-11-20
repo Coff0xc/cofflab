@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (89)
+### Web / CMS (96)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -111,8 +111,15 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-71499](CVE-2026-71499) | cf-manager | 3.1 10 (GHSA) | cf-manager <1.1.2 | 1.1.2 | cf-manager SSRF 致任意 Worker 代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-77367](CVE-2026-77367) | Daptin | 3.1 9.4 (GHSA) | Daptin <0.12.30 | 0.12.30 | Daptin sort 参数未授权 SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-123058](CVE-2026-123058) | JTL-Shop | 4.0 9.2 (ENISA); 3.1 9 (ENISA) | JTL-Shop 5.5.0-5.5.4 / 5.6.0-5.6.5 / 5.7.0-5.7.5 / 5.8.0-5.8.3 | 5.5.5 / 5.6.6 / 5.7.6 / 5.8.4 | JTL-Shop 未锁定 Web 安装器致未授权接管；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-110009](CVE-2026-110009) | Unzer Payments | 3.1 9.8 (Wordfence) | Unzer Payments <=2.2.1 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Unzer Payments 未授权认证绕过致账户接管；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-110811](CVE-2026-110811) | Trust Payments Gateway for WooCommerce (JavaScript Library) | 3.1 9.8 (Wordfence) | Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Trust Payments Gateway 未授权认证绕过致管理员接管；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-124990](CVE-2026-124990) | Masteriyo LMS – LMS Course Builder, Quizzes & Certificates | 3.1 9.8 (Wordfence) | Masteriyo LMS <=3.5.1 | 3.5.2 | Masteriyo LMS PHP 对象注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130735](CVE-2026-130735) | Grav | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Grav 2.0.0 to <2.2.18 | 2.2.18 | Grav Twig 注入致代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-55506](CVE-2026-55506) | Wavelog | 3.1 9.6 (GHSA) | Wavelog <2.5 | 2.5 | Wavelog QSL 图片文件名路径遍历致任意文件删除；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130156](CVE-2026-130156) | Bazarr | 3.1 9.4 (GHSA) | Bazarr <1.6.3-beta.11 | 1.6.3-beta.11 | Bazarr 字幕操作路径遍历致任意文件读写；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-55508](CVE-2026-55508) | Wavelog | 3.1 9.4 (GHSA) | Wavelog <2.5 | 2.5 | Wavelog OQRS 未授权 SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### AI / LLM (8)
+### AI / LLM (11)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -124,8 +131,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | 未授权远程代码执行（Agent scratchpad exec()）；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core 未设防数据/文件模块任意文件写入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Flyto2 Core http.paginate 二阶 SSRF；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-63189](CVE-2026-63189) | Dialoqbase | 3.1 9.8 (GHSA) | Dialoqbase <1.11.5 | 1.11.5 | Dialoqbase 未授权路径遍历致任意文件读；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-76807](CVE-2026-76807) | Todoist MCP Server | 3.1 9.3 (GHSA) | Todoist MCP Server <10.3.3 | 10.3.3 | Todoist MCP Server DNS 重绑定致网站读写 Todoist 数据；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130154](CVE-2026-130154) | Zyrabit Platform | 3.1 9.1 (GHSA) | Zyrabit Platform <2.4.4 | 2.4.4 | Zyrabit import_to_vault 路径遍历致任意文件读写；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (105)
+### 网络与安全 (108)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -234,8 +244,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-132141](CVE-2026-132141) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | DrayTek Vigor2960 jsonstatus 栈溢出；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-131253](CVE-2026-131253) | Splunk SOAR | 3.1 9.9 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR App Wizard 代码注入致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-132807](CVE-2026-132807) | UniFi Access Application | 3.1 9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | UniFi Access 证书校验不当致敏感信息泄露与越权；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） | F5 BIG-IP APM 栈溢出致 TMM 崩溃与 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-104099](CVE-2026-104099) | Fabio | 3.1 9.1 (GHSA) | Fabio <1.7.3 | 1.7.3 | Fabio 未规范化路径致访问控制绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131202](CVE-2026-131202) | Splunk Enterprise Security | 3.1 9.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk Enterprise Security REST API 路径遍历致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (59)
+### 运行环境 / 框架 / 浏览器 (65)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -298,8 +311,14 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2019-25782](CVE-2019-25782) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 5.0.0-5.0.23 | 5.0.24 | ThinkPHP 5.0 _method 构造器代码注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2012-20007](CVE-2012-20007) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 2.0-2.2 / 3.0 Lite | No known patch | ThinkPHP Dispatcher PATH_INFO eval 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-83020](CVE-2026-83020) | Oracle Platform Security for Java | 3.1 10 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Oracle Platform Security for Java 未授权接管；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-82994](CVE-2026-82994) | Oracle Platform Security for Java | 3.1 9.8 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Oracle Platform Security for Java 未授权接管（LDAP）；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-82995](CVE-2026-82995) | Oracle Platform Security for Java | 3.1 9.8 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Oracle Platform Security for Java 未授权接管（SOAP）；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-91570](CVE-2026-91570) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server 未授权接管（TopLink，HTTP）；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-91583](CVE-2026-91583) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server 未授权接管（TopLink，HTTP）；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server 未授权接管（TopLink，TCP）；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | Apache Tomcat AJP 响应串扰致数据泄露；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 数据库 (8)
+### 数据库 (9)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -311,8 +330,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126837](CVE-2026-126837) | MongoDB Node.js driver | 4.0 9.1 (MongoDB); 3.1 7.4 (MongoDB) | MongoDB Node.js driver 3.3.3 to < 7.8.0 | 7.8.0 | SRV 父域校验绕过致数据库流量劫持；凭证泄露，实验有据 | 已确认 | 待复现 |
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT 超时后带未读回复的连接回池；跨请求数据泄露，未核实 | 已确认 | 待复现 |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | 远程集群接口鉴权前反序列化致未授权递归 DoS；实验有据 | 已确认 | 待复现 |
+| [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | ArangoDB 认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (37)
+### 操作系统 / 系统 / DevOps (47)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -359,15 +379,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-130759](CVE-2026-130759) | Fleet | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Fleet 4.71.0 to <4.88.2 | 4.88.2 | Fleet SAML SSO 认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130771](CVE-2026-130771) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 备份/镜像元数据致宿主文件读写；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130773](CVE-2026-130773) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 默认项目资源创建越权；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-110009](CVE-2026-110009) | Unzer Payments | 3.1 9.8 (Wordfence) | Unzer Payments <=2.2.1 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Unzer Payments 未授权认证绕过致账户接管；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-110811](CVE-2026-110811) | Trust Payments Gateway for WooCommerce (JavaScript Library) | 3.1 9.8 (Wordfence) | Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Trust Payments Gateway 未授权认证绕过致管理员接管；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） | F5 BIG-IP APM 栈溢出致 TMM 崩溃与 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-124990](CVE-2026-124990) | Masteriyo LMS – LMS Course Builder, Quizzes & Certificates | 3.1 9.8 (Wordfence) | Masteriyo LMS <=3.5.1 | 3.5.2 | Masteriyo LMS PHP 对象注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-126752](CVE-2026-126752) | Dagu | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Dagu 1.23.0 to <2.0.0 | 2.0.0 | Dagu 未授权 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | ArangoDB 认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-130735](CVE-2026-130735) | Grav | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Grav 2.0.0 to <2.2.18 | 2.2.18 | Grav Twig 注入致代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-63189](CVE-2026-63189) | Dialoqbase | 3.1 9.8 (GHSA) | Dialoqbase <1.11.5 | 1.11.5 | Dialoqbase 未授权路径遍历致任意文件读；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-73969](CVE-2026-73969) | AnsibleForms | 3.1 9.8 (GHSA) | AnsibleForms <6.2.1 | 6.2.1 | AnsibleForms 硬编码 JWT 密钥致认证绕过；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 自定义卷备份快照名路径遍历致宿主目录删除；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作事件泄露令牌且缺授权致完全接管；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。

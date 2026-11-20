@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (89)
+### Web / CMS (96)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -111,8 +111,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-71499](CVE-2026-71499) | cf-manager | 3.1 10 (GHSA) | cf-manager <1.1.2 | 1.1.2 | SSRF in cf-manager URL-based Worker deployment allows arbitrary code execution in the victim Cloudflare account; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77367](CVE-2026-77367) | Daptin | 3.1 9.4 (GHSA) | Daptin <0.12.30 | 0.12.30 | Unauthenticated SQL injection in Daptin via the sort query parameter on entity list endpoints; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-123058](CVE-2026-123058) | JTL-Shop | 4.0 9.2 (ENISA); 3.1 9 (ENISA) | JTL-Shop 5.5.0-5.5.4 / 5.6.0-5.6.5 / 5.7.0-5.7.5 / 5.8.0-5.8.3 | 5.5.5 / 5.6.6 / 5.7.6 / 5.8.4 | Missing authentication for the JTL-Shop web installer allows unauthenticated attackers to take over the shop; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-110009](CVE-2026-110009) | Unzer Payments | 3.1 9.8 (Wordfence) | Unzer Payments <=2.2.1 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Unauthenticated authentication bypass in Unzer Payments via the paymentData.email parameter, leading to account takeover; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-110811](CVE-2026-110811) | Trust Payments Gateway for WooCommerce (JavaScript Library) | 3.1 9.8 (Wordfence) | Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Unauthenticated authentication bypass in Trust Payments Gateway for WooCommerce via WP_Error coercion to user ID 1; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-124990](CVE-2026-124990) | Masteriyo LMS – LMS Course Builder, Quizzes & Certificates | 3.1 9.8 (Wordfence) | Masteriyo LMS <=3.5.1 | 3.5.2 | Unauthenticated PHP object injection in Masteriyo LMS via deserialization in the course importer; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130735](CVE-2026-130735) | Grav | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Grav 2.0.0 to <2.2.18 | 2.2.18 | Twig injection in Grav via media metadata and file names, allowing code execution; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-55506](CVE-2026-55506) | Wavelog | 3.1 9.6 (GHSA) | Wavelog <2.5 | 2.5 | Authenticated arbitrary file deletion in Wavelog via path traversal in the QSL image filename; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130156](CVE-2026-130156) | Bazarr | 3.1 9.4 (GHSA) | Bazarr <1.6.3-beta.11 | 1.6.3-beta.11 | Authenticated path traversal in Bazarr subtitle operations leading to arbitrary file read and write; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-55508](CVE-2026-55508) | Wavelog | 3.1 9.4 (GHSA) | Wavelog <2.5 | 2.5 | Unauthenticated SQL injection in Wavelog OQRS callsign log search; detection-only PoC, unverified | Confirmed | Pending |
 
-### AI / LLM (8)
+### AI / LLM (11)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -124,8 +131,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-73678](CVE-2026-73678) | Minds Platform | 3.1 10.0 (VulnCheck); 4.0 10.0 (VulnCheck) | MindsDB Minds Platform 26.1.0 and earlier | No fixed release published in CVE record (2026-11-20) | Unauthenticated RCE via agent scratchpad exec(); detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77312](CVE-2026-77312) | Flyto2 Core | 3.1 10.0 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Arbitrary file write via unguarded data/file modules in Flyto2 Core; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-77315](CVE-2026-77315) | Flyto2 Core | 3.1 8.5 (GitHub) | Flyto2 Core <2.26.8 | 2.26.8 | Second-order SSRF via http.paginate in Flyto2 Core; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-63189](CVE-2026-63189) | Dialoqbase | 3.1 9.8 (GHSA) | Dialoqbase <1.11.5 | 1.11.5 | Unauthenticated path traversal in Dialoqbase GET /api/v1/view/* leading to arbitrary file read; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-76807](CVE-2026-76807) | Todoist MCP Server | 3.1 9.3 (GHSA) | Todoist MCP Server <10.3.3 | 10.3.3 | Browser DNS rebinding lets websites write and delete Todoist data through the local Todoist MCP server; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130154](CVE-2026-130154) | Zyrabit Platform | 3.1 9.1 (GHSA) | Zyrabit Platform <2.4.4 | 2.4.4 | Path traversal in Zyrabit import_to_vault allows arbitrary file write and read via unvalidated paths; detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (105)
+### Network & Security (108)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -234,8 +244,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-132141](CVE-2026-132141) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 | Stack-based buffer overflow in DrayTek Vigor2960 jsonstatus CGI handler; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131253](CVE-2026-131253) | Splunk SOAR | 3.1 9.9 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Remote code execution in Splunk SOAR via the App Wizard; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-132807](CVE-2026-132807) | UniFi Access Application | 3.1 9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 | Improper certificate validation in UniFi Access Application allows sensitive information disclosure and unauthorized changes to adopted devices; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） | Stack-based buffer overflow in BIG-IP APM may terminate TMM and lead to remote code execution; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-104099](CVE-2026-104099) | Fabio | 3.1 9.1 (GHSA) | Fabio <1.7.3 | 1.7.3 | Access-control bypass in Fabio through unnormalized request paths reaching a less restrictive route; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131202](CVE-2026-131202) | Splunk Enterprise Security | 3.1 9.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Remote code execution in Splunk Enterprise Security via REST API path traversal in lookup upload; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (59)
+### Runtime / Framework / Browser (65)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -298,8 +311,14 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2019-25782](CVE-2019-25782) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 5.0.0-5.0.23 | 5.0.24 | Unauthenticated code injection in ThinkPHP 5.0 via _method __construct; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2012-20007](CVE-2012-20007) | ThinkPHP | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ThinkPHP 2.0-2.2 / 3.0 Lite | No known patch | Unauthenticated eval injection in ThinkPHP Dispatcher PATH_INFO parsing; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-83020](CVE-2026-83020) | Oracle Platform Security for Java | 3.1 10 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Unauthenticated takeover of Oracle Platform Security for Java via HTTP; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-82994](CVE-2026-82994) | Oracle Platform Security for Java | 3.1 9.8 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Unauthenticated takeover of Oracle Platform Security for Java via LDAP; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-82995](CVE-2026-82995) | Oracle Platform Security for Java | 3.1 9.8 (Oracle) | Oracle Platform Security for Java 12.2.1.4.0 / 14.1.2.0.0 | September 2026 Critical Security Patch Update | Unauthenticated takeover of Oracle Platform Security for Java via SOAP; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-91570](CVE-2026-91570) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over HTTP; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-91583](CVE-2026-91583) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over HTTP; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over TCP; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | AJP response mix-up in Apache Tomcat leaks data from one response into the next request; detection-only PoC, unverified | Confirmed | Pending |
 
-### Database (8)
+### Database (9)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -311,8 +330,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126837](CVE-2026-126837) | MongoDB Node.js driver | 4.0 9.1 (MongoDB); 3.1 7.4 (MongoDB) | MongoDB Node.js driver 3.3.3 to < 7.8.0 | 7.8.0 | SRV parent-domain check bypass redirects DB traffic to attacker host; credential leak, lab evidence | Confirmed | Pending |
 | [CVE-2026-119179](CVE-2026-119179) | MongoDB Node.js driver | 4.0 8.3 (MongoDB); 3.1 7.0 (MongoDB) | mongodb >= 6.11.0 < 6.22.0 and >= 7.0.0 < 7.8.0 | 6.22.0 / 7.8.0 | CSOT timeout returns a connection with unread replies to the pool; cross-request data leak, unverified | Confirmed | Pending |
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
+| [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | Authentication bypass in ArangoDB via URL-encoded underscore parser differential; detection-only PoC, unverified | Confirmed | Pending |
 
-### OS / System / DevOps (37)
+### OS / System / DevOps (47)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -359,15 +379,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130759](CVE-2026-130759) | Fleet | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Fleet 4.71.0 to <4.88.2 | 4.88.2 | Authentication bypass in Fleet SAML SSO callback via unvalidated client-supplied session lookup; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130771](CVE-2026-130771) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Host file read/overwrite in Incus via special files, hard links or symlinks in backup or image metadata; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130773](CVE-2026-130773) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Authorization bypass in Incus lets restricted project users create resources in the unrestricted default project; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-110009](CVE-2026-110009) | Unzer Payments | 3.1 9.8 (Wordfence) | Unzer Payments <=2.2.1 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Unauthenticated authentication bypass in Unzer Payments via the paymentData.email parameter, leading to account takeover; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-110811](CVE-2026-110811) | Trust Payments Gateway for WooCommerce (JavaScript Library) | 3.1 9.8 (Wordfence) | Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Unauthenticated authentication bypass in Trust Payments Gateway for WooCommerce via WP_Error coercion to user ID 1; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） | Stack-based buffer overflow in BIG-IP APM may terminate TMM and lead to remote code execution; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-124990](CVE-2026-124990) | Masteriyo LMS – LMS Course Builder, Quizzes & Certificates | 3.1 9.8 (Wordfence) | Masteriyo LMS <=3.5.1 | 3.5.2 | Unauthenticated PHP object injection in Masteriyo LMS via deserialization in the course importer; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-126752](CVE-2026-126752) | Dagu | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Dagu 1.23.0 to <2.0.0 | 2.0.0 | Unauthenticated remote code execution in Dagu via /api/v2/dag-runs when auth.mode defaults to none; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | Authentication bypass in ArangoDB via URL-encoded underscore parser differential; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-130735](CVE-2026-130735) | Grav | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Grav 2.0.0 to <2.2.18 | 2.2.18 | Twig injection in Grav via media metadata and file names, allowing code execution; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-63189](CVE-2026-63189) | Dialoqbase | 3.1 9.8 (GHSA) | Dialoqbase <1.11.5 | 1.11.5 | Unauthenticated path traversal in Dialoqbase GET /api/v1/view/* leading to arbitrary file read; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-73969](CVE-2026-73969) | AnsibleForms | 3.1 9.8 (GHSA) | AnsibleForms <6.2.1 | 6.2.1 | Authentication bypass in AnsibleForms via a public hard-coded default JWT signing secret; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus custom volume backup snapshot names lets an authorized importer delete arbitrary host directories as root; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus operation events expose certificate and cluster join tokens and skip authorization on cancel, letting restricted clients gain full server access; detection-only PoC, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
