@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (109)
+### Web / CMS (120)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -131,8 +131,19 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-132913](CVE-2026-132913) | TeamCity | 3.1 8.4 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity P4 代码评审存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-103035](CVE-2026-103035) | TeamPass | 3.1 8.3 (GHSA) | TeamPass <3.2.1.2 | 3.2.1.2 | TeamPass 文件夹越权致凭据子树被盗；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-125060](CVE-2026-125060) | JTL-Shop | 4.0 8.8 (JTL); 3.1 8.2 (JTL) | JTL-Shop 5.2.0–5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 | JTL-Shop 结账配送地址 IDOR；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-59988](CVE-2026-59988) | django-docutils | 3.1 8.2 (GHSA) | django-docutils <0.30.0 | 0.30.0 | django-docutils 未受信 RST 渲染致文件读/SSRF/存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-103026](CVE-2026-103026) | Paymenter | 3.1 8.1 (GHSA) | Paymenter <1.5.7 | 1.5.7 | Paymenter Livewire 确认动作越权改服务器状态；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132892](CVE-2026-132892) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 | 2026.2 | TeamCity 授权流程提权；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132907](CVE-2026-132907) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity 项目查看者重定向父项目 GitHub App 凭据；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-129056](CVE-2026-129056) | Authorizer | 3.1 9.8 (Patchstack) | Authorizer <3.17.2 | 3.17.2 | Authorizer 权限分配不当致提权；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-89095](CVE-2026-89095) | Shortcodes and extra features for Phlox theme | 3.1 8.1 (Wordfence) | Shortcodes and extra features for Phlox theme <=2.17.22 | 2.17.24 | Phlox 主题附加功能插件本地文件包含；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-120556](CVE-2026-120556) | Toocheke Companion | 3.1 8.1 (Wordfence) | Toocheke Companion <=2.38 | 2.39 | Toocheke Companion 缺失授权致任意文章/附件删除；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131795](CVE-2026-131795) | Aora | 3.1 8.1 (Patchstack) | Aora <=1.3.5 | 1.3.24 | Aora 主题 PHP 本地文件包含；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132903](CVE-2026-132903) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity 云代理实例启停越权；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-109555](CVE-2026-109555) | WP STAGING / WP STAGING Pro | 3.1 8.0 (Wordfence) | WP STAGING <=4.17.0 / WP STAGING Pro <=6.17.0 | 4.18.0 / 6.18.0 | WP STAGING PHP 对象注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-132914](CVE-2026-132914) | TeamCity | 3.1 8.0 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity Issue Log 标签页存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### AI / LLM (12)
+### AI / LLM (15)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -148,8 +159,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-63189](CVE-2026-63189) | Dialoqbase | 3.1 9.8 (GHSA) | Dialoqbase <1.11.5 | 1.11.5 | Dialoqbase 未授权路径遍历致任意文件读；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-76807](CVE-2026-76807) | Todoist MCP Server | 3.1 9.3 (GHSA) | Todoist MCP Server <10.3.3 | 10.3.3 | Todoist MCP Server DNS 重绑定致网站读写 Todoist 数据；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130154](CVE-2026-130154) | Zyrabit Platform | 3.1 9.1 (GHSA) | Zyrabit Platform <2.4.4 | 2.4.4 | Zyrabit import_to_vault 路径遍历致任意文件读写；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-77359](CVE-2026-77359) | Jupyter MCP Server | 4.0 9.3 (GHSA) | Jupyter MCP Server <1.0.3 | 1.0.3 | Jupyter MCP Server DNS 重绑定劫持后端；通告内含可复现 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 租户越权读数据/冒认操作；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 未授权改功能配置；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (131)
+### 网络与安全 (138)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -284,8 +298,15 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-131215](CVE-2026-131215) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES UEBA 发现排除规则 SPL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-131218](CVE-2026-131218) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES Mission Control 仪表盘 SPL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-131293](CVE-2026-131293) | Splunk SOAR | 3.1 8.3 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR playbook 运行数据越权读写；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-104129](CVE-2026-104129) | pREST | 3.1 8.1 (GHSA) | pREST <2.4.0 | 2.4.0 | pREST _groupby 参数 SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-123891](CVE-2026-123891) | SDDC Manager | 3.1 8.1 (VMware) | SDDC Manager 9.1.x.x / 9.0.x.x / 5.x | 9.1.1.0200 / 9.0.2.0100 / 5.2.5 | SDDC Manager SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131200](CVE-2026-131200) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES 威胁情报查询生成 SPL 执行；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131210](CVE-2026-131210) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES UEBA 发现排除查找 SPL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 诊断日志包泄露密码重置凭据；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 身份提供方绑定缺失致越权认证；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | D-Link DIR-600L gena.cgi 命令注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (67)
+### 运行环境 / 框架 / 浏览器 (69)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -356,6 +377,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server 未授权接管（TopLink，TCP）；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | Apache Tomcat AJP 响应串扰致数据泄露；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | BeamNG.drive LuaJIT 沙箱逃逸致 RCE；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | @fastify/reply-from 分号路径参数绕过致路径穿越；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | InfoScan Electron 客户端 TLS 证书校验缺失；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### 数据库 (9)
 
@@ -425,21 +448,6 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 自定义卷备份快照名路径遍历致宿主目录删除；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作事件泄露令牌且缺授权致完全接管；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | OpenPLC Runtime 竞态致未授权建管理员账号；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-77359](CVE-2026-77359) | Jupyter MCP Server | 4.0 9.3 (GHSA) | Jupyter MCP Server <1.0.3 | 1.0.3 | Jupyter MCP Server DNS 重绑定劫持后端；通告内含可复现 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | Path traversal in @fastify/reply-from via semicolon path-parameter segments bypassing the dot-segment check; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-59988](CVE-2026-59988) | django-docutils | 3.1 8.2 (GHSA) | django-docutils <0.30.0 | 0.30.0 | Local file read, SSRF and stored script injection in django-docutils via untrusted reStructuredText rendering; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-103026](CVE-2026-103026) | Paymenter | 3.1 8.1 (GHSA) | Paymenter <1.5.7 | 1.5.7 | Unauthorized server-side state modification in Paymenter via the public Livewire executeConfirmedAction action; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-104129](CVE-2026-104129) | pREST | 3.1 8.1 (GHSA) | pREST <2.4.0 | 2.4.0 | SQL injection in pREST via the _groupby parameter; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | Missing TLS certificate validation in the Dorsett Controls InfoScan Electron client with insecure Electron settings; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-123891](CVE-2026-123891) | SDDC Manager | 3.1 8.1 (VMware) | SDDC Manager 9.1.x.x / 9.0.x.x / 5.x | 9.1.1.0200 / 9.0.2.0100 / 5.2.5 | SQL injection in VMware SDDC Manager; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-131200](CVE-2026-131200) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated arbitrary SPL execution in Splunk Enterprise Security via threat-intelligence lookup generation running an attacker-controlled saved search; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-131210](CVE-2026-131210) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated SPL injection in Splunk Enterprise Security via an attacker-controlled lookup definition in a UEBA finding exclusion rule; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Password-reset credential exposure in Splunk SOAR diagnostic log bundles accessible to the Observer role; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authentication bypass in Splunk SOAR via unbound external identity provider accounts allowing login as another provider's user; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Cross-tenant data access and action attribution in Splunk AI Assistant via a client-controlled tenant identifier; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Unauthorized modification of feature settings in Splunk AI Assistant via client-controlled REST API values; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-132892](CVE-2026-132892) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 | 2026.2 | Privilege escalation in JetBrains TeamCity via the authorization flow; detection-only PoC, unverified | 已确认 | 待复现 |
-| [CVE-2026-132907](CVE-2026-132907) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | GitHub App connection credential redirection in JetBrains TeamCity by project viewers; detection-only PoC, unverified | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。

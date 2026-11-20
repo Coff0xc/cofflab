@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (109)
+### Web / CMS (120)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -131,8 +131,19 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-132913](CVE-2026-132913) | TeamCity | 3.1 8.4 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Stored XSS in JetBrains TeamCity on the P4 Code Review build tab; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-103035](CVE-2026-103035) | TeamPass | 3.1 8.3 (GHSA) | TeamPass <3.2.1.2 | 3.2.1.2 | Authenticated authorization bypass in TeamPass update_folder allowing re-parenting of any folder into the attacker's personal space; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-125060](CVE-2026-125060) | JTL-Shop | 4.0 8.8 (JTL); 3.1 8.2 (JTL) | JTL-Shop 5.2.0–5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 | Unauthenticated IDOR in JTL-Shop checkout attaching another customer's delivery address to the attacker's order; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-59988](CVE-2026-59988) | django-docutils | 3.1 8.2 (GHSA) | django-docutils <0.30.0 | 0.30.0 | Local file read, SSRF and stored script injection in django-docutils via untrusted reStructuredText rendering; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-103026](CVE-2026-103026) | Paymenter | 3.1 8.1 (GHSA) | Paymenter <1.5.7 | 1.5.7 | Unauthorized server-side state modification in Paymenter via the public Livewire executeConfirmedAction action; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132892](CVE-2026-132892) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 | 2026.2 | Privilege escalation in JetBrains TeamCity via the authorization flow; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132907](CVE-2026-132907) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | GitHub App connection credential redirection in JetBrains TeamCity by project viewers; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-129056](CVE-2026-129056) | Authorizer | 3.1 9.8 (Patchstack) | Authorizer <3.17.2 | 3.17.2 | Incorrect privilege assignment in the Authorizer WordPress plugin allows privilege escalation; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-89095](CVE-2026-89095) | Shortcodes and extra features for Phlox theme | 3.1 8.1 (Wordfence) | Shortcodes and extra features for Phlox theme <=2.17.22 | 2.17.24 | Unauthenticated local file inclusion in the Shortcodes and extra features for Phlox theme plugin (auxin-elements) via the extra_template_path parameter; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-120556](CVE-2026-120556) | Toocheke Companion | 3.1 8.1 (Wordfence) | Toocheke Companion <=2.38 | 2.39 | Missing authorization in the Toocheke Companion WordPress plugin lets authenticated Contributors permanently delete arbitrary posts and attachments; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131795](CVE-2026-131795) | Aora | 3.1 8.1 (Patchstack) | Aora <=1.3.5 | 1.3.24 | PHP local file inclusion in the thembay Aora WordPress theme via improper control of filenames in include/require statements; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132903](CVE-2026-132903) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Missing authorization in JetBrains TeamCity lets any authenticated user start and stop cloud agent instances; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-109555](CVE-2026-109555) | WP STAGING / WP STAGING Pro | 3.1 8.0 (Wordfence) | WP STAGING <=4.17.0 / WP STAGING Pro <=6.17.0 | 4.18.0 / 6.18.0 | PHP object injection in WP STAGING / WP STAGING Pro via deserialization of untrusted input during database restore and staging reset; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132914](CVE-2026-132914) | TeamCity | 3.1 8.0 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Stored cross-site scripting in JetBrains TeamCity on the Issue Log tab; detection-only PoC, unverified | Confirmed | Pending |
 
-### AI / LLM (12)
+### AI / LLM (15)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -148,8 +159,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-63189](CVE-2026-63189) | Dialoqbase | 3.1 9.8 (GHSA) | Dialoqbase <1.11.5 | 1.11.5 | Unauthenticated path traversal in Dialoqbase GET /api/v1/view/* leading to arbitrary file read; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-76807](CVE-2026-76807) | Todoist MCP Server | 3.1 9.3 (GHSA) | Todoist MCP Server <10.3.3 | 10.3.3 | Browser DNS rebinding lets websites write and delete Todoist data through the local Todoist MCP server; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130154](CVE-2026-130154) | Zyrabit Platform | 3.1 9.1 (GHSA) | Zyrabit Platform <2.4.4 | 2.4.4 | Path traversal in Zyrabit import_to_vault allows arbitrary file write and read via unvalidated paths; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-77359](CVE-2026-77359) | Jupyter MCP Server | 4.0 9.3 (GHSA) | Jupyter MCP Server <1.0.3 | 1.0.3 | DNS rebinding hijack of the Jupyter MCP Server backend via the unprotected /api/connect management route; advisory contains a reproducible PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Cross-tenant data access and action attribution in Splunk AI Assistant via a client-controlled tenant identifier; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Unauthorized modification of feature settings in Splunk AI Assistant via client-controlled REST API values; detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (131)
+### Network & Security (138)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -284,8 +298,15 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131215](CVE-2026-131215) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated SPL injection in Splunk Enterprise Security via attacker-controlled values in a UEBA finding exclusion rule; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131218](CVE-2026-131218) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated SPL injection in Splunk Enterprise Security Mission Control dashboard searches via unvalidated reserved search filters; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131293](CVE-2026-131293) | Splunk SOAR | 3.1 8.3 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-scope read/write of playbook run data in Splunk SOAR via unbound playbook automation APIs; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-104129](CVE-2026-104129) | pREST | 3.1 8.1 (GHSA) | pREST <2.4.0 | 2.4.0 | SQL injection in pREST via the _groupby parameter; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-123891](CVE-2026-123891) | SDDC Manager | 3.1 8.1 (VMware) | SDDC Manager 9.1.x.x / 9.0.x.x / 5.x | 9.1.1.0200 / 9.0.2.0100 / 5.2.5 | SQL injection in VMware SDDC Manager; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131200](CVE-2026-131200) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated arbitrary SPL execution in Splunk Enterprise Security via threat-intelligence lookup generation running an attacker-controlled saved search; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131210](CVE-2026-131210) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated SPL injection in Splunk Enterprise Security via an attacker-controlled lookup definition in a UEBA finding exclusion rule; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Password-reset credential exposure in Splunk SOAR diagnostic log bundles accessible to the Observer role; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authentication bypass in Splunk SOAR via unbound external identity provider accounts allowing login as another provider's user; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | OS command injection in D-Link DIR-600L via the GENA handler (gena.cgi genacgi_main); detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (67)
+### Runtime / Framework / Browser (69)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -356,6 +377,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over TCP; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | AJP response mix-up in Apache Tomcat leaks data from one response into the next request; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | Out-of-bounds write in BeamNG.drive via LuaJIT FFI bounds-check bypass in JIT traces, escaping the mod sandbox; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | Path traversal in @fastify/reply-from via semicolon path-parameter segments bypassing the dot-segment check; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | Missing TLS certificate validation in the Dorsett Controls InfoScan Electron client with insecure Electron settings; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (9)
 
@@ -425,21 +448,6 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus custom volume backup snapshot names lets an authorized importer delete arbitrary host directories as root; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus operation events expose certificate and cluster join tokens and skip authorization on cancel, letting restricted clients gain full server access; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | Unauthenticated admin account creation in OpenPLC Runtime via a race condition in the user-existence check; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-77359](CVE-2026-77359) | Jupyter MCP Server | 4.0 9.3 (GHSA) | Jupyter MCP Server <1.0.3 | 1.0.3 | DNS rebinding hijack of the Jupyter MCP Server backend via the unprotected /api/connect management route; advisory contains a reproducible PoC, unverified | Confirmed | Pending |
-| [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | @fastify/reply-from 分号路径参数绕过致路径穿越 | Confirmed | Pending |
-| [CVE-2026-59988](CVE-2026-59988) | django-docutils | 3.1 8.2 (GHSA) | django-docutils <0.30.0 | 0.30.0 | django-docutils 未受信 RST 渲染致文件读/SSRF/存储型 XSS | Confirmed | Pending |
-| [CVE-2026-103026](CVE-2026-103026) | Paymenter | 3.1 8.1 (GHSA) | Paymenter <1.5.7 | 1.5.7 | Paymenter Livewire 确认动作越权改服务器状态 | Confirmed | Pending |
-| [CVE-2026-104129](CVE-2026-104129) | pREST | 3.1 8.1 (GHSA) | pREST <2.4.0 | 2.4.0 | pREST _groupby 参数 SQL 注入 | Confirmed | Pending |
-| [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | InfoScan Electron 客户端 TLS 证书校验缺失 | Confirmed | Pending |
-| [CVE-2026-123891](CVE-2026-123891) | SDDC Manager | 3.1 8.1 (VMware) | SDDC Manager 9.1.x.x / 9.0.x.x / 5.x | 9.1.1.0200 / 9.0.2.0100 / 5.2.5 | SDDC Manager SQL 注入 | Confirmed | Pending |
-| [CVE-2026-131200](CVE-2026-131200) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES 威胁情报查询生成 SPL 执行 | Confirmed | Pending |
-| [CVE-2026-131210](CVE-2026-131210) | Splunk Enterprise Security | 3.1 8.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES UEBA 发现排除查找 SPL 注入 | Confirmed | Pending |
-| [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 诊断日志包泄露密码重置凭据 | Confirmed | Pending |
-| [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR 身份提供方绑定缺失致越权认证 | Confirmed | Pending |
-| [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 租户越权读数据/冒认操作 | Confirmed | Pending |
-| [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 未授权改功能配置 | Confirmed | Pending |
-| [CVE-2026-132892](CVE-2026-132892) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 | 2026.2 | TeamCity 授权流程提权 | Confirmed | Pending |
-| [CVE-2026-132907](CVE-2026-132907) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity 项目查看者重定向父项目 GitHub App 凭据 | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
