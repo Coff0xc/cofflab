@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (124)
+### Web / CMS (128)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -146,6 +146,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133501](CVE-2026-133501) | Gladys Assistant | 4.0 8.5 (VulDB); 3.1 9.0 (VulDB) | Gladys Assistant <=4.71.0 | 4.72.0 | Path traversal in Gladys Assistant via the gateway.downloadBackup.js backup restore handler (file_url parameter); detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-128915](CVE-2026-128915) | InstaWP Connect | 3.1 8.5 (Patchstack) | InstaWP Connect <=0.1.4.4 | 0.1.4.5 | Blind SQL injection in the InstaWP Connect WordPress plugin; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130010](CVE-2026-130010) | Chatterbug Forms | 3.1 8.1 (Wordfence) | Chatterbug Forms <=1.1 | 1.2 | Unauthenticated arbitrary file deletion in the Chatterbug Forms WordPress plugin via insufficient file path validation in cbforms_delete_uploaded_files; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-120681](CVE-2026-120681) | Mang Board | 3.1 9.1 (Wordfence) | Mang Board <=2.4.7 | 2.4.8 | Authorization bypass in the Mang Board WordPress plugin allows unauthenticated attackers to delete any board post; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-125085](CVE-2026-125085) | Nexter Extension | 3.1 8.8 (Wordfence) | Nexter Extension <=4.9.0 | 4.9.1 | Privilege escalation in the Nexter Extension WordPress plugin allows authenticated subscribers to become administrators; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-118522](CVE-2026-118522) | Video & Photo Gallery for Ultimate Member | 3.1 8.1 (Wordfence) | Video & Photo Gallery for Ultimate Member <=1.1.4 | 1.1.5 | Arbitrary file deletion in the Video & Photo Gallery for Ultimate Member WordPress plugin; authenticated subscribers can delete arbitrary files, RCE only if a sensitive file is removed; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-126716](CVE-2026-126716) | Mega Forms | 3.1 8.1 (Wordfence) | Mega Forms <=1.7.9 | 1.8.0 | Unauthenticated arbitrary file deletion in the Mega Forms WordPress plugin; deletion only occurs when an administrator deletes the stored entry; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (15)
 

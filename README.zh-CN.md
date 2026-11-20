@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (124)
+### Web / CMS (128)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -146,6 +146,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133501](CVE-2026-133501) | Gladys Assistant | 4.0 8.5 (VulDB); 3.1 9.0 (VulDB) | Gladys Assistant <=4.71.0 | 4.72.0 | Gladys Assistant 备份恢复接口路径遍历；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-128915](CVE-2026-128915) | InstaWP Connect | 3.1 8.5 (Patchstack) | InstaWP Connect <=0.1.4.4 | 0.1.4.5 | InstaWP Connect 盲注 SQL 注入；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130010](CVE-2026-130010) | Chatterbug Forms | 3.1 8.1 (Wordfence) | Chatterbug Forms <=1.1 | 1.2 | Chatterbug Forms 未授权任意文件删除；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-120681](CVE-2026-120681) | Mang Board | 3.1 9.1 (Wordfence) | Mang Board <=2.4.7 | 2.4.8 | Mang Board 未授权删除任意看板帖子；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-125085](CVE-2026-125085) | Nexter Extension | 3.1 8.8 (Wordfence) | Nexter Extension <=4.9.0 | 4.9.1 | Nexter Extension 权限提升至管理员；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-118522](CVE-2026-118522) | Video & Photo Gallery for Ultimate Member | 3.1 8.1 (Wordfence) | Video & Photo Gallery for Ultimate Member <=1.1.4 | 1.1.5 | Video & Photo Gallery for Ultimate Member 任意文件删除；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-126716](CVE-2026-126716) | Mega Forms | 3.1 8.1 (Wordfence) | Mega Forms <=1.7.9 | 1.8.0 | Mega Forms 未授权任意文件删除；检测型 PoC，未核实 | 已确认 | 待复现 |
 
 ### AI / LLM (15)
 

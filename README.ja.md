@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (124)
+### Web / CMS (128)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -146,6 +146,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133501](CVE-2026-133501) | Gladys Assistant | 4.0 8.5 (VulDB); 3.1 9.0 (VulDB) | Gladys Assistant <=4.71.0 | 4.72.0 | Gladys Assistant のバックアップ復元ハンドラにおけるパストラバーサル；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-128915](CVE-2026-128915) | InstaWP Connect | 3.1 8.5 (Patchstack) | InstaWP Connect <=0.1.4.4 | 0.1.4.5 | InstaWP Connect のブラインド SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130010](CVE-2026-130010) | Chatterbug Forms | 3.1 8.1 (Wordfence) | Chatterbug Forms <=1.1 | 1.2 | Chatterbug Forms の未認証任意ファイル削除；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-120681](CVE-2026-120681) | Mang Board | 3.1 9.1 (Wordfence) | Mang Board <=2.4.7 | 2.4.8 | Mang Board の未認証任意掲示板投稿削除；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-125085](CVE-2026-125085) | Nexter Extension | 3.1 8.8 (Wordfence) | Nexter Extension <=4.9.0 | 4.9.1 | Nexter Extension の権限昇格による管理者化；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-118522](CVE-2026-118522) | Video & Photo Gallery for Ultimate Member | 3.1 8.1 (Wordfence) | Video & Photo Gallery for Ultimate Member <=1.1.4 | 1.1.5 | Video & Photo Gallery for Ultimate Member の任意ファイル削除；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-126716](CVE-2026-126716) | Mega Forms | 3.1 8.1 (Wordfence) | Mega Forms <=1.7.9 | 1.8.0 | Mega Forms の未認証任意ファイル削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (15)
 
