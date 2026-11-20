@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (120)
+### Web / CMS (124)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -142,6 +142,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-132903](CVE-2026-132903) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Missing authorization in JetBrains TeamCity lets any authenticated user start and stop cloud agent instances; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-109555](CVE-2026-109555) | WP STAGING / WP STAGING Pro | 3.1 8.0 (Wordfence) | WP STAGING <=4.17.0 / WP STAGING Pro <=6.17.0 | 4.18.0 / 6.18.0 | PHP object injection in WP STAGING / WP STAGING Pro via deserialization of untrusted input during database restore and staging reset; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-132914](CVE-2026-132914) | TeamCity | 3.1 8.0 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Stored cross-site scripting in JetBrains TeamCity on the Issue Log tab; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133500](CVE-2026-133500) | Gladys Assistant | 4.0 8.5 (VulDB); 3.1 9.1 (VulDB) | Gladys Assistant <=4.71.0 | 4.72.0 | OS command injection in Gladys Assistant via the gateway.downloadBackup.js backup restore endpoint (file_url parameter); detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133501](CVE-2026-133501) | Gladys Assistant | 4.0 8.5 (VulDB); 3.1 9.0 (VulDB) | Gladys Assistant <=4.71.0 | 4.72.0 | Path traversal in Gladys Assistant via the gateway.downloadBackup.js backup restore handler (file_url parameter); detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-128915](CVE-2026-128915) | InstaWP Connect | 3.1 8.5 (Patchstack) | InstaWP Connect <=0.1.4.4 | 0.1.4.5 | Blind SQL injection in the InstaWP Connect WordPress plugin; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130010](CVE-2026-130010) | Chatterbug Forms | 3.1 8.1 (Wordfence) | Chatterbug Forms <=1.1 | 1.2 | Unauthenticated arbitrary file deletion in the Chatterbug Forms WordPress plugin via insufficient file path validation in cbforms_delete_uploaded_files; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (15)
 
@@ -306,7 +310,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authentication bypass in Splunk SOAR via unbound external identity provider accounts allowing login as another provider's user; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | OS command injection in D-Link DIR-600L via the GENA handler (gena.cgi genacgi_main); detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (69)
+### Runtime / Framework / Browser (70)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -379,6 +383,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | Out-of-bounds write in BeamNG.drive via LuaJIT FFI bounds-check bypass in JIT traces, escaping the mod sandbox; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | Path traversal in @fastify/reply-from via semicolon path-parameter segments bypassing the dot-segment check; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | Missing TLS certificate validation in the Dorsett Controls InfoScan Electron client with insecure Electron settings; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | Timezone cache use-after-free in PHP can lead to remote code execution; lab-proven PoC on PHP 8.4.27, fails on 8.4.28, unverified in this repo | Confirmed | Pending |
 
 ### Database (9)
 

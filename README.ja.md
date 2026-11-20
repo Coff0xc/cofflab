@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (120)
+### Web / CMS (124)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -142,6 +142,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-132903](CVE-2026-132903) | TeamCity | 3.1 8.1 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の認可欠如によるクラウドエージェントの起動・停止；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-109555](CVE-2026-109555) | WP STAGING / WP STAGING Pro | 3.1 8.0 (Wordfence) | WP STAGING <=4.17.0 / WP STAGING Pro <=6.17.0 | 4.18.0 / 6.18.0 | WP STAGING の PHP オブジェクトインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-132914](CVE-2026-132914) | TeamCity | 3.1 8.0 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の Issue Log タブにおける格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133500](CVE-2026-133500) | Gladys Assistant | 4.0 8.5 (VulDB); 3.1 9.1 (VulDB) | Gladys Assistant <=4.71.0 | 4.72.0 | Gladys Assistant のバックアップ復元エンドポイントにおける OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133501](CVE-2026-133501) | Gladys Assistant | 4.0 8.5 (VulDB); 3.1 9.0 (VulDB) | Gladys Assistant <=4.71.0 | 4.72.0 | Gladys Assistant のバックアップ復元ハンドラにおけるパストラバーサル；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-128915](CVE-2026-128915) | InstaWP Connect | 3.1 8.5 (Patchstack) | InstaWP Connect <=0.1.4.4 | 0.1.4.5 | InstaWP Connect のブラインド SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130010](CVE-2026-130010) | Chatterbug Forms | 3.1 8.1 (Wordfence) | Chatterbug Forms <=1.1 | 1.2 | Chatterbug Forms の未認証任意ファイル削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (15)
 
@@ -306,7 +310,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の IdP バインド欠如による他プロバイダーのユーザーとしての認証；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | D-Link DIR-600L の gena.cgi による OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (69)
+### ランタイム / フレームワーク / ブラウザ (70)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -379,6 +383,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | BeamNG.drive の LuaJIT サンドボックス逃逸による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-127064](CVE-2026-127064) | @fastify/reply-from | 3.1 8.2 (OpenJSF) | @fastify/reply-from <12.8.4 | 12.8.4 | @fastify/reply-from のセミコロン付きパスによるパストラバーサル；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-117659](CVE-2026-117659) | InfoScan | 4.0 8.5 (CISA); 3.1 8.1 (CISA) | Dorsett Controls InfoScan <=1.45.0 | 1.46 | InfoScan Electron クライアントの TLS 証明書検証欠如；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129496](CVE-2026-129496) | PHP | 4.0 9.2 (PHP Group) | PHP 8.2 <8.2.36 / 8.3 <8.3.37 / 8.4 <8.4.28 / 8.5 <8.5.13 | 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 | PHP のタイムゾーンキャッシュの use-after-free によるリモートコード実行；ラボ型 PoC、本倉では未検証 | 確認済み | 未実施 |
 
 ### データベース (9)
 
