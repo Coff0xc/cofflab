@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (128)
+### Web / CMS (133)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -150,6 +150,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-125085](CVE-2026-125085) | Nexter Extension | 3.1 8.8 (Wordfence) | Nexter Extension <=4.9.0 | 4.9.1 | Nexter Extension の権限昇格による管理者化；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-118522](CVE-2026-118522) | Video & Photo Gallery for Ultimate Member | 3.1 8.1 (Wordfence) | Video & Photo Gallery for Ultimate Member <=1.1.4 | 1.1.5 | Video & Photo Gallery for Ultimate Member の任意ファイル削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126716](CVE-2026-126716) | Mega Forms | 3.1 8.1 (Wordfence) | Mega Forms <=1.7.9 | 1.8.0 | Mega Forms の未認証任意ファイル削除；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129073](CVE-2026-129073) | miniorange-otp-verification | 3.1 9.8 (Patchstack) | miniorange-otp-verification <=5.6.1 | 5.6.2 | miniOrange OTP 検証プラグインの代替経路による認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-15826](CVE-2026-15826) | User Profile Builder | 3.1 9.8 (Wordfence) | User Profile Builder <=3.16.4 | 3.16.5 | User Profile Builder の型混同による未認証認証バイパス；検出型 PoC、未検証；Wordfence が攻撃ブロックを報告 | 確認済み | 未実施 |
+| [CVE-2026-129039](CVE-2026-129039) | Newsletters | 3.1 9.8 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | Newsletters のデシリアライゼーションによるオブジェクトインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129043](CVE-2026-129043) | Newsletters | 3.1 9.3 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | Newsletters の SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Tegsoft Contact Center の無制限ファイルアップロードによる Web シェル；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (15)
 
@@ -171,7 +176,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant のテナント横断データアクセス；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant の機能設定の未認証変更；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (138)
+### ネットワークとセキュリティ (140)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -313,6 +318,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の診断ログバンドルからのパスワードリセット認証情報の漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の IdP バインド欠如による他プロバイダーのユーザーとしての認証；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | D-Link DIR-600L の gena.cgi による OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-20320](CVE-2026-20320) | Cisco BroadWorks | 3.1 7.5 (Cisco) | BroadWorks earlier than RI.2026.07 | RI.2026.07 | Cisco BroadWorks OCI パーサの未認証 XXE；実利用確認済み（KEV 2026-11-10）、公開 PoC なし | 確認済み | 未実施 |
+| [CVE-2026-111793](CVE-2026-111793) | Openwave Webtop Media Transcoder | 3.1 4.3 (MITRE) | Webtop Media Transcoder < 1.1.22.0 | 1.1.22.0 | Openwave Webtop Media Transcoder のファイル種別制限バイパス；実利用確認済み（KEV 2026-11-10）、公開 PoC なし | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (72)
 
@@ -459,8 +466,6 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus カスタムボリュームのバックアップ・スナップショット名のパストラバーサルによるホストディレクトリ削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作イベントによるトークン漏洩と認可欠如による完全な乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | OpenPLC Runtime の競合状態による未認証の管理者アカウント作成；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-129073](CVE-2026-129073) | miniorange-otp-verification | 3.1 9.8 (Patchstack) | miniorange-otp-verification <=5.6.1 | 5.6.2 | miniOrange OTP 検証プラグインの代替経路による認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-15826](CVE-2026-15826) | User Profile Builder | 3.1 9.8 (Wordfence) | User Profile Builder <=3.16.4 | 3.16.5 | User Profile Builder の型混同による未認証認証バイパス；検出型 PoC、未検証；Wordfence が攻撃ブロックを報告 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。

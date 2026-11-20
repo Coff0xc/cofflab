@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (128)
+### Web / CMS (133)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -150,6 +150,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-125085](CVE-2026-125085) | Nexter Extension | 3.1 8.8 (Wordfence) | Nexter Extension <=4.9.0 | 4.9.1 | Privilege escalation in the Nexter Extension WordPress plugin allows authenticated subscribers to become administrators; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-118522](CVE-2026-118522) | Video & Photo Gallery for Ultimate Member | 3.1 8.1 (Wordfence) | Video & Photo Gallery for Ultimate Member <=1.1.4 | 1.1.5 | Arbitrary file deletion in the Video & Photo Gallery for Ultimate Member WordPress plugin; authenticated subscribers can delete arbitrary files, RCE only if a sensitive file is removed; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-126716](CVE-2026-126716) | Mega Forms | 3.1 8.1 (Wordfence) | Mega Forms <=1.7.9 | 1.8.0 | Unauthenticated arbitrary file deletion in the Mega Forms WordPress plugin; deletion only occurs when an administrator deletes the stored entry; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-129073](CVE-2026-129073) | miniorange-otp-verification | 3.1 9.8 (Patchstack) | miniorange-otp-verification <=5.6.1 | 5.6.2 | Authentication bypass via alternate channel in miniOrange OTP Verification <= 5.6.1; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-15826](CVE-2026-15826) | User Profile Builder | 3.1 9.8 (Wordfence) | User Profile Builder <=3.16.4 | 3.16.5 | Authentication bypass via type confusion in User Profile Builder <= 3.16.4; detection-only PoC, unverified; Wordfence reports blocked attacks | Confirmed | Pending |
+| [CVE-2026-129039](CVE-2026-129039) | Newsletters | 3.1 9.8 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | Deserialization / PHP object injection in Newsletters <= 4.18.2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-129043](CVE-2026-129043) | Newsletters | 3.1 9.3 (Patchstack) | Newsletters <= 4.18.2 | 4.18.3 | SQL injection in Newsletters <= 4.18.2; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-14914](CVE-2026-14914) | Tegsoft Contact Center | 3.1 10.0 (USOM) | Tegsoft Contact Center before latest-202611161510 | latest-202611161510 | Unrestricted file upload allows web shell in Tegsoft Contact Center before latest-202611161510; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (15)
 
@@ -171,7 +176,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Cross-tenant data access and action attribution in Splunk AI Assistant via a client-controlled tenant identifier; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Unauthorized modification of feature settings in Splunk AI Assistant via client-controlled REST API values; detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (138)
+### Network & Security (140)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -313,6 +318,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131282](CVE-2026-131282) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Password-reset credential exposure in Splunk SOAR diagnostic log bundles accessible to the Observer role; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131297](CVE-2026-131297) | Splunk SOAR | 3.1 8.1 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authentication bypass in Splunk SOAR via unbound external identity provider accounts allowing login as another provider's user; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-133493](CVE-2026-133493) | DIR-600L | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link DIR-600L 2.17b02 | No fixed firmware confirmed | OS command injection in D-Link DIR-600L via the GENA handler (gena.cgi genacgi_main); detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-20320](CVE-2026-20320) | Cisco BroadWorks | 3.1 7.5 (Cisco) | BroadWorks earlier than RI.2026.07 | RI.2026.07 | Unauthenticated XXE in BroadWorks OCI XML parser; KEV, exploited in the wild, no public PoC | Confirmed | Pending |
+| [CVE-2026-111793](CVE-2026-111793) | Openwave Webtop Media Transcoder | 3.1 4.3 (MITRE) | Webtop Media Transcoder < 1.1.22.0 | 1.1.22.0 | Authenticated file-type restriction bypass in Webtop Media Transcoder; KEV, exploited in the wild, no public PoC | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (72)
 
@@ -459,8 +466,6 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus custom volume backup snapshot names lets an authorized importer delete arbitrary host directories as root; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus operation events expose certificate and cluster join tokens and skip authorization on cancel, letting restricted clients gain full server access; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | Unauthenticated admin account creation in OpenPLC Runtime via a race condition in the user-existence check; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-129073](CVE-2026-129073) | miniorange-otp-verification | 3.1 9.8 (Patchstack) | miniorange-otp-verification <=5.6.1 | 5.6.2 | Authentication bypass via alternate channel in miniOrange OTP Verification <= 5.6.1; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-15826](CVE-2026-15826) | User Profile Builder | 3.1 9.8 (Wordfence) | User Profile Builder <=3.16.4 | 3.16.5 | Authentication bypass via type confusion in User Profile Builder <= 3.16.4; detection-only PoC, unverified; Wordfence reports blocked attacks | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
