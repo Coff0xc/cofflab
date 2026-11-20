@@ -353,6 +353,21 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-130784](CVE-2026-130784) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus のデフォルトプロジェクトリソース継承の認可バイパスによるホスト root コード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130780](CVE-2026-130780) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus マイグレーションのパストラバーサルによるホスト任意パス書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-129991](CVE-2026-129991) | Dokploy | 3.1 9.9 (GHSA) | Dokploy <0.31.1 | 0.31.1 | Dokploy バックアッププレフィックスのコマンドインジェクションによるホスト RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129316](CVE-2026-129316) | Dokploy | 3.1 9.9 (GHSA) | Dokploy 0.29.13 to <0.31.0 | 0.31.0 | Dokploy WebSocket ハンドラの認可欠如によるメンバーからホスト root への権限昇格；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129986](CVE-2026-129986) | Dokploy | 3.1 9.9 (GHSA) | Dokploy <0.31.1 | 0.31.1 | Dokploy mount.deleteFileMount のコマンドインジェクションによるホスト RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-129989](CVE-2026-129989) | Dokploy | 3.1 9.9 (GHSA) | Dokploy <0.31.1 | 0.31.1 | Dokploy Nixpacks publishDirectory のコマンドインジェクションによるホスト RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130759](CVE-2026-130759) | Fleet | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Fleet 4.71.0 to <4.88.2 | 4.88.2 | Fleet SAML SSO の認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130771](CVE-2026-130771) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus バックアップ/イメージ メタデータによるホストファイル読み書き；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130773](CVE-2026-130773) | Incus | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus デフォルトプロジェクトへのリソース作成の認可バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-110009](CVE-2026-110009) | Unzer Payments | 3.1 9.8 (Wordfence) | Unzer Payments <=2.2.1 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Unzer Payments の未認証の認証バイパスによるアカウント乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-110811](CVE-2026-110811) | Trust Payments Gateway for WooCommerce (JavaScript Library) | 3.1 9.8 (Wordfence) | Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8 | 无已知补丁（Wordfence 2026-11-18：Patched? No） | Trust Payments Gateway の未認証の認証バイパスによる管理者乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） | F5 BIG-IP APM のスタックバッファオーバーフローによる TMM クラッシュと RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-124990](CVE-2026-124990) | Masteriyo LMS – LMS Course Builder, Quizzes & Certificates | 3.1 9.8 (Wordfence) | Masteriyo LMS <=3.5.1 | 3.5.2 | Masteriyo LMS の PHP オブジェクトインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-126752](CVE-2026-126752) | Dagu | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Dagu 1.23.0 to <2.0.0 | 2.0.0 | Dagu の未認証 RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | ArangoDB の認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130735](CVE-2026-130735) | Grav | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Grav 2.0.0 to <2.2.18 | 2.2.18 | Grav の Twig インジェクションによるコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-63189](CVE-2026-63189) | Dialoqbase | 3.1 9.8 (GHSA) | Dialoqbase <1.11.5 | 1.11.5 | Dialoqbase の未認証パストラバーサルによる任意ファイル読み取り；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-73969](CVE-2026-73969) | AnsibleForms | 3.1 9.8 (GHSA) | AnsibleForms <6.2.1 | 6.2.1 | AnsibleForms のハードコードされた JWT 署名鍵による認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。
