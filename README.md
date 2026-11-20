@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (99)
+### Web / CMS (109)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -121,6 +121,16 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-55506](CVE-2026-55506) | Wavelog | 3.1 9.6 (GHSA) | Wavelog <2.5 | 2.5 | Authenticated arbitrary file deletion in Wavelog via path traversal in the QSL image filename; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130156](CVE-2026-130156) | Bazarr | 3.1 9.4 (GHSA) | Bazarr <1.6.3-beta.11 | 1.6.3-beta.11 | Authenticated path traversal in Bazarr subtitle operations leading to arbitrary file read and write; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-55508](CVE-2026-55508) | Wavelog | 3.1 9.4 (GHSA) | Wavelog <2.5 | 2.5 | Unauthenticated SQL injection in Wavelog OQRS callsign log search; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-130160](CVE-2026-130160) | RepoManager | 3.1 8.8 (GHSA) | RepoManager <5.13.3 | 5.13.3 | Authenticated OS command injection in RepoManager via unsanitized GPG key identifier in key deletion; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132906](CVE-2026-132906) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Remote code execution in JetBrains TeamCity via native code loading in the Kotlin DSL sandbox; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132909](CVE-2026-132909) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Remote code execution in JetBrains TeamCity via Mercurial repository contents; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132917](CVE-2026-132917) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Remote code execution in JetBrains TeamCity via a file write bypass in the Kotlin DSL sandbox; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133476](CVE-2026-133476) | Dolibarr | 3.1 8.8 (MITRE) | Dolibarr <24.0.3 | 24.0.3 | Authenticated account takeover in Dolibarr via SQL filter bypass in dolForgeSQLCriteriaCallback; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-125061](CVE-2026-125061) | JTL PayPal Checkout plugin | 4.0 8.5 (JTL); 3.1 8.7 (JTL) | JTL PayPal Checkout plugin 1.2.0–2.3.1 | 2.3.2 / 2.2.2 | Stored XSS in the JTL PayPal Checkout plugin admin page via an HTML-entity-encoded customer name; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-122676](CVE-2026-122676) | PublishPress Authors | 3.1 8.5 (Patchstack) | PublishPress Authors <=4.18.0 | 4.20.0 | Blind SQL injection in PublishPress Authors; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-132913](CVE-2026-132913) | TeamCity | 3.1 8.4 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Stored XSS in JetBrains TeamCity on the P4 Code Review build tab; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-103035](CVE-2026-103035) | TeamPass | 3.1 8.3 (GHSA) | TeamPass <3.2.1.2 | 3.2.1.2 | Authenticated authorization bypass in TeamPass update_folder allowing re-parenting of any folder into the attacker's personal space; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-125060](CVE-2026-125060) | JTL-Shop | 4.0 8.8 (JTL); 3.1 8.2 (JTL) | JTL-Shop 5.2.0–5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 | Unauthenticated IDOR in JTL-Shop checkout attaching another customer's delivery address to the attacker's order; detection-only PoC, unverified | Confirmed | Pending |
 
 ### AI / LLM (12)
 
@@ -139,10 +149,11 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-76807](CVE-2026-76807) | Todoist MCP Server | 3.1 9.3 (GHSA) | Todoist MCP Server <10.3.3 | 10.3.3 | Browser DNS rebinding lets websites write and delete Todoist data through the local Todoist MCP server; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130154](CVE-2026-130154) | Zyrabit Platform | 3.1 9.1 (GHSA) | Zyrabit Platform <2.4.4 | 2.4.4 | Path traversal in Zyrabit import_to_vault allows arbitrary file write and read via unvalidated paths; detection-only PoC, unverified | Confirmed | Pending |
 
-### Network & Security (113)
+### Network & Security (131)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-130151](CVE-2026-130151) | Okta Privileged Access Gateway | 3.1 8.5 (Okta) | Okta Privileged Access Gateway <1.116.3 (RDP support) | 1.116.3 | Command execution in the Okta Privileged Access Gateway via memory handling issues in FreeRDP smartcard redirection; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-95643](CVE-2026-95643) | ManageEngine DDI Central | 3.1 9.1 (Zohocorp) | Zohocorp ManageEngine DDI Central build <6500 | 6500 | Authenticated PowerShell command injection in DDI Central Telnet connectivity via IPv6 scope identifiers; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-95645](CVE-2026-95645) | ManageEngine DDI Central | 3.1 9.1 (Zohocorp) | Zohocorp ManageEngine DDI Central build <6500 | 6500 | Authenticated command injection in DDI Central Windows agent clear_blocked_domains; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-104935](CVE-2026-104935) | Ivanti Connect Secure | 3.1 8.6 (Ivanti) | Ivanti Connect Secure 25.1.1.2 and prior; 25.1.2.2 and prior; 22.8R2.5 and prior | 25.1.1.3 / 22.8R2.6 | Authentication bypass in Ivanti Connect Secure; exploited in the wild (KEV 2026-10-13), no public PoC | Confirmed | Pending |
@@ -256,8 +267,25 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） | Stack-based buffer overflow in BIG-IP APM may terminate TMM and lead to remote code execution; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-104099](CVE-2026-104099) | Fabio | 3.1 9.1 (GHSA) | Fabio <1.7.3 | 1.7.3 | Access-control bypass in Fabio through unnormalized request paths reaching a less restrictive route; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-131202](CVE-2026-131202) | Splunk Enterprise Security | 3.1 9.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Remote code execution in Splunk Enterprise Security via REST API path traversal in lookup upload; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131199](CVE-2026-131199) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated arbitrary SPL command execution in Splunk Enterprise Security via the Risk Event Timeline REST API; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131236](CVE-2026-131236) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Unauthenticated stored SPL injection in Splunk Enterprise Security via attacker-controlled event data executed when a reviewing user triggers a workflow action; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131246](CVE-2026-131246) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated approval bypass in Splunk SOAR exposing the external-prompt capability and pending approval control; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131252](CVE-2026-131252) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-tenant asset tampering in Splunk SOAR via missing tenant checks on the Assets REST API; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131261](CVE-2026-131261) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated arbitrary code execution in Splunk SOAR by installing a malicious app; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131263](CVE-2026-131263) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated arbitrary file write leading to RCE in Splunk SOAR via a malicious connector app; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131269](CVE-2026-131269) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated arbitrary code execution in Splunk SOAR when validating an installed app; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131270](CVE-2026-131270) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated path traversal in Splunk SOAR repository paths allowing writes outside the configured repository; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131271](CVE-2026-131271) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-label data and credential exposure in Splunk SOAR via slash commands through the REST API; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131295](CVE-2026-131295) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-scope child playbook execution in Splunk SOAR via an unbound parent execution context; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131258](CVE-2026-131258) | Splunk SOAR | 3.1 8.7 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated stored XSS in Splunk SOAR via attacker-controlled HTML in a note rendered in Mission Control; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131260](CVE-2026-131260) | Splunk SOAR | 3.1 8.7 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated stored XSS in Splunk SOAR via a malicious HTML note in an imported container; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131203](CVE-2026-131203) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated arbitrary SPL execution in Splunk Enterprise Security via a writable risk-exclusion search macro run with elevated permissions; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131209](CVE-2026-131209) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated SPL injection in Splunk Enterprise Security via unvalidated Entity Risk Score values in the UEBA Content App; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131215](CVE-2026-131215) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated SPL injection in Splunk Enterprise Security via attacker-controlled values in a UEBA finding exclusion rule; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131218](CVE-2026-131218) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated SPL injection in Splunk Enterprise Security Mission Control dashboard searches via unvalidated reserved search filters; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-131293](CVE-2026-131293) | Splunk SOAR | 3.1 8.3 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-scope read/write of playbook run data in Splunk SOAR via unbound playbook automation APIs; detection-only PoC, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (66)
+### Runtime / Framework / Browser (67)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -327,6 +355,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-91583](CVE-2026-91583) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over HTTP; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Unauthenticated takeover of Oracle WebLogic Server via TopLink over TCP; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | AJP response mix-up in Apache Tomcat leaks data from one response into the next request; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | Out-of-bounds write in BeamNG.drive via LuaJIT FFI bounds-check bypass in JIT traces, escaping the mod sandbox; detection-only PoC, unverified | Confirmed | Pending |
 
 ### Database (9)
 
@@ -342,7 +371,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | Unauthenticated recursion DoS via remote cluster server pre-auth deserialization; lab evidence | Confirmed | Pending |
 | [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | Authentication bypass in ArangoDB via URL-encoded underscore parser differential; detection-only PoC, unverified | Confirmed | Pending |
 
-### OS / System / DevOps (49)
+### OS / System / DevOps (50)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -395,21 +424,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-73969](CVE-2026-73969) | AnsibleForms | 3.1 9.8 (GHSA) | AnsibleForms <6.2.1 | 6.2.1 | Authentication bypass in AnsibleForms via a public hard-coded default JWT signing secret; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus custom volume backup snapshot names lets an authorized importer delete arbitrary host directories as root; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus operation events expose certificate and cluster join tokens and skip authorization on cancel, letting restricted clients gain full server access; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-130160](CVE-2026-130160) | RepoManager | 3.1 8.8 (GHSA) | RepoManager <5.13.3 | 5.13.3 | Authenticated OS command injection in RepoManager via unsanitized GPG key identifier in key deletion; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131199](CVE-2026-131199) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Authenticated arbitrary SPL command execution in Splunk Enterprise Security via the Risk Event Timeline REST API; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131236](CVE-2026-131236) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Unauthenticated stored SPL injection in Splunk Enterprise Security via attacker-controlled event data executed when a reviewing user triggers a workflow action; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131246](CVE-2026-131246) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated approval bypass in Splunk SOAR exposing the external-prompt capability and pending approval control; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131252](CVE-2026-131252) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-tenant asset tampering in Splunk SOAR via missing tenant checks on the Assets REST API; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131261](CVE-2026-131261) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated arbitrary code execution in Splunk SOAR by installing a malicious app; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131263](CVE-2026-131263) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated arbitrary file write leading to RCE in Splunk SOAR via a malicious connector app; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131269](CVE-2026-131269) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated arbitrary code execution in Splunk SOAR when validating an installed app; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131270](CVE-2026-131270) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated path traversal in Splunk SOAR repository paths allowing writes outside the configured repository; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131271](CVE-2026-131271) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-label data and credential exposure in Splunk SOAR via slash commands through the REST API; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-131295](CVE-2026-131295) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Authenticated cross-scope child playbook execution in Splunk SOAR via an unbound parent execution context; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-132906](CVE-2026-132906) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Remote code execution in JetBrains TeamCity via native code loading in the Kotlin DSL sandbox; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-132909](CVE-2026-132909) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Remote code execution in JetBrains TeamCity via Mercurial repository contents; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-132917](CVE-2026-132917) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | Remote code execution in JetBrains TeamCity via a file write bypass in the Kotlin DSL sandbox; detection-only PoC, unverified | Confirmed | Pending |
-| [CVE-2026-133476](CVE-2026-133476) | Dolibarr | 3.1 8.8 (MITRE) | Dolibarr <24.0.3 | 24.0.3 | Authenticated account takeover in Dolibarr via SQL filter bypass in dolForgeSQLCriteriaCallback; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | Unauthenticated admin account creation in OpenPLC Runtime via a race condition in the user-existence check; detection-only PoC, unverified | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.

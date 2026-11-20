@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (99)
+### Web / CMS (109)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -121,6 +121,16 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-55506](CVE-2026-55506) | Wavelog | 3.1 9.6 (GHSA) | Wavelog <2.5 | 2.5 | Wavelog QSL 画像ファイル名のパストラバーサルによる任意ファイル削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130156](CVE-2026-130156) | Bazarr | 3.1 9.4 (GHSA) | Bazarr <1.6.3-beta.11 | 1.6.3-beta.11 | Bazarr 字幕操作のパストラバーサルによる任意ファイル読み書き；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-55508](CVE-2026-55508) | Wavelog | 3.1 9.4 (GHSA) | Wavelog <2.5 | 2.5 | Wavelog OQRS の未認証 SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-130160](CVE-2026-130160) | RepoManager | 3.1 8.8 (GHSA) | RepoManager <5.13.3 | 5.13.3 | RepoManager の認証済み OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132906](CVE-2026-132906) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の Kotlin DSL サンドボックス逃逸による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132909](CVE-2026-132909) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の Mercurial リポジトリ内容による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132917](CVE-2026-132917) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の Kotlin DSL ファイル書き込みバイパスによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133476](CVE-2026-133476) | Dolibarr | 3.1 8.8 (MITRE) | Dolibarr <24.0.3 | 24.0.3 | Dolibarr の SQL フィルタバイパスによるアカウント乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-125061](CVE-2026-125061) | JTL PayPal Checkout plugin | 4.0 8.5 (JTL); 3.1 8.7 (JTL) | JTL PayPal Checkout plugin 1.2.0–2.3.1 | 2.3.2 / 2.2.2 | JTL PayPal Checkout プラグインの格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-122676](CVE-2026-122676) | PublishPress Authors | 3.1 8.5 (Patchstack) | PublishPress Authors <=4.18.0 | 4.20.0 | PublishPress Authors のブラインド SQL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-132913](CVE-2026-132913) | TeamCity | 3.1 8.4 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の P4 コードレビューにおける格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-103035](CVE-2026-103035) | TeamPass | 3.1 8.3 (GHSA) | TeamPass <3.2.1.2 | 3.2.1.2 | TeamPass のフォルダ権限バイパスによる認証情報ツリーの奪取；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-125060](CVE-2026-125060) | JTL-Shop | 4.0 8.8 (JTL); 3.1 8.2 (JTL) | JTL-Shop 5.2.0–5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 | JTL-Shop のチェックアウトにおける配送先住所の IDOR；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### AI / LLM (12)
 
@@ -139,10 +149,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-76807](CVE-2026-76807) | Todoist MCP Server | 3.1 9.3 (GHSA) | Todoist MCP Server <10.3.3 | 10.3.3 | Todoist MCP Server の DNS リバインディングによる Web サイトからの Todoist データ書き込み・削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130154](CVE-2026-130154) | Zyrabit Platform | 3.1 9.1 (GHSA) | Zyrabit Platform <2.4.4 | 2.4.4 | Zyrabit import_to_vault のパストラバーサルによる任意ファイル読み書き；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (113)
+### ネットワークとセキュリティ (131)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-130151](CVE-2026-130151) | Okta Privileged Access Gateway | 3.1 8.5 (Okta) | Okta Privileged Access Gateway <1.116.3 (RDP support) | 1.116.3 | Okta 特権アクセスゲートウェイの FreeRDP スマートカード処理によるコマンド実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-95643](CVE-2026-95643) | ManageEngine DDI Central | 3.1 9.1 (Zohocorp) | Zohocorp ManageEngine DDI Central build <6500 | 6500 | DDI Central Telnet 機能における IPv6 スコープ識別子を介した認証済み PowerShell コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-95645](CVE-2026-95645) | ManageEngine DDI Central | 3.1 9.1 (Zohocorp) | Zohocorp ManageEngine DDI Central build <6500 | 6500 | DDI Central Windows エージェント clear_blocked_domains の認証済みコマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-104935](CVE-2026-104935) | Ivanti Connect Secure | 3.1 8.6 (Ivanti) | Ivanti Connect Secure 25.1.1.2 and prior; 25.1.2.2 and prior; 22.8R2.5 and prior | 25.1.1.3 / 22.8R2.6 | Ivanti Connect Secure の認証バイパス；実利用確認済み（KEV 2026-10-13）、公開 PoC なし | 確認済み | 未実施 |
@@ -256,8 +267,25 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） | F5 BIG-IP APM のスタックバッファオーバーフローによる TMM クラッシュと RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-104099](CVE-2026-104099) | Fabio | 3.1 9.1 (GHSA) | Fabio <1.7.3 | 1.7.3 | Fabio の正規化されていないパスによるアクセス制御バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-131202](CVE-2026-131202) | Splunk Enterprise Security | 3.1 9.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk Enterprise Security の REST API パストラバーサルによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131199](CVE-2026-131199) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES の任意 SPL コマンド実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131236](CVE-2026-131236) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES の格納型 SPL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131246](CVE-2026-131246) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の承認バイパスによる外部プロンプト漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131252](CVE-2026-131252) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のテナント横断資産改ざん；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131261](CVE-2026-131261) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の悪意あるアプリのインストールによる任意コード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131263](CVE-2026-131263) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のコネクタアプリによる任意ファイル書き込みからの RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131269](CVE-2026-131269) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のアプリ検証による任意コード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131270](CVE-2026-131270) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のリポジトリパストラバーサルによる任意ファイル書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131271](CVE-2026-131271) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のスラッシュコマンドによる権限外の認証情報漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131295](CVE-2026-131295) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の権限外子プレイブック実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131258](CVE-2026-131258) | Splunk SOAR | 3.1 8.7 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のノート格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131260](CVE-2026-131260) | Splunk SOAR | 3.1 8.7 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のコンテナ取り込みによる格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131203](CVE-2026-131203) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES のリスク除外マクロ改ざんによる SPL 実行；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131209](CVE-2026-131209) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES の UEBA エンティティリスクスコアによる SPL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131215](CVE-2026-131215) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES の UEBA 検出除外ルールによる SPL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131218](CVE-2026-131218) | Splunk Enterprise Security | 3.1 8.3 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES の Mission Control ダッシュボードにおける SPL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-131293](CVE-2026-131293) | Splunk SOAR | 3.1 8.3 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のプレイブック実行データの権限外読み書き；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (66)
+### ランタイム / フレームワーク / ブラウザ (67)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -327,6 +355,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-91583](CVE-2026-91583) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server の TopLink 経由の HTTP による未認証乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-91585](CVE-2026-91585) | Oracle WebLogic Server | 3.1 9.8 (Oracle) | Oracle WebLogic Server 12.2.1.4.0 / 14.1.1.0.0 / 14.1.2.0.0 / 15.1.1.0.0 | November 2026 Critical Patch Update | Oracle WebLogic Server の TopLink 経由の TCP による未認証乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-103119](CVE-2026-103119) | Apache Tomcat | 3.1 9.1 (NVD) | Apache Tomcat 11.0.0-M25 to 11.0.26 | 11.0.27 | Apache Tomcat の AJP レスポンス混同によるデータ漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-133528](CVE-2026-133528) | BeamNG.drive | 4.0 9.3 (VulnCheck); 3.1 8.6 (VulnCheck) | BeamNG.drive <0.40.6 | 0.40.6 | BeamNG.drive の LuaJIT サンドボックス逃逸による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 ### データベース (9)
 
@@ -342,7 +371,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-115290](CVE-2026-115290) | Elasticsearch | 3.1 7.5 (GHSA) | Elasticsearch 8.10.0–8.19.23, 9.0.0–9.4.8, 9.5.0–9.5.5 (remote_cluster_server enabled) | 8.19.24 / 9.4.9 / 9.5.6 | リモートクラスターサーバーの認証前デシリアライズによる未認証再帰 DoS；ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-126755](CVE-2026-126755) | ArangoDB | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ArangoDB <3.12.11 | 3.12.11 | ArangoDB の認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
 
-### OS / システム / DevOps (49)
+### OS / システム / DevOps (50)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -395,21 +424,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-73969](CVE-2026-73969) | AnsibleForms | 3.1 9.8 (GHSA) | AnsibleForms <6.2.1 | 6.2.1 | AnsibleForms のハードコードされた JWT 署名鍵による認証バイパス；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus カスタムボリュームのバックアップ・スナップショット名のパストラバーサルによるホストディレクトリ削除；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus 操作イベントによるトークン漏洩と認可欠如による完全な乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-130160](CVE-2026-130160) | RepoManager | 3.1 8.8 (GHSA) | RepoManager <5.13.3 | 5.13.3 | RepoManager の認証済み OS コマンドインジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131199](CVE-2026-131199) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES の任意 SPL コマンド実行；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131236](CVE-2026-131236) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 | Splunk ES の格納型 SPL インジェクション；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131246](CVE-2026-131246) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の承認バイパスによる外部プロンプト漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131252](CVE-2026-131252) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のテナント横断資産改ざん；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131261](CVE-2026-131261) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の悪意あるアプリのインストールによる任意コード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131263](CVE-2026-131263) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のコネクタアプリによる任意ファイル書き込みからの RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131269](CVE-2026-131269) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のアプリ検証による任意コード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131270](CVE-2026-131270) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のリポジトリパストラバーサルによる任意ファイル書き込み；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131271](CVE-2026-131271) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR のスラッシュコマンドによる権限外の認証情報漏洩；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-131295](CVE-2026-131295) | Splunk SOAR | 3.1 8.8 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 | Splunk SOAR の権限外子プレイブック実行；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-132906](CVE-2026-132906) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の Kotlin DSL サンドボックス逃逸による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-132909](CVE-2026-132909) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の Mercurial リポジトリ内容による RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-132917](CVE-2026-132917) | TeamCity | 3.1 8.8 (JetBrains) | TeamCity <2026.2 / <2026.1.4 / <2025.11.8 | 2026.2 / 2026.1.4 / 2025.11.8 | TeamCity の Kotlin DSL ファイル書き込みバイパスによる RCE；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-133476](CVE-2026-133476) | Dolibarr | 3.1 8.8 (MITRE) | Dolibarr <24.0.3 | 24.0.3 | Dolibarr の SQL フィルタバイパスによるアカウント乗っ取り；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | OpenPLC Runtime の競合状態による未認証の管理者アカウント作成；検出型 PoC、未検証 | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。
