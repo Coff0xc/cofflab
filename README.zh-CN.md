@@ -34,7 +34,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-126173](CVE-2026-126173) | AutomatorWP Pro Webhooks | 3.1 9.8 (Wordfence) | AutomatorWP Pro Webhooks <= 1.4.4 | 1.4.5 | 实验室中未认证任意密码重置/管理员接管；1.4.5 修复 | 已确认 | 待复现 |
 | [CVE-2026-48356](CVE-2026-48356) | Adobe Commerce / Magento | 3.1 9.3 (Adobe) | Adobe Commerce / Magento Open Source 2.4.4-2.4.9 | 2.4.9-p2 | 低权限 REST token 文件上传至 webshell RCE（实验室）；Sansec SA-2026-0027 | 已确认 | 待复现 |
 | [CVE-2026-119977](CVE-2026-119977) | WordPress 核心 | 3.1 8.1 (Wordfence) | WordPress Core 4.7.0-7.1.3 | 7.1.4 | 升级窗口 TOCTOU 植入攻击者 wp-config.php；配置接管至 RCE（实验室）；已列入 KEV | 已确认 | 待复现 |
-| [CVE-2026-110447](CVE-2026-110447) | Collabora Online 内置 CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | Collabora Online Built-in CODE Server (richdocumentscode) before 26.4.303 | 26.4.303 | 经 proxy.php 未认证命令注入；1-day PoC；已列入 KEV、在野利用已确认 | 已确认 | 待复现 |
+| [CVE-2026-110447](CVE-2026-110447) | Collabora Online 内置 CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | Collabora Online Built-in CODE Server (richdocumentscode) before 26.4.303 | 26.4.303 | 经 proxy.php 未认证命令注入；1-day PoC；已列入 KEV、在野利用已确认 | 已确认 | — 无目标 |
 | [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | Joomla! JCE extension < 2.9.99.5 | 2.9.99.5 | 未认证创建 JCE 配置文件上传 PHP 并 RCE；已列入 KEV | 已确认 | 待复现 |
 | [CVE-2026-125423](CVE-2026-125423) | Gitea 自动初始化 | 3.1 8.8 (NVD)；3.1 8.5 (GHSA) | Gitea before 28.4.0 (auto_init=true, Default README template) | 28.4.0 | 实验室 RCE：auto-init 竞态 + 符号链接覆盖 hook；需建仓权限 | 已确认 | 待复现 |
 | [CVE-2026-63219](CVE-2026-63219) | GeoNetwork | 3.1 8.6 (GHSA) | GeoNetwork before 4.4.12 / 4.2.17 | 4.4.12 / 4.2.17 | 未授权上传 XSLT 格式化器；脚本自称反弹 shell，本仓未执行 | 已确认 | 待复现 |
