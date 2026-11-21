@@ -346,7 +346,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | Authorization bypass through a user-controlled key in dmserver; an authenticated administrator may reach other VDOMs through crafted HTTP requests; version-check tool only, unverified | Confirmed | Pending |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | Pre-authentication SSRF in the OFTP service of FortiAnalyzer and FortiManager with FortiAnalyzer features; an attacker reaching the OFTP port may make the server issue requests; version-check tool only, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (76)
+### Runtime / Framework / Browser (77)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -426,6 +426,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133212](CVE-2026-133212) | @fastify/reply-from | 3.1 9.0 (OpenJSF) | @fastify/reply-from before 12.9.1 | 12.9.1 | HTTP request smuggling (CL.0) via forwarded Content-Length on bodyless requests; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-77355](CVE-2026-77355) | isomorphic-git | 3.1 8.8 (GHSA) | isomorphic-git before 1.38.7 (Windows NTFS) | 1.38.7 | Malicious repo poisons .git metadata via NTFS reserved pathname alias on Windows; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-86017](CVE-2026-86017) | isomorphic-git | 3.1 8.0 (GHSA) | isomorphic-git before 1.38.8 (cherry-pick symlink) | 1.38.8 | Cherry-pick follows symlinks and writes attacker blobs outside the worktree; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-104711](CVE-2026-104711) | Apache Struts | 3.1 9.8 (NVD); 3.1 8.1 (Apache) | 2.0.0-2.3.37, 2.5.0-2.5.33, 6.0.0-6.11.0, 7.0.0-7.3.0 | 6.12.0 (6.x), 7.4.0 (7.x) | OGNL injection via legacy RestfulActionMapper; PoC demos eval and exec in Docker lab, output in X_Matched_Action; exec needs lab guard relaxations | Confirmed | Pending |
 
 ### Database (11)
 
