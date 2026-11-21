@@ -346,7 +346,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | FortiManager／FortiAnalyzer dmserver におけるユーザー制御キーによる認可バイパス；バージョン確認ツールのみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | FortiAnalyzer／FortiManager の OFTP サービスにおけるサーバーサイドリクエストフォージェリ；バージョン確認ツールのみ、未検証 | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (77)
+### ランタイム / フレームワーク / ブラウザ (78)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -427,6 +427,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-77355](CVE-2026-77355) | isomorphic-git | 3.1 8.8 (GHSA) | isomorphic-git before 1.38.7 (Windows NTFS) | 1.38.7 | 悪意のあるリポジトリが Windows NTFS 予約パス別名で .git メタデータを汚染；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-86017](CVE-2026-86017) | isomorphic-git | 3.1 8.0 (GHSA) | isomorphic-git before 1.38.8 (cherry-pick symlink) | 1.38.8 | cherry-pick がシンボリックリンクをたどり攻撃者の blob をワークツリー外に書き込む；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-104711](CVE-2026-104711) | Apache Struts | 3.1 9.8 (NVD); 3.1 8.1 (Apache) | 2.0.0-2.3.37, 2.5.0-2.5.33, 6.0.0-6.11.0, 7.0.0-7.3.0 | 6.12.0 (6.x), 7.4.0 (7.x) | legacy RestfulActionMapper の OGNL インジェクション；PoC は Docker lab で eval と exec を実証、出力は X_Matched_Action に反映；exec には lab の guard 緩和が必要 | 確認済み | 未実施 |
+| [CVE-2026-133325](CVE-2026-133325) | Apache Tomcat | 3.1 9.8 (NVD) | 11.0.28-11.0.29, 10.1.62, 9.0.124 |  | Apache Tomcat のエンティティ認証を伴わない鍵交換；PoC はバージョン指紋検出のみで、鍵交換攻撃は実施しない（MITM 位置が必要）；PoC の主張範囲は勧告と不一致、未検証 | 確認済み | 未実施 |
 
 ### データベース (11)
 
