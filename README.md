@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (145)
+### Web / CMS (144)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -63,7 +63,6 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119258](CVE-2026-119258) | Swipe WordPress plugin | 3.1 8.1 (GHSA) | Swipe WordPress plugin <= 1.4 | no vendor patch at disclosure | Unauthenticated AJAX handler issues a session cookie for any active session; admin takeover, unverified | Confirmed | Pending |
 | [CVE-2026-100105](CVE-2026-100105) | Grafana | 3.1 7.7 (GHSA) | Grafana 12.4.0–12.4.13, 13.0.0–13.0.11, 13.1.0–13.1.8, 13.2.0–13.2.4 | 12.4.14 / 13.0.12 / 13.1.9 / 13.2.5 | Contact-point auth bypass via legacy schema downgrade; alert payloads redirected, lab evidence | Confirmed | Pending |
 | [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | Read-only host-org member creates SUPERUSER accounts with one POST; lab evidence | Confirmed | Pending |
-| [CVE-2026-13181](CVE-2026-13181) | Telerik UI for ASP.NET AJAX | 3.1 8.1 (Progress) | Telerik UI for ASP.NET AJAX 2010.1.309 < 2026.2.708 | 2026.2.708 | Unauthenticated padding-oracle chain to deserialization RCE; needs RadAsyncUpload page and verbose errors, unverified | Confirmed | Pending |
 | [CVE-2026-131850](CVE-2026-131850) | ILIAS | 4.0 8.6 (VulnCheck) | ILIAS 11.0 - 11.5.x | 11.6 | Authenticated admin ORDER BY SQLi in registration codes; boolean probe and blind extract, unverified | Confirmed | Pending |
 | [CVE-2026-13447](CVE-2026-13447) | MStore API | 3.1 9.8 (Wordfence) | MStore API <= 4.20.0 (lab 4.18.4) | 4.21.1 | Unauthenticated JWT forgery to admin takeover; signature never verified, lab-validated on 4.18.4 | Confirmed | Pending |
 | [CVE-2026-13355](CVE-2026-13355) | Meta Box AIO | 3.1 9.8 (Wordfence) | Meta Box AIO <= 3.11.0; MB Frontend Submission <= 4.5.6; MB User Profile <= 3.11.0 | 3.12.0 | Unauthenticated admin account creation via chained frontend-submission flaws; needs a public mbfs form, unverified | Confirmed | Pending |

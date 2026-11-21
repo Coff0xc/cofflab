@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (145)
+### Web / CMS (144)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -63,7 +63,6 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-119258](CVE-2026-119258) | Swipe WordPress plugin | 3.1 8.1 (GHSA) | Swipe WordPress plugin <= 1.4 | no vendor patch at disclosure | 未認証 AJAX ハンドラが任意の有効セッションにセッション Cookie を発行；管理者乗っ取り、未検証 | 確認済み | 未実施 |
 | [CVE-2026-100105](CVE-2026-100105) | Grafana | 3.1 7.7 (GHSA) | Grafana 12.4.0–12.4.13, 13.0.0–13.0.11, 13.1.0–13.1.8, 13.2.0–13.2.4 | 12.4.14 / 13.0.12 / 13.1.9 / 13.2.5 | レガシースキーマへのダウングレードで連絡先の認可を回避；アラートペイロードが転送される、ラボ証拠あり | 確認済み | 未実施 |
 | [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | host 組織の読み取り専用メンバーが 1 回の POST で SUPERUSER を作成；ラボ証拠あり | 確認済み | 未実施 |
-| [CVE-2026-13181](CVE-2026-13181) | Telerik UI for ASP.NET AJAX | 3.1 8.1 (Progress) | Telerik UI for ASP.NET AJAX 2010.1.309 < 2026.2.708 | 2026.2.708 | 未認証パディングオラクル連鎖によるデシリアライゼーション RCE；RadAsyncUpload ページと詳細エラーが必要、未検証 | 確認済み | 未実施 |
 | [CVE-2026-131850](CVE-2026-131850) | ILIAS | 4.0 8.6 (VulnCheck) | ILIAS 11.0 - 11.5.x | 11.6 | 管理者の ORDER BY SQLi（登録コード表）；ブールプローブとブラインド抽出、未検証 | 確認済み | 未実施 |
 | [CVE-2026-13447](CVE-2026-13447) | MStore API | 3.1 9.8 (Wordfence) | MStore API <= 4.20.0 (lab 4.18.4) | 4.21.1 | 未認証 JWT 偽造で管理者乗っ取り；署名検証なし、ラボ 4.18.4 で検証済み | 確認済み | 未実施 |
 | [CVE-2026-13355](CVE-2026-13355) | Meta Box AIO | 3.1 9.8 (Wordfence) | Meta Box AIO <= 3.11.0; MB Frontend Submission <= 4.5.6; MB User Profile <= 3.11.0 | 3.12.0 | 未認証でフロントエンド送信の連鎖により管理者アカウント作成；公開 mbfs フォームが必要、未検証 | 確認済み | 未実施 |

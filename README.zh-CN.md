@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (145)
+### Web / CMS (144)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -63,7 +63,6 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-119258](CVE-2026-119258) | Swipe WordPress plugin | 3.1 8.1 (GHSA) | Swipe WordPress plugin <= 1.4 | no vendor patch at disclosure | 未授权 AJAX 处理器为任意活跃会话发会话 cookie；管理员接管，未核实 | 已确认 | 待复现 |
 | [CVE-2026-100105](CVE-2026-100105) | Grafana | 3.1 7.7 (GHSA) | Grafana 12.4.0–12.4.13, 13.0.0–13.0.11, 13.1.0–13.1.8, 13.2.0–13.2.4 | 12.4.14 / 13.0.12 / 13.1.9 / 13.2.5 | 联系点授权绕过（schema 降级）；告警载荷被改道，实验有据 | 已确认 | 待复现 |
 | [CVE-2026-129357](CVE-2026-129357) | Magma NMS | 4.0 2.1 (VulnDB); 3.1 6.3 (VulnDB) | Magma <= 1.9.0 | no upstream fix (synthetic remediation in lab) | host 组织只读成员一次 POST 制造 SUPERUSER；实验有据 | 已确认 | 待复现 |
-| [CVE-2026-13181](CVE-2026-13181) | Telerik UI for ASP.NET AJAX | 3.1 8.1 (Progress) | Telerik UI for ASP.NET AJAX 2010.1.309 < 2026.2.708 | 2026.2.708 | 未授权 padding oracle 链致反序列化 RCE；须 RadAsyncUpload 页面与详细报错，未核实 | 已确认 | 待复现 |
 | [CVE-2026-131850](CVE-2026-131850) | ILIAS | 4.0 8.6 (VulnCheck) | ILIAS 11.0 - 11.5.x | 11.6 | 管理员 ORDER BY 注入（注册码表）；布尔探针与盲注提取，未核实 | 已确认 | 待复现 |
 | [CVE-2026-13447](CVE-2026-13447) | MStore API | 3.1 9.8 (Wordfence) | MStore API <= 4.20.0 (lab 4.18.4) | 4.21.1 | 未认证 JWT 伪造接管管理员；签名从不校验，实验室 4.18.4 已验证 | 已确认 | 待复现 |
 | [CVE-2026-13355](CVE-2026-13355) | Meta Box AIO | 3.1 9.8 (Wordfence) | Meta Box AIO <= 3.11.0; MB Frontend Submission <= 4.5.6; MB User Profile <= 3.11.0 | 3.12.0 | 未认证经前端提交链创建管理员账号；须公开 mbfs 表单，未核实 | 已确认 | 待复现 |
