@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (144)
+### Web / CMS (145)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -166,6 +166,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | Unauthenticated heap buffer overflow via WMS GetLegendGraphic crashing the process; crash PoC only, RCE not demonstrated | Confirmed | Pending |
 | [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | Unauthenticated stored XSS via numeric HTML entities with leading zeros in URL attributes; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | Incorrect authorization in Module::saveRecord() allows authenticated users to write to unauthorized modules and escalate to Admin; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-120539](CVE-2026-120539) | Restrictions for BuddyPress | 3.1 9.8 (NVD) | <= 1.5.4 (requires BuddyPress and Paid Memberships Pro both active) | 1.5.5 | Unauthenticated code injection via {${...}} interpolation of the request URI in eval(); detection PoC triggers the injection and echoes a marker | Confirmed | Pending |
 
 ### AI / LLM (20)
 

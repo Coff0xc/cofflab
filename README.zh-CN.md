@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (144)
+### Web / CMS (145)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -166,6 +166,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | 未认证攻击者经 WMS GetLegendGraphic 触发堆缓冲区溢出致进程崩溃；仅崩溃型 PoC，未证明 RCE | 已确认 | 待复现 |
 | [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | 未认证访客经 URL 属性中带前导零的数字 HTML 实体致存储型 XSS；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | 已认证用户经 saveRecord() 向未授权模块写数据、可提权至管理员；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-120539](CVE-2026-120539) | Restrictions for BuddyPress | 3.1 9.8 (NVD) | <= 1.5.4 (requires BuddyPress and Paid Memberships Pro both active) | 1.5.5 | 未授权代码注入：请求 URI 经 {${...}} 插值进入 eval()；检测型 PoC 触发注入并回显 marker | 已确认 | 待复现 |
 
 ### AI / LLM (20)
 

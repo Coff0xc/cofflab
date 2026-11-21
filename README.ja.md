@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (144)
+### Web / CMS (145)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -166,6 +166,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-77326](CVE-2026-77326) | MapServer | 3.1 8.6 (GHSA) | MapServer 8.2.0 through 8.6.5 (WMS GetLegendGraphic) | 8.6.5 | 未認証の攻撃者が WMS GetLegendGraphic でヒープバッファオーバーフローを起こしプロセスをクラッシュ；クラッシュ PoC のみ、RCE は未実証 | 確認済み | 未実施 |
 | [CVE-2026-94564](CVE-2026-94564) | NukeViet CMS | 3.1 8.2 (GHSA) | NukeViet CMS before 4.6.01 (Contact module) | 4.6.01 | 未認証の訪問者が URL 属性内の先行ゼロ付き数値 HTML エンティティで stored XSS；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | 認証済みユーザーが saveRecord() で未認可モジュールに書き込み、管理者に昇格可能；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
+| [CVE-2026-120539](CVE-2026-120539) | Restrictions for BuddyPress | 3.1 9.8 (NVD) | <= 1.5.4 (requires BuddyPress and Paid Memberships Pro both active) | 1.5.5 | 未認証コードインジェクション：リクエスト URI が {${...}} 補間経由で eval() に入る；検出型 PoC がインジェクションをトリガーしマーカーを返す | 確認済み | 未実施 |
 
 ### AI / LLM (20)
 
