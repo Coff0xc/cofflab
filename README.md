@@ -346,7 +346,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126229](CVE-2026-126229) | FortiManager / FortiAnalyzer | 3.1 9.1 (Fortinet) | FortiManager / FortiAnalyzer 8.0.0-8.0.1 / 7.6.0-7.6.7 / 7.4.0-7.4.11 / 7.2.0-7.2.12 / 7.0 all | 8.0.2 / 7.6.8 / 7.4.12 / 7.2.13 (7.0 migrate) | Authorization bypass through a user-controlled key in dmserver; an authenticated administrator may reach other VDOMs through crafted HTTP requests; version-check tool only, unverified | Confirmed | Pending |
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | Pre-authentication SSRF in the OFTP service of FortiAnalyzer and FortiManager with FortiAnalyzer features; an attacker reaching the OFTP port may make the server issue requests; version-check tool only, unverified | Confirmed | Pending |
 
-### Runtime / Framework / Browser (78)
+### Runtime / Framework / Browser (79)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -428,6 +428,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-86017](CVE-2026-86017) | isomorphic-git | 3.1 8.0 (GHSA) | isomorphic-git before 1.38.8 (cherry-pick symlink) | 1.38.8 | Cherry-pick follows symlinks and writes attacker blobs outside the worktree; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-104711](CVE-2026-104711) | Apache Struts | 3.1 9.8 (NVD); 3.1 8.1 (Apache) | 2.0.0-2.3.37, 2.5.0-2.5.33, 6.0.0-6.11.0, 7.0.0-7.3.0 | 6.12.0 (6.x), 7.4.0 (7.x) | OGNL injection via legacy RestfulActionMapper; PoC demos eval and exec in Docker lab, output in X_Matched_Action; exec needs lab guard relaxations | Confirmed | Pending |
 | [CVE-2026-133325](CVE-2026-133325) | Apache Tomcat | 3.1 9.8 (NVD) | 11.0.28-11.0.29, 10.1.62, 9.0.124 |  | Key exchange without entity authentication in Apache Tomcat; PoC is version-fingerprint detection only, no key-exchange attack (requires MITM position); PoC claimed ranges mismatch advisory | Confirmed | Pending |
+| [CVE-2026-95517](CVE-2026-95517) | Apache Tomcat | 3.1 9.1 (NVD) | 11.0.0-M1-11.0.27, 10.1.0-M1-10.1.61, 9.0.13-9.0.123 | 11.0.29, 10.1.62, 9.0.124 | EncryptInterceptor without integrity check in Apache Tomcat; PoC is token bit-flip tampering detection only | Confirmed | Pending |
 
 ### Database (11)
 
