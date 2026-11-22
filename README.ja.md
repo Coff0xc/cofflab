@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (148)
+### Web / CMS (149)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -170,6 +170,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-3300](CVE-2026-3300) | Everest Forms Pro | 3.1 9.8 (NVD) | <= 1.9.12 (requires Calculation Addon / Complex Calculation enabled) |  | 未認証 PHP コードインジェクション（Calculation Addon）；PoC がインジェクションをトリガーし PWNED を返す；2026-04-13 から実利用 | 確認済み | 未実施 |
 | [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (9119a7d8-5eab-497f-8521-727c672e3725); 4.0 9.3 (9119a7d8-5eab-497f-8521-727c672e3725) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### AI / LLM (20)
 
@@ -196,7 +197,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 悪意ある bundle の logging.conf がワークフロー構築時に fileConfig により評価されコード実行；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未認証の攻撃者が登録時に provider 値を偽造しアカウント乗っ取り；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (149)
+### ネットワークとセキュリティ (150)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -349,6 +350,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | FortiAnalyzer／FortiManager の OFTP サービスにおけるサーバーサイドリクエストフォージェリ；バージョン確認ツールのみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133993](CVE-2026-133993) | D-Link DIR-600L | 4.0 9.3 (NVD); 3.1 10.0 (NVD) | 2.17b02 |  | gena.cgi GENA ハンドラの service 引数によるスタックバッファオーバーフロー；検出型 PoC のみ | 確認済み | 未実施 |
 | [CVE-2026-105016](CVE-2026-105016) | Microsoft QUIC (msquic) | 3.1 9.8 (Microsoft) | Microsoft QUIC (msquic) before the October 13, 2026 fixes; any service built on a vulnerable msquic (HTTP/3 servers, QUIC services) | Microsoft October 13, 2026 updates — Windows 11 builds 10.0.26100.9711 / 10.0.26200.9711 / 10.0.26300.9711 (KB5127648); .NET 8.0.32 / 9.0.21 / 10.0.14 | CWE-122; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
+| [CVE-2026-133680](CVE-2026-133680) | D-Link DCS-935L | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | D-Link DCS-935L 1.10.01 | Unknown — no fixed firmware version identified in VulDB/NVD as of 2026-11-22 | CWE-78; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (84)
 

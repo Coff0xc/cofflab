@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (148)
+### Web / CMS (149)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -170,6 +170,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-3300](CVE-2026-3300) | Everest Forms Pro | 3.1 9.8 (NVD) | <= 1.9.12 (requires Calculation Addon / Complex Calculation enabled) |  | Unauthenticated PHP code injection via Calculation Addon; PoC triggers the injection and echoes PWNED; in-the-wild since 2026-04-13 | Confirmed | Pending |
 | [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (9119a7d8-5eab-497f-8521-727c672e3725); 4.0 9.3 (9119a7d8-5eab-497f-8521-727c672e3725) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### AI / LLM (20)
 
@@ -196,7 +197,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | Malicious bundle logging.conf is eval'd by fileConfig at workflow construction; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | Unauthenticated account takeover via forged provider value at registration; detection PoC only, unverified | Confirmed | Pending |
 
-### Network & Security (149)
+### Network & Security (150)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -349,6 +350,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-126260](CVE-2026-126260) | FortiAnalyzer / FortiManager | 3.1 9.0 (Fortinet) | FortiAnalyzer / FortiManager 8.0.0 / 7.6.0-7.6.7 / 7.4.0-7.4.11 (7.2 not affected) | 8.0.1 / 7.6.8 / 7.4.12 | Pre-authentication SSRF in the OFTP service of FortiAnalyzer and FortiManager with FortiAnalyzer features; an attacker reaching the OFTP port may make the server issue requests; version-check tool only, unverified | Confirmed | Pending |
 | [CVE-2026-133993](CVE-2026-133993) | D-Link DIR-600L | 4.0 9.3 (NVD); 3.1 10.0 (NVD) | 2.17b02 |  | Stack-based buffer overflow in gena.cgi GENA handler via service argument; detection PoC only | Confirmed | Pending |
 | [CVE-2026-105016](CVE-2026-105016) | Microsoft QUIC (msquic) | 3.1 9.8 (Microsoft) | Microsoft QUIC (msquic) before the October 13, 2026 fixes; any service built on a vulnerable msquic (HTTP/3 servers, QUIC services) | Microsoft October 13, 2026 updates — Windows 11 builds 10.0.26100.9711 / 10.0.26200.9711 / 10.0.26300.9711 (KB5127648); .NET 8.0.32 / 9.0.21 / 10.0.14 | CWE-122; RCE in local/Docker lab | Confirmed | Pending |
+| [CVE-2026-133680](CVE-2026-133680) | D-Link DCS-935L | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | D-Link DCS-935L 1.10.01 | Unknown — no fixed firmware version identified in VulDB/NVD as of 2026-11-22 | CWE-78; RCE in local/Docker lab | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (84)
 
