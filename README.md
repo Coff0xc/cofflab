@@ -352,7 +352,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-105016](CVE-2026-105016) | Microsoft QUIC (msquic) | 3.1 9.8 (Microsoft) | Microsoft QUIC (msquic) before the October 13, 2026 fixes; any service built on a vulnerable msquic (HTTP/3 servers, QUIC services) | Microsoft October 13, 2026 updates — Windows 11 builds 10.0.26100.9711 / 10.0.26200.9711 / 10.0.26300.9711 (KB5127648); .NET 8.0.32 / 9.0.21 / 10.0.14 | CWE-122; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-133680](CVE-2026-133680) | D-Link DCS-935L | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | D-Link DCS-935L 1.10.01 | Unknown — no fixed firmware version identified in VulDB/NVD as of 2026-11-22 | CWE-78; RCE in local/Docker lab | Confirmed | Pending |
 
-### Runtime / Framework / Browser (84)
+### Runtime / Framework / Browser (86)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -440,6 +440,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133120](CVE-2026-133120) | @fastify/express | 3.1 9.1 (NVD) | < 4.0.10 | 4.0.10 | CWE-174; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-133250](CVE-2026-133250) | @fastify/middie | 3.1 9.1 (NVD) | <= 9.3.7 | 9.3.8 | CWE-288; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-133867](CVE-2026-133867) | @fastify/express | 3.1 9.1 (NVD) | 4.0.7-4.0.9 | 4.0.10 | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### Database (12)
 

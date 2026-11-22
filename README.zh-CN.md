@@ -352,7 +352,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-105016](CVE-2026-105016) | Microsoft QUIC (msquic) | 3.1 9.8 (Microsoft) | Microsoft QUIC (msquic) before the October 13, 2026 fixes; any service built on a vulnerable msquic (HTTP/3 servers, QUIC services) | Microsoft October 13, 2026 updates — Windows 11 builds 10.0.26100.9711 / 10.0.26200.9711 / 10.0.26300.9711 (KB5127648); .NET 8.0.32 / 9.0.21 / 10.0.14 | CWE-122; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-133680](CVE-2026-133680) | D-Link DCS-935L | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | D-Link DCS-935L 1.10.01 | Unknown — no fixed firmware version identified in VulDB/NVD as of 2026-11-22 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (84)
+### 运行环境 / 框架 / 浏览器 (86)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -440,6 +440,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133120](CVE-2026-133120) | @fastify/express | 3.1 9.1 (NVD) | < 4.0.10 | 4.0.10 | CWE-174; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-133250](CVE-2026-133250) | @fastify/middie | 3.1 9.1 (NVD) | <= 9.3.7 | 9.3.8 | CWE-288; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-133867](CVE-2026-133867) | @fastify/express | 3.1 9.1 (NVD) | 4.0.7-4.0.9 | 4.0.10 | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 数据库 (12)
 
