@@ -458,7 +458,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-6460](CVE-2026-6460) | PostgreSQL | 3.1 8.8 (PostgreSQL) | PostgreSQL < 18.7, 17.12, 16.16, 15.20, 14.25 | 18.7 / 17.12 / 16.16 / 15.20 / 14.25 | Type confusion in PostgreSQL allows an object creator to execute arbitrary code via ALTER ... SET DATA TYPE; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-134292](CVE-2026-134292) | SurrealDB | 4.0 9.3 (NVD); 3.1 9.8 (NVD) | < 4.0.0 | 4.0.0 | CWE-862; PoC triggers the vulnerability | Confirmed | Pending |
 
-### OS / System / DevOps (50)
+### OS / System / DevOps (52)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -512,6 +512,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130779](CVE-2026-130779) | Incus | 4.0 8.5 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Path traversal in Incus custom volume backup snapshot names lets an authorized importer delete arbitrary host directories as root; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 | Incus operation events expose certificate and cluster join tokens and skip authorization on cancel, letting restricted clients gain full server access; detection-only PoC, unverified | Confirmed | Pending |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 | Unauthenticated admin account creation in OpenPLC Runtime via a race condition in the user-existence check; detection-only PoC, unverified | Confirmed | Pending |
+| [CVE-2026-111760](CVE-2026-111760) | Git | 3.1 8.0 (GHSA) | Git 2.50.2、2.51.3、2.52.1、2.53.1、2.54.1、2.55.1、2.56.1 之前版本 | 2.50.2、2.51.3、2.52.1、2.53.1、2.54.1、2.55.1、2.56.1 | CWE-59 | Confirmed | Pending |
+| [CVE-2026-97631](CVE-2026-97631) | EDK II | 4.0 9.5 (TianoCore); 3.1 8.8 (Red Hat) | TianoCore EDK II NetworkPkg UefiPxeBcDxe（edk2-stable202608 及更早） | 上游主线 PR #13200/#13302（2026-10-15 合并）；Red Hat RHSA-2026:96240 | CWE-787 | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
