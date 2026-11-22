@@ -192,7 +192,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-131304](CVE-2026-131304) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 租户越权读数据/冒认操作；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-131305](CVE-2026-131305) | Splunk AI Assistant | 3.1 8.1 (Splunk) | Splunk AI Assistant <2.0.0 | 2.0.0 | Splunk AI Assistant 未授权改功能配置；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-93328](CVE-2026-93328) | Google Cloud MCP Toolbox for Databases | 4.0 9.3 (GoogleCloud) | Google Cloud MCP Toolbox for Databases 1.2.0-1.4.0 | past 1.4.0 + allowlists (googleapis/mcp-toolbox#3454) | Google Cloud MCP Toolbox 云存储源路径穿越与缺失授权，未认证外泄宿主文件并覆写任意本地文件；实验室复现 PoC、未核实 | 已确认 | 待复现 |
-| [CVE-2026-133968](CVE-2026-133968) | MONAI Label | 3.1 9.8 (MITRE) | MONAI Label through 0.8.5 | Fix PR #1915 merged 2026-10-19; no tagged release as of 2026-11-21 | 数据存储上传接口路径遍历致任意文件写入、可致 RCE；2026 年 9 月起已在野利用，暂无公开 PoC | 已确认 | 待复现 |
+| [CVE-2026-133968](CVE-2026-133968) | MONAI Label | 3.1 9.8 (MITRE) | MONAI Label through 0.8.5 | 0.8.6 (security release 2026-11-22; fix PR #1915) | 数据存储上传接口路径遍历致任意文件写入、可致 RCE；2026 年 9 月起已在野利用，暂无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | 含 NaN/inf 的 DICOM 致 MONAILabel 服务器崩溃与推理损坏；崩溃型 PoC、本仓未核实 | 已确认 | 待复现 |
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 恶意 bundle 的 logging.conf 在工作流构造时被 fileConfig 求值致代码执行；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未认证攻击者经注册接口伪造 provider 值致账户接管；仅检测型 PoC、未核实 | 已确认 | 待复现 |
