@@ -94,7 +94,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133083](CVE-2026-133083) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity Server Health 报告存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-133091](CVE-2026-133091) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity 用户页面存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-22310](CVE-2026-22310) | JTL-Shop | 3.1 8.0 (JTL); 4.0 7.6 (JTL) | JTL-Shop 5.5.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (2026-11-11) | JTL-Shop 404 重定向存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
-| [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion 服务端请求伪造；检测型 PoC，未核实 | 已确认 | 待复现 |
+| [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion 服务端请求伪造；检测型 PoC，未核实 | 已确认 | ◐ 部分 |
 | [CVE-2026-106624](CVE-2026-106624) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion 代码注入远程代码执行；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-22308](CVE-2026-22308) | JTL-Shop | 3.1 9.3 (ENISA); 4.0 8.6 (ENISA) | JTL-Shop 5.0.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (JTL advisory 2026-11-12) | JTL-Shop OPC 预览模式反射 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |
 | [CVE-2026-130158](CVE-2026-130158) | RepoManager | 3.1 9.0 (GitHub) | RepoManager <5.13.3 | 5.13.3 | RepoManager 存储型 XSS；检测型 PoC，未核实 | 已确认 | 待复现 |

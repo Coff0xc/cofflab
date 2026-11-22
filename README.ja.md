@@ -94,7 +94,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133083](CVE-2026-133083) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity Server Health レポートの格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-133091](CVE-2026-133091) | TeamCity | 3.1 8.0 (JetBrains) | JetBrains TeamCity before 2026.2.2, 2026.1.6 | 2026.2.2 / 2026.1.6 | TeamCity ユーザーページの格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-22310](CVE-2026-22310) | JTL-Shop | 3.1 8.0 (JTL); 4.0 7.6 (JTL) | JTL-Shop 5.5.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (2026-11-11) | JTL-Shop 404 リダイレクトの格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
-| [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion の SSRF；検出型 PoC、未検証 | 確認済み | 未実施 |
+| [CVE-2026-106622](CVE-2026-106622) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion の SSRF；検出型 PoC、未検証 | 確認済み | ◐ 部分 |
 | [CVE-2026-106624](CVE-2026-106624) | ColdFusion | 3.1 10.0 (Adobe) | Adobe ColdFusion 2025 before Update 14, 2023 before Update 26 | 2025 Update 14 / 2023 Update 26 (APSB26-144) | ColdFusion のコードインジェクションによるリモートコード実行；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-22308](CVE-2026-22308) | JTL-Shop | 3.1 9.3 (ENISA); 4.0 8.6 (ENISA) | JTL-Shop 5.0.0-5.8.3 | 5.8.4 / 5.7.6 / 5.6.6 / 5.5.5 (JTL advisory 2026-11-12) | JTL-Shop の OPC プレビューモード経由の反射型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-130158](CVE-2026-130158) | RepoManager | 3.1 9.0 (GitHub) | RepoManager <5.13.3 | 5.13.3 | RepoManager のホスト報告パッケージメタデータ経由の格納型 XSS；検出型 PoC、未検証 | 確認済み | 未実施 |
