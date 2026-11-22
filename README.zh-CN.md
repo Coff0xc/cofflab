@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (146)
+### Web / CMS (148)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -168,6 +168,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | 已认证用户经 saveRecord() 向未授权模块写数据、可提权至管理员；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-120539](CVE-2026-120539) | Restrictions for BuddyPress | 3.1 9.8 (NVD) | <= 1.5.4 (requires BuddyPress and Paid Memberships Pro both active) | 1.5.5 | 未授权代码注入：请求 URI 经 {${...}} 插值进入 eval()；检测型 PoC 触发注入并回显 marker | 已确认 | 待复现 |
 | [CVE-2026-3300](CVE-2026-3300) | Everest Forms Pro | 3.1 9.8 (NVD) | <= 1.9.12 (requires Calculation Addon / Complex Calculation enabled) |  | 未授权 PHP 代码注入（Calculation Addon）；PoC 触发注入并回显 PWNED；自 2026-04-13 在野利用 | 已确认 | 待复现 |
+| [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### AI / LLM (20)
 

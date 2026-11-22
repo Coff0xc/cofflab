@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (146)
+### Web / CMS (148)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -168,6 +168,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | Incorrect authorization in Module::saveRecord() allows authenticated users to write to unauthorized modules and escalate to Admin; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-120539](CVE-2026-120539) | Restrictions for BuddyPress | 3.1 9.8 (NVD) | <= 1.5.4 (requires BuddyPress and Paid Memberships Pro both active) | 1.5.5 | Unauthenticated code injection via {${...}} interpolation of the request URI in eval(); detection PoC triggers the injection and echoes a marker | Confirmed | Pending |
 | [CVE-2026-3300](CVE-2026-3300) | Everest Forms Pro | 3.1 9.8 (NVD) | <= 1.9.12 (requires Calculation Addon / Complex Calculation enabled) |  | Unauthenticated PHP code injection via Calculation Addon; PoC triggers the injection and echoes PWNED; in-the-wild since 2026-04-13 | Confirmed | Pending |
+| [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### AI / LLM (20)
 

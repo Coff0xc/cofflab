@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (146)
+### Web / CMS (148)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -168,6 +168,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133874](CVE-2026-133874) | Iceburg CRM | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Iceburg CRM through 5.0.0 | No known patch | 認証済みユーザーが saveRecord() で未認可モジュールに書き込み、管理者に昇格可能；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-120539](CVE-2026-120539) | Restrictions for BuddyPress | 3.1 9.8 (NVD) | <= 1.5.4 (requires BuddyPress and Paid Memberships Pro both active) | 1.5.5 | 未認証コードインジェクション：リクエスト URI が {${...}} 補間経由で eval() に入る；検出型 PoC がインジェクションをトリガーしマーカーを返す | 確認済み | 未実施 |
 | [CVE-2026-3300](CVE-2026-3300) | Everest Forms Pro | 3.1 9.8 (NVD) | <= 1.9.12 (requires Calculation Addon / Complex Calculation enabled) |  | 未認証 PHP コードインジェクション（Calculation Addon）；PoC がインジェクションをトリガーし PWNED を返す；2026-04-13 から実利用 | 確認済み | 未実施 |
+| [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### AI / LLM (20)
 
