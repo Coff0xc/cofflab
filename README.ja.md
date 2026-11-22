@@ -33,7 +33,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-111559](CVE-2026-111559) | Batflat CMS | 4.0 9.3 (CERT.pl) | Batflat CMS 1.2.0–1.3.7 | none (project unmaintained) | /contact フォームの SSTI による未認証 RCE；curl PoC のみ、修正なし（プロジェクトは保守終了） | 確認済み | 未実施 |
 | [CVE-2026-126173](CVE-2026-126173) | AutomatorWP Pro Webhooks | 3.1 9.8 (Wordfence) | AutomatorWP Pro Webhooks <= 1.4.4 | 1.4.5 | 未認証の任意パスワードリセット/管理者奪取（ラボ）；1.4.5 で修正 | 確認済み | 未実施 |
 | [CVE-2026-48356](CVE-2026-48356) | Adobe Commerce / Magento | 3.1 9.3 (Adobe) | Adobe Commerce / Magento Open Source 2.4.4-2.4.9 | 2.4.9-p2 | 低権限 REST トークンでファイルアップロードから webshell 経由 RCE（ラボ）；Sansec SA-2026-0027 | 確認済み | 未実施 |
-| [CVE-2026-119977](CVE-2026-119977) | WordPress コア | 3.1 8.1 (Wordfence) | WordPress Core 4.7.0-7.1.3 | 7.1.4 | アップグレードウィンドウの TOCTOU で攻撃者の wp-config.php を配置；設定奪取から RCE（ラボ）；KEV 収載 | 確認済み | 未実施 |
+| [CVE-2026-119977](CVE-2026-119977) | WordPress コア | 3.1 8.1 (Wordfence) | WordPress Core 4.7.0-7.1.3 | 7.1.4 | アップグレードウィンドウの TOCTOU で攻撃者の wp-config.php を配置；設定奪取から RCE（ラボ）；KEV 収載 | 確認済み | ◐ 部分 |
 | [CVE-2026-110447](CVE-2026-110447) | Collabora Online 内蔵 CODE Server | 3.1 9.8 (NVD)；4.0 9.2 (MITRE) | Collabora Online Built-in CODE Server (richdocumentscode) before 26.4.303 | 26.4.303 | proxy.php 経由の未認証コマンドインジェクション；1-day PoC；KEV 収載、実地での悪用を確認 | 確認済み | — 対象なし |
 | [CVE-2026-48907](CVE-2026-48907) | Joomla! JCE | 3.1 9.8 (NVD)；4.0 10.0 (Joomla) | Joomla! JCE extension < 2.9.99.5 | 2.9.99.5 | 未認証で JCE プロファイルを作成し PHP をアップロードして RCE；KEV 収載 | 確認済み | 未実施 |
 | [CVE-2026-125423](CVE-2026-125423) | Gitea 自動初期化 | 3.1 8.8 (NVD)；3.1 8.5 (GHSA) | Gitea before 28.4.0 (auto_init=true, Default README template) | 28.4.0 | ラボ RCE：auto-init レース＋シンボリックリンクで hook 上書き；リポジトリ作成権限が必要 | 確認済み | 未実施 |
