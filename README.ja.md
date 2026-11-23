@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (175)
+### Web / CMS (179)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -197,6 +197,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-135164](CVE-2026-135164) | Formance Ledger | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | Formance Ledger 2.2.0-beta.3 before 2.4.18 | 2.4.18 | CWE-89; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-135208](CVE-2026-135208) | Kerberos Agent | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Kerberos Agent before 3.14.4 | 3.14.4 | CWE-1394; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-135174](CVE-2026-135174) | Softaculous Virtualizor | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Softaculous Virtualizor before 3.2.9 | 3.2.9 | CWE-89; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-133469](CVE-2026-133469) | Xen Orchestra | 3.1 9.8 (GHSA) | Xen Orchestra before 6.9.2 / 6.10.1 | 6.9.2 / 6.10.1 | CWE-287; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-135429](CVE-2026-135429) | Tabbycat | 4.0 8.8 (VulnCheck); 3.1 9.1 (VulnCheck) | Tabbycat 2.9.0 through 2.12.1 |  | CWE-863; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-135436](CVE-2026-135436) | KindleEar | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | KindleEar 3.0.0 through 3.5.3 |  | CWE-94; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-95793](CVE-2026-95793) | HPE Morpheus Manager | 3.1 8.8 (HPE) | HPE Morpheus Software 9.1.0-2 and earlier, 9.0.2-3 and earlier, 8.1.2-2 and earlier | 9.1.0-3 / 9.0.2-4 / 8.1.2-3 | PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### AI / LLM (21)
 
@@ -224,7 +228,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未認証の攻撃者が登録時に provider 値を偽造しアカウント乗っ取り；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (163)
+### ネットワークとセキュリティ (167)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -391,6 +395,10 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-115899](CVE-2026-115899) | Cribl Stream | 4.0 9.3 (Cribl); 3.1 9.8 (Cribl) | Cribl Stream 4.20.4 and earlier | 4.21.0 | CWE-94; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-115901](CVE-2026-115901) | Cribl Stream | 4.0 8.5 (Cribl); 3.1 9.0 (Cribl) | Cribl Stream 4.20.4 and earlier | 4.21.0 | CWE-79; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134882](CVE-2026-134882) | TOTOLINK A7100RU | 4.0 10.0 (VulDB); 3.1 10.0 (VulDB) | TOTOLINK A7100RU 7.4cu.2313_B20191024 |  | CWE-77; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-101218](CVE-2026-101218) | Dell Enterprise Sonic Distribution | 3.1 8.2 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-103783](CVE-2026-103783) | Dell Enterprise Sonic Distribution | 3.1 8.2 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-103788](CVE-2026-103788) | Dell Enterprise Sonic Distribution | 3.1 9.6 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134624](CVE-2026-134624) | N-able MailAssure (SpamExperts) | 4.0 9.3 (N-able) | N-able MailAssure (SpamExperts) before 20261121.1943 | 20261121.1943 | CWE-918; バージョン確認のみ | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (88)
 
