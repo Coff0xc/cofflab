@@ -361,7 +361,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-129796](CVE-2026-129796) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-191; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-133985](CVE-2026-133985) | TEW-657BRM | 3.1 8.8 (VulDB); 4.0 7.4 (VulDB) | TEW-657BRM 1.00.1 |  | CWE-119; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (86)
+### 运行环境 / 框架 / 浏览器 (87)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -451,6 +451,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-133867](CVE-2026-133867) | @fastify/express | 3.1 9.1 (NVD) | 4.0.7-4.0.9 | 4.0.10 | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC 在实验室复现 | 已确认 | 待复现 |
 
 ### 数据库 (13)
 

@@ -361,7 +361,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-129796](CVE-2026-129796) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-191; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-133985](CVE-2026-133985) | TEW-657BRM | 3.1 8.8 (VulDB); 4.0 7.4 (VulDB) | TEW-657BRM 1.00.1 |  | CWE-119; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (86)
+### ランタイム / フレームワーク / ブラウザ (87)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -451,6 +451,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-133867](CVE-2026-133867) | @fastify/express | 3.1 9.1 (NVD) | 4.0.7-4.0.9 | 4.0.10 | CWE-287; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC がラボで再現 | 確認済み | 未実施 |
 
 ### データベース (13)
 
