@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (150)
+### Web / CMS (155)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -172,6 +172,11 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (9119a7d8-5eab-497f-8521-727c672e3725); 4.0 9.3 (9119a7d8-5eab-497f-8521-727c672e3725) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-132165](CVE-2026-132165) | Drupal core | unknown | Drupal core <10.6.22, 11.0.0-11.3.21, 11.4.0-11.4.12 | 10.6.22 / 11.3.22 / 11.4.13 | 权限提升 | 已确认 | 待复现 |
+| [CVE-2026-125294](CVE-2026-125294) | Nexter Blocks Pro | 3.1 9.8 (Wordfence) | Nexter Blocks Pro up to and including 5.0.10 |  | CWE-269; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134433](CVE-2026-134433) | Frappe ERPNext | 4.0 8.4 (VulnCheck); 3.1 8.5 (VulnCheck) | ERPNext before 15.124.2 and 16.x before 16.53.0 | 15.124.2 / 16.53.0 | CWE-862; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134448](CVE-2026-134448) | Dockhand | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Dockhand 1.0.7 before 1.0.57 | 1.0.57 | CWE-22; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134451](CVE-2026-134451) | Dockhand | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Dockhand before 1.0.57 | 1.0.57 | CWE-269; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134452](CVE-2026-134452) | Dockhand | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | Dockhand before 1.0.57 | 1.0.57 | CWE-426; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### AI / LLM (20)
 
@@ -198,7 +203,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 恶意 bundle 的 logging.conf 在工作流构造时被 fileConfig 求值致代码执行；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未认证攻击者经注册接口伪造 provider 值致账户接管；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (151)
+### 网络与安全 (153)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -353,6 +358,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-105016](CVE-2026-105016) | Microsoft QUIC (msquic) | 3.1 9.8 (Microsoft) | Microsoft QUIC (msquic) before the October 13, 2026 fixes; any service built on a vulnerable msquic (HTTP/3 servers, QUIC services) | Microsoft October 13, 2026 updates — Windows 11 builds 10.0.26100.9711 / 10.0.26200.9711 / 10.0.26300.9711 (KB5127648); .NET 8.0.32 / 9.0.21 / 10.0.14 | CWE-122; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-133680](CVE-2026-133680) | D-Link DCS-935L | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | D-Link DCS-935L 1.10.01 | Unknown — no fixed firmware version identified in VulDB/NVD as of 2026-11-22 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-129794](CVE-2026-129794) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-787; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-129796](CVE-2026-129796) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-191; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-133985](CVE-2026-133985) | TEW-657BRM | 3.1 8.8 (VulDB); 4.0 7.4 (VulDB) | TEW-657BRM 1.00.1 |  | CWE-119; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (86)
 
@@ -445,7 +452,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 数据库 (12)
+### 数据库 (13)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -461,6 +468,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-116331](CVE-2026-116331) | PostgreSQL | 3.1 8.8 (PostgreSQL) | PostgreSQL < 18.7, 17.12, 16.16, 15.20, 14.25 | 18.7 / 17.12 / 16.16 / 15.20 / 14.25 | PostgreSQL min/max 聚合类型混淆，对象创建者可执行任意代码；检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-6460](CVE-2026-6460) | PostgreSQL | 3.1 8.8 (PostgreSQL) | PostgreSQL < 18.7, 17.12, 16.16, 15.20, 14.25 | 18.7 / 17.12 / 16.16 / 15.20 / 14.25 | PostgreSQL 类型混淆，对象创建者可经 ALTER ... SET DATA TYPE 执行任意代码；检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-134292](CVE-2026-134292) | SurrealDB | 4.0 9.3 (NVD); 3.1 9.8 (NVD) | < 4.0.0 | 4.0.0 | CWE-862; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134337](CVE-2026-134337) | ArcadeDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | ArcadeDB native-image server builds 26.8.1 before 26.11.1 | 26.11.1 | CWE-693; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 操作系统 / 系统 / DevOps (52)
 

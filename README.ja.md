@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (150)
+### Web / CMS (155)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -172,6 +172,11 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (9119a7d8-5eab-497f-8521-727c672e3725); 4.0 9.3 (9119a7d8-5eab-497f-8521-727c672e3725) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-132165](CVE-2026-132165) | Drupal core | unknown | Drupal core <10.6.22, 11.0.0-11.3.21, 11.4.0-11.4.12 | 10.6.22 / 11.3.22 / 11.4.13 | 権限昇格 | 確認済み | 未実施 |
+| [CVE-2026-125294](CVE-2026-125294) | Nexter Blocks Pro | 3.1 9.8 (Wordfence) | Nexter Blocks Pro up to and including 5.0.10 |  | CWE-269; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134433](CVE-2026-134433) | Frappe ERPNext | 4.0 8.4 (VulnCheck); 3.1 8.5 (VulnCheck) | ERPNext before 15.124.2 and 16.x before 16.53.0 | 15.124.2 / 16.53.0 | CWE-862; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134448](CVE-2026-134448) | Dockhand | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Dockhand 1.0.7 before 1.0.57 | 1.0.57 | CWE-22; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134451](CVE-2026-134451) | Dockhand | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Dockhand before 1.0.57 | 1.0.57 | CWE-269; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134452](CVE-2026-134452) | Dockhand | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | Dockhand before 1.0.57 | 1.0.57 | CWE-426; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### AI / LLM (20)
 
@@ -198,7 +203,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 悪意ある bundle の logging.conf がワークフロー構築時に fileConfig により評価されコード実行；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未認証の攻撃者が登録時に provider 値を偽造しアカウント乗っ取り；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (151)
+### ネットワークとセキュリティ (153)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -353,6 +358,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-105016](CVE-2026-105016) | Microsoft QUIC (msquic) | 3.1 9.8 (Microsoft) | Microsoft QUIC (msquic) before the October 13, 2026 fixes; any service built on a vulnerable msquic (HTTP/3 servers, QUIC services) | Microsoft October 13, 2026 updates — Windows 11 builds 10.0.26100.9711 / 10.0.26200.9711 / 10.0.26300.9711 (KB5127648); .NET 8.0.32 / 9.0.21 / 10.0.14 | CWE-122; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 | [CVE-2026-133680](CVE-2026-133680) | D-Link DCS-935L | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | D-Link DCS-935L 1.10.01 | Unknown — no fixed firmware version identified in VulDB/NVD as of 2026-11-22 | CWE-78; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 | [CVE-2026-129794](CVE-2026-129794) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-787; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-129796](CVE-2026-129796) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-191; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-133985](CVE-2026-133985) | TEW-657BRM | 3.1 8.8 (VulDB); 4.0 7.4 (VulDB) | TEW-657BRM 1.00.1 |  | CWE-119; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (86)
 
@@ -445,7 +452,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### データベース (12)
+### データベース (13)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -461,6 +468,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-116331](CVE-2026-116331) | PostgreSQL | 3.1 8.8 (PostgreSQL) | PostgreSQL < 18.7, 17.12, 16.16, 15.20, 14.25 | 18.7 / 17.12 / 16.16 / 15.20 / 14.25 | PostgreSQL の min/max 集計における型混同により、オブジェクト作成者が任意のコードを実行可能；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-6460](CVE-2026-6460) | PostgreSQL | 3.1 8.8 (PostgreSQL) | PostgreSQL < 18.7, 17.12, 16.16, 15.20, 14.25 | 18.7 / 17.12 / 16.16 / 15.20 / 14.25 | PostgreSQL の型混同により、オブジェクト作成者が ALTER ... SET DATA TYPE 経由で任意のコードを実行可能；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-134292](CVE-2026-134292) | SurrealDB | 4.0 9.3 (NVD); 3.1 9.8 (NVD) | < 4.0.0 | 4.0.0 | CWE-862; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134337](CVE-2026-134337) | ArcadeDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | ArcadeDB native-image server builds 26.8.1 before 26.11.1 | 26.11.1 | CWE-693; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### OS / システム / DevOps (52)
 
