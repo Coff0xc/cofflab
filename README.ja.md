@@ -170,7 +170,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-3300](CVE-2026-3300) | Everest Forms Pro | 3.1 9.8 (NVD) | <= 1.9.12 (requires Calculation Addon / Complex Calculation enabled) |  | 未認証 PHP コードインジェクション（Calculation Addon）；PoC がインジェクションをトリガーし PWNED を返す；2026-04-13 から実利用 | 確認済み | 未実施 |
 | [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
-| [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (9119a7d8-5eab-497f-8521-727c672e3725); 4.0 9.3 (9119a7d8-5eab-497f-8521-727c672e3725) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (CISA); 4.0 9.3 (CISA) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-132165](CVE-2026-132165) | Drupal core | unknown | Drupal core <10.6.22, 11.0.0-11.3.21, 11.4.0-11.4.12 | 10.6.22 / 11.3.22 / 11.4.13 | 権限昇格 | 確認済み | 未実施 |
 | [CVE-2026-125294](CVE-2026-125294) | Nexter Blocks Pro | 3.1 9.8 (Wordfence) | Nexter Blocks Pro up to and including 5.0.10 |  | CWE-269; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134433](CVE-2026-134433) | Frappe ERPNext | 4.0 8.4 (VulnCheck); 3.1 8.5 (VulnCheck) | ERPNext before 15.124.2 and 16.x before 16.53.0 | 15.124.2 / 16.53.0 | CWE-862; PoC が脆弱性をトリガー | 確認済み | 未実施 |
