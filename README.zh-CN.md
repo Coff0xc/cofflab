@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (163)
+### Web / CMS (170)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -185,6 +185,13 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134316](CVE-2026-134316) | @better-auth/electron | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | 1.5.0-beta.12 before 1.7.16 and 1.8.0-beta.0 before 1.8.0-beta.5 | 1.7.16 / 1.8.0-beta.5 | CWE-201; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134322](CVE-2026-134322) | better-auth | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | 0.4.12-beta.7 before 1.7.16 and 1.8.0-beta.0 before 1.8.0-beta.5 | 1.7.16 / 1.8.0-beta.5 | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134654](CVE-2026-134654) | Mailflare | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Mailflare before 48957fb | 48957fb | CWE-640; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-129024](CVE-2026-129024) | Everest Forms | 3.1 8.6 (Patchstack) | Everest Forms through 3.6.4 |  | CWE-22; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-131701](CVE-2026-131701) | WP Media Folder | 3.1 8.5 (Patchstack) | WP Media Folder through 6.2.8 |  | CWE-89; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-131705](CVE-2026-131705) | ProfileGrid | 3.1 8.5 (Patchstack) | ProfileGrid through 6.0.0.6 |  | CWE-89; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-131707](CVE-2026-131707) | ProfileGrid | 3.1 8.8 (Patchstack) | ProfileGrid through 6.0.0.6 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-131750](CVE-2026-131750) | Everest Forms | 3.1 8.6 (Patchstack) | Everest Forms through 3.6.4 |  | CWE-22; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134804](CVE-2026-134804) | Portainer | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | Portainer 2.39.0 before 2.39.9, 2.40.0 before 2.45.4, 3.0.0 before 3.1.0 | 2.39.9 / 2.45.4 / 3.1.0 | CWE-639; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134836](CVE-2026-134836) | Dashy | 3.1 8.1 (VulnCheck); 4.0 8.6 (VulnCheck) | Dashy 4.0.0 before 4.9.12 | 4.9.12 | CWE-346; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### AI / LLM (20)
 
@@ -464,7 +471,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC 在实验室复现 | 已确认 | 待复现 |
 
-### 数据库 (17)
+### 数据库 (18)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -485,6 +492,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134295](CVE-2026-134295) | SurrealDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | SurrealDB 3.0.0 before 4.0.0 | 4.0.0 | CWE-22; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134300](CVE-2026-134300) | SurrealDB | 4.0 7.2 (VulnCheck); 3.1 8.1 (VulnCheck) | SurrealDB 2.2.0 before 4.0.0 | 4.0.0 | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134309](CVE-2026-134309) | SurrealDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | SurrealDB 1.0.0 before 4.0.0 | 4.0.0 | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134803](CVE-2026-134803) | DBHub | 3.1 8.1 (VulnCheck); 4.0 7.2 (VulnCheck) | DBHub before 1.7.0 | 1.7.0 | CWE-436; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 操作系统 / 系统 / DevOps (52)
 
