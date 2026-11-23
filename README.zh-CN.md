@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (170)
+### Web / CMS (174)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -192,8 +192,12 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-131750](CVE-2026-131750) | Everest Forms | 3.1 8.6 (Patchstack) | Everest Forms through 3.6.4 |  | CWE-22; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134804](CVE-2026-134804) | Portainer | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | Portainer 2.39.0 before 2.39.9, 2.40.0 before 2.45.4, 3.0.0 before 3.1.0 | 2.39.9 / 2.45.4 / 3.1.0 | CWE-639; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134836](CVE-2026-134836) | Dashy | 3.1 8.1 (VulnCheck); 4.0 8.6 (VulnCheck) | Dashy 4.0.0 before 4.9.12 | 4.9.12 | CWE-346; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-135157](CVE-2026-135157) | Future AGI | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Future AGI before 1.51.0 | 1.51.0 | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-135161](CVE-2026-135161) | Interstellar | 4.0 9.2 (VulnCheck); 3.1 8.6 (VulnCheck) | Interstellar before 6.3.0 | 6.3.0 | CWE-918; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-135164](CVE-2026-135164) | Formance Ledger | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | Formance Ledger 2.2.0-beta.3 before 2.4.18 | 2.4.18 | CWE-89; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-135208](CVE-2026-135208) | Kerberos Agent | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Kerberos Agent before 3.14.4 | 3.14.4 | CWE-1394; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### AI / LLM (20)
+### AI / LLM (21)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -217,8 +221,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | 含 NaN/inf 的 DICOM 致 MONAILabel 服务器崩溃与推理损坏；崩溃型 PoC、本仓未核实 | 已确认 | 待复现 |
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 恶意 bundle 的 logging.conf 在工作流构造时被 fileConfig 求值致代码执行；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未认证攻击者经注册接口伪造 provider 值致账户接管；仅检测型 PoC、未核实 | 已确认 | 待复现 |
+| [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 网络与安全 (157)
+### 网络与安全 (159)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -379,8 +384,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-124010](CVE-2026-124010) | XWEB EVO | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | XWEB EVO before 5.6.2 | 5.6.2 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-124014](CVE-2026-124014) | XWEB EVO | 4.0 8.8 (VulnCheck); 3.1 9.1 (VulnCheck) | XWEB EVO 4.3.0 through 5.8.8 |  | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-102764](CVE-2026-102764) | BeyondTrust Remote Support | 4.0 9.3 (NVD) | BeyondTrust Remote Support <= 26.2.3 (self-hosted); Privileged Remote Access shares the affected code | BT26-05-RS patch (supported builds 24.3.1-26.2.3); BeyondTrust-hosted SaaS auto-patched 2026-10-08/09 | CWE-290; 本地/Docker 实验室 RCE; 公开 RCE | 已确认 | 待复现 |
+| [CVE-2026-103782](CVE-2026-103782) | Dell Enterprise Sonic Distribution | 3.1 9.9 (Dell) | Dell Enterprise Sonic Distribution prior to 4.6.1 | 4.6.1 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-135171](CVE-2026-135171) | Wing FTP Server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Wing FTP Server before 8.2.8 | 8.2.8 | CWE-341; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (87)
+### 运行环境 / 框架 / 浏览器 (88)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -471,6 +478,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC 在实验室复现 | 已确认 | 待复现 |
+| [CVE-2026-129975](CVE-2026-129975) | gpgme | 3.1 8.1 (Red Hat) | gpgme |  | CWE-415; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 数据库 (18)
 

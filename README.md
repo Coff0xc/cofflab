@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (170)
+### Web / CMS (174)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -192,8 +192,12 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-131750](CVE-2026-131750) | Everest Forms | 3.1 8.6 (Patchstack) | Everest Forms through 3.6.4 |  | CWE-22; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134804](CVE-2026-134804) | Portainer | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | Portainer 2.39.0 before 2.39.9, 2.40.0 before 2.45.4, 3.0.0 before 3.1.0 | 2.39.9 / 2.45.4 / 3.1.0 | CWE-639; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134836](CVE-2026-134836) | Dashy | 3.1 8.1 (VulnCheck); 4.0 8.6 (VulnCheck) | Dashy 4.0.0 before 4.9.12 | 4.9.12 | CWE-346; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135157](CVE-2026-135157) | Future AGI | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Future AGI before 1.51.0 | 1.51.0 | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135161](CVE-2026-135161) | Interstellar | 4.0 9.2 (VulnCheck); 3.1 8.6 (VulnCheck) | Interstellar before 6.3.0 | 6.3.0 | CWE-918; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135164](CVE-2026-135164) | Formance Ledger | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | Formance Ledger 2.2.0-beta.3 before 2.4.18 | 2.4.18 | CWE-89; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135208](CVE-2026-135208) | Kerberos Agent | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Kerberos Agent before 3.14.4 | 3.14.4 | CWE-1394; PoC triggers the vulnerability | Confirmed | Pending |
 
-### AI / LLM (20)
+### AI / LLM (21)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -217,8 +221,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-48705](CVE-2026-48705) | MONAI | 3.1 9.3 (GHSA) | MONAI before 1.6.1 (PydicomReader); MONAILabel deployments using it | MONAI 1.6.1 | Crafted DICOM with NaN/inf values crashes the MONAILabel server and corrupts inference; crash PoC, unverified in this repo | Confirmed | Pending |
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | Malicious bundle logging.conf is eval'd by fileConfig at workflow construction; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | Unauthenticated account takeover via forged provider value at registration; detection PoC only, unverified | Confirmed | Pending |
+| [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Network & Security (157)
+### Network & Security (159)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -379,8 +384,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-124010](CVE-2026-124010) | XWEB EVO | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | XWEB EVO before 5.6.2 | 5.6.2 | CWE-78; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-124014](CVE-2026-124014) | XWEB EVO | 4.0 8.8 (VulnCheck); 3.1 9.1 (VulnCheck) | XWEB EVO 4.3.0 through 5.8.8 |  | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-102764](CVE-2026-102764) | BeyondTrust Remote Support | 4.0 9.3 (NVD) | BeyondTrust Remote Support <= 26.2.3 (self-hosted); Privileged Remote Access shares the affected code | BT26-05-RS patch (supported builds 24.3.1-26.2.3); BeyondTrust-hosted SaaS auto-patched 2026-10-08/09 | CWE-290; RCE in local/Docker lab; public RCE | Confirmed | Pending |
+| [CVE-2026-103782](CVE-2026-103782) | Dell Enterprise Sonic Distribution | 3.1 9.9 (Dell) | Dell Enterprise Sonic Distribution prior to 4.6.1 | 4.6.1 | CWE-88; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135171](CVE-2026-135171) | Wing FTP Server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Wing FTP Server before 8.2.8 | 8.2.8 | CWE-341; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Runtime / Framework / Browser (87)
+### Runtime / Framework / Browser (88)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -471,6 +478,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-134814](CVE-2026-134814) | binary-parser | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | binary-parser before 2.3.1 | 2.3.1 | CWE-94; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC reproduces in lab | Confirmed | Pending |
+| [CVE-2026-129975](CVE-2026-129975) | gpgme | 3.1 8.1 (Red Hat) | gpgme |  | CWE-415; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### Database (18)
 
