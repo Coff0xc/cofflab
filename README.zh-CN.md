@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (149)
+### Web / CMS (150)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -171,6 +171,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (9119a7d8-5eab-497f-8521-727c672e3725); 4.0 9.3 (9119a7d8-5eab-497f-8521-727c672e3725) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-132165](CVE-2026-132165) | Drupal core | unknown | Drupal core <10.6.22, 11.0.0-11.3.21, 11.4.0-11.4.12 | 10.6.22 / 11.3.22 / 11.4.13 | 权限提升 | 已确认 | 待复现 |
 
 ### AI / LLM (20)
 
