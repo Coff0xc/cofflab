@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (155)
+### Web / CMS (157)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -177,6 +177,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-134448](CVE-2026-134448) | Dockhand | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Dockhand 1.0.7 before 1.0.57 | 1.0.57 | CWE-22; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134451](CVE-2026-134451) | Dockhand | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Dockhand before 1.0.57 | 1.0.57 | CWE-269; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134452](CVE-2026-134452) | Dockhand | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | Dockhand before 1.0.57 | 1.0.57 | CWE-426; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134258](CVE-2026-134258) | Admidio | 4.0 9.3 (VulnCheck); 3.1 8.7 (VulnCheck) | Admidio 5.0.0 before 5.0.18 | 5.0.18 | CWE-22; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134262](CVE-2026-134262) | Admidio | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Admidio 5.0.0 before 5.0.18 | 5.0.18 | CWE-79; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### AI / LLM (20)
 
@@ -203,7 +205,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 悪意ある bundle の logging.conf がワークフロー構築時に fileConfig により評価されコード実行；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未認証の攻撃者が登録時に provider 値を偽造しアカウント乗っ取り；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (153)
+### ネットワークとセキュリティ (154)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -360,6 +362,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-129794](CVE-2026-129794) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-787; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-129796](CVE-2026-129796) | SOES (Simple Open EtherCAT Slave) | 3.1 8.8 (RT-Labs) | SOES up to and including 3.2.0 | 3.2.1 | CWE-191; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-133985](CVE-2026-133985) | TEW-657BRM | 3.1 8.8 (VulDB); 4.0 7.4 (VulDB) | TEW-657BRM 1.00.1 |  | CWE-119; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134352](CVE-2026-134352) | Rclone | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Rclone from 1.51.0 before 1.76.0 | 1.76.0 | CWE-287; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (87)
 
@@ -453,7 +456,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC がラボで再現 | 確認済み | 未実施 |
 
-### データベース (13)
+### データベース (14)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -470,6 +473,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-6460](CVE-2026-6460) | PostgreSQL | 3.1 8.8 (PostgreSQL) | PostgreSQL < 18.7, 17.12, 16.16, 15.20, 14.25 | 18.7 / 17.12 / 16.16 / 15.20 / 14.25 | PostgreSQL の型混同により、オブジェクト作成者が ALTER ... SET DATA TYPE 経由で任意のコードを実行可能；検出型 PoC、未検証 | 確認済み | 未実施 |
 | [CVE-2026-134292](CVE-2026-134292) | SurrealDB | 4.0 9.3 (NVD); 3.1 9.8 (NVD) | < 4.0.0 | 4.0.0 | CWE-862; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134337](CVE-2026-134337) | ArcadeDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | ArcadeDB native-image server builds 26.8.1 before 26.11.1 | 26.11.1 | CWE-693; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-134293](CVE-2026-134293) | SurrealDB | 4.0 8.8 (VulnCheck); 3.1 8.2 (VulnCheck) | SurrealDB 3.1.0 before 4.0.0 | 4.0.0 | CWE-89; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### OS / システム / DevOps (52)
 
