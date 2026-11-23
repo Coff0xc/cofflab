@@ -228,7 +228,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未认证攻击者经注册接口伪造 provider 值致账户接管；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 网络与安全 (167)
+### 网络与安全 (168)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -399,6 +399,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-103783](CVE-2026-103783) | Dell Enterprise Sonic Distribution | 3.1 8.2 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-103788](CVE-2026-103788) | Dell Enterprise Sonic Distribution | 3.1 9.6 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134624](CVE-2026-134624) | N-able MailAssure (SpamExperts) | 4.0 9.3 (N-able) | N-able MailAssure (SpamExperts) before 20261121.1943 | 20261121.1943 | CWE-918; 仅版本检测 | 已确认 | 待复现 |
+| [CVE-2026-110631](CVE-2026-110631) | Komodo Periphery | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Komodo through 2.3.3 (default install: no core_public_keys / passkeys configured) |  | CWE-1188; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (88)
 

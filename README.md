@@ -228,7 +228,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | Unauthenticated account takeover via forged provider value at registration; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Network & Security (167)
+### Network & Security (168)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -399,6 +399,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-103783](CVE-2026-103783) | Dell Enterprise Sonic Distribution | 3.1 8.2 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-103788](CVE-2026-103788) | Dell Enterprise Sonic Distribution | 3.1 9.6 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134624](CVE-2026-134624) | N-able MailAssure (SpamExperts) | 4.0 9.3 (N-able) | N-able MailAssure (SpamExperts) before 20261121.1943 | 20261121.1943 | CWE-918; Version check only | Confirmed | Pending |
+| [CVE-2026-110631](CVE-2026-110631) | Komodo Periphery | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Komodo through 2.3.3 (default install: no core_public_keys / passkeys configured) |  | CWE-1188; RCE in local/Docker lab | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (88)
 
