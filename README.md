@@ -218,7 +218,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | Malicious bundle logging.conf is eval'd by fileConfig at workflow construction; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | Unauthenticated account takeover via forged provider value at registration; detection PoC only, unverified | Confirmed | Pending |
 
-### Network & Security (156)
+### Network & Security (157)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -378,6 +378,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-134352](CVE-2026-134352) | Rclone | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Rclone from 1.51.0 before 1.76.0 | 1.76.0 | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-124010](CVE-2026-124010) | XWEB EVO | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | XWEB EVO before 5.6.2 | 5.6.2 | CWE-78; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-124014](CVE-2026-124014) | XWEB EVO | 4.0 8.8 (VulnCheck); 3.1 9.1 (VulnCheck) | XWEB EVO 4.3.0 through 5.8.8 |  | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-102764](CVE-2026-102764) | BeyondTrust Remote Support | 4.0 9.3 (NVD) | BeyondTrust Remote Support <= 26.2.3 (self-hosted); Privileged Remote Access shares the affected code | BT26-05-RS patch (supported builds 24.3.1-26.2.3); BeyondTrust-hosted SaaS auto-patched 2026-10-08/09 | CWE-290; RCE in local/Docker lab; public RCE | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (87)
 

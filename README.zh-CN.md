@@ -218,7 +218,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 恶意 bundle 的 logging.conf 在工作流构造时被 fileConfig 求值致代码执行；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未认证攻击者经注册接口伪造 provider 值致账户接管；仅检测型 PoC、未核实 | 已确认 | 待复现 |
 
-### 网络与安全 (156)
+### 网络与安全 (157)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -378,6 +378,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134352](CVE-2026-134352) | Rclone | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Rclone from 1.51.0 before 1.76.0 | 1.76.0 | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-124010](CVE-2026-124010) | XWEB EVO | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | XWEB EVO before 5.6.2 | 5.6.2 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-124014](CVE-2026-124014) | XWEB EVO | 4.0 8.8 (VulnCheck); 3.1 9.1 (VulnCheck) | XWEB EVO 4.3.0 through 5.8.8 |  | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-102764](CVE-2026-102764) | BeyondTrust Remote Support | 4.0 9.3 (NVD) | BeyondTrust Remote Support <= 26.2.3 (self-hosted); Privileged Remote Access shares the affected code | BT26-05-RS patch (supported builds 24.3.1-26.2.3); BeyondTrust-hosted SaaS auto-patched 2026-10-08/09 | CWE-290; 本地/Docker 实验室 RCE; 公开 RCE | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (87)
 
