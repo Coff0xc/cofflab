@@ -425,7 +425,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-80466](CVE-2026-80466) | WAGO Web-Based Management | 4.0 8.7 (CERT VDE); 3.1 8.8 (CERT VDE) | WAGO CC100 / PFC100 G2 / PFC200 G2 / TP600 / Edge Controller / WP400（wago_os_linux < 4.10.0） | 4.10.0 | CWE-78; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-86312](CVE-2026-86312) | Apache Solr | 3.1 8.8 (Apache) | Apache Solr 9.0.0 through before 9.11.0 (9.x) and before 10.1.0 (10.x) | 9.11.0 / 10.1.0 | CWE-441; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (91)
+### 运行环境 / 框架 / 浏览器 (92)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -520,6 +520,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-119348](CVE-2026-119348) | Next.js | 4.0 6.3 (GitHub) | Next.js <= 15.5.28 and 16.0.0-16.4.4 (self-hosted) | 15.5.29 / 16.4.5 | CWE-444; PoC 在实验室复现 | 已确认 | 待复现 |
 | [CVE-2026-135736](CVE-2026-135736) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.4 before 9.1 | 9.1 | CWE-787; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-135743](CVE-2026-135743) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.3 before 9.1 | 9.1 | CWE-787; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-123886](CVE-2026-123886) | Spring Data Elasticsearch | 3.1 8.8 (VMware) | Spring Data Elasticsearch versions before 2a5b65c | 2a5b65c | CWE-94; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 
 ### 数据库 (20)
 

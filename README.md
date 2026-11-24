@@ -425,7 +425,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-80466](CVE-2026-80466) | WAGO Web-Based Management | 4.0 8.7 (CERT VDE); 3.1 8.8 (CERT VDE) | WAGO CC100 / PFC100 G2 / PFC200 G2 / TP600 / Edge Controller / WP400（wago_os_linux < 4.10.0） | 4.10.0 | CWE-78; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-86312](CVE-2026-86312) | Apache Solr | 3.1 8.8 (Apache) | Apache Solr 9.0.0 through before 9.11.0 (9.x) and before 10.1.0 (10.x) | 9.11.0 / 10.1.0 | CWE-441; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Runtime / Framework / Browser (91)
+### Runtime / Framework / Browser (92)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -520,6 +520,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-119348](CVE-2026-119348) | Next.js | 4.0 6.3 (GitHub) | Next.js <= 15.5.28 and 16.0.0-16.4.4 (self-hosted) | 15.5.29 / 16.4.5 | CWE-444; PoC reproduces in lab | Confirmed | Pending |
 | [CVE-2026-135736](CVE-2026-135736) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.4 before 9.1 | 9.1 | CWE-787; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-135743](CVE-2026-135743) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.3 before 9.1 | 9.1 | CWE-787; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-123886](CVE-2026-123886) | Spring Data Elasticsearch | 3.1 8.8 (VMware) | Spring Data Elasticsearch versions before 2a5b65c | 2a5b65c | CWE-94; RCE in local/Docker lab | Confirmed | Pending |
 
 ### Database (20)
 
