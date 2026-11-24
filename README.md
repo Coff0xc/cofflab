@@ -554,7 +554,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-134841](CVE-2026-134841) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 | 42.7.15 | CWE-89; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134842](CVE-2026-134842) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 (preferQueryMode=simple and standard_conforming_strings=off) | 42.7.15 | CWE-89; PoC triggers the vulnerability | Confirmed | Pending |
 
-### OS / System / DevOps (62)
+### OS / System / DevOps (63)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -620,6 +620,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-93585](CVE-2026-93585) | EasyVista EV Reach Client Agent | 3.1 8.8 (OTRS) | EV Reach Console < 11.0.14.1127 / Agent < 11.0.16 / Server < 11.0.14.1274 | 11.0.14.1127 / 11.0.16 / 11.0.14.1274 | CWE-863; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-59309](CVE-2026-59309) | VMware vCenter Server | 3.1 9.8 (VMware) | vCenter 8.0 prior to 8.0 U3k；9.0.x prior to 9.0.2.0100；9.1.x prior to 9.1.0.0200；6.x/7.x 亦受影响且无补丁 | 8.0 U3k；9.0.2.0100；9.1.0.0200 | CWE-303; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-88235](CVE-2026-88235) | Windows TrustedInstaller (CBS) | 3.1 7.8 (Microsoft) | Windows (TrustedInstaller.exe / CBS Session COM) |  | CWE-441; Privilege escalation | Confirmed | Pending |
+| [CVE-2026-98260](CVE-2026-98260) | Linux kernel (posix-cpu-timers) | 3.1 7.8 (NVD) | Linux kernel 6.12.38 / 6.12.58 (Android 16, Honor MagicPad3 Pro) |  | CWE-416; Privilege escalation | Confirmed | Pending |
 
 
 See each CVE directory for the full assessment and references.
