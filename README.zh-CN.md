@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (179)
+### Web / CMS (182)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -201,6 +201,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-135429](CVE-2026-135429) | Tabbycat | 4.0 8.8 (VulnCheck); 3.1 9.1 (VulnCheck) | Tabbycat 2.9.0 through 2.12.1 |  | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-135436](CVE-2026-135436) | KindleEar | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | KindleEar 3.0.0 through 3.5.3 |  | CWE-94; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-95793](CVE-2026-95793) | HPE Morpheus Manager | 3.1 8.8 (HPE) | HPE Morpheus Software 9.1.0-2 and earlier, 9.0.2-3 and earlier, 8.1.2-2 and earlier | 9.1.0-3 / 9.0.2-4 / 8.1.2-3 | PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-41940](CVE-2026-41940) | cPanel & WHM | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | cPanel & WHM < 11.136.0.5 | 11.136.0.5 | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-60137](CVE-2026-60137) | WordPress | 3.1 5.9 (WPScan) | WordPress 6.8.0-6.8.5 (SQL injection); 6.9.x / 7.0.x reachable unauthenticated only via CVE-2026-63030 | 6.8.6 / 6.9.5 / 7.0.2 | CWE-89; SQL 注入读 | 已确认 | 待复现 |
+| [CVE-2026-63030](CVE-2026-63030) | WordPress | 3.1 9.8 (WPScan) | WordPress 6.9.0-6.9.4 and 7.0.0-7.0.1 | 6.9.5 / 7.0.2 | CWE-436; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 
 ### AI / LLM (22)
 
@@ -229,7 +232,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-130169](CVE-2026-130169) | AutoGPT Platform | 3.1 10.0 (GHSA) | AutoGPT Platform 0.6.26 through 0.7.4 | 0.8.0 | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 网络与安全 (169)
+### 网络与安全 (170)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -402,8 +405,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134624](CVE-2026-134624) | N-able MailAssure (SpamExperts) | 4.0 9.3 (N-able) | N-able MailAssure (SpamExperts) before 20261121.1943 | 20261121.1943 | CWE-918; 仅版本检测 | 已确认 | 待复现 |
 | [CVE-2026-110631](CVE-2026-110631) | Komodo Periphery | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Komodo through 2.3.3 (default install: no core_public_keys / passkeys configured) |  | CWE-1188; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-114203](CVE-2026-114203) | ASUS GPU Tweak III | 4.0 9.3 (ASUS) | ASUS GPU Tweak III V.1.6.9.4 to v2.2.1.1 (Mobile Module service installed) | v2.2.2.3 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
+| [CVE-2026-70229](CVE-2026-70229) | Active Directory Domain Services | 3.1 8.1 (Microsoft) | Windows Server with Active Directory Domain Services | 2026 年 10 月安全更新 | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (88)
+### 运行环境 / 框架 / 浏览器 (89)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -495,6 +499,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134815](CVE-2026-134815) | simple-git | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | simple-git before 4.1.0 | 4.1.0 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC 在实验室复现 | 已确认 | 待复现 |
 | [CVE-2026-129975](CVE-2026-129975) | gpgme | 3.1 8.1 (Red Hat) | gpgme |  | CWE-415; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-119348](CVE-2026-119348) | Next.js | 4.0 6.3 (GitHub) | Next.js <= 15.5.28 and 16.0.0-16.4.4 (self-hosted) | 15.5.29 / 16.4.5 | CWE-444; PoC 在实验室复现 | 已确认 | 待复现 |
 
 ### 数据库 (18)
 
@@ -519,7 +524,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134309](CVE-2026-134309) | SurrealDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | SurrealDB 1.0.0 before 4.0.0 | 4.0.0 | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134803](CVE-2026-134803) | DBHub | 3.1 8.1 (VulnCheck); 4.0 7.2 (VulnCheck) | DBHub before 1.7.0 | 1.7.0 | CWE-436; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (53)
+### 操作系统 / 系统 / DevOps (57)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -576,6 +581,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-111760](CVE-2026-111760) | Git | 3.1 8.0 (GHSA) | Git 2.50.2、2.51.3、2.52.1、2.53.1、2.54.1、2.55.1、2.56.1 之前版本 | 2.50.2、2.51.3、2.52.1、2.53.1、2.54.1、2.55.1、2.56.1 | CWE-59 | 已确认 | 待复现 |
 | [CVE-2026-97631](CVE-2026-97631) | EDK II | 4.0 9.5 (TianoCore); 3.1 8.8 (Red Hat) | TianoCore EDK II NetworkPkg UefiPxeBcDxe（edk2-stable202608 及更早） | 上游主线 PR #13200/#13302（2026-10-15 合并）；Red Hat RHSA-2026:96240 | CWE-787 | 已确认 | 待复现 |
 | [CVE-2026-120382](CVE-2026-120382) | Synology DiskStation Manager | 3.1 9.8 (Synology) | DSM before 7.1.1-42962-10 / 7.2.1-69057-14 / 7.2.2-72806-11 / 7.3.2-86009-6 / 7.4.1-90080-2 | 7.4.1-90080-2 / 7.3.2-86009-6 | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-77873](CVE-2026-77873) | Lenovo System Update | 4.0 7.0 (Lenovo); 3.1 7.3 (Lenovo) | Lenovo System Update for Windows, tested on 5.08.04.85 | Lenovo System Update 修复版本（LEN-232748） | CWE-276; 权限提升 | 已确认 | 待复现 |
+| [CVE-2026-77882](CVE-2026-77882) | Lenovo System Update | 4.0 8.5 (Lenovo); 3.1 7.8 (Lenovo) | Lenovo System Update for Windows, tested on 5.08.04.85 | Lenovo System Update 修复版本（LEN-232748） | CWE-502; 权限提升 | 已确认 | 待复现 |
+| [CVE-2026-99320](CVE-2026-99320) | Linux kernel (IPv6 raw sockets) | 3.1 7.0 (Linux kernel) | Linux kernel with VRF IPv6 output (exploit tuned to kernel 6.1.0-staleroute config) | 上游修复提交 66dfb2cacda7 | 权限提升 | 已确认 | 待复现 |
+| [CVE-2026-99491](CVE-2026-99491) | Linux kernel (wacom HID driver) | unknown | Linux kernel with wacom HID driver (Android 5.15.178, Redmi K70 vermeer) | 上游修复提交 ef32877368a7（6.12 backport 1178927ffa54） | 权限提升 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。
