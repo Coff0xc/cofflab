@@ -242,7 +242,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC が情報を漏洩 | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (181)
+### ネットワークとセキュリティ (182)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -427,6 +427,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-80466](CVE-2026-80466) | WAGO Web-Based Management | 4.0 8.7 (CERT VDE); 3.1 8.8 (CERT VDE) | WAGO CC100 / PFC100 G2 / PFC200 G2 / TP600 / Edge Controller / WP400（wago_os_linux < 4.10.0） | 4.10.0 | CWE-78; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-86312](CVE-2026-86312) | Apache Solr | 3.1 8.8 (Apache) | Apache Solr 9.0.0 through before 9.11.0 (9.x) and before 10.1.0 (10.x) | 9.11.0 / 10.1.0 | CWE-441; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134753](CVE-2026-134753) | dsniff | 4.0 8.3 (VulnCheck) | dsniff (hackerschoice/dsniff fork), decode_sniffer.c decode_sniffer() |  | CWE-191; PoC がクラッシュを引き起こす | 確認済み | 未実施 |
+| [CVE-2024-6387](CVE-2024-6387) | OpenSSH | 3.1 8.1 (NVD) | OpenSSH 8.5p1–9.7p1 | 9.8p1 | CWE-364; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (93)
 
