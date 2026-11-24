@@ -240,7 +240,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-118285](CVE-2026-118285) | Azure Machine Learning | 3.1 9.6 (Microsoft) | Azure Machine Learning |  | CWE-918; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (175)
+### ネットワークとセキュリティ (176)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -419,6 +419,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-118286](CVE-2026-118286) | Azure Site Recovery | 3.1 9.1 (Microsoft) | Azure Site Recovery |  | CWE-284; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-62841](CVE-2026-62841) | Azure Event Grid | 3.1 10.0 (Microsoft) | Azure Event Grid |  | CWE-287; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-69899](CVE-2026-69899) | Azure DevTest Labs | 3.1 9.1 (Microsoft) | Azure DevTest Labs |  | CWE-290; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-76418](CVE-2026-76418) | Cisco Secure Firewall ASA / FTD (Remote Access SSL VPN) | 3.1 8.6 (Cisco) | Cisco Secure Firewall ASA Software and Cisco Secure Firewall Threat Defense (FTD) Software with SSL remote access VPN enabled and secondary authentication configured on a tunnel group | ASA 9.16.4.104 / 9.18.4.96 / 9.20.4.50 / 9.22.3.200 / 9.23.1.48 / 9.24.1.27 / 9.24.10.1; FTD 7.0.11 / 7.2.13 / 7.4.9 / 7.6.7 / 7.7.14 / 10.0.3 / 10.1.1 | 未認証の細工された SSL VPN リクエストによりデバイスがリロード（DoS）；2026 年 10 月から実際に悪用、公開 PoC なし | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (91)
 
@@ -539,7 +540,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-134309](CVE-2026-134309) | SurrealDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | SurrealDB 1.0.0 before 4.0.0 | 4.0.0 | CWE-863; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134803](CVE-2026-134803) | DBHub | 3.1 8.1 (VulnCheck); 4.0 7.2 (VulnCheck) | DBHub before 1.7.0 | 1.7.0 | CWE-436; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### OS / システム / DevOps (57)
+### OS / システム / DevOps (59)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -600,6 +601,8 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-77882](CVE-2026-77882) | Lenovo System Update | 4.0 8.5 (Lenovo); 3.1 7.8 (Lenovo) | Lenovo System Update for Windows, tested on 5.08.04.85 | Lenovo System Update 修复版本（LEN-232748） | CWE-502; 権限昇格 | 確認済み | 未実施 |
 | [CVE-2026-99320](CVE-2026-99320) | Linux kernel (IPv6 raw sockets) | 3.1 7.0 (Linux kernel) | Linux kernel with VRF IPv6 output (exploit tuned to kernel 6.1.0-staleroute config) | 上游修复提交 66dfb2cacda7 | 権限昇格 | 確認済み | 未実施 |
 | [CVE-2026-99491](CVE-2026-99491) | Linux kernel (wacom HID driver) | unknown | Linux kernel with wacom HID driver (Android 5.15.178, Redmi K70 vermeer) | 上游修复提交 ef32877368a7（6.12 backport 1178927ffa54） | 権限昇格 | 確認済み | 未実施 |
+| [CVE-2026-41709](CVE-2026-41709) | VMware ESX | 3.1 2.7 (Broadcom) | VMware ESX 9.1.x.x / 9.0.x.x / 8.0; VMware Cloud Foundation 9.1.x.x / 9.0.x.x / 5.x; VMware Telco Cloud Platform 5.0.x / 5.1.x | ESXi-9.1.0.0-25370933 / ESXi-9.0.2.0100-25595025 / ESXi80U3j-25429389; VCF 5.x 5.2.4; TCP KB449886 (VMSA-2026-0006) | 悪意のある管理者が特定の操作をログに残さず実行可能；実際に悪用を確認（WARP PANDA がゼロデイとして使用）、公開 PoC なし | 確認済み | 未実施 |
+| [CVE-2026-46300](CVE-2026-46300) | Linux kernel (net: skbuff) | 3.1 7.8 (NVD) | Linux kernel：skb_try_coalesce() 合并含共享 frag 的 skb 时丢失 SKBFL_SHARED_FRAG 标记的版本（修复前） | 上游修复提交 2f2b16022a2e（net: skbuff: preserve shared-frag marker during coalescing，stable 各分支另有 backport，见 NVD 补丁链接） | skb 結合時の共有フラグマーカー消失によりページキャッシュデータが意図せず変更される可能性；KEV 掲載、検証済みの公開 PoC なし | 確認済み | 未実施 |
 
 
 完全な評価と引用については各 CVE ディレクトリを参照。
