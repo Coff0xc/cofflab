@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (188)
+### Web / CMS (189)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -210,6 +210,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-70193](CVE-2026-70193) | Microsoft Office SharePoint | 3.1 9.9 (Microsoft) | Microsoft Office SharePoint |  | CWE-22; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-70305](CVE-2026-70305) | Azure Portal | 3.1 9.6 (Microsoft) | Azure Portal |  | CWE-79; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-93700](CVE-2026-93700) | WHMCS | 3.1 9.0 (HackerOne) | WHMCS 8.0.0 and later: 9.1.x before 9.1.2; 9.0.x before 9.0.10; 8.x.x before 8.13.8 | 9.1.2 / 9.0.10 / 8.13.8 | CWE-1336; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-83542](CVE-2026-83542) | Apache OFBiz | 3.1 9.8 (CISA-ADP) | Apache OFBiz 24.09 before 24.09.08 | 24.09.08 | CWE-94; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 
 ### AI / LLM (24)
 
