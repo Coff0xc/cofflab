@@ -240,7 +240,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-118285](CVE-2026-118285) | Azure Machine Learning | 3.1 9.6 (Microsoft) | Azure Machine Learning |  | CWE-918; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 网络与安全 (176)
+### 网络与安全 (180)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -420,6 +420,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-62841](CVE-2026-62841) | Azure Event Grid | 3.1 10.0 (Microsoft) | Azure Event Grid |  | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-69899](CVE-2026-69899) | Azure DevTest Labs | 3.1 9.1 (Microsoft) | Azure DevTest Labs |  | CWE-290; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-76418](CVE-2026-76418) | Cisco Secure Firewall ASA / FTD (Remote Access SSL VPN) | 3.1 8.6 (Cisco) | Cisco Secure Firewall ASA Software and Cisco Secure Firewall Threat Defense (FTD) Software with SSL remote access VPN enabled and secondary authentication configured on a tunnel group | ASA 9.16.4.104 / 9.18.4.96 / 9.20.4.50 / 9.22.3.200 / 9.23.1.48 / 9.24.1.27 / 9.24.10.1; FTD 7.0.11 / 7.2.13 / 7.4.9 / 7.6.7 / 7.7.14 / 10.0.3 / 10.1.1 | 未认证构造 SSL VPN 请求致设备重载（DoS）；2026 年 10 月起已在野利用，暂无公开 PoC | 已确认 | 待复现 |
+| [CVE-2026-105304](CVE-2026-105304) | Zoraxy | 4.0 7.7 (JPCERT); 3.0 8.6 (JPCERT) | Zoraxy <= v3.3.5-rc1 | v3.3.5-rc2 | CWE-918; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-121613](CVE-2026-121613) | ifm Camera Products | 4.0 9.3 (CERT VDE); 3.1 9.8 (CERT VDE) | ifm 相机产品 O3D/O3X 系列（固件 1.20.6381 / 1.71.10735 / 1.90.107 / 1.90.119 / 2.0.10412 / 2.10.16，按型号） |  | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-80466](CVE-2026-80466) | WAGO Web-Based Management | 4.0 8.7 (CERT VDE); 3.1 8.8 (CERT VDE) | WAGO CC100 / PFC100 G2 / PFC200 G2 / TP600 / Edge Controller / WP400（wago_os_linux < 4.10.0） | 4.10.0 | CWE-78; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-86312](CVE-2026-86312) | Apache Solr | 3.1 8.8 (Apache) | Apache Solr 9.0.0 through before 9.11.0 (9.x) and before 10.1.0 (10.x) | 9.11.0 / 10.1.0 | CWE-441; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (91)
 
@@ -517,7 +521,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-135736](CVE-2026-135736) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.4 before 9.1 | 9.1 | CWE-787; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-135743](CVE-2026-135743) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.3 before 9.1 | 9.1 | CWE-787; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 数据库 (18)
+### 数据库 (20)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -539,8 +543,10 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134300](CVE-2026-134300) | SurrealDB | 4.0 7.2 (VulnCheck); 3.1 8.1 (VulnCheck) | SurrealDB 2.2.0 before 4.0.0 | 4.0.0 | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134309](CVE-2026-134309) | SurrealDB | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | SurrealDB 1.0.0 before 4.0.0 | 4.0.0 | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134803](CVE-2026-134803) | DBHub | 3.1 8.1 (VulnCheck); 4.0 7.2 (VulnCheck) | DBHub before 1.7.0 | 1.7.0 | CWE-436; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134841](CVE-2026-134841) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 | 42.7.15 | CWE-89; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-134842](CVE-2026-134842) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 (preferQueryMode=simple and standard_conforming_strings=off) | 42.7.15 | CWE-89; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 操作系统 / 系统 / DevOps (59)
+### 操作系统 / 系统 / DevOps (60)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -603,6 +609,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-99491](CVE-2026-99491) | Linux kernel (wacom HID driver) | unknown | Linux kernel with wacom HID driver (Android 5.15.178, Redmi K70 vermeer) | 上游修复提交 ef32877368a7（6.12 backport 1178927ffa54） | 权限提升 | 已确认 | 待复现 |
 | [CVE-2026-41709](CVE-2026-41709) | VMware ESX | 3.1 2.7 (Broadcom) | VMware ESX 9.1.x.x / 9.0.x.x / 8.0; VMware Cloud Foundation 9.1.x.x / 9.0.x.x / 5.x; VMware Telco Cloud Platform 5.0.x / 5.1.x | ESXi-9.1.0.0-25370933 / ESXi-9.0.2.0100-25595025 / ESXi80U3j-25429389; VCF 5.x 5.2.4; TCP KB449886 (VMSA-2026-0006) | 恶意管理员可执行特定操作而不留日志；在野利用已确认（WARP PANDA 作零日使用），暂无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-46300](CVE-2026-46300) | Linux kernel (net: skbuff) | 3.1 7.8 (NVD) | Linux kernel：skb_try_coalesce() 合并含共享 frag 的 skb 时丢失 SKBFL_SHARED_FRAG 标记的版本（修复前） | 上游修复提交 2f2b16022a2e（net: skbuff: preserve shared-frag marker during coalescing，stable 各分支另有 backport，见 NVD 补丁链接） | skb 合并丢失共享 frag 标记，页缓存数据可被意外修改；已列入 KEV，暂无已核实的公开 PoC | 已确认 | 待复现 |
+| [CVE-2026-93585](CVE-2026-93585) | EasyVista EV Reach Client Agent | 3.1 8.8 (OTRS) | EV Reach Console < 11.0.14.1127 / Agent < 11.0.16 / Server < 11.0.14.1274 | 11.0.14.1127 / 11.0.16 / 11.0.14.1274 | CWE-863; PoC 触发漏洞 | 已确认 | 待复现 |
 
 
 点进 CVE 目录看完整判定和引用。
