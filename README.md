@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (182)
+### Web / CMS (188)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -204,8 +204,14 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-41940](CVE-2026-41940) | cPanel & WHM | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | cPanel & WHM < 11.136.0.5 | 11.136.0.5 | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-60137](CVE-2026-60137) | WordPress | 3.1 5.9 (WPScan) | WordPress 6.8.0-6.8.5 (SQL injection); 6.9.x / 7.0.x reachable unauthenticated only via CVE-2026-63030 | 6.8.6 / 6.9.5 / 7.0.2 | CWE-89; SQL injection read | Confirmed | Pending |
 | [CVE-2026-63030](CVE-2026-63030) | WordPress | 3.1 9.8 (WPScan) | WordPress 6.9.0-6.9.4 and 7.0.0-7.0.1 | 6.9.5 / 7.0.2 | CWE-436; RCE in local/Docker lab | Confirmed | Pending |
+| [CVE-2026-109490](CVE-2026-109490) | Authentication Methods Portal Extension | 3.1 9.3 (Microsoft) | Authentication Methods Portal Extension |  | CWE-79; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-113824](CVE-2026-113824) | Microsoft Clarity | 3.1 9.1 (Microsoft) | Microsoft Clarity |  | CWE-639; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135202](CVE-2026-135202) | WP connect WordPress plugins | 3.1 9.8 (Wordfence) | WP connect 插件所列版本：Orders Sync to Airtable for WooCommerce、Add-On for Contact Form 7 to Notion、WP Sync for Notion、Add-On for Contact Form 7 to Airtable、Add-on Brevo for Gravity Forms、Air WP Sync |  | CWE-506; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-70193](CVE-2026-70193) | Microsoft Office SharePoint | 3.1 9.9 (Microsoft) | Microsoft Office SharePoint |  | CWE-22; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-70305](CVE-2026-70305) | Azure Portal | 3.1 9.6 (Microsoft) | Azure Portal |  | CWE-79; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-93700](CVE-2026-93700) | WHMCS | 3.1 9.0 (HackerOne) | WHMCS 8.0.0 and later: 9.1.x before 9.1.2; 9.0.x before 9.0.10; 8.x.x before 8.13.8 | 9.1.2 / 9.0.10 / 8.13.8 | CWE-1336; PoC triggers the vulnerability | Confirmed | Pending |
 
-### AI / LLM (22)
+### AI / LLM (24)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -231,8 +237,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | Unauthenticated account takeover via forged provider value at registration; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-130169](CVE-2026-130169) | AutoGPT Platform | 3.1 10.0 (GHSA) | AutoGPT Platform 0.6.26 through 0.7.4 | 0.8.0 | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-118285](CVE-2026-118285) | Azure Machine Learning | 3.1 9.6 (Microsoft) | Azure Machine Learning |  | CWE-918; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Network & Security (170)
+### Network & Security (175)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -406,8 +414,13 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-110631](CVE-2026-110631) | Komodo Periphery | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Komodo through 2.3.3 (default install: no core_public_keys / passkeys configured) |  | CWE-1188; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-114203](CVE-2026-114203) | ASUS GPU Tweak III | 4.0 9.3 (ASUS) | ASUS GPU Tweak III V.1.6.9.4 to v2.2.1.1 (Mobile Module service installed) | v2.2.2.3 | CWE-78; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-70229](CVE-2026-70229) | Active Directory Domain Services | 3.1 8.1 (Microsoft) | Windows Server with Active Directory Domain Services | 2026 年 10 月安全更新 | CWE-863; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-109480](CVE-2026-109480) | Profile Data Roaming Service | 3.1 9.6 (Microsoft) | Profile Data Roaming Service |  | CWE-918; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-115900](CVE-2026-115900) | Cribl Stream | 4.0 8.7 (Cribl); 3.1 8.8 (Cribl) | Cribl Stream 4.20.4 and earlier | 4.21.0 | CWE-1321; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-118286](CVE-2026-118286) | Azure Site Recovery | 3.1 9.1 (Microsoft) | Azure Site Recovery |  | CWE-284; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-62841](CVE-2026-62841) | Azure Event Grid | 3.1 10.0 (Microsoft) | Azure Event Grid |  | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-69899](CVE-2026-69899) | Azure DevTest Labs | 3.1 9.1 (Microsoft) | Azure DevTest Labs |  | CWE-290; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Runtime / Framework / Browser (89)
+### Runtime / Framework / Browser (91)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -500,6 +513,8 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-125396](CVE-2026-125396) | Ghostscript | 4.0 8.5 (VulnCheck); 3.1 7.8 (VulnCheck) | Ghostscript before 10.08.0 | 10.08.0 | CWE-648; PoC reproduces in lab | Confirmed | Pending |
 | [CVE-2026-129975](CVE-2026-129975) | gpgme | 3.1 8.1 (Red Hat) | gpgme |  | CWE-415; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-119348](CVE-2026-119348) | Next.js | 4.0 6.3 (GitHub) | Next.js <= 15.5.28 and 16.0.0-16.4.4 (self-hosted) | 15.5.29 / 16.4.5 | CWE-444; PoC reproduces in lab | Confirmed | Pending |
+| [CVE-2026-135736](CVE-2026-135736) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.4 before 9.1 | 9.1 | CWE-787; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135743](CVE-2026-135743) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.3 before 9.1 | 9.1 | CWE-787; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### Database (18)
 
