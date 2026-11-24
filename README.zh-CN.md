@@ -429,7 +429,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-134753](CVE-2026-134753) | dsniff | 4.0 8.3 (VulnCheck) | dsniff (hackerschoice/dsniff fork), decode_sniffer.c decode_sniffer() |  | CWE-191; PoC 导致崩溃 | 已确认 | 待复现 |
 | [CVE-2024-6387](CVE-2024-6387) | OpenSSH | 3.1 8.1 (NVD) | OpenSSH 8.5p1–9.7p1 | 9.8p1 | CWE-364; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (93)
+### 运行环境 / 框架 / 浏览器 (94)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -526,6 +526,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-135743](CVE-2026-135743) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.3 before 9.1 | 9.1 | CWE-787; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-123886](CVE-2026-123886) | Spring Data Elasticsearch | 3.1 8.8 (VMware) | Spring Data Elasticsearch versions before 2a5b65c | 2a5b65c | CWE-94; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-42290](CVE-2026-42290) | protobufjs-cli | 3.1 7.8 (GitHub) | protobufjs-cli < 1.2.1 and < 2.0.2 | 1.2.1、2.0.2 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
+| [CVE-2026-46595](CVE-2026-46595) | golang.org/x/crypto/ssh | 3.1 10.0 (CISA-ADP) | golang.org/x/crypto < v0.52.0 | v0.52.0 | CWE-863; 仅版本检测 | 已确认 | 待复现 |
 
 ### 数据库 (20)
 

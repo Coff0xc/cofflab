@@ -429,7 +429,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-134753](CVE-2026-134753) | dsniff | 4.0 8.3 (VulnCheck) | dsniff (hackerschoice/dsniff fork), decode_sniffer.c decode_sniffer() |  | CWE-191; PoC causes a crash | Confirmed | Pending |
 | [CVE-2024-6387](CVE-2024-6387) | OpenSSH | 3.1 8.1 (NVD) | OpenSSH 8.5p1–9.7p1 | 9.8p1 | CWE-364; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Runtime / Framework / Browser (93)
+### Runtime / Framework / Browser (94)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -526,6 +526,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-135743](CVE-2026-135743) | FFmpeg | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | FFmpeg 4.3 before 9.1 | 9.1 | CWE-787; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-123886](CVE-2026-123886) | Spring Data Elasticsearch | 3.1 8.8 (VMware) | Spring Data Elasticsearch versions before 2a5b65c | 2a5b65c | CWE-94; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-42290](CVE-2026-42290) | protobufjs-cli | 3.1 7.8 (GitHub) | protobufjs-cli < 1.2.1 and < 2.0.2 | 1.2.1、2.0.2 | CWE-78; RCE in local/Docker lab | Confirmed | Pending |
+| [CVE-2026-46595](CVE-2026-46595) | golang.org/x/crypto/ssh | 3.1 10.0 (CISA-ADP) | golang.org/x/crypto < v0.52.0 | v0.52.0 | CWE-863; Version check only | Confirmed | Pending |
 
 ### Database (20)
 
