@@ -212,7 +212,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-93700](CVE-2026-93700) | WHMCS | 3.1 9.0 (HackerOne) | WHMCS 8.0.0 and later: 9.1.x before 9.1.2; 9.0.x before 9.0.10; 8.x.x before 8.13.8 | 9.1.2 / 9.0.10 / 8.13.8 | CWE-1336; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-83542](CVE-2026-83542) | Apache OFBiz | 3.1 9.8 (CISA-ADP) | Apache OFBiz 24.09 before 24.09.08 | 24.09.08 | CWE-94; RCE in local/Docker lab | Confirmed | Pending |
 
-### AI / LLM (24)
+### AI / LLM (25)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -240,6 +240,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-130169](CVE-2026-130169) | AutoGPT Platform | 3.1 10.0 (GHSA) | AutoGPT Platform 0.6.26 through 0.7.4 | 0.8.0 | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-118285](CVE-2026-118285) | Azure Machine Learning | 3.1 9.6 (Microsoft) | Azure Machine Learning |  | CWE-918; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC leaks information | Confirmed | Pending |
 
 ### Network & Security (181)
 
