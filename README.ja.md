@@ -429,7 +429,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-134753](CVE-2026-134753) | dsniff | 4.0 8.3 (VulnCheck) | dsniff (hackerschoice/dsniff fork), decode_sniffer.c decode_sniffer() |  | CWE-191; PoC がクラッシュを引き起こす | 確認済み | 未実施 |
 | [CVE-2024-6387](CVE-2024-6387) | OpenSSH | 3.1 8.1 (NVD) | OpenSSH 8.5p1–9.7p1 | 9.8p1 | CWE-364; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### ランタイム / フレームワーク / ブラウザ (94)
+### ランタイム / フレームワーク / ブラウザ (95)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -527,6 +527,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-123886](CVE-2026-123886) | Spring Data Elasticsearch | 3.1 8.8 (VMware) | Spring Data Elasticsearch versions before 2a5b65c | 2a5b65c | CWE-94; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 | [CVE-2026-42290](CVE-2026-42290) | protobufjs-cli | 3.1 7.8 (GitHub) | protobufjs-cli < 1.2.1 and < 2.0.2 | 1.2.1、2.0.2 | CWE-78; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 | [CVE-2026-46595](CVE-2026-46595) | golang.org/x/crypto/ssh | 3.1 10.0 (CISA-ADP) | golang.org/x/crypto < v0.52.0 | v0.52.0 | CWE-863; バージョン確認のみ | 確認済み | 未実施 |
+| [CVE-2026-134824](CVE-2026-134824) | nektos/act | 4.0 6.8 (VulnCheck) | nektos/act 0.2.92–0.2.97 | 0.2.98 | CWE-59; PoC が情報を漏洩 | 確認済み | 未実施 |
 
 ### データベース (20)
 
