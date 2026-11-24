@@ -202,7 +202,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-135436](CVE-2026-135436) | KindleEar | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | KindleEar 3.0.0 through 3.5.3 |  | CWE-94; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-95793](CVE-2026-95793) | HPE Morpheus Manager | 3.1 8.8 (HPE) | HPE Morpheus Software 9.1.0-2 and earlier, 9.0.2-3 and earlier, 8.1.2-2 and earlier | 9.1.0-3 / 9.0.2-4 / 8.1.2-3 | PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### AI / LLM (21)
+### AI / LLM (22)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -227,6 +227,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | 悪意ある bundle の logging.conf がワークフロー構築時に fileConfig により評価されコード実行；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | 未認証の攻撃者が登録時に provider 値を偽造しアカウント乗っ取り；検出用 PoC のみ、未検証 | 確認済み | 未実施 |
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-130169](CVE-2026-130169) | AutoGPT Platform | 3.1 10.0 (GHSA) | AutoGPT Platform 0.6.26 through 0.7.4 | 0.8.0 | CWE-287; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
 ### ネットワークとセキュリティ (168)
 

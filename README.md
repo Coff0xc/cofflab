@@ -202,7 +202,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-135436](CVE-2026-135436) | KindleEar | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | KindleEar 3.0.0 through 3.5.3 |  | CWE-94; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-95793](CVE-2026-95793) | HPE Morpheus Manager | 3.1 8.8 (HPE) | HPE Morpheus Software 9.1.0-2 and earlier, 9.0.2-3 and earlier, 8.1.2-2 and earlier | 9.1.0-3 / 9.0.2-4 / 8.1.2-3 | PoC triggers the vulnerability | Confirmed | Pending |
 
-### AI / LLM (21)
+### AI / LLM (22)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -227,6 +227,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-118683](CVE-2026-118683) | MONAI | 4.0 8.6 (VulnCheck) | MONAI 1.2.0 before 1.6.1 | MONAI 1.6.1 | Malicious bundle logging.conf is eval'd by fileConfig at workflow construction; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-54039](CVE-2026-54039) | LibreChat | 3.1 8.1 (GHSA) | LibreChat 0.7.0 through 0.8.6 (local registration + social provider) | 0.8.6 | Unauthenticated account takeover via forged provider value at registration; detection PoC only, unverified | Confirmed | Pending |
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-130169](CVE-2026-130169) | AutoGPT Platform | 3.1 10.0 (GHSA) | AutoGPT Platform 0.6.26 through 0.7.4 | 0.8.0 | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### Network & Security (168)
 
