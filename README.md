@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (193)
+### Web / CMS (194)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -215,6 +215,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129514](CVE-2026-129514) | hexpm | 4.0 10.0 (EEF) | hexpm/hexpm from ab1bbcef7cc8395d1056d3b1aa6a174353492d59 before 379b0a29bcc95164249f38ad7d772a37a8ff9533 (hex.pm service affected from 2016-02-23) | 379b0a29bcc95164249f38ad7d772a37a8ff9533 (deployed to hex.pm 2026-11-23 18:30-18:31 UTC) | Unauthenticated deserialization of Erlang term request bodies allows OS command execution; exploited in the wild against hex.pm on 2026-11-23, no public PoC | Confirmed | Pending |
 | [CVE-2026-87902](CVE-2026-87902) | WordPress Core | 3.1 8.1 (WordPress) | WordPress 7.1.1 and earlier (all branches) | 7.1.2; fix backported to all branches back to 4.7 | CWE-98; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-132224](CVE-2026-132224) | Web Experimentation | 4.0 7.1 (MITRE) | Optimizely Web Experimentation before 2026-11-17 | 2026-11-17 (vendor-side fix; no customer patch to install) | CWE-642; exploited in the wild — attacker injected malicious JavaScript into Project JavaScript via the signup flaw; no public PoC | Confirmed | Pending |
+| [CVE-2026-129242](CVE-2026-129242) | GeoServer | 4.0 8.6 (GHSA) | GeoServer <= 2.27.6, 2.28.0-2.28.5, 3.0.0-3.0.1 | 2.27.7, 2.28.6, 3.0.2 | CWE-502; RCE in local/Docker lab | Confirmed | Pending |
 
 ### AI / LLM (25)
 
