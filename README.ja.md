@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (190)
+### Web / CMS (191)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -212,6 +212,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-93700](CVE-2026-93700) | WHMCS | 3.1 9.0 (HackerOne) | WHMCS 8.0.0 and later: 9.1.x before 9.1.2; 9.0.x before 9.0.10; 8.x.x before 8.13.8 | 9.1.2 / 9.0.10 / 8.13.8 | CWE-1336; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-83542](CVE-2026-83542) | Apache OFBiz | 3.1 9.8 (CISA-ADP) | Apache OFBiz 24.09 before 24.09.08 | 24.09.08 | CWE-94; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 | [CVE-2026-131914](CVE-2026-131914) | Idunno.AntiCsrf | 4.0 9.3 (Mandiant) | Idunno.AntiCsrf through 0.9.1 Beta (0.9.1.0) on ASP.NET WebForms | No fix; remove Idunno.AntiCsrf.dll and replace with a supported anti-CSRF mechanism | CWE-502; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-129514](CVE-2026-129514) | hexpm | 4.0 10.0 (EEF) | hexpm/hexpm from ab1bbcef7cc8395d1056d3b1aa6a174353492d59 before 379b0a29bcc95164249f38ad7d772a37a8ff9533 (hex.pm service affected from 2016-02-23) | 379b0a29bcc95164249f38ad7d772a37a8ff9533 (deployed to hex.pm 2026-11-23 18:30-18:31 UTC) | Erlang term リクエストボディのデシリアライズにより未認証で OS コマンド実行；2026-11-23 に hex.pm への実利用を確認、公開 PoC なし | 確認済み | 未実施 |
 
 ### AI / LLM (25)
 

@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (190)
+### Web / CMS (191)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -212,6 +212,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-93700](CVE-2026-93700) | WHMCS | 3.1 9.0 (HackerOne) | WHMCS 8.0.0 and later: 9.1.x before 9.1.2; 9.0.x before 9.0.10; 8.x.x before 8.13.8 | 9.1.2 / 9.0.10 / 8.13.8 | CWE-1336; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-83542](CVE-2026-83542) | Apache OFBiz | 3.1 9.8 (CISA-ADP) | Apache OFBiz 24.09 before 24.09.08 | 24.09.08 | CWE-94; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-131914](CVE-2026-131914) | Idunno.AntiCsrf | 4.0 9.3 (Mandiant) | Idunno.AntiCsrf through 0.9.1 Beta (0.9.1.0) on ASP.NET WebForms | No fix; remove Idunno.AntiCsrf.dll and replace with a supported anti-CSRF mechanism | CWE-502; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-129514](CVE-2026-129514) | hexpm | 4.0 10.0 (EEF) | hexpm/hexpm from ab1bbcef7cc8395d1056d3b1aa6a174353492d59 before 379b0a29bcc95164249f38ad7d772a37a8ff9533 (hex.pm service affected from 2016-02-23) | 379b0a29bcc95164249f38ad7d772a37a8ff9533 (deployed to hex.pm 2026-11-23 18:30-18:31 UTC) | Unauthenticated deserialization of Erlang term request bodies allows OS command execution; exploited in the wild against hex.pm on 2026-11-23, no public PoC | Confirmed | Pending |
 
 ### AI / LLM (25)
 
