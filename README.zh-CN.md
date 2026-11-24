@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (191)
+### Web / CMS (192)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -213,6 +213,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-83542](CVE-2026-83542) | Apache OFBiz | 3.1 9.8 (CISA-ADP) | Apache OFBiz 24.09 before 24.09.08 | 24.09.08 | CWE-94; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-131914](CVE-2026-131914) | Idunno.AntiCsrf | 4.0 9.3 (Mandiant) | Idunno.AntiCsrf through 0.9.1 Beta (0.9.1.0) on ASP.NET WebForms | No fix; remove Idunno.AntiCsrf.dll and replace with a supported anti-CSRF mechanism | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-129514](CVE-2026-129514) | hexpm | 4.0 10.0 (EEF) | hexpm/hexpm from ab1bbcef7cc8395d1056d3b1aa6a174353492d59 before 379b0a29bcc95164249f38ad7d772a37a8ff9533 (hex.pm service affected from 2016-02-23) | 379b0a29bcc95164249f38ad7d772a37a8ff9533 (deployed to hex.pm 2026-11-23 18:30-18:31 UTC) | Erlang term 请求体反序列化致未授权操作系统命令执行；2026-11-23 已确认针对 hex.pm 在野利用，暂无公开 PoC | 已确认 | 待复现 |
+| [CVE-2026-87902](CVE-2026-87902) | WordPress Core | 3.1 8.1 (WordPress) | WordPress 7.1.1 and earlier (all branches) | 7.1.2; fix backported to all branches back to 4.7 | CWE-98; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### AI / LLM (25)
 
@@ -244,7 +245,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC 泄露信息 | 已确认 | 待复现 |
 
-### 网络与安全 (182)
+### 网络与安全 (185)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -430,6 +431,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-86312](CVE-2026-86312) | Apache Solr | 3.1 8.8 (Apache) | Apache Solr 9.0.0 through before 9.11.0 (9.x) and before 10.1.0 (10.x) | 9.11.0 / 10.1.0 | CWE-441; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134753](CVE-2026-134753) | dsniff | 4.0 8.3 (VulnCheck) | dsniff (hackerschoice/dsniff fork), decode_sniffer.c decode_sniffer() |  | CWE-191; PoC 导致崩溃 | 已确认 | 待复现 |
 | [CVE-2024-6387](CVE-2024-6387) | OpenSSH | 3.1 8.1 (NVD) | OpenSSH 8.5p1–9.7p1 | 9.8p1 | CWE-364; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-86060](CVE-2026-86060) | MikroTik RouterOS | 4.0 9.2 (CERT Polska); 3.1 9.8 (NVD) | RouterOS before 7.24.2 (Stable), before 7.23.4 (Long-term), before 6.49.21 (Long-term) | 7.24.2 (Stable); 7.23.4 (Long-term); 6.49.21 (Long-term) | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-88771](CVE-2026-88771) | Citrix NetScaler ADC / Gateway | 4.0 9.5 (Citrix); 3.1 9.8 (NVD) | NetScaler ADC 14.1 before 14.1-73.37, 13.1 before 13.1-64.23, 14.1-FIPS before 14.1-73.37, 13.1-FIPS/NDcPP before 13.1.37.279; NetScaler Gateway 14.1 before 14.1-73.37, 13.1 before 13.1-64.23 | 14.1-73.37 and later; 13.1-64.23 and later; 14.1-73.37 FIPS and later; 13.1.37.279 FIPS/NDcPP and later | CWE-20; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-88772](CVE-2026-88772) | Citrix NetScaler ADC / Gateway | 4.0 9.5 (Citrix); 3.1 8.1 (NVD) | NetScaler ADC 14.1 before 14.1-73.37, 13.1 before 13.1-64.23, 14.1-FIPS before 14.1-73.37, 13.1-FIPS/NDcPP before 13.1.37.279; NetScaler Gateway 14.1 before 14.1-73.37, 13.1 before 13.1-64.23; requires DTLS enabled (on by default for VPN virtual servers) | 14.1-73.37 and later; 13.1-64.23 and later; 14.1-73.37 FIPS and later; 13.1.37.279 FIPS/NDcPP and later | CWE-119; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (95)
 
