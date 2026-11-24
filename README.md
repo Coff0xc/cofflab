@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (189)
+### Web / CMS (190)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -211,6 +211,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-70305](CVE-2026-70305) | Azure Portal | 3.1 9.6 (Microsoft) | Azure Portal |  | CWE-79; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-93700](CVE-2026-93700) | WHMCS | 3.1 9.0 (HackerOne) | WHMCS 8.0.0 and later: 9.1.x before 9.1.2; 9.0.x before 9.0.10; 8.x.x before 8.13.8 | 9.1.2 / 9.0.10 / 8.13.8 | CWE-1336; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-83542](CVE-2026-83542) | Apache OFBiz | 3.1 9.8 (CISA-ADP) | Apache OFBiz 24.09 before 24.09.08 | 24.09.08 | CWE-94; RCE in local/Docker lab | Confirmed | Pending |
+| [CVE-2026-131914](CVE-2026-131914) | Idunno.AntiCsrf | 4.0 9.3 (Mandiant) | Idunno.AntiCsrf through 0.9.1 Beta (0.9.1.0) on ASP.NET WebForms | No fix; remove Idunno.AntiCsrf.dll and replace with a supported anti-CSRF mechanism | CWE-502; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### AI / LLM (25)
 
