@@ -229,7 +229,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-130169](CVE-2026-130169) | AutoGPT Platform | 3.1 10.0 (GHSA) | AutoGPT Platform 0.6.26 through 0.7.4 | 0.8.0 | CWE-287; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (168)
+### ネットワークとセキュリティ (169)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -401,6 +401,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-103788](CVE-2026-103788) | Dell Enterprise Sonic Distribution | 3.1 9.6 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-134624](CVE-2026-134624) | N-able MailAssure (SpamExperts) | 4.0 9.3 (N-able) | N-able MailAssure (SpamExperts) before 20261121.1943 | 20261121.1943 | CWE-918; バージョン確認のみ | 確認済み | 未実施 |
 | [CVE-2026-110631](CVE-2026-110631) | Komodo Periphery | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Komodo through 2.3.3 (default install: no core_public_keys / passkeys configured) |  | CWE-1188; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
+| [CVE-2026-114203](CVE-2026-114203) | ASUS GPU Tweak III | 4.0 9.3 (ASUS) | ASUS GPU Tweak III V.1.6.9.4 to v2.2.1.1 (Mobile Module service installed) | v2.2.2.3 | CWE-78; ローカル/Docker ラボで RCE | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (88)
 

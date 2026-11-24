@@ -229,7 +229,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-135211](CVE-2026-135211) | BISHENG | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | BISHENG before 3.0.0 | 3.0.0 | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-130169](CVE-2026-130169) | AutoGPT Platform | 3.1 10.0 (GHSA) | AutoGPT Platform 0.6.26 through 0.7.4 | 0.8.0 | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 网络与安全 (168)
+### 网络与安全 (169)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -401,6 +401,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-103788](CVE-2026-103788) | Dell Enterprise Sonic Distribution | 3.1 9.6 (Dell) | Dell Enterprise Sonic Distribution before 4.6.1 | 4.6.1 | CWE-78; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134624](CVE-2026-134624) | N-able MailAssure (SpamExperts) | 4.0 9.3 (N-able) | N-able MailAssure (SpamExperts) before 20261121.1943 | 20261121.1943 | CWE-918; 仅版本检测 | 已确认 | 待复现 |
 | [CVE-2026-110631](CVE-2026-110631) | Komodo Periphery | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Komodo through 2.3.3 (default install: no core_public_keys / passkeys configured) |  | CWE-1188; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
+| [CVE-2026-114203](CVE-2026-114203) | ASUS GPU Tweak III | 4.0 9.3 (ASUS) | ASUS GPU Tweak III V.1.6.9.4 to v2.2.1.1 (Mobile Module service installed) | v2.2.2.3 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (88)
 
