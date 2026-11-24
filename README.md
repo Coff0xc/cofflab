@@ -241,7 +241,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-118285](CVE-2026-118285) | Azure Machine Learning | 3.1 9.6 (Microsoft) | Azure Machine Learning |  | CWE-918; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Network & Security (180)
+### Network & Security (181)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -425,6 +425,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-121613](CVE-2026-121613) | ifm Camera Products | 4.0 9.3 (CERT VDE); 3.1 9.8 (CERT VDE) | ifm 相机产品 O3D/O3X 系列（固件 1.20.6381 / 1.71.10735 / 1.90.107 / 1.90.119 / 2.0.10412 / 2.10.16，按型号） |  | CWE-306; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-80466](CVE-2026-80466) | WAGO Web-Based Management | 4.0 8.7 (CERT VDE); 3.1 8.8 (CERT VDE) | WAGO CC100 / PFC100 G2 / PFC200 G2 / TP600 / Edge Controller / WP400（wago_os_linux < 4.10.0） | 4.10.0 | CWE-78; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-86312](CVE-2026-86312) | Apache Solr | 3.1 8.8 (Apache) | Apache Solr 9.0.0 through before 9.11.0 (9.x) and before 10.1.0 (10.x) | 9.11.0 / 10.1.0 | CWE-441; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-134753](CVE-2026-134753) | dsniff | 4.0 8.3 (VulnCheck) | dsniff (hackerschoice/dsniff fork), decode_sniffer.c decode_sniffer() |  | CWE-191; PoC causes a crash | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (93)
 
