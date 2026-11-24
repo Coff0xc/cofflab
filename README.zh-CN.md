@@ -171,7 +171,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-131754](CVE-2026-131754) | APCu Manager | 3.1 9.8 (NVD) | APCu Manager through 4.6.1 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-131782](CVE-2026-131782) | Simple Shopping Cart | 3.1 9.8 (NVD) | Simple Shopping Cart through 5.3.3 |  | CWE-502; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-129175](CVE-2026-129175) | Unstable Slope Management Program | 3.1 9.8 (CISA); 4.0 9.3 (CISA) | Unstable Slope Management Program (version not specified in NVD/GHSA) | Fixed on or around 2026-10-19 (per NVD) | CWE-306; PoC 触发漏洞 | 已确认 | 待复现 |
-| [CVE-2026-132165](CVE-2026-132165) | Drupal core | unknown | Drupal core <10.6.22, 11.0.0-11.3.21, 11.4.0-11.4.12 | 10.6.22 / 11.3.22 / 11.4.13 | 权限提升 | 已确认 | 待复现 |
+| [CVE-2026-132165](CVE-2026-132165) | Drupal core | unknown | Drupal core <10.6.22, 11.0.0-11.3.21, 11.4.0-11.4.12 | 10.6.22 / 11.3.22 / 11.4.13 | 权限提升；CISA KEV 2026-11-24 | 已确认 | 待复现 |
 | [CVE-2026-125294](CVE-2026-125294) | Nexter Blocks Pro | 3.1 9.8 (Wordfence) | Nexter Blocks Pro up to and including 5.0.10 |  | CWE-269; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134433](CVE-2026-134433) | Frappe ERPNext | 4.0 8.4 (VulnCheck); 3.1 8.5 (VulnCheck) | ERPNext before 15.124.2 and 16.x before 16.53.0 | 15.124.2 / 16.53.0 | CWE-862; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-134448](CVE-2026-134448) | Dockhand | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Dockhand 1.0.7 before 1.0.57 | 1.0.57 | CWE-22; PoC 触发漏洞 | 已确认 | 待复现 |
@@ -246,7 +246,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC 泄露信息 | 已确认 | 待复现 |
 
-### 网络与安全 (185)
+### 网络与安全 (187)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -435,6 +435,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-86060](CVE-2026-86060) | MikroTik RouterOS | 4.0 9.2 (CERT Polska); 3.1 9.8 (NVD) | RouterOS before 7.24.2 (Stable), before 7.23.4 (Long-term), before 6.49.21 (Long-term) | 7.24.2 (Stable); 7.23.4 (Long-term); 6.49.21 (Long-term) | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-88771](CVE-2026-88771) | Citrix NetScaler ADC / Gateway | 4.0 9.5 (Citrix); 3.1 9.8 (NVD) | NetScaler ADC 14.1 before 14.1-73.37, 13.1 before 13.1-64.23, 14.1-FIPS before 14.1-73.37, 13.1-FIPS/NDcPP before 13.1.37.279; NetScaler Gateway 14.1 before 14.1-73.37, 13.1 before 13.1-64.23 | 14.1-73.37 and later; 13.1-64.23 and later; 14.1-73.37 FIPS and later; 13.1.37.279 FIPS/NDcPP and later | CWE-20; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-88772](CVE-2026-88772) | Citrix NetScaler ADC / Gateway | 4.0 9.5 (Citrix); 3.1 8.1 (NVD) | NetScaler ADC 14.1 before 14.1-73.37, 13.1 before 13.1-64.23, 14.1-FIPS before 14.1-73.37, 13.1-FIPS/NDcPP before 13.1.37.279; NetScaler Gateway 14.1 before 14.1-73.37, 13.1 before 13.1-64.23; requires DTLS enabled (on by default for VPN virtual servers) | 14.1-73.37 and later; 13.1-64.23 and later; 14.1-73.37 FIPS and later; 13.1.37.279 FIPS/NDcPP and later | CWE-119; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-136411](CVE-2026-136411) | BusyBox | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | BusyBox through 1.38.0, tftpd started without a DIR argument (no chroot, no chdir) | Upstream commit b67f7b7d14ac98ca84491718d364b955d21a9cd5 (tftpd: strip leading slashes from the requested file name) | CWE-36; PoC 泄露信息 | 已确认 | 待复现 |
+| [CVE-2026-19586](CVE-2026-19586) | TP-Link Omada Gateways | 4.0 9.3 (CNA); 3.1 9.8 (NVD) | Omada gateways with the SSL VPN (OpenVPN) server enabled; shared checkpsw.sh authentication code across the Omada gateway range | Fixed firmware per model (TP-Link FAQ 5256; 19 models, e.g. ER605 V2 2.4.4 Build 20260630 Rel.14398, ER7406 V1 1.3.4 Build 20260625 Rel.43136) | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (95)
 
