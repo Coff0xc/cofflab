@@ -247,7 +247,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC 泄露信息 | 已确认 | 待复现 |
 
-### 网络与安全 (187)
+### 网络与安全 (189)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -438,6 +438,8 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-88772](CVE-2026-88772) | Citrix NetScaler ADC / Gateway | 4.0 9.5 (Citrix); 3.1 8.1 (NVD) | NetScaler ADC 14.1 before 14.1-73.37, 13.1 before 13.1-64.23, 14.1-FIPS before 14.1-73.37, 13.1-FIPS/NDcPP before 13.1.37.279; NetScaler Gateway 14.1 before 14.1-73.37, 13.1 before 13.1-64.23; requires DTLS enabled (on by default for VPN virtual servers) | 14.1-73.37 and later; 13.1-64.23 and later; 14.1-73.37 FIPS and later; 13.1.37.279 FIPS/NDcPP and later | CWE-119; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-136411](CVE-2026-136411) | BusyBox | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | BusyBox through 1.38.0, tftpd started without a DIR argument (no chroot, no chdir) | Upstream commit b67f7b7d14ac98ca84491718d364b955d21a9cd5 (tftpd: strip leading slashes from the requested file name) | CWE-36; PoC 泄露信息 | 已确认 | 待复现 |
 | [CVE-2026-19586](CVE-2026-19586) | TP-Link Omada Gateways | 4.0 9.3 (CNA); 3.1 9.8 (NVD) | Omada gateways with the SSL VPN (OpenVPN) server enabled; shared checkpsw.sh authentication code across the Omada gateway range | Fixed firmware per model (TP-Link FAQ 5256; 19 models, e.g. ER605 V2 2.4.4 Build 20260630 Rel.14398, ER7406 V1 1.3.4 Build 20260625 Rel.43136) | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
+| [CVE-2026-24061](CVE-2026-24061) | GNU InetUtils telnetd | 3.1 9.8 (MITRE) | GNU InetUtils telnetd through 2.7 | Upstream fix commit ccba9f748aa8d50a38d7748e2e60362edd6a32cc | CWE-88; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-84869](CVE-2026-84869) | ScreenConnect | 3.1 9.9 (ConnectWise) | ScreenConnect client before 26.6.5 (Client Support and Access sessions, cloud and on-premise; servers not impacted) | 26.6.5 | CWE-269; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (95)
 
