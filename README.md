@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (199)
+### Web / CMS (200)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -221,6 +221,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-107904](CVE-2026-107904) | Easy File Uploader (Joomla extension) | 3.1 9.8 (CISA-ADP) | Easy File Uploader < 2.9.7 | 2.9.7 | CWE-434; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-128981](CVE-2026-128981) | Apache SeaTunnel Web | 3.1 9.8 (CISA-ADP) | Apache SeaTunnel Web 1.0.2 | None — component unsupported / unmaintained | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-135175](CVE-2026-135175) | ZITADEL | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | ZITADEL 4.19.5–4.20.2 | 4.20.3 | CWE-640; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-133335](CVE-2026-133335) | VirtueMart | 4.0 9.2 (Joomla) | VirtueMart extension 4.0.0-4.8.7 | 4.8.8 | CWE-98; unauthenticated LFI to RCE via controller fallback; exploited in the wild, no public PoC | Confirmed | Pending |
 
 ### AI / LLM (26)
 

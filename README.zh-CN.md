@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (199)
+### Web / CMS (200)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -221,6 +221,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-107904](CVE-2026-107904) | Easy File Uploader (Joomla extension) | 3.1 9.8 (CISA-ADP) | Easy File Uploader < 2.9.7 | 2.9.7 | CWE-434; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-128981](CVE-2026-128981) | Apache SeaTunnel Web | 3.1 9.8 (CISA-ADP) | Apache SeaTunnel Web 1.0.2 | None — component unsupported / unmaintained | CWE-287; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-135175](CVE-2026-135175) | ZITADEL | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | ZITADEL 4.19.5–4.20.2 | 4.20.3 | CWE-640; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-133335](CVE-2026-133335) | VirtueMart | 4.0 9.2 (Joomla) | VirtueMart 扩展 4.0.0–4.8.7 | 4.8.8 | CWE-98；控制器回退未授权本地文件包含致 RCE；已确认在野利用，暂无公开 PoC | 已确认 | 待复现 |
 
 ### AI / LLM (26)
 
