@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (202)
+### Web / CMS (203)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -218,8 +218,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-133335](CVE-2026-133335) | VirtueMart | 4.0 9.2 (Joomla) | VirtueMart extension 4.0.0-4.8.7 | 4.8.8 |
 | [CVE-2026-129968](CVE-2026-129968) | LiteSpeed Cache Plugin for PrestaShop | 4.0 9.3 (CERT Polska) | LiteSpeed Cache Plugin for PrestaShop (litespeedcache module) before 1.6.2 | 1.6.2 (released 2026-10-30) |
 | [CVE-2026-35273](CVE-2026-35273) | Oracle PeopleSoft Enterprise PeopleTools | 3.1 9.8 (Oracle) | PeopleSoft Enterprise PeopleTools 8.61, 8.62 | Oracle Security Alert 补丁（2026-06-10） |
+| [CVE-2026-123214](CVE-2026-123214) | Joomla! CMS | 4.0 9.2 (Joomla) | Joomla! CMS 4.0.0–5.4.10, 6.0.0–6.2.0 | 5.4.11 / 6.2.1 |
 
-### AI / LLM (26)
+### AI / LLM (27)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -249,6 +250,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  |
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch |
+| [CVE-2026-59415](CVE-2026-59415) | Spring AI TypesenseVectorStore | 3.1 10.0 (Spring) | Spring AI 1.0.0–1.0.10, 1.1.0–1.1.9, 2.0.0–2.0.2 | 2.0.3 (OSS); 2.0.2.1 / 1.1.10 / 1.0.11 (Enterprise Support Only) |
 
 ### Network & Security (194)
 
