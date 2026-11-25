@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (195)
+### Web / CMS (196)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -217,6 +217,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-132224](CVE-2026-132224) | Web Experimentation | 4.0 7.1 (MITRE) | Optimizely Web Experimentation before 2026-11-17 | 2026-11-17 (vendor-side fix; no customer patch to install) | CWE-642；在野利用——攻击者经注册流程缺陷向 Project JavaScript 注入恶意代码；无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-129242](CVE-2026-129242) | GeoServer | 4.0 8.6 (GHSA) | GeoServer <= 2.27.6, 2.28.0-2.28.5, 3.0.0-3.0.1 | 2.27.7, 2.28.6, 3.0.2 | CWE-502; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-109384](CVE-2026-109384) | IvyForms WordPress plugin | 3.1 8.8 (Wordfence) | IvyForms <= 1.5.1 | 1.5.2 | CWE-434; PoC 触发漏洞 | 已确认 | 待复现 |
+| [CVE-2026-122247](CVE-2026-122247) | Budibase | 3.1 8.2 (GHSA) | Budibase < 3.50.0 | 3.50.0 (and 4.0.0) | CWE-284; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### AI / LLM (26)
 
@@ -443,7 +444,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-24061](CVE-2026-24061) | GNU InetUtils telnetd | 3.1 9.8 (MITRE) | GNU InetUtils telnetd through 2.7 | Upstream fix commit ccba9f748aa8d50a38d7748e2e60362edd6a32cc | CWE-88；在野利用——USER=-f root 绕过 telnetd 认证得 root shell；KEV；本仓未收公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-84869](CVE-2026-84869) | ScreenConnect | 3.1 9.9 (ConnectWise) | ScreenConnect client before 26.6.5 (Client Support and Access sessions, cloud and on-premise; servers not impacted) | 26.6.5 | CWE-269；在野利用——ScreenConnect 会话中未授权传文件并执行；KEV；无公开 PoC | 已确认 | 待复现 |
 
-### 运行环境 / 框架 / 浏览器 (95)
+### 运行环境 / 框架 / 浏览器 (96)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -542,6 +543,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-42290](CVE-2026-42290) | protobufjs-cli | 3.1 7.8 (GitHub) | protobufjs-cli < 1.2.1 and < 2.0.2 | 1.2.1、2.0.2 | CWE-78; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
 | [CVE-2026-46595](CVE-2026-46595) | golang.org/x/crypto/ssh | 3.1 10.0 (CISA-ADP) | golang.org/x/crypto < v0.52.0 | v0.52.0 | CWE-863; 仅版本检测 | 已确认 | 待复现 |
 | [CVE-2026-134824](CVE-2026-134824) | nektos/act | 4.0 6.8 (VulnCheck) | nektos/act 0.2.92–0.2.97 | 0.2.98 | CWE-59; PoC 泄露信息 | 已确认 | 待复现 |
+| [CVE-2026-105803](CVE-2026-105803) | Git LFS | 4.0 8.6 (GHSA) | Git LFS >= 1.3.0, <= 2.13.3 and >= 3.0.0, < 3.8.1 | 3.8.1 | CWE-777; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 数据库 (20)
 
