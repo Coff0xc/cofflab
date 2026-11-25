@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (196)
+### Web / CMS (199)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -218,6 +218,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-129242](CVE-2026-129242) | GeoServer | 4.0 8.6 (GHSA) | GeoServer <= 2.27.6, 2.28.0-2.28.5, 3.0.0-3.0.1 | 2.27.7, 2.28.6, 3.0.2 | CWE-502; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-109384](CVE-2026-109384) | IvyForms WordPress plugin | 3.1 8.8 (Wordfence) | IvyForms <= 1.5.1 | 1.5.2 | CWE-434; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-122247](CVE-2026-122247) | Budibase | 3.1 8.2 (GHSA) | Budibase < 3.50.0 | 3.50.0 (and 4.0.0) | CWE-284; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-107904](CVE-2026-107904) | Easy File Uploader (Joomla extension) | 3.1 9.8 (CISA-ADP) | Easy File Uploader < 2.9.7 | 2.9.7 | CWE-434; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-128981](CVE-2026-128981) | Apache SeaTunnel Web | 3.1 9.8 (CISA-ADP) | Apache SeaTunnel Web 1.0.2 | None — component unsupported / unmaintained | CWE-287; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-135175](CVE-2026-135175) | ZITADEL | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | ZITADEL 4.19.5–4.20.2 | 4.20.3 | CWE-640; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### AI / LLM (26)
 
@@ -250,7 +253,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC leaks information | Confirmed | Pending |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch | CWE-78; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Network & Security (189)
+### Network & Security (190)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -443,8 +446,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-19586](CVE-2026-19586) | TP-Link Omada Gateways | 4.0 9.3 (CNA); 3.1 9.8 (NVD) | Omada gateways with the SSL VPN (OpenVPN) server enabled; shared checkpsw.sh authentication code across the Omada gateway range | Fixed firmware per model (TP-Link FAQ 5256; 19 models, e.g. ER605 V2 2.4.4 Build 20260630 Rel.14398, ER7406 V1 1.3.4 Build 20260625 Rel.43136) | CWE-78; RCE in local/Docker lab | Confirmed | Pending |
 | [CVE-2026-24061](CVE-2026-24061) | GNU InetUtils telnetd | 3.1 9.8 (MITRE) | GNU InetUtils telnetd through 2.7 | Upstream fix commit ccba9f748aa8d50a38d7748e2e60362edd6a32cc | CWE-88; exploited in the wild — USER=-f root bypasses telnetd auth to root shell; KEV; no public PoC in repo | Confirmed | Pending |
 | [CVE-2026-84869](CVE-2026-84869) | ScreenConnect | 3.1 9.9 (ConnectWise) | ScreenConnect client before 26.6.5 (Client Support and Access sessions, cloud and on-premise; servers not impacted) | 26.6.5 | CWE-269; exploited in the wild — unauthorized file transfer and execution in ScreenConnect sessions; KEV; no public PoC | Confirmed | Pending |
+| [CVE-2026-136126](CVE-2026-136126) | c-icap-server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | c-icap-server through 0.5.15 and 0.6.5 | unknown | CWE-415; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Runtime / Framework / Browser (96)
+### Runtime / Framework / Browser (98)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -544,8 +548,10 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-46595](CVE-2026-46595) | golang.org/x/crypto/ssh | 3.1 10.0 (CISA-ADP) | golang.org/x/crypto < v0.52.0 | v0.52.0 | CWE-863; Version check only | Confirmed | Pending |
 | [CVE-2026-134824](CVE-2026-134824) | nektos/act | 4.0 6.8 (VulnCheck) | nektos/act 0.2.92–0.2.97 | 0.2.98 | CWE-59; PoC leaks information | Confirmed | Pending |
 | [CVE-2026-105803](CVE-2026-105803) | Git LFS | 4.0 8.6 (GHSA) | Git LFS >= 1.3.0, <= 2.13.3 and >= 3.0.0, < 3.8.1 | 3.8.1 | CWE-777; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-134401](CVE-2026-134401) | Google Chrome | 3.1 9.6 (CISA-ADP) | Google Chrome < 158.0.8127.88 | 158.0.8127.88 (Windows/Mac/Linux); Extended Stable 156.0.8078.114 | CWE-20; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-65320](CVE-2026-65320) | fastcore | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | fastcore through 2.2.44 | unknown | CWE-22; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Database (20)
+### Database (21)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -569,6 +575,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-134803](CVE-2026-134803) | DBHub | 3.1 8.1 (VulnCheck); 4.0 7.2 (VulnCheck) | DBHub before 1.7.0 | 1.7.0 | CWE-436; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134841](CVE-2026-134841) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 | 42.7.15 | CWE-89; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134842](CVE-2026-134842) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 (preferQueryMode=simple and standard_conforming_strings=off) | 42.7.15 | CWE-89; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 | CWE-426; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### OS / System / DevOps (63)
 
