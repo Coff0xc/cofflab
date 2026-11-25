@@ -253,7 +253,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC が情報を漏洩 | 確認済み | 未実施 |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch | CWE-78; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (191)
+### ネットワークとセキュリティ (192)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -448,6 +448,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-84869](CVE-2026-84869) | ScreenConnect | 3.1 9.9 (ConnectWise) | ScreenConnect client before 26.6.5 (Client Support and Access sessions, cloud and on-premise; servers not impacted) | 26.6.5 | CWE-269；実利用確認——ScreenConnect セッションで無許可のファイル転送と実行；KEV；公開 PoC なし | 確認済み | 未実施 |
 | [CVE-2026-136126](CVE-2026-136126) | c-icap-server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | c-icap-server through 0.5.15 and 0.6.5 | unknown | CWE-415; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-136404](CVE-2026-136404) | n2n | 4.0 9.3 (VulnCheck); 3.1 9.8 (GHSA) | n2n 3.0 through 3.1.1 | No fixed release yet | CWE-121; PoC が脆弱性をトリガー | 確認済み | 未実施 |
+| [CVE-2026-136547](CVE-2026-136547) | RX3 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | Tenda RX3 firmware V16.03.13.11_multi | unknown | CWE-287; PoC が情報を漏洩 | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (99)
 
