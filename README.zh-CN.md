@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (194)
+### Web / CMS (195)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -216,8 +216,9 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-87902](CVE-2026-87902) | WordPress Core | 3.1 8.1 (WordPress) | WordPress 7.1.1 and earlier (all branches) | 7.1.2; fix backported to all branches back to 4.7 | CWE-98; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-132224](CVE-2026-132224) | Web Experimentation | 4.0 7.1 (MITRE) | Optimizely Web Experimentation before 2026-11-17 | 2026-11-17 (vendor-side fix; no customer patch to install) | CWE-642；在野利用——攻击者经注册流程缺陷向 Project JavaScript 注入恶意代码；无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-129242](CVE-2026-129242) | GeoServer | 4.0 8.6 (GHSA) | GeoServer <= 2.27.6, 2.28.0-2.28.5, 3.0.0-3.0.1 | 2.27.7, 2.28.6, 3.0.2 | CWE-502; 本地/Docker 实验室 RCE | 已确认 | 待复现 |
+| [CVE-2026-109384](CVE-2026-109384) | IvyForms WordPress plugin | 3.1 8.8 (Wordfence) | IvyForms <= 1.5.1 | 1.5.2 | CWE-434; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### AI / LLM (25)
+### AI / LLM (26)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -246,6 +247,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-118285](CVE-2026-118285) | Azure Machine Learning | 3.1 9.6 (Microsoft) | Azure Machine Learning |  | CWE-918; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-50691](CVE-2026-50691) | Microsoft 365 Copilot | 3.1 9.9 (Microsoft) | Microsoft 365 Copilot |  | CWE-285; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC 泄露信息 | 已确认 | 待复现 |
+| [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch | CWE-78; PoC 触发漏洞 | 已确认 | 待复现 |
 
 ### 网络与安全 (189)
 
