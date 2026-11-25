@@ -253,7 +253,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC leaks information | Confirmed | Pending |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch | CWE-78; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Network & Security (190)
+### Network & Security (191)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -447,8 +447,9 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-24061](CVE-2026-24061) | GNU InetUtils telnetd | 3.1 9.8 (MITRE) | GNU InetUtils telnetd through 2.7 | Upstream fix commit ccba9f748aa8d50a38d7748e2e60362edd6a32cc | CWE-88; exploited in the wild — USER=-f root bypasses telnetd auth to root shell; KEV; no public PoC in repo | Confirmed | Pending |
 | [CVE-2026-84869](CVE-2026-84869) | ScreenConnect | 3.1 9.9 (ConnectWise) | ScreenConnect client before 26.6.5 (Client Support and Access sessions, cloud and on-premise; servers not impacted) | 26.6.5 | CWE-269; exploited in the wild — unauthorized file transfer and execution in ScreenConnect sessions; KEV; no public PoC | Confirmed | Pending |
 | [CVE-2026-136126](CVE-2026-136126) | c-icap-server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | c-icap-server through 0.5.15 and 0.6.5 | unknown | CWE-415; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-136404](CVE-2026-136404) | n2n | 4.0 9.3 (VulnCheck); 3.1 9.8 (GHSA) | n2n 3.0 through 3.1.1 | No fixed release yet | CWE-121; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Runtime / Framework / Browser (98)
+### Runtime / Framework / Browser (99)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -550,6 +551,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-105803](CVE-2026-105803) | Git LFS | 4.0 8.6 (GHSA) | Git LFS >= 1.3.0, <= 2.13.3 and >= 3.0.0, < 3.8.1 | 3.8.1 | CWE-777; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-134401](CVE-2026-134401) | Google Chrome | 3.1 9.6 (CISA-ADP) | Google Chrome < 158.0.8127.88 | 158.0.8127.88 (Windows/Mac/Linux); Extended Stable 156.0.8078.114 | CWE-20; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-65320](CVE-2026-65320) | fastcore | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | fastcore through 2.2.44 | unknown | CWE-22; PoC triggers the vulnerability | Confirmed | Pending |
+| [CVE-2026-136412](CVE-2026-136412) | stream-lua-nginx-module | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | stream-lua-nginx-module < 0.0.20rc4 | 0.0.20rc4 | CWE-416; PoC triggers the vulnerability | Confirmed | Pending |
 
 ### Database (21)
 
