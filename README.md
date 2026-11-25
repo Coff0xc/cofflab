@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (205)
+### Web / CMS (208)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -221,8 +221,11 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-123214](CVE-2026-123214) | Joomla! CMS | 4.0 9.2 (Joomla) | Joomla! CMS 4.0.0–5.4.10, 6.0.0–6.2.0 | 5.4.11 / 6.2.1 |
 | [CVE-2026-134838](CVE-2026-134838) | Weblate | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Weblate before 2026.11 | 2026.11 |
 | [CVE-2026-135163](CVE-2026-135163) | Okou | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Okou API before 1.762.0 | 1.762.0 |
+| [CVE-2026-21589](CVE-2026-21589) | Atlassian Data Center | 4.0 9.3 (Atlassian); 3.1 7.5 (NVD) | All versions of Bitbucket Data Center, Confluence Data Center, Jira Software Data Center, Jira Service Management Data Center, Bamboo Data Center, Crowd Data Center, Crucible, Fisheye (before the fixed versions) | Bitbucket 9.4.26 / 10.2.8 / 10.5.1; Confluence 9.2.26 / 10.2.19; Jira Software 9.12.40 / 10.3.26 / 11.3.12; Jira Service Management 5.12.40 / 10.3.26 / 11.3.12; Bamboo 10.2.24 / 12.1.12; Crowd 6.3.7 / 7.0.3 / 7.1.7 / 7.2.4; Crucible 4.9.15; Fisheye 4.9.15 |
+| [CVE-2026-49952](CVE-2026-49952) | Discuz! X5.0 | 4.0 9.3 (VulnCheck); 3.1 9.1 (VulnCheck) | Discuz! X5.0 >= 20260320, <= 20260501 |  |
+| [CVE-2026-75650](CVE-2026-75650) | Adobe Commerce / Magento Open Source | 3.1 10.0 (Adobe) | Adobe Commerce 2.4.4-2.4.9 (2026-aug and earlier); Adobe Commerce B2B 1.3.3-1.5.3 (2026-aug and earlier); Magento Open Source 2.4.6-2.4.9 (2026-aug and earlier) | Hotfix VULN-39341 (APSB26-146) |
 
-### AI / LLM (27)
+### AI / LLM (29)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -253,8 +256,10 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch |
 | [CVE-2026-59415](CVE-2026-59415) | Spring AI TypesenseVectorStore | 3.1 10.0 (Spring) | Spring AI 1.0.0–1.0.10, 1.1.0–1.1.9, 2.0.0–2.0.2 | 2.0.3 (OSS); 2.0.2.1 / 1.1.10 / 1.0.11 (Enterprise Support Only) |
+| [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
+| [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### Network & Security (196)
+### Network & Security (199)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -454,8 +459,11 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-103406](CVE-2026-103406) | Session Smart Conductor | 3.1 9.8 (Juniper) | Session Smart Conductor 與 Session Smart Router 7.0.5 / 7.1.7 / 7.2.3 之前的所有版本 | 7.0.5 / 7.1.7 / 7.2.3 |
 | [CVE-2026-134287](CVE-2026-134287) | OpenRemote | 4.0 9.2 (VulnCheck); 3.1 7.7 (VulnCheck) | OpenRemote core before 1.34.0 | 1.34.0 |
 | [CVE-2026-135300](CVE-2026-135300) | Pomerium | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Pomerium 0.30.0 to before 0.34.0 | 0.34.0 |
+| [CVE-2026-18963](CVE-2026-18963) | Keycloak | 3.1 9.1 (Red Hat) | Red Hat build of Keycloak 26.4, 26.6; Red Hat Single Sign-On 7.6 | 26.4.15, 26.6.6 (RHSA-2026:56520, RHSA-2026:56523) |
+| [CVE-2026-34197](CVE-2026-34197) | Apache ActiveMQ | 3.1 8.8 (Apache) | Apache ActiveMQ Broker / ActiveMQ before 5.19.4; 6.0.0 before 6.2.3 | 5.19.4 or 6.2.3 |
+| [CVE-2026-42945](CVE-2026-42945) | NGINX | 4.0 9.2 (F5); 3.1 8.1 (F5) | NGINX Open Source 0.6.27 through 1.30.0; NGINX Plus R32 through R36 | NGINX Open Source 1.31.0 / 1.30.1; NGINX Plus R36 P4 / R32 P6 |
 
-### Runtime / Framework / Browser (99)
+### Runtime / Framework / Browser (102)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -558,8 +566,11 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-134401](CVE-2026-134401) | Google Chrome | 3.1 9.6 (CISA-ADP) | Google Chrome < 158.0.8127.88 | 158.0.8127.88 (Windows/Mac/Linux); Extended Stable 156.0.8078.114 |
 | [CVE-2026-65320](CVE-2026-65320) | fastcore | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | fastcore through 2.2.44 | unknown |
 | [CVE-2026-136412](CVE-2026-136412) | stream-lua-nginx-module | 4.0 9.2 (VulnCheck); 3.1 8.1 (GHSA) | stream-lua-nginx-module < 0.0.20rc4 | 0.0.20rc4 |
+| [CVE-2026-33186](CVE-2026-33186) | gRPC-Go | 3.1 9.1 (GHSA) | gRPC-Go before 1.79.3 | 1.79.3 |
+| [CVE-2026-34486](CVE-2026-34486) | Apache Tomcat | 3.1 7.5 (Apache) | 11.0.0-M1 to 11.0.20; 10.1.0-M1 to 10.1.53; 9.0.13 to 9.0.116 | 11.0.21; 10.1.54; 9.0.117 |
+| [CVE-2026-66066](CVE-2026-66066) | Ruby on Rails | 4.0 9.5 (GHSA) | Active Storage < 7.2.3.2; >= 8.0.0.beta1, < 8.0.5.1; >= 8.1.0.beta1, < 8.1.3.1 | 7.2.3.2; 8.0.5.1; 8.1.3.1 |
 
-### Database (21)
+### Database (22)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -584,8 +595,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-134841](CVE-2026-134841) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 | 42.7.15 |
 | [CVE-2026-134842](CVE-2026-134842) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 (preferQueryMode=simple and standard_conforming_strings=off) | 42.7.15 |
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
+| [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### OS / System / DevOps (64)
+### OS / System / DevOps (67)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -653,6 +665,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-88235](CVE-2026-88235) | Windows TrustedInstaller (CBS) | 3.1 7.8 (Microsoft) | Windows (TrustedInstaller.exe / CBS Session COM) |  |
 | [CVE-2026-98260](CVE-2026-98260) | Linux kernel (posix-cpu-timers) | 3.1 7.8 (NVD) | Linux kernel 6.12.38 / 6.12.58 (Android 16, Honor MagicPad3 Pro) |  |
 | [CVE-2026-123903](CVE-2026-123903) | VMware vCenter | 3.1 9.8 (Broadcom) | VMware vCenter 9.1.x, 9.0.x, 8.0, 7.0, 5.x（VMware Directory Service，vmdir） | 9.1.2 / 9.0.2.0300 / 8.0 U3m / 5.2.5；7.0 需聯繫 Broadcom 支援 |
+| [CVE-2026-31431](CVE-2026-31431) | Linux kernel | 3.1 7.8 (Linux) | Linux kernel built since 2017, before fix commit a664bf3d603d | mainline commit a664bf3d603d |
+| [CVE-2026-43284](CVE-2026-43284) | Linux kernel | 3.1 8.8 (Linux) | Linux kernel 4.11 – 7.0.5 (stable branches fixed at 5.10.255, 5.15.205, 6.1.171, 6.6.138, 6.12.87, 6.18.28, 7.0.5) | 5.10.255, 5.15.205, 6.1.171, 6.6.138, 6.12.87, 6.18.28, 7.0.5 (per stable branch) |
+| [CVE-2026-59310](CVE-2026-59310) | VMware vCenter Server | 3.1 9.8 (Broadcom) | VMware vCenter Server 7.0, 8.0, 9.0.x, 9.1.x (VMware Cloud Foundation, vSphere Foundation, Telco Cloud Platform, Telco Cloud Infrastructure) | 9.1.0.0300; 9.0.2.0100; 8.0 U3k; 8.0 U2f (7.0: contact Broadcom Support under extended support) |
 
 
 See each CVE directory for details and references.
