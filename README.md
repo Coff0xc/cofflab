@@ -259,7 +259,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### Network & Security (206)
+### Network & Security (209)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -469,6 +469,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-133311](CVE-2026-133311) | MiCollab | 3.1 5.9 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) |
 | [CVE-2026-133324](CVE-2026-133324) | MiCollab | 3.1 5.3 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) |
 | [CVE-2026-42588](CVE-2026-42588) | ActiveMQ | 3.1 8.1 (Apache) | ActiveMQ 5.19.7 之前版本；6.0.0–6.2.6 之前版本 | 5.19.7 / 6.2.6 |
+| [CVE-2026-136821](CVE-2026-136821) | R32 | 4.0 8.6 (VulDB); 3.1 9.9 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
+| [CVE-2026-136822](CVE-2026-136822) | R32 | 4.0 8.6 (VulDB); 3.1 9.9 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
+| [CVE-2026-136823](CVE-2026-136823) | R32 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
 
 ### Runtime / Framework / Browser (102)
 
