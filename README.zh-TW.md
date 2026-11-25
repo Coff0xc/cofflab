@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (203)
+### Web / CMS (205)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -219,6 +219,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-129968](CVE-2026-129968) | LiteSpeed Cache Plugin for PrestaShop | 4.0 9.3 (CERT Polska) | LiteSpeed Cache Plugin for PrestaShop (litespeedcache module) before 1.6.2 | 1.6.2 (released 2026-10-30) |
 | [CVE-2026-35273](CVE-2026-35273) | Oracle PeopleSoft Enterprise PeopleTools | 3.1 9.8 (Oracle) | PeopleSoft Enterprise PeopleTools 8.61, 8.62 | Oracle Security Alert 补丁（2026-06-10） |
 | [CVE-2026-123214](CVE-2026-123214) | Joomla! CMS | 4.0 9.2 (Joomla) | Joomla! CMS 4.0.0–5.4.10, 6.0.0–6.2.0 | 5.4.11 / 6.2.1 |
+| [CVE-2026-134838](CVE-2026-134838) | Weblate | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Weblate before 2026.11 | 2026.11 |
+| [CVE-2026-135163](CVE-2026-135163) | Okou | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Okou API before 1.762.0 | 1.762.0 |
 
 ### AI / LLM (27)
 
@@ -252,7 +254,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch |
 | [CVE-2026-59415](CVE-2026-59415) | Spring AI TypesenseVectorStore | 3.1 10.0 (Spring) | Spring AI 1.0.0–1.0.10, 1.1.0–1.1.9, 2.0.0–2.0.2 | 2.0.3 (OSS); 2.0.2.1 / 1.1.10 / 1.0.11 (Enterprise Support Only) |
 
-### 網路與安全 (194)
+### 網路與安全 (196)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -450,6 +452,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-136547](CVE-2026-136547) | RX3 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | Tenda RX3 firmware V16.03.13.11_multi | unknown |
 | [CVE-2026-111214](CVE-2026-111214) | pfSense | 4.0 8.6 (VulnCheck); 3.1 7.2 (VulnCheck) | pfSense CE 2.7.0 through 2.9.0; pfSense Plus through 26.07 | 2.9.1 / 26.07.1 |
 | [CVE-2026-103406](CVE-2026-103406) | Session Smart Conductor | 3.1 9.8 (Juniper) | Session Smart Conductor 與 Session Smart Router 7.0.5 / 7.1.7 / 7.2.3 之前的所有版本 | 7.0.5 / 7.1.7 / 7.2.3 |
+| [CVE-2026-134287](CVE-2026-134287) | OpenRemote | 4.0 9.2 (VulnCheck); 3.1 7.7 (VulnCheck) | OpenRemote core before 1.34.0 | 1.34.0 |
+| [CVE-2026-135300](CVE-2026-135300) | Pomerium | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Pomerium 0.30.0 to before 0.34.0 | 0.34.0 |
 
 ### 運行環境 / 框架 / 瀏覽器 (99)
 
