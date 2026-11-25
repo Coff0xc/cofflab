@@ -255,7 +255,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC 泄露信息 | 已确认 | 待复现 |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch | CWE-78; PoC 触发漏洞 | 已确认 | 待复现 |
 
-### 网络与安全 (192)
+### 网络与安全 (193)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -451,6 +451,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-136126](CVE-2026-136126) | c-icap-server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | c-icap-server through 0.5.15 and 0.6.5 | unknown | CWE-415; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-136404](CVE-2026-136404) | n2n | 4.0 9.3 (VulnCheck); 3.1 9.8 (GHSA) | n2n 3.0 through 3.1.1 | No fixed release yet | CWE-121; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-136547](CVE-2026-136547) | RX3 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | Tenda RX3 firmware V16.03.13.11_multi | unknown | CWE-287; PoC 泄露信息 | 已确认 | 待复现 |
+| [CVE-2026-111214](CVE-2026-111214) | pfSense | 4.0 8.6 (VulnCheck); 3.1 7.2 (VulnCheck) | pfSense CE 2.7.0 through 2.9.0; pfSense Plus through 26.07 | 2.9.1 / 26.07.1 | CWE-78；认证 QinQ 父接口命令注入，本地实验室 RCE；PoC 代码未入库（克隆被拦） | 已确认 | 待复现 |
 
 ### 运行环境 / 框架 / 浏览器 (99)
 

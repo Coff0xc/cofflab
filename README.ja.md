@@ -255,7 +255,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC が情報を漏洩 | 確認済み | 未実施 |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch | CWE-78; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 
-### ネットワークとセキュリティ (192)
+### ネットワークとセキュリティ (193)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -451,6 +451,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-136126](CVE-2026-136126) | c-icap-server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | c-icap-server through 0.5.15 and 0.6.5 | unknown | CWE-415; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-136404](CVE-2026-136404) | n2n | 4.0 9.3 (VulnCheck); 3.1 9.8 (GHSA) | n2n 3.0 through 3.1.1 | No fixed release yet | CWE-121; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-136547](CVE-2026-136547) | RX3 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | Tenda RX3 firmware V16.03.13.11_multi | unknown | CWE-287; PoC が情報を漏洩 | 確認済み | 未実施 |
+| [CVE-2026-111214](CVE-2026-111214) | pfSense | 4.0 8.6 (VulnCheck); 3.1 7.2 (VulnCheck) | pfSense CE 2.7.0 through 2.9.0; pfSense Plus through 26.07 | 2.9.1 / 26.07.1 | CWE-78；認証済み QinQ 親インターフェースのコマンドインジェクション、ローカルラボで RCE；PoC コード未収録（クローン阻止） | 確認済み | 未実施 |
 
 ### ランタイム / フレームワーク / ブラウザ (99)
 

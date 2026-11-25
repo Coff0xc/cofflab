@@ -255,7 +255,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 | CWE-918; PoC leaks information | Confirmed | Pending |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch | CWE-78; PoC triggers the vulnerability | Confirmed | Pending |
 
-### Network & Security (192)
+### Network & Security (193)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -451,6 +451,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-136126](CVE-2026-136126) | c-icap-server | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | c-icap-server through 0.5.15 and 0.6.5 | unknown | CWE-415; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-136404](CVE-2026-136404) | n2n | 4.0 9.3 (VulnCheck); 3.1 9.8 (GHSA) | n2n 3.0 through 3.1.1 | No fixed release yet | CWE-121; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-136547](CVE-2026-136547) | RX3 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | Tenda RX3 firmware V16.03.13.11_multi | unknown | CWE-287; PoC leaks information | Confirmed | Pending |
+| [CVE-2026-111214](CVE-2026-111214) | pfSense | 4.0 8.6 (VulnCheck); 3.1 7.2 (VulnCheck) | pfSense CE 2.7.0 through 2.9.0; pfSense Plus through 26.07 | 2.9.1 / 26.07.1 | CWE-78; authenticated QinQ parent-if command injection, RCE in local lab; PoC code not ingested (clone blocked) | Confirmed | Pending |
 
 ### Runtime / Framework / Browser (99)
 
