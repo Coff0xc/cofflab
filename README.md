@@ -18,7 +18,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 
 ## Catalog
 
-### Web / CMS (201)
+### Web / CMS (202)
 
 | ID | Product | Score | Affected | Fixed | Assessment | CVE Status | Repro |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -223,6 +223,7 @@ Only publicly available material is collected. Ingestion is read-only and never 
 | [CVE-2026-135175](CVE-2026-135175) | ZITADEL | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | ZITADEL 4.19.5–4.20.2 | 4.20.3 | CWE-640; PoC triggers the vulnerability | Confirmed | Pending |
 | [CVE-2026-133335](CVE-2026-133335) | VirtueMart | 4.0 9.2 (Joomla) | VirtueMart extension 4.0.0-4.8.7 | 4.8.8 | CWE-98; unauthenticated LFI to RCE via controller fallback; exploited in the wild, no public PoC | Confirmed | Pending |
 | [CVE-2026-129968](CVE-2026-129968) | LiteSpeed Cache Plugin for PrestaShop | 4.0 9.3 (CERT Polska) | LiteSpeed Cache Plugin for PrestaShop (litespeedcache module) before 1.6.2 | 1.6.2 (released 2026-10-30) | CWE-1336; unauthenticated ESI template injection to RCE via pd parameter; exploited in the wild, no public PoC | Confirmed | Pending |
+| [CVE-2026-35273](CVE-2026-35273) | Oracle PeopleSoft Enterprise PeopleTools | 3.1 9.8 (Oracle) | PeopleSoft Enterprise PeopleTools 8.61, 8.62 | Oracle Security Alert 补丁（2026-06-10） | CWE-306; exploited in the wild — UNC6240 (ShinyHunters) zero-day, web shells and fileless command execution on real deployments; PoC code not ingested | Confirmed | Pending |
 
 ### AI / LLM (26)
 

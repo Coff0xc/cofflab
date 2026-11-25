@@ -18,7 +18,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 
 ## 目录
 
-### Web / CMS (201)
+### Web / CMS (202)
 
 | 编号 | 产品 | 评分 | 受影响版本 | 修复版本 | 判定 | CVE 状态 | 复现 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -223,6 +223,7 @@ Coff0xc 维护的公开 PoC 策展库，覆盖 CVE 与非 CVE 漏洞。每条记
 | [CVE-2026-135175](CVE-2026-135175) | ZITADEL | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | ZITADEL 4.19.5–4.20.2 | 4.20.3 | CWE-640; PoC 触发漏洞 | 已确认 | 待复现 |
 | [CVE-2026-133335](CVE-2026-133335) | VirtueMart | 4.0 9.2 (Joomla) | VirtueMart extension 4.0.0-4.8.7 | 4.8.8 | CWE-98；控制器回退未授权本地文件包含致 RCE；已确认在野利用，暂无公开 PoC | 已确认 | 待复现 |
 | [CVE-2026-129968](CVE-2026-129968) | LiteSpeed Cache Plugin for PrestaShop | 4.0 9.3 (CERT Polska) | LiteSpeed Cache Plugin for PrestaShop (litespeedcache module) before 1.6.2 | 1.6.2 (released 2026-10-30) | CWE-1336；未认证 ESI 模板注入经 pd 参数致 RCE；已确认在野利用，暂无公开 PoC | 已确认 | 待复现 |
+| [CVE-2026-35273](CVE-2026-35273) | Oracle PeopleSoft Enterprise PeopleTools | 3.1 9.8 (Oracle) | PeopleSoft Enterprise PeopleTools 8.61, 8.62 | Oracle Security Alert 补丁（2026-06-10） | CWE-306；已确认在野利用——UNC6240（ShinyHunters）零日利用，真实受害系统上部署 web shell 与无文件命令执行；PoC 代码未入库 | 已确认 | 待复现 |
 
 ### AI / LLM (26)
 

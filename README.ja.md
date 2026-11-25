@@ -18,7 +18,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 
 ## 目次
 
-### Web / CMS (201)
+### Web / CMS (202)
 
 | ID | 製品 | スコア | 影響バージョン | 修正バージョン | 評価 | CVE ステータス | 再現 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -223,6 +223,7 @@ Coff0xc が管理する公開 PoC のキュレーション集。CVE と CVE 以�
 | [CVE-2026-135175](CVE-2026-135175) | ZITADEL | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | ZITADEL 4.19.5–4.20.2 | 4.20.3 | CWE-640; PoC が脆弱性をトリガー | 確認済み | 未実施 |
 | [CVE-2026-133335](CVE-2026-133335) | VirtueMart | 4.0 9.2 (Joomla) | VirtueMart extension 4.0.0-4.8.7 | 4.8.8 | CWE-98；コントローラーフォールバックによる未認証 LFI から RCE；実利用を確認、公開 PoC なし | 確認済み | 未実施 |
 | [CVE-2026-129968](CVE-2026-129968) | LiteSpeed Cache Plugin for PrestaShop | 4.0 9.3 (CERT Polska) | LiteSpeed Cache Plugin for PrestaShop (litespeedcache module) before 1.6.2 | 1.6.2 (released 2026-10-30) | CWE-1336；pd パラメータ経由の未認証 ESI テンプレートインジェクションによる RCE；実利用を確認、公開 PoC なし | 確認済み | 未実施 |
+| [CVE-2026-35273](CVE-2026-35273) | Oracle PeopleSoft Enterprise PeopleTools | 3.1 9.8 (Oracle) | PeopleSoft Enterprise PeopleTools 8.61, 8.62 | Oracle Security Alert 补丁（2026-06-10） | CWE-306；実利用を確認——UNC6240（ShinyHunters）のゼロデイ、実際の被害システムで Web シェルとファイルレスのコマンド実行；PoC コード未収録 | 確認済み | 未実施 |
 
 ### AI / LLM (26)
 
