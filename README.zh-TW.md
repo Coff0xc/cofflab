@@ -250,7 +250,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-64849](CVE-2026-64849) | MLflow | 3.1 9.3 (GitHub) | MLflow < 3.15.0 | 3.15.0 |
 | [CVE-2026-63766](CVE-2026-63766) | GPT-SoVITS | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | GPT-SoVITS through 20250606v2pro | No known patch |
 
-### 網路與安全 (193)
+### 網路與安全 (194)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -447,6 +447,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-136404](CVE-2026-136404) | n2n | 4.0 9.3 (VulnCheck); 3.1 9.8 (GHSA) | n2n 3.0 through 3.1.1 | No fixed release yet |
 | [CVE-2026-136547](CVE-2026-136547) | RX3 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | Tenda RX3 firmware V16.03.13.11_multi | unknown |
 | [CVE-2026-111214](CVE-2026-111214) | pfSense | 4.0 8.6 (VulnCheck); 3.1 7.2 (VulnCheck) | pfSense CE 2.7.0 through 2.9.0; pfSense Plus through 26.07 | 2.9.1 / 26.07.1 |
+| [CVE-2026-103406](CVE-2026-103406) | Session Smart Conductor | 3.1 9.8 (Juniper) | Session Smart Conductor 與 Session Smart Router 7.0.5 / 7.1.7 / 7.2.3 之前的所有版本 | 7.0.5 / 7.1.7 / 7.2.3 |
 
 ### 運行環境 / 框架 / 瀏覽器 (99)
 
@@ -578,7 +579,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-134842](CVE-2026-134842) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 (preferQueryMode=simple and standard_conforming_strings=off) | 42.7.15 |
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 
-### 作業系統 / 系統 / DevOps (63)
+### 作業系統 / 系統 / DevOps (64)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -645,6 +646,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59309](CVE-2026-59309) | VMware vCenter Server | 3.1 9.8 (VMware) | vCenter 8.0 prior to 8.0 U3k；9.0.x prior to 9.0.2.0100；9.1.x prior to 9.1.0.0200；6.x/7.x 亦受影响且无补丁 | 8.0 U3k；9.0.2.0100；9.1.0.0200 |
 | [CVE-2026-88235](CVE-2026-88235) | Windows TrustedInstaller (CBS) | 3.1 7.8 (Microsoft) | Windows (TrustedInstaller.exe / CBS Session COM) |  |
 | [CVE-2026-98260](CVE-2026-98260) | Linux kernel (posix-cpu-timers) | 3.1 7.8 (NVD) | Linux kernel 6.12.38 / 6.12.58 (Android 16, Honor MagicPad3 Pro) |  |
+| [CVE-2026-123903](CVE-2026-123903) | VMware vCenter | 3.1 9.8 (Broadcom) | VMware vCenter 9.1.x, 9.0.x, 8.0, 7.0, 5.x（VMware Directory Service，vmdir） | 9.1.2 / 9.0.2.0300 / 8.0 U3m / 5.2.5；7.0 需聯繫 Broadcom 支援 |
 
 
 點進 CVE 目錄查看詳細內容與引用。
