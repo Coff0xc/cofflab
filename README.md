@@ -259,7 +259,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### Network & Security (199)
+### Network & Security (206)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -462,6 +462,13 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-18963](CVE-2026-18963) | Keycloak | 3.1 9.1 (Red Hat) | Red Hat build of Keycloak 26.4, 26.6; Red Hat Single Sign-On 7.6 | 26.4.15, 26.6.6 (RHSA-2026:56520, RHSA-2026:56523) |
 | [CVE-2026-34197](CVE-2026-34197) | Apache ActiveMQ | 3.1 8.8 (Apache) | Apache ActiveMQ Broker / ActiveMQ before 5.19.4; 6.0.0 before 6.2.3 | 5.19.4 or 6.2.3 |
 | [CVE-2026-42945](CVE-2026-42945) | NGINX | 4.0 9.2 (F5); 3.1 8.1 (F5) | NGINX Open Source 0.6.27 through 1.30.0; NGINX Plus R32 through R36 | NGINX Open Source 1.31.0 / 1.30.1; NGINX Plus R36 P4 / R32 P6 |
+| [CVE-2023-25914](CVE-2023-25914) | AK-SM 800A | 3.1 8.8 (DIVD) | AK-SM 800A firmware 3.3 及之前版本（NVD CPE） | Danfoss 建議安裝 3.3 補丁（DIVD-2023-00025） |
+| [CVE-2023-25915](CVE-2023-25915) | AK-SM 800A | 3.1 9.9 (DIVD); 3.1 8.8 (NVD) | AK-SM 800A firmware 3.3 及之前版本（NVD CPE） | Danfoss 建議安裝 3.3 補丁（DIVD-2023-00025） |
+| [CVE-2025-41450](CVE-2025-41450) | AK-SM 8xxA Series | 3.1 8.2 (Danfoss); 3.1 7.5 (NVD) | AK-SM 8xxA Series 4.2 之前版本 | 4.2 |
+| [CVE-2026-133275](CVE-2026-133275) | MiCollab | 3.1 5.3 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) |
+| [CVE-2026-133311](CVE-2026-133311) | MiCollab | 3.1 5.9 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) |
+| [CVE-2026-133324](CVE-2026-133324) | MiCollab | 3.1 5.3 (Mitel) | MiCollab 10.3 (10.3.0.18) and earlier | Patch for 10.3 (10.3.0.18) (MISA-2026-0012) |
+| [CVE-2026-42588](CVE-2026-42588) | ActiveMQ | 3.1 8.1 (Apache) | ActiveMQ 5.19.7 之前版本；6.0.0–6.2.6 之前版本 | 5.19.7 / 6.2.6 |
 
 ### Runtime / Framework / Browser (102)
 
