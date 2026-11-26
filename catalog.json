@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T09:00:12Z",
+  "generated": "2026-11-26T09:01:13Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 691,
   "items": [
@@ -4042,7 +4042,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01111,
+        "percentile": 0.65554,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -4092,7 +4096,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01435,
+        "percentile": 0.73322,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -4141,7 +4149,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01234,
+        "percentile": 0.68945,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -4191,7 +4203,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00837,
+        "percentile": 0.55046,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -4240,7 +4256,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01111,
+        "percentile": 0.65553,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -4290,7 +4310,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00754,
+        "percentile": 0.5127,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -6623,7 +6647,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.01102,
+        "percentile": 0.65286,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -10419,7 +10447,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01402,
+        "percentile": 0.72692,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass",
@@ -10706,7 +10738,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.96916,
+        "percentile": 0.99932,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -10751,7 +10787,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.88598,
+        "percentile": 0.99851,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -10802,7 +10842,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0385,
+        "percentile": 0.90898,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -21604,7 +21648,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.60503,
+        "percentile": 0.99363,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -22537,7 +22585,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01078,
+        "percentile": 0.64585,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -22586,7 +22638,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01431,
+        "percentile": 0.73235,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -22634,7 +22690,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00513,
+        "percentile": 0.37031,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -24238,7 +24298,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.99497,
+        "percentile": 0.99969,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -24282,7 +24346,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.99584,
+        "percentile": 0.9997,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -24332,7 +24400,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00826,
+        "percentile": 0.54551,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -24834,7 +24906,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00789,
+        "percentile": 0.52767,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "kev",
@@ -27576,7 +27652,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02195,
+        "percentile": 0.83176,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27625,7 +27705,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00658,
+        "percentile": 0.46322,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "rce"
@@ -31017,7 +31101,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.0276,
+        "percentile": 0.86985,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev",
