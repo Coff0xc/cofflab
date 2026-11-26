@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (232)
+### Web / CMS (233)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -248,6 +248,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-65971](CVE-2026-65971) | livewire-powergrid | 3.1 7.6 (GHSA) | power-components/livewire-powergrid >= 6.0.0, < 6.10.4 | 6.10.4 |
 | [CVE-2026-77806](CVE-2026-77806) | SPIP | 3.1 9.8 (NVD) | SPIP < 4.4.21 | 4.4.21 |
 | [CVE-2026-59191](CVE-2026-59191) | TwigView | 4.0 6.9 (GHSA) | twig-view < 1.3.3；2.0.0–2.1.1 | 1.3.3 / 2.1.2 |
+| [CVE-2026-61500](CVE-2026-61500) | Rejetto HFS | 3.1 9.8 (GHSA) | HFS 3.0.0–3.2.0 | 3.2.1 |
 
 ### AI / LLM (29)
 
@@ -283,7 +284,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### Network & Security (240)
+### Network & Security (241)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -527,6 +528,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-96654](CVE-2026-96654) | Plex Media Server | 4.0 6.9 (CISA); 3.1 6.5 (CISA) | Plex Media Server 1.43.3.10861 之前 | 1.43.3.10861 |
 | [CVE-2026-96655](CVE-2026-96655) | Plex Media Server | 4.0 5.3 (CISA); 3.1 4.3 (CISA) | Plex Media Server 1.43.3.10861 之前 | 1.43.3.10861 |
 | [CVE-2026-96656](CVE-2026-96656) | Plex Media Server | 4.0 8.6 (CISA); 3.1 7.2 (CISA) | Plex Media Server 1.43.3.10861 之前（管理員權限） | 1.43.3.10861 |
+| [CVE-2026-16232](CVE-2026-16232) | Check Point SmartConsole | 3.1 9.1 (GHSA) | Security Management / MDS：R77.30、R80–R80.30、R81–R82.10 | Jumbo Hotfix：R82.10 Take 36+ / R82 Take 118+ / R81.20 Take 158+ |
 
 ### Runtime / Framework / Browser (102)
 
