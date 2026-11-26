@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (222)
+### Web / CMS (225)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -238,6 +238,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [GHSA-7wwv-x6mc-pxqx](GHSA-7wwv-x6mc-pxqx) | TastyIgniter | 3.1 9.1 (GHSA) | tastyigniter/tastyigniter <= v4.2.4 | v4.3.1 |
 | [CVE-2026-137305](CVE-2026-137305) | Grav Form plugin | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | Grav Form plugin <= 9.2.3 (before 9.2.4) | 9.2.4 |
 | [GHSA-743w-g9pf-8p94](GHSA-743w-g9pf-8p94) | TastyIgniter | 3.1 9.1 (GHSA) | tastyigniter/tastyigniter <= v4.2.4 | v4.3.1 |
+| [CVE-2026-64670](CVE-2026-64670) | @waline/client | 3.1 9.3 (GHSA) | @waline/client <= 3.15.2 | No fixed release yet |
+| [GHSA-2grc-qr7q-6m36](GHSA-2grc-qr7q-6m36) | Gogs | 3.1 9.6 (GHSA) | Gogs <= 0.14.3 | 0.14.4 |
+| [GHSA-hc35-pcqw-5xjq](GHSA-hc35-pcqw-5xjq) | Gogs | 3.1 9.9 (GHSA) | Gogs <= 0.14.3 | No fixed release yet |
 
 ### AI / LLM (29)
 
