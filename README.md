@@ -266,7 +266,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### Network & Security (225)
+### Network & Security (232)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -495,6 +495,13 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-114625](CVE-2026-114625) | Arista VeloCloud Orchestrator | 3.1 9.9 (Arista); 4.0 9.4 (Arista) | VeloCloud Orchestrator (VCO) on-prem 5.2.x < 5.2.3.18、6.1.x < 6.1.3.10、6.4.x < 6.4.2.12 | 5.2.3.18 / 6.1.3.10 / 6.4.2.12 |
 | [CVE-2026-76519](CVE-2026-76519) | Cisco Secure Email Gateway | 3.1 9.8 (Cisco) | Cisco Secure Email Gateway（AsyncOS 15.5 < 15.5.5-014、16.0 全版本、16.5 < 16.5.0-780），需同時滿足：AMP File Reputation 已啟用並指派至郵件政策，且 Content Scanner Tools < 25.3.0.5525 | AsyncOS 15.5.5-014 / 16.5.0-780，或 Content Scanner Tools ≥ 25.3.0.5525 |
 | [CVE-2026-88779](CVE-2026-88779) | Citrix NetScaler ADC / Gateway | 4.0 8.7 (Citrix); 3.1 7.5 (NVD) | NetScaler ADC < 14.1-73.41、< 13.1-64.28、FIPS < 14.1-73.41、< 13.1-37.282；NetScaler Gateway < 14.1-73.41、< 13.1-64.28 | ADC 14.1-73.41 / 13.1-64.28；Gateway 14.1-73.41 / 13.1-64.28 |
+| [CVE-2026-135790](CVE-2026-135790) | Panabit Smart Application Gateway TANGr7p10 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | TANGr7p10（/cgi-bin/dashboard/ajax_chart_dump，參數 isntmeye） | No fixed release yet |
+| [CVE-2026-135791](CVE-2026-135791) | Panabit Smart Application Gateway TANGr7p10 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | TANGr7p10（/cgi-bin/flowcontrol/ajax_data_pie，函數 edit_data_pie，參數 Name） | No fixed release yet |
+| [CVE-2026-135792](CVE-2026-135792) | Panabit Smart Application Gateway TANGr7p10 | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TANGr7p10（user.cgi，函數 send_email_authcode，參數 Username） | No fixed release yet |
+| [CVE-2026-135793](CVE-2026-135793) | Panabit Smart Application Gateway TANGr7p10 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | TANGr7p10（/admin/cgi-bin/sac/ajax_sac_ap，函數 import_upgrde/upload_modkey，參數 file/filename） | No fixed release yet |
+| [CVE-2026-135794](CVE-2026-135794) | Panabit Smart Application Gateway TANGr7p10 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | TANGr7p10（admin/cgi-bin/sac/ajax_sac_crontab，函數 add_crontab，參數 cmd） | No fixed release yet |
+| [CVE-2026-135796](CVE-2026-135796) | Volans NGFW Next-Generation Firewall r5.1 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | r5.1（modules/assets/port_serve_scan.mds，函數 exec/system，參數 task_name/where/path） | No fixed release yet |
+| [CVE-2026-135797](CVE-2026-135797) | Volans NGFW Next-Generation Firewall r5.1 | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | r5.1（sslvpn/sslvpn_client.php，函數 exec，參數 img） | No fixed release yet |
 
 ### Runtime / Framework / Browser (102)
 
