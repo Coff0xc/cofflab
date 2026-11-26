@@ -1,0 +1,23 @@
+id: GHSA-r2q3-7m4h-63qg
+aliases: []
+product: "Budibase"
+vendor: Budibase
+cwe: [CWE-79, CWE-116, CWE-1021]
+affected: "@budibase/server < 4.0.0"
+fixed: "3.50.0 / 4.0.0"
+advisory:
+  - name: GHSA-r2q3-7m4h-63qg
+    url: https://github.com/Budibase/budibase/security/advisories/GHSA-r2q3-7m4h-63qg
+    published: 2026-11-10
+cvss:
+  - version: "3.1"
+    score: 7.7
+    vector: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N"
+    source: "GHSA"
+demonstrated: [trigger]
+public_rce: false
+notes: "無 CVE 編號；通告內含完整 PoC（本地 Budibase v3.44.0 實例、真實 app id、payload `<img src=x onerror=alert(window.xssproof=document.domain)>`）；低權限 BASIC 使用者或未登入訪客經公開表單提交 payload，管理員開啟 Builder 即執行；通告 JSON 未列修復版本，3.50.0 / 4.0.0 採二次來源，見 Vulners。"
+collected: '2026-11-26'
+sources:
+  - id: ghsa-advisory
+    path: sources/ghsa-advisory
