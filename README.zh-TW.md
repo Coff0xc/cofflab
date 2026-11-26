@@ -261,7 +261,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### 網路與安全 (209)
+### 網路與安全 (210)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -474,6 +474,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-136821](CVE-2026-136821) | R32 | 4.0 8.6 (VulDB); 3.1 9.9 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
 | [CVE-2026-136822](CVE-2026-136822) | R32 | 4.0 8.6 (VulDB); 3.1 9.9 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
 | [CVE-2026-136823](CVE-2026-136823) | R32 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
+| [CVE-2026-137043](CVE-2026-137043) | TOTOLINK N350RT | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TOTOLINK N350RT 9.3.5u.6468_B20250827 / 9.3.5u.6466_B20250825 | No fixed release yet |
 
 ### 運行環境 / 框架 / 瀏覽器 (102)
 
