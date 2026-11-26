@@ -34,6 +34,12 @@
 #   133968/ghsa-qc22-rmgc-vg94）；故意写坏的测试条目（缺键、非法 demonstrated 值、
 #   404 依赖）全部被拦；当前 HEAD 的改动条目与目录表全部通过。
 #
+# 巡检模式（schedule / workflow_dispatch）：检查全部条目（布局 + 目录表），
+#   不做依赖检查（全库 741 个 requirements 文件的 registry + OSV 查询又慢又抖，
+#   全库依赖重扫留在本地每月流程）。第一次巡检一定会红：5 个坏 SOURCE.yaml
+#   是真实历史错误，新检查必须先在它们身上挂一次——这是预期的证明，不是故障。
+#   巡检红不拦任何推送（它是定时任务，不是门禁）；门禁只拦 push/PR。
+#
 # 安装：本文件即 .github/workflows/validate.yml，无 secrets，permissions 只读。
 
 name: validate
@@ -43,6 +49,9 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: "0 3 * * 0" # weekly, Sunday 03:00 UTC — full-repo inspection sweep
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -75,6 +84,15 @@ jobs:
 
           event = os.environ.get("GITHUB_EVENT_NAME", "")
           sha = os.environ.get("GITHUB_SHA", "")
+          if event in ("schedule", "workflow_dispatch"):
+              # inspection sweep: every entry, not just the diff
+              entries = sorted(p.name for p in Path(".").iterdir()
+                               if p.is_dir() and (p / "meta.yaml").is_file())
+              Path("changed-entries.txt").write_text(
+                  "\n".join(entries) + ("\n" if entries else ""),
+                  encoding="utf-8")
+              print(f"inspection sweep over all entries ({len(entries)})")
+              raise SystemExit(0)
           if event == "pull_request":
               base = os.environ.get("PR_BASE_SHA", "")
               rng = f"{base}...{sha}" if base else "HEAD~1...HEAD"
@@ -262,6 +280,8 @@ jobs:
           PYEOF
 
       - name: Dependency check
+        # push/PR only: the scheduled sweep is layout + catalog (see header).
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
         run: |
           python3 - <<'PYEOF'
           import json, re, sys, tomllib, urllib.error, urllib.request
