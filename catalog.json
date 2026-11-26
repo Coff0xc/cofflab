@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T08:58:21Z",
+  "generated": "2026-11-26T09:00:12Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 691,
   "items": [
@@ -31,7 +31,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00404,
+        "percentile": 0.26287,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -74,7 +78,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00626,
+        "percentile": 0.44356,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -119,7 +127,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00663,
+        "percentile": 0.46589,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal",
@@ -171,7 +183,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02262,
+        "percentile": 0.83674,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -216,7 +232,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.24159,
+        "percentile": 0.98332,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -266,7 +286,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.18881,
+        "percentile": 0.97862,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -321,7 +345,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03876,
+        "percentile": 0.90964,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -371,7 +399,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00461,
+        "percentile": 0.31924,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -415,7 +447,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00823,
+        "percentile": 0.5445,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -458,7 +494,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0061,
+        "percentile": 0.43373,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -502,7 +542,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.07854,
+        "percentile": 0.95447,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -547,7 +591,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02147,
+        "percentile": 0.8277,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -597,7 +645,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.32872,
+        "percentile": 0.98745,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -648,7 +700,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.1619,
+        "percentile": 0.9756,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -699,7 +755,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00468,
+        "percentile": 0.32669,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -743,7 +803,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01157,
+        "percentile": 0.66843,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -793,7 +857,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0414,
+        "percentile": 0.916,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -843,7 +911,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00708,
+        "percentile": 0.49103,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -886,7 +958,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00512,
+        "percentile": 0.36882,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -936,7 +1012,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00353,
+        "percentile": 0.21347,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -980,7 +1060,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00482,
+        "percentile": 0.34026,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "ssrf"
@@ -1024,7 +1108,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00491,
+        "percentile": 0.35063,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -1068,7 +1156,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01023,
+        "percentile": 0.62594,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -1112,7 +1204,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01944,
+        "percentile": 0.80786,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -1156,7 +1252,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00319,
+        "percentile": 0.17243,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1199,7 +1299,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02426,
+        "percentile": 0.84925,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1247,7 +1351,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0054,
+        "percentile": 0.38977,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1290,7 +1398,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0055,
+        "percentile": 0.39682,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1333,7 +1445,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00368,
+        "percentile": 0.2281,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -1377,7 +1493,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00298,
+        "percentile": 0.14884,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -1421,7 +1541,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00528,
+        "percentile": 0.38064,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1464,7 +1588,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00404,
+        "percentile": 0.26151,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1507,7 +1635,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00625,
+        "percentile": 0.44323,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -1557,7 +1689,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00367,
+        "percentile": 0.22658,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -1607,7 +1743,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00367,
+        "percentile": 0.2266,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -1657,7 +1797,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00476,
+        "percentile": 0.33455,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1706,7 +1850,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00364,
+        "percentile": 0.22459,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1755,7 +1903,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00938,
+        "percentile": 0.5921,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -1798,7 +1950,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00383,
+        "percentile": 0.24197,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -1842,7 +1998,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00347,
+        "percentile": 0.20687,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -1893,7 +2053,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00366,
+        "percentile": 0.22606,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -1937,7 +2101,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00662,
+        "percentile": 0.46527,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -1981,7 +2149,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00691,
+        "percentile": 0.48128,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -2025,7 +2197,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00602,
+        "percentile": 0.42887,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2068,7 +2244,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0719,
+        "percentile": 0.95058,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -2118,7 +2298,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00483,
+        "percentile": 0.34077,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "hardcoded-credentials"
@@ -2162,7 +2346,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00789,
+        "percentile": 0.5279,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2205,7 +2393,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0073,
+        "percentile": 0.50195,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2248,7 +2440,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0073,
+        "percentile": 0.50194,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2297,7 +2493,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00606,
+        "percentile": 0.43117,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2346,7 +2546,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00704,
+        "percentile": 0.48873,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2395,7 +2599,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00493,
+        "percentile": 0.35198,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "ssrf"
@@ -2445,7 +2653,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00464,
+        "percentile": 0.32231,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2494,7 +2706,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00467,
+        "percentile": 0.32592,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -2544,7 +2760,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00331,
+        "percentile": 0.18731,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -2588,7 +2808,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00835,
+        "percentile": 0.54926,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -2632,7 +2856,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00636,
+        "percentile": 0.44992,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2675,7 +2903,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0073,
+        "percentile": 0.50194,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2718,7 +2950,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0073,
+        "percentile": 0.50195,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2761,7 +2997,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0073,
+        "percentile": 0.50195,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2804,7 +3044,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00565,
+        "percentile": 0.40643,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2847,7 +3091,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00373,
+        "percentile": 0.2325,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -2897,7 +3145,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00499,
+        "percentile": 0.35677,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -2941,7 +3193,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00804,
+        "percentile": 0.53515,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -2984,7 +3240,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0019,
+        "percentile": 0.04984,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "csrf"
@@ -3028,7 +3288,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00582,
+        "percentile": 0.41748,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -3077,7 +3341,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.19379,
+        "percentile": 0.97917,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -3122,7 +3390,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01303,
+        "percentile": 0.70553,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -3166,7 +3438,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0126,
+        "percentile": 0.6961,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -3210,7 +3486,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00413,
+        "percentile": 0.27257,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -3254,7 +3534,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00413,
+        "percentile": 0.27258,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -3304,7 +3588,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00328,
+        "percentile": 0.1836,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -3348,7 +3636,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00946,
+        "percentile": 0.59617,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "ssrf"
@@ -3392,7 +3684,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01248,
+        "percentile": 0.69311,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -3443,7 +3739,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00508,
+        "percentile": 0.36598,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss",
@@ -3488,7 +3788,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00604,
+        "percentile": 0.43001,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -3533,7 +3837,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00411,
+        "percentile": 0.26891,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass",
@@ -3578,7 +3886,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00518,
+        "percentile": 0.37351,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -3622,7 +3934,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01775,
+        "percentile": 0.78661,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -3672,7 +3988,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00664,
+        "percentile": 0.4665,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -4014,7 +4334,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0414,
+        "percentile": 0.916,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -4063,7 +4387,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00449,
+        "percentile": 0.30875,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -4106,7 +4434,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00649,
+        "percentile": 0.45762,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -4150,7 +4482,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00681,
+        "percentile": 0.47592,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -4199,7 +4535,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00612,
+        "percentile": 0.43485,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -4243,7 +4583,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00867,
+        "percentile": 0.56303,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -4287,7 +4631,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00844,
+        "percentile": 0.55332,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -4331,7 +4679,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00537,
+        "percentile": 0.38757,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "deserialization"
@@ -4381,7 +4733,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00564,
+        "percentile": 0.4061,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -4425,7 +4781,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00584,
+        "percentile": 0.41874,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -4469,7 +4829,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00656,
+        "percentile": 0.46204,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -4513,7 +4877,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00636,
+        "percentile": 0.44985,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -4557,7 +4925,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00714,
+        "percentile": 0.49381,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -4601,7 +4973,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0073,
+        "percentile": 0.50197,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -4644,7 +5020,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00807,
+        "percentile": 0.5367,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -4687,7 +5067,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01019,
+        "percentile": 0.62434,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -4731,7 +5115,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0076,
+        "percentile": 0.51546,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -4780,7 +5168,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00353,
+        "percentile": 0.2135,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -4824,7 +5216,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00357,
+        "percentile": 0.21796,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -4868,7 +5264,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00431,
+        "percentile": 0.29093,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -4913,7 +5313,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00441,
+        "percentile": 0.30213,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -4963,7 +5367,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00335,
+        "percentile": 0.19418,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5009,7 +5417,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00457,
+        "percentile": 0.31566,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal",
@@ -5058,7 +5470,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0052,
+        "percentile": 0.3744,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5101,7 +5517,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0035,
+        "percentile": 0.21033,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5144,7 +5564,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0035,
+        "percentile": 0.21026,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5187,7 +5611,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00483,
+        "percentile": 0.34208,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5230,7 +5658,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0108,
+        "percentile": 0.64634,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5273,7 +5705,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00563,
+        "percentile": 0.40491,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -5317,7 +5753,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00557,
+        "percentile": 0.40087,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5360,7 +5800,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00378,
+        "percentile": 0.23661,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -5404,7 +5848,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00599,
+        "percentile": 0.42722,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "deserialization"
@@ -5448,7 +5896,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00331,
+        "percentile": 0.18684,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -5498,7 +5950,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0339,
+        "percentile": 0.89582,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -5548,7 +6004,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00672,
+        "percentile": 0.47116,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -5592,7 +6052,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00357,
+        "percentile": 0.21792,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -5636,7 +6100,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00871,
+        "percentile": 0.5646,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -5680,7 +6148,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00882,
+        "percentile": 0.56929,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -5724,7 +6196,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00564,
+        "percentile": 0.40624,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5767,7 +6243,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01035,
+        "percentile": 0.63067,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -5811,7 +6291,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0101,
+        "percentile": 0.62106,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -5855,7 +6339,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00643,
+        "percentile": 0.45387,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5898,7 +6386,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03904,
+        "percentile": 0.91036,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -5941,7 +6433,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00564,
+        "percentile": 0.40545,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "deserialization"
@@ -5985,7 +6481,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.004,
+        "percentile": 0.25797,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -6029,7 +6529,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00522,
+        "percentile": 0.37644,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -6073,7 +6577,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00704,
+        "percentile": 0.48864,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -6166,7 +6674,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00226,
+        "percentile": 0.07913,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "csrf"
@@ -6216,7 +6728,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00643,
+        "percentile": 0.45383,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -6260,7 +6776,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00566,
+        "percentile": 0.40727,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -6304,7 +6824,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00616,
+        "percentile": 0.43754,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -6348,7 +6872,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00425,
+        "percentile": 0.28456,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -6392,7 +6920,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00452,
+        "percentile": 0.31159,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -6436,7 +6968,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00589,
+        "percentile": 0.42111,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -6480,7 +7016,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00677,
+        "percentile": 0.47404,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -6523,7 +7063,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0041,
+        "percentile": 0.26831,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -6573,7 +7117,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00426,
+        "percentile": 0.2861,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -6617,7 +7165,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01393,
+        "percentile": 0.72529,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -6661,7 +7213,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.04528,
+        "percentile": 0.92312,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -6705,7 +7261,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00564,
+        "percentile": 0.40544,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "deserialization"
@@ -6749,7 +7309,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00564,
+        "percentile": 0.40587,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "deserialization"
@@ -6797,7 +7361,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0067,
+        "percentile": 0.46999,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -6879,7 +7447,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00641,
+        "percentile": 0.45251,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -6928,7 +7500,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00301,
+        "percentile": 0.15279,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -6978,7 +7554,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00486,
+        "percentile": 0.3457,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -7028,7 +7608,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00363,
+        "percentile": 0.22361,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -7077,7 +7661,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00508,
+        "percentile": 0.36584,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -7126,7 +7714,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00425,
+        "percentile": 0.28461,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -7176,7 +7768,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00382,
+        "percentile": 0.24028,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -7226,7 +7822,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00338,
+        "percentile": 0.1974,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -7276,7 +7876,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01081,
+        "percentile": 0.64685,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -7326,7 +7930,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0044,
+        "percentile": 0.30115,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -7375,7 +7983,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00432,
+        "percentile": 0.29329,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -7424,7 +8036,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00466,
+        "percentile": 0.32361,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -7474,7 +8090,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00464,
+        "percentile": 0.32198,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -7517,7 +8137,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00533,
+        "percentile": 0.38475,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -7561,7 +8185,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00357,
+        "percentile": 0.21794,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -7605,7 +8233,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00357,
+        "percentile": 0.21794,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -7649,7 +8281,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00518,
+        "percentile": 0.37321,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "deserialization"
@@ -7693,7 +8329,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00533,
+        "percentile": 0.38476,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -7743,7 +8383,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00659,
+        "percentile": 0.4636,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -7792,7 +8436,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00336,
+        "percentile": 0.19433,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -7841,7 +8489,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00691,
+        "percentile": 0.48112,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -7891,7 +8543,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00568,
+        "percentile": 0.40854,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "ssrf"
@@ -7941,7 +8597,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.005,
+        "percentile": 0.35742,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -7991,7 +8651,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00558,
+        "percentile": 0.40153,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -8040,7 +8704,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00614,
+        "percentile": 0.43597,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -8084,7 +8752,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01101,
+        "percentile": 0.65258,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -8135,7 +8807,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00618,
+        "percentile": 0.43875,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -8185,7 +8861,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01299,
+        "percentile": 0.70474,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -8227,7 +8907,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00666,
+        "percentile": 0.468,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -8276,7 +8960,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.21178,
+        "percentile": 0.98116,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -8322,7 +9010,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.05323,
+        "percentile": 0.93374,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -8368,7 +9060,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.10649,
+        "percentile": 0.96524,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -8412,7 +9108,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01157,
+        "percentile": 0.66839,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -8456,7 +9156,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01216,
+        "percentile": 0.68481,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -8499,7 +9203,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02672,
+        "percentile": 0.86497,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -8542,7 +9250,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0157,
+        "percentile": 0.75662,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "path-traversal"
@@ -8586,7 +9298,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00882,
+        "percentile": 0.56928,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "xss"
@@ -8630,7 +9346,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00509,
+        "percentile": 0.36704,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -8673,7 +9393,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01313,
+        "percentile": 0.70765,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "rce"
@@ -8717,7 +9441,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.04292,
+        "percentile": 0.9189,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -8763,7 +9491,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.01652,
+        "percentile": 0.76923,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "in-the-wild",
@@ -8808,7 +9540,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.2674,
+        "percentile": 0.98478,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -8852,7 +9588,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.00784,
+        "percentile": 0.52543,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -8941,7 +9681,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0105,
+        "percentile": 0.63619,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -8985,7 +9729,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00568,
+        "percentile": 0.40885,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -9028,7 +9776,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00777,
+        "percentile": 0.52261,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -9072,7 +9824,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00687,
+        "percentile": 0.47906,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -9122,7 +9878,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00693,
+        "percentile": 0.48241,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -9257,7 +10017,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.09444,
+        "percentile": 0.96154,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -9308,7 +10072,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00782,
+        "percentile": 0.52448,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -9358,7 +10126,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00521,
+        "percentile": 0.37526,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -9407,7 +10179,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00571,
+        "percentile": 0.41053,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "auth-bypass"
@@ -9457,7 +10233,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.04275,
+        "percentile": 0.9186,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -9507,7 +10287,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03651,
+        "percentile": 0.90365,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -9550,7 +10334,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.34741,
+        "percentile": 0.98803,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -9676,7 +10464,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00341,
+        "percentile": 0.2007,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web"
       ],
@@ -9719,7 +10511,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00572,
+        "percentile": 0.41173,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "sqli"
@@ -9813,7 +10609,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00649,
+        "percentile": 0.45708,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "file-upload"
@@ -9857,7 +10657,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.14372,
+        "percentile": 0.97267,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev",
@@ -10048,7 +10852,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.14523,
+        "percentile": 0.97287,
+        "date": "2026-11-26"
+      },
       "tags": [
         "web",
         "kev"
@@ -10365,7 +11173,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00539,
+        "percentile": 0.3884,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -10409,7 +11221,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.20215,
+        "percentile": 0.98011,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "kev",
@@ -10461,7 +11277,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00526,
+        "percentile": 0.37959,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -10506,7 +11326,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.08546,
+        "percentile": 0.95807,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "kev",
@@ -10552,7 +11376,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.06244,
+        "percentile": 0.9433,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "rce"
@@ -10596,7 +11424,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00682,
+        "percentile": 0.4764,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "sqli"
@@ -10646,7 +11478,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01588,
+        "percentile": 0.75932,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "rce"
@@ -10690,7 +11526,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00796,
+        "percentile": 0.53072,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "path-traversal"
@@ -10734,7 +11574,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00412,
+        "percentile": 0.27003,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "ssrf"
@@ -10778,7 +11622,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02341,
+        "percentile": 0.84329,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "path-traversal"
@@ -10822,7 +11670,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00234,
+        "percentile": 0.08655,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -10865,7 +11717,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0063,
+        "percentile": 0.44633,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "path-traversal"
@@ -10910,7 +11766,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0054,
+        "percentile": 0.38923,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -10958,7 +11818,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0035,
+        "percentile": 0.21023,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -11001,7 +11865,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00392,
+        "percentile": 0.2497,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -11044,7 +11912,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00595,
+        "percentile": 0.42482,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "path-traversal"
@@ -11088,7 +11960,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.27157,
+        "percentile": 0.98495,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "kev",
@@ -11133,7 +12009,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00546,
+        "percentile": 0.3932,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -11176,7 +12056,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.007,
+        "percentile": 0.48714,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "rce"
@@ -11220,7 +12104,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00501,
+        "percentile": 0.3584,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "auth-bypass"
@@ -11270,7 +12158,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01755,
+        "percentile": 0.78365,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "auth-bypass"
@@ -11314,7 +12206,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00682,
+        "percentile": 0.47625,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "auth-bypass"
@@ -11358,7 +12254,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00704,
+        "percentile": 0.48881,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "ssrf"
@@ -11402,7 +12302,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00795,
+        "percentile": 0.53042,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -11445,7 +12349,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.10929,
+        "percentile": 0.96597,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "kev",
@@ -11496,7 +12404,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02148,
+        "percentile": 0.82771,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "rce"
@@ -11540,7 +12452,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00935,
+        "percentile": 0.59094,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai"
       ],
@@ -11589,7 +12505,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.27561,
+        "percentile": 0.98516,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "kev",
@@ -11640,7 +12560,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00836,
+        "percentile": 0.54956,
+        "date": "2026-11-26"
+      },
       "tags": [
         "ai",
         "kev",
@@ -11686,7 +12610,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00722,
+        "percentile": 0.49842,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -11729,7 +12657,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.26985,
+        "percentile": 0.98488,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -11773,7 +12705,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.31794,
+        "percentile": 0.987,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -11815,7 +12751,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.24503,
+        "percentile": 0.98354,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -11863,7 +12803,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00559,
+        "percentile": 0.40218,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -11905,7 +12849,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00835,
+        "percentile": 0.54943,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -11957,7 +12905,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.45588,
+        "percentile": 0.9909,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -12010,7 +12962,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00314,
+        "percentile": 0.16747,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -12054,7 +13010,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00996,
+        "percentile": 0.61563,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -12103,7 +13063,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00232,
+        "percentile": 0.08425,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -12153,7 +13117,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.14205,
+        "percentile": 0.9724,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12208,7 +13176,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0078,
+        "percentile": 0.52399,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12259,7 +13231,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.10795,
+        "percentile": 0.96563,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12312,7 +13288,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.13801,
+        "percentile": 0.9718,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12363,7 +13343,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.0054,
+        "percentile": 0.3892,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12408,7 +13392,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00137,
+        "percentile": 0.01534,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -12452,7 +13440,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00662,
+        "percentile": 0.46514,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -12496,7 +13488,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01351,
+        "percentile": 0.71648,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -12552,7 +13548,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.43693,
+        "percentile": 0.99051,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12608,7 +13608,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.15822,
+        "percentile": 0.97503,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -12651,7 +13655,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00649,
+        "percentile": 0.45721,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -12700,7 +13708,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00925,
+        "percentile": 0.58721,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "deserialization"
@@ -12744,7 +13756,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02531,
+        "percentile": 0.85627,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -12788,7 +13804,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00427,
+        "percentile": 0.28683,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -12832,7 +13852,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.08043,
+        "percentile": 0.95544,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12877,7 +13901,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.09889,
+        "percentile": 0.96299,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -12928,7 +13956,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.2211,
+        "percentile": 0.98185,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -12972,7 +14004,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01274,
+        "percentile": 0.69915,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13022,7 +14058,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00692,
+        "percentile": 0.48189,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13065,7 +14105,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02098,
+        "percentile": 0.8234,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -13115,7 +14159,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.18839,
+        "percentile": 0.97858,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13164,7 +14212,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.18075,
+        "percentile": 0.97781,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13213,7 +14265,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.15289,
+        "percentile": 0.97405,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13262,7 +14318,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03788,
+        "percentile": 0.90737,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13305,7 +14365,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00491,
+        "percentile": 0.35052,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13348,7 +14412,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00662,
+        "percentile": 0.46515,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "hardcoded-credentials"
@@ -13392,7 +14460,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00837,
+        "percentile": 0.55022,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13435,7 +14507,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03272,
+        "percentile": 0.8917,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -13479,7 +14555,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00684,
+        "percentile": 0.4775,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13522,7 +14602,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0031,
+        "percentile": 0.16362,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13565,7 +14649,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01593,
+        "percentile": 0.76026,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13608,7 +14696,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00466,
+        "percentile": 0.3242,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13651,7 +14743,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00368,
+        "percentile": 0.22829,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "xss"
@@ -13702,7 +14798,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00943,
+        "percentile": 0.59506,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13752,7 +14852,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01917,
+        "percentile": 0.80449,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13802,7 +14906,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01444,
+        "percentile": 0.73496,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -13845,7 +14953,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01047,
+        "percentile": 0.63482,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -13889,7 +15001,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00632,
+        "percentile": 0.44773,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "path-traversal"
@@ -13933,7 +15049,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02445,
+        "percentile": 0.85043,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -13984,7 +15104,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00836,
+        "percentile": 0.54989,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14027,7 +15151,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00904,
+        "percentile": 0.57788,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14077,7 +15205,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00615,
+        "percentile": 0.4368,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -14127,7 +15259,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00472,
+        "percentile": 0.33027,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "hardcoded-credentials"
@@ -14177,7 +15313,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00687,
+        "percentile": 0.4792,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14220,7 +15360,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.01116,
+        "percentile": 0.65685,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -14268,7 +15412,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.011,
+        "percentile": 0.6524,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "file-upload",
@@ -14320,7 +15468,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0065,
+        "percentile": 0.45848,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "hardcoded-credentials"
@@ -14364,7 +15516,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00838,
+        "percentile": 0.55081,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14413,7 +15569,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03702,
+        "percentile": 0.90507,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -14463,7 +15623,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00318,
+        "percentile": 0.17211,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14506,7 +15670,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00838,
+        "percentile": 0.55082,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14549,7 +15717,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0065,
+        "percentile": 0.45838,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14592,7 +15764,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01534,
+        "percentile": 0.75116,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -14636,7 +15812,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00332,
+        "percentile": 0.18883,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14679,7 +15859,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02285,
+        "percentile": 0.83862,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -14723,7 +15907,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00304,
+        "percentile": 0.15614,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -14767,7 +15955,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0028,
+        "percentile": 0.13065,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -14811,7 +16003,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02546,
+        "percentile": 0.85725,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -14856,7 +16052,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00515,
+        "percentile": 0.37111,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -14906,7 +16106,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00532,
+        "percentile": 0.38384,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -14949,7 +16153,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00157,
+        "percentile": 0.02518,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -14993,7 +16201,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00424,
+        "percentile": 0.28425,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "ssrf"
@@ -15037,7 +16249,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.11754,
+        "percentile": 0.96773,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -15081,7 +16297,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00746,
+        "percentile": 0.50904,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -15125,7 +16345,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01635,
+        "percentile": 0.76695,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15168,7 +16392,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00626,
+        "percentile": 0.44354,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15211,7 +16439,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00472,
+        "percentile": 0.33124,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15254,7 +16486,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00411,
+        "percentile": 0.2688,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15297,7 +16533,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00279,
+        "percentile": 0.13025,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15340,7 +16580,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.06795,
+        "percentile": 0.94756,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -15385,7 +16629,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00921,
+        "percentile": 0.58521,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15429,7 +16677,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00746,
+        "percentile": 0.50903,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "ssrf"
@@ -15473,7 +16725,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00801,
+        "percentile": 0.53401,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15516,7 +16772,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01635,
+        "percentile": 0.76695,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15559,7 +16819,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00849,
+        "percentile": 0.55546,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "deserialization"
@@ -15603,7 +16867,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00608,
+        "percentile": 0.43206,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -15647,7 +16915,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00525,
+        "percentile": 0.37894,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -15691,7 +16963,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00418,
+        "percentile": 0.27758,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -15735,7 +17011,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00498,
+        "percentile": 0.35569,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -15779,7 +17059,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00518,
+        "percentile": 0.37351,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15822,7 +17106,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00417,
+        "percentile": 0.27697,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -15866,7 +17154,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00496,
+        "percentile": 0.35427,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "path-traversal"
@@ -15910,7 +17202,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00233,
+        "percentile": 0.08504,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15953,7 +17249,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00613,
+        "percentile": 0.43585,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -15996,7 +17296,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00392,
+        "percentile": 0.2497,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -16040,7 +17344,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00524,
+        "percentile": 0.37849,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -16084,7 +17392,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00417,
+        "percentile": 0.27711,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "ssrf"
@@ -16128,7 +17440,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0043,
+        "percentile": 0.28939,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -16172,7 +17488,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00664,
+        "percentile": 0.46647,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "path-traversal"
@@ -16222,7 +17542,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00854,
+        "percentile": 0.55754,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16271,7 +17595,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00831,
+        "percentile": 0.54739,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16320,7 +17648,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00831,
+        "percentile": 0.54741,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16369,7 +17701,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00831,
+        "percentile": 0.54742,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16418,7 +17754,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00831,
+        "percentile": 0.54743,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16467,7 +17807,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00831,
+        "percentile": 0.54738,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16510,7 +17854,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00378,
+        "percentile": 0.23665,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -16560,7 +17908,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00902,
+        "percentile": 0.57724,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16609,7 +17961,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00854,
+        "percentile": 0.55746,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16658,7 +18014,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00854,
+        "percentile": 0.55753,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16701,7 +18061,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00638,
+        "percentile": 0.45134,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -16745,7 +18109,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00247,
+        "percentile": 0.09633,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16794,7 +18162,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00831,
+        "percentile": 0.54742,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16837,7 +18209,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00528,
+        "percentile": 0.38064,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16880,7 +18256,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00823,
+        "percentile": 0.54441,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "path-traversal"
@@ -16924,7 +18304,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00479,
+        "percentile": 0.33768,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -16967,7 +18351,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00505,
+        "percentile": 0.36258,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17010,7 +18398,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00479,
+        "percentile": 0.33771,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "info-disclosure"
@@ -17054,7 +18446,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00417,
+        "percentile": 0.27726,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -17098,7 +18494,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0059,
+        "percentile": 0.42209,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17141,7 +18541,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00638,
+        "percentile": 0.45134,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17184,7 +18588,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0059,
+        "percentile": 0.42209,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17227,7 +18635,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00548,
+        "percentile": 0.39451,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "path-traversal"
@@ -17271,7 +18683,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00417,
+        "percentile": 0.27682,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -17315,7 +18731,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0059,
+        "percentile": 0.42208,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17358,7 +18778,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00353,
+        "percentile": 0.2135,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "xss"
@@ -17402,7 +18826,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00353,
+        "percentile": 0.2135,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "xss"
@@ -17446,7 +18874,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00374,
+        "percentile": 0.23305,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17489,7 +18921,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00535,
+        "percentile": 0.38636,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -17533,7 +18969,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00434,
+        "percentile": 0.29467,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17576,7 +19016,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00434,
+        "percentile": 0.29468,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17619,7 +19063,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00374,
+        "percentile": 0.23305,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17662,7 +19110,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01503,
+        "percentile": 0.74576,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -17706,7 +19158,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00392,
+        "percentile": 0.24967,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -17750,7 +19206,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0035,
+        "percentile": 0.21027,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -17794,7 +19254,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00392,
+        "percentile": 0.24968,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17837,7 +19301,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00392,
+        "percentile": 0.24967,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17880,7 +19348,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00456,
+        "percentile": 0.31502,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -17929,7 +19401,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.04195,
+        "percentile": 0.91708,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -17971,7 +19447,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.01301,
+        "percentile": 0.70508,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -18019,7 +19499,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00985,
+        "percentile": 0.61156,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -18063,7 +19547,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00628,
+        "percentile": 0.44478,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "sqli"
@@ -18107,7 +19595,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00614,
+        "percentile": 0.43654,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18150,7 +19642,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00625,
+        "percentile": 0.44325,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -18194,7 +19690,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00434,
+        "percentile": 0.29433,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18237,7 +19737,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00358,
+        "percentile": 0.21842,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18280,7 +19784,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0057,
+        "percentile": 0.41025,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18374,7 +19882,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01444,
+        "percentile": 0.73496,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18417,7 +19929,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00996,
+        "percentile": 0.61561,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18465,7 +19981,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02622,
+        "percentile": 0.86192,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -18509,7 +20029,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00321,
+        "percentile": 0.17587,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18553,7 +20077,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00321,
+        "percentile": 0.17586,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18603,7 +20131,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00732,
+        "percentile": 0.50276,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18652,7 +20184,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00552,
+        "percentile": 0.39757,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -18703,7 +20239,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03073,
+        "percentile": 0.88383,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -18753,7 +20293,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00784,
+        "percentile": 0.5255,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -18797,7 +20341,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03154,
+        "percentile": 0.88696,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -18841,7 +20389,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00977,
+        "percentile": 0.60892,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18890,7 +20442,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00646,
+        "percentile": 0.45583,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -18939,7 +20495,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00902,
+        "percentile": 0.57737,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -18989,7 +20549,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00939,
+        "percentile": 0.5934,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -19039,7 +20603,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00504,
+        "percentile": 0.36135,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "xss"
@@ -19089,7 +20657,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.032,
+        "percentile": 0.88874,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -19138,7 +20710,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00753,
+        "percentile": 0.51241,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -19182,7 +20758,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00753,
+        "percentile": 0.51242,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -19226,7 +20806,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03348,
+        "percentile": 0.89428,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -19270,7 +20854,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.01793,
+        "percentile": 0.78889,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -19323,7 +20911,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00949,
+        "percentile": 0.59713,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -19367,7 +20959,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01276,
+        "percentile": 0.69956,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -19411,7 +21007,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00654,
+        "percentile": 0.46093,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -19455,7 +21055,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01071,
+        "percentile": 0.64322,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "ssrf"
@@ -19505,7 +21109,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00427,
+        "percentile": 0.28694,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -19548,7 +21156,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0124,
+        "percentile": 0.69068,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -19591,7 +21203,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01357,
+        "percentile": 0.71766,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -19635,7 +21251,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0115,
+        "percentile": 0.6665,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -19678,7 +21298,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00992,
+        "percentile": 0.61421,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -19728,7 +21352,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00424,
+        "percentile": 0.28336,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "ssrf"
@@ -19778,7 +21406,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00746,
+        "percentile": 0.50902,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -19828,7 +21460,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00618,
+        "percentile": 0.43887,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -19872,7 +21508,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00506,
+        "percentile": 0.36365,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -19916,7 +21556,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00537,
+        "percentile": 0.38713,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -20009,7 +21653,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.3552,
+        "percentile": 0.98827,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -20059,7 +21707,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02182,
+        "percentile": 0.83048,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -20109,7 +21761,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01447,
+        "percentile": 0.73553,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -20159,7 +21815,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01507,
+        "percentile": 0.74627,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -20208,7 +21868,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.05724,
+        "percentile": 0.93804,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -20252,7 +21916,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.46182,
+        "percentile": 0.99106,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -20297,7 +21965,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.00924,
+        "percentile": 0.58686,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -20348,7 +22020,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00817,
+        "percentile": 0.5409,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -20397,7 +22073,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02001,
+        "percentile": 0.81381,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -20446,7 +22126,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0108,
+        "percentile": 0.64628,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -20496,7 +22180,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.32401,
+        "percentile": 0.98726,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -20543,7 +22231,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0086,
+        "percentile": 0.56019,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -20594,7 +22286,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00348,
+        "percentile": 0.20789,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -20644,7 +22340,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0086,
+        "percentile": 0.56029,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -20688,7 +22388,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.05756,
+        "percentile": 0.93836,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -20732,7 +22436,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.15492,
+        "percentile": 0.97438,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -20784,7 +22492,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03396,
+        "percentile": 0.896,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -20964,7 +22676,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00315,
+        "percentile": 0.1686,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -21007,7 +22723,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00396,
+        "percentile": 0.2537,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -21049,7 +22769,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00414,
+        "percentile": 0.273,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -21092,7 +22816,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00656,
+        "percentile": 0.46187,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -21386,7 +23114,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01836,
+        "percentile": 0.7945,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -21437,7 +23169,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03561,
+        "percentile": 0.90097,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -21487,7 +23223,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00864,
+        "percentile": 0.56164,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -21536,7 +23276,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02206,
+        "percentile": 0.8326,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -21585,7 +23329,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03022,
+        "percentile": 0.8818,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -21634,7 +23382,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03022,
+        "percentile": 0.8818,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -21683,7 +23435,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01052,
+        "percentile": 0.6369,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "auth-bypass"
@@ -21733,7 +23489,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01969,
+        "percentile": 0.81035,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -21784,7 +23544,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.09157,
+        "percentile": 0.96057,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -21835,7 +23599,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.54967,
+        "percentile": 0.99269,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -21886,7 +23654,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01612,
+        "percentile": 0.76317,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -21937,7 +23709,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00939,
+        "percentile": 0.59345,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -21982,7 +23758,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02724,
+        "percentile": 0.86777,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -22033,7 +23813,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01199,
+        "percentile": 0.68033,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -22083,7 +23867,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01942,
+        "percentile": 0.80759,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -22133,7 +23921,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01942,
+        "percentile": 0.80759,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -22183,7 +23975,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02337,
+        "percentile": 0.84301,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -22233,7 +24029,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01087,
+        "percentile": 0.64864,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "path-traversal"
@@ -22283,7 +24083,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00629,
+        "percentile": 0.44553,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net"
       ],
@@ -22332,7 +24136,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02545,
+        "percentile": 0.85721,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -22382,7 +24190,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02337,
+        "percentile": 0.84302,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "rce"
@@ -22565,7 +24377,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01473,
+        "percentile": 0.74042,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -22616,7 +24432,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.05451,
+        "percentile": 0.93502,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -22667,7 +24487,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.05729,
+        "percentile": 0.93809,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -22717,7 +24541,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.05451,
+        "percentile": 0.93502,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev",
@@ -22768,7 +24596,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.14893,
+        "percentile": 0.97342,
+        "date": "2026-11-26"
+      },
       "tags": [
         "net",
         "kev"
@@ -22813,7 +24645,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00681,
+        "percentile": 0.47599,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -22874,7 +24710,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.59265,
+        "percentile": 0.99342,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -22942,7 +24782,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.02695,
+        "percentile": 0.86635,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "kev",
@@ -23035,7 +24879,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01487,
+        "percentile": 0.74295,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "deserialization"
@@ -23079,7 +24927,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.068,
+        "percentile": 0.9476,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "kev",
@@ -23136,7 +24988,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.32976,
+        "percentile": 0.98749,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "kev",
@@ -23181,7 +25037,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00564,
+        "percentile": 0.40633,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -23225,7 +25085,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00749,
+        "percentile": 0.51098,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "deserialization"
@@ -23270,7 +25134,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.86584,
+        "percentile": 0.99826,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "deserialization"
@@ -23319,7 +25187,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02105,
+        "percentile": 0.82389,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -23363,7 +25235,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00792,
+        "percentile": 0.52877,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -23412,7 +25288,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.45083,
+        "percentile": 0.99081,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "kev"
@@ -23467,7 +25347,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.20754,
+        "percentile": 0.98073,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "kev"
@@ -23511,7 +25395,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00451,
+        "percentile": 0.31086,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -23555,7 +25443,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00175,
+        "percentile": 0.0405,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -23642,7 +25534,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00605,
+        "percentile": 0.43046,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -23686,7 +25582,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00184,
+        "percentile": 0.04625,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -23730,7 +25630,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00186,
+        "percentile": 0.04785,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -23773,7 +25677,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00572,
+        "percentile": 0.41149,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "sqli"
@@ -23817,7 +25725,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00531,
+        "percentile": 0.38343,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -23866,7 +25778,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00857,
+        "percentile": 0.55879,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -23916,7 +25832,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00746,
+        "percentile": 0.5092,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -23959,7 +25879,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00495,
+        "percentile": 0.35324,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "ssrf"
@@ -24003,7 +25927,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01976,
+        "percentile": 0.81112,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24052,7 +25980,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00212,
+        "percentile": 0.06568,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24101,7 +26033,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00658,
+        "percentile": 0.46293,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24144,7 +26080,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00508,
+        "percentile": 0.36521,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24193,7 +26133,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00631,
+        "percentile": 0.44757,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24236,7 +26180,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00371,
+        "percentile": 0.23074,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "deserialization"
@@ -24280,7 +26228,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00412,
+        "percentile": 0.27005,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24323,7 +26275,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00559,
+        "percentile": 0.40233,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -24373,7 +26329,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01198,
+        "percentile": 0.68008,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "rce"
@@ -24418,7 +26378,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00545,
+        "percentile": 0.39309,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24467,7 +26431,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00474,
+        "percentile": 0.33266,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24516,7 +26484,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00289,
+        "percentile": 0.14056,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24565,7 +26537,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00857,
+        "percentile": 0.55879,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24614,7 +26590,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00482,
+        "percentile": 0.34048,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "info-disclosure"
@@ -24664,7 +26644,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00712,
+        "percentile": 0.49316,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24713,7 +26697,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00587,
+        "percentile": 0.42026,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24762,7 +26750,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00474,
+        "percentile": 0.33266,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "info-disclosure"
@@ -24812,7 +26804,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00501,
+        "percentile": 0.35866,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24861,7 +26857,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00654,
+        "percentile": 0.46084,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24910,7 +26910,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00539,
+        "percentile": 0.38877,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -24959,7 +26963,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00537,
+        "percentile": 0.38714,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25008,7 +27016,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00841,
+        "percentile": 0.55206,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25052,7 +27064,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00726,
+        "percentile": 0.49985,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "rce"
@@ -25102,7 +27118,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00197,
+        "percentile": 0.05393,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25151,7 +27171,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00488,
+        "percentile": 0.34726,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25200,7 +27224,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00384,
+        "percentile": 0.2427,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25249,7 +27277,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00381,
+        "percentile": 0.23934,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25292,7 +27324,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00356,
+        "percentile": 0.21697,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "ssrf"
@@ -25337,7 +27373,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00297,
+        "percentile": 0.14725,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25380,7 +27420,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00291,
+        "percentile": 0.14207,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "info-disclosure"
@@ -25425,7 +27469,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00384,
+        "percentile": 0.24264,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -25475,7 +27523,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00311,
+        "percentile": 0.16393,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25615,7 +27667,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00508,
+        "percentile": 0.36499,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25658,7 +27714,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00508,
+        "percentile": 0.36523,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -25702,7 +27762,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00508,
+        "percentile": 0.365,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -25746,7 +27810,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00483,
+        "percentile": 0.34211,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -25790,7 +27858,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00483,
+        "percentile": 0.34208,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -25834,7 +27906,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00483,
+        "percentile": 0.34222,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -25878,7 +27954,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00539,
+        "percentile": 0.38842,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25928,7 +28008,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00184,
+        "percentile": 0.0468,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -25977,7 +28061,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00445,
+        "percentile": 0.30581,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -26027,7 +28115,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00248,
+        "percentile": 0.09711,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26070,7 +28162,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.11073,
+        "percentile": 0.96629,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26113,7 +28209,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.21169,
+        "percentile": 0.98115,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26156,7 +28256,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.33772,
+        "percentile": 0.98774,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26199,7 +28303,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.2479,
+        "percentile": 0.98373,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26247,7 +28355,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00454,
+        "percentile": 0.31362,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26290,7 +28402,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00546,
+        "percentile": 0.39335,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -26334,7 +28450,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00583,
+        "percentile": 0.41821,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -26384,7 +28504,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01278,
+        "percentile": 0.69991,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26427,7 +28551,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00582,
+        "percentile": 0.4176,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26470,7 +28598,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00112,
+        "percentile": 0.00467,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26514,7 +28646,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00457,
+        "percentile": 0.31612,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -26559,7 +28695,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0052,
+        "percentile": 0.37486,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -26604,7 +28744,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00513,
+        "percentile": 0.36982,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26648,7 +28792,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0052,
+        "percentile": 0.37487,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26692,7 +28840,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0052,
+        "percentile": 0.37487,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -26742,7 +28894,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02126,
+        "percentile": 0.82574,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "rce"
@@ -26792,7 +28948,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00742,
+        "percentile": 0.50762,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26841,7 +29001,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00439,
+        "percentile": 0.3007,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26884,7 +29048,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.04641,
+        "percentile": 0.92486,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26928,7 +29096,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00488,
+        "percentile": 0.34755,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -26977,7 +29149,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00941,
+        "percentile": 0.59392,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27026,7 +29202,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00783,
+        "percentile": 0.52482,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27070,7 +29250,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00789,
+        "percentile": 0.52792,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "rce",
@@ -27115,7 +29299,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00194,
+        "percentile": 0.05221,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "rce"
@@ -27160,7 +29348,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00602,
+        "percentile": 0.42877,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "auth-bypass"
@@ -27204,7 +29396,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00184,
+        "percentile": 0.0464,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -27248,7 +29444,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00609,
+        "percentile": 0.43262,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27291,7 +29491,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01133,
+        "percentile": 0.66166,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27340,7 +29544,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01455,
+        "percentile": 0.73719,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "path-traversal"
@@ -27390,7 +29598,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00947,
+        "percentile": 0.59656,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27434,7 +29646,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01902,
+        "percentile": 0.80266,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27478,7 +29694,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.06561,
+        "percentile": 0.94586,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime",
         "kev"
@@ -27522,7 +29742,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02873,
+        "percentile": 0.87529,
+        "date": "2026-11-26"
+      },
       "tags": [
         "runtime"
       ],
@@ -27578,7 +29802,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00708,
+        "percentile": 0.49105,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27621,7 +29849,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01105,
+        "percentile": 0.65389,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27670,7 +29902,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00375,
+        "percentile": 0.2344,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "auth-bypass"
@@ -27714,7 +29950,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00185,
+        "percentile": 0.04731,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27763,7 +30003,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00402,
+        "percentile": 0.26019,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27812,7 +30056,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0027,
+        "percentile": 0.12013,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27862,7 +30110,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00329,
+        "percentile": 0.18398,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27905,7 +30157,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00481,
+        "percentile": 0.33924,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27954,7 +30210,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00818,
+        "percentile": 0.54151,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -27997,7 +30257,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00736,
+        "percentile": 0.5048,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -28040,7 +30304,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00635,
+        "percentile": 0.44935,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -28089,7 +30357,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00543,
+        "percentile": 0.39173,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "auth-bypass"
@@ -28139,7 +30411,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00617,
+        "percentile": 0.4384,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -28188,7 +30464,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00362,
+        "percentile": 0.22246,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "sqli"
@@ -28238,7 +30518,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0058,
+        "percentile": 0.41649,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "path-traversal"
@@ -28288,7 +30572,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00438,
+        "percentile": 0.29947,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "auth-bypass"
@@ -28338,7 +30626,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00469,
+        "percentile": 0.32749,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "auth-bypass"
@@ -28388,7 +30680,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00616,
+        "percentile": 0.43779,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -28431,7 +30727,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00421,
+        "percentile": 0.28083,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "sqli"
@@ -28475,7 +30775,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00421,
+        "percentile": 0.28083,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db",
         "sqli"
@@ -28519,7 +30823,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00627,
+        "percentile": 0.44395,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -28568,7 +30876,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01862,
+        "percentile": 0.79768,
+        "date": "2026-11-26"
+      },
       "tags": [
         "db"
       ],
@@ -28611,7 +30923,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00386,
+        "percentile": 0.24407,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -28654,7 +30970,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00149,
+        "percentile": 0.02066,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -28742,7 +31062,11 @@
       "verified": true,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.01042,
+        "percentile": 0.6332,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev",
@@ -28804,7 +31128,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.12579,
+        "percentile": 0.96928,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev",
@@ -28850,7 +31178,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.8484,
+        "percentile": 0.99803,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -28894,7 +31226,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00673,
+        "percentile": 0.47148,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "sqli"
@@ -28944,7 +31280,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00336,
+        "percentile": 0.19537,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "xss"
@@ -28988,7 +31328,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0026,
+        "percentile": 0.10886,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29031,7 +31375,11 @@
       "verified": true,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0053,
+        "percentile": 0.38217,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29075,7 +31423,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00398,
+        "percentile": 0.25567,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev"
@@ -29119,7 +31471,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.1184,
+        "percentile": 0.96789,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev"
@@ -29168,7 +31524,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01116,
+        "percentile": 0.65696,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29212,7 +31572,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00154,
+        "percentile": 0.02339,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29260,7 +31624,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00716,
+        "percentile": 0.49528,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29303,7 +31671,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00954,
+        "percentile": 0.59915,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "rce"
@@ -29347,7 +31719,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00278,
+        "percentile": 0.12867,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29390,7 +31766,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00119,
+        "percentile": 0.00791,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29433,7 +31813,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00523,
+        "percentile": 0.3775,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29476,7 +31860,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00538,
+        "percentile": 0.38779,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29519,7 +31907,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00541,
+        "percentile": 0.38998,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29562,7 +31954,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0091,
+        "percentile": 0.58082,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "rce"
@@ -29612,7 +32008,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00239,
+        "percentile": 0.09036,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29648,7 +32048,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00215,
+        "percentile": 0.06773,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29692,7 +32096,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00177,
+        "percentile": 0.04323,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass",
@@ -29743,7 +32151,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00505,
+        "percentile": 0.36299,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29792,7 +32204,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0038,
+        "percentile": 0.23881,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "info-disclosure"
@@ -29836,7 +32252,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01469,
+        "percentile": 0.73981,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "rce"
@@ -29886,7 +32306,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00483,
+        "percentile": 0.34074,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass"
@@ -29936,7 +32360,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00518,
+        "percentile": 0.37354,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -29979,7 +32407,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00795,
+        "percentile": 0.53038,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -30023,7 +32455,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": true,
-      "epss": null,
+      "epss": {
+        "score": 0.05009,
+        "percentile": 0.93012,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev",
@@ -30073,7 +32509,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00789,
+        "percentile": 0.52791,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -30116,7 +32556,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00835,
+        "percentile": 0.54925,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "path-traversal"
@@ -30160,7 +32604,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00789,
+        "percentile": 0.52792,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -30203,7 +32651,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0073,
+        "percentile": 0.50198,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -30252,7 +32704,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00546,
+        "percentile": 0.39325,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass"
@@ -30302,7 +32758,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00688,
+        "percentile": 0.47987,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "path-traversal"
@@ -30346,7 +32806,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00811,
+        "percentile": 0.53857,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "rce"
@@ -30390,7 +32854,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00628,
+        "percentile": 0.44471,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass"
@@ -30434,7 +32902,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00811,
+        "percentile": 0.53857,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "rce"
@@ -30478,7 +32950,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00811,
+        "percentile": 0.53857,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "rce"
@@ -30528,7 +33004,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0037,
+        "percentile": 0.22931,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -30577,7 +33057,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00456,
+        "percentile": 0.31527,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "path-traversal"
@@ -30627,7 +33111,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00443,
+        "percentile": 0.3038,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass"
@@ -30677,7 +33165,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.01074,
+        "percentile": 0.64411,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass"
@@ -30721,7 +33213,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.03043,
+        "percentile": 0.88256,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass"
@@ -30771,7 +33267,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00496,
+        "percentile": 0.35427,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "path-traversal"
@@ -30821,7 +33321,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00251,
+        "percentile": 0.09908,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "info-disclosure"
@@ -30871,7 +33375,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00327,
+        "percentile": 0.18206,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -30912,7 +33420,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00676,
+        "percentile": 0.47338,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "path-traversal"
@@ -30960,7 +33472,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0076,
+        "percentile": 0.51561,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31003,7 +33519,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00673,
+        "percentile": 0.47147,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31053,7 +33573,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00148,
+        "percentile": 0.02023,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31103,7 +33627,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00342,
+        "percentile": 0.20156,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "deserialization"
@@ -31146,7 +33674,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00151,
+        "percentile": 0.02213,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31181,7 +33713,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0022,
+        "percentile": 0.0731,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31224,7 +33760,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00467,
+        "percentile": 0.32491,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev"
@@ -31270,7 +33810,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02959,
+        "percentile": 0.8793,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev"
@@ -31314,7 +33858,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00681,
+        "percentile": 0.47617,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "auth-bypass"
@@ -31358,7 +33906,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.02284,
+        "percentile": 0.83848,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31401,7 +33953,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00298,
+        "percentile": 0.14839,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31444,7 +34000,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00205,
+        "percentile": 0.05942,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31537,7 +34097,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.16673,
+        "percentile": 0.97637,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev"
@@ -31581,7 +34145,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.0247,
+        "percentile": 0.85212,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31624,7 +34192,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.88458,
+        "percentile": 0.99849,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev",
@@ -31669,7 +34241,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00168,
+        "percentile": 0.03487,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31712,7 +34288,11 @@
       "verified": false,
       "kev": false,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00342,
+        "percentile": 0.20236,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os"
       ],
@@ -31755,7 +34335,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00976,
+        "percentile": 0.60851,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev",
@@ -31806,7 +34390,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.06509,
+        "percentile": 0.94545,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev"
@@ -31856,7 +34444,11 @@
       "verified": false,
       "kev": true,
       "in_the_wild": false,
-      "epss": null,
+      "epss": {
+        "score": 0.00348,
+        "percentile": 0.20817,
+        "date": "2026-11-26"
+      },
       "tags": [
         "os",
         "kev"
