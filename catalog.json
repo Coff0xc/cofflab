@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T16:53:55Z",
+  "generated": "2026-11-26T17:50:09Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 719,
+  "entries": 721,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -12006,6 +12006,51 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/frappe/frappe/security-advisories/GHSA-vwqr-4mjv-ffrm",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-135279",
+      "product": {
+        "en": "@fastify/express",
+        "zh-TW": "@fastify/express"
+      },
+      "score": "3.1 9.1 (GHSA)",
+      "affected": "@fastify/express < 4.0.14",
+      "fixed": "4.0.14",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-287",
+        "CWE-436"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/fastify/fastify-express/security-advisories/GHSA-f9qf-hfc5-7xpj",
           "license": "unknown"
         }
       ]
@@ -25872,6 +25917,57 @@
         {
           "id": "nvd-record",
           "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-66784",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137077",
+      "product": {
+        "en": "FreeRDP",
+        "zh-TW": "FreeRDP"
+      },
+      "score": "4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA)",
+      "affected": "FreeRDP <= 3.32.2",
+      "fixed": "3.33.0",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.3,
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 8.2,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-122",
+        "CWE-131",
+        "CWE-787"
+      ],
+      "demonstrated": [
+        "lab-repro"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/FreeRDP/FreeRDP/security-advisories/GHSA-q8p6-8mmj-j4ph",
           "license": "unknown"
         }
       ]

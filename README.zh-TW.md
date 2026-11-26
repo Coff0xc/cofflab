@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (243)
+### Web / CMS (244)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -259,6 +259,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [GHSA-g9x9-q7qj-6mv5](GHSA-g9x9-q7qj-6mv5) | AVideo | 3.1 8.1 (GHSA) | AVideo ≤ 29.0 |  |
 | [GHSA-r2q3-7m4h-63qg](GHSA-r2q3-7m4h-63qg) | Budibase | 3.1 7.7 (GHSA) | @budibase/server < 4.0.0 | 3.50.0 / 4.0.0 |
 | [GHSA-vwqr-4mjv-ffrm](GHSA-vwqr-4mjv-ffrm) | Frappe Framework | 3.1 8.5 (GHSA) | Frappe Framework < 15.127.1；16.0.0–< 16.60.1 | 15.127.1 / 16.60.1 |
+| [CVE-2026-135279](CVE-2026-135279) | @fastify/express | 3.1 9.1 (GHSA) | @fastify/express < 4.0.14 | 4.0.14 |
 
 ### AI / LLM (30)
 
@@ -295,7 +296,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
-### 網路與安全 (247)
+### 網路與安全 (248)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -546,6 +547,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-133971](CVE-2026-133971) | HPE Networking Management Software (AirWave) | 3.1 9.8 (HPE) | AirWave 8.3.0.7 and below | 8.3.0.8 and above |
 | [CVE-2026-133972](CVE-2026-133972) | HPE Networking Management Software (AirWave) | 3.1 9.8 (HPE) | AirWave 8.3.0.7 and below | 8.3.0.8 and above |
 | [CVE-2026-66784](CVE-2026-66784) | Submariner | 3.1 8.7 (Red Hat) | Submariner (default Pre-Shared Key mode) | unknown |
+| [CVE-2026-137077](CVE-2026-137077) | FreeRDP | 4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA) | FreeRDP <= 3.32.2 | 3.33.0 |
 
 ### 運行環境 / 框架 / 瀏覽器 (102)
 
