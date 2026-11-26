@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (209)
+### Web / CMS (210)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -225,6 +225,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-49952](CVE-2026-49952) | Discuz! X5.0 | 4.0 9.3 (VulnCheck); 3.1 9.1 (VulnCheck) | Discuz! X5.0 >= 20260320, <= 20260501 |  |
 | [CVE-2026-75650](CVE-2026-75650) | Adobe Commerce / Magento Open Source | 3.1 10.0 (Adobe) | Adobe Commerce 2.4.4-2.4.9 (2026-aug and earlier); Adobe Commerce B2B 1.3.3-1.5.3 (2026-aug and earlier); Magento Open Source 2.4.6-2.4.9 (2026-aug and earlier) | Hotfix VULN-39341 (APSB26-146) |
 | [CVE-2026-136716](CVE-2026-136716) | Drupal core | unknown | Drupal core <10.6.23, 11.0.0-11.3.22, 11.4.0-11.4.13 | 10.6.23 / 11.3.23 / 11.4.14 |
+| [CVE-2024-27923](CVE-2024-27923) | Grav CMS | 3.1 8.8 (GHSA) | Grav < 1.7.43 | 1.7.43 |
 
 ### AI / LLM (29)
 
