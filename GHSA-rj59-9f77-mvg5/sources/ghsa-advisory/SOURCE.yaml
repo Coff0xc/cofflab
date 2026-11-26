@@ -1,0 +1,16 @@
+id: ghsa-advisory
+upstream: https://api.github.com/repos/tastyigniter/tastyigniter/security-advisories/GHSA-rj59-9f77-mvg5
+commit: "n/a"
+content_sha256: "1c0a5fe679503e92664e8eeb551c1168926ba80cb9a436c83b118a2c7ec3fd68"
+collected: 2026-11-26
+license: unknown
+review:
+  executed: false
+  static: true
+  notes: "只讀檢查：ghsa-rj59-9f77-mvg5.json 為 GitHub Advisory API 返回的通告全文，含摘要、PoC 步驟、CVSS 3.1 7.6 及向量、CWE-23、影響版本（< 4.3.1）與修復版本（v4.3.1）；本身無可執行代碼，無 PoC 代碼。通告正文 PoC 請求保留報告者本地測試實例（localhost:8888）的 session token 原文，屬公開通告內容，未改動。deps checked: 0 — no dependency files"
+issues:
+  - "license: unknown"
+  - "partial-snapshot: only the GHSA advisory record (JSON), not the vendor page"
+  - "reporter-tokens: PoC request in the advisory text carries the reporter's localhost session tokens verbatim as published"
+dropped: []
+maturity: trigger

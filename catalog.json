@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T09:21:57Z",
+  "generated": "2026-11-26T10:43:53Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 691,
+  "entries": 692,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -34592,6 +34592,50 @@
         {
           "id": "zdi-advisory",
           "upstream": "https://www.zerodayinitiative.com/advisories/ZDI-26-1080/",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "GHSA-rj59-9f77-mvg5",
+      "product": {
+        "en": "TastyIgniter",
+        "zh-TW": "TastyIgniter"
+      },
+      "score": "3.1 7.6 (GHSA)",
+      "affected": "tastyigniter/tastyigniter < 4.3.1",
+      "fixed": "v4.3.1",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.6,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-23"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "path-traversal"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/tastyigniter/tastyigniter/security-advisories/GHSA-rj59-9f77-mvg5",
           "license": "unknown"
         }
       ]

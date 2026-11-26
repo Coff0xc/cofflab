@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (225)
+### Web / CMS (226)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -241,6 +241,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-64670](CVE-2026-64670) | @waline/client | 3.1 9.3 (GHSA) | @waline/client <= 3.15.2 | No fixed release yet |
 | [GHSA-2grc-qr7q-6m36](GHSA-2grc-qr7q-6m36) | Gogs | 3.1 9.6 (GHSA) | Gogs <= 0.14.3 | 0.14.4 |
 | [GHSA-hc35-pcqw-5xjq](GHSA-hc35-pcqw-5xjq) | Gogs | 3.1 9.9 (GHSA) | Gogs <= 0.14.3 | No fixed release yet |
+| [GHSA-rj59-9f77-mvg5](GHSA-rj59-9f77-mvg5) | TastyIgniter | 3.1 7.6 (GHSA) | tastyigniter/tastyigniter < 4.3.1 | v4.3.1 |
 
 ### AI / LLM (29)
 
