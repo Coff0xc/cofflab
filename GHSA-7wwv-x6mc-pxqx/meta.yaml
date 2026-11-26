@@ -1,0 +1,23 @@
+id: GHSA-7wwv-x6mc-pxqx
+aliases: []
+product: "TastyIgniter"
+vendor: TastyIgniter
+cwe: []
+affected: "tastyigniter/tastyigniter <= v4.2.4"
+fixed: "v4.3.1"
+advisory:
+  - name: GHSA-7wwv-x6mc-pxqx
+    url: https://github.com/tastyigniter/TastyIgniter/security/advisories/GHSA-7wwv-x6mc-pxqx
+    published: 2026-07-06
+cvss:
+  - version: "3.1"
+    score: 9.1
+    vector: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    source: "GHSA"
+demonstrated: [trigger]
+public_rce: true
+notes: "GitHub 通告 2026-07-06 发布、2026-08-03 更新；通告正文含可直接照做的 PoC 步骤（管理员上传 .htaccess 改写 .jpg 处理器后上传含 PHP shell 的 test.jpg），此为 public_rce=true 的依据。GitHub 通告列出 CVE-2026-69179，NVD 截至 2026-11-26 尚未收录该编号，故不列为 alias。通告 API 未列 CWE，栏位留空。需管理员权限。本仓未运行 PoC。"
+collected: '2026-11-26'
+sources:
+  - id: ghsa-advisory
+    path: sources/ghsa-advisory

