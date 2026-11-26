@@ -1,0 +1,15 @@
+id: ghsa-advisory
+upstream: https://api.github.com/repos/Budibase/budibase/security-advisories/GHSA-5rq2-4mjm-m7q2
+commit: "n/a"
+content_sha256: "b22ea93e1c5a25b841e3296f51959c01c0f36b7b308ff8ad9a98d8b31b7fa1f6"
+collected: 2026-11-26
+license: unknown
+review:
+  executed: false
+  static: true
+  notes: "只讀檢查：ghsa-5rq2-4mjm-m7q2.json 為 GitHub Advisory API 返回的通告全文，含摘要、完整 PoC 步驟（docker 啟動未修補實例後呼叫 /api/automations/:id/test）、CVSS 3.1 9.1 及向量、CWE-250/807/863、影響版本（< 4.0.0）與修復版本（4.0.0）；本身無可執行代碼，無 PoC 代碼。deps checked: 0 — no dependency files"
+issues:
+  - "license: unknown"
+  - "partial-snapshot: only the GHSA advisory record (JSON), not the vendor page"
+dropped: []
+maturity: trigger

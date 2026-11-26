@@ -1,0 +1,23 @@
+id: GHSA-5rq2-4mjm-m7q2
+aliases: []
+product: "Budibase"
+vendor: Budibase
+cwe: [CWE-250, CWE-807, CWE-863]
+affected: "@budibase/server < 4.0.0"
+fixed: "4.0.0"
+advisory:
+  - name: GHSA-5rq2-4mjm-m7q2
+    url: https://github.com/Budibase/budibase/security/advisories/GHSA-5rq2-4mjm-m7q2
+    published: 2026-11-10
+cvss:
+  - version: "3.1"
+    score: 9.1
+    vector: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    source: "GHSA"
+demonstrated: [trigger]
+public_rce: false
+notes: "無 CVE 編號；POST /api/automations/:id/test 以服務權限執行 builder 撰寫的自動化，自動化被授權給 Public 角色時免登入，否則需最低權限帳號；builder 步驟含 shell 時即以 root 執行命令，通告內含完整 PoC 步驟。"
+collected: '2026-11-26'
+sources:
+  - id: ghsa-advisory
+    path: sources/ghsa-advisory
