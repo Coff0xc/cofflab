@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T17:50:09Z",
+  "generated": "2026-11-26T19:44:39Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 721,
+  "entries": 722,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -12052,6 +12052,56 @@
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/fastify/fastify-express/security-advisories/GHSA-f9qf-hfc5-7xpj",
           "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-63304",
+      "product": {
+        "en": "AVideo",
+        "zh-TW": "AVideo"
+      },
+      "score": "4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck)",
+      "affected": "AVideo < 29.1.0",
+      "fixed": "29.1.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.2,
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 8.1,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "rce"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "Apache-2.0"
         }
       ]
     },

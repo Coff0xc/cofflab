@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (244)
+### Web / CMS (245)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -260,6 +260,7 @@ Only publicly available material is collected. For authorized security research 
 | [GHSA-r2q3-7m4h-63qg](GHSA-r2q3-7m4h-63qg) | Budibase | 3.1 7.7 (GHSA) | @budibase/server < 4.0.0 | 3.50.0 / 4.0.0 |
 | [GHSA-vwqr-4mjv-ffrm](GHSA-vwqr-4mjv-ffrm) | Frappe Framework | 3.1 8.5 (GHSA) | Frappe Framework < 15.127.1；16.0.0–< 16.60.1 | 15.127.1 / 16.60.1 |
 | [CVE-2026-135279](CVE-2026-135279) | @fastify/express | 3.1 9.1 (GHSA) | @fastify/express < 4.0.14 | 4.0.14 |
+| [CVE-2026-63304](CVE-2026-63304) | AVideo | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | AVideo < 29.1.0 | 29.1.0 |
 
 ### AI / LLM (30)
 
