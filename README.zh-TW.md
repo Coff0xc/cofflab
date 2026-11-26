@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (234)
+### Web / CMS (235)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -250,8 +250,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59191](CVE-2026-59191) | TwigView | 4.0 6.9 (GHSA) | twig-view < 1.3.3；2.0.0–2.1.1 | 1.3.3 / 2.1.2 |
 | [CVE-2026-61500](CVE-2026-61500) | Rejetto HFS | 3.1 9.8 (GHSA) | HFS 3.0.0–3.2.0 | 3.2.1 |
 | [CVE-2026-115770](CVE-2026-115770) | Pocket ID | 3.1 9.6 (GHSA) | Pocket ID >= 2.2.0, < 2.12.0 | 2.12.0 |
+| [CVE-2026-137306](CVE-2026-137306) | Grav Admin plugin | 4.0 7.6 (VulnCheck); 3.1 6.8 (VulnCheck) | Grav Admin plugin before 1.10.65 | 1.10.65 |
 
-### AI / LLM (29)
+### AI / LLM (30)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -284,6 +285,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59415](CVE-2026-59415) | Spring AI TypesenseVectorStore | 3.1 10.0 (Spring) | Spring AI 1.0.0–1.0.10, 1.1.0–1.1.9, 2.0.0–2.0.2 | 2.0.3 (OSS); 2.0.2.1 / 1.1.10 / 1.0.11 (Enterprise Support Only) |
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
+| [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
 ### 網路與安全 (241)
 

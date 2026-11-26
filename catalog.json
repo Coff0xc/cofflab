@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T12:45:00Z",
+  "generated": "2026-11-26T13:45:57Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 702,
+  "entries": 704,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -11585,6 +11585,55 @@
       ]
     },
     {
+      "id": "CVE-2026-137306",
+      "product": {
+        "en": "Grav Admin plugin",
+        "zh-TW": "Grav Admin plugin"
+      },
+      "score": "4.0 7.6 (VulnCheck); 3.1 6.8 (VulnCheck)",
+      "affected": "Grav Admin plugin before 1.10.65",
+      "fixed": "1.10.65",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 7.6,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 6.8,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-640"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/advisories/GHSA-5gpq-9xpr-crwm",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-85228",
       "product": {
         "en": "Amazon Deep Java Library (DJL)",
@@ -13022,6 +13071,56 @@
         {
           "id": "litellm-ghsa",
           "upstream": "https://github.com/advisories/GHSA-7488-6r32-c95q",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137308",
+      "product": {
+        "en": "markdownify-mcp",
+        "zh-TW": "markdownify-mcp"
+      },
+      "score": "4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck)",
+      "affected": "markdownify-mcp before 1.2.0",
+      "fixed": "1.2.0",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 7.4,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-918"
+      ],
+      "demonstrated": [
+        "lab-repro"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai",
+        "ssrf"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/advisories/GHSA-mqxc-j2ww-xfvx",
           "license": "unknown"
         }
       ]
