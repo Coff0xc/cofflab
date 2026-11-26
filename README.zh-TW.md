@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (215)
+### Web / CMS (220)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -231,6 +231,11 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-125812](CVE-2026-125812) | WP Rocket | 3.1 9.8 (Patchstack) | WP Rocket < 3.24.2 | 3.24.2 |
 | [CVE-2026-73373](CVE-2026-73373) | Joomla! CMS | 3.1 9.8 (NVD); 4.0 8.9 (Joomla) | Joomla! CMS 1.0.0–5.4.7、6.0.0–6.1.2 | 5.4.8 / 6.1.3 |
 | [CVE-2026-82329](CVE-2026-82329) | JFrog Artifactory | 3.1 9.8 (JFrog) | Artifactory 7.111.4–7.111.20 / 7.117.0–7.117.27 / 7.125.0–7.125.19 / 7.133.0–7.133.28 / 7.146.0–7.146.36 / 7.161.0–7.161.19（自託管；Cloud 不受影響） | 7.111.21 / 7.117.28 / 7.125.20 / 7.133.29 / 7.146.38 / 7.161.20 |
+| [CVE-2016-3081](CVE-2016-3081) | Apache Struts | 3.1 8.1 (CISA-ADP) | Struts 2.3.19–2.3.20.2、2.3.21–2.3.24.1、2.3.25–2.3.28（啟用 Dynamic Method Invocation 時） | 2.3.20.3 / 2.3.24.3 / 2.3.28.1 |
+| [CVE-2021-3199](CVE-2021-3199) | ONLYOFFICE Document Server | 3.1 9.8 (CISA-ADP) | ONLYOFFICE Document Server 5.6.3 之前（啟用 JWT 時，/upload 經圖片上傳參數） | 5.6.3 |
+| [CVE-2023-22894](CVE-2023-22894) | Strapi | 3.1 7.2 (CISA-ADP); 3.1 4.9 (NVD) | Strapi 3.2.1–4.5.5（原始描述；NVD CPE 範圍為 3.2.1 至 4.8.0 之前） | 4.8.0 |
+| [CVE-2026-102489](CVE-2026-102489) | Zammad | 4.0 9.4 (DIVD); 3.1 9.8 (NVD) | Zammad 6.3.0–6.5.4（7.0.0–7.1.2 含缺陷但因框架變更不可利用；廠商稱 7.0 及以上不受影響） | 無修復版本（6.5 及更早版本已停止支援、不再接收安全更新；7.0 及以上不受影響；7.2.0 含額外加固） |
+| [GHSA-7wwv-x6mc-pxqx](GHSA-7wwv-x6mc-pxqx) | TastyIgniter | 3.1 9.1 (GHSA) | tastyigniter/tastyigniter <= v4.2.4 | v4.3.1 |
 
 ### AI / LLM (29)
 
@@ -266,7 +271,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### 網路與安全 (232)
+### 網路與安全 (240)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -502,6 +507,14 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-135794](CVE-2026-135794) | Panabit Smart Application Gateway TANGr7p10 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | TANGr7p10（admin/cgi-bin/sac/ajax_sac_crontab，函數 add_crontab，參數 cmd） | No fixed release yet |
 | [CVE-2026-135796](CVE-2026-135796) | Volans NGFW Next-Generation Firewall r5.1 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | r5.1（modules/assets/port_serve_scan.mds，函數 exec/system，參數 task_name/where/path） | No fixed release yet |
 | [CVE-2026-135797](CVE-2026-135797) | Volans NGFW Next-Generation Firewall r5.1 | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | r5.1（sslvpn/sslvpn_client.php，函數 exec，參數 img） | No fixed release yet |
+| [CVE-2015-3306](CVE-2015-3306) | ProFTPD | 3.1 10.0 (CISA-ADP) | ProFTPD 1.3.5（mod_copy 模組啟用時） | 1.3.5a / 1.3.6rc1 |
+| [CVE-2015-5477](CVE-2015-5477) | ISC BIND | 3.1 7.5 (CISA-ADP) | ISC BIND 9.x < 9.9.7-P2、9.10.x < 9.10.2-P3 | 9.9.7-P2 / 9.10.2-P3 |
+| [CVE-2025-61624](CVE-2025-61624) | Fortinet FortiOS / FortiPAM / FortiProxy | 3.1 6.0 (Fortinet); 3.1 6.5 (NVD) | FortiOS 7.6.0–7.6.4、7.4.0–7.4.9、7.2 / 7.0 / 6.4 全部版本；FortiPAM 1.7.0、1.6–1.0 全部版本；FortiProxy 7.6.0–7.6.4、7.4.0–7.4.11、7.2 / 7.0 全部版本；FortiSwitchManager 7.2.0–7.2.7、7.0.0–7.0.6 | FortiOS 7.6.5 / 7.4.10；FortiPAM 1.7.1；FortiProxy 7.6.5 / 7.4.12；FortiSwitchManager 7.2.8 / 7.0.7；其餘分支需遷移至修復版本 |
+| [CVE-2026-104286](CVE-2026-104286) | Fortinet FortiMail | 3.1 9.8 (Fortinet) | FortiMail 8.0.0–8.0.1、7.6.0–7.6.6、7.4.0–7.4.8、7.2.0–7.2.9、7.0 全部版本 | 8.0.2 / 7.6.7 / 7.4.9 / 7.2.10（通告發布時尚未發布）；7.0 需遷移至修復版本 |
+| [CVE-2026-96652](CVE-2026-96652) | Plex Media Server | 4.0 5.3 (CISA); 3.1 4.3 (CISA) | Plex Media Server 1.43.3.10861 之前 | 1.43.3.10861 |
+| [CVE-2026-96654](CVE-2026-96654) | Plex Media Server | 4.0 6.9 (CISA); 3.1 6.5 (CISA) | Plex Media Server 1.43.3.10861 之前 | 1.43.3.10861 |
+| [CVE-2026-96655](CVE-2026-96655) | Plex Media Server | 4.0 5.3 (CISA); 3.1 4.3 (CISA) | Plex Media Server 1.43.3.10861 之前 | 1.43.3.10861 |
+| [CVE-2026-96656](CVE-2026-96656) | Plex Media Server | 4.0 8.6 (CISA); 3.1 7.2 (CISA) | Plex Media Server 1.43.3.10861 之前（管理員權限） | 1.43.3.10861 |
 
 ### 運行環境 / 框架 / 瀏覽器 (102)
 
@@ -637,7 +650,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### 作業系統 / 系統 / DevOps (70)
+### 作業系統 / 系統 / DevOps (72)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -711,6 +724,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-104007](CVE-2026-104007) | LibreOffice | 4.0 8.5 (The Document Foundation) | LibreOffice 26.2.x（26.2.7 之前）、26.8.x（26.8.2 之前）；需安裝並啟用 Java 執行環境 | 26.2.7 / 26.8.2 |
 | [CVE-2026-104692](CVE-2026-104692) | LibreOffice | 4.0 8.5 (The Document Foundation) | LibreOffice 26.2.x（26.2.7 之前）、26.8.x（26.8.2 之前）；需安裝並啟用 Java 執行環境 | 26.2.7 / 26.8.2 |
 | [CVE-2026-96951](CVE-2026-96951) | Microsoft Windows Shell | 3.1 8.8 (Microsoft) | Windows Shell（Windows 10 / 11、Windows Server 2019 / 2022 / 2025，見 MSRC 更新清單） | 2026-10-13 安全更新（Windows 11 24H2 10.0.26100.9711、25H2 10.0.26200.9711、Windows 10 22H2 10.0.19045.7807 等） |
+| [CVE-2026-102490](CVE-2026-102490) | Zammad | 4.0 9.4 (DIVD); 3.1 7.8 (NVD) | packager.io 打包的 Zammad DEB/RPM 安裝（7.2.2 之前，NVD CPE） | 尚未發布（2026-10-05 通告讀取時仍在制定解決方案） |
+| [CVE-2026-110936](CVE-2026-110936) | Siemens Software Center | 4.0 8.4 (Siemens); 3.1 6.7 (Siemens) | Siemens Software Center V4.0.9.8 之前全部版本 | V4.0.9.8 |
 
 
 點進 CVE 目錄查看詳細內容與引用。
