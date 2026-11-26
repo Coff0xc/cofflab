@@ -3,7 +3,7 @@
 | 項 | 值 |
 | --- | --- |
 | 產品 | TastyIgniter |
-| CWE | unknown |
+| CWE | CWE-1336 |
 | 影響版本 | tastyigniter/tastyigniter <= v4.2.4 |
 | 修復版本 | v4.3.1 |
 | CVSS | 3.1 9.1 (GHSA) |
