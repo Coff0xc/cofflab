@@ -1,0 +1,23 @@
+id: GHSA-hc35-pcqw-5xjq
+aliases: []
+product: "Gogs"
+vendor: Gogs
+cwe: [CWE-22, CWE-41, CWE-94]
+affected: "Gogs <= 0.14.3"
+fixed: "No fixed release yet"
+advisory:
+  - name: GHSA-hc35-pcqw-5xjq
+    url: https://github.com/gogs/gogs/security/advisories/GHSA-hc35-pcqw-5xjq
+    published: 2026-11-24
+cvss:
+  - version: "3.1"
+    score: 9.9
+    vector: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    source: "GHSA"
+demonstrated: [trigger]
+public_rce: false
+notes: "通告正文含完整復現步驟：已認證且具寫入權限的使用者經 web editor 以 `.git::$INDEX_ALLOCATION/hooks/pre-commit` 路徑寫入 Git hook，Gogs 執行 `git commit` 時不帶 `--no-verify`，hook 即以 Gogs 服務帳號執行。僅 Windows 宿主（NTFS Alternate Data Streams）。影響 0.14.3 及之前；通告明言 PR #8408 的修復不完整，未列修復版本，0.14.4 是否覆蓋未確認。無 CVE 編號。無在野利用確認、未進 KEV。本倉未運行 PoC。"
+collected: '2026-11-26'
+sources:
+  - id: ghsa-advisory
+    path: sources/ghsa-advisory
