@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T13:54:52Z",
+  "generated": "2026-11-26T16:53:55Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 712,
+  "entries": 719,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -11677,6 +11677,335 @@
         {
           "id": "nvd-record",
           "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-129110",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-109601",
+      "product": {
+        "en": "Frappe Framework",
+        "zh-TW": "Frappe Framework"
+      },
+      "score": "4.0 8.2 (VulnCheck); 3.1 7.5 (VulnCheck)",
+      "affected": "Frappe Framework < 15.117.0；16.x < 16.30.0",
+      "fixed": "15.117.0 / 16.30.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.2,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 7.5,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-73"
+      ],
+      "demonstrated": [
+        "leak"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/frappe/frappe/security-advisories/GHSA-8v98-cfpm-9p67",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-119145",
+      "product": {
+        "en": "Frappe Framework",
+        "zh-TW": "Frappe Framework"
+      },
+      "score": "4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck)",
+      "affected": "Frappe < 15.121.0；16.x < 16.34.0",
+      "fixed": "15.121.0 / 16.34.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.4,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-22"
+      ],
+      "demonstrated": [
+        "lab-repro"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "path-traversal"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/frappe/frappe/security-advisories/GHSA-9pp9-wgp9-3p3j",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-58443",
+      "product": {
+        "en": "Gitea",
+        "zh-TW": "Gitea"
+      },
+      "score": "3.1 9.6 (GHSA); 3.1 9.1 (NVD)",
+      "affected": "Gitea ≤ 1.26.4",
+      "fixed": "1.27.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.6,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H",
+          "source": "GHSA"
+        },
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+          "source": "NVD"
+        }
+      ],
+      "cwe": [
+        "CWE-863"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/go-gitea/gitea/security-advisories/GHSA-xxjv-752h-3vp2",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "GHSA-5rq2-4mjm-m7q2",
+      "product": {
+        "en": "Budibase",
+        "zh-TW": "Budibase"
+      },
+      "score": "3.1 9.1 (GHSA)",
+      "affected": "@budibase/server < 4.0.0",
+      "fixed": "4.0.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-250",
+        "CWE-807",
+        "CWE-863"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/Budibase/budibase/security-advisories/GHSA-5rq2-4mjm-m7q2",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "GHSA-g9x9-q7qj-6mv5",
+      "product": {
+        "en": "AVideo",
+        "zh-TW": "AVideo"
+      },
+      "score": "3.1 8.1 (GHSA)",
+      "affected": "AVideo ≤ 29.0",
+      "fixed": "",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.1,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "lab-repro"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "rce"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/WWBN/AVideo/security-advisories/GHSA-g9x9-q7qj-6mv5",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "GHSA-r2q3-7m4h-63qg",
+      "product": {
+        "en": "Budibase",
+        "zh-TW": "Budibase"
+      },
+      "score": "3.1 7.7 (GHSA)",
+      "affected": "@budibase/server < 4.0.0",
+      "fixed": "3.50.0 / 4.0.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.7,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-79",
+        "CWE-116",
+        "CWE-1021"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "xss"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/Budibase/budibase/security-advisories/GHSA-r2q3-7m4h-63qg",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "GHSA-vwqr-4mjv-ffrm",
+      "product": {
+        "en": "Frappe Framework",
+        "zh-TW": "Frappe Framework"
+      },
+      "score": "3.1 8.5 (GHSA)",
+      "affected": "Frappe Framework < 15.127.1；16.0.0–< 16.60.1",
+      "fixed": "15.127.1 / 16.60.1",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.5,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-863"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/frappe/frappe/security-advisories/GHSA-vwqr-4mjv-ffrm",
           "license": "unknown"
         }
       ]

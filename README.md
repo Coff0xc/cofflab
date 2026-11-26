@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (236)
+### Web / CMS (243)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -252,6 +252,13 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-115770](CVE-2026-115770) | Pocket ID | 3.1 9.6 (GHSA) | Pocket ID >= 2.2.0, < 2.12.0 | 2.12.0 |
 | [CVE-2026-137306](CVE-2026-137306) | Grav Admin plugin | 4.0 7.6 (VulnCheck); 3.1 6.8 (VulnCheck) | Grav Admin plugin before 1.10.65 | 1.10.65 |
 | [CVE-2026-129110](CVE-2026-129110) | sysPass | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | sysPass 3.0.1 through 3.2.11 | 未發布（修復 PR #360 已合併，尚未發版） |
+| [CVE-2026-109601](CVE-2026-109601) | Frappe Framework | 4.0 8.2 (VulnCheck); 3.1 7.5 (VulnCheck) | Frappe Framework < 15.117.0；16.x < 16.30.0 | 15.117.0 / 16.30.0 |
+| [CVE-2026-119145](CVE-2026-119145) | Frappe Framework | 4.0 9.4 (VulnCheck); 3.1 9.9 (VulnCheck) | Frappe < 15.121.0；16.x < 16.34.0 | 15.121.0 / 16.34.0 |
+| [CVE-2026-58443](CVE-2026-58443) | Gitea | 3.1 9.6 (GHSA); 3.1 9.1 (NVD) | Gitea ≤ 1.26.4 | 1.27.0 |
+| [GHSA-5rq2-4mjm-m7q2](GHSA-5rq2-4mjm-m7q2) | Budibase | 3.1 9.1 (GHSA) | @budibase/server < 4.0.0 | 4.0.0 |
+| [GHSA-g9x9-q7qj-6mv5](GHSA-g9x9-q7qj-6mv5) | AVideo | 3.1 8.1 (GHSA) | AVideo ≤ 29.0 |  |
+| [GHSA-r2q3-7m4h-63qg](GHSA-r2q3-7m4h-63qg) | Budibase | 3.1 7.7 (GHSA) | @budibase/server < 4.0.0 | 3.50.0 / 4.0.0 |
+| [GHSA-vwqr-4mjv-ffrm](GHSA-vwqr-4mjv-ffrm) | Frappe Framework | 3.1 8.5 (GHSA) | Frappe Framework < 15.127.1；16.0.0–< 16.60.1 | 15.127.1 / 16.60.1 |
 
 ### AI / LLM (30)
 
