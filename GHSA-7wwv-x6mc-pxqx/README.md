@@ -3,13 +3,10 @@
 | 項 | 值 |
 | --- | --- |
 | 產品 | TastyIgniter |
-| CWE | 未列（通告未列 CWE） |
+| CWE | unknown |
 | 影響版本 | tastyigniter/tastyigniter <= v4.2.4 |
 | 修復版本 | v4.3.1 |
 | CVSS | 3.1 9.1 (GHSA) |
-| 公開成色 | GHSA 通告含可直接照做的 PoC 步驟；CVE 編號未獲 NVD 證實 |
-
-公開材料實際證明了什麼：GHSA 通告載明媒體管理器接受 .htaccess 上傳，管理員可藉此將 .jpg 重新對映為 PHP 處理器，再上傳內容為 PHP shell 的 test.jpg 即執行任意 PHP 命令；通告附完整請求步驟與執行截圖。本倉未運行 PoC。
 
 ## 來源
 
