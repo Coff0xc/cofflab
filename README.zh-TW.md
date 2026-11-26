@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (210)
+### Web / CMS (215)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -226,6 +226,11 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-75650](CVE-2026-75650) | Adobe Commerce / Magento Open Source | 3.1 10.0 (Adobe) | Adobe Commerce 2.4.4-2.4.9 (2026-aug and earlier); Adobe Commerce B2B 1.3.3-1.5.3 (2026-aug and earlier); Magento Open Source 2.4.6-2.4.9 (2026-aug and earlier) | Hotfix VULN-39341 (APSB26-146) |
 | [CVE-2026-136716](CVE-2026-136716) | Drupal core | unknown | Drupal core <10.6.23, 11.0.0-11.3.22, 11.4.0-11.4.13 | 10.6.23 / 11.3.23 / 11.4.14 |
 | [CVE-2024-27923](CVE-2024-27923) | Grav CMS | 3.1 8.8 (GHSA) | Grav < 1.7.43 | 1.7.43 |
+| [CVE-2026-117593](CVE-2026-117593) | ITG vSRM | 3.1 9.1 (TR-CERT) | vSRM v14.08.3 至 v14.08.5 之前版本 | v14.08.5 |
+| [CVE-2026-119582](CVE-2026-119582) | ITG vSRM | 3.1 9.8 (TR-CERT) | vSRM v14.08.3 至 v14.08.5 之前版本 | v14.08.5 |
+| [CVE-2026-125812](CVE-2026-125812) | WP Rocket | 3.1 9.8 (Patchstack) | WP Rocket < 3.24.2 | 3.24.2 |
+| [CVE-2026-73373](CVE-2026-73373) | Joomla! CMS | 3.1 9.8 (NVD); 4.0 8.9 (Joomla) | Joomla! CMS 1.0.0–5.4.7、6.0.0–6.1.2 | 5.4.8 / 6.1.3 |
+| [CVE-2026-82329](CVE-2026-82329) | JFrog Artifactory | 3.1 9.8 (JFrog) | Artifactory 7.111.4–7.111.20 / 7.117.0–7.117.27 / 7.125.0–7.125.19 / 7.133.0–7.133.28 / 7.146.0–7.146.36 / 7.161.0–7.161.19（自託管；Cloud 不受影響） | 7.111.21 / 7.117.28 / 7.125.20 / 7.133.29 / 7.146.38 / 7.161.20 |
 
 ### AI / LLM (29)
 
@@ -261,7 +266,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### 網路與安全 (210)
+### 網路與安全 (218)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -475,6 +480,14 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-136822](CVE-2026-136822) | R32 | 4.0 8.6 (VulDB); 3.1 9.9 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
 | [CVE-2026-136823](CVE-2026-136823) | R32 | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | D-Link R32 A1 firmware 1.10B02 | unknown |
 | [CVE-2026-137043](CVE-2026-137043) | TOTOLINK N350RT | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TOTOLINK N350RT 9.3.5u.6468_B20250827 / 9.3.5u.6466_B20250825 | No fixed release yet |
+| [CVE-2026-135150](CVE-2026-135150) | Eclipse Ditto | 4.0 9.1 (Eclipse) | Eclipse Ditto 1.1.0–3.9.9（nginx 反向代理配置：Helm chart、Docker Compose、Kubernetes、OpenShift）；Helm chart ≤ 4.9.0 | Not patched yet (fix in preparation for 3.9.10 / 3.8.16) |
+| [CVE-2026-135788](CVE-2026-135788) | D-Link DIR-X1860 | 3.1 9.9 (VulDB); 4.0 8.6 (VulDB) | DIR-X1860 韌體 4.5.2 (/usr/sbin/anweb) | No fixed release yet |
+| [CVE-2026-135789](CVE-2026-135789) | D-Link R95 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | R95 韌體 101B06（GetBluetoothAdapterSettings / GetBluetoothBloodPressure / GetBluetoothDeviceList / GetBluetoothScanDeviceList / SetBluetooth*） | No fixed release yet |
+| [CVE-2026-136548](CVE-2026-136548) | Tenda RX3 | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | RX3 韌體 16.03.13.11 (/bin/auto_discover) | No fixed release yet |
+| [CVE-2026-136549](CVE-2026-136549) | Tenda RX3 | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | RX3 韌體 16.03.13.11_multi (/goform/SetRemoteWebCfg) | No fixed release yet |
+| [CVE-2026-136550](CVE-2026-136550) | Tenda RX3 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | RX3 韌體 16.03.13.11_multi (/goform/AdvSetMacMtuWan) | No fixed release yet |
+| [CVE-2026-136552](CVE-2026-136552) | Tenda RX3 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | RX3 韌體 16.03.13.11_multi (/goform/setIPv6Status) | No fixed release yet |
+| [CVE-2026-136553](CVE-2026-136553) | Tenda RX3 | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | RX3 韌體 16.03.13.11_multi (/goform/fast_setting_wifi_set) | No fixed release yet |
 
 ### 運行環境 / 框架 / 瀏覽器 (102)
 
@@ -610,7 +623,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### 作業系統 / 系統 / DevOps (67)
+### 作業系統 / 系統 / DevOps (69)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -681,6 +694,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-31431](CVE-2026-31431) | Linux kernel | 3.1 7.8 (Linux) | Linux kernel built since 2017, before fix commit a664bf3d603d | mainline commit a664bf3d603d |
 | [CVE-2026-43284](CVE-2026-43284) | Linux kernel | 3.1 8.8 (Linux) | Linux kernel 4.11 – 7.0.5 (stable branches fixed at 5.10.255, 5.15.205, 6.1.171, 6.6.138, 6.12.87, 6.18.28, 7.0.5) | 5.10.255, 5.15.205, 6.1.171, 6.6.138, 6.12.87, 6.18.28, 7.0.5 (per stable branch) |
 | [CVE-2026-59310](CVE-2026-59310) | VMware vCenter Server | 3.1 9.8 (Broadcom) | VMware vCenter Server 7.0, 8.0, 9.0.x, 9.1.x (VMware Cloud Foundation, vSphere Foundation, Telco Cloud Platform, Telco Cloud Infrastructure) | 9.1.0.0300; 9.0.2.0100; 8.0 U3k; 8.0 U2f (7.0: contact Broadcom Support under extended support) |
+| [CVE-2026-104007](CVE-2026-104007) | LibreOffice | 4.0 8.5 (The Document Foundation) | LibreOffice 26.2.x（26.2.7 之前）、26.8.x（26.8.2 之前）；需安裝並啟用 Java 執行環境 | 26.2.7 / 26.8.2 |
+| [CVE-2026-104692](CVE-2026-104692) | LibreOffice | 4.0 8.5 (The Document Foundation) | LibreOffice 26.2.x（26.2.7 之前）、26.8.x（26.8.2 之前）；需安裝並啟用 Java 執行環境 | 26.2.7 / 26.8.2 |
 
 
 點進 CVE 目錄查看詳細內容與引用。
