@@ -1,0 +1,461 @@
+# validate.yml — cofflab 入库硬检查
+#
+# 为什么有这份文件（土豆姐思路：规范焊进 CI，不是写进文档）：
+#   ingest-spec.md 是软约束——Agent 跳过它不会报错。2026-11-21 的 13181 后门源
+#   （systext/tesec）和 5 个 SOURCE.yaml 严格 YAML 语法错，都是软约束没拦住的。
+#   Lauren Tan（土豆姐，pstack）的核心做法：把每一次人工复核的吐槽翻译成编译器
+#   报错和变红的 CI，让最笨的 Agent 走最短路径写出来的东西也是合规的。
+#   这份 workflow 就是那道硬约束：入库规矩不再只写在文档里，推上来就跑，红了就拦。
+#
+# 硬约束（不要绕过）：
+#   本地全量检查器 check_layout.py / check_deps.py 永远不进仓库——进仓库的检查器
+#   可以被 PR 本身改弱。本 workflow 只内嵌它们逻辑的一个子集，是第二道防线，
+#   不是替代：入库前本地全量检查仍要跑（ingest-spec §8，每月全库 check_deps）。
+#
+# 检查什么（push / PR，只查改动条目 + 两份目录表；旧账不拦新活）：
+#   A. 布局（PyYAML 真解析，不是子串匹配）：条目目录命名、根目录只允许
+#      README.md / meta.yaml / sources/、meta.yaml 必填键、id == 目录名、
+#      demonstrated 只许用枚举值（多行列表也能看到——旧草稿的子串匹配看不到
+#      本仓库 129 个多行 demonstrated）、SOURCE.yaml 必填键、review.executed
+#      必须存在、drop 名单文件、条目 README 不许抄 broken 的 http://exploit/ 链接。
+#   B. 目录表一致：README.md（EN）与 README.zh-TW.md（繁體）行数、顺序、ID
+#      集合一致，且与磁盘上的条目目录一致；评分格必须带版本+来源（不许光秃数字），
+#      未知写 unknown。
+#   C. 依赖（只查改动条目）：requirements*.txt / package.json / pyproject.toml /
+#      go.mod / Cargo.toml；registry 404 拦、OSV 命中 MAL-* 拦；registry 或 OSV
+#      查不到就 fail-closed（挂了就重跑，别放行）。
+#   不覆盖：Gemfile / composer.json / setup.py / setup.cfg（本仓库现为 0 个文件，
+#   出现时本地 check_deps.py 兜底）。普通 CVE 依赖不拦（与本地门一致），只拦
+#   MAL-* 和 registry 404。
+#
+# 证明它会红（土豆姐 /correct 纪律：没红过的检查什么都证明不了）：
+#   本文件落地前已在本地实跑：严格 YAML 解析扫出 5 个真实坏 SOURCE.yaml
+#   （42884/cisa-kev、109618/googlesky-poc、126229/126253/foxcornlab-fortinet-scanner、
+#   133968/ghsa-qc22-rmgc-vg94）；故意写坏的测试条目（缺键、非法 demonstrated 值、
+#   404 依赖）全部被拦；当前 HEAD 的改动条目与目录表全部通过。
+#
+# 巡检模式（schedule / workflow_dispatch）：检查全部条目（布局 + 目录表），
+#   不做依赖检查（全库 741 个 requirements 文件的 registry + OSV 查询又慢又抖，
+#   全库依赖重扫留在本地每月流程）。第一次巡检一定会红：5 个坏 SOURCE.yaml
+#   是真实历史错误，新检查必须先在它们身上挂一次——这是预期的证明，不是故障。
+#   巡检红不拦任何推送（它是定时任务，不是门禁）；门禁只拦 push/PR。
+#
+# 安装：本文件即 .github/workflows/validate.yml，无 secrets，permissions 只读。
+
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 3 * * 0" # weekly, Sunday 03:00 UTC — full-repo inspection sweep
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install 'pyyaml==6.0.2'
+
+      - name: Find changed entries
+        env:
+          PUSH_BEFORE: ${{ github.event.before }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, subprocess
+          from pathlib import Path
+
+          event = os.environ.get("GITHUB_EVENT_NAME", "")
+          sha = os.environ.get("GITHUB_SHA", "")
+          if event in ("schedule", "workflow_dispatch"):
+              # inspection sweep: every entry, not just the diff
+              entries = sorted(p.name for p in Path(".").iterdir()
+                               if p.is_dir() and (p / "meta.yaml").is_file())
+              Path("changed-entries.txt").write_text(
+                  "\n".join(entries) + ("\n" if entries else ""),
+                  encoding="utf-8")
+              print(f"inspection sweep over all entries ({len(entries)})")
+              raise SystemExit(0)
+          if event == "pull_request":
+              base = os.environ.get("PR_BASE_SHA", "")
+              rng = f"{base}...{sha}" if base else "HEAD~1...HEAD"
+          elif event == "push":
+              before = os.environ.get("PUSH_BEFORE", "")
+              rng = (f"{before}...{sha}" if before and set(before) != {"0"}
+                     else "HEAD~1...HEAD")
+          else:
+              rng = "HEAD~1...HEAD"
+          out = subprocess.run(["git", "diff", "--name-only", rng],
+                               capture_output=True, text=True)
+          if out.returncode != 0:
+              print(f"git diff failed: {out.stderr.strip()}")
+              raise SystemExit(1)
+          entries = set()
+          for line in out.stdout.splitlines():
+              top = line.split("/", 1)[0]
+              if top and (Path(top) / "meta.yaml").is_file():
+                  entries.add(top)
+          Path("changed-entries.txt").write_text(
+              "\n".join(sorted(entries)) + ("\n" if entries else ""),
+              encoding="utf-8")
+          print(f"changed entries ({len(entries)}): "
+                f"{', '.join(sorted(entries)) or 'none'}")
+          PYEOF
+
+      - name: Layout + catalog check
+        run: |
+          python3 - <<'PYEOF'
+          import re, sys
+          from pathlib import Path
+
+          import yaml
+
+          ROOT = Path(".")
+          DEMONSTRATED = {"version-check", "trigger", "crash", "leak",
+                          "lab-repro", "rce-local", "sqli-read", "sqli-write",
+                          "priv-esc", "dos"}
+          DROP = {"CLAUDE.md", "AGENTS.md", "GEMINI.md", ".cursor", ".grok",
+                  ".agents", ".vscode"}
+          REQUIRED_META = ["id", "product", "cvss", "demonstrated",
+                           "public_rce", "collected", "sources"]
+          REQUIRED_SOURCE = ["id", "upstream", "commit", "collected",
+                             "license", "review", "issues"]
+          ALLOWED_ROOT = {"README.md", "meta.yaml", "sources"}
+
+          errors = []
+          changed = [l.strip() for l in
+                     Path("changed-entries.txt").read_text(
+                         encoding="utf-8").splitlines() if l.strip()]
+          for name in changed:
+              d = ROOT / name
+              if not d.is_dir():
+                  continue
+              names = {p.name for p in d.iterdir()}
+              for extra in sorted(names - ALLOWED_ROOT):
+                  errors.append(f"{d}: extra file/dir {extra}")
+              for req in sorted(ALLOWED_ROOT):
+                  if req not in names:
+                      errors.append(f"{d}: missing {req}")
+              meta = d / "meta.yaml"
+              if meta.is_file():
+                  try:
+                      data = yaml.safe_load(meta.read_text(encoding="utf-8"))
+                  except Exception as e:
+                      errors.append(f"{meta}: YAML parse error: {e}")
+                      continue
+                  if not isinstance(data, dict):
+                      errors.append(f"{meta}: not a mapping")
+                      continue
+                  for k in REQUIRED_META:
+                      if k not in data:
+                          errors.append(f"{meta}: missing key {k}")
+                  if data.get("id") != d.name:
+                      errors.append(f"{meta}: id {data.get('id')!r} "
+                                    f"!= directory {d.name}")
+                  dem = data.get("demonstrated")
+                  if isinstance(dem, list):
+                      for tok in dem:
+                          if tok not in DEMONSTRATED:
+                              errors.append(f"{meta}: illegal demonstrated "
+                                          f"value {tok!r}")
+                  elif dem is not None:
+                      errors.append(f"{meta}: demonstrated must be a list")
+                  cvss = data.get("cvss")
+                  if isinstance(cvss, list):
+                      for item in cvss:
+                          if (not isinstance(item, dict)
+                                  or not item.get("version")
+                                  or item.get("score") is None
+                                  or not item.get("source")):
+                              errors.append(f"{meta}: cvss item missing "
+                                          "version/score/source")
+              src = d / "sources"
+              if src.is_dir():
+                  kids = [p for p in src.iterdir() if p.is_dir()]
+                  if not kids:
+                      errors.append(f"{src}: no source directories")
+                  for s in kids:
+                      sy = s / "SOURCE.yaml"
+                      if not sy.is_file():
+                          errors.append(f"{s}: missing SOURCE.yaml")
+                          continue
+                      try:
+                          sdata = yaml.safe_load(
+                              sy.read_text(encoding="utf-8"))
+                      except Exception as e:
+                          errors.append(f"{sy}: YAML parse error: {e}")
+                          continue
+                      if not isinstance(sdata, dict):
+                          errors.append(f"{sy}: not a mapping")
+                          continue
+                      for k in REQUIRED_SOURCE:
+                          if k not in sdata:
+                              errors.append(f"{sy}: missing key {k}")
+                      review = sdata.get("review")
+                      if (not isinstance(review, dict)
+                              or "executed" not in review):
+                          errors.append(f"{sy}: review.executed missing")
+              for p in d.rglob("*"):
+                  if p.name in DROP:
+                      errors.append(f"{p}: file is on the drop list")
+                  if p.name == "README.md" and p.parent == d:
+                      body = p.read_text(encoding="utf-8", errors="replace")
+                      if "http://exploit/" in body:
+                          errors.append(f"{p}: curator README copied a "
+                                      "broken upstream link")
+
+          def parse_table(path):
+              rows = []
+              if not Path(path).is_file():
+                  errors.append(f"missing root catalog {path}")
+                  return rows
+              for line in Path(path).read_text(encoding="utf-8").splitlines():
+                  if not line.startswith("| ["):
+                      continue
+                  cells = [c.strip() for c in line.strip().strip("|").split("|")]
+                  rows.append(cells)
+              return rows
+
+          en = parse_table("README.md")
+          tw = parse_table("README.zh-TW.md")
+          if len(en) != len(tw):
+              errors.append(f"catalog row count differs: EN {len(en)} "
+                            f"vs ZH-TW {len(tw)}")
+          en_ids = [re.search(r"\[([^\]]+)\]", r[0]).group(1)
+                    for r in en if r]
+          tw_ids = [re.search(r"\[([^\]]+)\]", r[0]).group(1)
+                    for r in tw if r]
+          if en_ids != tw_ids:
+              errors.append("catalog ID order differs between README.md "
+                            "and README.zh-TW.md")
+          on_disk = sorted(p.name for p in ROOT.iterdir()
+                           if p.is_dir() and (p / "meta.yaml").is_file())
+          if sorted(en_ids) != on_disk:
+              missing = sorted(set(on_disk) - set(en_ids))[:5]
+              extra = sorted(set(en_ids) - set(on_disk))[:5]
+              errors.append(f"catalog IDs != entry dirs on disk "
+                            f"(catalog {len(en_ids)}, dirs {len(on_disk)}): "
+                            f"missing from catalog {missing}, "
+                            f"in catalog but no dir {extra}")
+          for path, rows in (("README.md", en), ("README.zh-TW.md", tw)):
+              for r in rows:
+                  if len(r) < 3:
+                      errors.append(f"{path}: row too short: {r}")
+                      continue
+                  score = r[2]
+                  if not score:
+                      errors.append(f"{path}: {r[0]} empty score")
+                  elif re.fullmatch(r"\d+(\.\d+)?", score):
+                      errors.append(f"{path}: {r[0]} bare score {score!r} "
+                                  "(needs version+source)")
+                  elif (score.lower() != "unknown"
+                        and not re.search(r"\d\.\d", score)):
+                      errors.append(f"{path}: {r[0]} score {score!r} "
+                                  "has no CVSS version")
+
+          if errors:
+              print("LAYOUT/CATALOG FAIL")
+              for e in errors:
+                  print(f"  {e}")
+              sys.exit(1)
+          print(f"LAYOUT/CATALOG OK ({len(changed)} changed entries, "
+                f"{len(en)} catalog rows)")
+          PYEOF
+
+      - name: Dependency check
+        # push/PR only: the scheduled sweep is layout + catalog (see header).
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        run: |
+          python3 - <<'PYEOF'
+          import json, re, sys, tomllib, urllib.error, urllib.request
+          from pathlib import Path
+
+          UA = {"User-Agent": "cofflab-ci-deps/1.0"}
+          SKIP = {".git", ".github", "node_modules", ".venv", "__pycache__"}
+
+          def norm(name):
+              return re.sub(r"[-_.]+", "-", name).lower()
+
+          def http_get(url, timeout=15):
+              req = urllib.request.Request(url, headers=UA)
+              try:
+                  with urllib.request.urlopen(req, timeout=timeout) as r:
+                      return r.status, r.read()
+              except urllib.error.HTTPError as e:
+                  return e.code, b""
+              except Exception:
+                  return None, b""
+
+          def req_name(spec):
+              m = re.match(r"^\s*([A-Za-z0-9_.\-]+)", spec)
+              return m.group(1) if m else None
+
+          pkgs = {}  # (ecosystem, name) -> origin file
+          changed = [l.strip() for l in
+                     Path("changed-entries.txt").read_text(
+                         encoding="utf-8").splitlines() if l.strip()]
+          for name in changed:
+              base = Path(name)
+              if not base.is_dir():
+                  continue
+              for p in sorted(base.rglob("*")):
+                  if not p.is_file():
+                      continue
+                  if any(part in SKIP for part in p.parts):
+                      continue
+                  if p.name == "package.json":
+                      try:
+                          data = json.loads(p.read_text(encoding="utf-8",
+                                                        errors="replace"))
+                      except Exception:
+                          continue
+                      for sec in ("dependencies", "devDependencies"):
+                          for dep in (data.get(sec, {}) or {}):
+                              pkgs.setdefault(("npm", dep), str(p))
+                  elif p.name.startswith("requirements") and p.suffix == ".txt":
+                      for line in p.read_text(encoding="utf-8",
+                                              errors="replace").splitlines():
+                          line = line.strip()
+                          if not line or line.startswith(("#", "-", "--")):
+                              continue
+                          m = re.match(r"^([A-Za-z0-9_.\-]+)", line)
+                          if m:
+                              pkgs.setdefault(("PyPI", norm(m.group(1))), str(p))
+                  elif p.name == "pyproject.toml":
+                      try:
+                          data = tomllib.loads(p.read_text(encoding="utf-8",
+                                                           errors="replace"))
+                      except Exception:
+                          continue
+                      proj = data.get("project", {}) or {}
+                      for spec in proj.get("dependencies", []) or []:
+                          n = req_name(spec)
+                          if n:
+                              pkgs.setdefault(("PyPI", norm(n)), str(p))
+                      for group in (proj.get("optional-dependencies", {})
+                                    or {}).values():
+                          for spec in group or []:
+                              n = req_name(spec)
+                              if n:
+                                  pkgs.setdefault(("PyPI", norm(n)), str(p))
+                      for group in (data.get("dependency-groups", {})
+                                    or {}).values():
+                          for spec in group or []:
+                              n = req_name(spec)
+                              if n:
+                                  pkgs.setdefault(("PyPI", norm(n)), str(p))
+                      for dep in (data.get("tool", {}).get("poetry", {})
+                                  .get("dependencies", {}) or {}):
+                          if dep != "python":
+                              pkgs.setdefault(("PyPI", norm(dep)), str(p))
+                      for spec in (data.get("build-system", {})
+                                   .get("requires", []) or []):
+                          n = req_name(spec)
+                          if n:
+                              pkgs.setdefault(("PyPI", norm(n)), str(p))
+                  elif p.name == "Cargo.toml":
+                      try:
+                          data = tomllib.loads(p.read_text(encoding="utf-8",
+                                                           errors="replace"))
+                      except Exception:
+                          continue
+                      def walk(node):
+                          if isinstance(node, dict):
+                              for k, v in node.items():
+                                  if k in ("dependencies", "dev-dependencies",
+                                           "build-dependencies") \
+                                          and isinstance(v, dict):
+                                      for dep in v:
+                                          pkgs.setdefault(("crates.io", dep),
+                                                          str(p))
+                                  else:
+                                      walk(v)
+                      walk(data)
+                  elif p.name == "go.mod":
+                      text = p.read_text(encoding="utf-8", errors="replace")
+                      in_req = False
+                      for line in text.splitlines():
+                          s = line.strip()
+                          if s.startswith("require ("):
+                              in_req = True
+                              continue
+                          if in_req and s == ")":
+                              in_req = False
+                              continue
+                          if s.startswith("require ") and not s.endswith("("):
+                              parts = s.split()
+                              if len(parts) >= 2:
+                                  pkgs.setdefault(("Go", parts[1]), str(p))
+                              continue
+                          if in_req:
+                              parts = s.split()
+                              if parts and not parts[0].startswith("//"):
+                                  pkgs.setdefault(("Go", parts[0]), str(p))
+
+          blocked = []
+          for (eco, pname), src in sorted(pkgs.items()):
+              if eco == "Go":
+                  continue  # no registry check for Go modules; OSV below
+              url = {"PyPI": f"https://pypi.org/pypi/{pname}/json",
+                     "npm": f"https://registry.npmjs.org/{pname}",
+                     "crates.io": f"https://crates.io/api/v1/crates/{pname}"}[eco]
+              status, _ = http_get(url)
+              if status == 404:
+                  blocked.append(f"{eco}/{pname} not on registry (404) "
+                                 f"— from {src}")
+              elif status != 200:
+                  blocked.append(f"{eco}/{pname} registry lookup failed "
+                                 f"(status {status}) — from {src} (fail-closed)")
+
+          queries = [{"package": {"name": n, "ecosystem": e}}
+                     for (e, n) in sorted(pkgs)]
+          if queries:
+              osv_ok = True
+              for i in range(0, len(queries), 200):
+                  body = json.dumps({"queries": queries[i:i + 200]}).encode()
+                  req = urllib.request.Request(
+                      "https://api.osv.dev/v1/querybatch", data=body,
+                      headers={**UA, "Content-Type": "application/json"},
+                      method="POST")
+                  try:
+                      with urllib.request.urlopen(req, timeout=30) as r:
+                          payload = json.loads(r.read())
+                  except Exception:
+                      osv_ok = False
+                      break
+                  for q, res in zip(queries[i:i + 200],
+                                    payload.get("results", [])):
+                      mal = [v["id"] for v in res.get("vulns", [])
+                             if v["id"].startswith("MAL-")]
+                      if mal:
+                          blocked.append(f"{q['package']['ecosystem']}/"
+                                         f"{q['package']['name']} OSV "
+                                         f"malicious: {', '.join(mal)}")
+              if not osv_ok:
+                  blocked.append("OSV lookup failed (fail-closed)")
+
+          if blocked:
+              print("DEPS FAIL")
+              for b in blocked:
+                  print(f"  {b}")
+              sys.exit(1)
+          print(f"DEPS OK {len(pkgs)} unique packages "
+                "(changed entries only)")
+          PYEOF
