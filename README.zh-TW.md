@@ -266,7 +266,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 
-### 網路與安全 (218)
+### 網路與安全 (225)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -488,6 +488,13 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-136550](CVE-2026-136550) | Tenda RX3 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | RX3 韌體 16.03.13.11_multi (/goform/AdvSetMacMtuWan) | No fixed release yet |
 | [CVE-2026-136552](CVE-2026-136552) | Tenda RX3 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | RX3 韌體 16.03.13.11_multi (/goform/setIPv6Status) | No fixed release yet |
 | [CVE-2026-136553](CVE-2026-136553) | Tenda RX3 | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | RX3 韌體 16.03.13.11_multi (/goform/fast_setting_wifi_set) | No fixed release yet |
+| [CVE-2026-0322](CVE-2026-0322) | Palo Alto Networks PAN-OS | 4.0 8.6 (Palo Alto Networks); 3.1 7.2 (NVD) | PAN-OS 12.2 < 12.2.4、12.1 < 12.1.4-h12 / 12.1.7-h8 / 12.1.10-h2、11.2 < 11.2.4-h22 / 11.2.7-h21 / 11.2.10-h15 / 11.2.13-h3 / 11.2.16、11.1 < 11.1.4-h37 / 11.1.6-h39 / 11.1.7-h11 / 11.1.10-h35 / 11.1.13-h15 / 11.1.16-h3、10.2 < 10.2.7-h38 / 10.2.10-h41 / 10.2.13-h26 / 10.2.16-h11 / 10.2.18-h12（PA-Series、VM-Series 防火牆與 Panorama） | 12.2.4 / 12.1.10-h2 / 11.2.16 / 11.1.16-h3 / 10.2.18-h12（各分支最新修復版；另有中期 hotfix，見廠商通告） |
+| [CVE-2026-105133](CVE-2026-105133) | AhsayCBS | 4.0 6.9 (VulDB); 3.1 7.3 (VulDB) | AhsayCBS up to 9.15.2.69 / 10.3.4.44 | 9.15.2.70 / 10.3.4.45 |
+| [CVE-2026-105134](CVE-2026-105134) | AhsayCBS | 4.0 10.0 (VulDB); 3.1 10.0 (VulDB) | AhsayCBS up to 9.15.2.69 / 10.3.4.44 | 9.15.2.70 / 10.3.4.45 |
+| [CVE-2026-106931](CVE-2026-106931) | EG Secure Solutions SiteGuard Server Edition | 4.0 8.5 (JPCERT/CC); 3.0 7.8 (JPCERT/CC) | SiteGuard Server Edition Ver2.20 及以上、Ver8.00 Update 5 之前（Apache httpd、Nginx、IIS）；FreeBSD 版 Ver7.00 Update 6 之前；IIS Ver3.10 至 Ver4.00 Update 4 不受影響；需啟用統計功能（預設啟用） | Ver8.00 Update 5；FreeBSD 版 Ver7.00 Update 6 |
+| [CVE-2026-114625](CVE-2026-114625) | Arista VeloCloud Orchestrator | 3.1 9.9 (Arista); 4.0 9.4 (Arista) | VeloCloud Orchestrator (VCO) on-prem 5.2.x < 5.2.3.18、6.1.x < 6.1.3.10、6.4.x < 6.4.2.12 | 5.2.3.18 / 6.1.3.10 / 6.4.2.12 |
+| [CVE-2026-76519](CVE-2026-76519) | Cisco Secure Email Gateway | 3.1 9.8 (Cisco) | Cisco Secure Email Gateway（AsyncOS 15.5 < 15.5.5-014、16.0 全版本、16.5 < 16.5.0-780），需同時滿足：AMP File Reputation 已啟用並指派至郵件政策，且 Content Scanner Tools < 25.3.0.5525 | AsyncOS 15.5.5-014 / 16.5.0-780，或 Content Scanner Tools ≥ 25.3.0.5525 |
+| [CVE-2026-88779](CVE-2026-88779) | Citrix NetScaler ADC / Gateway | 4.0 8.7 (Citrix); 3.1 7.5 (NVD) | NetScaler ADC < 14.1-73.41、< 13.1-64.28、FIPS < 14.1-73.41、< 13.1-37.282；NetScaler Gateway < 14.1-73.41、< 13.1-64.28 | ADC 14.1-73.41 / 13.1-64.28；Gateway 14.1-73.41 / 13.1-64.28 |
 
 ### 運行環境 / 框架 / 瀏覽器 (102)
 
@@ -623,7 +630,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### 作業系統 / 系統 / DevOps (69)
+### 作業系統 / 系統 / DevOps (70)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -696,6 +703,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59310](CVE-2026-59310) | VMware vCenter Server | 3.1 9.8 (Broadcom) | VMware vCenter Server 7.0, 8.0, 9.0.x, 9.1.x (VMware Cloud Foundation, vSphere Foundation, Telco Cloud Platform, Telco Cloud Infrastructure) | 9.1.0.0300; 9.0.2.0100; 8.0 U3k; 8.0 U2f (7.0: contact Broadcom Support under extended support) |
 | [CVE-2026-104007](CVE-2026-104007) | LibreOffice | 4.0 8.5 (The Document Foundation) | LibreOffice 26.2.x（26.2.7 之前）、26.8.x（26.8.2 之前）；需安裝並啟用 Java 執行環境 | 26.2.7 / 26.8.2 |
 | [CVE-2026-104692](CVE-2026-104692) | LibreOffice | 4.0 8.5 (The Document Foundation) | LibreOffice 26.2.x（26.2.7 之前）、26.8.x（26.8.2 之前）；需安裝並啟用 Java 執行環境 | 26.2.7 / 26.8.2 |
+| [CVE-2026-96951](CVE-2026-96951) | Microsoft Windows Shell | 3.1 8.8 (Microsoft) | Windows Shell（Windows 10 / 11、Windows Server 2019 / 2022 / 2025，見 MSRC 更新清單） | 2026-10-13 安全更新（Windows 11 24H2 10.0.26100.9711、25H2 10.0.26200.9711、Windows 10 22H2 10.0.19045.7807 等） |
 
 
 點進 CVE 目錄查看詳細內容與引用。
