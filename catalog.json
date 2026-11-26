@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T13:45:57Z",
+  "generated": "2026-11-26T13:54:52Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 704,
+  "entries": 712,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -11634,6 +11634,54 @@
       ]
     },
     {
+      "id": "CVE-2026-129110",
+      "product": {
+        "en": "sysPass",
+        "zh-TW": "sysPass"
+      },
+      "score": "4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck)",
+      "affected": "sysPass 3.0.1 through 3.2.11",
+      "fixed": "未發布（修復 PR #360 已合併，尚未發版）",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-306"
+      ],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-129110",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-85228",
       "product": {
         "en": "Amazon Deep Java Library (DJL)",
@@ -22379,6 +22427,11 @@
           "id": "busybox-mailing-list",
           "upstream": "https://lists.busybox.net/pipermail/busybox/2026-August/092430.html",
           "license": "unknown"
+        },
+        {
+          "id": "googlesky-poc",
+          "upstream": "https://github.com/googlesky/CVE-2026-136411",
+          "license": "MIT"
         }
       ]
     },
@@ -22750,6 +22803,11 @@
           "id": "netgate-sa-26-23",
           "upstream": "https://docs.netgate.com/downloads/pfSense-SA-26_23.webgui.asc",
           "license": "unknown"
+        },
+        {
+          "id": "abraxas-poc",
+          "upstream": "https://github.com/abraxas/pfsense-qinq-parent-if",
+          "license": "AGPL-3.0"
         }
       ]
     },
@@ -25230,6 +25288,261 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-m2xx-23gx-734v",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-115576",
+      "product": {
+        "en": "NetBird",
+        "zh-TW": "NetBird"
+      },
+      "score": "3.1 8.8 (GHSA)",
+      "affected": "NetBird 0.5.0 through 0.75.1",
+      "fixed": "0.76.0",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-269"
+      ],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-115576",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-123685",
+      "product": {
+        "en": "StellarProtect Linux / Stellar Agent (Linux)",
+        "zh-TW": "StellarProtect Linux / Stellar Agent (Linux)"
+      },
+      "score": "4.0 8.7 (TXOne); 3.1 8.8 (TXOne)",
+      "affected": "StellarProtect Linux 1.0 and earlier; Stellar Agent (Linux) before 1.2.54",
+      "fixed": "Stellar Agent (Linux) 1.2.54",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.7,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "TXOne"
+        },
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "TXOne"
+        }
+      ],
+      "cwe": [
+        "CWE-345"
+      ],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-123685",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-123689",
+      "product": {
+        "en": "StellarOne",
+        "zh-TW": "StellarOne"
+      },
+      "score": "4.0 8.6 (TXOne); 3.1 8.1 (TXOne)",
+      "affected": "StellarOne before 5.0.3232",
+      "fixed": "5.0.3232",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.6,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "TXOne"
+        },
+        {
+          "version": "3.1",
+          "score": 8.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "TXOne"
+        }
+      ],
+      "cwe": [
+        "CWE-89"
+      ],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "sqli"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-123689",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-133971",
+      "product": {
+        "en": "HPE Networking Management Software (AirWave)",
+        "zh-TW": "HPE Networking Management Software (AirWave)"
+      },
+      "score": "3.1 9.8 (HPE)",
+      "affected": "AirWave 8.3.0.7 and below",
+      "fixed": "8.3.0.8 and above",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "HPE"
+        }
+      ],
+      "cwe": [],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-133971",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-133972",
+      "product": {
+        "en": "HPE Networking Management Software (AirWave)",
+        "zh-TW": "HPE Networking Management Software (AirWave)"
+      },
+      "score": "3.1 9.8 (HPE)",
+      "affected": "AirWave 8.3.0.7 and below",
+      "fixed": "8.3.0.8 and above",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "HPE"
+        }
+      ],
+      "cwe": [],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-133972",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-66784",
+      "product": {
+        "en": "Submariner",
+        "zh-TW": "Submariner"
+      },
+      "score": "3.1 8.7 (Red Hat)",
+      "affected": "Submariner (default Pre-Shared Key mode)",
+      "fixed": "unknown",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.7,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+          "source": "Red Hat"
+        }
+      ],
+      "cwe": [
+        "CWE-1295"
+      ],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-66784",
           "license": "unknown"
         }
       ]
@@ -35182,6 +35495,48 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-8cg3-r6g9-fpg2",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-45152",
+      "product": {
+        "en": "uniget",
+        "zh-TW": "uniget"
+      },
+      "score": "3.1 7.8 (GHSA)",
+      "affected": "uniget prior to 0.27.1",
+      "fixed": "0.27.1",
+      "category": "os",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.8,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "os",
+        "rce"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/uniget-org/cli/security-advisories/GHSA-qqq4-5773-pmw5",
           "license": "unknown"
         }
       ]

@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (235)
+### Web / CMS (236)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -251,6 +251,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-61500](CVE-2026-61500) | Rejetto HFS | 3.1 9.8 (GHSA) | HFS 3.0.0–3.2.0 | 3.2.1 |
 | [CVE-2026-115770](CVE-2026-115770) | Pocket ID | 3.1 9.6 (GHSA) | Pocket ID >= 2.2.0, < 2.12.0 | 2.12.0 |
 | [CVE-2026-137306](CVE-2026-137306) | Grav Admin plugin | 4.0 7.6 (VulnCheck); 3.1 6.8 (VulnCheck) | Grav Admin plugin before 1.10.65 | 1.10.65 |
+| [CVE-2026-129110](CVE-2026-129110) | sysPass | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | sysPass 3.0.1 through 3.2.11 | 未發布（修復 PR #360 已合併，尚未發版） |
 
 ### AI / LLM (30)
 
@@ -287,7 +288,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
-### 網路與安全 (241)
+### 網路與安全 (247)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -532,6 +533,12 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-96655](CVE-2026-96655) | Plex Media Server | 4.0 5.3 (CISA); 3.1 4.3 (CISA) | Plex Media Server 1.43.3.10861 之前 | 1.43.3.10861 |
 | [CVE-2026-96656](CVE-2026-96656) | Plex Media Server | 4.0 8.6 (CISA); 3.1 7.2 (CISA) | Plex Media Server 1.43.3.10861 之前（管理員權限） | 1.43.3.10861 |
 | [CVE-2026-16232](CVE-2026-16232) | Check Point SmartConsole | 3.1 9.1 (GHSA) | Security Management / MDS：R77.30、R80–R80.30、R81–R82.10 | Jumbo Hotfix：R82.10 Take 36+ / R82 Take 118+ / R81.20 Take 158+ |
+| [CVE-2026-115576](CVE-2026-115576) | NetBird | 3.1 8.8 (GHSA) | NetBird 0.5.0 through 0.75.1 | 0.76.0 |
+| [CVE-2026-123685](CVE-2026-123685) | StellarProtect Linux / Stellar Agent (Linux) | 4.0 8.7 (TXOne); 3.1 8.8 (TXOne) | StellarProtect Linux 1.0 and earlier; Stellar Agent (Linux) before 1.2.54 | Stellar Agent (Linux) 1.2.54 |
+| [CVE-2026-123689](CVE-2026-123689) | StellarOne | 4.0 8.6 (TXOne); 3.1 8.1 (TXOne) | StellarOne before 5.0.3232 | 5.0.3232 |
+| [CVE-2026-133971](CVE-2026-133971) | HPE Networking Management Software (AirWave) | 3.1 9.8 (HPE) | AirWave 8.3.0.7 and below | 8.3.0.8 and above |
+| [CVE-2026-133972](CVE-2026-133972) | HPE Networking Management Software (AirWave) | 3.1 9.8 (HPE) | AirWave 8.3.0.7 and below | 8.3.0.8 and above |
+| [CVE-2026-66784](CVE-2026-66784) | Submariner | 3.1 8.7 (Red Hat) | Submariner (default Pre-Shared Key mode) | unknown |
 
 ### 運行環境 / 框架 / 瀏覽器 (102)
 
@@ -667,7 +674,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### 作業系統 / 系統 / DevOps (74)
+### 作業系統 / 系統 / DevOps (75)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -745,6 +752,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-110936](CVE-2026-110936) | Siemens Software Center | 4.0 8.4 (Siemens); 3.1 6.7 (Siemens) | Siemens Software Center V4.0.9.8 之前全部版本 | V4.0.9.8 |
 | [CVE-2026-131827](CVE-2026-131827) | RustDesk Client for Windows | 3.0 7.8 (ZDI) | RustDesk Client for Windows | PR #17040 已合併（2026-11-16，版本號未註明） |
 | [CVE-2026-59831](CVE-2026-59831) | GitHub CLI | 3.1 4.4 (GHSA) | gh 2.10.0–2.95.x | 2.96.0 |
+| [CVE-2026-45152](CVE-2026-45152) | uniget | 3.1 7.8 (GHSA) | uniget prior to 0.27.1 | 0.27.1 |
 
 
 點進 CVE 目錄查看詳細內容與引用。
