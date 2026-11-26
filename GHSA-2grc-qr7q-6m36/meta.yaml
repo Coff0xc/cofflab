@@ -1,0 +1,23 @@
+id: GHSA-2grc-qr7q-6m36
+aliases: []
+product: "Gogs"
+vendor: Gogs
+cwe: [CWE-88]
+affected: "Gogs <= 0.14.3"
+fixed: "0.14.4"
+advisory:
+  - name: GHSA-2grc-qr7q-6m36
+    url: https://github.com/gogs/gogs/security/advisories/GHSA-2grc-qr7q-6m36
+    published: 2026-11-24
+cvss:
+  - version: "3.1"
+    score: 9.6
+    vector: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H"
+    source: "GHSA"
+demonstrated: [trigger]
+public_rce: false
+notes: "通告列出 CVE-2026-82401，但 CVE.org 查詢回 404、NVD 截至 2026-11-26 未收錄該編號，故不列為 alias、目錄沿用 GHSA 編號。通告正文含完整復現步驟：推送名為 `--output=/path/to/target` 的分支並建立 PR，`DiffBinary()` 未加 `--end-of-options`，`git diff` 即把內容寫入攻擊者指定路徑。需具寫入權限的已認證帳號。本倉未運行 PoC。無在野利用確認、未進 KEV。"
+collected: '2026-11-26'
+sources:
+  - id: ghsa-advisory
+    path: sources/ghsa-advisory

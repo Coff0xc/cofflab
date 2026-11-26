@@ -1,0 +1,16 @@
+id: ghsa-advisory
+upstream: https://api.github.com/repos/gogs/gogs/security-advisories/GHSA-2grc-qr7q-6m36
+commit: "n/a"
+content_sha256: "3b35ea3cee3931c8de8ccb893280f3f130dcf91c8539ca16e351b2b394e399a2"
+collected: 2026-11-26
+license: unknown
+review:
+  executed: false
+  static: true
+  notes: "只读检查：ghsa-2grc-qr7q-6m36.json 为 GitHub Advisory API 返回的通告全文，含摘要、PoC 步骤、CVSS 3.1 9.6 及向量、影响版本（<= 0.14.3）与修复版本（0.14.4）；本身无可执行代码，无 PoC 代码。deps checked: 0 — no dependency files"
+issues:
+  - "license: unknown"
+  - "partial-snapshot: only the GHSA advisory record (JSON), not the vendor page"
+  - "cve-unverified: advisory lists CVE-2026-82401, but CVE.org returns 404 and NVD has not ingested it as of 2026-11-26"
+dropped: []
+maturity: trigger
