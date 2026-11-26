@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T09:13:42Z",
+  "generated": "2026-11-26T09:21:57Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 691,
   "items": [
@@ -11023,7 +11023,9 @@
           "source": "GHSA"
         }
       ],
-      "cwe": [],
+      "cwe": [
+        "CWE-1336"
+      ],
       "demonstrated": [
         "trigger"
       ],
