@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (220)
+### Web / CMS (222)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -236,6 +236,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2023-22894](CVE-2023-22894) | Strapi | 3.1 7.2 (CISA-ADP); 3.1 4.9 (NVD) | Strapi 3.2.1–4.5.5（原始描述；NVD CPE 範圍為 3.2.1 至 4.8.0 之前） | 4.8.0 |
 | [CVE-2026-102489](CVE-2026-102489) | Zammad | 4.0 9.4 (DIVD); 3.1 9.8 (NVD) | Zammad 6.3.0–6.5.4（7.0.0–7.1.2 含缺陷但因框架變更不可利用；廠商稱 7.0 及以上不受影響） | 無修復版本（6.5 及更早版本已停止支援、不再接收安全更新；7.0 及以上不受影響；7.2.0 含額外加固） |
 | [GHSA-7wwv-x6mc-pxqx](GHSA-7wwv-x6mc-pxqx) | TastyIgniter | 3.1 9.1 (GHSA) | tastyigniter/tastyigniter <= v4.2.4 | v4.3.1 |
+| [CVE-2026-137305](CVE-2026-137305) | Grav Form plugin | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | Grav Form plugin <= 9.2.3 (before 9.2.4) | 9.2.4 |
+| [GHSA-743w-g9pf-8p94](GHSA-743w-g9pf-8p94) | TastyIgniter | 3.1 9.1 (GHSA) | tastyigniter/tastyigniter <= v4.2.4 | v4.3.1 |
 
 ### AI / LLM (29)
 
