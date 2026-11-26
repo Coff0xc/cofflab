@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (226)
+### Web / CMS (231)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -242,6 +242,11 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [GHSA-2grc-qr7q-6m36](GHSA-2grc-qr7q-6m36) | Gogs | 3.1 9.6 (GHSA) | Gogs <= 0.14.3 | 0.14.4 |
 | [GHSA-hc35-pcqw-5xjq](GHSA-hc35-pcqw-5xjq) | Gogs | 3.1 9.9 (GHSA) | Gogs <= 0.14.3 | No fixed release yet |
 | [GHSA-rj59-9f77-mvg5](GHSA-rj59-9f77-mvg5) | TastyIgniter | 3.1 7.6 (GHSA) | tastyigniter/tastyigniter < 4.3.1 | v4.3.1 |
+| [CVE-2026-133336](CVE-2026-133336) | ChronoForms | 4.0 9.5 (Joomla) | ChronoForms 8.0.0–8.0.53 | 8.0.54 |
+| [CVE-2026-63305](CVE-2026-63305) | AVideo | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | AVideo < 29.1.0 | 29.1.0 |
+| [CVE-2026-64855](CVE-2026-64855) | soapbar | 3.1 8.2 (GHSA) | soapbar < 0.13.0 | 0.13.0 |
+| [CVE-2026-65971](CVE-2026-65971) | livewire-powergrid | 3.1 7.6 (GHSA) | power-components/livewire-powergrid >= 6.0.0, < 6.10.4 | 6.10.4 |
+| [CVE-2026-77806](CVE-2026-77806) | SPIP | 3.1 9.8 (NVD) | SPIP < 4.4.21 | 4.4.21 |
 
 ### AI / LLM (29)
 
