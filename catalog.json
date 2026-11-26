@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T12:39:00Z",
+  "generated": "2026-11-26T12:40:15Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 701,
+  "entries": 702,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -35040,6 +35040,49 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-8cg3-r6g9-fpg2",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-115770",
+      "product": {
+        "en": "Pocket ID",
+        "zh-TW": "Pocket ID"
+      },
+      "score": "3.1 9.6 (GHSA)",
+      "affected": "Pocket ID >= 2.2.0, < 2.12.0",
+      "fixed": "2.12.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.6,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-345"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/pocket-id/pocket-id/security-advisories/GHSA-rm8c-2cv8-jwf6",
           "license": "unknown"
         }
       ]

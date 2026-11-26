@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (233)
+### Web / CMS (234)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -249,6 +249,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-77806](CVE-2026-77806) | SPIP | 3.1 9.8 (NVD) | SPIP < 4.4.21 | 4.4.21 |
 | [CVE-2026-59191](CVE-2026-59191) | TwigView | 4.0 6.9 (GHSA) | twig-view < 1.3.3；2.0.0–2.1.1 | 1.3.3 / 2.1.2 |
 | [CVE-2026-61500](CVE-2026-61500) | Rejetto HFS | 3.1 9.8 (GHSA) | HFS 3.0.0–3.2.0 | 3.2.1 |
+| [CVE-2026-115770](CVE-2026-115770) | Pocket ID | 3.1 9.6 (GHSA) | Pocket ID >= 2.2.0, < 2.12.0 | 2.12.0 |
 
 ### AI / LLM (29)
 
