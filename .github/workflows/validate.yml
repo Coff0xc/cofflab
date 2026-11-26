@@ -1,46 +1,63 @@
-# validate.yml — cofflab 入库硬检查
+# validate.yml — hard checks for cofflab ingestion
 #
-# 为什么有这份文件（土豆姐思路：规范焊进 CI，不是写进文档）：
-#   ingest-spec.md 是软约束——Agent 跳过它不会报错。2026-11-21 的 13181 后门源
-#   （systext/tesec）和 5 个 SOURCE.yaml 严格 YAML 语法错，都是软约束没拦住的。
-#   Lauren Tan（土豆姐，pstack）的核心做法：把每一次人工复核的吐槽翻译成编译器
-#   报错和变红的 CI，让最笨的 Agent 走最短路径写出来的东西也是合规的。
-#   这份 workflow 就是那道硬约束：入库规矩不再只写在文档里，推上来就跑，红了就拦。
+# Why this file exists (Lauren Tan's approach: encode the rules in CI, not in docs):
+#   ingest-spec.md is a soft constraint — an agent can skip it without an error.
+#   The 2026-11-21 13181 backdoor source (systext/tesec) and 5 SOURCE.yaml files
+#   with strict-YAML syntax errors are all cases soft constraints failed to catch.
+#   Lauren Tan's (pstack) core practice: translate every manual-review complaint
+#   into a compiler error and a red CI, so even the laziest agent produces
+#   compliant output by the shortest path. This workflow is that hard constraint:
+#   the ingestion rules no longer live only in docs — they run on every push,
+#   and red blocks the merge.
 #
-# 硬约束（不要绕过）：
-#   本地全量检查器 check_layout.py / check_deps.py 永远不进仓库——进仓库的检查器
-#   可以被 PR 本身改弱。本 workflow 只内嵌它们逻辑的一个子集，是第二道防线，
-#   不是替代：入库前本地全量检查仍要跑（ingest-spec §8，每月全库 check_deps）。
+# Hard constraints (do not bypass):
+#   The local full checkers check_layout.py / check_deps.py never enter the repo —
+#   a checker inside the repo could be weakened by the PR itself. This workflow
+#   embeds only a subset of their logic as a second line of defense, not a
+#   replacement: the local full checks still run before ingestion (ingest-spec §8,
+#   monthly full-repo check_deps).
 #
-# 检查什么（push / PR，只查改动条目 + 两份目录表；旧账不拦新活）：
-#   A. 布局（PyYAML 真解析，不是子串匹配）：条目目录命名、根目录只允许
-#      README.md / meta.yaml / sources/、meta.yaml 必填键、id == 目录名、
-#      demonstrated 只许用枚举值（多行列表也能看到——旧草稿的子串匹配看不到
-#      本仓库 129 个多行 demonstrated）、SOURCE.yaml 必填键、review.executed
-#      必须存在、drop 名单文件、条目 README 不许抄 broken 的 http://exploit/ 链接。
-#   B. 目录表一致：README.md（EN）与 README.zh-TW.md（繁體）行数、顺序、ID
-#      集合一致，且与磁盘上的条目目录一致；评分格必须带版本+来源（不许光秃数字），
-#      未知写 unknown。
-#   C. 依赖（只查改动条目）：requirements*.txt / package.json / pyproject.toml /
-#      go.mod / Cargo.toml；registry 404 拦、OSV 命中 MAL-* 拦；registry 或 OSV
-#      查不到就 fail-closed（挂了就重跑，别放行）。
-#   不覆盖：Gemfile / composer.json / setup.py / setup.cfg（本仓库现为 0 个文件，
-#   出现时本地 check_deps.py 兜底）。普通 CVE 依赖不拦（与本地门一致），只拦
-#   MAL-* 和 registry 404。
+# What it checks (push / PR: changed entries + the two catalog tables only;
+#   old debt does not block new work):
+#   A. Layout (real PyYAML parsing, not substring matching): entry directory
+#      naming; repo root allows only README.md / meta.yaml / sources/;
+#      meta.yaml required keys; id == directory name; demonstrated must use
+#      enum values (multi-line lists are visible too — the old draft's substring
+#      matching missed 129 multi-line demonstrated values in this repo);
+#      SOURCE.yaml required keys; review.executed must exist; drop-listed files;
+#      entry READMEs must not copy broken http://exploit/ links.
+#   B. Catalog consistency: README.md (EN) and README.zh-TW.md (Traditional
+#      Chinese) must agree in line count, order, and ID set, and match the entry
+#      directories on disk; score cells must carry version + source (no bare
+#      numbers); unknown is written as unknown.
+#   C. Dependencies (changed entries only): requirements*.txt / package.json /
+#      pyproject.toml / go.mod / Cargo.toml; registry 404 blocks, OSV MAL-*
+#      hits block; if registry or OSV cannot be reached, fail closed (retry,
+#      do not waive).
+#   Not covered: Gemfile / composer.json / setup.py / setup.cfg (0 such files
+#   in this repo today; the local check_deps.py covers them if they appear).
+#   Ordinary CVE dependencies are not blocked (same as the local gate); only
+#   MAL-* and registry 404s are blocked.
 #
-# 证明它会红（土豆姐 /correct 纪律：没红过的检查什么都证明不了）：
-#   本文件落地前已在本地实跑：严格 YAML 解析扫出 5 个真实坏 SOURCE.yaml
-#   （42884/cisa-kev、109618/googlesky-poc、126229/126253/foxcornlab-fortinet-scanner、
-#   133968/ghsa-qc22-rmgc-vg94）；故意写坏的测试条目（缺键、非法 demonstrated 值、
-#   404 依赖）全部被拦；当前 HEAD 的改动条目与目录表全部通过。
+# Proof it goes red (Lauren Tan's /correct discipline: a check that has never
+#   gone red proves nothing):
+#   Before this file landed, it was run locally: strict YAML parsing caught 5
+#   genuinely broken SOURCE.yaml files (42884/cisa-kev, 109618/googlesky-poc,
+#   126229/126253/foxcornlab-fortinet-scanner, 133968/ghsa-qc22-rmgc-vg94);
+#   deliberately broken test entries (missing keys, illegal demonstrated values,
+#   404 dependencies) were all blocked; the changed entries and catalog tables
+#   at the current HEAD all passed.
 #
-# 巡检模式（schedule / workflow_dispatch）：检查全部条目（布局 + 目录表），
-#   不做依赖检查（全库 741 个 requirements 文件的 registry + OSV 查询又慢又抖，
-#   全库依赖重扫留在本地每月流程）。第一次巡检一定会红：5 个坏 SOURCE.yaml
-#   是真实历史错误，新检查必须先在它们身上挂一次——这是预期的证明，不是故障。
-#   巡检红不拦任何推送（它是定时任务，不是门禁）；门禁只拦 push/PR。
+# Sweep mode (schedule / workflow_dispatch): checks all entries (layout +
+#   catalog tables) with no dependency checks (registry + OSV queries across
+#   the repo's 741 requirements files are slow and flaky; the full-repo
+#   dependency re-scan stays in the local monthly process). The first sweep
+#   will certainly go red: the 5 broken SOURCE.yaml files are real historical
+#   errors, and a new check must first fail on them — that is the expected
+#   proof, not a malfunction. A red sweep blocks no push (it is a scheduled
+#   job, not a gate); only push/PR is gated.
 #
-# 安装：本文件即 .github/workflows/validate.yml，无 secrets，permissions 只读。
+# Install: this file is .github/workflows/validate.yml; no secrets; permissions read-only.
 
 name: validate
 
