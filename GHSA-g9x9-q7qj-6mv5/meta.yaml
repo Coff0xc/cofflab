@@ -1,0 +1,23 @@
+id: GHSA-g9x9-q7qj-6mv5
+aliases: []
+product: "AVideo"
+vendor: AVideo
+cwe: [CWE-78]
+affected: "AVideo ≤ 29.0"
+fixed: ''
+advisory:
+  - name: GHSA-g9x9-q7qj-6mv5
+    url: https://github.com/WWBN/AVideo/security/advisories/GHSA-g9x9-q7qj-6mv5
+    published: 2026-07-01
+cvss:
+  - version: "3.1"
+    score: 8.1
+    vector: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    source: "GHSA"
+demonstrated: [lab-repro]
+public_rce: false
+notes: "無 CVE 編號；通告內含報告者已執行的 PoC（含 marker 檔案正反對照與修復後重測），經解密 codeToExec 的 notifyCode/callback 欄位注入 shell 元字元，以 web 伺服器使用者身分執行命令；需能構造有效加密 payload；通告未列修復版本；報告者 tonghuaroot。"
+collected: '2026-11-26'
+sources:
+  - id: ghsa-advisory
+    path: sources/ghsa-advisory
