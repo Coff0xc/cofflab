@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (231)
+### Web / CMS (232)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -247,6 +247,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-64855](CVE-2026-64855) | soapbar | 3.1 8.2 (GHSA) | soapbar < 0.13.0 | 0.13.0 |
 | [CVE-2026-65971](CVE-2026-65971) | livewire-powergrid | 3.1 7.6 (GHSA) | power-components/livewire-powergrid >= 6.0.0, < 6.10.4 | 6.10.4 |
 | [CVE-2026-77806](CVE-2026-77806) | SPIP | 3.1 9.8 (NVD) | SPIP < 4.4.21 | 4.4.21 |
+| [CVE-2026-59191](CVE-2026-59191) | TwigView | 4.0 6.9 (GHSA) | twig-view < 1.3.3；2.0.0–2.1.1 | 1.3.3 / 2.1.2 |
 
 ### AI / LLM (29)
 
@@ -661,7 +662,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### 作業系統 / 系統 / DevOps (73)
+### 作業系統 / 系統 / DevOps (74)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -738,6 +739,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-102490](CVE-2026-102490) | Zammad | 4.0 9.4 (DIVD); 3.1 7.8 (NVD) | packager.io 打包的 Zammad DEB/RPM 安裝（7.2.2 之前，NVD CPE） | 尚未發布（2026-10-05 通告讀取時仍在制定解決方案） |
 | [CVE-2026-110936](CVE-2026-110936) | Siemens Software Center | 4.0 8.4 (Siemens); 3.1 6.7 (Siemens) | Siemens Software Center V4.0.9.8 之前全部版本 | V4.0.9.8 |
 | [CVE-2026-131827](CVE-2026-131827) | RustDesk Client for Windows | 3.0 7.8 (ZDI) | RustDesk Client for Windows | PR #17040 已合併（2026-11-16，版本號未註明） |
+| [CVE-2026-59831](CVE-2026-59831) | GitHub CLI | 3.1 4.4 (GHSA) | gh 2.10.0–2.95.x | 2.96.0 |
 
 
 點進 CVE 目錄查看詳細內容與引用。
