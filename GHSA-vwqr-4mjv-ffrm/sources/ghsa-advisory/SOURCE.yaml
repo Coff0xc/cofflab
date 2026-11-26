@@ -1,0 +1,15 @@
+id: ghsa-advisory
+upstream: https://api.github.com/repos/frappe/frappe/security-advisories/GHSA-vwqr-4mjv-ffrm
+commit: "n/a"
+content_sha256: "91783a0901b316afe61bb288ce7a544f7d558e3889f77a20c69a6ec027a34ee9"
+collected: 2026-11-26
+license: unknown
+review:
+  executed: false
+  static: true
+  notes: "只讀檢查：ghsa-vwqr-4mjv-ffrm.json 為 GitHub Advisory API 返回的通告全文，含摘要、PoC 步驟（低權限已驗證使用者向受影響端點發送特製請求）、CVSS 3.1 8.5 及向量、CWE-863、影響版本（< 15.127.1；16.0.0–< 16.60.1）與修復版本（15.127.1 / 16.60.1），並明言在野利用；本身無可執行代碼，無 PoC 代碼。deps checked: 0 — no dependency files"
+issues:
+  - "license: unknown"
+  - "partial-snapshot: only the GHSA advisory record (JSON), not the vendor page"
+dropped: []
+maturity: trigger

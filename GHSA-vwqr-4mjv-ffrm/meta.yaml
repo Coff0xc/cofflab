@@ -1,0 +1,23 @@
+id: GHSA-vwqr-4mjv-ffrm
+aliases: []
+product: "Frappe Framework"
+vendor: Frappe
+cwe: [CWE-863]
+affected: "Frappe Framework < 15.127.1；16.0.0–< 16.60.1"
+fixed: "15.127.1 / 16.60.1"
+advisory:
+  - name: GHSA-vwqr-4mjv-ffrm
+    url: https://github.com/frappe/frappe/security/advisories/GHSA-vwqr-4mjv-ffrm
+    published: 2026-11-19
+cvss:
+  - version: "3.1"
+    score: 8.5
+    vector: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:N"
+    source: "GHSA"
+demonstrated: [trigger]
+public_rce: false
+notes: "通告明言「This flaw has been exploited in the wild」；截至 2026-11-26 尚無 CVE 編號；任何已驗證的低權限帳號（含 Website User）可經網站配置的郵件帳號以他人名義發信，並可能附帶未授權檔案；無變通辦法，須升級。"
+collected: '2026-11-26'
+sources:
+  - id: ghsa-advisory
+    path: sources/ghsa-advisory
