@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-26T20:48:17Z",
+  "generated": "2026-11-26T22:43:50Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 728,
+  "entries": 729,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -31441,6 +31441,49 @@
         {
           "id": "rails-ghsa",
           "upstream": "https://github.com/advisories/GHSA-xr9x-r78c-5hrm",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-77423",
+      "product": {
+        "en": "JLine3",
+        "zh-TW": "JLine3"
+      },
+      "score": "3.1 7.5 (GHSA)",
+      "affected": "org.jline:jline-builtins >= 3.0.0, < 3.30.15; < 4.3.1",
+      "fixed": "3.30.15 / 4.3.1",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.5,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-1333"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/jline/jline3/security-advisories/GHSA-2v9w-34q6-wpqx",
           "license": "unknown"
         }
       ]

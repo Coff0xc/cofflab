@@ -556,7 +556,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-66784](CVE-2026-66784) | Submariner | 3.1 8.7 (Red Hat) | Submariner (default Pre-Shared Key mode) | unknown |
 | [CVE-2026-137077](CVE-2026-137077) | FreeRDP | 4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA) | FreeRDP <= 3.32.2 | 3.33.0 |
 
-### Runtime / Framework / Browser (102)
+### Runtime / Framework / Browser (103)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -662,6 +662,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-33186](CVE-2026-33186) | gRPC-Go | 3.1 9.1 (GHSA) | gRPC-Go before 1.79.3 | 1.79.3 |
 | [CVE-2026-34486](CVE-2026-34486) | Apache Tomcat | 3.1 7.5 (Apache) | 11.0.0-M1 to 11.0.20; 10.1.0-M1 to 10.1.53; 9.0.13 to 9.0.116 | 11.0.21; 10.1.54; 9.0.117 |
 | [CVE-2026-66066](CVE-2026-66066) | Ruby on Rails | 4.0 9.5 (GHSA) | Active Storage < 7.2.3.2; >= 8.0.0.beta1, < 8.0.5.1; >= 8.1.0.beta1, < 8.1.3.1 | 7.2.3.2; 8.0.5.1; 8.1.3.1 |
+| [CVE-2026-77423](CVE-2026-77423) | JLine3 | 3.1 7.5 (GHSA) | org.jline:jline-builtins >= 3.0.0, < 3.30.15; < 4.3.1 | 3.30.15 / 4.3.1 |
 
 ### Database (22)
 
