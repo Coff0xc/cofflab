@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (208)
+### Web / CMS (209)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -224,6 +224,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-21589](CVE-2026-21589) | Atlassian Data Center | 4.0 9.3 (Atlassian); 3.1 7.5 (NVD) | All versions of Bitbucket Data Center, Confluence Data Center, Jira Software Data Center, Jira Service Management Data Center, Bamboo Data Center, Crowd Data Center, Crucible, Fisheye (before the fixed versions) | Bitbucket 9.4.26 / 10.2.8 / 10.5.1; Confluence 9.2.26 / 10.2.19; Jira Software 9.12.40 / 10.3.26 / 11.3.12; Jira Service Management 5.12.40 / 10.3.26 / 11.3.12; Bamboo 10.2.24 / 12.1.12; Crowd 6.3.7 / 7.0.3 / 7.1.7 / 7.2.4; Crucible 4.9.15; Fisheye 4.9.15 |
 | [CVE-2026-49952](CVE-2026-49952) | Discuz! X5.0 | 4.0 9.3 (VulnCheck); 3.1 9.1 (VulnCheck) | Discuz! X5.0 >= 20260320, <= 20260501 |  |
 | [CVE-2026-75650](CVE-2026-75650) | Adobe Commerce / Magento Open Source | 3.1 10.0 (Adobe) | Adobe Commerce 2.4.4-2.4.9 (2026-aug and earlier); Adobe Commerce B2B 1.3.3-1.5.3 (2026-aug and earlier); Magento Open Source 2.4.6-2.4.9 (2026-aug and earlier) | Hotfix VULN-39341 (APSB26-146) |
+| [CVE-2026-136716](CVE-2026-136716) | Drupal core | unknown | Drupal core <10.6.23, 11.0.0-11.3.22, 11.4.0-11.4.13 | 10.6.23 / 11.3.23 / 11.4.14 |
 
 ### AI / LLM (29)
 
