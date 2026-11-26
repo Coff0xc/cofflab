@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T12:29:56Z",
+  "generated": "2026-11-26T12:36:09Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 701,
   "items": [
@@ -11493,6 +11493,50 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-hq9r-72jq-2pxp",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-61500",
+      "product": {
+        "en": "Rejetto HFS",
+        "zh-TW": "Rejetto HFS"
+      },
+      "score": "3.1 9.8 (GHSA)",
+      "affected": "HFS 3.0.0–3.2.0",
+      "fixed": "3.2.1",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-338"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": true,
+      "epss": null,
+      "tags": [
+        "web",
+        "in-the-wild"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/advisories/GHSA-xxrm-3f86-v97j",
           "license": "unknown"
         }
       ]
@@ -25003,6 +25047,52 @@
       ]
     },
     {
+      "id": "CVE-2026-16232",
+      "product": {
+        "en": "Check Point SmartConsole",
+        "zh-TW": "Check Point SmartConsole"
+      },
+      "score": "3.1 9.1 (GHSA)",
+      "affected": "Security Management / MDS：R77.30、R80–R80.30、R81–R82.10",
+      "fixed": "Jumbo Hotfix：R82.10 Take 36+ / R82 Take 118+ / R81.20 Take 158+",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": true,
+      "in_the_wild": true,
+      "epss": null,
+      "tags": [
+        "net",
+        "kev",
+        "in-the-wild",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-26",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/advisories/GHSA-m2xx-23gx-734v",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-57898",
       "product": {
         "en": "Eclipse BaSyx Java Server SDK",
@@ -34950,94 +35040,6 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-8cg3-r6g9-fpg2",
-          "license": "unknown"
-        }
-      ]
-    },
-    {
-      "id": "CVE-2026-16232",
-      "product": {
-        "en": "Check Point SmartConsole",
-        "zh-TW": "Check Point SmartConsole"
-      },
-      "score": "3.1 9.1 (GHSA)",
-      "affected": "Security Management / MDS：R77.30、R80–R80.30、R81–R82.10",
-      "fixed": "Jumbo Hotfix：R82.10 Take 36+ / R82 Take 118+ / R81.20 Take 158+",
-      "category": "net",
-      "cvss": [
-        {
-          "version": "3.1",
-          "score": 9.1,
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-          "source": "GHSA"
-        }
-      ],
-      "cwe": [
-        "CWE-287"
-      ],
-      "demonstrated": [
-        "trigger"
-      ],
-      "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
-      "kev": true,
-      "in_the_wild": false,
-      "epss": null,
-      "tags": [
-        "net",
-        "kev",
-        "auth-bypass"
-      ],
-      "collected": "2026-11-26",
-      "sources": [
-        {
-          "id": "ghsa-advisory",
-          "upstream": "https://api.github.com/advisories/GHSA-m2xx-23gx-734v",
-          "license": "unknown"
-        }
-      ]
-    },
-    {
-      "id": "CVE-2026-61500",
-      "product": {
-        "en": "Rejetto HFS",
-        "zh-TW": "Rejetto HFS"
-      },
-      "score": "3.1 9.8 (GHSA)",
-      "affected": "HFS 3.0.0–3.2.0",
-      "fixed": "3.2.1",
-      "category": "web",
-      "cvss": [
-        {
-          "version": "3.1",
-          "score": 9.8,
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "source": "GHSA"
-        }
-      ],
-      "cwe": [
-        "CWE-338"
-      ],
-      "demonstrated": [
-        "trigger"
-      ],
-      "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
-      "kev": false,
-      "in_the_wild": false,
-      "epss": null,
-      "tags": [
-        "web"
-      ],
-      "collected": "2026-11-26",
-      "sources": [
-        {
-          "id": "ghsa-advisory",
-          "upstream": "https://api.github.com/advisories/GHSA-xxrm-3f86-v97j",
           "license": "unknown"
         }
       ]
