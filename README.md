@@ -655,7 +655,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### OS / System / DevOps (72)
+### OS / System / DevOps (73)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -731,6 +731,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-96951](CVE-2026-96951) | Microsoft Windows Shell | 3.1 8.8 (Microsoft) | Windows Shell（Windows 10 / 11、Windows Server 2019 / 2022 / 2025，見 MSRC 更新清單） | 2026-10-13 安全更新（Windows 11 24H2 10.0.26100.9711、25H2 10.0.26200.9711、Windows 10 22H2 10.0.19045.7807 等） |
 | [CVE-2026-102490](CVE-2026-102490) | Zammad | 4.0 9.4 (DIVD); 3.1 7.8 (NVD) | packager.io 打包的 Zammad DEB/RPM 安裝（7.2.2 之前，NVD CPE） | 尚未發布（2026-10-05 通告讀取時仍在制定解決方案） |
 | [CVE-2026-110936](CVE-2026-110936) | Siemens Software Center | 4.0 8.4 (Siemens); 3.1 6.7 (Siemens) | Siemens Software Center V4.0.9.8 之前全部版本 | V4.0.9.8 |
+| [CVE-2026-131827](CVE-2026-131827) | RustDesk Client for Windows | 3.0 7.8 (ZDI) | RustDesk Client for Windows | PR #17040 已合併（2026-11-16，版本號未註明） |
 
 
 See each CVE directory for details and references.
