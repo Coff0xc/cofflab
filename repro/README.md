@@ -12,6 +12,7 @@ Repro status is recorded in `catalog.json` (field `repro`) and in the local `rep
 | [CVE-2026-19868](../CVE-2026-19868/) | Detector fully verified (version-check; 25 unit tests pass; 4 boundary versions correct). The SAML bypass itself was not tested. | [report](CVE-2026-19868/CVE-2026-19868.md), [run log](CVE-2026-19868/runs/foxcornlab-sonicos-scanner/run.log) |
 | [CVE-2026-126170](../CVE-2026-126170/) | Full lab reproduction (model lab, not a real Fortinet device): vulnerable model 7.6.7 injects and executes; fixed model 7.6.8 is safe; mitigations hold. | [report](CVE-2026-126170/CVE-2026-126170.md), [vuln run](CVE-2026-126170/runs/googlesky-poc/vuln/run.log), [fixed run](CVE-2026-126170/runs/googlesky-poc/fixed/run.log) |
 | [CVE-2026-105437](../CVE-2026-105437/) | Full lab reproduction (crash): `git merge-tree --write-tree` segfaults (SIGSEGV, rc=139) on git 2.43.0 with the malicious attributes; benign attributes merge normally. | [report](CVE-2026-105437/CVE-2026-105437.md), [run log](CVE-2026-105437/runs/googlesky-poc/run.log) |
+| [CVE-2026-121265](../CVE-2026-121265/) | Full lab reproduction on real SQL::Abstract 2.000001: all four PoCs succeed (admin password stolen via INSERT, is_admin 0→1 via UPDATE, generate() escalation, form vector); all four fail on fixed 2.000003; verify_fix.pl exit 0. | [report](CVE-2026-121265/CVE-2026-121265.md), [run log](CVE-2026-121265/runs/googlesky-poc/run.log) |
 
 ## Notes
 
