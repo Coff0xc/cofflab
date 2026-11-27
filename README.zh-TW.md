@@ -13,7 +13,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (287)](categories/web.zh-TW.md)
+- [Web / CMS (289)](categories/web.zh-TW.md)
 - [AI / LLM (32)](categories/ai.zh-TW.md)
 - [網路與安全 (261)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (111)](categories/runtime.zh-TW.md)
@@ -23,7 +23,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (287)
+### Web / CMS (289)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -314,6 +314,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137959](CVE-2026-137959) | n8n | 4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck) | n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2 | 1.123.96 / 2.47.6 / 2.48.3 / 3.2.2 |
 | [CVE-2026-137964](CVE-2026-137964) | ToolJet | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ToolJet < 3.21.96-LTS | 3.21.96-LTS |
 | [CVE-2026-135968](CVE-2026-135968) | theMarketer | 3.1 8.6 (Patchstack) | theMarketer <= 1.5.9 | 1.6.0 |
+| [CVE-2026-136113](CVE-2026-136113) | Hello Clever Gateway for WooCommerce | 3.1 9.3 (Patchstack) | Hello Clever Gateway for WooCommerce ≤ 1.8.4 |  |
+| [CVE-2026-136115](CVE-2026-136115) | MemberPress Discord Addon | 3.1 9.8 (Patchstack) | MemberPress Discord Addon ≤ 1.1.5 |  |
 
 ### AI / LLM (32)
 

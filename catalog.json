@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T18:45:46Z",
+  "generated": "2026-11-27T20:47:32Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 789,
+  "entries": 791,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -14085,6 +14085,93 @@
         {
           "id": "patchstack-advisory",
           "upstream": "https://patchstack.com/database/wordpress/plugin/themarketer/vulnerability/wordpress-themarketer-plugin-1-5-9-arbitrary-file-upload-vulnerability",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-136113",
+      "product": {
+        "en": "Hello Clever Gateway for WooCommerce",
+        "zh-TW": "Hello Clever Gateway for WooCommerce"
+      },
+      "score": "3.1 9.3 (Patchstack)",
+      "affected": "Hello Clever Gateway for WooCommerce ≤ 1.8.4",
+      "fixed": "",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+          "source": "Patchstack"
+        }
+      ],
+      "cwe": [
+        "CWE-89"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "sqli"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-136115",
+      "product": {
+        "en": "MemberPress Discord Addon",
+        "zh-TW": "MemberPress Discord Addon"
+      },
+      "score": "3.1 9.8 (Patchstack)",
+      "affected": "MemberPress Discord Addon ≤ 1.1.5",
+      "fixed": "",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Patchstack"
+        }
+      ],
+      "cwe": [
+        "CWE-266"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
           "license": "unknown"
         }
       ]

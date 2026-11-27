@@ -13,7 +13,7 @@ Only publicly available material is collected. For authorized security research 
 <!-- categories:start -->
 ## Categories
 
-- [Web / CMS (287)](categories/web.md)
+- [Web / CMS (289)](categories/web.md)
 - [AI / LLM (32)](categories/ai.md)
 - [Network & Security (261)](categories/net.md)
 - [Runtime / Framework / Browser (111)](categories/runtime.md)
@@ -23,7 +23,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (287)
+### Web / CMS (289)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -314,6 +314,8 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-137959](CVE-2026-137959) | n8n | 4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck) | n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2 | 1.123.96 / 2.47.6 / 2.48.3 / 3.2.2 |
 | [CVE-2026-137964](CVE-2026-137964) | ToolJet | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ToolJet < 3.21.96-LTS | 3.21.96-LTS |
 | [CVE-2026-135968](CVE-2026-135968) | theMarketer | 3.1 8.6 (Patchstack) | theMarketer <= 1.5.9 | 1.6.0 |
+| [CVE-2026-136113](CVE-2026-136113) | Hello Clever Gateway for WooCommerce | 3.1 9.3 (Patchstack) | Hello Clever Gateway for WooCommerce ≤ 1.8.4 |  |
+| [CVE-2026-136115](CVE-2026-136115) | MemberPress Discord Addon | 3.1 9.8 (Patchstack) | MemberPress Discord Addon ≤ 1.1.5 |  |
 
 ### AI / LLM (32)
 
