@@ -1,0 +1,20 @@
+id: cacti-core-2026-unauthenticated-rce
+category: web
+aliases: [4HTTP2SHELL, 4HTTP2ROOT]
+product: "Cacti"
+vendor: Cacti
+cwe: [CWE-89, CWE-78]
+affected: "Cacti Core 1.2.31（guest 帳號啟用時）"
+fixed: ""
+advisory:
+  - name: watchTowr 4HTTP2ROOT FAQ
+    url: https://watchtowr.com/intelligence/4http2root-cacti-zero-day-faq/
+    published: 2026-11-27
+cvss: []
+demonstrated: [rce-local]
+public_rce: false
+notes: "尚無 CVE 編號、尚無 CVSS、尚無修復版；截至 2026-11-27 未見在野利用報告（watchTowr FAQ）。研究員 ek0ms savi0r（Church of Malware）2026-11-26 於 GitHub 公開披露，四個未授權 HTTP 請求達成命令執行；Yxuan18/cacti-cve-4http2root 的可執行 PoC 與抓包證據經 GitHub API 唯讀核實為真（poc.py 標準庫四步鏈、evidence/capture.pcap），克隆被執行風險檢查標記，依自動換源改走通告源，PoC 代碼未收。guest 帳號自 0.8.7 起預設關閉，須手動啟用才暴露；研究員實驗室 web 層跑 root 故截圖 uid=0，一般部署為 www-data/apache 身份。public_rce=false：公開材料僅證明實驗室環境命令執行，無真實部署利用證據。本倉未運行 PoC。"
+collected: '2026-11-27'
+sources:
+  - id: thn-article
+    path: sources/thn-article

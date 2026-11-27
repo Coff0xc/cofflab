@@ -1,0 +1,14 @@
+id: thn-article
+upstream: https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html
+commit: "n/a"
+content_sha256: "822cc2e03a0554894869b64b64da5d579e231e09c4c2f39d6f9d37a72707732d"
+collected: 2026-11-27
+license: unknown
+review:
+  executed: false
+  static: true
+  notes: "只读检查：thn-cacti-4http2shell.html 为 The Hacker News 文章全文快照，含四步攻擊鏈（auth_profile.php update_data 寫入 preview_graphs_per_page、二階 SQL 注入改 poller 表、graph_realtime.php 經 popen() 執行）、影響版本 1.2.31、guest 預設關閉、尚無修復；本身無可執行代碼，無 PoC 代碼。deps checked: 0 — no dependency files"
+issues:
+  - "license: unknown"
+dropped: []
+maturity: rce-local
