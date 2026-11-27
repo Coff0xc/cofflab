@@ -15,7 +15,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 - [Web / CMS (263)](categories/web.zh-TW.md)
 - [AI / LLM (30)](categories/ai.zh-TW.md)
-- [網路與安全 (249)](categories/net.zh-TW.md)
+- [網路與安全 (250)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (108)](categories/runtime.zh-TW.md)
 - [資料庫 (22)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (75)](categories/os.zh-TW.md)
@@ -326,7 +326,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
-### 網路與安全 (249)
+### 網路與安全 (250)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -579,6 +579,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-66784](CVE-2026-66784) | Submariner | 3.1 8.7 (Red Hat) | Submariner (default Pre-Shared Key mode) | unknown |
 | [CVE-2026-137077](CVE-2026-137077) | FreeRDP | 4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA) | FreeRDP <= 3.32.2 | 3.33.0 |
 | [CVE-2026-137704](CVE-2026-137704) | DWM-222W | 4.0 8.6 (TWCERT); 3.1 8.8 (TWCERT) | DWM-222W（hardware revision B1）firmware v1.02.00 及更早版本 | v1.02.04 |
+| [CVE-2026-137481](CVE-2026-137481) | Traefik | 4.0 7.8 (VulnCheck); 3.1 9.3 (VulnCheck) | Traefik < 2.11.62；3.x < 3.7.18；3.8.0-rc.1（3.0–3.6 已 EOL，不修補） | 2.11.62；3.7.18；3.8.0-rc.2 |
 
 ### 運行環境 / 框架 / 瀏覽器 (108)
 

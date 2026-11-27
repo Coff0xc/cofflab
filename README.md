@@ -15,7 +15,7 @@ Only publicly available material is collected. For authorized security research 
 
 - [Web / CMS (263)](categories/web.md)
 - [AI / LLM (30)](categories/ai.md)
-- [Network & Security (249)](categories/net.md)
+- [Network & Security (250)](categories/net.md)
 - [Runtime / Framework / Browser (108)](categories/runtime.md)
 - [Database (22)](categories/db.md)
 - [OS / System / DevOps (75)](categories/os.md)
@@ -326,7 +326,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
-### Network & Security (249)
+### Network & Security (250)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -579,6 +579,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-66784](CVE-2026-66784) | Submariner | 3.1 8.7 (Red Hat) | Submariner (default Pre-Shared Key mode) | unknown |
 | [CVE-2026-137077](CVE-2026-137077) | FreeRDP | 4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA) | FreeRDP <= 3.32.2 | 3.33.0 |
 | [CVE-2026-137704](CVE-2026-137704) | DWM-222W | 4.0 8.6 (TWCERT); 3.1 8.8 (TWCERT) | DWM-222W（hardware revision B1）firmware v1.02.00 及更早版本 | v1.02.04 |
+| [CVE-2026-137481](CVE-2026-137481) | Traefik | 4.0 7.8 (VulnCheck); 3.1 9.3 (VulnCheck) | Traefik < 2.11.62；3.x < 3.7.18；3.8.0-rc.1（3.0–3.6 已 EOL，不修補） | 2.11.62；3.7.18；3.8.0-rc.2 |
 
 ### Runtime / Framework / Browser (108)
 
