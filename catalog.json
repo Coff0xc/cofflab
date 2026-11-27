@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T12:46:56Z",
+  "generated": "2026-11-27T13:55:41Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 768,
+  "entries": 773,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -13496,6 +13496,50 @@
       ]
     },
     {
+      "id": "CVE-2026-114607",
+      "product": {
+        "en": "better-auth",
+        "zh-TW": "better-auth"
+      },
+      "score": "3.1 9.1 (GHSA)",
+      "affected": "better-auth 1.4.0-beta.18 起，1.7.7 之前（須啟用 Magic Link 與 social 或 Generic OAuth 登入）",
+      "fixed": "1.7.7",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "priv-esc"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/better-auth/better-auth/security-advisories/GHSA-965c-763c-88jm",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-85228",
       "product": {
         "en": "Amazon Deep Java Library (DJL)",
@@ -14983,6 +15027,49 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-mqxc-j2ww-xfvx",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-114612",
+      "product": {
+        "en": "LiteLLM",
+        "zh-TW": "LiteLLM"
+      },
+      "score": "3.1 9.9 (GHSA)",
+      "affected": "LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1",
+      "fixed": "1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-269"
+      ],
+      "demonstrated": [
+        "priv-esc"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/BerriAI/litellm/security-advisories/GHSA-7hp6-4w63-5g45",
           "license": "unknown"
         }
       ]
@@ -33293,6 +33380,158 @@
         {
           "id": "fankh-poc",
           "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-22683",
+      "product": {
+        "en": "Windmill",
+        "zh-TW": "Windmill"
+      },
+      "score": "3.1 8.8 (GHSA); 4.0 8.7 (VulnCheck)",
+      "affected": "Windmill 1.56.0 起，1.614.0 之前",
+      "fixed": "1.615.0",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "GHSA"
+        },
+        {
+          "version": "4.0",
+          "score": 8.7,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-862"
+      ],
+      "demonstrated": [
+        "priv-esc"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/windmill-labs/windmill/security-advisories/GHSA-9q9g-rp9x-244h",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-23696",
+      "product": {
+        "en": "Windmill",
+        "zh-TW": "Windmill"
+      },
+      "score": "3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck)",
+      "affected": "Windmill CE 與 EE 1.276.0 起，1.603.2 之前",
+      "fixed": "1.603.3",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "GHSA"
+        },
+        {
+          "version": "4.0",
+          "score": 9.4,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-89"
+      ],
+      "demonstrated": [
+        "sqli-read",
+        "priv-esc"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime",
+        "sqli"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/windmill-labs/windmill/security-advisories/GHSA-34m2-qrpf-6v7q",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-29059",
+      "product": {
+        "en": "Windmill",
+        "zh-TW": "Windmill"
+      },
+      "score": "3.1 7.5 (NVD); 4.0 6.9 (GHSA)",
+      "affected": "Windmill < 1.603.3",
+      "fixed": "1.603.3",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.5,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "source": "NVD"
+        },
+        {
+          "version": "4.0",
+          "score": 6.9,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-22"
+      ],
+      "demonstrated": [
+        "leak",
+        "priv-esc"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime",
+        "path-traversal"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-29059",
           "license": "unknown"
         }
       ]

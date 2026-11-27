@@ -13,17 +13,17 @@ Only publicly available material is collected. For authorized security research 
 <!-- categories:start -->
 ## Categories
 
-- [Web / CMS (274)](categories/web.md)
-- [AI / LLM (30)](categories/ai.md)
+- [Web / CMS (275)](categories/web.md)
+- [AI / LLM (31)](categories/ai.md)
 - [Network & Security (258)](categories/net.md)
-- [Runtime / Framework / Browser (108)](categories/runtime.md)
+- [Runtime / Framework / Browser (111)](categories/runtime.md)
 - [Database (22)](categories/db.md)
 - [OS / System / DevOps (76)](categories/os.md)
 <!-- categories:end -->
 
 ## Catalog
 
-### Web / CMS (274)
+### Web / CMS (275)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -301,8 +301,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-59103](CVE-2026-59103) | MONEO ERP | 4.0 9.3 (OffSeq); 3.1 9.8 (OffSeq) | MONEO ERP ≤ 1.8.45.6（於 1.8.45.6 確認） | 2026-08-03 發布版 |
 | [CVE-2026-126984](CVE-2026-126984) | pulp_python | 3.1 10.0 (GHSA) | pulp_python 啟用 pull-through caching 的 Python distribution（有 remote 者） |  |
 | [cacti-core-2026-unauthenticated-rce](cacti-core-2026-unauthenticated-rce) | Cacti | unknown | Cacti Core 1.2.31（guest 帳號啟用時） |  |
+| [CVE-2026-114607](CVE-2026-114607) | better-auth | 3.1 9.1 (GHSA) | better-auth 1.4.0-beta.18 起，1.7.7 之前（須啟用 Magic Link 與 social 或 Generic OAuth 登入） | 1.7.7 |
 
-### AI / LLM (30)
+### AI / LLM (31)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -336,6 +337,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-33017](CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
+| [CVE-2026-114612](CVE-2026-114612) | LiteLLM | 3.1 9.9 (GHSA) | LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1 | 1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2 |
 
 ### Network & Security (258)
 
@@ -600,7 +602,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-80472](CVE-2026-80472) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.1 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80477](CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 
-### Runtime / Framework / Browser (108)
+### Runtime / Framework / Browser (111)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -712,6 +714,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-63471](CVE-2026-63471) | fastapi-code-generator | 4.0 9.3 (GHSA) | fastapi-code-generator < 0.8.1 | 0.8.1 |
 | [CVE-2026-84939](CVE-2026-84939) | Apache FreeMarker | 3.1 9.1 (GHSA) | Apache FreeMarker 2.2.0–2.3.34 | 2.3.35 |
 | [CVE-2026-137550](CVE-2026-137550) | Frappe Framework | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Frappe Framework < 15.122.0；16.x < 16.50.0 | 15.122.0 / 16.50.0 |
+| [CVE-2026-22683](CVE-2026-22683) | Windmill | 3.1 8.8 (GHSA); 4.0 8.7 (VulnCheck) | Windmill 1.56.0 起，1.614.0 之前 | 1.615.0 |
+| [CVE-2026-23696](CVE-2026-23696) | Windmill | 3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck) | Windmill CE 與 EE 1.276.0 起，1.603.2 之前 | 1.603.3 |
+| [CVE-2026-29059](CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
 
 ### Database (22)
 

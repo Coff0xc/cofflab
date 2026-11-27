@@ -1,8 +1,8 @@
-# 運行環境 / 框架 / 瀏覽器（108）
+# 運行環境 / 框架 / 瀏覽器（111）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### 運行環境 / 框架 / 瀏覽器 (108)
+### 運行環境 / 框架 / 瀏覽器 (111)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -114,3 +114,6 @@
 | [CVE-2026-63471](../CVE-2026-63471) | fastapi-code-generator | 4.0 9.3 (GHSA) | fastapi-code-generator < 0.8.1 | 0.8.1 |
 | [CVE-2026-84939](../CVE-2026-84939) | Apache FreeMarker | 3.1 9.1 (GHSA) | Apache FreeMarker 2.2.0–2.3.34 | 2.3.35 |
 | [CVE-2026-137550](../CVE-2026-137550) | Frappe Framework | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Frappe Framework < 15.122.0；16.x < 16.50.0 | 15.122.0 / 16.50.0 |
+| [CVE-2026-22683](../CVE-2026-22683) | Windmill | 3.1 8.8 (GHSA); 4.0 8.7 (VulnCheck) | Windmill 1.56.0 起，1.614.0 之前 | 1.615.0 |
+| [CVE-2026-23696](../CVE-2026-23696) | Windmill | 3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck) | Windmill CE 與 EE 1.276.0 起，1.603.2 之前 | 1.603.3 |
+| [CVE-2026-29059](../CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |

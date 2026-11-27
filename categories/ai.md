@@ -1,8 +1,8 @@
-# AI / LLM (30)
+# AI / LLM (31)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### AI / LLM (30)
+### AI / LLM (31)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -36,3 +36,4 @@
 | [CVE-2026-33017](../CVE-2026-33017) | Langflow | 4.0 9.3 (GHSA); 3.1 9.8 (NVD) | Langflow before 1.9.0 | 1.9.0 |
 | [CVE-2026-59822](../CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](../CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
+| [CVE-2026-114612](../CVE-2026-114612) | LiteLLM | 3.1 9.9 (GHSA) | LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1 | 1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2 |
