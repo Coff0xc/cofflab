@@ -15,7 +15,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 - [Web / CMS (265)](categories/web.zh-TW.md)
 - [AI / LLM (30)](categories/ai.zh-TW.md)
-- [網路與安全 (250)](categories/net.zh-TW.md)
+- [網路與安全 (254)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (108)](categories/runtime.zh-TW.md)
 - [資料庫 (22)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (75)](categories/os.zh-TW.md)
@@ -328,7 +328,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
-### 網路與安全 (250)
+### 網路與安全 (254)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -582,6 +582,10 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137077](CVE-2026-137077) | FreeRDP | 4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA) | FreeRDP <= 3.32.2 | 3.33.0 |
 | [CVE-2026-137704](CVE-2026-137704) | DWM-222W | 4.0 8.6 (TWCERT); 3.1 8.8 (TWCERT) | DWM-222W（hardware revision B1）firmware v1.02.00 及更早版本 | v1.02.04 |
 | [CVE-2026-137481](CVE-2026-137481) | Traefik | 4.0 7.8 (VulnCheck); 3.1 9.3 (VulnCheck) | Traefik < 2.11.62；3.x < 3.7.18；3.8.0-rc.1（3.0–3.6 已 EOL，不修補） | 2.11.62；3.7.18；3.8.0-rc.2 |
+| [CVE-2026-137721](CVE-2026-137721) | OpenScape 4000 and OpenScape 4000 Manager | 3.1 10.0 (Mitel) | OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68 | V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式 |
+| [CVE-2026-137723](CVE-2026-137723) | OpenScape 4000 and OpenScape 4000 Manager | 3.1 9.6 (Mitel) | OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68 | V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式 |
+| [CVE-2026-137724](CVE-2026-137724) | OpenScape 4000 and OpenScape 4000 Manager | 3.1 10.0 (Mitel) | OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68 | V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式 |
+| [CVE-2026-137738](CVE-2026-137738) | RealVNC Server | 3.1 9.8 (GHSA) | RealVNC Server 6.4.0–7.19.0；RealVNC Viewer 8.4.0–8.6.1；RealVNC Classic Viewer 6.4.0–7.18.2；RealVNC Connect App 8.6.1 及更早版本；RealVNC On-Demand Assist 3.4.1 及更早版本；RealVNC Viewer iOS 3.7.0–4.9.5；RealVNC Viewer Android 3.5.0–4.9.5；RealVNC Server iOS 2.8.1 及更早版本；RealVNC Server Android 2.8.3 及更早版本 | RealVNC Server 7.19.1；RealVNC Viewer 8.6.2；RealVNC Classic Viewer 7.18.3；RealVNC Connect App 8.6.2；RealVNC On-Demand Assist 3.5.0；RealVNC Viewer iOS 4.9.6；RealVNC Viewer Android 4.9.6；RealVNC Server iOS 2.8.2；RealVNC Server Android 2.8.4 |
 
 ### 運行環境 / 框架 / 瀏覽器 (108)
 

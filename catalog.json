@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T07:46:21Z",
+  "generated": "2026-11-27T07:49:48Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 750,
+  "entries": 754,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -27084,6 +27084,181 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/traefik/traefik/security-advisories/GHSA-cp28-5662-543f",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137721",
+      "product": {
+        "en": "OpenScape 4000 and OpenScape 4000 Manager",
+        "zh-TW": "OpenScape 4000 and OpenScape 4000 Manager"
+      },
+      "score": "3.1 10.0 (Mitel)",
+      "affected": "OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68",
+      "fixed": "V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 10.0,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "Mitel"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "rce"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "mitel-misa-2026-0013",
+          "upstream": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0013",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137723",
+      "product": {
+        "en": "OpenScape 4000 and OpenScape 4000 Manager",
+        "zh-TW": "OpenScape 4000 and OpenScape 4000 Manager"
+      },
+      "score": "3.1 9.6 (Mitel)",
+      "affected": "OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68",
+      "fixed": "V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.6,
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "Mitel"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "rce"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "mitel-misa-2026-0013",
+          "upstream": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0013",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137724",
+      "product": {
+        "en": "OpenScape 4000 and OpenScape 4000 Manager",
+        "zh-TW": "OpenScape 4000 and OpenScape 4000 Manager"
+      },
+      "score": "3.1 10.0 (Mitel)",
+      "affected": "OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68",
+      "fixed": "V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 10.0,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "Mitel"
+        }
+      ],
+      "cwe": [
+        "CWE-306"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "mitel-misa-2026-0013",
+          "upstream": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0013",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137738",
+      "product": {
+        "en": "RealVNC Server",
+        "zh-TW": "RealVNC Server"
+      },
+      "score": "3.1 9.8 (GHSA)",
+      "affected": "RealVNC Server 6.4.0–7.19.0；RealVNC Viewer 8.4.0–8.6.1；RealVNC Classic Viewer 6.4.0–7.18.2；RealVNC Connect App 8.6.1 及更早版本；RealVNC On-Demand Assist 3.4.1 及更早版本；RealVNC Viewer iOS 3.7.0–4.9.5；RealVNC Viewer Android 3.5.0–4.9.5；RealVNC Server iOS 2.8.1 及更早版本；RealVNC Server Android 2.8.3 及更早版本",
+      "fixed": "RealVNC Server 7.19.1；RealVNC Viewer 8.6.2；RealVNC Classic Viewer 7.18.3；RealVNC Connect App 8.6.2；RealVNC On-Demand Assist 3.5.0；RealVNC Viewer iOS 4.9.6；RealVNC Viewer Android 4.9.6；RealVNC Server iOS 2.8.2；RealVNC Server Android 2.8.4",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-787"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://github.com/advisories/GHSA-v49f-q363-3644",
           "license": "unknown"
         }
       ]
