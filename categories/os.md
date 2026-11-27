@@ -1,8 +1,8 @@
-# OS / System / DevOps (75)
+# OS / System / DevOps (76)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### OS / System / DevOps (75)
+### OS / System / DevOps (76)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -81,3 +81,4 @@
 | [CVE-2026-131827](../CVE-2026-131827) | RustDesk Client for Windows | 3.0 7.8 (ZDI) | RustDesk Client for Windows | PR #17040 已合併（2026-11-16，版本號未註明） |
 | [CVE-2026-59831](../CVE-2026-59831) | GitHub CLI | 3.1 4.4 (GHSA) | gh 2.10.0–2.95.x | 2.96.0 |
 | [CVE-2026-45152](../CVE-2026-45152) | uniget | 3.1 7.8 (GHSA) | uniget prior to 0.27.1 | 0.27.1 |
+| [CVE-2026-133842](../CVE-2026-133842) | Flatpak | 3.1 8.2 (GHSA) | Flatpak < 1.18.5；1.19.x < 1.19.3 | 1.18.6；1.19.4 |

@@ -13,17 +13,17 @@ Only publicly available material is collected. For authorized security research 
 <!-- categories:start -->
 ## Categories
 
-- [Web / CMS (268)](categories/web.md)
+- [Web / CMS (272)](categories/web.md)
 - [AI / LLM (30)](categories/ai.md)
-- [Network & Security (255)](categories/net.md)
+- [Network & Security (258)](categories/net.md)
 - [Runtime / Framework / Browser (108)](categories/runtime.md)
 - [Database (22)](categories/db.md)
-- [OS / System / DevOps (75)](categories/os.md)
+- [OS / System / DevOps (76)](categories/os.md)
 <!-- categories:end -->
 
 ## Catalog
 
-### Web / CMS (268)
+### Web / CMS (272)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -295,6 +295,10 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-137536](CVE-2026-137536) | ToolJet | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ToolJet < 3.21.94-beta | 3.21.94-beta |
 | [CVE-2026-122244](CVE-2026-122244) | Budibase | 3.1 7.7 (GHSA) | Budibase < 3.50.0 | 3.50.0 / 4.0.0 |
 | [CVE-2026-77309](CVE-2026-77309) | AIT-GUI | 3.1 8.8 (GHSA) | AIT-GUI 1.0.0–2.5.0 | 2.5.1 |
+| [CVE-2026-133938](CVE-2026-133938) | JTL-Shop | 4.0 8.6 (JTL); 3.1 9.3 (JTL) | JTL-Shop 5.2.3–5.8.4（5.2.3–5.4.x 已停更、無修補；5.0.0–5.2.2 不受影響） | 5.8.5；5.7.7；5.6.7；5.5.6 |
+| [CVE-2026-133939](CVE-2026-133939) | JTL-Shop | 4.0 8.6 (JTL); 3.1 9.3 (JTL) | JTL-Shop 5.0.0–5.8.4（5.0.x–5.4.x 已停更、無修補） | 5.8.5；5.7.7；5.6.7；5.5.6 |
+| [CVE-2026-133941](CVE-2026-133941) | JTL-Shop | 4.0 8.6 (JTL); 3.1 9.3 (JTL) | JTL-Shop 5.6.0–5.8.4（5.5.x 及更早不受影響） | 5.8.5；5.7.7；5.6.7 |
+| [CVE-2026-59103](CVE-2026-59103) | MONEO ERP | 4.0 9.3 (OffSeq); 3.1 9.8 (OffSeq) | MONEO ERP ≤ 1.8.45.6（於 1.8.45.6 確認） | 2026-08-03 發布版 |
 
 ### AI / LLM (30)
 
@@ -331,7 +335,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
-### Network & Security (255)
+### Network & Security (258)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -590,6 +594,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-137724](CVE-2026-137724) | OpenScape 4000 and OpenScape 4000 Manager | 3.1 10.0 (Mitel) | OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68 | V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式 |
 | [CVE-2026-137738](CVE-2026-137738) | RealVNC Server | 3.1 9.8 (GHSA) | RealVNC Server 6.4.0–7.19.0；RealVNC Viewer 8.4.0–8.6.1；RealVNC Classic Viewer 6.4.0–7.18.2；RealVNC Connect App 8.6.1 及更早版本；RealVNC On-Demand Assist 3.4.1 及更早版本；RealVNC Viewer iOS 3.7.0–4.9.5；RealVNC Viewer Android 3.5.0–4.9.5；RealVNC Server iOS 2.8.1 及更早版本；RealVNC Server Android 2.8.3 及更早版本 | RealVNC Server 7.19.1；RealVNC Viewer 8.6.2；RealVNC Classic Viewer 7.18.3；RealVNC Connect App 8.6.2；RealVNC On-Demand Assist 3.5.0；RealVNC Viewer iOS 4.9.6；RealVNC Viewer Android 4.9.6；RealVNC Server iOS 2.8.2；RealVNC Server Android 2.8.4 |
 | [CVE-2026-63341](CVE-2026-63341) | aedes | 3.1 7.5 (GHSA) | aedes <= 1.1.0 | 1.1.1 |
+| [CVE-2026-80453](CVE-2026-80453) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-80472](CVE-2026-80472) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.1 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-80477](CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 
 ### Runtime / Framework / Browser (108)
 
@@ -731,7 +738,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### OS / System / DevOps (75)
+### OS / System / DevOps (76)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -810,6 +817,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-131827](CVE-2026-131827) | RustDesk Client for Windows | 3.0 7.8 (ZDI) | RustDesk Client for Windows | PR #17040 已合併（2026-11-16，版本號未註明） |
 | [CVE-2026-59831](CVE-2026-59831) | GitHub CLI | 3.1 4.4 (GHSA) | gh 2.10.0–2.95.x | 2.96.0 |
 | [CVE-2026-45152](CVE-2026-45152) | uniget | 3.1 7.8 (GHSA) | uniget prior to 0.27.1 | 0.27.1 |
+| [CVE-2026-133842](CVE-2026-133842) | Flatpak | 3.1 8.2 (GHSA) | Flatpak < 1.18.5；1.19.x < 1.19.3 | 1.18.6；1.19.4 |
 
 
 See each CVE directory for details and references.

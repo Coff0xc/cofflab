@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T11:30:31Z",
+  "generated": "2026-11-27T11:45:41Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 758,
+  "entries": 766,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -13206,6 +13206,208 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/NASA-AMMOS/AIT-GUI/security-advisories/GHSA-jrjx-9jjw-747m",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-133938",
+      "product": {
+        "en": "JTL-Shop",
+        "zh-TW": "JTL-Shop"
+      },
+      "score": "4.0 8.6 (JTL); 3.1 9.3 (JTL)",
+      "affected": "JTL-Shop 5.2.3–5.8.4（5.2.3–5.4.x 已停更、無修補；5.0.0–5.2.2 不受影響）",
+      "fixed": "5.8.5；5.7.7；5.6.7；5.5.6",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.6,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "JTL"
+        },
+        {
+          "version": "3.1",
+          "score": 9.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+          "source": "JTL"
+        }
+      ],
+      "cwe": [
+        "CWE-79",
+        "CWE-352"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "xss",
+        "csrf"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "jtl-advisory",
+          "upstream": "https://www.jtl-software.com/de/security/sicherheitshinweis-backend-sprachumschaltung_xss/",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-133939",
+      "product": {
+        "en": "JTL-Shop",
+        "zh-TW": "JTL-Shop"
+      },
+      "score": "4.0 8.6 (JTL); 3.1 9.3 (JTL)",
+      "affected": "JTL-Shop 5.0.0–5.8.4（5.0.x–5.4.x 已停更、無修補）",
+      "fixed": "5.8.5；5.7.7；5.6.7；5.5.6",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.6,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "JTL"
+        },
+        {
+          "version": "3.1",
+          "score": 9.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+          "source": "JTL"
+        }
+      ],
+      "cwe": [
+        "CWE-79"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "xss"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "jtl-advisory",
+          "upstream": "https://www.jtl-software.com/de/security/sicherheitshinweis-opc-startmenue_xss/",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-133941",
+      "product": {
+        "en": "JTL-Shop",
+        "zh-TW": "JTL-Shop"
+      },
+      "score": "4.0 8.6 (JTL); 3.1 9.3 (JTL)",
+      "affected": "JTL-Shop 5.6.0–5.8.4（5.5.x 及更早不受影響）",
+      "fixed": "5.8.5；5.7.7；5.6.7",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.6,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "JTL"
+        },
+        {
+          "version": "3.1",
+          "score": 9.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+          "source": "JTL"
+        }
+      ],
+      "cwe": [
+        "CWE-79"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "xss"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "jtl-advisory",
+          "upstream": "https://www.jtl-software.com/de/security/sicherheitshinweis-backend-laenderverwaltung_xss/",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-59103",
+      "product": {
+        "en": "MONEO ERP",
+        "zh-TW": "MONEO ERP"
+      },
+      "score": "4.0 9.3 (OffSeq); 3.1 9.8 (OffSeq)",
+      "affected": "MONEO ERP ≤ 1.8.45.6（於 1.8.45.6 確認）",
+      "fixed": "2026-08-03 發布版",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "OffSeq"
+        },
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "OffSeq"
+        }
+      ],
+      "cwe": [
+        "CWE-288",
+        "CWE-807"
+      ],
+      "demonstrated": [
+        "priv-esc"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "offseq-article",
+          "upstream": "https://offseq.com/en/research/moneo-cve-2026-59103/",
           "license": "unknown"
         }
       ]
@@ -27449,6 +27651,137 @@
       ]
     },
     {
+      "id": "CVE-2026-80453",
+      "product": {
+        "en": "Dell Secure Connect Gateway - Virtual Edition",
+        "zh-TW": "Dell Secure Connect Gateway - Virtual Edition"
+      },
+      "score": "3.1 8.4 (Dell)",
+      "affected": "Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16",
+      "fixed": "5.36.00.16",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.4,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Dell"
+        }
+      ],
+      "cwe": [
+        "CWE-494"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80453",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-80472",
+      "product": {
+        "en": "Dell Secure Connect Gateway - Virtual Edition",
+        "zh-TW": "Dell Secure Connect Gateway - Virtual Edition"
+      },
+      "score": "3.1 8.1 (Dell)",
+      "affected": "Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16",
+      "fixed": "5.36.00.16",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+          "source": "Dell"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "rce"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80472",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-80477",
+      "product": {
+        "en": "Dell Secure Connect Gateway - Virtual Edition",
+        "zh-TW": "Dell Secure Connect Gateway - Virtual Edition"
+      },
+      "score": "3.1 8.4 (Dell)",
+      "affected": "Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16",
+      "fixed": "5.36.00.16",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.4,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Dell"
+        }
+      ],
+      "cwe": [
+        "CWE-89"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "sqli"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80477",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-57898",
       "product": {
         "en": "Eclipse BaSyx Java Server SDK",
@@ -37714,6 +38047,49 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/uniget-org/cli/security-advisories/GHSA-qqq4-5773-pmw5",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-133842",
+      "product": {
+        "en": "Flatpak",
+        "zh-TW": "Flatpak"
+      },
+      "score": "3.1 8.2 (GHSA)",
+      "affected": "Flatpak < 1.18.5；1.19.x < 1.19.3",
+      "fixed": "1.18.6；1.19.4",
+      "category": "os",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.2,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-281"
+      ],
+      "demonstrated": [
+        "priv-esc"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "os"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/flatpak/flatpak/security-advisories/GHSA-p4mw-6jfq-r82r",
           "license": "unknown"
         }
       ]

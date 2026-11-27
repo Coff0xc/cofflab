@@ -1,8 +1,8 @@
-# Network & Security (255)
+# Network & Security (258)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Network & Security (255)
+### Network & Security (258)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -261,3 +261,6 @@
 | [CVE-2026-137724](../CVE-2026-137724) | OpenScape 4000 and OpenScape 4000 Manager | 3.1 10.0 (Mitel) | OpenScape 4000 V11 R0.22–V11 R2.11，V10 R1.68 及更早版本；OpenScape 4000 Manager V11 R0.22–V11 R2.11，V10 R1.34–V10 R1.68 | V11 R2.14 或更新版本；V11 R1.26 有 PLT HF5；V10 R0.28–V11 R0.22（OpenScape 4000）／V10 R1.34–V11 R0.22（Manager）有修補程式 |
 | [CVE-2026-137738](../CVE-2026-137738) | RealVNC Server | 3.1 9.8 (GHSA) | RealVNC Server 6.4.0–7.19.0；RealVNC Viewer 8.4.0–8.6.1；RealVNC Classic Viewer 6.4.0–7.18.2；RealVNC Connect App 8.6.1 及更早版本；RealVNC On-Demand Assist 3.4.1 及更早版本；RealVNC Viewer iOS 3.7.0–4.9.5；RealVNC Viewer Android 3.5.0–4.9.5；RealVNC Server iOS 2.8.1 及更早版本；RealVNC Server Android 2.8.3 及更早版本 | RealVNC Server 7.19.1；RealVNC Viewer 8.6.2；RealVNC Classic Viewer 7.18.3；RealVNC Connect App 8.6.2；RealVNC On-Demand Assist 3.5.0；RealVNC Viewer iOS 4.9.6；RealVNC Viewer Android 4.9.6；RealVNC Server iOS 2.8.2；RealVNC Server Android 2.8.4 |
 | [CVE-2026-63341](../CVE-2026-63341) | aedes | 3.1 7.5 (GHSA) | aedes <= 1.1.0 | 1.1.1 |
+| [CVE-2026-80453](../CVE-2026-80453) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-80472](../CVE-2026-80472) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.1 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-80477](../CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
