@@ -13,7 +13,7 @@ Only publicly available material is collected. For authorized security research 
 <!-- categories:start -->
 ## Categories
 
-- [Web / CMS (265)](categories/web.md)
+- [Web / CMS (266)](categories/web.md)
 - [AI / LLM (30)](categories/ai.md)
 - [Network & Security (254)](categories/net.md)
 - [Runtime / Framework / Browser (108)](categories/runtime.md)
@@ -23,7 +23,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (265)
+### Web / CMS (266)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -292,6 +292,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-137499](CVE-2026-137499) | Budibase | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Budibase 3.41.0 – < 4.0.0 | 4.0.0 |
 | [CVE-2026-106125](CVE-2026-106125) | Sneeit Framework | 3.1 9.8 (Wordfence) | Sneeit Framework ≤ 8.7 | 8.8 |
 | [CVE-2026-137544](CVE-2026-137544) | LaraDashboard | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | LaraDashboard < 1.5.0 | 1.5.0 |
+| [CVE-2026-137536](CVE-2026-137536) | ToolJet | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ToolJet < 3.21.94-beta | 3.21.94-beta |
 
 ### AI / LLM (30)
 

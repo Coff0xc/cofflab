@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T08:22:09Z",
+  "generated": "2026-11-27T08:41:41Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 754,
+  "entries": 755,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -13066,6 +13066,55 @@
         {
           "id": "fankh-poc",
           "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137536",
+      "product": {
+        "en": "ToolJet",
+        "zh-TW": "ToolJet"
+      },
+      "score": "4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck)",
+      "affected": "ToolJet < 3.21.94-beta",
+      "fixed": "3.21.94-beta",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-290"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/ToolJet/ToolJet/security-advisories/GHSA-7g4q-wmw6-7r36",
           "license": "unknown"
         }
       ]
