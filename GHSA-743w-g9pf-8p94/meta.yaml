@@ -16,7 +16,7 @@ cvss:
     source: "GHSA"
 demonstrated: [trigger]
 public_rce: true
-notes: "GitHub 通告 2026-07-06 发布、2026-08-03 更新；通告正文含可直接照做的 PoC 步骤（管理员在邮件模板写入 @php shell_exec('echo \"RCE Executed\";id')，经 onTestTemplate 执行，于日志查看结果，附执行截图），此为 public_rce=true 的依据。通告列出 CVE-2026-69178，但 CVE.org 查询回 404、NVD 截至 2026-11-26 未收录该编号，故不列为 alias、目录沿用 GHSA 编号。通告列 CWE-1336（2026-11-26 複核補入）。需具 Admin.MailTemplates 权限的管理员账号。本仓未运行 PoC。"
+notes: "GitHub 通告 2026-07-06 發佈、2026-08-03 更新；通告正文含可直接照做的 PoC 步驟（管理員在郵件模板寫入 @php shell_exec('echo \"RCE Executed\";id')，經 onTestTemplate 執行，於日誌查看結果，附執行截圖），此為 public_rce=true 的依據。通告列出 CVE-2026-69178，但 CVE.org 查詢回 404、NVD 截至 2026-11-26 未收錄該編號，故不列為 alias、目錄沿用 GHSA 編號。通告列 CWE-1336（2026-11-26 複核補入）。需具 Admin.MailTemplates 權限的管理員賬號。本倉未運行 PoC。"
 collected: '2026-11-26'
 sources:
   - id: ghsa-advisory
