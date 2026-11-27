@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T00:44:34Z",
+  "generated": "2026-11-27T02:15:00Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 730,
   "items": [
@@ -9664,10 +9664,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "in-the-wild",
         "deserialization"
       ],
       "collected": "2026-11-24",
@@ -10688,7 +10689,7 @@
       "repro": "Pending",
       "verified": false,
       "kev": true,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": {
         "score": 0.14372,
         "percentile": 0.97267,
@@ -10697,6 +10698,7 @@
       "tags": [
         "web",
         "kev",
+        "in-the-wild",
         "auth-bypass"
       ],
       "collected": "2026-11-26",
@@ -11438,10 +11440,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "in-the-wild",
         "rce"
       ],
       "collected": "2026-11-26",
@@ -11995,10 +11998,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "in-the-wild",
         "auth-bypass"
       ],
       "collected": "2026-11-26",
@@ -12180,10 +12184,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "in-the-wild",
         "ssrf"
       ],
       "collected": "2026-11-26",
@@ -12224,10 +12229,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "in-the-wild",
         "auth-bypass"
       ],
       "collected": "2026-11-26",
@@ -12268,10 +12274,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
-        "web"
+        "web",
+        "in-the-wild"
       ],
       "collected": "2026-11-26",
       "sources": [
@@ -12312,10 +12319,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "in-the-wild",
         "hardcoded-credentials"
       ],
       "collected": "2026-11-26",
@@ -12356,10 +12364,11 @@
       "repro": "Pending",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "in-the-wild",
         "sqli"
       ],
       "collected": "2026-11-26",
@@ -14237,14 +14246,15 @@
       "repro": "No target",
       "verified": false,
       "kev": false,
-      "in_the_wild": false,
+      "in_the_wild": true,
       "epss": {
         "score": 0.45588,
         "percentile": 0.9909,
         "date": "2026-11-26"
       },
       "tags": [
-        "net"
+        "net",
+        "in-the-wild"
       ],
       "collected": "2026-11-19",
       "sources": [
