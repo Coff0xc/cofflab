@@ -13,7 +13,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (272)](categories/web.zh-TW.md)
+- [Web / CMS (274)](categories/web.zh-TW.md)
 - [AI / LLM (30)](categories/ai.zh-TW.md)
 - [網路與安全 (258)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (108)](categories/runtime.zh-TW.md)
@@ -23,7 +23,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (272)
+### Web / CMS (274)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -299,6 +299,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-133939](CVE-2026-133939) | JTL-Shop | 4.0 8.6 (JTL); 3.1 9.3 (JTL) | JTL-Shop 5.0.0–5.8.4（5.0.x–5.4.x 已停更、無修補） | 5.8.5；5.7.7；5.6.7；5.5.6 |
 | [CVE-2026-133941](CVE-2026-133941) | JTL-Shop | 4.0 8.6 (JTL); 3.1 9.3 (JTL) | JTL-Shop 5.6.0–5.8.4（5.5.x 及更早不受影響） | 5.8.5；5.7.7；5.6.7 |
 | [CVE-2026-59103](CVE-2026-59103) | MONEO ERP | 4.0 9.3 (OffSeq); 3.1 9.8 (OffSeq) | MONEO ERP ≤ 1.8.45.6（於 1.8.45.6 確認） | 2026-08-03 發布版 |
+| [CVE-2026-126984](CVE-2026-126984) | pulp_python | 3.1 10.0 (GHSA) | pulp_python 啟用 pull-through caching 的 Python distribution（有 remote 者） |  |
+| [cacti-core-2026-unauthenticated-rce](cacti-core-2026-unauthenticated-rce) | Cacti | unknown | Cacti Core 1.2.31（guest 帳號啟用時） |  |
 
 ### AI / LLM (30)
 

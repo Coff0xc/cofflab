@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T11:51:50Z",
+  "generated": "2026-11-27T12:46:56Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 766,
+  "entries": 768,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -13408,6 +13408,89 @@
         {
           "id": "offseq-article",
           "upstream": "https://offseq.com/en/research/moneo-cve-2026-59103/",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-126984",
+      "product": {
+        "en": "pulp_python",
+        "zh-TW": "pulp_python"
+      },
+      "score": "3.1 10.0 (GHSA)",
+      "affected": "pulp_python 啟用 pull-through caching 的 Python distribution（有 remote 者）",
+      "fixed": "",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 10.0,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-918"
+      ],
+      "demonstrated": [
+        "leak"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "ssrf"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/advisories/GHSA-x4cr-9jx8-g6ff",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "cacti-core-2026-unauthenticated-rce",
+      "product": {
+        "en": "Cacti",
+        "zh-TW": "Cacti"
+      },
+      "score": "unknown",
+      "affected": "Cacti Core 1.2.31（guest 帳號啟用時）",
+      "fixed": "",
+      "category": "web",
+      "cvss": [],
+      "cwe": [
+        "CWE-89",
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "rce-local"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "sqli",
+        "rce"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "thn-article",
+          "upstream": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
           "license": "unknown"
         }
       ]
