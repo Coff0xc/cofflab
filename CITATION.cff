@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "cofflab: a curated CVE proof-of-concept library"
+authors:
+  - family-names: Coff0xc
+repository-code: "https://github.com/Coff0xc/cofflab"
+url: "https://github.com/Coff0xc/cofflab"
+license: MIT
+version: 2026.11.27
+date-released: 2026-11-27
+keywords:
+  - CVE
+  - proof-of-concept
+  - vulnerability
+  - exploit
+  - cybersecurity
+  - threat-intelligence
