@@ -1,8 +1,8 @@
-# Web / CMS（263）
+# Web / CMS（265）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### Web / CMS (263)
+### Web / CMS (265)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -269,3 +269,5 @@
 | [CVE-2026-137494](../CVE-2026-137494) | Budibase | 4.0 8.5 (VulnCheck); 3.1 9.9 (VulnCheck) | Budibase < 4.0.0 | 4.0.0 |
 | [CVE-2026-137498](../CVE-2026-137498) | Budibase | 4.0 9.9 (VulnCheck); 3.1 10.0 (VulnCheck) | Budibase Server 3.39.18 – < 4.0.0 | 4.0.0 |
 | [CVE-2026-137499](../CVE-2026-137499) | Budibase | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Budibase 3.41.0 – < 4.0.0 | 4.0.0 |
+| [CVE-2026-106125](../CVE-2026-106125) | Sneeit Framework | 3.1 9.8 (Wordfence) | Sneeit Framework ≤ 8.7 | 8.8 |
+| [CVE-2026-137544](../CVE-2026-137544) | LaraDashboard | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | LaraDashboard < 1.5.0 | 1.5.0 |

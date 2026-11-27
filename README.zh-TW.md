@@ -13,7 +13,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (263)](categories/web.zh-TW.md)
+- [Web / CMS (265)](categories/web.zh-TW.md)
 - [AI / LLM (30)](categories/ai.zh-TW.md)
 - [網路與安全 (250)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (108)](categories/runtime.zh-TW.md)
@@ -23,7 +23,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (263)
+### Web / CMS (265)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -290,6 +290,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137494](CVE-2026-137494) | Budibase | 4.0 8.5 (VulnCheck); 3.1 9.9 (VulnCheck) | Budibase < 4.0.0 | 4.0.0 |
 | [CVE-2026-137498](CVE-2026-137498) | Budibase | 4.0 9.9 (VulnCheck); 3.1 10.0 (VulnCheck) | Budibase Server 3.39.18 – < 4.0.0 | 4.0.0 |
 | [CVE-2026-137499](CVE-2026-137499) | Budibase | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Budibase 3.41.0 – < 4.0.0 | 4.0.0 |
+| [CVE-2026-106125](CVE-2026-106125) | Sneeit Framework | 3.1 9.8 (Wordfence) | Sneeit Framework ≤ 8.7 | 8.8 |
+| [CVE-2026-137544](CVE-2026-137544) | LaraDashboard | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | LaraDashboard < 1.5.0 | 1.5.0 |
 
 ### AI / LLM (30)
 
