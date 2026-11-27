@@ -10,6 +10,17 @@ Only publicly available material is collected. For authorized security research 
 
 ---
 
+<!-- categories:start -->
+## Categories
+
+- [Web / CMS (263)](categories/web.md)
+- [AI / LLM (30)](categories/ai.md)
+- [Network & Security (249)](categories/net.md)
+- [Runtime / Framework / Browser (108)](categories/runtime.md)
+- [Database (22)](categories/db.md)
+- [OS / System / DevOps (75)](categories/os.md)
+<!-- categories:end -->
+
 ## Catalog
 
 ### Web / CMS (263)

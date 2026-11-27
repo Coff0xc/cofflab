@@ -10,6 +10,17 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ---
 
+<!-- categories:start -->
+## 分類
+
+- [Web / CMS (263)](categories/web.zh-TW.md)
+- [AI / LLM (30)](categories/ai.zh-TW.md)
+- [網路與安全 (249)](categories/net.zh-TW.md)
+- [運行環境 / 框架 / 瀏覽器 (108)](categories/runtime.zh-TW.md)
+- [資料庫 (22)](categories/db.zh-TW.md)
+- [作業系統 / 系統 / DevOps (75)](categories/os.zh-TW.md)
+<!-- categories:end -->
+
 ## 目錄
 
 ### Web / CMS (263)
