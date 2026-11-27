@@ -1,8 +1,8 @@
-# Web / CMS（275）
+# Web / CMS（278）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### Web / CMS (275)
+### Web / CMS (278)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -281,3 +281,6 @@
 | [CVE-2026-126984](../CVE-2026-126984) | pulp_python | 3.1 10.0 (GHSA) | pulp_python 啟用 pull-through caching 的 Python distribution（有 remote 者） |  |
 | [cacti-core-2026-unauthenticated-rce](../cacti-core-2026-unauthenticated-rce) | Cacti | unknown | Cacti Core 1.2.31（guest 帳號啟用時） |  |
 | [CVE-2026-114607](../CVE-2026-114607) | better-auth | 3.1 9.1 (GHSA) | better-auth 1.4.0-beta.18 起，1.7.7 之前（須啟用 Magic Link 與 social 或 Generic OAuth 登入） | 1.7.7 |
+| [CVE-2026-134963](../CVE-2026-134963) | WPMasterToolKit | 3.1 9.9 (Patchstack) | WPMasterToolKit through 2.26.1 | 2.26.2 |
+| [CVE-2026-135930](../CVE-2026-135930) | Amelia | 3.1 9.1 (Patchstack) | Amelia through 2.4.14 | 2.4.15 |
+| [CVE-2026-135933](../CVE-2026-135933) | WebinarIgnition | 3.1 9.8 (Patchstack) | WebinarIgnition through 4.28.1 | 4.28.10 |
