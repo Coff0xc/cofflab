@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T15:47:40Z",
+  "generated": "2026-11-27T17:50:52Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 781,
+  "entries": 787,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -13845,6 +13845,204 @@
       ]
     },
     {
+      "id": "CVE-2026-124981",
+      "product": {
+        "en": "Mendix OIDC Provider",
+        "zh-TW": "Mendix OIDC Provider"
+      },
+      "score": "4.0 9.4 (Siemens); 3.1 8.7 (Siemens)",
+      "affected": "Mendix OIDC Provider < V4.3.0 (Mendix 9) / < V6.0.0 (Mendix 10/11)",
+      "fixed": "V4.3.0 (Mendix 9) / V6.0.0 (Mendix 10/11)",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.4,
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N",
+          "source": "Siemens"
+        },
+        {
+          "version": "3.1",
+          "score": 8.7,
+          "vector": "",
+          "source": "Siemens"
+        }
+      ],
+      "cwe": [
+        "CWE-347"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "siemens-advisory",
+          "upstream": "https://cert-portal.siemens.com/productcert/html/ssa-545865.html",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137957",
+      "product": {
+        "en": "n8n",
+        "zh-TW": "n8n"
+      },
+      "score": "4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck)",
+      "affected": "n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2",
+      "fixed": "1.123.96 / 2.47.6 / 2.48.3 / 3.2.2",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 5.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 8.2,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-73"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "vulncheck-advisory",
+          "upstream": "https://www.vulncheck.com/advisories/n8n-before-1.123.96-2.47.6-2.48.3-and-3.2.2-path-traversal-in-integration-nodes",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137959",
+      "product": {
+        "en": "n8n",
+        "zh-TW": "n8n"
+      },
+      "score": "4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck)",
+      "affected": "n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2",
+      "fixed": "1.123.96 / 2.47.6 / 2.48.3 / 3.2.2",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 5.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 8.2,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-862"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "vulncheck-advisory",
+          "upstream": "https://www.vulncheck.com/advisories/n8n-before-1.123.96-2.47.6-2.48.3-and-3.2.2-improper-authorization-in-workflow-activation-trigger-credentials",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137964",
+      "product": {
+        "en": "ToolJet",
+        "zh-TW": "ToolJet"
+      },
+      "score": "4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck)",
+      "affected": "ToolJet < 3.21.96-LTS",
+      "fixed": "3.21.96-LTS",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-94"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "rce"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "vulncheck-advisory",
+          "upstream": "https://www.vulncheck.com/advisories/tooljet-before-3.21.96-lts-command-injection-via-release-workflow-pull-request-title",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-85228",
       "product": {
         "en": "Amazon Deep Java Library (DJL)",
@@ -15375,6 +15573,56 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/BerriAI/litellm/security-advisories/GHSA-7hp6-4w63-5g45",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137953",
+      "product": {
+        "en": "Pydantic Deep",
+        "zh-TW": "Pydantic Deep"
+      },
+      "score": "4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck)",
+      "affected": "Pydantic Deep 0.2.18–< 0.4.0",
+      "fixed": "0.4.0",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.8,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 8.6,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-306"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "vulncheck-advisory",
+          "upstream": "https://www.vulncheck.com/advisories/pydantic-deep-0.2.18-before-0.4.0-missing-authentication-in-deepresearch-app",
           "license": "unknown"
         }
       ]
@@ -28296,6 +28544,49 @@
         {
           "id": "nvd-record",
           "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80485",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-123761",
+      "product": {
+        "en": "PowerDNS Authoritative Server",
+        "zh-TW": "PowerDNS Authoritative Server"
+      },
+      "score": "3.1 8.2 (Open-Xchange)",
+      "affected": "PowerDNS Authoritative Server 5.x ≤ 5.0.8 / 5.1.5",
+      "fixed": "5.0.9 / 5.1.6",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.2,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+          "source": "Open-Xchange"
+        }
+      ],
+      "cwe": [
+        "CWE-349"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "powerdns-advisory",
+          "upstream": "https://docs.powerdns.com/authoritative/security-advisories/powerdns-advisory-powerdns-2026-14.html",
           "license": "unknown"
         }
       ]

@@ -1,8 +1,8 @@
-# Web / CMS (282)
+# Web / CMS (286)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Web / CMS (282)
+### Web / CMS (286)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -288,3 +288,7 @@
 | [CVE-2026-134994](../CVE-2026-134994) | Revertix | 3.1 9.8 (Patchstack) | Revertix ≤ 1.0.3 | 1.0.4 |
 | [CVE-2026-135009](../CVE-2026-135009) | Media Library Assistant | 3.1 9.3 (Patchstack) | Media Library Assistant ≤ 3.43 | 3.44 |
 | [CVE-2026-135048](../CVE-2026-135048) | WP ERP | 3.1 8.8 (Patchstack) | WP ERP ≤ 2.0.0 | 2.0.1 |
+| [CVE-2026-124981](../CVE-2026-124981) | Mendix OIDC Provider | 4.0 9.4 (Siemens); 3.1 8.7 (Siemens) | Mendix OIDC Provider < V4.3.0 (Mendix 9) / < V6.0.0 (Mendix 10/11) | V4.3.0 (Mendix 9) / V6.0.0 (Mendix 10/11) |
+| [CVE-2026-137957](../CVE-2026-137957) | n8n | 4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck) | n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2 | 1.123.96 / 2.47.6 / 2.48.3 / 3.2.2 |
+| [CVE-2026-137959](../CVE-2026-137959) | n8n | 4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck) | n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2 | 1.123.96 / 2.47.6 / 2.48.3 / 3.2.2 |
+| [CVE-2026-137964](../CVE-2026-137964) | ToolJet | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ToolJet < 3.21.96-LTS | 3.21.96-LTS |

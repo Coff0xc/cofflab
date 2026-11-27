@@ -1,8 +1,8 @@
-# Network & Security (259)
+# Network & Security (260)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Network & Security (259)
+### Network & Security (260)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -265,3 +265,4 @@
 | [CVE-2026-80472](../CVE-2026-80472) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.1 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80477](../CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80485](../CVE-2026-80485) | Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-123761](../CVE-2026-123761) | PowerDNS Authoritative Server | 3.1 8.2 (Open-Xchange) | PowerDNS Authoritative Server 5.x ≤ 5.0.8 / 5.1.5 | 5.0.9 / 5.1.6 |
