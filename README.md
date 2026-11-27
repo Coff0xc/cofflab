@@ -12,7 +12,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (255)
+### Web / CMS (257)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -271,6 +271,8 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-134447](CVE-2026-134447) | Webmin | 4.0 5.3 (VulnCheck); 3.1 6.1 (GHSA) | Webmin through 2.670 | 未發佈（修復提交 b8e0462，僅在 master） |
 | [CVE-2026-134643](CVE-2026-134643) | Webmin | 4.0 8.3 (VulnCheck); 3.1 6.5 (GHSA) | Webmin through 2.670 | 未發佈（修復僅在 master，2.670 仍為最新版） |
 | [CVE-2026-73695](CVE-2026-73695) | Control Web Panel (CWP) | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck); 3.1 9.8 (GHSA) | Control Web Panel < 1.16 | 1.16 |
+| [CVE-2026-115867](CVE-2026-115867) | Database for Contact Form 7（WPForms、Elementor 表單外掛） | 3.1 9.8 (Wordfence) | Database for Contact Form 7 ≤ 1.5.5 | 1.5.6 |
+| [CVE-2026-137706](CVE-2026-137706) | Smart Portal | 4.0 9.4 (TWCERT); 3.1 9.9 (TWCERT) | Smart Portal（Administrative Information Portal），版本未明 | 無修復版本（截至 2026-11-27，TWCERT 僅建議聯繫廠商處理） |
 
 ### AI / LLM (30)
 
@@ -307,7 +309,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-59822](CVE-2026-59822) | LiteLLM | 4.0 8.8 (GHSA); 3.1 8.2 (NVD) | LiteLLM before 1.84.0 | 1.84.0 |
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 
-### Network & Security (248)
+### Network & Security (249)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -559,8 +561,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-133972](CVE-2026-133972) | HPE Networking Management Software (AirWave) | 3.1 9.8 (HPE) | AirWave 8.3.0.7 and below | 8.3.0.8 and above |
 | [CVE-2026-66784](CVE-2026-66784) | Submariner | 3.1 8.7 (Red Hat) | Submariner (default Pre-Shared Key mode) | unknown |
 | [CVE-2026-137077](CVE-2026-137077) | FreeRDP | 4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA) | FreeRDP <= 3.32.2 | 3.33.0 |
+| [CVE-2026-137704](CVE-2026-137704) | DWM-222W | 4.0 8.6 (TWCERT); 3.1 8.8 (TWCERT) | DWM-222W（hardware revision B1）firmware v1.02.00 及更早版本 | v1.02.04 |
 
-### Runtime / Framework / Browser (107)
+### Runtime / Framework / Browser (108)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -671,6 +674,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-47892](CVE-2026-47892) | Spring Framework（WebFlux） | 3.1 9.8 (GHSA) | Spring Framework 5.2.5.RELEASE–5.2.25.RELEASE、5.3.0–5.3.49、6.0.0–6.0.30、6.1.0–6.1.28、6.2.0–6.2.19、7.0.0–7.0.8 | 7.0.9（OSS）；5.2.26.RELEASE / 5.3.50 / 6.0.31 / 6.1.29 / 6.2.20（企業支援） |
 | [CVE-2026-63471](CVE-2026-63471) | fastapi-code-generator | 4.0 9.3 (GHSA) | fastapi-code-generator < 0.8.1 | 0.8.1 |
 | [CVE-2026-84939](CVE-2026-84939) | Apache FreeMarker | 3.1 9.1 (GHSA) | Apache FreeMarker 2.2.0–2.3.34 | 2.3.35 |
+| [CVE-2026-137550](CVE-2026-137550) | Frappe Framework | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Frappe Framework < 15.122.0；16.x < 16.50.0 | 15.122.0 / 16.50.0 |
 
 ### Database (22)
 

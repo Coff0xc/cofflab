@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T02:51:39Z",
+  "generated": "2026-11-27T04:47:37Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 737,
+  "entries": 741,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -12582,6 +12582,100 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-m2m4-55x5-x967",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-115867",
+      "product": {
+        "en": "Database for Contact Form 7（WPForms、Elementor 表單外掛）",
+        "zh-TW": "Database for Contact Form 7（WPForms、Elementor 表單外掛）"
+      },
+      "score": "3.1 9.8 (Wordfence)",
+      "affected": "Database for Contact Form 7 ≤ 1.5.5",
+      "fixed": "1.5.6",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-434"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "file-upload"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137706",
+      "product": {
+        "en": "Smart Portal",
+        "zh-TW": "Smart Portal"
+      },
+      "score": "4.0 9.4 (TWCERT); 3.1 9.9 (TWCERT)",
+      "affected": "Smart Portal（Administrative Information Portal），版本未明",
+      "fixed": "無修復版本（截至 2026-11-27，TWCERT 僅建議聯繫廠商處理）",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.4,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "TWCERT"
+        },
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "TWCERT"
+        }
+      ],
+      "cwe": [
+        "CWE-862"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
           "license": "unknown"
         }
       ]
@@ -26505,6 +26599,56 @@
       ]
     },
     {
+      "id": "CVE-2026-137704",
+      "product": {
+        "en": "DWM-222W",
+        "zh-TW": "DWM-222W"
+      },
+      "score": "4.0 8.6 (TWCERT); 3.1 8.8 (TWCERT)",
+      "affected": "DWM-222W（hardware revision B1）firmware v1.02.00 及更早版本",
+      "fixed": "v1.02.04",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 8.6,
+          "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "TWCERT"
+        },
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "TWCERT"
+        }
+      ],
+      "cwe": [
+        "CWE-798"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "hardcoded-credentials"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-57898",
       "product": {
         "en": "Eclipse BaSyx Java Server SDK",
@@ -31883,6 +32027,56 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-27j2-h3m2-8237",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-137550",
+      "product": {
+        "en": "Frappe Framework",
+        "zh-TW": "Frappe Framework"
+      },
+      "score": "4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck)",
+      "affected": "Frappe Framework < 15.122.0；16.x < 16.50.0",
+      "fixed": "15.122.0 / 16.50.0",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-862"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
           "license": "unknown"
         }
       ]
