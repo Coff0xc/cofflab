@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (252)
+### Web / CMS (255)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -268,6 +268,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-129245](CVE-2026-129245) | GeoServer | 4.0 9.2 (GHSA) | GeoServer <= 2.27.6, 2.28.0-2.28.5, 3.0.0-3.0.1 | 2.27.7, 2.28.6, 3.0.2 |
 | [CVE-2026-76904](CVE-2026-76904) | GeoServer | 3.1 9.8 (NVD) | GeoServer <= 2.27.5, 2.28.0-2.28.4, 3.0.0（PostGIS 12+ 圖層） | 2.27.6, 2.28.5, 3.0.1 |
 | [CVE-2026-134639](CVE-2026-134639) | Webmin | 4.0 9.2 (VulnCheck); 3.1 8.1 (VulnCheck) | Webmin through 2.670 (Windows setup.bat) | 無修復版本（截至 2026-11-26，2.670 仍為最新版） |
+| [CVE-2026-134447](CVE-2026-134447) | Webmin | 4.0 5.3 (VulnCheck); 3.1 6.1 (GHSA) | Webmin through 2.670 | 未發佈（修復提交 b8e0462，僅在 master） |
+| [CVE-2026-134643](CVE-2026-134643) | Webmin | 4.0 8.3 (VulnCheck); 3.1 6.5 (GHSA) | Webmin through 2.670 | 未發佈（修復僅在 master，2.670 仍為最新版） |
+| [CVE-2026-73695](CVE-2026-73695) | Control Web Panel (CWP) | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck); 3.1 9.8 (GHSA) | Control Web Panel < 1.16 | 1.16 |
 
 ### AI / LLM (30)
 
@@ -557,7 +560,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-66784](CVE-2026-66784) | Submariner | 3.1 8.7 (Red Hat) | Submariner (default Pre-Shared Key mode) | unknown |
 | [CVE-2026-137077](CVE-2026-137077) | FreeRDP | 4.0 8.3 (VulnCheck); 3.1 8.2 (GHSA) | FreeRDP <= 3.32.2 | 3.33.0 |
 
-### 運行環境 / 框架 / 瀏覽器 (103)
+### 運行環境 / 框架 / 瀏覽器 (107)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -664,6 +667,10 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-34486](CVE-2026-34486) | Apache Tomcat | 3.1 7.5 (Apache) | 11.0.0-M1 to 11.0.20; 10.1.0-M1 to 10.1.53; 9.0.13 to 9.0.116 | 11.0.21; 10.1.54; 9.0.117 |
 | [CVE-2026-66066](CVE-2026-66066) | Ruby on Rails | 4.0 9.5 (GHSA) | Active Storage < 7.2.3.2; >= 8.0.0.beta1, < 8.0.5.1; >= 8.1.0.beta1, < 8.1.3.1 | 7.2.3.2; 8.0.5.1; 8.1.3.1 |
 | [CVE-2026-77423](CVE-2026-77423) | JLine3 | 3.1 7.5 (GHSA) | org.jline:jline-builtins >= 3.0.0, < 3.30.15; < 4.3.1 | 3.30.15 / 4.3.1 |
+| [CVE-2026-118264](CVE-2026-118264) | labstack Echo | 4.0 9.1 (GHSA) | Echo v4 >= 4.0.0, < 4.16.1；Echo v5 >= 5.0.0, < 5.4.1 | v4.16.1 / v5.4.1 |
+| [CVE-2026-47892](CVE-2026-47892) | Spring Framework（WebFlux） | 3.1 9.8 (GHSA) | Spring Framework 5.2.5.RELEASE–5.2.25.RELEASE、5.3.0–5.3.49、6.0.0–6.0.30、6.1.0–6.1.28、6.2.0–6.2.19、7.0.0–7.0.8 | 7.0.9（OSS）；5.2.26.RELEASE / 5.3.50 / 6.0.31 / 6.1.29 / 6.2.20（企業支援） |
+| [CVE-2026-63471](CVE-2026-63471) | fastapi-code-generator | 4.0 9.3 (GHSA) | fastapi-code-generator < 0.8.1 | 0.8.1 |
+| [CVE-2026-84939](CVE-2026-84939) | Apache FreeMarker | 3.1 9.1 (GHSA) | Apache FreeMarker 2.2.0–2.3.34 | 2.3.35 |
 
 ### 資料庫 (22)
 
