@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T20:47:32Z",
+  "generated": "2026-11-27T23:54:38Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 791,
+  "entries": 795,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -14177,6 +14177,56 @@
       ]
     },
     {
+      "id": "CVE-2026-136692",
+      "product": {
+        "en": "XunRuiCMS",
+        "zh-TW": "XunRuiCMS"
+      },
+      "score": "3.1 7.3 (VulDB); 4.0 5.5 (VulDB)",
+      "affected": "XunRuiCMS ≤ 4.7.4",
+      "fixed": "",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "source": "VulDB"
+        },
+        {
+          "version": "4.0",
+          "score": 5.5,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P",
+          "source": "VulDB"
+        }
+      ],
+      "cwe": [
+        "CWE-434"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "file-upload"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "vuldb-advisory",
+          "upstream": "https://vuldb.com/vuln/443649",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-85228",
       "product": {
         "en": "Amazon Deep Java Library (DJL)",
@@ -15757,6 +15807,50 @@
         {
           "id": "vulncheck-advisory",
           "upstream": "https://www.vulncheck.com/advisories/pydantic-deep-0.2.18-before-0.4.0-missing-authentication-in-deepresearch-app",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-136441",
+      "product": {
+        "en": "DBHub",
+        "zh-TW": "DBHub"
+      },
+      "score": "3.0 9.8 (ZDI)",
+      "affected": "Bytebase DBHub（MCP server）",
+      "fixed": "",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "3.0",
+          "score": 9.8,
+          "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "ZDI"
+        }
+      ],
+      "cwe": [
+        "CWE-863"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "zdi-advisory",
+          "upstream": "https://www.zerodayinitiative.com/advisories/ZDI-26-1067/",
           "license": "unknown"
         }
       ]
@@ -28764,6 +28858,105 @@
         {
           "id": "nvd-record",
           "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80507",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-138003",
+      "product": {
+        "en": "TEW-751DR / TEW-733GR",
+        "zh-TW": "TEW-751DR / TEW-733GR"
+      },
+      "score": "4.0 9.0 (VulDB); 3.1 9.0 (VulDB)",
+      "affected": "TEW-751DR / TEW-733GR 1.03B01",
+      "fixed": "",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.0,
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P",
+          "source": "VulDB"
+        },
+        {
+          "version": "3.1",
+          "score": 9.0,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "VulDB"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "crash"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "qwq-nm-gist",
+          "upstream": "https://gist.github.com/qwq-nm/4120495fb8a560921da0f102fa90fa0d",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-138004",
+      "product": {
+        "en": "TEW-751DR / TEW-733GR",
+        "zh-TW": "TEW-751DR / TEW-733GR"
+      },
+      "score": "4.0 9.3 (VulDB); 3.1 10.0 (VulDB)",
+      "affected": "TEW-751DR / TEW-733GR 1.03B01",
+      "fixed": "",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P",
+          "source": "VulDB"
+        },
+        {
+          "version": "3.1",
+          "score": 10.0,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "VulDB"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "rce-local"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "rce"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "qwq-nm-gist",
+          "upstream": "https://gist.github.com/qwq-nm/251e7963d59f41beea2c7ad5ff7ca39f",
           "license": "unknown"
         }
       ]

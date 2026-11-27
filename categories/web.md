@@ -1,8 +1,8 @@
-# Web / CMS (289)
+# Web / CMS (290)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Web / CMS (289)
+### Web / CMS (290)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -295,3 +295,4 @@
 | [CVE-2026-135968](../CVE-2026-135968) | theMarketer | 3.1 8.6 (Patchstack) | theMarketer <= 1.5.9 | 1.6.0 |
 | [CVE-2026-136113](../CVE-2026-136113) | Hello Clever Gateway for WooCommerce | 3.1 9.3 (Patchstack) | Hello Clever Gateway for WooCommerce ≤ 1.8.4 |  |
 | [CVE-2026-136115](../CVE-2026-136115) | MemberPress Discord Addon | 3.1 9.8 (Patchstack) | MemberPress Discord Addon ≤ 1.1.5 |  |
+| [CVE-2026-136692](../CVE-2026-136692) | XunRuiCMS | 3.1 7.3 (VulDB); 4.0 5.5 (VulDB) | XunRuiCMS ≤ 4.7.4 |  |

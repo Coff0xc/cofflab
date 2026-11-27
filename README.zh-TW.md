@@ -13,9 +13,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (289)](categories/web.zh-TW.md)
-- [AI / LLM (32)](categories/ai.zh-TW.md)
-- [網路與安全 (261)](categories/net.zh-TW.md)
+- [Web / CMS (290)](categories/web.zh-TW.md)
+- [AI / LLM (33)](categories/ai.zh-TW.md)
+- [網路與安全 (263)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (111)](categories/runtime.zh-TW.md)
 - [資料庫 (22)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (76)](categories/os.zh-TW.md)
@@ -23,7 +23,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (289)
+### Web / CMS (290)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -316,8 +316,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-135968](CVE-2026-135968) | theMarketer | 3.1 8.6 (Patchstack) | theMarketer <= 1.5.9 | 1.6.0 |
 | [CVE-2026-136113](CVE-2026-136113) | Hello Clever Gateway for WooCommerce | 3.1 9.3 (Patchstack) | Hello Clever Gateway for WooCommerce ≤ 1.8.4 |  |
 | [CVE-2026-136115](CVE-2026-136115) | MemberPress Discord Addon | 3.1 9.8 (Patchstack) | MemberPress Discord Addon ≤ 1.1.5 |  |
+| [CVE-2026-136692](CVE-2026-136692) | XunRuiCMS | 3.1 7.3 (VulDB); 4.0 5.5 (VulDB) | XunRuiCMS ≤ 4.7.4 |  |
 
-### AI / LLM (32)
+### AI / LLM (33)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -353,8 +354,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 | [CVE-2026-114612](CVE-2026-114612) | LiteLLM | 3.1 9.9 (GHSA) | LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1 | 1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2 |
 | [CVE-2026-137953](CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
+| [CVE-2026-136441](CVE-2026-136441) | DBHub | 3.0 9.8 (ZDI) | Bytebase DBHub（MCP server） |  |
 
-### 網路與安全 (261)
+### 網路與安全 (263)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -619,6 +621,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-80485](CVE-2026-80485) | Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-123761](CVE-2026-123761) | PowerDNS Authoritative Server | 3.1 8.2 (Open-Xchange) | PowerDNS Authoritative Server 5.x ≤ 5.0.8 / 5.1.5 | 5.0.9 / 5.1.6 |
 | [CVE-2026-80507](CVE-2026-80507) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-138003](CVE-2026-138003) | TEW-751DR / TEW-733GR | 4.0 9.0 (VulDB); 3.1 9.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
+| [CVE-2026-138004](CVE-2026-138004) | TEW-751DR / TEW-733GR | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 
 ### 運行環境 / 框架 / 瀏覽器 (111)
 
