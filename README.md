@@ -13,9 +13,9 @@ Only publicly available material is collected. For authorized security research 
 <!-- categories:start -->
 ## Categories
 
-- [Web / CMS (286)](categories/web.md)
+- [Web / CMS (287)](categories/web.md)
 - [AI / LLM (32)](categories/ai.md)
-- [Network & Security (260)](categories/net.md)
+- [Network & Security (261)](categories/net.md)
 - [Runtime / Framework / Browser (111)](categories/runtime.md)
 - [Database (22)](categories/db.md)
 - [OS / System / DevOps (76)](categories/os.md)
@@ -23,7 +23,7 @@ Only publicly available material is collected. For authorized security research 
 
 ## Catalog
 
-### Web / CMS (286)
+### Web / CMS (287)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -313,6 +313,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-137957](CVE-2026-137957) | n8n | 4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck) | n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2 | 1.123.96 / 2.47.6 / 2.48.3 / 3.2.2 |
 | [CVE-2026-137959](CVE-2026-137959) | n8n | 4.0 5.3 (VulnCheck); 3.1 8.2 (VulnCheck) | n8n < 1.123.96 / < 2.47.6 / < 2.48.3 / < 3.2.2 | 1.123.96 / 2.47.6 / 2.48.3 / 3.2.2 |
 | [CVE-2026-137964](CVE-2026-137964) | ToolJet | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ToolJet < 3.21.96-LTS | 3.21.96-LTS |
+| [CVE-2026-135968](CVE-2026-135968) | theMarketer | 3.1 8.6 (Patchstack) | theMarketer <= 1.5.9 | 1.6.0 |
 
 ### AI / LLM (32)
 
@@ -351,7 +352,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-114612](CVE-2026-114612) | LiteLLM | 3.1 9.9 (GHSA) | LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1 | 1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2 |
 | [CVE-2026-137953](CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
 
-### Network & Security (260)
+### Network & Security (261)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -615,6 +616,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-80477](CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80485](CVE-2026-80485) | Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-123761](CVE-2026-123761) | PowerDNS Authoritative Server | 3.1 8.2 (Open-Xchange) | PowerDNS Authoritative Server 5.x ≤ 5.0.8 / 5.1.5 | 5.0.9 / 5.1.6 |
+| [CVE-2026-80507](CVE-2026-80507) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 
 ### Runtime / Framework / Browser (111)
 

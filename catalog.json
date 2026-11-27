@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T17:50:52Z",
-  "kev_catalog_version": "2026.11.25",
-  "entries": 787,
+  "generated": "2026-11-27T18:45:46Z",
+  "kev_catalog_version": "2026.11.27",
+  "entries": 789,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -10402,11 +10402,12 @@
       "review_executed": false,
       "repro": "Pending",
       "verified": false,
-      "kev": false,
+      "kev": true,
       "in_the_wild": false,
       "epss": null,
       "tags": [
-        "web"
+        "web",
+        "kev"
       ],
       "collected": "2026-11-26",
       "sources": [
@@ -12183,11 +12184,12 @@
       "review_executed": false,
       "repro": "Pending",
       "verified": false,
-      "kev": false,
+      "kev": true,
       "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "kev",
         "in-the-wild",
         "ssrf"
       ],
@@ -12228,11 +12230,12 @@
       "review_executed": false,
       "repro": "Pending",
       "verified": false,
-      "kev": false,
+      "kev": true,
       "in_the_wild": true,
       "epss": null,
       "tags": [
         "web",
+        "kev",
         "in-the-wild",
         "auth-bypass"
       ],
@@ -14038,6 +14041,50 @@
         {
           "id": "vulncheck-advisory",
           "upstream": "https://www.vulncheck.com/advisories/tooljet-before-3.21.96-lts-command-injection-via-release-workflow-pull-request-title",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-135968",
+      "product": {
+        "en": "theMarketer",
+        "zh-TW": "theMarketer"
+      },
+      "score": "3.1 8.6 (Patchstack)",
+      "affected": "theMarketer <= 1.5.9",
+      "fixed": "1.6.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.6,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+          "source": "Patchstack"
+        }
+      ],
+      "cwe": [
+        "CWE-434"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "file-upload"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "patchstack-advisory",
+          "upstream": "https://patchstack.com/database/wordpress/plugin/themarketer/vulnerability/wordpress-themarketer-plugin-1-5-9-arbitrary-file-upload-vulnerability",
           "license": "unknown"
         }
       ]
@@ -28587,6 +28634,49 @@
         {
           "id": "powerdns-advisory",
           "upstream": "https://docs.powerdns.com/authoritative/security-advisories/powerdns-advisory-powerdns-2026-14.html",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-80507",
+      "product": {
+        "en": "Dell Secure Connect Gateway - Virtual Edition",
+        "zh-TW": "Dell Secure Connect Gateway - Virtual Edition"
+      },
+      "score": "3.1 8.4 (Dell)",
+      "affected": "Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16",
+      "fixed": "5.36.00.16",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.4,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Dell"
+        }
+      ],
+      "cwe": [
+        "CWE-122"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80507",
           "license": "unknown"
         }
       ]

@@ -1,8 +1,8 @@
-# 網路與安全（260）
+# 網路與安全（261）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### 網路與安全 (260)
+### 網路與安全 (261)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -266,3 +266,4 @@
 | [CVE-2026-80477](../CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80485](../CVE-2026-80485) | Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-123761](../CVE-2026-123761) | PowerDNS Authoritative Server | 3.1 8.2 (Open-Xchange) | PowerDNS Authoritative Server 5.x ≤ 5.0.8 / 5.1.5 | 5.0.9 / 5.1.6 |
+| [CVE-2026-80507](../CVE-2026-80507) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
