@@ -107,8 +107,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-71499](CVE-2026-71499) | cf-manager | 3.1 10 (GHSA) | cf-manager <1.1.2 | 1.1.2 |
 | [CVE-2026-77367](CVE-2026-77367) | Daptin | 3.1 9.4 (GHSA) | Daptin <0.12.30 | 0.12.30 |
 | [CVE-2026-123058](CVE-2026-123058) | JTL-Shop | 4.0 9.2 (ENISA); 3.1 9 (ENISA) | JTL-Shop 5.5.0-5.5.4 / 5.6.0-5.6.5 / 5.7.0-5.7.5 / 5.8.0-5.8.3 | 5.5.5 / 5.6.6 / 5.7.6 / 5.8.4 |
-| [CVE-2026-110009](CVE-2026-110009) | Unzer Payments | 3.1 9.8 (Wordfence) | Unzer Payments <=2.2.1 | 无已知补丁（Wordfence 2026-11-18：Patched? No） |
-| [CVE-2026-110811](CVE-2026-110811) | Trust Payments Gateway for WooCommerce (JavaScript Library) | 3.1 9.8 (Wordfence) | Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8 | 无已知补丁（Wordfence 2026-11-18：Patched? No） |
+| [CVE-2026-110009](CVE-2026-110009) | Unzer Payments | 3.1 9.8 (Wordfence) | Unzer Payments <=2.2.1 | 無已知補丁（Wordfence 2026-11-18：Patched? No） |
+| [CVE-2026-110811](CVE-2026-110811) | Trust Payments Gateway for WooCommerce (JavaScript Library) | 3.1 9.8 (Wordfence) | Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8 | 無已知補丁（Wordfence 2026-11-18：Patched? No） |
 | [CVE-2026-124990](CVE-2026-124990) | Masteriyo LMS – LMS Course Builder, Quizzes & Certificates | 3.1 9.8 (Wordfence) | Masteriyo LMS <=3.5.1 | 3.5.2 |
 | [CVE-2026-130735](CVE-2026-130735) | Grav | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Grav 2.0.0 to <2.2.18 | 2.2.18 |
 | [CVE-2026-55506](CVE-2026-55506) | Wavelog | 3.1 9.6 (GHSA) | Wavelog <2.5 | 2.5 |
@@ -217,7 +217,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-135175](CVE-2026-135175) | ZITADEL | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | ZITADEL 4.19.5–4.20.2 | 4.20.3 |
 | [CVE-2026-133335](CVE-2026-133335) | VirtueMart | 4.0 9.2 (Joomla) | VirtueMart extension 4.0.0-4.8.7 | 4.8.8 |
 | [CVE-2026-129968](CVE-2026-129968) | LiteSpeed Cache Plugin for PrestaShop | 4.0 9.3 (CERT Polska) | LiteSpeed Cache Plugin for PrestaShop (litespeedcache module) before 1.6.2 | 1.6.2 (released 2026-10-30) |
-| [CVE-2026-35273](CVE-2026-35273) | Oracle PeopleSoft Enterprise PeopleTools | 3.1 9.8 (Oracle) | PeopleSoft Enterprise PeopleTools 8.61, 8.62 | Oracle Security Alert 补丁（2026-06-10） |
+| [CVE-2026-35273](CVE-2026-35273) | Oracle PeopleSoft Enterprise PeopleTools | 3.1 9.8 (Oracle) | PeopleSoft Enterprise PeopleTools 8.61, 8.62 | Oracle Security Alert 補丁（2026-06-10） |
 | [CVE-2026-123214](CVE-2026-123214) | Joomla! CMS | 4.0 9.2 (Joomla) | Joomla! CMS 4.0.0–5.4.10, 6.0.0–6.2.0 | 5.4.11 / 6.2.1 |
 | [CVE-2026-134838](CVE-2026-134838) | Weblate | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Weblate before 2026.11 | 2026.11 |
 | [CVE-2026-135163](CVE-2026-135163) | Okou | 4.0 9.1 (VulnCheck); 3.1 7.4 (VulnCheck) | Okou API before 1.762.0 | 1.762.0 |
@@ -328,13 +328,13 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-123007](CVE-2026-123007) | F5 NGINX HTTP/2 | 4.0 9.2 (F5); 3.1 8.1 (F5) | NGINX Open Source 1.9.5–1.30.6 and 1.31.0–1.31.8 with HTTP/2 enabled | Open Source 1.30.7 / 1.31.9; NGINX Plus 37.3.0.1 / 37.0.8.1 |
 | [CVE-2026-129287](CVE-2026-129287) | N-able N-central | 4.0 8.3 (N-able (CNA)) | before 2026.4.1 Hotfix 3 | 2026.4.1 Hotfix 3 (build 2026.4.1.39) |
 | [CVE-2026-119958](CVE-2026-119958) | Windows LDAP | 3.1 9.8 (Microsoft) | Windows 10 1607–Windows 11 26H2、Windows Server 2016–2025 | 2026 年 11 月安全更新 |
-| [CVE-2026-123039](CVE-2026-123039) | Check Point Gaia OS | 3.1 7.8 (Check Point) | Gaia OS R81–R82.20（Quantum 网关、Force 防火墙、安全管理/日志服务器、多域、Maestro） | Jumbo Hotfix：R82.20 Take 14、R82.10 Take 52、R82 Take 132、R81.20 Take 174 |
-| [CVE-2026-123158](CVE-2026-123158) | OpenSSH sshd | 3.1 8.1 (MITRE) | OpenSSH < 10.6p2（Linux + musl libc 且无 PAM，如 Alpine Linux） | OpenSSH 10.6p2 |
+| [CVE-2026-123039](CVE-2026-123039) | Check Point Gaia OS | 3.1 7.8 (Check Point) | Gaia OS R81–R82.20（Quantum 網關、Force 防火牆、安全管理/日誌服務器、多域、Maestro） | Jumbo Hotfix：R82.20 Take 14、R82.10 Take 52、R82 Take 132、R81.20 Take 174 |
+| [CVE-2026-123158](CVE-2026-123158) | OpenSSH sshd | 3.1 8.1 (MITRE) | OpenSSH < 10.6p2（Linux + musl libc 且無 PAM，如 Alpine Linux） | OpenSSH 10.6p2 |
 | [CVE-2026-123218](CVE-2026-123218) | IBM Aspera Faspex 5 | 3.1 9.8 (IBM) | Faspex 5.0.0–5.0.19 | 5.0.19 PL1（Fix Pack 1） |
-| [CVE-2026-111560](CVE-2026-111560) | Barracuda ESG / ADC / WAF / WSG | 4.0 8.6 (Mandiant); 3.1 7.2 (NVD) | ESG ≤ 9.4.0.27；ADC ≤ 6.4.0；WAF ≤ 11.0.1；WSG ≤ 16.1.100.100；BMA ≤ 5.5.4.0；WCC ≤ 2.2.1 | ESG 9.4.0.030；其余产品按厂商通告补丁升级 |
+| [CVE-2026-111560](CVE-2026-111560) | Barracuda ESG / ADC / WAF / WSG | 4.0 8.6 (Mandiant); 3.1 7.2 (NVD) | ESG ≤ 9.4.0.27；ADC ≤ 6.4.0；WAF ≤ 11.0.1；WSG ≤ 16.1.100.100；BMA ≤ 5.5.4.0；WCC ≤ 2.2.1 | ESG 9.4.0.030；其餘產品按廠商通告補丁升級 |
 | [CVE-2026-116606](CVE-2026-116606) | Barracuda ESG | 4.0 9.3 (Mandiant); 3.1 9.8 (NVD) | ESG < 9.4.0.030 | 9.4.0.030 |
 | [CVE-2026-19868](CVE-2026-19868) | SonicWall SonicOS | 3.1 7.5 (CISA-ADP); 3.1 7.1 (SonicWall) | Gen7 7.3.3-7015 及更早；Gen8 8.2.2-8015 及更早 | Gen7 7.3.4-7013 及更高；Gen8 8.2.3-8015 及更高 |
-| [CVE-2026-129271](CVE-2026-129271) | N-able N-central Patch Management | 4.0 8.5 (N-able) | Patch Management Component < 2.14.4.5829 | 2.14.4.5829（随 N-central 2026.4.1 Hotfix 3，build 2026.4.1.39，2026-11-16） |
+| [CVE-2026-129271](CVE-2026-129271) | N-able N-central Patch Management | 4.0 8.5 (N-able) | Patch Management Component < 2.14.4.5829 | 2.14.4.5829（隨 N-central 2026.4.1 Hotfix 3，build 2026.4.1.39，2026-11-16） |
 | [CVE-2026-129280](CVE-2026-129280) | N-able N-central | 4.0 9.3 (N-able) | N-central < 2026.4.1 HF3 | 2026.4.1 HF3（build 2026.4.1.39，2026-11-16） |
 | [CVE-2026-114713](CVE-2026-114713) | UnrealIRCd | 3.1 8.6 (GHSA) | 6.0.0–6.2.7 (5.x EOL also affected) | 6.2.7.1 / hotfix bundle-20261107 |
 | [CVE-2026-116779](CVE-2026-116779) | FreeSWITCH | 3.1 9.8 (GHSA) | <= 1.11.2 | 1.11.3 (adds enable-chat-api-proto, off by default) |
@@ -430,7 +430,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-132141](CVE-2026-132141) | DrayTek Vigor2960 | 4.0 9.4 (VulDB); 3.1 9.9 (VulDB) | Vigor2960 1.5.1.0-1.5.1.6 | 1.5.1.7 |
 | [CVE-2026-131253](CVE-2026-131253) | Splunk SOAR | 3.1 9.9 (Splunk) | Splunk SOAR <8.8.0 | 8.8.0 |
 | [CVE-2026-132807](CVE-2026-132807) | UniFi Access Application | 3.1 9 (Ubiquiti) | UniFi Access Application <4.3.24 | 4.3.24 |
-| [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） |
+| [CVE-2026-123637](CVE-2026-123637) | BIG-IP | 4.0 9.3 (F5); 3.1 9.8 (F5) | BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3 | 工程熱修復 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937） |
 | [CVE-2026-104099](CVE-2026-104099) | Fabio | 3.1 9.1 (GHSA) | Fabio <1.7.3 | 1.7.3 |
 | [CVE-2026-131202](CVE-2026-131202) | Splunk Enterprise Security | 3.1 9.1 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 |
 | [CVE-2026-131199](CVE-2026-131199) | Splunk Enterprise Security | 3.1 8.8 (Splunk) | Splunk Enterprise Security <8.7.0 | 8.7.0 |
@@ -496,7 +496,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-69899](CVE-2026-69899) | Azure DevTest Labs | 3.1 9.1 (Microsoft) | Azure DevTest Labs |  |
 | [CVE-2026-76418](CVE-2026-76418) | Cisco Secure Firewall ASA / FTD (Remote Access SSL VPN) | 3.1 8.6 (Cisco) | Cisco Secure Firewall ASA Software and Cisco Secure Firewall Threat Defense (FTD) Software with SSL remote access VPN enabled and secondary authentication configured on a tunnel group | ASA 9.16.4.104 / 9.18.4.96 / 9.20.4.50 / 9.22.3.200 / 9.23.1.48 / 9.24.1.27 / 9.24.10.1; FTD 7.0.11 / 7.2.13 / 7.4.9 / 7.6.7 / 7.7.14 / 10.0.3 / 10.1.1 |
 | [CVE-2026-105304](CVE-2026-105304) | Zoraxy | 4.0 7.7 (JPCERT); 3.0 8.6 (JPCERT) | Zoraxy <= v3.3.5-rc1 | v3.3.5-rc2 |
-| [CVE-2026-121613](CVE-2026-121613) | ifm Camera Products | 4.0 9.3 (CERT VDE); 3.1 9.8 (CERT VDE) | ifm 相机产品 O3D/O3X 系列（固件 1.20.6381 / 1.71.10735 / 1.90.107 / 1.90.119 / 2.0.10412 / 2.10.16，按型号） |  |
+| [CVE-2026-121613](CVE-2026-121613) | ifm Camera Products | 4.0 9.3 (CERT VDE); 3.1 9.8 (CERT VDE) | ifm 相機產品 O3D/O3X 系列（固件 1.20.6381 / 1.71.10735 / 1.90.107 / 1.90.119 / 2.0.10412 / 2.10.16，按型號） |  |
 | [CVE-2026-80466](CVE-2026-80466) | WAGO Web-Based Management | 4.0 8.7 (CERT VDE); 3.1 8.8 (CERT VDE) | WAGO CC100 / PFC100 G2 / PFC200 G2 / TP600 / Edge Controller / WP400（wago_os_linux < 4.10.0） | 4.10.0 |
 | [CVE-2026-86312](CVE-2026-86312) | Apache Solr | 3.1 8.8 (Apache) | Apache Solr 9.0.0 through before 9.11.0 (9.x) and before 10.1.0 (10.x) | 9.11.0 / 10.1.0 |
 | [CVE-2026-134753](CVE-2026-134753) | dsniff | 4.0 8.3 (VulnCheck) | dsniff (hackerschoice/dsniff fork), decode_sniffer.c decode_sniffer() |  |
@@ -575,7 +575,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | --- | --- | --- | --- | --- |
 | [CVE-2026-57898](CVE-2026-57898) | Eclipse BaSyx Java Server SDK | 3.1 9.0 (Eclipse) | Eclipse BaSyx Java Server SDK 2.0.0-milestone-05–2.0.0-milestone-12 (MongoDB backend) | 2.0.0-milestone-13 |
 | [CVE-2026-114938](CVE-2026-114938) | OpenJDK Base64（Java4Shell） | 4.0 9.2 (Calif); 3.1 8.1 (Oracle); 3.1 9.8 (Red Hat) | OpenJDK 17.0.6 and later on x86-64 with AVX-512 VBMI (17/21/25/27 lines; Oracle also lists Java 8 Performance Pack 8u511b33-perf) | vendor November 2026 CPU / OpenJDK 17.0.21.1, 21.0.13.1 and equivalent distributor builds |
-| [CVE-2026-90436](CVE-2026-90436) | Apache Axis 1.x | 3.1 9.8 (CISA-ADP) | Apache Axis 1.x through 1.4 | 无修复版本（EOL；修复仅存于上游 commit 41f3b4e8） |
+| [CVE-2026-90436](CVE-2026-90436) | Apache Axis 1.x | 3.1 9.8 (CISA-ADP) | Apache Axis 1.x through 1.4 | 無修復版本（EOL；修復僅存於上游 commit 41f3b4e8） |
 | [CVE-2024-27834](CVE-2024-27834) | WebKit (Apple) | 3.1 5.5 (NVD) | Safari < 17.5；iOS/iPadOS < 16.7.8 及 17.x < 17.5；macOS < 14.5；tvOS < 17.5；watchOS < 10.5；WebKitGTK / WPE WebKit < 2.44.2 | Safari 17.5；iOS 16.7.8 / iOS 17.5；iPadOS 16.7.8 / iPadOS 17.5；macOS Sonoma 14.5；tvOS 17.5；watchOS 10.5 |
 | [CVE-2026-126187](CVE-2026-126187) | React Server Components / Next.js | 4.0 9.5 (GHSA) | react-server-dom-* 19.0.0–19.3.0; Next.js 16.0.0–16.4.0 (App Router + Cache Components) | react-server-dom-* 19.0.9 / 19.1.10 / 19.2.9 / 19.3.1; Next.js 16.4.1 |
 | [CVE-2026-125350](CVE-2026-125350) | Google Chrome | 3.1 8.8 (NVD) | Chrome < 157.0.8103.50 | 157.0.8103.50 / .51 (Windows, macOS), 157.0.8103.50 (Linux, Android), Extended Stable 156.0.8078.96 |
@@ -716,7 +716,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-65094](CVE-2026-65094) | NVIDIA VIRTIO-Net for BlueField | 3.1 9.0 (NVIDIA) | NVIDIA VIRTIO-Net GA <25.10.6; LTS25 <25.10.2; LTS24 <24.10.50; LTS23 1.7.21 and older (BlueField-3) | 25.10.6 (GA) / 25.10.2 (LTS25) / 24.10.50 (LTS24) / 23.10.23 (LTS23) |
 | [CVE-2026-74127](CVE-2026-74127) | AMD Platform Security Processor (PSP) boot ROM | 4.0 9.4 (AMD) | AMD Zen 1 / Zen+ processors (PSP boot ROM) | No fix planned (AMD: boot ROM immutable) |
 | [CVE-2024-10441](CVE-2024-10441) | Synology DSM/BSM synoplugind | 3.1 9.8 (upstream PoC README (unverified against vendor advisory in this ingest)) | DSM 6.2.4–7.2.2 and BSM/DSMUC branches before the 2024-11 smallfix | DSM 7.2.2-72806-1 / 7.2.1-69057-6 / 7.2-64570-4 / 7.1.1-42962-7 / 6.2.4-25556-8; BeeStation OS 1.1-65374; DSMUC 3.1.4-23079 |
-| [CVE-2026-124194](CVE-2026-124194) | Microsoft Outlook | 3.1 6.5 (Microsoft) | Microsoft 365 Apps 版经典 Outlook、Office LTSC 2021/2024（2026-11-10 前构建） | 2026 年 11 月 10 日 Patch Tuesday Office 更新 |
+| [CVE-2026-124194](CVE-2026-124194) | Microsoft Outlook | 3.1 6.5 (Microsoft) | Microsoft 365 Apps 版經典 Outlook、Office LTSC 2021/2024（2026-11-10 前構建） | 2026 年 11 月 10 日 Patch Tuesday Office 更新 |
 | [CVE-2026-115731](CVE-2026-115731) | Puppet / OpenVox Server | 4.0 9.4 (Perforce); 3.1 9.9 (NVD) | Puppet Enterprise 2023.8.0–<2023.8.13、2025.0.0–<2025.12.1、2026.0.0–<2026.0.1；OpenVox Server ≤ 9.1.0 / ≤ 8.17.0；OpenVox Agent ≤ 9.2.0 / ≤ 8.31.1 | Puppet Enterprise 2023.8.13 / 2025.12.1 / 2026.0.1；OpenVox Server 9.2.0 / 8.18.0；OpenVox Agent 9.3.0 / 8.32.0；Puppet Core 9.1.3 / 8.22.2 |
 | [CVE-2026-98432](CVE-2026-98432) | Linux 内核 TCP | 3.1 9.8 (Linux kernel) | Linux kernel since 4.4 (IPv4 TCP) | 6.6.159 and later stable releases (two kfree_rcu() calls) |
 | [CVE-2026-76954](CVE-2026-76954) | Synology DSM 认证 API | 3.1 9.8 (Synology) | DSM <= 7.2.1-69057-12, 7.2.2-72806, 7.3.2-86009, 7.4.1-90080 | 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, 7.4.1-90080-1 (Synology-SA-26:19) |
@@ -764,16 +764,16 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-130783](CVE-2026-130783) | Incus | 4.0 9.3 (VulnCheck); 3.1 9.6 (VulnCheck) | Incus <7.6.0 | 7.6.0 |
 | [CVE-2026-126088](CVE-2026-126088) | OpenPLC Runtime | 4.0 9.2 (CISA); 3.1 8.1 (CISA) | OpenPLC Runtime <=4.2.4 | 4.3.0 |
 | [CVE-2026-111760](CVE-2026-111760) | Git | 3.1 8.0 (GHSA) | Git 2.50.2、2.51.3、2.52.1、2.53.1、2.54.1、2.55.1、2.56.1 之前版本 | 2.50.2、2.51.3、2.52.1、2.53.1、2.54.1、2.55.1、2.56.1 |
-| [CVE-2026-97631](CVE-2026-97631) | EDK II | 4.0 9.5 (TianoCore); 3.1 8.8 (Red Hat) | TianoCore EDK II NetworkPkg UefiPxeBcDxe（edk2-stable202608 及更早） | 上游主线 PR #13200/#13302（2026-10-15 合并）；Red Hat RHSA-2026:96240 |
+| [CVE-2026-97631](CVE-2026-97631) | EDK II | 4.0 9.5 (TianoCore); 3.1 8.8 (Red Hat) | TianoCore EDK II NetworkPkg UefiPxeBcDxe（edk2-stable202608 及更早） | 上游主線 PR #13200/#13302（2026-10-15 合併）；Red Hat RHSA-2026:96240 |
 | [CVE-2026-120382](CVE-2026-120382) | Synology DiskStation Manager | 3.1 9.8 (Synology) | DSM before 7.1.1-42962-10 / 7.2.1-69057-14 / 7.2.2-72806-11 / 7.3.2-86009-6 / 7.4.1-90080-2 | 7.4.1-90080-2 / 7.3.2-86009-6 |
-| [CVE-2026-77873](CVE-2026-77873) | Lenovo System Update | 4.0 7.0 (Lenovo); 3.1 7.3 (Lenovo) | Lenovo System Update for Windows, tested on 5.08.04.85 | Lenovo System Update 修复版本（LEN-232748） |
-| [CVE-2026-77882](CVE-2026-77882) | Lenovo System Update | 4.0 8.5 (Lenovo); 3.1 7.8 (Lenovo) | Lenovo System Update for Windows, tested on 5.08.04.85 | Lenovo System Update 修复版本（LEN-232748） |
-| [CVE-2026-99320](CVE-2026-99320) | Linux kernel (IPv6 raw sockets) | 3.1 7.0 (Linux kernel) | Linux kernel with VRF IPv6 output (exploit tuned to kernel 6.1.0-staleroute config) | 上游修复提交 66dfb2cacda7 |
-| [CVE-2026-99491](CVE-2026-99491) | Linux kernel (wacom HID driver) | unknown | Linux kernel with wacom HID driver (Android 5.15.178, Redmi K70 vermeer) | 上游修复提交 ef32877368a7（6.12 backport 1178927ffa54） |
+| [CVE-2026-77873](CVE-2026-77873) | Lenovo System Update | 4.0 7.0 (Lenovo); 3.1 7.3 (Lenovo) | Lenovo System Update for Windows, tested on 5.08.04.85 | Lenovo System Update 修復版本（LEN-232748） |
+| [CVE-2026-77882](CVE-2026-77882) | Lenovo System Update | 4.0 8.5 (Lenovo); 3.1 7.8 (Lenovo) | Lenovo System Update for Windows, tested on 5.08.04.85 | Lenovo System Update 修復版本（LEN-232748） |
+| [CVE-2026-99320](CVE-2026-99320) | Linux kernel (IPv6 raw sockets) | 3.1 7.0 (Linux kernel) | Linux kernel with VRF IPv6 output (exploit tuned to kernel 6.1.0-staleroute config) | 上游修復提交 66dfb2cacda7 |
+| [CVE-2026-99491](CVE-2026-99491) | Linux kernel (wacom HID driver) | unknown | Linux kernel with wacom HID driver (Android 5.15.178, Redmi K70 vermeer) | 上游修復提交 ef32877368a7（6.12 backport 1178927ffa54） |
 | [CVE-2026-41709](CVE-2026-41709) | VMware ESX | 3.1 2.7 (Broadcom) | VMware ESX 9.1.x.x / 9.0.x.x / 8.0; VMware Cloud Foundation 9.1.x.x / 9.0.x.x / 5.x; VMware Telco Cloud Platform 5.0.x / 5.1.x | ESXi-9.1.0.0-25370933 / ESXi-9.0.2.0100-25595025 / ESXi80U3j-25429389; VCF 5.x 5.2.4; TCP KB449886 (VMSA-2026-0006) |
-| [CVE-2026-46300](CVE-2026-46300) | Linux kernel (net: skbuff) | 3.1 7.8 (NVD) | Linux kernel：skb_try_coalesce() 合并含共享 frag 的 skb 时丢失 SKBFL_SHARED_FRAG 标记的版本（修复前） | 上游修复提交 2f2b16022a2e（net: skbuff: preserve shared-frag marker during coalescing，stable 各分支另有 backport，见 NVD 补丁链接） |
+| [CVE-2026-46300](CVE-2026-46300) | Linux kernel (net: skbuff) | 3.1 7.8 (NVD) | Linux kernel：skb_try_coalesce() 合併含共享 frag 的 skb 時丟失 SKBFL_SHARED_FRAG 標記的版本（修復前） | 上游修復提交 2f2b16022a2e（net: skbuff: preserve shared-frag marker during coalescing，stable 各分支另有 backport，見 NVD 補丁鏈接） |
 | [CVE-2026-93585](CVE-2026-93585) | EasyVista EV Reach Client Agent | 3.1 8.8 (OTRS) | EV Reach Console < 11.0.14.1127 / Agent < 11.0.16 / Server < 11.0.14.1274 | 11.0.14.1127 / 11.0.16 / 11.0.14.1274 |
-| [CVE-2026-59309](CVE-2026-59309) | VMware vCenter Server | 3.1 9.8 (VMware) | vCenter 8.0 prior to 8.0 U3k；9.0.x prior to 9.0.2.0100；9.1.x prior to 9.1.0.0200；6.x/7.x 亦受影响且无补丁 | 8.0 U3k；9.0.2.0100；9.1.0.0200 |
+| [CVE-2026-59309](CVE-2026-59309) | VMware vCenter Server | 3.1 9.8 (VMware) | vCenter 8.0 prior to 8.0 U3k；9.0.x prior to 9.0.2.0100；9.1.x prior to 9.1.0.0200；6.x/7.x 亦受影響且無補丁 | 8.0 U3k；9.0.2.0100；9.1.0.0200 |
 | [CVE-2026-88235](CVE-2026-88235) | Windows TrustedInstaller (CBS) | 3.1 7.8 (Microsoft) | Windows (TrustedInstaller.exe / CBS Session COM) |  |
 | [CVE-2026-98260](CVE-2026-98260) | Linux kernel (posix-cpu-timers) | 3.1 7.8 (NVD) | Linux kernel 6.12.38 / 6.12.58 (Android 16, Honor MagicPad3 Pro) |  |
 | [CVE-2026-123903](CVE-2026-123903) | VMware vCenter | 3.1 9.8 (Broadcom) | VMware vCenter 9.1.x, 9.0.x, 8.0, 7.0, 5.x（VMware Directory Service，vmdir） | 9.1.2 / 9.0.2.0300 / 8.0 U3m / 5.2.5；7.0 需聯繫 Broadcom 支援 |

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T05:46:19Z",
+  "generated": "2026-11-27T05:51:55Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 747,
   "items": [
@@ -4585,7 +4585,7 @@
       },
       "score": "3.1 9.8 (Wordfence)",
       "affected": "Unzer Payments <=2.2.1",
-      "fixed": "无已知补丁（Wordfence 2026-11-18：Patched? No）",
+      "fixed": "無已知補丁（Wordfence 2026-11-18：Patched? No）",
       "category": "web",
       "cvss": [
         {
@@ -4633,7 +4633,7 @@
       },
       "score": "3.1 9.8 (Wordfence)",
       "affected": "Trust Payments Gateway for WooCommerce (JavaScript Library) <=1.3.8",
-      "fixed": "无已知补丁（Wordfence 2026-11-18：Patched? No）",
+      "fixed": "無已知補丁（Wordfence 2026-11-18：Patched? No）",
       "category": "web",
       "cvss": [
         {
@@ -10024,7 +10024,7 @@
       },
       "score": "3.1 9.8 (Oracle)",
       "affected": "PeopleSoft Enterprise PeopleTools 8.61, 8.62",
-      "fixed": "Oracle Security Alert 补丁（2026-06-10）",
+      "fixed": "Oracle Security Alert 補丁（2026-06-10）",
       "category": "web",
       "cvss": [
         {
@@ -14929,7 +14929,7 @@
         "zh-TW": "Check Point Gaia OS"
       },
       "score": "3.1 7.8 (Check Point)",
-      "affected": "Gaia OS R81–R82.20（Quantum 网关、Force 防火墙、安全管理/日志服务器、多域、Maestro）",
+      "affected": "Gaia OS R81–R82.20（Quantum 網關、Force 防火牆、安全管理/日誌服務器、多域、Maestro）",
       "fixed": "Jumbo Hotfix：R82.20 Take 14、R82.10 Take 52、R82 Take 132、R81.20 Take 174",
       "category": "net",
       "cvss": [
@@ -14983,7 +14983,7 @@
         "zh-TW": "OpenSSH sshd"
       },
       "score": "3.1 8.1 (MITRE)",
-      "affected": "OpenSSH < 10.6p2（Linux + musl libc 且无 PAM，如 Alpine Linux）",
+      "affected": "OpenSSH < 10.6p2（Linux + musl libc 且無 PAM，如 Alpine Linux）",
       "fixed": "OpenSSH 10.6p2",
       "category": "net",
       "cvss": [
@@ -15093,7 +15093,7 @@
       },
       "score": "4.0 8.6 (Mandiant); 3.1 7.2 (NVD)",
       "affected": "ESG ≤ 9.4.0.27；ADC ≤ 6.4.0；WAF ≤ 11.0.1；WSG ≤ 16.1.100.100；BMA ≤ 5.5.4.0；WCC ≤ 2.2.1",
-      "fixed": "ESG 9.4.0.030；其余产品按厂商通告补丁升级",
+      "fixed": "ESG 9.4.0.030；其餘產品按廠商通告補丁升級",
       "category": "net",
       "cvss": [
         {
@@ -15260,7 +15260,7 @@
       },
       "score": "4.0 8.5 (N-able)",
       "affected": "Patch Management Component < 2.14.4.5829",
-      "fixed": "2.14.4.5829（随 N-central 2026.4.1 Hotfix 3，build 2026.4.1.39，2026-11-16）",
+      "fixed": "2.14.4.5829（隨 N-central 2026.4.1 Hotfix 3，build 2026.4.1.39，2026-11-16）",
       "category": "net",
       "cvss": [
         {
@@ -20024,7 +20024,7 @@
       },
       "score": "4.0 9.3 (F5); 3.1 9.8 (F5)",
       "affected": "BIG-IP APM 21.1.0 / 17.5.0-17.5.1 / 17.1.0-17.1.3",
-      "fixed": "工程热修复 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937）",
+      "fixed": "工程熱修復 BIGIP-21.1.0.4.0.19.3-ENG3 / BIGIP-17.5.1.11.0.61.12-ENG3 / BIGIP-17.1.3.7.0.21.4-ENG3（F5 K000163937）",
       "category": "net",
       "cvss": [
         {
@@ -23267,7 +23267,7 @@
         "zh-TW": "ifm Camera Products"
       },
       "score": "4.0 9.3 (CERT VDE); 3.1 9.8 (CERT VDE)",
-      "affected": "ifm 相机产品 O3D/O3X 系列（固件 1.20.6381 / 1.71.10735 / 1.90.107 / 1.90.119 / 2.0.10412 / 2.10.16，按型号）",
+      "affected": "ifm 相機產品 O3D/O3X 系列（固件 1.20.6381 / 1.71.10735 / 1.90.107 / 1.90.119 / 2.0.10412 / 2.10.16，按型號）",
       "fixed": "",
       "category": "net",
       "cvss": [
@@ -27090,7 +27090,7 @@
       },
       "score": "3.1 9.8 (CISA-ADP)",
       "affected": "Apache Axis 1.x through 1.4",
-      "fixed": "无修复版本（EOL；修复仅存于上游 commit 41f3b4e8）",
+      "fixed": "無修復版本（EOL；修復僅存於上游 commit 41f3b4e8）",
       "category": "runtime",
       "cvss": [
         {
@@ -33661,7 +33661,7 @@
         "zh-TW": "Microsoft Outlook"
       },
       "score": "3.1 6.5 (Microsoft)",
-      "affected": "Microsoft 365 Apps 版经典 Outlook、Office LTSC 2021/2024（2026-11-10 前构建）",
+      "affected": "Microsoft 365 Apps 版經典 Outlook、Office LTSC 2021/2024（2026-11-10 前構建）",
       "fixed": "2026 年 11 月 10 日 Patch Tuesday Office 更新",
       "category": "os",
       "cvss": [
@@ -36068,7 +36068,7 @@
       },
       "score": "4.0 9.5 (TianoCore); 3.1 8.8 (Red Hat)",
       "affected": "TianoCore EDK II NetworkPkg UefiPxeBcDxe（edk2-stable202608 及更早）",
-      "fixed": "上游主线 PR #13200/#13302（2026-10-15 合并）；Red Hat RHSA-2026:96240",
+      "fixed": "上游主線 PR #13200/#13302（2026-10-15 合併）；Red Hat RHSA-2026:96240",
       "category": "os",
       "cvss": [
         {
@@ -36166,7 +36166,7 @@
       },
       "score": "4.0 7.0 (Lenovo); 3.1 7.3 (Lenovo)",
       "affected": "Lenovo System Update for Windows, tested on 5.08.04.85",
-      "fixed": "Lenovo System Update 修复版本（LEN-232748）",
+      "fixed": "Lenovo System Update 修復版本（LEN-232748）",
       "category": "os",
       "cvss": [
         {
@@ -36220,7 +36220,7 @@
       },
       "score": "4.0 8.5 (Lenovo); 3.1 7.8 (Lenovo)",
       "affected": "Lenovo System Update for Windows, tested on 5.08.04.85",
-      "fixed": "Lenovo System Update 修复版本（LEN-232748）",
+      "fixed": "Lenovo System Update 修復版本（LEN-232748）",
       "category": "os",
       "cvss": [
         {
@@ -36275,7 +36275,7 @@
       },
       "score": "3.1 7.0 (Linux kernel)",
       "affected": "Linux kernel with VRF IPv6 output (exploit tuned to kernel 6.1.0-staleroute config)",
-      "fixed": "上游修复提交 66dfb2cacda7",
+      "fixed": "上游修復提交 66dfb2cacda7",
       "category": "os",
       "cvss": [
         {
@@ -36321,7 +36321,7 @@
       },
       "score": "unknown",
       "affected": "Linux kernel with wacom HID driver (Android 5.15.178, Redmi K70 vermeer)",
-      "fixed": "上游修复提交 ef32877368a7（6.12 backport 1178927ffa54）",
+      "fixed": "上游修復提交 ef32877368a7（6.12 backport 1178927ffa54）",
       "category": "os",
       "cvss": [],
       "cwe": [],
@@ -36407,8 +36407,8 @@
         "zh-TW": "Linux kernel (net: skbuff)"
       },
       "score": "3.1 7.8 (NVD)",
-      "affected": "Linux kernel：skb_try_coalesce() 合并含共享 frag 的 skb 时丢失 SKBFL_SHARED_FRAG 标记的版本（修复前）",
-      "fixed": "上游修复提交 2f2b16022a2e（net: skbuff: preserve shared-frag marker during coalescing，stable 各分支另有 backport，见 NVD 补丁链接）",
+      "affected": "Linux kernel：skb_try_coalesce() 合併含共享 frag 的 skb 時丟失 SKBFL_SHARED_FRAG 標記的版本（修復前）",
+      "fixed": "上游修復提交 2f2b16022a2e（net: skbuff: preserve shared-frag marker during coalescing，stable 各分支另有 backport，見 NVD 補丁鏈接）",
       "category": "os",
       "cvss": [
         {
@@ -36505,7 +36505,7 @@
         "zh-TW": "VMware vCenter Server"
       },
       "score": "3.1 9.8 (VMware)",
-      "affected": "vCenter 8.0 prior to 8.0 U3k；9.0.x prior to 9.0.2.0100；9.1.x prior to 9.1.0.0200；6.x/7.x 亦受影响且无补丁",
+      "affected": "vCenter 8.0 prior to 8.0 U3k；9.0.x prior to 9.0.2.0100；9.1.x prior to 9.1.0.0200；6.x/7.x 亦受影響且無補丁",
       "fixed": "8.0 U3k；9.0.2.0100；9.1.0.0200",
       "category": "os",
       "cvss": [
