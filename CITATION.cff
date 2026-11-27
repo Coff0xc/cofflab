@@ -7,7 +7,8 @@ authors:
 repository-code: "https://github.com/Coff0xc/cofflab"
 url: "https://github.com/Coff0xc/cofflab"
 license: MIT
-version: 2026.11.27
+doi: 10.5281/zenodo.24580909
+version: 2026.11.27-1
 date-released: 2026-11-27
 keywords:
   - CVE
