@@ -12,7 +12,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (257)
+### Web / CMS (263)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -273,6 +273,12 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-73695](CVE-2026-73695) | Control Web Panel (CWP) | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck); 3.1 9.8 (GHSA) | Control Web Panel < 1.16 | 1.16 |
 | [CVE-2026-115867](CVE-2026-115867) | Database for Contact Form 7（WPForms、Elementor 表單外掛） | 3.1 9.8 (Wordfence) | Database for Contact Form 7 ≤ 1.5.5 | 1.5.6 |
 | [CVE-2026-137706](CVE-2026-137706) | Smart Portal | 4.0 9.4 (TWCERT); 3.1 9.9 (TWCERT) | Smart Portal（Administrative Information Portal），版本未明 | 無修復版本（截至 2026-11-27，TWCERT 僅建議聯繫廠商處理） |
+| [CVE-2026-137491](CVE-2026-137491) | Budibase | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Budibase < 4.0.0 | 4.0.0 |
+| [CVE-2026-137492](CVE-2026-137492) | Budibase | 4.0 8.7 (VulnCheck); 3.1 8.8 (VulnCheck) | Budibase < 4.0.0 | 4.0.0 |
+| [CVE-2026-137493](CVE-2026-137493) | Budibase | 4.0 8.6 (VulnCheck); 3.1 8.1 (VulnCheck) | Budibase Server 3.0.0 – < 4.0.0 | 4.0.0 |
+| [CVE-2026-137494](CVE-2026-137494) | Budibase | 4.0 8.5 (VulnCheck); 3.1 9.9 (VulnCheck) | Budibase < 4.0.0 | 4.0.0 |
+| [CVE-2026-137498](CVE-2026-137498) | Budibase | 4.0 9.9 (VulnCheck); 3.1 10.0 (VulnCheck) | Budibase Server 3.39.18 – < 4.0.0 | 4.0.0 |
+| [CVE-2026-137499](CVE-2026-137499) | Budibase | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | Budibase 3.41.0 – < 4.0.0 | 4.0.0 |
 
 ### AI / LLM (30)
 
