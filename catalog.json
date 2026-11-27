@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T14:44:20Z",
+  "generated": "2026-11-27T15:47:40Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 776,
+  "entries": 781,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -13665,6 +13665,181 @@
         {
           "id": "patchstack-advisory",
           "upstream": "https://patchstack.com/database/wordpress/plugin/webinar-ignition/vulnerability/wordpress-webinarignition-plugin-4-28-1-privilege-escalation-vulnerability?_s_id=cve",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-134987",
+      "product": {
+        "en": "WordPress File Upload",
+        "zh-TW": "WordPress File Upload"
+      },
+      "score": "3.1 8.6 (Patchstack)",
+      "affected": "WordPress File Upload ≤ 5.3.1",
+      "fixed": "5.3.2",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.6,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+          "source": "Patchstack"
+        }
+      ],
+      "cwe": [
+        "CWE-22"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "path-traversal"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "patchstack-advisory",
+          "upstream": "https://patchstack.com/database/wordpress/plugin/wp-file-upload/vulnerability/wordpress-wordpress-file-upload-plugin-5-3-1-arbitrary-file-deletion-vulnerability?_s_id=cve",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-134994",
+      "product": {
+        "en": "Revertix",
+        "zh-TW": "Revertix"
+      },
+      "score": "3.1 9.8 (Patchstack)",
+      "affected": "Revertix ≤ 1.0.3",
+      "fixed": "1.0.4",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Patchstack"
+        }
+      ],
+      "cwe": [
+        "CWE-502"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "deserialization"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "patchstack-advisory",
+          "upstream": "https://patchstack.com/database/wordpress/plugin/revertix/vulnerability/wordpress-revertix-backup-migration-staging-clone-plugin-1-0-3-php-object-injection-vulnerability?_s_id=cve",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-135009",
+      "product": {
+        "en": "Media Library Assistant",
+        "zh-TW": "Media Library Assistant"
+      },
+      "score": "3.1 9.3 (Patchstack)",
+      "affected": "Media Library Assistant ≤ 3.43",
+      "fixed": "3.44",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+          "source": "Patchstack"
+        }
+      ],
+      "cwe": [
+        "CWE-89"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "sqli"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "patchstack-advisory",
+          "upstream": "https://patchstack.com/database/wordpress/plugin/media-library-assistant/vulnerability/wordpress-media-library-assistant-plugin-3-43-sql-injection-vulnerability?_s_id=cve",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-135048",
+      "product": {
+        "en": "WP ERP",
+        "zh-TW": "WP ERP"
+      },
+      "score": "3.1 8.8 (Patchstack)",
+      "affected": "WP ERP ≤ 2.0.0",
+      "fixed": "2.0.1",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Patchstack"
+        }
+      ],
+      "cwe": [
+        "CWE-266"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "patchstack-advisory",
+          "upstream": "https://patchstack.com/database/wordpress/plugin/erp/vulnerability/wordpress-wp-erp-plugin-2-0-0-privilege-escalation-vulnerability?_s_id=cve",
           "license": "unknown"
         }
       ]
@@ -28077,6 +28252,50 @@
         {
           "id": "nvd-record",
           "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80477",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-80485",
+      "product": {
+        "en": "Secure Connect Gateway - Virtual Edition",
+        "zh-TW": "Secure Connect Gateway - Virtual Edition"
+      },
+      "score": "3.1 8.4 (Dell)",
+      "affected": "Secure Connect Gateway - Virtual Edition < 5.36.00.16",
+      "fixed": "5.36.00.16",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.4,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Dell"
+        }
+      ],
+      "cwe": [
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "rce"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-80485",
           "license": "unknown"
         }
       ]

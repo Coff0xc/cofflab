@@ -1,8 +1,8 @@
-# Web / CMS (278)
+# Web / CMS (282)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Web / CMS (278)
+### Web / CMS (282)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -284,3 +284,7 @@
 | [CVE-2026-134963](../CVE-2026-134963) | WPMasterToolKit | 3.1 9.9 (Patchstack) | WPMasterToolKit through 2.26.1 | 2.26.2 |
 | [CVE-2026-135930](../CVE-2026-135930) | Amelia | 3.1 9.1 (Patchstack) | Amelia through 2.4.14 | 2.4.15 |
 | [CVE-2026-135933](../CVE-2026-135933) | WebinarIgnition | 3.1 9.8 (Patchstack) | WebinarIgnition through 4.28.1 | 4.28.10 |
+| [CVE-2026-134987](../CVE-2026-134987) | WordPress File Upload | 3.1 8.6 (Patchstack) | WordPress File Upload ≤ 5.3.1 | 5.3.2 |
+| [CVE-2026-134994](../CVE-2026-134994) | Revertix | 3.1 9.8 (Patchstack) | Revertix ≤ 1.0.3 | 1.0.4 |
+| [CVE-2026-135009](../CVE-2026-135009) | Media Library Assistant | 3.1 9.3 (Patchstack) | Media Library Assistant ≤ 3.43 | 3.44 |
+| [CVE-2026-135048](../CVE-2026-135048) | WP ERP | 3.1 8.8 (Patchstack) | WP ERP ≤ 2.0.0 | 2.0.1 |

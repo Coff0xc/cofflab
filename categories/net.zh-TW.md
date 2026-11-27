@@ -1,8 +1,8 @@
-# 網路與安全（258）
+# 網路與安全（259）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### 網路與安全 (258)
+### 網路與安全 (259)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -264,3 +264,4 @@
 | [CVE-2026-80453](../CVE-2026-80453) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80472](../CVE-2026-80472) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.1 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80477](../CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-80485](../CVE-2026-80485) | Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |

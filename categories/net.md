@@ -1,8 +1,8 @@
-# Network & Security (258)
+# Network & Security (259)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Network & Security (258)
+### Network & Security (259)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -264,3 +264,4 @@
 | [CVE-2026-80453](../CVE-2026-80453) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80472](../CVE-2026-80472) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.1 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80477](../CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-80485](../CVE-2026-80485) | Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |

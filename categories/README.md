@@ -1,7 +1,7 @@
 # Categories
-- [Web / CMS (278)](web.md)
+- [Web / CMS (282)](web.md)
 - [AI / LLM (31)](ai.md)
-- [Network & Security (258)](net.md)
+- [Network & Security (259)](net.md)
 - [Runtime / Framework / Browser (111)](runtime.md)
 - [Database (22)](db.md)
 - [OS / System / DevOps (76)](os.md)

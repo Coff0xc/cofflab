@@ -13,9 +13,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (278)](categories/web.zh-TW.md)
+- [Web / CMS (282)](categories/web.zh-TW.md)
 - [AI / LLM (31)](categories/ai.zh-TW.md)
-- [網路與安全 (258)](categories/net.zh-TW.md)
+- [網路與安全 (259)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (111)](categories/runtime.zh-TW.md)
 - [資料庫 (22)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (76)](categories/os.zh-TW.md)
@@ -23,7 +23,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (278)
+### Web / CMS (282)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -305,6 +305,10 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-134963](CVE-2026-134963) | WPMasterToolKit | 3.1 9.9 (Patchstack) | WPMasterToolKit through 2.26.1 | 2.26.2 |
 | [CVE-2026-135930](CVE-2026-135930) | Amelia | 3.1 9.1 (Patchstack) | Amelia through 2.4.14 | 2.4.15 |
 | [CVE-2026-135933](CVE-2026-135933) | WebinarIgnition | 3.1 9.8 (Patchstack) | WebinarIgnition through 4.28.1 | 4.28.10 |
+| [CVE-2026-134987](CVE-2026-134987) | WordPress File Upload | 3.1 8.6 (Patchstack) | WordPress File Upload ≤ 5.3.1 | 5.3.2 |
+| [CVE-2026-134994](CVE-2026-134994) | Revertix | 3.1 9.8 (Patchstack) | Revertix ≤ 1.0.3 | 1.0.4 |
+| [CVE-2026-135009](CVE-2026-135009) | Media Library Assistant | 3.1 9.3 (Patchstack) | Media Library Assistant ≤ 3.43 | 3.44 |
+| [CVE-2026-135048](CVE-2026-135048) | WP ERP | 3.1 8.8 (Patchstack) | WP ERP ≤ 2.0.0 | 2.0.1 |
 
 ### AI / LLM (31)
 
@@ -342,7 +346,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137308](CVE-2026-137308) | markdownify-mcp | 4.0 8.3 (VulnCheck); 3.1 7.4 (VulnCheck) | markdownify-mcp before 1.2.0 | 1.2.0 |
 | [CVE-2026-114612](CVE-2026-114612) | LiteLLM | 3.1 9.9 (GHSA) | LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1 | 1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2 |
 
-### 網路與安全 (258)
+### 網路與安全 (259)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -604,6 +608,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-80453](CVE-2026-80453) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80472](CVE-2026-80472) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.1 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-80477](CVE-2026-80477) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
+| [CVE-2026-80485](CVE-2026-80485) | Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 
 ### 運行環境 / 框架 / 瀏覽器 (111)
 
