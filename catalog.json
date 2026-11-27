@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T08:00:43Z",
+  "generated": "2026-11-27T08:22:09Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 754,
   "items": [
@@ -4650,9 +4650,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -4698,9 +4698,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -4752,9 +4752,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -5630,9 +5630,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -13550,9 +13550,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -15983,9 +15983,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -16084,9 +16084,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "No target",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -16439,9 +16439,9 @@
         "leak"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -16980,9 +16980,9 @@
         "rce-local"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -17028,9 +17028,9 @@
         "rce-local"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -17391,9 +17391,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -17495,9 +17495,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -17649,9 +17649,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -17696,9 +17696,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -17743,9 +17743,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -18798,9 +18798,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -18846,9 +18846,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -19574,9 +19574,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -19627,9 +19627,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -19680,9 +19680,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
