@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T10:32:19Z",
+  "generated": "2026-11-27T10:46:22Z",
   "kev_catalog_version": "2026.11.25",
-  "entries": 755,
+  "entries": 758,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -13115,6 +13115,97 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/ToolJet/ToolJet/security-advisories/GHSA-7g4q-wmw6-7r36",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-122244",
+      "product": {
+        "en": "Budibase",
+        "zh-TW": "Budibase"
+      },
+      "score": "3.1 7.7 (GHSA)",
+      "affected": "Budibase < 3.50.0",
+      "fixed": "3.50.0 / 4.0.0",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.7,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-79",
+        "CWE-116",
+        "CWE-1021"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "xss"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/Budibase/budibase/security-advisories/GHSA-r2q3-7m4h-63qg",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-77309",
+      "product": {
+        "en": "AIT-GUI",
+        "zh-TW": "AIT-GUI"
+      },
+      "score": "3.1 8.8 (GHSA)",
+      "affected": "AIT-GUI 1.0.0–2.5.0",
+      "fixed": "2.5.1",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-22",
+        "CWE-459"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": true,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "path-traversal"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/NASA-AMMOS/AIT-GUI/security-advisories/GHSA-jrjx-9jjw-747m",
           "license": "unknown"
         }
       ]
@@ -27308,6 +27399,51 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://github.com/advisories/GHSA-v49f-q363-3644",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-63341",
+      "product": {
+        "en": "aedes",
+        "zh-TW": "aedes"
+      },
+      "score": "3.1 7.5 (GHSA)",
+      "affected": "aedes <= 1.1.0",
+      "fixed": "1.1.1",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 7.5,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-248",
+        "CWE-400"
+      ],
+      "demonstrated": [
+        "dos"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "dos"
+      ],
+      "collected": "2026-11-27",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/repos/moscajs/aedes/security-advisories/GHSA-xxqp-5qx8-gj5q",
           "license": "unknown"
         }
       ]

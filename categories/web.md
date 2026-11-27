@@ -1,8 +1,8 @@
-# Web / CMS (266)
+# Web / CMS (268)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Web / CMS (266)
+### Web / CMS (268)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -272,3 +272,5 @@
 | [CVE-2026-106125](../CVE-2026-106125) | Sneeit Framework | 3.1 9.8 (Wordfence) | Sneeit Framework ≤ 8.7 | 8.8 |
 | [CVE-2026-137544](../CVE-2026-137544) | LaraDashboard | 4.0 9.4 (VulnCheck); 3.1 9.1 (VulnCheck) | LaraDashboard < 1.5.0 | 1.5.0 |
 | [CVE-2026-137536](../CVE-2026-137536) | ToolJet | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | ToolJet < 3.21.94-beta | 3.21.94-beta |
+| [CVE-2026-122244](../CVE-2026-122244) | Budibase | 3.1 7.7 (GHSA) | Budibase < 3.50.0 | 3.50.0 / 4.0.0 |
+| [CVE-2026-77309](../CVE-2026-77309) | AIT-GUI | 3.1 8.8 (GHSA) | AIT-GUI 1.0.0–2.5.0 | 2.5.1 |
