@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T11:45:41Z",
+  "generated": "2026-11-27T11:51:50Z",
   "kev_catalog_version": "2026.11.25",
   "entries": 766,
   "items": [
@@ -73,9 +73,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -122,9 +122,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -3783,9 +3783,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -6023,9 +6023,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -18373,9 +18373,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": true,
       "in_the_wild": false,
       "epss": {
@@ -20430,9 +20430,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -27807,9 +27807,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -29046,9 +29046,9 @@
         "leak"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Full",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -31129,9 +31129,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Partial",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -33506,9 +33506,9 @@
         "leak"
       ],
       "public_rce": false,
-      "review_executed": false,
-      "repro": "Pending",
-      "verified": false,
+      "review_executed": true,
+      "repro": "Full",
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
@@ -34373,9 +34373,9 @@
         "trigger"
       ],
       "public_rce": false,
-      "review_executed": false,
+      "review_executed": true,
       "repro": "Pending",
-      "verified": false,
+      "verified": true,
       "kev": false,
       "in_the_wild": false,
       "epss": {
