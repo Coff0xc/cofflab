@@ -1,8 +1,8 @@
-# OS / System / DevOps (79)
+# OS / System / DevOps (80)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### OS / System / DevOps (79)
+### OS / System / DevOps (80)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -85,3 +85,4 @@
 | [CVE-2026-112816](../CVE-2026-112816) | LXD / MicroCloud | 4.0 10.0 (Canonical); 3.1 10.0 (GHSA) | LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1 | LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1 |
 | [CVE-2026-99362](../CVE-2026-99362) | Linux kernel (nfsd) | 3.1 9.8 (NVD) | Linux kernel 3.16+（自 commit 47ee52986472 起），開啟 nfsd NFSv4.1/4.2 的伺服器 | 5.10.275、5.15.226、6.1.193、6.6.163、6.12.117、6.18.61、7.3.2、7.4-rc1 |
 | [CVE-2026-101537](../CVE-2026-101537) | Solaris | 3.1 9.8 (Oracle) | Oracle Solaris 11.4 | October 2026 Critical Patch Update |
+| [CVE-2026-103780](../CVE-2026-103780) | PowerProtect Data Domain | 3.1 9.8 (Dell) | PowerProtect Data Domain Feature Release 7.7.1.0–8.8、LTS2024 7.13.1.0–7.13.1.80、LTS2025 8.3.1.0–8.3.1.40、LTS2026 8.6.1.0–8.6.1.20 | 見 Dell DSA-2026-416（各版本線修復版本見通告） |

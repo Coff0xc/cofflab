@@ -1,8 +1,8 @@
-# AI / LLM（34）
+# AI / LLM（37）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### AI / LLM (34)
+### AI / LLM (37)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -40,3 +40,6 @@
 | [CVE-2026-137953](../CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
 | [CVE-2026-136441](../CVE-2026-136441) | DBHub | 3.0 9.8 (ZDI) | Bytebase DBHub（MCP server） |  |
 | [CVE-2026-101882](../CVE-2026-101882) | OpenClaw Windows Node | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | 2026.7.1 之前版本 | 2026.7.1 |
+| [CVE-2026-102667](../CVE-2026-102667) | Joyland.ai | 3.1 8.3 (CISA); 4.0 9.0 (CISA) | Joyland.ai（全部版本，CNA 記錄） | 未公布修復版本 |
+| [CVE-2026-103764](../CVE-2026-103764) | Mooncake transfer engine | 3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck) | Mooncake transfer engine <0.3.13 | 0.3.13 |
+| [CVE-2026-104334](../CVE-2026-104334) | Langflow OSS | 3.1 9.8 (IBM) | IBM Langflow OSS 1.0.0–1.12.2 | 1.12.3 |

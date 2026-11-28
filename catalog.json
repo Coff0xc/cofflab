@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T10:52:04Z",
+  "generated": "2026-11-28T12:52:25Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 823,
+  "entries": 836,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -14501,6 +14501,275 @@
       ]
     },
     {
+      "id": "CVE-2026-102435",
+      "product": {
+        "en": "Ultra Addons for Contact Form 7",
+        "zh-TW": "Ultra Addons for Contact Form 7"
+      },
+      "score": "3.1 9.8 (Wordfence)",
+      "affected": "Ultra Addons for Contact Form 7 ≤3.5.54（需啟用 PDF Generator 附加元件與 Contact Form 7 表單）",
+      "fixed": "廠商已發佈修復（3.5.54 之後版本）",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-502"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "deserialization"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-102435",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-103039",
+      "product": {
+        "en": "Gravity Forms",
+        "zh-TW": "Gravity Forms"
+      },
+      "score": "3.1 9.8 (Wordfence)",
+      "affected": "Gravity Forms ≤3.1.2",
+      "fixed": "廠商已發佈修復（3.1.2 之後版本）",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-502"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "deserialization"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-103039",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-104014",
+      "product": {
+        "en": "Naimur Email OTP Verification for WooCommerce",
+        "zh-TW": "Naimur Email OTP Verification for WooCommerce"
+      },
+      "score": "3.1 9.8 (Wordfence)",
+      "affected": "Naimur Email OTP Verification for WooCommerce ≤2.1.0",
+      "fixed": "廠商已發佈修復（2.1.0 之後版本）",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104014",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-104351",
+      "product": {
+        "en": "Adobe Campaign Classic",
+        "zh-TW": "Adobe Campaign Classic"
+      },
+      "score": "3.1 9.9 (Adobe)",
+      "affected": "Adobe Campaign Classic ≤7.4.4 build 9402",
+      "fixed": "7.4.4 build 9403",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "Adobe"
+        }
+      ],
+      "cwe": [
+        "CWE-94"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "rce"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104351",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-104467",
+      "product": {
+        "en": "YesWiki",
+        "zh-TW": "YesWiki"
+      },
+      "score": "3.1 8.1 (VulnCheck); 4.0 9.2 (VulnCheck)",
+      "affected": "YesWiki <4.6.7（啟用公開 API 模式時）",
+      "fixed": "4.6.7",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.1,
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "4.0",
+          "score": 9.2,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-862"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104467",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-104798",
+      "product": {
+        "en": "My Calendar",
+        "zh-TW": "My Calendar"
+      },
+      "score": "3.1 9.8 (Wordfence)",
+      "affected": "My Calendar ≤3.8.7",
+      "fixed": "廠商已發佈修復（3.8.7 之後版本）",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-269"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104798",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-85228",
       "product": {
         "en": "Amazon Deep Java Library (DJL)",
@@ -16174,6 +16443,148 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101882",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-102667",
+      "product": {
+        "en": "Joyland.ai",
+        "zh-TW": "Joyland.ai"
+      },
+      "score": "3.1 8.3 (CISA); 4.0 9.0 (CISA)",
+      "affected": "Joyland.ai（全部版本，CNA 記錄）",
+      "fixed": "未公布修復版本",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.3,
+          "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "CISA"
+        },
+        {
+          "version": "4.0",
+          "score": 9.0,
+          "vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+          "source": "CISA"
+        }
+      ],
+      "cwe": [
+        "CWE-749"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-102667",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-103764",
+      "product": {
+        "en": "Mooncake transfer engine",
+        "zh-TW": "Mooncake transfer engine"
+      },
+      "score": "3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck)",
+      "affected": "Mooncake transfer engine <0.3.13",
+      "fixed": "0.3.13",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-822"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-103764",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-104334",
+      "product": {
+        "en": "Langflow OSS",
+        "zh-TW": "Langflow OSS"
+      },
+      "score": "3.1 9.8 (IBM)",
+      "affected": "IBM Langflow OSS 1.0.0–1.12.2",
+      "fixed": "1.12.3",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "IBM"
+        }
+      ],
+      "cwe": [
+        "CWE-94"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai",
+        "rce"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104334",
           "license": "unknown"
         }
       ]
@@ -29915,6 +30326,105 @@
       ]
     },
     {
+      "id": "CVE-2026-102182",
+      "product": {
+        "en": "Junos OS (MX Series)",
+        "zh-TW": "Junos OS (MX Series)"
+      },
+      "score": "3.1 9.8 (Juniper); 4.0 9.3 (Juniper)",
+      "affected": "Junos OS MX Series：21.2 之前全部版本、21.4R3-S12 之前、22.2R3-S8 之前、22.3R3-S5 之前、22.4R3-S9 之前（需啟用 IKE 與 RSA 簽章 IKE 政策）",
+      "fixed": "21.2R3-S11、21.4R3-S12、22.2R3-S8、22.3R3-S5、22.4R3-S9 及後續版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-102182",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-104611",
+      "product": {
+        "en": "Tenda AC9",
+        "zh-TW": "Tenda AC9"
+      },
+      "score": "3.1 9.1 (VulDB); 4.0 8.5 (VulDB)",
+      "affected": "Tenda AC9 15.03.02.13",
+      "fixed": "未公布修復版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+          "source": "VulDB"
+        },
+        {
+          "version": "4.0",
+          "score": 8.5,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+          "source": "VulDB"
+        }
+      ],
+      "cwe": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104611",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-57898",
       "product": {
         "en": "Eclipse BaSyx Java Server SDK",
@@ -35593,6 +36103,49 @@
       ]
     },
     {
+      "id": "CVE-2026-104846",
+      "product": {
+        "en": "Seroval",
+        "zh-TW": "Seroval"
+      },
+      "score": "3.1 9.8 (GitHub)",
+      "affected": "Seroval 0.12.0–1.6.2",
+      "fixed": "1.6.2（NVD 記錄稱此版本已修復）",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "GitHub"
+        }
+      ],
+      "cwe": [
+        "CWE-843"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104846",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-118383",
       "product": {
         "en": "MongoDB Server replication",
@@ -40732,6 +41285,49 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101537",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-103780",
+      "product": {
+        "en": "PowerProtect Data Domain",
+        "zh-TW": "PowerProtect Data Domain"
+      },
+      "score": "3.1 9.8 (Dell)",
+      "affected": "PowerProtect Data Domain Feature Release 7.7.1.0–8.8、LTS2024 7.13.1.0–7.13.1.80、LTS2025 8.3.1.0–8.3.1.40、LTS2026 8.6.1.0–8.6.1.20",
+      "fixed": "見 Dell DSA-2026-416（各版本線修復版本見通告）",
+      "category": "os",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Dell"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "os"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-103780",
           "license": "unknown"
         }
       ]

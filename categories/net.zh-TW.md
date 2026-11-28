@@ -1,8 +1,8 @@
-# 網路與安全（276）
+# 網路與安全（278）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### 網路與安全 (276)
+### 網路與安全 (278)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -282,3 +282,5 @@
 | [CVE-2026-102175](../CVE-2026-102175) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
 | [CVE-2026-102178](../CVE-2026-102178) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
 | [CVE-2026-138005](../CVE-2026-138005) | TRENDnet TEW-751DR / TEW-752DRU | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TEW-751DR 1.03B01、TEW-752DRU 1.03B01 |  |
+| [CVE-2026-102182](../CVE-2026-102182) | Junos OS (MX Series) | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS MX Series：21.2 之前全部版本、21.4R3-S12 之前、22.2R3-S8 之前、22.3R3-S5 之前、22.4R3-S9 之前（需啟用 IKE 與 RSA 簽章 IKE 政策） | 21.2R3-S11、21.4R3-S12、22.2R3-S8、22.3R3-S5、22.4R3-S9 及後續版本 |
+| [CVE-2026-104611](../CVE-2026-104611) | Tenda AC9 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | Tenda AC9 15.03.02.13 | 未公布修復版本 |

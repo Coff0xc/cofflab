@@ -1,8 +1,8 @@
-# Web / CMS（296）
+# Web / CMS（302）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### Web / CMS (296)
+### Web / CMS (302)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -302,3 +302,9 @@
 | [CVE-2026-101521](../CVE-2026-101521) | APEX | 3.1 9.8 (Oracle) | Oracle APEX 24.1.0–24.1.21、24.2.0–24.2.20、26.1.0–26.1.4 | October 2026 Critical Patch Update |
 | [CVE-2026-101767](../CVE-2026-101767) | Application Object Library | 3.1 9.8 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Application Object Library，Core 元件） | October 2026 Critical Patch Update |
 | [CVE-2026-101808](../CVE-2026-101808) | Product Workbench | 3.1 9.1 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Product Workbench，WebUI 元件） | October 2026 Critical Patch Update |
+| [CVE-2026-102435](../CVE-2026-102435) | Ultra Addons for Contact Form 7 | 3.1 9.8 (Wordfence) | Ultra Addons for Contact Form 7 ≤3.5.54（需啟用 PDF Generator 附加元件與 Contact Form 7 表單） | 廠商已發佈修復（3.5.54 之後版本） |
+| [CVE-2026-103039](../CVE-2026-103039) | Gravity Forms | 3.1 9.8 (Wordfence) | Gravity Forms ≤3.1.2 | 廠商已發佈修復（3.1.2 之後版本） |
+| [CVE-2026-104014](../CVE-2026-104014) | Naimur Email OTP Verification for WooCommerce | 3.1 9.8 (Wordfence) | Naimur Email OTP Verification for WooCommerce ≤2.1.0 | 廠商已發佈修復（2.1.0 之後版本） |
+| [CVE-2026-104351](../CVE-2026-104351) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
+| [CVE-2026-104467](../CVE-2026-104467) | YesWiki | 3.1 8.1 (VulnCheck); 4.0 9.2 (VulnCheck) | YesWiki <4.6.7（啟用公開 API 模式時） | 4.6.7 |
+| [CVE-2026-104798](../CVE-2026-104798) | My Calendar | 3.1 9.8 (Wordfence) | My Calendar ≤3.8.7 | 廠商已發佈修復（3.8.7 之後版本） |

@@ -1,8 +1,8 @@
-# 運行環境 / 框架 / 瀏覽器（113）
+# 運行環境 / 框架 / 瀏覽器（114）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### 運行環境 / 框架 / 瀏覽器 (113)
+### 運行環境 / 框架 / 瀏覽器 (114)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -119,3 +119,4 @@
 | [CVE-2026-29059](../CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
 | [CVE-2026-138154](../CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
 | [CVE-2026-101590](../CVE-2026-101590) | Helidon | 3.1 9.1 (Oracle) | Helidon 4.0.0–4.5.5 | October 2026 Critical Patch Update |
+| [CVE-2026-104846](../CVE-2026-104846) | Seroval | 3.1 9.8 (GitHub) | Seroval 0.12.0–1.6.2 | 1.6.2（NVD 記錄稱此版本已修復） |

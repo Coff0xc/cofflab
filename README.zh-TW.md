@@ -13,17 +13,17 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (296)](categories/web.zh-TW.md)
-- [AI / LLM (34)](categories/ai.zh-TW.md)
-- [網路與安全 (276)](categories/net.zh-TW.md)
-- [運行環境 / 框架 / 瀏覽器 (113)](categories/runtime.zh-TW.md)
+- [Web / CMS (302)](categories/web.zh-TW.md)
+- [AI / LLM (37)](categories/ai.zh-TW.md)
+- [網路與安全 (278)](categories/net.zh-TW.md)
+- [運行環境 / 框架 / 瀏覽器 (114)](categories/runtime.zh-TW.md)
 - [資料庫 (25)](categories/db.zh-TW.md)
-- [作業系統 / 系統 / DevOps (79)](categories/os.zh-TW.md)
+- [作業系統 / 系統 / DevOps (80)](categories/os.zh-TW.md)
 <!-- categories:end -->
 
 ## 目錄
 
-### Web / CMS (296)
+### Web / CMS (302)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -323,8 +323,14 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-101521](CVE-2026-101521) | APEX | 3.1 9.8 (Oracle) | Oracle APEX 24.1.0–24.1.21、24.2.0–24.2.20、26.1.0–26.1.4 | October 2026 Critical Patch Update |
 | [CVE-2026-101767](CVE-2026-101767) | Application Object Library | 3.1 9.8 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Application Object Library，Core 元件） | October 2026 Critical Patch Update |
 | [CVE-2026-101808](CVE-2026-101808) | Product Workbench | 3.1 9.1 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Product Workbench，WebUI 元件） | October 2026 Critical Patch Update |
+| [CVE-2026-102435](CVE-2026-102435) | Ultra Addons for Contact Form 7 | 3.1 9.8 (Wordfence) | Ultra Addons for Contact Form 7 ≤3.5.54（需啟用 PDF Generator 附加元件與 Contact Form 7 表單） | 廠商已發佈修復（3.5.54 之後版本） |
+| [CVE-2026-103039](CVE-2026-103039) | Gravity Forms | 3.1 9.8 (Wordfence) | Gravity Forms ≤3.1.2 | 廠商已發佈修復（3.1.2 之後版本） |
+| [CVE-2026-104014](CVE-2026-104014) | Naimur Email OTP Verification for WooCommerce | 3.1 9.8 (Wordfence) | Naimur Email OTP Verification for WooCommerce ≤2.1.0 | 廠商已發佈修復（2.1.0 之後版本） |
+| [CVE-2026-104351](CVE-2026-104351) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
+| [CVE-2026-104467](CVE-2026-104467) | YesWiki | 3.1 8.1 (VulnCheck); 4.0 9.2 (VulnCheck) | YesWiki <4.6.7（啟用公開 API 模式時） | 4.6.7 |
+| [CVE-2026-104798](CVE-2026-104798) | My Calendar | 3.1 9.8 (Wordfence) | My Calendar ≤3.8.7 | 廠商已發佈修復（3.8.7 之後版本） |
 
-### AI / LLM (34)
+### AI / LLM (37)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -362,8 +368,11 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137953](CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
 | [CVE-2026-136441](CVE-2026-136441) | DBHub | 3.0 9.8 (ZDI) | Bytebase DBHub（MCP server） |  |
 | [CVE-2026-101882](CVE-2026-101882) | OpenClaw Windows Node | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | 2026.7.1 之前版本 | 2026.7.1 |
+| [CVE-2026-102667](CVE-2026-102667) | Joyland.ai | 3.1 8.3 (CISA); 4.0 9.0 (CISA) | Joyland.ai（全部版本，CNA 記錄） | 未公布修復版本 |
+| [CVE-2026-103764](CVE-2026-103764) | Mooncake transfer engine | 3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck) | Mooncake transfer engine <0.3.13 | 0.3.13 |
+| [CVE-2026-104334](CVE-2026-104334) | Langflow OSS | 3.1 9.8 (IBM) | IBM Langflow OSS 1.0.0–1.12.2 | 1.12.3 |
 
-### 網路與安全 (276)
+### 網路與安全 (278)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -643,8 +652,10 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-102175](CVE-2026-102175) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
 | [CVE-2026-102178](CVE-2026-102178) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
 | [CVE-2026-138005](CVE-2026-138005) | TRENDnet TEW-751DR / TEW-752DRU | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TEW-751DR 1.03B01、TEW-752DRU 1.03B01 |  |
+| [CVE-2026-102182](CVE-2026-102182) | Junos OS (MX Series) | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS MX Series：21.2 之前全部版本、21.4R3-S12 之前、22.2R3-S8 之前、22.3R3-S5 之前、22.4R3-S9 之前（需啟用 IKE 與 RSA 簽章 IKE 政策） | 21.2R3-S11、21.4R3-S12、22.2R3-S8、22.3R3-S5、22.4R3-S9 及後續版本 |
+| [CVE-2026-104611](CVE-2026-104611) | Tenda AC9 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | Tenda AC9 15.03.02.13 | 未公布修復版本 |
 
-### 運行環境 / 框架 / 瀏覽器 (113)
+### 運行環境 / 框架 / 瀏覽器 (114)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -761,6 +772,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-29059](CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
 | [CVE-2026-138154](CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
 | [CVE-2026-101590](CVE-2026-101590) | Helidon | 3.1 9.1 (Oracle) | Helidon 4.0.0–4.5.5 | October 2026 Critical Patch Update |
+| [CVE-2026-104846](CVE-2026-104846) | Seroval | 3.1 9.8 (GitHub) | Seroval 0.12.0–1.6.2 | 1.6.2（NVD 記錄稱此版本已修復） |
 
 ### 資料庫 (25)
 
@@ -792,7 +804,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-101503](CVE-2026-101503) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
 | [CVE-2026-101528](CVE-2026-101528) | Enterprise Manager for Oracle Database | 3.1 9.9 (Oracle) | Oracle Enterprise Manager for Oracle Database 13.5、24.1 | October 2026 Critical Patch Update |
 
-### 作業系統 / 系統 / DevOps (79)
+### 作業系統 / 系統 / DevOps (80)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -875,6 +887,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-112816](CVE-2026-112816) | LXD / MicroCloud | 4.0 10.0 (Canonical); 3.1 10.0 (GHSA) | LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1 | LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1 |
 | [CVE-2026-99362](CVE-2026-99362) | Linux kernel (nfsd) | 3.1 9.8 (NVD) | Linux kernel 3.16+（自 commit 47ee52986472 起），開啟 nfsd NFSv4.1/4.2 的伺服器 | 5.10.275、5.15.226、6.1.193、6.6.163、6.12.117、6.18.61、7.3.2、7.4-rc1 |
 | [CVE-2026-101537](CVE-2026-101537) | Solaris | 3.1 9.8 (Oracle) | Oracle Solaris 11.4 | October 2026 Critical Patch Update |
+| [CVE-2026-103780](CVE-2026-103780) | PowerProtect Data Domain | 3.1 9.8 (Dell) | PowerProtect Data Domain Feature Release 7.7.1.0–8.8、LTS2024 7.13.1.0–7.13.1.80、LTS2025 8.3.1.0–8.3.1.40、LTS2026 8.6.1.0–8.6.1.20 | 見 Dell DSA-2026-416（各版本線修復版本見通告） |
 
 
 點進 CVE 目錄查看詳細內容與引用。
