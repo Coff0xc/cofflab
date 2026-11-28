@@ -18,7 +18,7 @@ Only publicly available material is collected. For authorized security research 
 - [Network & Security (263)](categories/net.md)
 - [Runtime / Framework / Browser (112)](categories/runtime.md)
 - [Database (22)](categories/db.md)
-- [OS / System / DevOps (77)](categories/os.md)
+- [OS / System / DevOps (78)](categories/os.md)
 <!-- categories:end -->
 
 ## Catalog
@@ -770,7 +770,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### OS / System / DevOps (77)
+### OS / System / DevOps (78)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -851,6 +851,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-45152](CVE-2026-45152) | uniget | 3.1 7.8 (GHSA) | uniget prior to 0.27.1 | 0.27.1 |
 | [CVE-2026-133842](CVE-2026-133842) | Flatpak | 3.1 8.2 (GHSA) | Flatpak < 1.18.5；1.19.x < 1.19.3 | 1.18.6；1.19.4 |
 | [CVE-2026-112816](CVE-2026-112816) | LXD / MicroCloud | 4.0 10.0 (Canonical); 3.1 10.0 (GHSA) | LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1 | LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1 |
+| [CVE-2026-99362](CVE-2026-99362) | Linux kernel (nfsd) | 3.1 9.8 (NVD) | Linux kernel 3.16+（自 commit 47ee52986472 起），開啟 nfsd NFSv4.1/4.2 的伺服器 | 5.10.275、5.15.226、6.1.193、6.6.163、6.12.117、6.18.61、7.3.2、7.4-rc1 |
 
 
 See each CVE directory for details and references.

@@ -4,6 +4,6 @@
 - [網路與安全 (263)](net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (112)](runtime.zh-TW.md)
 - [資料庫 (22)](db.zh-TW.md)
-- [作業系統 / 系統 / DevOps (77)](os.zh-TW.md)
+- [作業系統 / 系統 / DevOps (78)](os.zh-TW.md)
 
 [回到完整目錄](../README.zh-TW.md)
