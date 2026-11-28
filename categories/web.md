@@ -1,8 +1,8 @@
-# Web / CMS (294)
+# Web / CMS (296)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Web / CMS (294)
+### Web / CMS (296)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -300,3 +300,5 @@
 | [CVE-2026-119071](../CVE-2026-119071) | W3 Total Cache | 3.1 8.1 (Wordfence) | W3 Total Cache ≤ 2.11.0 | 2.11.1 |
 | [CVE-2026-101499](../CVE-2026-101499) | WebCenter Sites | 3.1 9.8 (Oracle) | Oracle WebCenter Sites 12.2.1.4.0、14.1.2.0.0 | October 2026 Critical Patch Update |
 | [CVE-2026-101521](../CVE-2026-101521) | APEX | 3.1 9.8 (Oracle) | Oracle APEX 24.1.0–24.1.21、24.2.0–24.2.20、26.1.0–26.1.4 | October 2026 Critical Patch Update |
+| [CVE-2026-101767](../CVE-2026-101767) | Application Object Library | 3.1 9.8 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Application Object Library，Core 元件） | October 2026 Critical Patch Update |
+| [CVE-2026-101808](../CVE-2026-101808) | Product Workbench | 3.1 9.1 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Product Workbench，WebUI 元件） | October 2026 Critical Patch Update |

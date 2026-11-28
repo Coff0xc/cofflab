@@ -1,8 +1,8 @@
-# Runtime / Framework / Browser (112)
+# Runtime / Framework / Browser (113)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Runtime / Framework / Browser (112)
+### Runtime / Framework / Browser (113)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -118,3 +118,4 @@
 | [CVE-2026-23696](../CVE-2026-23696) | Windmill | 3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck) | Windmill CE 與 EE 1.276.0 起，1.603.2 之前 | 1.603.3 |
 | [CVE-2026-29059](../CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
 | [CVE-2026-138154](../CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
+| [CVE-2026-101590](../CVE-2026-101590) | Helidon | 3.1 9.1 (Oracle) | Helidon 4.0.0–4.5.5 | October 2026 Critical Patch Update |

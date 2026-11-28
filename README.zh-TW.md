@@ -13,17 +13,17 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (294)](categories/web.zh-TW.md)
+- [Web / CMS (296)](categories/web.zh-TW.md)
 - [AI / LLM (33)](categories/ai.zh-TW.md)
-- [網路與安全 (264)](categories/net.zh-TW.md)
-- [運行環境 / 框架 / 瀏覽器 (112)](categories/runtime.zh-TW.md)
-- [資料庫 (24)](categories/db.zh-TW.md)
-- [作業系統 / 系統 / DevOps (78)](categories/os.zh-TW.md)
+- [網路與安全 (266)](categories/net.zh-TW.md)
+- [運行環境 / 框架 / 瀏覽器 (113)](categories/runtime.zh-TW.md)
+- [資料庫 (25)](categories/db.zh-TW.md)
+- [作業系統 / 系統 / DevOps (79)](categories/os.zh-TW.md)
 <!-- categories:end -->
 
 ## 目錄
 
-### Web / CMS (294)
+### Web / CMS (296)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -321,6 +321,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-119071](CVE-2026-119071) | W3 Total Cache | 3.1 8.1 (Wordfence) | W3 Total Cache ≤ 2.11.0 | 2.11.1 |
 | [CVE-2026-101499](CVE-2026-101499) | WebCenter Sites | 3.1 9.8 (Oracle) | Oracle WebCenter Sites 12.2.1.4.0、14.1.2.0.0 | October 2026 Critical Patch Update |
 | [CVE-2026-101521](CVE-2026-101521) | APEX | 3.1 9.8 (Oracle) | Oracle APEX 24.1.0–24.1.21、24.2.0–24.2.20、26.1.0–26.1.4 | October 2026 Critical Patch Update |
+| [CVE-2026-101767](CVE-2026-101767) | Application Object Library | 3.1 9.8 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Application Object Library，Core 元件） | October 2026 Critical Patch Update |
+| [CVE-2026-101808](CVE-2026-101808) | Product Workbench | 3.1 9.1 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Product Workbench，WebUI 元件） | October 2026 Critical Patch Update |
 
 ### AI / LLM (33)
 
@@ -360,7 +362,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137953](CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
 | [CVE-2026-136441](CVE-2026-136441) | DBHub | 3.0 9.8 (ZDI) | Bytebase DBHub（MCP server） |  |
 
-### 網路與安全 (264)
+### 網路與安全 (266)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -628,8 +630,10 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-138003](CVE-2026-138003) | TEW-751DR / TEW-733GR | 4.0 9.0 (VulDB); 3.1 9.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-138004](CVE-2026-138004) | TEW-751DR / TEW-733GR | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-101158](CVE-2026-101158) | CloudVision Portal (CVP) / CloudVision CUE | 4.0 9.3 (Arista); 3.1 8.4 (Arista) | CloudVision Portal on-premises 2026.2.0、2026.1.x ≤2026.1.2、2025.3.x ≤2025.3.3 及更早版本；同批 CV-CUE on-prem 亦受影響 | 2026.3.0、2026.2.1、2026.1.3、2025.3.4 各列車修復版 |
+| [CVE-2026-101763](CVE-2026-101763) | Communications BRM - Elastic Charging Engine | 3.1 9.8 (Oracle) | Oracle Communications BRM - Elastic Charging Engine 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0 | October 2026 Critical Patch Update |
+| [CVE-2026-101765](CVE-2026-101765) | Communications Billing and Revenue Management | 3.1 9.1 (Oracle) | Oracle Communications Billing and Revenue Management 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0 | October 2026 Critical Patch Update |
 
-### 運行環境 / 框架 / 瀏覽器 (112)
+### 運行環境 / 框架 / 瀏覽器 (113)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -745,8 +749,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-23696](CVE-2026-23696) | Windmill | 3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck) | Windmill CE 與 EE 1.276.0 起，1.603.2 之前 | 1.603.3 |
 | [CVE-2026-29059](CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
 | [CVE-2026-138154](CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
+| [CVE-2026-101590](CVE-2026-101590) | Helidon | 3.1 9.1 (Oracle) | Helidon 4.0.0–4.5.5 | October 2026 Critical Patch Update |
 
-### 資料庫 (24)
+### 資料庫 (25)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -774,8 +779,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 | [CVE-2026-101501](CVE-2026-101501) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
 | [CVE-2026-101503](CVE-2026-101503) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
+| [CVE-2026-101528](CVE-2026-101528) | Enterprise Manager for Oracle Database | 3.1 9.9 (Oracle) | Oracle Enterprise Manager for Oracle Database 13.5、24.1 | October 2026 Critical Patch Update |
 
-### 作業系統 / 系統 / DevOps (78)
+### 作業系統 / 系統 / DevOps (79)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -857,6 +863,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-133842](CVE-2026-133842) | Flatpak | 3.1 8.2 (GHSA) | Flatpak < 1.18.5；1.19.x < 1.19.3 | 1.18.6；1.19.4 |
 | [CVE-2026-112816](CVE-2026-112816) | LXD / MicroCloud | 4.0 10.0 (Canonical); 3.1 10.0 (GHSA) | LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1 | LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1 |
 | [CVE-2026-99362](CVE-2026-99362) | Linux kernel (nfsd) | 3.1 9.8 (NVD) | Linux kernel 3.16+（自 commit 47ee52986472 起），開啟 nfsd NFSv4.1/4.2 的伺服器 | 5.10.275、5.15.226、6.1.193、6.6.163、6.12.117、6.18.61、7.3.2、7.4-rc1 |
+| [CVE-2026-101537](CVE-2026-101537) | Solaris | 3.1 9.8 (Oracle) | Oracle Solaris 11.4 | October 2026 Critical Patch Update |
 
 
 點進 CVE 目錄查看詳細內容與引用。

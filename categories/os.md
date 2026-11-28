@@ -1,8 +1,8 @@
-# OS / System / DevOps (78)
+# OS / System / DevOps (79)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### OS / System / DevOps (78)
+### OS / System / DevOps (79)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -84,3 +84,4 @@
 | [CVE-2026-133842](../CVE-2026-133842) | Flatpak | 3.1 8.2 (GHSA) | Flatpak < 1.18.5；1.19.x < 1.19.3 | 1.18.6；1.19.4 |
 | [CVE-2026-112816](../CVE-2026-112816) | LXD / MicroCloud | 4.0 10.0 (Canonical); 3.1 10.0 (GHSA) | LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1 | LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1 |
 | [CVE-2026-99362](../CVE-2026-99362) | Linux kernel (nfsd) | 3.1 9.8 (NVD) | Linux kernel 3.16+（自 commit 47ee52986472 起），開啟 nfsd NFSv4.1/4.2 的伺服器 | 5.10.275、5.15.226、6.1.193、6.6.163、6.12.117、6.18.61、7.3.2、7.4-rc1 |
+| [CVE-2026-101537](../CVE-2026-101537) | Solaris | 3.1 9.8 (Oracle) | Oracle Solaris 11.4 | October 2026 Critical Patch Update |

@@ -1,8 +1,8 @@
-# Database (24)
+# Database (25)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Database (24)
+### Database (25)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -30,3 +30,4 @@
 | [CVE-2026-25243](../CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 | [CVE-2026-101501](../CVE-2026-101501) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
 | [CVE-2026-101503](../CVE-2026-101503) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
+| [CVE-2026-101528](../CVE-2026-101528) | Enterprise Manager for Oracle Database | 3.1 9.9 (Oracle) | Oracle Enterprise Manager for Oracle Database 13.5、24.1 | October 2026 Critical Patch Update |

@@ -1,8 +1,8 @@
-# Network & Security (264)
+# Network & Security (266)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Network & Security (264)
+### Network & Security (266)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -270,3 +270,5 @@
 | [CVE-2026-138003](../CVE-2026-138003) | TEW-751DR / TEW-733GR | 4.0 9.0 (VulDB); 3.1 9.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-138004](../CVE-2026-138004) | TEW-751DR / TEW-733GR | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-101158](../CVE-2026-101158) | CloudVision Portal (CVP) / CloudVision CUE | 4.0 9.3 (Arista); 3.1 8.4 (Arista) | CloudVision Portal on-premises 2026.2.0、2026.1.x ≤2026.1.2、2025.3.x ≤2025.3.3 及更早版本；同批 CV-CUE on-prem 亦受影響 | 2026.3.0、2026.2.1、2026.1.3、2025.3.4 各列車修復版 |
+| [CVE-2026-101763](../CVE-2026-101763) | Communications BRM - Elastic Charging Engine | 3.1 9.8 (Oracle) | Oracle Communications BRM - Elastic Charging Engine 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0 | October 2026 Critical Patch Update |
+| [CVE-2026-101765](../CVE-2026-101765) | Communications Billing and Revenue Management | 3.1 9.1 (Oracle) | Oracle Communications Billing and Revenue Management 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0 | October 2026 Critical Patch Update |

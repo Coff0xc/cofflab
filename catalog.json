@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T07:45:52Z",
+  "generated": "2026-11-28T09:45:06Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 805,
+  "entries": 812,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -14408,6 +14408,94 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101521",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101767",
+      "product": {
+        "en": "Application Object Library",
+        "zh-TW": "Application Object Library"
+      },
+      "score": "3.1 9.8 (Oracle)",
+      "affected": "Oracle E-Business Suite 12.2.3–12.2.15（Application Object Library，Core 元件）",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101767",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101808",
+      "product": {
+        "en": "Product Workbench",
+        "zh-TW": "Product Workbench"
+      },
+      "score": "3.1 9.1 (Oracle)",
+      "affected": "Oracle E-Business Suite 12.2.3–12.2.15（Product Workbench，WebUI 元件）",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101808",
           "license": "unknown"
         }
       ]
@@ -29198,6 +29286,94 @@
       ]
     },
     {
+      "id": "CVE-2026-101763",
+      "product": {
+        "en": "Communications BRM - Elastic Charging Engine",
+        "zh-TW": "Communications BRM - Elastic Charging Engine"
+      },
+      "score": "3.1 9.8 (Oracle)",
+      "affected": "Oracle Communications BRM - Elastic Charging Engine 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101763",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101765",
+      "product": {
+        "en": "Communications Billing and Revenue Management",
+        "zh-TW": "Communications Billing and Revenue Management"
+      },
+      "score": "3.1 9.1 (Oracle)",
+      "affected": "Oracle Communications Billing and Revenue Management 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101765",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-57898",
       "product": {
         "en": "Eclipse BaSyx Java Server SDK",
@@ -34832,6 +35008,50 @@
       ]
     },
     {
+      "id": "CVE-2026-101590",
+      "product": {
+        "en": "Helidon",
+        "zh-TW": "Helidon"
+      },
+      "score": "3.1 9.1 (Oracle)",
+      "affected": "Helidon 4.0.0–4.5.5",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101590",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-118383",
       "product": {
         "en": "MongoDB Server replication",
@@ -36048,6 +36268,49 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101503",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101528",
+      "product": {
+        "en": "Enterprise Manager for Oracle Database",
+        "zh-TW": "Enterprise Manager for Oracle Database"
+      },
+      "score": "3.1 9.9 (Oracle)",
+      "affected": "Oracle Enterprise Manager for Oracle Database 13.5、24.1",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "db",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-284"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "db"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101528",
           "license": "unknown"
         }
       ]
@@ -39884,6 +40147,50 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-99362",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101537",
+      "product": {
+        "en": "Solaris",
+        "zh-TW": "Solaris"
+      },
+      "score": "3.1 9.8 (Oracle)",
+      "affected": "Oracle Solaris 11.4",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "os",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "os",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101537",
           "license": "unknown"
         }
       ]
