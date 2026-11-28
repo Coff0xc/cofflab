@@ -18,7 +18,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 - [網路與安全 (263)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (111)](categories/runtime.zh-TW.md)
 - [資料庫 (22)](categories/db.zh-TW.md)
-- [作業系統 / 系統 / DevOps (76)](categories/os.zh-TW.md)
+- [作業系統 / 系統 / DevOps (77)](categories/os.zh-TW.md)
 <!-- categories:end -->
 
 ## 目錄
@@ -769,7 +769,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
 
-### 作業系統 / 系統 / DevOps (76)
+### 作業系統 / 系統 / DevOps (77)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -849,6 +849,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-59831](CVE-2026-59831) | GitHub CLI | 3.1 4.4 (GHSA) | gh 2.10.0–2.95.x | 2.96.0 |
 | [CVE-2026-45152](CVE-2026-45152) | uniget | 3.1 7.8 (GHSA) | uniget prior to 0.27.1 | 0.27.1 |
 | [CVE-2026-133842](CVE-2026-133842) | Flatpak | 3.1 8.2 (GHSA) | Flatpak < 1.18.5；1.19.x < 1.19.3 | 1.18.6；1.19.4 |
+| [CVE-2026-112816](CVE-2026-112816) | LXD / MicroCloud | 4.0 10.0 (Canonical); 3.1 10.0 (GHSA) | LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1 | LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1 |
 
 
 點進 CVE 目錄查看詳細內容與引用。

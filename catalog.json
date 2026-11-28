@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T01:54:36Z",
+  "generated": "2026-11-28T02:49:16Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 797,
+  "entries": 798,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -39520,6 +39520,55 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/repos/flatpak/flatpak/security-advisories/GHSA-p4mw-6jfq-r82r",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-112816",
+      "product": {
+        "en": "LXD / MicroCloud",
+        "zh-TW": "LXD / MicroCloud"
+      },
+      "score": "4.0 10.0 (Canonical); 3.1 10.0 (GHSA)",
+      "affected": "LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1",
+      "fixed": "LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1",
+      "category": "os",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 10.0,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+          "source": "Canonical"
+        },
+        {
+          "version": "3.1",
+          "score": 10.0,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-295"
+      ],
+      "demonstrated": [
+        "lab-repro"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "os"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "canonical-advisory",
+          "upstream": "https://discourse.ubuntu.com/t/security-advisory-critical-vulnerability-found-in-canonical-lxd-and-microcloud/90557",
           "license": "unknown"
         }
       ]

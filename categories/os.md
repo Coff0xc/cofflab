@@ -1,8 +1,8 @@
-# OS / System / DevOps (76)
+# OS / System / DevOps (77)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### OS / System / DevOps (76)
+### OS / System / DevOps (77)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -82,3 +82,4 @@
 | [CVE-2026-59831](../CVE-2026-59831) | GitHub CLI | 3.1 4.4 (GHSA) | gh 2.10.0–2.95.x | 2.96.0 |
 | [CVE-2026-45152](../CVE-2026-45152) | uniget | 3.1 7.8 (GHSA) | uniget prior to 0.27.1 | 0.27.1 |
 | [CVE-2026-133842](../CVE-2026-133842) | Flatpak | 3.1 8.2 (GHSA) | Flatpak < 1.18.5；1.19.x < 1.19.3 | 1.18.6；1.19.4 |
+| [CVE-2026-112816](../CVE-2026-112816) | LXD / MicroCloud | 4.0 10.0 (Canonical); 3.1 10.0 (GHSA) | LXD < 4.0.15 / < 5.0.11 / < 5.21.9 / < 6.10.1; MicroCloud < 2.1.5 / < 3.4.1 | LXD 4.0.15 / 5.0.11 / 5.21.9 / 6.10.1; MicroCloud 2.1.5 / 3.4.1 |
