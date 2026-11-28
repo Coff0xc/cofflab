@@ -1,8 +1,8 @@
-# Web / CMS (305)
+# Web / CMS (307)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Web / CMS (305)
+### Web / CMS (307)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -311,3 +311,5 @@
 | [CVE-2026-105780](../CVE-2026-105780) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
 | [CVE-2026-105859](../CVE-2026-105859) | Payload CMS | 3.1 9.8 (GHSA) | Payload CMS <3.90.0、canary ≥4.0.0-canary.0 且 <4.0.0-canary.34 | 3.90.0、4.0.0-canary.34 |
 | [CVE-2026-106013](../CVE-2026-106013) | Jupiter X Core | 3.1 9.8 (Wordfence) | Jupiter X Core ≤4.61.0 | 4.62.0（WordPress.org changelog 核實，v4.62.0 記「Fixed Security issue」） |
+| [CVE-2026-109220](../CVE-2026-109220) | PDF Invoice for WooCommerce + Drag and Drop Template Builder | 3.1 9.8 (Wordfence) | PDF Invoice for WooCommerce ≤ 7.1.1 | 7.2.0 |
+| [CVE-2026-109516](../CVE-2026-109516) | Bot for Telegram on WooCommerce | 3.1 9.8 (Wordfence) | Bot for Telegram on WooCommerce ≤ 1.3.0 | unknown |

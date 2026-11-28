@@ -13,9 +13,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (305)](categories/web.zh-TW.md)
+- [Web / CMS (307)](categories/web.zh-TW.md)
 - [AI / LLM (37)](categories/ai.zh-TW.md)
-- [網路與安全 (279)](categories/net.zh-TW.md)
+- [網路與安全 (280)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (114)](categories/runtime.zh-TW.md)
 - [資料庫 (25)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (81)](categories/os.zh-TW.md)
@@ -23,7 +23,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (305)
+### Web / CMS (307)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -332,6 +332,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-105780](CVE-2026-105780) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
 | [CVE-2026-105859](CVE-2026-105859) | Payload CMS | 3.1 9.8 (GHSA) | Payload CMS <3.90.0、canary ≥4.0.0-canary.0 且 <4.0.0-canary.34 | 3.90.0、4.0.0-canary.34 |
 | [CVE-2026-106013](CVE-2026-106013) | Jupiter X Core | 3.1 9.8 (Wordfence) | Jupiter X Core ≤4.61.0 | 4.62.0（WordPress.org changelog 核實，v4.62.0 記「Fixed Security issue」） |
+| [CVE-2026-109220](CVE-2026-109220) | PDF Invoice for WooCommerce + Drag and Drop Template Builder | 3.1 9.8 (Wordfence) | PDF Invoice for WooCommerce ≤ 7.1.1 | 7.2.0 |
+| [CVE-2026-109516](CVE-2026-109516) | Bot for Telegram on WooCommerce | 3.1 9.8 (Wordfence) | Bot for Telegram on WooCommerce ≤ 1.3.0 | unknown |
 
 ### AI / LLM (37)
 
@@ -375,7 +377,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-103764](CVE-2026-103764) | Mooncake transfer engine | 3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck) | Mooncake transfer engine <0.3.13 | 0.3.13 |
 | [CVE-2026-104334](CVE-2026-104334) | Langflow OSS | 3.1 9.8 (IBM) | IBM Langflow OSS 1.0.0–1.12.2 | 1.12.3 |
 
-### 網路與安全 (279)
+### 網路與安全 (280)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -658,6 +660,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-102182](CVE-2026-102182) | Junos OS (MX Series) | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS MX Series：21.2 之前全部版本、21.4R3-S12 之前、22.2R3-S8 之前、22.3R3-S5 之前、22.4R3-S9 之前（需啟用 IKE 與 RSA 簽章 IKE 政策） | 21.2R3-S11、21.4R3-S12、22.2R3-S8、22.3R3-S5、22.4R3-S9 及後續版本 |
 | [CVE-2026-104611](CVE-2026-104611) | Tenda AC9 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | Tenda AC9 15.03.02.13 | 未公布修復版本 |
 | [CVE-2026-105105](CVE-2026-105105) | AIT-Core | 3.1 9.8 (TuranSec) | AIT-Core ≤3.1.1（ZeroMQ XSUB/XPUB 綁 0.0.0.0 無認證） | 3.1.2（GitHub releases 核實，2026-09-15） |
+| [CVE-2026-109445](CVE-2026-109445) | PLANET GS-5220-8P2T2S | 4.0 9.3 (VulnCheck); 3.1 9.8 (VulnCheck) | PLANET GS-5220-8P2T2S（hardware v3.0），firmware < 3.2412b261008 | 3.2412b261008 |
 
 ### 運行環境 / 框架 / 瀏覽器 (114)
 
