@@ -1,5 +1,5 @@
 # Categories
-- [Web / CMS (290)](web.md)
+- [Web / CMS (292)](web.md)
 - [AI / LLM (33)](ai.md)
 - [Network & Security (263)](net.md)
 - [Runtime / Framework / Browser (111)](runtime.md)

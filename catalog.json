@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T23:54:38Z",
+  "generated": "2026-11-28T01:54:36Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 795,
+  "entries": 797,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -12877,6 +12877,11 @@
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-7526-4c4g-6qfm",
           "license": "unknown"
+        },
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
         }
       ]
     },
@@ -13455,6 +13460,11 @@
         {
           "id": "ghsa-advisory",
           "upstream": "https://api.github.com/advisories/GHSA-x4cr-9jx8-g6ff",
+          "license": "unknown"
+        },
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
           "license": "unknown"
         }
       ]
@@ -14222,6 +14232,94 @@
         {
           "id": "vuldb-advisory",
           "upstream": "https://vuldb.com/vuln/443649",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-113774",
+      "product": {
+        "en": "Schema & Structured Data for WP & AMP",
+        "zh-TW": "Schema & Structured Data for WP & AMP"
+      },
+      "score": "3.1 8.8 (Wordfence)",
+      "affected": "Schema & Structured Data for WP & AMP ≤ 1.68",
+      "fixed": "1.69",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-502"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "deserialization"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-119071",
+      "product": {
+        "en": "W3 Total Cache",
+        "zh-TW": "W3 Total Cache"
+      },
+      "score": "3.1 8.1 (Wordfence)",
+      "affected": "W3 Total Cache ≤ 2.11.0",
+      "fixed": "2.11.1",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.1,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-22"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "path-traversal"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "fankh-poc",
+          "upstream": "https://github.com/fankh/vulnerability-poc",
           "license": "unknown"
         }
       ]

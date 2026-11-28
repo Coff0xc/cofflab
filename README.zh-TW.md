@@ -13,7 +13,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (290)](categories/web.zh-TW.md)
+- [Web / CMS (292)](categories/web.zh-TW.md)
 - [AI / LLM (33)](categories/ai.zh-TW.md)
 - [網路與安全 (263)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (111)](categories/runtime.zh-TW.md)
@@ -23,7 +23,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 
 ## 目錄
 
-### Web / CMS (290)
+### Web / CMS (292)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -317,6 +317,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-136113](CVE-2026-136113) | Hello Clever Gateway for WooCommerce | 3.1 9.3 (Patchstack) | Hello Clever Gateway for WooCommerce ≤ 1.8.4 |  |
 | [CVE-2026-136115](CVE-2026-136115) | MemberPress Discord Addon | 3.1 9.8 (Patchstack) | MemberPress Discord Addon ≤ 1.1.5 |  |
 | [CVE-2026-136692](CVE-2026-136692) | XunRuiCMS | 3.1 7.3 (VulDB); 4.0 5.5 (VulDB) | XunRuiCMS ≤ 4.7.4 |  |
+| [CVE-2026-113774](CVE-2026-113774) | Schema & Structured Data for WP & AMP | 3.1 8.8 (Wordfence) | Schema & Structured Data for WP & AMP ≤ 1.68 | 1.69 |
+| [CVE-2026-119071](CVE-2026-119071) | W3 Total Cache | 3.1 8.1 (Wordfence) | W3 Total Cache ≤ 2.11.0 | 2.11.1 |
 
 ### AI / LLM (33)
 
