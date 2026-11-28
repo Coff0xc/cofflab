@@ -1,8 +1,8 @@
-# AI / LLM（33）
+# AI / LLM（34）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### AI / LLM (33)
+### AI / LLM (34)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -39,3 +39,4 @@
 | [CVE-2026-114612](../CVE-2026-114612) | LiteLLM | 3.1 9.9 (GHSA) | LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1 | 1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2 |
 | [CVE-2026-137953](../CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
 | [CVE-2026-136441](../CVE-2026-136441) | DBHub | 3.0 9.8 (ZDI) | Bytebase DBHub（MCP server） |  |
+| [CVE-2026-101882](../CVE-2026-101882) | OpenClaw Windows Node | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | 2026.7.1 之前版本 | 2026.7.1 |

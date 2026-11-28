@@ -14,8 +14,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 ## 分類
 
 - [Web / CMS (296)](categories/web.zh-TW.md)
-- [AI / LLM (33)](categories/ai.zh-TW.md)
-- [網路與安全 (266)](categories/net.zh-TW.md)
+- [AI / LLM (34)](categories/ai.zh-TW.md)
+- [網路與安全 (276)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (113)](categories/runtime.zh-TW.md)
 - [資料庫 (25)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (79)](categories/os.zh-TW.md)
@@ -324,7 +324,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-101767](CVE-2026-101767) | Application Object Library | 3.1 9.8 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Application Object Library，Core 元件） | October 2026 Critical Patch Update |
 | [CVE-2026-101808](CVE-2026-101808) | Product Workbench | 3.1 9.1 (Oracle) | Oracle E-Business Suite 12.2.3–12.2.15（Product Workbench，WebUI 元件） | October 2026 Critical Patch Update |
 
-### AI / LLM (33)
+### AI / LLM (34)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -361,8 +361,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-114612](CVE-2026-114612) | LiteLLM | 3.1 9.9 (GHSA) | LiteLLM 1.91.0 起，1.100.4 之前；另 1.101.x < 1.101.3、1.102.x < 1.102.2、1.103.x < 1.103.1 | 1.100.4；1.101.3；1.102.2；1.103.1；1.104.0-rc.2 |
 | [CVE-2026-137953](CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
 | [CVE-2026-136441](CVE-2026-136441) | DBHub | 3.0 9.8 (ZDI) | Bytebase DBHub（MCP server） |  |
+| [CVE-2026-101882](CVE-2026-101882) | OpenClaw Windows Node | 3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck) | 2026.7.1 之前版本 | 2026.7.1 |
 
-### 網路與安全 (266)
+### 網路與安全 (276)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -632,6 +633,16 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-101158](CVE-2026-101158) | CloudVision Portal (CVP) / CloudVision CUE | 4.0 9.3 (Arista); 3.1 8.4 (Arista) | CloudVision Portal on-premises 2026.2.0、2026.1.x ≤2026.1.2、2025.3.x ≤2025.3.3 及更早版本；同批 CV-CUE on-prem 亦受影響 | 2026.3.0、2026.2.1、2026.1.3、2025.3.4 各列車修復版 |
 | [CVE-2026-101763](CVE-2026-101763) | Communications BRM - Elastic Charging Engine | 3.1 9.8 (Oracle) | Oracle Communications BRM - Elastic Charging Engine 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0 | October 2026 Critical Patch Update |
 | [CVE-2026-101765](CVE-2026-101765) | Communications Billing and Revenue Management | 3.1 9.1 (Oracle) | Oracle Communications Billing and Revenue Management 15.0.0.0.0、15.0.1.0.0、15.1.0.0.0、15.2.0.0.0 | October 2026 Critical Patch Update |
+| [CVE-2026-101950](CVE-2026-101950) | Junos OS (SRX Series) | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS SRX Series：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本 |
+| [CVE-2026-101980](CVE-2026-101980) | Junos OS | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本 |
+| [CVE-2026-101981](CVE-2026-101981) | Junos OS / Junos OS Evolved | 3.1 8.8 (Juniper); 4.0 8.7 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
+| [CVE-2026-101982](CVE-2026-101982) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
+| [CVE-2026-101990](CVE-2026-101990) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
+| [CVE-2026-102049](CVE-2026-102049) | Junos OS / Junos OS Evolved | 3.1 8.8 (Juniper); 4.0 8.7 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
+| [CVE-2026-102162](CVE-2026-102162) | Arista Wi-Fi Access Points | 3.1 8.8 (Arista); 4.0 9.4 (Arista) | Wi-Fi 存取點：22.0.1F-32 及以下（22.x）、21.3.0M-13 及以下（21.x）及所有更早版本 | 22.1.1F-61 及後續（22.x）、21.4.0M-12 及後續（21.x） |
+| [CVE-2026-102175](CVE-2026-102175) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
+| [CVE-2026-102178](CVE-2026-102178) | Junos OS / Junos OS Evolved | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前 | 23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本 |
+| [CVE-2026-138005](CVE-2026-138005) | TRENDnet TEW-751DR / TEW-752DRU | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TEW-751DR 1.03B01、TEW-752DRU 1.03B01 |  |
 
 ### 運行環境 / 框架 / 瀏覽器 (113)
 

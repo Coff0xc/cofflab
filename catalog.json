@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T09:45:06Z",
+  "generated": "2026-11-28T10:52:04Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 812,
+  "entries": 823,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -16130,6 +16130,55 @@
       ]
     },
     {
+      "id": "CVE-2026-101882",
+      "product": {
+        "en": "OpenClaw Windows Node",
+        "zh-TW": "OpenClaw Windows Node"
+      },
+      "score": "3.1 8.8 (VulnCheck); 4.0 8.7 (VulnCheck)",
+      "affected": "2026.7.1 之前版本",
+      "fixed": "2026.7.1",
+      "category": "ai",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "4.0",
+          "score": 8.7,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "VulnCheck"
+        }
+      ],
+      "cwe": [
+        "CWE-184"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "ai"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101882",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-130151",
       "product": {
         "en": "Okta Privileged Access Gateway",
@@ -29369,6 +29418,498 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101765",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101950",
+      "product": {
+        "en": "Junos OS (SRX Series)",
+        "zh-TW": "Junos OS (SRX Series)"
+      },
+      "score": "3.1 9.8 (Juniper); 4.0 9.3 (Juniper)",
+      "affected": "Junos OS SRX Series：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-122"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101950",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101980",
+      "product": {
+        "en": "Junos OS",
+        "zh-TW": "Junos OS"
+      },
+      "score": "3.1 9.8 (Juniper); 4.0 9.3 (Juniper)",
+      "affected": "Junos OS：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-191"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101980",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101981",
+      "product": {
+        "en": "Junos OS / Junos OS Evolved",
+        "zh-TW": "Junos OS / Junos OS Evolved"
+      },
+      "score": "3.1 8.8 (Juniper); 4.0 8.7 (Juniper)",
+      "affected": "Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 8.7,
+          "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101981",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101982",
+      "product": {
+        "en": "Junos OS / Junos OS Evolved",
+        "zh-TW": "Junos OS / Junos OS Evolved"
+      },
+      "score": "3.1 9.8 (Juniper); 4.0 9.3 (Juniper)",
+      "affected": "Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101982",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101990",
+      "product": {
+        "en": "Junos OS / Junos OS Evolved",
+        "zh-TW": "Junos OS / Junos OS Evolved"
+      },
+      "score": "3.1 9.8 (Juniper); 4.0 9.3 (Juniper)",
+      "affected": "Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101990",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-102049",
+      "product": {
+        "en": "Junos OS / Junos OS Evolved",
+        "zh-TW": "Junos OS / Junos OS Evolved"
+      },
+      "score": "3.1 8.8 (Juniper); 4.0 8.7 (Juniper)",
+      "affected": "Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 8.7,
+          "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-102049",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-102162",
+      "product": {
+        "en": "Arista Wi-Fi Access Points",
+        "zh-TW": "Arista Wi-Fi Access Points"
+      },
+      "score": "3.1 8.8 (Arista); 4.0 9.4 (Arista)",
+      "affected": "Wi-Fi 存取點：22.0.1F-32 及以下（22.x）、21.3.0M-13 及以下（21.x）及所有更早版本",
+      "fixed": "22.1.1F-61 及後續（22.x）、21.4.0M-12 及後續（21.x）",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 8.8,
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Arista"
+        },
+        {
+          "version": "4.0",
+          "score": 9.4,
+          "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+          "source": "Arista"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-102162",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-102175",
+      "product": {
+        "en": "Junos OS / Junos OS Evolved",
+        "zh-TW": "Junos OS / Junos OS Evolved"
+      },
+      "score": "3.1 9.8 (Juniper); 4.0 9.3 (Juniper)",
+      "affected": "Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-122"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-102175",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-102178",
+      "product": {
+        "en": "Junos OS / Junos OS Evolved",
+        "zh-TW": "Junos OS / Junos OS Evolved"
+      },
+      "score": "3.1 9.8 (Juniper); 4.0 9.3 (Juniper)",
+      "affected": "Junos OS / Junos OS Evolved：23.2 之前全部版本、23.4R2-S8.13 之前、24.2R2-S5.5 之前、24.4R2-S5 之前、25.2R2-S2 之前、25.4R1-S3 之前、26.2R1-S2 之前",
+      "fixed": "23.2R2-S7.7、23.4R2-S8.13、24.2R2-S5.5、24.4R2-S5、25.2R2-S2、25.4R1-S3、25.4R2、26.2R1-S2、26.2R2、26.4R1 及後續版本；Junos OS Evolved：對應 -EVO 版本",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Juniper"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L",
+          "source": "Juniper"
+        }
+      ],
+      "cwe": [
+        "CWE-121"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-102178",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-138005",
+      "product": {
+        "en": "TRENDnet TEW-751DR / TEW-752DRU",
+        "zh-TW": "TRENDnet TEW-751DR / TEW-752DRU"
+      },
+      "score": "3.1 10.0 (VulDB); 4.0 9.3 (VulDB)",
+      "affected": "TEW-751DR 1.03B01、TEW-752DRU 1.03B01",
+      "fixed": "",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 10.0,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "source": "VulDB"
+        },
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P",
+          "source": "VulDB"
+        }
+      ],
+      "cwe": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "demonstrated": [
+        "rce-local"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "rce"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "qwq-nm-gist",
+          "upstream": "https://gist.github.com/qwq-nm/70b4fd27c21fd32e68f929261c01757f",
           "license": "unknown"
         }
       ]
