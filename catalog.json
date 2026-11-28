@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T02:49:16Z",
+  "generated": "2026-11-28T04:42:02Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 798,
+  "entries": 799,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -34640,6 +34640,55 @@
         {
           "id": "nvd-record",
           "upstream": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-29059",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-138154",
+      "product": {
+        "en": "POSTAL 2",
+        "zh-TW": "POSTAL 2"
+      },
+      "score": "4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA)",
+      "affected": "POSTAL 2 build < 26810491（Windows，Steam Workshop 模組）",
+      "fixed": "POSTAL 2 build 26810491",
+      "category": "runtime",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+          "source": "VulnCheck"
+        },
+        {
+          "version": "3.1",
+          "score": 8.6,
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-749"
+      ],
+      "demonstrated": [
+        "rce-local"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "runtime"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "ghsa-advisory",
+          "upstream": "https://api.github.com/advisories/GHSA-8jqc-ggvr-rpj6",
           "license": "unknown"
         }
       ]

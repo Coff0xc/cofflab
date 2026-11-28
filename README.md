@@ -16,7 +16,7 @@ Only publicly available material is collected. For authorized security research 
 - [Web / CMS (292)](categories/web.md)
 - [AI / LLM (33)](categories/ai.md)
 - [Network & Security (263)](categories/net.md)
-- [Runtime / Framework / Browser (111)](categories/runtime.md)
+- [Runtime / Framework / Browser (112)](categories/runtime.md)
 - [Database (22)](categories/db.md)
 - [OS / System / DevOps (77)](categories/os.md)
 <!-- categories:end -->
@@ -626,7 +626,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-138003](CVE-2026-138003) | TEW-751DR / TEW-733GR | 4.0 9.0 (VulDB); 3.1 9.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-138004](CVE-2026-138004) | TEW-751DR / TEW-733GR | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 
-### Runtime / Framework / Browser (111)
+### Runtime / Framework / Browser (112)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -741,6 +741,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-22683](CVE-2026-22683) | Windmill | 3.1 8.8 (GHSA); 4.0 8.7 (VulnCheck) | Windmill 1.56.0 起，1.614.0 之前 | 1.615.0 |
 | [CVE-2026-23696](CVE-2026-23696) | Windmill | 3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck) | Windmill CE 與 EE 1.276.0 起，1.603.2 之前 | 1.603.3 |
 | [CVE-2026-29059](CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
+| [CVE-2026-138154](CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
 
 ### Database (22)
 

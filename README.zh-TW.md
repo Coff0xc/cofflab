@@ -16,7 +16,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 - [Web / CMS (292)](categories/web.zh-TW.md)
 - [AI / LLM (33)](categories/ai.zh-TW.md)
 - [網路與安全 (263)](categories/net.zh-TW.md)
-- [運行環境 / 框架 / 瀏覽器 (111)](categories/runtime.zh-TW.md)
+- [運行環境 / 框架 / 瀏覽器 (112)](categories/runtime.zh-TW.md)
 - [資料庫 (22)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (77)](categories/os.zh-TW.md)
 <!-- categories:end -->
@@ -626,7 +626,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-138003](CVE-2026-138003) | TEW-751DR / TEW-733GR | 4.0 9.0 (VulDB); 3.1 9.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-138004](CVE-2026-138004) | TEW-751DR / TEW-733GR | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 
-### 運行環境 / 框架 / 瀏覽器 (111)
+### 運行環境 / 框架 / 瀏覽器 (112)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -741,6 +741,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-22683](CVE-2026-22683) | Windmill | 3.1 8.8 (GHSA); 4.0 8.7 (VulnCheck) | Windmill 1.56.0 起，1.614.0 之前 | 1.615.0 |
 | [CVE-2026-23696](CVE-2026-23696) | Windmill | 3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck) | Windmill CE 與 EE 1.276.0 起，1.603.2 之前 | 1.603.3 |
 | [CVE-2026-29059](CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
+| [CVE-2026-138154](CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
 
 ### 資料庫 (22)
 

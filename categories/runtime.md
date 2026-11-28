@@ -1,8 +1,8 @@
-# Runtime / Framework / Browser (111)
+# Runtime / Framework / Browser (112)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Runtime / Framework / Browser (111)
+### Runtime / Framework / Browser (112)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -117,3 +117,4 @@
 | [CVE-2026-22683](../CVE-2026-22683) | Windmill | 3.1 8.8 (GHSA); 4.0 8.7 (VulnCheck) | Windmill 1.56.0 起，1.614.0 之前 | 1.615.0 |
 | [CVE-2026-23696](../CVE-2026-23696) | Windmill | 3.1 9.9 (GHSA); 4.0 9.4 (VulnCheck) | Windmill CE 與 EE 1.276.0 起，1.603.2 之前 | 1.603.3 |
 | [CVE-2026-29059](../CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
+| [CVE-2026-138154](../CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
