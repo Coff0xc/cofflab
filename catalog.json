@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T05:44:01Z",
+  "generated": "2026-11-28T07:45:52Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 800,
+  "entries": 805,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -14320,6 +14320,94 @@
         {
           "id": "fankh-poc",
           "upstream": "https://github.com/fankh/vulnerability-poc",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101499",
+      "product": {
+        "en": "WebCenter Sites",
+        "zh-TW": "WebCenter Sites"
+      },
+      "score": "3.1 9.8 (Oracle)",
+      "affected": "Oracle WebCenter Sites 12.2.1.4.0、14.1.2.0.0",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101499",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101521",
+      "product": {
+        "en": "APEX",
+        "zh-TW": "APEX"
+      },
+      "score": "3.1 9.8 (Oracle)",
+      "affected": "Oracle APEX 24.1.0–24.1.21、24.2.0–24.2.20、26.1.0–26.1.4",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101521",
           "license": "unknown"
         }
       ]
@@ -29060,6 +29148,56 @@
       ]
     },
     {
+      "id": "CVE-2026-101158",
+      "product": {
+        "en": "CloudVision Portal (CVP) / CloudVision CUE",
+        "zh-TW": "CloudVision Portal (CVP) / CloudVision CUE"
+      },
+      "score": "4.0 9.3 (Arista); 3.1 8.4 (Arista)",
+      "affected": "CloudVision Portal on-premises 2026.2.0、2026.1.x ≤2026.1.2、2025.3.x ≤2025.3.3 及更早版本；同批 CV-CUE on-prem 亦受影響",
+      "fixed": "2026.3.0、2026.2.1、2026.1.3、2025.3.4 各列車修復版",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "4.0",
+          "score": 9.3,
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+          "source": "Arista"
+        },
+        {
+          "version": "3.1",
+          "score": 8.4,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+          "source": "Arista"
+        }
+      ],
+      "cwe": [
+        "CWE-79"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "xss"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101158",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-57898",
       "product": {
         "en": "Eclipse BaSyx Java Server SDK",
@@ -35823,6 +35961,93 @@
         {
           "id": "redis-advisory",
           "upstream": "https://redis.io/blog/security-advisory-cve202623479-cve202625243-cve-2026-25588-cve202625589-cve-2026-23631/",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101501",
+      "product": {
+        "en": "Trusted Answer Search",
+        "zh-TW": "Trusted Answer Search"
+      },
+      "score": "3.1 9.9 (Oracle)",
+      "affected": "Oracle Trusted Answer Search 26.1",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "db",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-400"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "db",
+        "dos"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101501",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-101503",
+      "product": {
+        "en": "Trusted Answer Search",
+        "zh-TW": "Trusted Answer Search"
+      },
+      "score": "3.1 9.9 (Oracle)",
+      "affected": "Oracle Trusted Answer Search 26.1",
+      "fixed": "October 2026 Critical Patch Update",
+      "category": "db",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "Oracle"
+        }
+      ],
+      "cwe": [
+        "CWE-284"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "db"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-101503",
           "license": "unknown"
         }
       ]

@@ -1,8 +1,8 @@
-# 網路與安全（263）
+# 網路與安全（264）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### 網路與安全 (263)
+### 網路與安全 (264)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -269,3 +269,4 @@
 | [CVE-2026-80507](../CVE-2026-80507) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-138003](../CVE-2026-138003) | TEW-751DR / TEW-733GR | 4.0 9.0 (VulDB); 3.1 9.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-138004](../CVE-2026-138004) | TEW-751DR / TEW-733GR | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
+| [CVE-2026-101158](../CVE-2026-101158) | CloudVision Portal (CVP) / CloudVision CUE | 4.0 9.3 (Arista); 3.1 8.4 (Arista) | CloudVision Portal on-premises 2026.2.0、2026.1.x ≤2026.1.2、2025.3.x ≤2025.3.3 及更早版本；同批 CV-CUE on-prem 亦受影響 | 2026.3.0、2026.2.1、2026.1.3、2025.3.4 各列車修復版 |

@@ -1,8 +1,8 @@
-# Web / CMS（292）
+# Web / CMS（294）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### Web / CMS (292)
+### Web / CMS (294)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -298,3 +298,5 @@
 | [CVE-2026-136692](../CVE-2026-136692) | XunRuiCMS | 3.1 7.3 (VulDB); 4.0 5.5 (VulDB) | XunRuiCMS ≤ 4.7.4 |  |
 | [CVE-2026-113774](../CVE-2026-113774) | Schema & Structured Data for WP & AMP | 3.1 8.8 (Wordfence) | Schema & Structured Data for WP & AMP ≤ 1.68 | 1.69 |
 | [CVE-2026-119071](../CVE-2026-119071) | W3 Total Cache | 3.1 8.1 (Wordfence) | W3 Total Cache ≤ 2.11.0 | 2.11.1 |
+| [CVE-2026-101499](../CVE-2026-101499) | WebCenter Sites | 3.1 9.8 (Oracle) | Oracle WebCenter Sites 12.2.1.4.0、14.1.2.0.0 | October 2026 Critical Patch Update |
+| [CVE-2026-101521](../CVE-2026-101521) | APEX | 3.1 9.8 (Oracle) | Oracle APEX 24.1.0–24.1.21、24.2.0–24.2.20、26.1.0–26.1.4 | October 2026 Critical Patch Update |

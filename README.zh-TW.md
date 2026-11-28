@@ -13,17 +13,17 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (292)](categories/web.zh-TW.md)
+- [Web / CMS (294)](categories/web.zh-TW.md)
 - [AI / LLM (33)](categories/ai.zh-TW.md)
-- [網路與安全 (263)](categories/net.zh-TW.md)
+- [網路與安全 (264)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (112)](categories/runtime.zh-TW.md)
-- [資料庫 (22)](categories/db.zh-TW.md)
+- [資料庫 (24)](categories/db.zh-TW.md)
 - [作業系統 / 系統 / DevOps (78)](categories/os.zh-TW.md)
 <!-- categories:end -->
 
 ## 目錄
 
-### Web / CMS (292)
+### Web / CMS (294)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -319,6 +319,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-136692](CVE-2026-136692) | XunRuiCMS | 3.1 7.3 (VulDB); 4.0 5.5 (VulDB) | XunRuiCMS ≤ 4.7.4 |  |
 | [CVE-2026-113774](CVE-2026-113774) | Schema & Structured Data for WP & AMP | 3.1 8.8 (Wordfence) | Schema & Structured Data for WP & AMP ≤ 1.68 | 1.69 |
 | [CVE-2026-119071](CVE-2026-119071) | W3 Total Cache | 3.1 8.1 (Wordfence) | W3 Total Cache ≤ 2.11.0 | 2.11.1 |
+| [CVE-2026-101499](CVE-2026-101499) | WebCenter Sites | 3.1 9.8 (Oracle) | Oracle WebCenter Sites 12.2.1.4.0、14.1.2.0.0 | October 2026 Critical Patch Update |
+| [CVE-2026-101521](CVE-2026-101521) | APEX | 3.1 9.8 (Oracle) | Oracle APEX 24.1.0–24.1.21、24.2.0–24.2.20、26.1.0–26.1.4 | October 2026 Critical Patch Update |
 
 ### AI / LLM (33)
 
@@ -358,7 +360,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-137953](CVE-2026-137953) | Pydantic Deep | 4.0 8.8 (VulnCheck); 3.1 8.6 (VulnCheck) | Pydantic Deep 0.2.18–< 0.4.0 | 0.4.0 |
 | [CVE-2026-136441](CVE-2026-136441) | DBHub | 3.0 9.8 (ZDI) | Bytebase DBHub（MCP server） |  |
 
-### 網路與安全 (263)
+### 網路與安全 (264)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -625,6 +627,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-80507](CVE-2026-80507) | Dell Secure Connect Gateway - Virtual Edition | 3.1 8.4 (Dell) | Dell Secure Connect Gateway - Virtual Edition < 5.36.00.16 | 5.36.00.16 |
 | [CVE-2026-138003](CVE-2026-138003) | TEW-751DR / TEW-733GR | 4.0 9.0 (VulDB); 3.1 9.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
 | [CVE-2026-138004](CVE-2026-138004) | TEW-751DR / TEW-733GR | 4.0 9.3 (VulDB); 3.1 10.0 (VulDB) | TEW-751DR / TEW-733GR 1.03B01 |  |
+| [CVE-2026-101158](CVE-2026-101158) | CloudVision Portal (CVP) / CloudVision CUE | 4.0 9.3 (Arista); 3.1 8.4 (Arista) | CloudVision Portal on-premises 2026.2.0、2026.1.x ≤2026.1.2、2025.3.x ≤2025.3.3 及更早版本；同批 CV-CUE on-prem 亦受影響 | 2026.3.0、2026.2.1、2026.1.3、2025.3.4 各列車修復版 |
 
 ### 運行環境 / 框架 / 瀏覽器 (112)
 
@@ -743,7 +746,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-29059](CVE-2026-29059) | Windmill | 3.1 7.5 (NVD); 4.0 6.9 (GHSA) | Windmill < 1.603.3 | 1.603.3 |
 | [CVE-2026-138154](CVE-2026-138154) | POSTAL 2 | 4.0 9.3 (VulnCheck); 3.1 8.6 (GHSA) | POSTAL 2 build < 26810491（Windows，Steam Workshop 模組） | POSTAL 2 build 26810491 |
 
-### 資料庫 (22)
+### 資料庫 (24)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -769,6 +772,8 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-134842](CVE-2026-134842) | pgjdbc (PostgreSQL JDBC Driver) | 3.1 8.1 (pgjdbc) | pgjdbc < 42.7.15 (preferQueryMode=simple and standard_conforming_strings=off) | 42.7.15 |
 | [CVE-2026-132660](CVE-2026-132660) | Postgres Enterprise Manager (PEM) | 4.0 9.4 (EDB) | PEM 7.6.0–10.6.1 (before 10.6.1) | 10.6.1 |
 | [CVE-2026-25243](CVE-2026-25243) | Redis | 4.0 7.7 (GHSA); 3.1 8.8 (NVD) | All Redis OSS/CE releases (Redis Software up to and including 8.0.6) | 6.2.22, 7.2.14, 7.4.9, 8.2.6, 8.4.3, 8.6.3 |
+| [CVE-2026-101501](CVE-2026-101501) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
+| [CVE-2026-101503](CVE-2026-101503) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
 
 ### 作業系統 / 系統 / DevOps (78)
 
