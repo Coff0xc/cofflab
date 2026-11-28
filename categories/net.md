@@ -1,8 +1,8 @@
-# Network & Security (278)
+# Network & Security (279)
 
 [Back to the full catalog](../README.md) · [All categories](README.md)
 
-### Network & Security (278)
+### Network & Security (279)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -284,3 +284,4 @@
 | [CVE-2026-138005](../CVE-2026-138005) | TRENDnet TEW-751DR / TEW-752DRU | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TEW-751DR 1.03B01、TEW-752DRU 1.03B01 |  |
 | [CVE-2026-102182](../CVE-2026-102182) | Junos OS (MX Series) | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS MX Series：21.2 之前全部版本、21.4R3-S12 之前、22.2R3-S8 之前、22.3R3-S5 之前、22.4R3-S9 之前（需啟用 IKE 與 RSA 簽章 IKE 政策） | 21.2R3-S11、21.4R3-S12、22.2R3-S8、22.3R3-S5、22.4R3-S9 及後續版本 |
 | [CVE-2026-104611](../CVE-2026-104611) | Tenda AC9 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | Tenda AC9 15.03.02.13 | 未公布修復版本 |
+| [CVE-2026-105105](../CVE-2026-105105) | AIT-Core | 3.1 9.8 (TuranSec) | AIT-Core ≤3.1.1（ZeroMQ XSUB/XPUB 綁 0.0.0.0 無認證） | 3.1.2（GitHub releases 核實，2026-09-15） |

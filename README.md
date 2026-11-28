@@ -13,17 +13,17 @@ Only publicly available material is collected. For authorized security research 
 <!-- categories:start -->
 ## Categories
 
-- [Web / CMS (302)](categories/web.md)
+- [Web / CMS (305)](categories/web.md)
 - [AI / LLM (37)](categories/ai.md)
-- [Network & Security (278)](categories/net.md)
+- [Network & Security (279)](categories/net.md)
 - [Runtime / Framework / Browser (114)](categories/runtime.md)
 - [Database (25)](categories/db.md)
-- [OS / System / DevOps (80)](categories/os.md)
+- [OS / System / DevOps (81)](categories/os.md)
 <!-- categories:end -->
 
 ## Catalog
 
-### Web / CMS (302)
+### Web / CMS (305)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -329,6 +329,9 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-104351](CVE-2026-104351) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
 | [CVE-2026-104467](CVE-2026-104467) | YesWiki | 3.1 8.1 (VulnCheck); 4.0 9.2 (VulnCheck) | YesWiki <4.6.7（啟用公開 API 模式時） | 4.6.7 |
 | [CVE-2026-104798](CVE-2026-104798) | My Calendar | 3.1 9.8 (Wordfence) | My Calendar ≤3.8.7 | 廠商已發佈修復（3.8.7 之後版本） |
+| [CVE-2026-105780](CVE-2026-105780) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
+| [CVE-2026-105859](CVE-2026-105859) | Payload CMS | 3.1 9.8 (GHSA) | Payload CMS <3.90.0、canary ≥4.0.0-canary.0 且 <4.0.0-canary.34 | 3.90.0、4.0.0-canary.34 |
+| [CVE-2026-106013](CVE-2026-106013) | Jupiter X Core | 3.1 9.8 (Wordfence) | Jupiter X Core ≤4.61.0 | 4.62.0（WordPress.org changelog 核實，v4.62.0 記「Fixed Security issue」） |
 
 ### AI / LLM (37)
 
@@ -372,7 +375,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-103764](CVE-2026-103764) | Mooncake transfer engine | 3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck) | Mooncake transfer engine <0.3.13 | 0.3.13 |
 | [CVE-2026-104334](CVE-2026-104334) | Langflow OSS | 3.1 9.8 (IBM) | IBM Langflow OSS 1.0.0–1.12.2 | 1.12.3 |
 
-### Network & Security (278)
+### Network & Security (279)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -654,6 +657,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-138005](CVE-2026-138005) | TRENDnet TEW-751DR / TEW-752DRU | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TEW-751DR 1.03B01、TEW-752DRU 1.03B01 |  |
 | [CVE-2026-102182](CVE-2026-102182) | Junos OS (MX Series) | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS MX Series：21.2 之前全部版本、21.4R3-S12 之前、22.2R3-S8 之前、22.3R3-S5 之前、22.4R3-S9 之前（需啟用 IKE 與 RSA 簽章 IKE 政策） | 21.2R3-S11、21.4R3-S12、22.2R3-S8、22.3R3-S5、22.4R3-S9 及後續版本 |
 | [CVE-2026-104611](CVE-2026-104611) | Tenda AC9 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | Tenda AC9 15.03.02.13 | 未公布修復版本 |
+| [CVE-2026-105105](CVE-2026-105105) | AIT-Core | 3.1 9.8 (TuranSec) | AIT-Core ≤3.1.1（ZeroMQ XSUB/XPUB 綁 0.0.0.0 無認證） | 3.1.2（GitHub releases 核實，2026-09-15） |
 
 ### Runtime / Framework / Browser (114)
 
@@ -804,7 +808,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-101503](CVE-2026-101503) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
 | [CVE-2026-101528](CVE-2026-101528) | Enterprise Manager for Oracle Database | 3.1 9.9 (Oracle) | Oracle Enterprise Manager for Oracle Database 13.5、24.1 | October 2026 Critical Patch Update |
 
-### OS / System / DevOps (80)
+### OS / System / DevOps (81)
 
 | ID | Product | Score | Affected | Fixed |
 | --- | --- | --- | --- | --- |
@@ -888,6 +892,7 @@ Only publicly available material is collected. For authorized security research 
 | [CVE-2026-99362](CVE-2026-99362) | Linux kernel (nfsd) | 3.1 9.8 (NVD) | Linux kernel 3.16+（自 commit 47ee52986472 起），開啟 nfsd NFSv4.1/4.2 的伺服器 | 5.10.275、5.15.226、6.1.193、6.6.163、6.12.117、6.18.61、7.3.2、7.4-rc1 |
 | [CVE-2026-101537](CVE-2026-101537) | Solaris | 3.1 9.8 (Oracle) | Oracle Solaris 11.4 | October 2026 Critical Patch Update |
 | [CVE-2026-103780](CVE-2026-103780) | PowerProtect Data Domain | 3.1 9.8 (Dell) | PowerProtect Data Domain Feature Release 7.7.1.0–8.8、LTS2024 7.13.1.0–7.13.1.80、LTS2025 8.3.1.0–8.3.1.40、LTS2026 8.6.1.0–8.6.1.20 | 見 Dell DSA-2026-416（各版本線修復版本見通告） |
+| [CVE-2026-105769](CVE-2026-105769) | kaniko | 3.1 9.3 (Chainguard) | kaniko <1.25.20 | 1.25.20 |
 
 
 See each CVE directory for details and references.

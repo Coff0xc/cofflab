@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T12:52:25Z",
+  "generated": "2026-11-28T13:48:08Z",
   "kev_catalog_version": "2026.11.27",
-  "entries": 836,
+  "entries": 841,
   "items": [
     {
       "id": "CVE-2026-91618",
@@ -14765,6 +14765,137 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-104798",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-105780",
+      "product": {
+        "en": "Adobe Campaign Classic",
+        "zh-TW": "Adobe Campaign Classic"
+      },
+      "score": "3.1 9.9 (Adobe)",
+      "affected": "Adobe Campaign Classic ≤7.4.4 build 9402",
+      "fixed": "7.4.4 build 9403",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.9,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+          "source": "Adobe"
+        }
+      ],
+      "cwe": [
+        "CWE-863"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-105780",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-105859",
+      "product": {
+        "en": "Payload CMS",
+        "zh-TW": "Payload CMS"
+      },
+      "score": "3.1 9.8 (GHSA)",
+      "affected": "Payload CMS <3.90.0、canary ≥4.0.0-canary.0 且 <4.0.0-canary.34",
+      "fixed": "3.90.0、4.0.0-canary.34",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "GHSA"
+        }
+      ],
+      "cwe": [
+        "CWE-639"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-105859",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-106013",
+      "product": {
+        "en": "Jupiter X Core",
+        "zh-TW": "Jupiter X Core"
+      },
+      "score": "3.1 9.8 (Wordfence)",
+      "affected": "Jupiter X Core ≤4.61.0",
+      "fixed": "4.62.0（WordPress.org changelog 核實，v4.62.0 記「Fixed Security issue」）",
+      "category": "web",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "Wordfence"
+        }
+      ],
+      "cwe": [
+        "CWE-287"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "web",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-106013",
           "license": "unknown"
         }
       ]
@@ -30425,6 +30556,50 @@
       ]
     },
     {
+      "id": "CVE-2026-105105",
+      "product": {
+        "en": "AIT-Core",
+        "zh-TW": "AIT-Core"
+      },
+      "score": "3.1 9.8 (TuranSec)",
+      "affected": "AIT-Core ≤3.1.1（ZeroMQ XSUB/XPUB 綁 0.0.0.0 無認證）",
+      "fixed": "3.1.2（GitHub releases 核實，2026-09-15）",
+      "category": "net",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.8,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "source": "TuranSec"
+        }
+      ],
+      "cwe": [
+        "CWE-306"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "net",
+        "auth-bypass"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-105105",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-57898",
       "product": {
         "en": "Eclipse BaSyx Java Server SDK",
@@ -41328,6 +41503,49 @@
         {
           "id": "nvd-record",
           "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-103780",
+          "license": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-105769",
+      "product": {
+        "en": "kaniko",
+        "zh-TW": "kaniko"
+      },
+      "score": "3.1 9.3 (Chainguard)",
+      "affected": "kaniko <1.25.20",
+      "fixed": "1.25.20",
+      "category": "os",
+      "cvss": [
+        {
+          "version": "3.1",
+          "score": 9.3,
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+          "source": "Chainguard"
+        }
+      ],
+      "cwe": [
+        "CWE-346"
+      ],
+      "demonstrated": [
+        "trigger"
+      ],
+      "public_rce": false,
+      "review_executed": false,
+      "repro": "Pending",
+      "verified": false,
+      "kev": false,
+      "in_the_wild": false,
+      "epss": null,
+      "tags": [
+        "os"
+      ],
+      "collected": "2026-11-28",
+      "sources": [
+        {
+          "id": "nvd-record",
+          "upstream": "https://nvd.nist.gov/vuln/detail/CVE-2026-105769",
           "license": "unknown"
         }
       ]

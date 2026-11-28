@@ -1,8 +1,8 @@
-# Web / CMS（302）
+# Web / CMS（305）
 
 [回到完整目錄](../README.zh-TW.md) · [所有分類](README.zh-TW.md)
 
-### Web / CMS (302)
+### Web / CMS (305)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -308,3 +308,6 @@
 | [CVE-2026-104351](../CVE-2026-104351) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
 | [CVE-2026-104467](../CVE-2026-104467) | YesWiki | 3.1 8.1 (VulnCheck); 4.0 9.2 (VulnCheck) | YesWiki <4.6.7（啟用公開 API 模式時） | 4.6.7 |
 | [CVE-2026-104798](../CVE-2026-104798) | My Calendar | 3.1 9.8 (Wordfence) | My Calendar ≤3.8.7 | 廠商已發佈修復（3.8.7 之後版本） |
+| [CVE-2026-105780](../CVE-2026-105780) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
+| [CVE-2026-105859](../CVE-2026-105859) | Payload CMS | 3.1 9.8 (GHSA) | Payload CMS <3.90.0、canary ≥4.0.0-canary.0 且 <4.0.0-canary.34 | 3.90.0、4.0.0-canary.34 |
+| [CVE-2026-106013](../CVE-2026-106013) | Jupiter X Core | 3.1 9.8 (Wordfence) | Jupiter X Core ≤4.61.0 | 4.62.0（WordPress.org changelog 核實，v4.62.0 記「Fixed Security issue」） |

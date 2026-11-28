@@ -13,17 +13,17 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 <!-- categories:start -->
 ## 分類
 
-- [Web / CMS (302)](categories/web.zh-TW.md)
+- [Web / CMS (305)](categories/web.zh-TW.md)
 - [AI / LLM (37)](categories/ai.zh-TW.md)
-- [網路與安全 (278)](categories/net.zh-TW.md)
+- [網路與安全 (279)](categories/net.zh-TW.md)
 - [運行環境 / 框架 / 瀏覽器 (114)](categories/runtime.zh-TW.md)
 - [資料庫 (25)](categories/db.zh-TW.md)
-- [作業系統 / 系統 / DevOps (80)](categories/os.zh-TW.md)
+- [作業系統 / 系統 / DevOps (81)](categories/os.zh-TW.md)
 <!-- categories:end -->
 
 ## 目錄
 
-### Web / CMS (302)
+### Web / CMS (305)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -329,6 +329,9 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-104351](CVE-2026-104351) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
 | [CVE-2026-104467](CVE-2026-104467) | YesWiki | 3.1 8.1 (VulnCheck); 4.0 9.2 (VulnCheck) | YesWiki <4.6.7（啟用公開 API 模式時） | 4.6.7 |
 | [CVE-2026-104798](CVE-2026-104798) | My Calendar | 3.1 9.8 (Wordfence) | My Calendar ≤3.8.7 | 廠商已發佈修復（3.8.7 之後版本） |
+| [CVE-2026-105780](CVE-2026-105780) | Adobe Campaign Classic | 3.1 9.9 (Adobe) | Adobe Campaign Classic ≤7.4.4 build 9402 | 7.4.4 build 9403 |
+| [CVE-2026-105859](CVE-2026-105859) | Payload CMS | 3.1 9.8 (GHSA) | Payload CMS <3.90.0、canary ≥4.0.0-canary.0 且 <4.0.0-canary.34 | 3.90.0、4.0.0-canary.34 |
+| [CVE-2026-106013](CVE-2026-106013) | Jupiter X Core | 3.1 9.8 (Wordfence) | Jupiter X Core ≤4.61.0 | 4.62.0（WordPress.org changelog 核實，v4.62.0 記「Fixed Security issue」） |
 
 ### AI / LLM (37)
 
@@ -372,7 +375,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-103764](CVE-2026-103764) | Mooncake transfer engine | 3.1 9.8 (VulnCheck); 4.0 9.3 (VulnCheck) | Mooncake transfer engine <0.3.13 | 0.3.13 |
 | [CVE-2026-104334](CVE-2026-104334) | Langflow OSS | 3.1 9.8 (IBM) | IBM Langflow OSS 1.0.0–1.12.2 | 1.12.3 |
 
-### 網路與安全 (278)
+### 網路與安全 (279)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -654,6 +657,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-138005](CVE-2026-138005) | TRENDnet TEW-751DR / TEW-752DRU | 3.1 10.0 (VulDB); 4.0 9.3 (VulDB) | TEW-751DR 1.03B01、TEW-752DRU 1.03B01 |  |
 | [CVE-2026-102182](CVE-2026-102182) | Junos OS (MX Series) | 3.1 9.8 (Juniper); 4.0 9.3 (Juniper) | Junos OS MX Series：21.2 之前全部版本、21.4R3-S12 之前、22.2R3-S8 之前、22.3R3-S5 之前、22.4R3-S9 之前（需啟用 IKE 與 RSA 簽章 IKE 政策） | 21.2R3-S11、21.4R3-S12、22.2R3-S8、22.3R3-S5、22.4R3-S9 及後續版本 |
 | [CVE-2026-104611](CVE-2026-104611) | Tenda AC9 | 3.1 9.1 (VulDB); 4.0 8.5 (VulDB) | Tenda AC9 15.03.02.13 | 未公布修復版本 |
+| [CVE-2026-105105](CVE-2026-105105) | AIT-Core | 3.1 9.8 (TuranSec) | AIT-Core ≤3.1.1（ZeroMQ XSUB/XPUB 綁 0.0.0.0 無認證） | 3.1.2（GitHub releases 核實，2026-09-15） |
 
 ### 運行環境 / 框架 / 瀏覽器 (114)
 
@@ -804,7 +808,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-101503](CVE-2026-101503) | Trusted Answer Search | 3.1 9.9 (Oracle) | Oracle Trusted Answer Search 26.1 | October 2026 Critical Patch Update |
 | [CVE-2026-101528](CVE-2026-101528) | Enterprise Manager for Oracle Database | 3.1 9.9 (Oracle) | Oracle Enterprise Manager for Oracle Database 13.5、24.1 | October 2026 Critical Patch Update |
 
-### 作業系統 / 系統 / DevOps (80)
+### 作業系統 / 系統 / DevOps (81)
 
 | ID | 產品 | 評分 | 影響版本 | 修復版本 |
 | --- | --- | --- | --- | --- |
@@ -888,6 +892,7 @@ Coff0xc 維護的公開 PoC 策展庫，收錄 CVE 與非 CVE 漏洞。每條記
 | [CVE-2026-99362](CVE-2026-99362) | Linux kernel (nfsd) | 3.1 9.8 (NVD) | Linux kernel 3.16+（自 commit 47ee52986472 起），開啟 nfsd NFSv4.1/4.2 的伺服器 | 5.10.275、5.15.226、6.1.193、6.6.163、6.12.117、6.18.61、7.3.2、7.4-rc1 |
 | [CVE-2026-101537](CVE-2026-101537) | Solaris | 3.1 9.8 (Oracle) | Oracle Solaris 11.4 | October 2026 Critical Patch Update |
 | [CVE-2026-103780](CVE-2026-103780) | PowerProtect Data Domain | 3.1 9.8 (Dell) | PowerProtect Data Domain Feature Release 7.7.1.0–8.8、LTS2024 7.13.1.0–7.13.1.80、LTS2025 8.3.1.0–8.3.1.40、LTS2026 8.6.1.0–8.6.1.20 | 見 Dell DSA-2026-416（各版本線修復版本見通告） |
+| [CVE-2026-105769](CVE-2026-105769) | kaniko | 3.1 9.3 (Chainguard) | kaniko <1.25.20 | 1.25.20 |
 
 
 點進 CVE 目錄查看詳細內容與引用。
